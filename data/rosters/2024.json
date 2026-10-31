@@ -1,6 +1,6 @@
 {
   "season": "2024",
-  "ratingsNote": "Ratings from 2024 season stat lines (https://cod-esports.fandom.com/api.php (Cargo table PlayerStats), fetched 2026-10-31; CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors). Players without stats (ratingSource \"placeholder\") use team placements. Consistency is always a placeholder; clutch is a mild SnD K/D proxy. Roles default to flex.",
+  "ratingsNote": "Ratings from 2024 season stat lines (https://cod-esports.fandom.com/api.php (Cargo table PlayerStats), fetched 2026-10-31; CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors). Players without stats (ratingSource \"placeholder\") use team placements. Consistency comes from map-to-map spread in kills minus deaths where available; clutch is a mild SnD K/D proxy. Roles default to flex.",
   "teams": [
     {
       "team": "atlanta-faze",
@@ -15,7 +15,7 @@
             "snd_iq": 83,
             "third_mode": 84,
             "clutch": 82,
-            "consistency": 79
+            "consistency": 80
           },
           "ratingSource": "stats",
           "stats": {
@@ -38,7 +38,7 @@
             "snd_iq": 83,
             "third_mode": 86,
             "clutch": 84,
-            "consistency": 89
+            "consistency": 79
           },
           "ratingSource": "stats",
           "stats": {
@@ -61,7 +61,7 @@
             "snd_iq": 81,
             "third_mode": 84,
             "clutch": 80,
-            "consistency": 89
+            "consistency": 79
           },
           "ratingSource": "stats",
           "stats": {
@@ -84,7 +84,7 @@
             "snd_iq": 84,
             "third_mode": 84,
             "clutch": 84,
-            "consistency": 89
+            "consistency": 83
           },
           "ratingSource": "stats",
           "stats": {
@@ -137,7 +137,7 @@
             "snd_iq": 79,
             "third_mode": 79,
             "clutch": 79,
-            "consistency": 74
+            "consistency": 85
           },
           "ratingSource": "stats",
           "stats": {
@@ -160,7 +160,7 @@
             "snd_iq": 77,
             "third_mode": 79,
             "clutch": 77,
-            "consistency": 73
+            "consistency": 81
           },
           "ratingSource": "stats",
           "stats": {
@@ -183,7 +183,7 @@
             "snd_iq": 78,
             "third_mode": 78,
             "clutch": 79,
-            "consistency": 80
+            "consistency": 85
           },
           "ratingSource": "stats",
           "stats": {
@@ -206,7 +206,7 @@
             "snd_iq": 79,
             "third_mode": 78,
             "clutch": 80,
-            "consistency": 78
+            "consistency": 83
           },
           "ratingSource": "stats",
           "stats": {
@@ -229,7 +229,7 @@
             "snd_iq": 77,
             "third_mode": 75,
             "clutch": 77,
-            "consistency": 80
+            "consistency": 78
           },
           "ratingSource": "stats",
           "stats": {
@@ -252,7 +252,7 @@
             "snd_iq": 77,
             "third_mode": 79,
             "clutch": 77,
-            "consistency": 78
+            "consistency": 80
           },
           "ratingSource": "stats",
           "stats": {
@@ -275,7 +275,7 @@
             "snd_iq": 77,
             "third_mode": 79,
             "clutch": 77,
-            "consistency": 80
+            "consistency": 79
           },
           "ratingSource": "stats",
           "stats": {
@@ -298,7 +298,7 @@
             "snd_iq": 77,
             "third_mode": 77,
             "clutch": 77,
-            "consistency": 70
+            "consistency": 78
           },
           "ratingSource": "stats",
           "stats": {
@@ -321,7 +321,7 @@
             "snd_iq": 78,
             "third_mode": 78,
             "clutch": 78,
-            "consistency": 79
+            "consistency": 83
           },
           "ratingSource": "stats",
           "stats": {
@@ -415,7 +415,7 @@
             "snd_iq": 78,
             "third_mode": 78,
             "clutch": 78,
-            "consistency": 76
+            "consistency": 74
           },
           "ratingSource": "stats",
           "stats": {
@@ -438,7 +438,7 @@
             "snd_iq": 79,
             "third_mode": 81,
             "clutch": 79,
-            "consistency": 79
+            "consistency": 76
           },
           "ratingSource": "stats",
           "stats": {
@@ -461,7 +461,7 @@
             "snd_iq": 77,
             "third_mode": 76,
             "clutch": 77,
-            "consistency": 68
+            "consistency": 88
           },
           "ratingSource": "stats",
           "stats": {
@@ -484,7 +484,7 @@
             "snd_iq": 81,
             "third_mode": 78,
             "clutch": 80,
-            "consistency": 71
+            "consistency": 76
           },
           "ratingSource": "stats",
           "stats": {
@@ -507,7 +507,7 @@
             "snd_iq": 81,
             "third_mode": 79,
             "clutch": 80,
-            "consistency": 85
+            "consistency": 80
           },
           "ratingSource": "stats",
           "stats": {
@@ -530,7 +530,7 @@
             "snd_iq": 78,
             "third_mode": 79,
             "clutch": 79,
-            "consistency": 71
+            "consistency": 78
           },
           "ratingSource": "stats",
           "stats": {
@@ -600,7 +600,7 @@
             "snd_iq": 81,
             "third_mode": 81,
             "clutch": 81,
-            "consistency": 83
+            "consistency": 81
           },
           "ratingSource": "stats",
           "stats": {
@@ -623,7 +623,7 @@
             "snd_iq": 79,
             "third_mode": 82,
             "clutch": 79,
-            "consistency": 79
+            "consistency": 75
           },
           "ratingSource": "stats",
           "stats": {
@@ -646,7 +646,7 @@
             "snd_iq": 79,
             "third_mode": 78,
             "clutch": 79,
-            "consistency": 74
+            "consistency": 79
           },
           "ratingSource": "stats",
           "stats": {
@@ -669,7 +669,7 @@
             "snd_iq": 80,
             "third_mode": 78,
             "clutch": 80,
-            "consistency": 80
+            "consistency": 76
           },
           "ratingSource": "stats",
           "stats": {
@@ -692,7 +692,7 @@
             "snd_iq": 78,
             "third_mode": 80,
             "clutch": 78,
-            "consistency": 77
+            "consistency": 81
           },
           "ratingSource": "stats",
           "stats": {
@@ -715,7 +715,7 @@
             "snd_iq": 77,
             "third_mode": 75,
             "clutch": 77,
-            "consistency": 80
+            "consistency": 78
           },
           "ratingSource": "stats",
           "stats": {
@@ -738,7 +738,7 @@
             "snd_iq": 80,
             "third_mode": 78,
             "clutch": 79,
-            "consistency": 78
+            "consistency": 84
           },
           "ratingSource": "stats",
           "stats": {
@@ -835,7 +835,7 @@
             "snd_iq": 78,
             "third_mode": 79,
             "clutch": 78,
-            "consistency": 82
+            "consistency": 79
           },
           "ratingSource": "stats",
           "stats": {
@@ -858,7 +858,7 @@
             "snd_iq": 81,
             "third_mode": 79,
             "clutch": 80,
-            "consistency": 84
+            "consistency": 79
           },
           "ratingSource": "stats",
           "stats": {
@@ -881,7 +881,7 @@
             "snd_iq": 80,
             "third_mode": 80,
             "clutch": 79,
-            "consistency": 79
+            "consistency": 86
           },
           "ratingSource": "stats",
           "stats": {
@@ -904,7 +904,7 @@
             "snd_iq": 80,
             "third_mode": 80,
             "clutch": 80,
-            "consistency": 85
+            "consistency": 79
           },
           "ratingSource": "stats",
           "stats": {
@@ -927,7 +927,7 @@
             "snd_iq": 79,
             "third_mode": 80,
             "clutch": 80,
-            "consistency": 73
+            "consistency": 80
           },
           "ratingSource": "stats",
           "stats": {
@@ -1000,7 +1000,7 @@
             "snd_iq": 79,
             "third_mode": 77,
             "clutch": 79,
-            "consistency": 75
+            "consistency": 83
           },
           "ratingSource": "stats",
           "stats": {
@@ -1023,7 +1023,7 @@
             "snd_iq": 77,
             "third_mode": 78,
             "clutch": 79,
-            "consistency": 69
+            "consistency": 85
           },
           "ratingSource": "stats",
           "stats": {
@@ -1046,7 +1046,7 @@
             "snd_iq": 80,
             "third_mode": 82,
             "clutch": 81,
-            "consistency": 76
+            "consistency": 75
           },
           "ratingSource": "stats",
           "stats": {
@@ -1069,7 +1069,7 @@
             "snd_iq": 81,
             "third_mode": 80,
             "clutch": 80,
-            "consistency": 76
+            "consistency": 80
           },
           "ratingSource": "stats",
           "stats": {
@@ -1092,7 +1092,7 @@
             "snd_iq": 81,
             "third_mode": 78,
             "clutch": 80,
-            "consistency": 74
+            "consistency": 81
           },
           "ratingSource": "stats",
           "stats": {
@@ -1115,7 +1115,7 @@
             "snd_iq": 80,
             "third_mode": 80,
             "clutch": 80,
-            "consistency": 87
+            "consistency": 81
           },
           "ratingSource": "stats",
           "stats": {
@@ -1200,7 +1200,7 @@
             "snd_iq": 77,
             "third_mode": 77,
             "clutch": 77,
-            "consistency": 82
+            "consistency": 80
           },
           "ratingSource": "stats",
           "stats": {
@@ -1223,7 +1223,7 @@
             "snd_iq": 81,
             "third_mode": 78,
             "clutch": 81,
-            "consistency": 83
+            "consistency": 79
           },
           "ratingSource": "stats",
           "stats": {
@@ -1246,7 +1246,7 @@
             "snd_iq": 80,
             "third_mode": 77,
             "clutch": 80,
-            "consistency": 72
+            "consistency": 80
           },
           "ratingSource": "stats",
           "stats": {
@@ -1269,7 +1269,7 @@
             "snd_iq": 79,
             "third_mode": 79,
             "clutch": 79,
-            "consistency": 71
+            "consistency": 81
           },
           "ratingSource": "stats",
           "stats": {
@@ -1292,7 +1292,7 @@
             "snd_iq": 77,
             "third_mode": 75,
             "clutch": 77,
-            "consistency": 77
+            "consistency": 83
           },
           "ratingSource": "stats",
           "stats": {
@@ -1315,7 +1315,7 @@
             "snd_iq": 81,
             "third_mode": 78,
             "clutch": 80,
-            "consistency": 71
+            "consistency": 76
           },
           "ratingSource": "stats",
           "stats": {
@@ -1399,7 +1399,7 @@
             "snd_iq": 78,
             "third_mode": 78,
             "clutch": 78,
-            "consistency": 76
+            "consistency": 82
           },
           "ratingSource": "stats",
           "stats": {
@@ -1422,7 +1422,7 @@
             "snd_iq": 81,
             "third_mode": 79,
             "clutch": 81,
-            "consistency": 84
+            "consistency": 80
           },
           "ratingSource": "stats",
           "stats": {
@@ -1445,7 +1445,7 @@
             "snd_iq": 77,
             "third_mode": 81,
             "clutch": 77,
-            "consistency": 85
+            "consistency": 82
           },
           "ratingSource": "stats",
           "stats": {
@@ -1468,7 +1468,7 @@
             "snd_iq": 80,
             "third_mode": 79,
             "clutch": 79,
-            "consistency": 84
+            "consistency": 82
           },
           "ratingSource": "stats",
           "stats": {
@@ -1491,7 +1491,7 @@
             "snd_iq": 79,
             "third_mode": 79,
             "clutch": 79,
-            "consistency": 82
+            "consistency": 86
           },
           "ratingSource": "stats",
           "stats": {
@@ -1514,7 +1514,7 @@
             "snd_iq": 80,
             "third_mode": 78,
             "clutch": 80,
-            "consistency": 80
+            "consistency": 76
           },
           "ratingSource": "stats",
           "stats": {
@@ -1537,7 +1537,7 @@
             "snd_iq": 80,
             "third_mode": 79,
             "clutch": 80,
-            "consistency": 70
+            "consistency": 81
           },
           "ratingSource": "stats",
           "stats": {
@@ -1608,7 +1608,7 @@
             "snd_iq": 82,
             "third_mode": 83,
             "clutch": 82,
-            "consistency": 76
+            "consistency": 74
           },
           "ratingSource": "stats",
           "stats": {
@@ -1631,7 +1631,7 @@
             "snd_iq": 83,
             "third_mode": 81,
             "clutch": 82,
-            "consistency": 78
+            "consistency": 76
           },
           "ratingSource": "stats",
           "stats": {
@@ -1654,7 +1654,7 @@
             "snd_iq": 81,
             "third_mode": 82,
             "clutch": 80,
-            "consistency": 81
+            "consistency": 76
           },
           "ratingSource": "stats",
           "stats": {
@@ -1677,7 +1677,7 @@
             "snd_iq": 81,
             "third_mode": 81,
             "clutch": 82,
-            "consistency": 79
+            "consistency": 77
           },
           "ratingSource": "stats",
           "stats": {
@@ -1734,7 +1734,7 @@
             "snd_iq": 81,
             "third_mode": 85,
             "clutch": 83,
-            "consistency": 92
+            "consistency": 84
           },
           "ratingSource": "stats",
           "stats": {
@@ -1757,7 +1757,7 @@
             "snd_iq": 80,
             "third_mode": 83,
             "clutch": 80,
-            "consistency": 76
+            "consistency": 82
           },
           "ratingSource": "stats",
           "stats": {
@@ -1780,7 +1780,7 @@
             "snd_iq": 81,
             "third_mode": 84,
             "clutch": 81,
-            "consistency": 89
+            "consistency": 81
           },
           "ratingSource": "stats",
           "stats": {
@@ -1803,7 +1803,7 @@
             "snd_iq": 84,
             "third_mode": 83,
             "clutch": 83,
-            "consistency": 87
+            "consistency": 76
           },
           "ratingSource": "stats",
           "stats": {
@@ -1861,7 +1861,7 @@
             "snd_iq": 80,
             "third_mode": 80,
             "clutch": 81,
-            "consistency": 83
+            "consistency": 80
           },
           "ratingSource": "stats",
           "stats": {
@@ -1884,7 +1884,7 @@
             "snd_iq": 79,
             "third_mode": 76,
             "clutch": 80,
-            "consistency": 79
+            "consistency": 78
           },
           "ratingSource": "stats",
           "stats": {
@@ -1907,7 +1907,7 @@
             "snd_iq": 79,
             "third_mode": 79,
             "clutch": 78,
-            "consistency": 75
+            "consistency": 79
           },
           "ratingSource": "stats",
           "stats": {
@@ -1930,7 +1930,7 @@
             "snd_iq": 81,
             "third_mode": 80,
             "clutch": 82,
-            "consistency": 83
+            "consistency": 74
           },
           "ratingSource": "stats",
           "stats": {
@@ -1953,7 +1953,7 @@
             "snd_iq": 78,
             "third_mode": 77,
             "clutch": 78,
-            "consistency": 86
+            "consistency": 87
           },
           "ratingSource": "stats",
           "stats": {
@@ -1976,7 +1976,7 @@
             "snd_iq": 81,
             "third_mode": 79,
             "clutch": 80,
-            "consistency": 73
+            "consistency": 79
           },
           "ratingSource": "stats",
           "stats": {
@@ -2057,7 +2057,7 @@
             "snd_iq": 82,
             "third_mode": 82,
             "clutch": 82,
-            "consistency": 84
+            "consistency": 76
           },
           "ratingSource": "stats",
           "stats": {
@@ -2080,7 +2080,7 @@
             "snd_iq": 81,
             "third_mode": 83,
             "clutch": 80,
-            "consistency": 85
+            "consistency": 71
           },
           "ratingSource": "stats",
           "stats": {
@@ -2103,7 +2103,7 @@
             "snd_iq": 81,
             "third_mode": 81,
             "clutch": 82,
-            "consistency": 82
+            "consistency": 79
           },
           "ratingSource": "stats",
           "stats": {
@@ -2126,7 +2126,7 @@
             "snd_iq": 82,
             "third_mode": 85,
             "clutch": 82,
-            "consistency": 85
+            "consistency": 82
           },
           "ratingSource": "stats",
           "stats": {

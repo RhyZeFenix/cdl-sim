@@ -1,0 +1,556 @@
+{{DISPLAYTITLE:Call of Duty League 2024: Stage 1 Major}}
+{{CDL 2024 Navbox}}
+{{CDL 2024 Stage Tabs}}
+{{tabs static
+|name1=Overview|link1=Call_of_Duty_League/Season_5/Regular_Season
+|name2=Stage 1|link2=Call_of_Duty_League/Season_5/Stage_1
+|name3=Stage 2|link3=Call_of_Duty_League/Season_5/Stage_2
+|name4=Stage 3|link4=Call_of_Duty_League/Season_5/Stage_3
+|name5=Stage 4|link5=Call_of_Duty_League/Season_5/Stage_4
+}}
+{{Tabs static
+|name1=Qualifiers|link1=Call_of_Duty_League/Season_5/Stage_1
+|name2=Major|link2=Call_of_Duty_League/Season_5/Stage_1/Major
+|This=2
+}}
+{{Infobox league
+|name=Call of Duty League 2024: Stage 1 Major
+|tickername=CDL '24 Boston Major
+|image=CDL_2024_Major_1_lightmode.png
+|imagedark=CDL_2024_Major_1_darkmode.png
+|series=Call of Duty League
+|abbreviation=CDL
+
+|organizer=Activision|organizer2=Boston Breach
+|game=mwiii
+|type=Offline
+|country=United States
+|city=Boston
+|venue=MGM Music Hall
+|venuelink=https://crossroadspresents.com/pages/mgm-fenway-music-hall
+|format=4v4
+|sdate=2024-01-25
+|edate=2024-01-28
+|liquipediatier=1|highlighted=true
+|prizepoolusd=375000
+|web=https://callofdutyleague.com/en-us/
+|twitter=codleague
+|facebook=codleague
+|youtube=CODLeague
+|twitch=CallofDuty
+|instagram=codleague
+|team_number=12
+|previous=Call of Duty League/Season 5/Stage 1{{!}} Stage 1 Qualifiers 
+|next=Call of Duty League/Season 5/Stage 2{{!}} Stage 2 Qualifiers 
+}}
+
+==About==
+===Broadcast Talent===
+{{box|start|padding=1em}}
+{{BroadcasterCard
+|position=Hosts
+|b1=Puckett|b1name=Chris Puckett|b1flag=us
+|b2=Blaze
+}}
+{{BroadcasterCard
+|position=Analyst
+|b1=Allycxt
+|b2=NAMELESS
+}}
+{{box|break|padding=1em}}
+{{BroadcasterCard
+|position=Commentator
+|b1=Miles Ross
+|b2=Chance
+|b3=IHOLDSHIFT
+|b4=StuDyy
+|b5=Merk
+|b6=Maven
+}}
+{{box|end}}
+
+===Format===
+* All 12 CDL teams
+* Seeding determinated by [[Call of Duty League/Season_5/Stage 1|Qualifiers]]
+* Double Elimination
+* All matches are {{Abbr/Bo5}}, except for Grand Finals which are {{Abbr/Bo7}}
+
+===Map Pool===
+{{CDL 2024 Map Pool Stage 1}}
+
+===Restricted Items===
+{{GeneralCollapsible|title=Restricted Items|content={{CDL 2024 Bans}}}}
+
+===Prize Pool===
+{{TeamPrizePool|points1=cdl
+|{{Slot|points1=100|usdprize=150,000}}
+|{{Slot|points1=75|usdprize=90,000}}
+|{{Slot|points1=60|usdprize=60,000}}
+|{{Slot|points1=45|usdprize=30,000}}
+|{{Slot|points1=30|usdprize=15,000|place=5-6}}
+|{{Slot|points1=15|usdprize=7,500|place=7-8}}
+|{{Slot|points1=0|usdprize=|place=9-12}}
+}}
+
+===Player Awards===
+{{prize pool start award|noprize=y|margin=false}}
+{{prize pool slot award|award=MVP|CleanX|flag1=dk|team1=tor}}
+{{prize pool end}}
+
+==Participants==
+{{TeamCardToggleButton}}
+{{TeamCard columns start|cols=4|height=180}}
+{{TeamCard
+|team=Atlanta FaZe
+|p1=aBeZy
+|p2=Cellium
+|p3=Drazah
+|p4=Simp
+|t2title=Staff
+|t2c1=Crowder
+|t2c2flag=us|t2c2=RJ
+|t2c3flag=us|t2c3=x2Pac ThuGLorD|t2c3pos={{Abbr|A|Analyst}}
+|t3title=Subs
+|t3p1=Classic|t3p1dnp=true
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_1|Stage 1 - #1 Seed]]
+}}
+{{TeamCard
+|team=Toronto Ultra
+|p1=CleanX
+|p2=Envoy
+|p3=Insight
+|p4=Scrap
+|t2title=Staff
+|t2c1flag=uk|t2c1=Flux
+|t2c2=Joee
+|t3title=Subs
+|t3p1=
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_1|Stage 1 - #2 Seed]]
+}}
+{{TeamCard
+|team=New York Subliners
+|p1=HyDra
+|p2=KiSMET
+|p3=Sib
+|p4=Skyz
+|t2title=Staff
+|t2c1=DREAL
+|t2c2=Sender
+|t3title=Subs
+|t3p1=
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_1|Stage 1 - #3 Seed]]
+}}
+{{TeamCard
+|team=Miami Heretics
+|p1=JurNii
+|p2=Lucky
+|p3=MettalZ
+|p4=Vikul
+|t2title=Staff
+|t2c1=Noel
+|t2c2=MethodZ
+|t3title=Subs
+|t3p1=EriKBooM|t3p1dnp=true
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_1|Stage 1 - #4 Seed]]
+}}
+{{TeamCard
+|team=OpTic Texas
+|p1=Dashy
+|p2=Kenny
+|p3=Pred
+|p4=Shotzzy
+|t2title=Staff
+|t2c1=Karma
+|t2c2flag=us|t2c2=JP Krez|t2c2pos={{Abbr|A|Analyst}}
+|t3title=Subs
+|t3p1=
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_1|Stage 1 - #5 Seed]]
+}}
+{{TeamCard
+|team=Minnesota RØKKR
+|p1=Accuracy
+|p2=Lynz
+|p3=Owakening
+|p4=Vivid
+|t2title=Staff
+|t2c1=Loony
+|t2c2=Alexdotzip
+|t3title=Subs
+|t3p1=
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_1|Stage 1 - #6 Seed]]
+}}
+{{TeamCard
+|team=Seattle Surge
+|p1=Abuzah
+|p2=Arcitys
+|p3=Huke
+|p4=iLLeY
+|t2title=Staff
+|t2c1=Rambo
+|t3title=Subs
+|t3p1=
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_1|Stage 1 - #7 Seed]]
+}}
+{{TeamCard
+|team=Los Angeles Guerrillas
+|p1=Assault
+|p2=Diamondcon
+|p3=Estreal
+|p4=Fame
+|t2title=Staff
+|t2c1flag=|t2c1=Veohz
+|t2c2flag=uk|t2c2=Arian
+|t2c3flag=uk|t2c3=Cheek|t2c3pos={{Abbr|A|Analyst}}
+|t3title=Subs
+|t3p1=Flames|t3p1dnp=true
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_1|Stage 1 - #8 Seed]]
+}}
+{{TeamCard
+|team=Los Angeles Thieves
+|p1=Afro
+|p2=Cammy
+|p3=Ghosty
+|p4=JoeDeceives
+|t2title=Staff
+|t2c1=JKap
+|t2c2=ShAnE
+|t3title=Subs
+|t3p1=
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_1|Stage 1 - #9 Seed]]
+}}
+{{TeamCard
+|team=Boston Breach
+|p1=Capsidal
+|p2=Priestahh
+|p3=SlasheR
+|p4=Snoopy
+|t2title=Staff
+|t2c1=Zed
+|t2c2=Denz |t2c2pos={{Abbr|M|Manager}}
+|t3title=Subs
+|t3p1=Pentagrxm|t3p1dnp=true
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_1|Stage 1 - #10 Seed]]
+}}
+{{TeamCard
+|team=Carolina Royal Ravens
+|p1=Clayster
+|p2=FeLo
+|p3=Gwinn
+|p4=TJHaLy
+|t2title=Staff
+|t2c1=Saintt
+|t3title=Subs
+|t3p1=ReeaL|t3p1dnp=true
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_1|Stage 1 - #11 Seed]]
+}}
+{{TeamCard
+|team=Las Vegas Legion
+|p1=Attach
+|p2=Nero
+|p3=Standy
+|p4=Purj
+|t2title=Staff
+|t2c1=Theory
+|t2c2=Fenix|t2c2flag=us
+|t3title=Subs
+|t3p1=
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_1|Stage 1 - #12 Seed]]
+}}
+{{TeamCard columns end}}
+
+==Results==
+{{Bracket|Bracket/8U8L2DSL1D|id=CDL24S1Maj
+
+|R1M1header=Winners Round 1
+|R3M1header=Winners Round 2
+|R5M1header=Winners Final
+|R1M5header=Elimination Round 1
+|R2M1header=Elimination Round 2
+|R3M3header=Elimination Round 3
+|R4M1header=Elimination Round 4
+|R5M2header=Elimination Final
+|R6M1header=Grand Final
+
+
+<!-- Upper Bracket Quarterfinals -->
+|R1M1={{Match
+    |bestof=5
+    |date=2024-01-25 - 10:30 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12097
+	|breakingpoint=35633
+	|vod=https://www.youtube.com/watch?v=LqHO2WO1UJc
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|lag}}
+    |map1={{Map|map=Skidrow|mode=hp|score1=250|score2=136|winner=1}}
+    |map2={{Map|map=Invasion|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Invasion|mode=con|score1=3|score2=0|winner=1}}
+    |map4={{Map|map=Karachi|mode=hp|winner=skip}}
+    |map5={{Map|map=Highrise|mode=snd|winner=skip}}
+}}
+|R1M2={{Match
+    |date=2024-01-25 - 15:00 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12098
+	|breakingpoint=35634
+	|vod=https://www.youtube.com/watch?v=BkVLIyZV9oQ
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|optx}}
+    |map1={{Map|map=Skidrow|mode=hp|score1=211|score2=250|winner=2}}
+    |map2={{Map|map=Invasion|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Karachi|mode=con|score1=0|score2=3|winner=2}}
+    |map4={{Map|map=Invasion|mode=hp|winner=skip}}
+    |map5={{Map|map=Karachi|mode=snd|winner=skip}}
+}}
+|R1M3={{Match
+    |date=2024-01-25 - 13:45 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12099
+	|breakingpoint=35635
+	|vod=https://www.youtube.com/watch?v=nx_1qa0EXrA
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|sea}}
+    |map1={{Map|map=Skidrow|mode=hp|score1=250|score2=106|winner=1}}
+    |map2={{Map|map=Skidrow|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Karachi|mode=con|score1=3|score2=0|winner=1}}
+    |map4={{Map|map=Karachi|mode=hp|winner=skip}}
+    |map5={{Map|map=Invasion|mode=snd|winner=skip}}
+}}
+|R1M4={{Match
+    |date=2024-01-25 - 11:55 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12100
+	|breakingpoint=35636
+	|vod=https://www.youtube.com/watch?v=aV2uEK0TxSQ
+    |opponent1={{TeamOpponent|ny}}
+    |opponent2={{TeamOpponent|min}}
+    |map1={{Map|map=Invasion|mode=hp|score1=238|score2=250|winner=2}}
+    |map2={{Map|map=Karachi|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Karachi|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Skidrow|mode=hp|winner=skip}}
+    |map5={{Map|map=Invasion|mode=snd|winner=skip}}
+}}
+
+<!-- Upper Bracket Semifinals -->
+|R3M1={{Match
+    |date=2024-01-27 - 12:00 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12101
+	|breakingpoint=35647
+	|vod=https://www.youtube.com/watch?v=vUyIP4IaX5E
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|optx}}
+    |map1={{Map|map=Sub Base|mode=hp|score1=188|score2=250|winner=2}}
+    |map2={{Map|map=Invasion|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Highrise|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Invasion|mode=hp|score1=239|score2=250|winner=2}}
+    |map5={{Map|map=Highrise|mode=snd|score1=6|score2=2|winner=1}}
+}}
+|R3M2={{Match
+    |date=2024-01-27 - 13:30 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12102
+	|breakingpoint=35648
+	|vod=https://www.youtube.com/watch?v=lghPrG0iwXU
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|min}}
+    |map1={{Map|map=Skidrow|mode=hp|score1=250|score2=224|winner=1}}
+    |map2={{Map|map=Karachi|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Invasion|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Sub Base|mode=hp|score1=|score2=|winner=skip}}
+    |map5={{Map|map=Highrise|mode=snd|score1=|score2=|winner=skip}}
+}}
+
+<!-- Upper Bracket Final -->
+|R5M1={{Match
+    |date=2024-01-28 - 12:00 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12103
+	|breakingpoint=35652
+	|vod=https://youtu.be/1flR58QduLI
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=Karachi|mode=hp|score1=214|score2=250|winner=2}}
+    |map2={{Map|map=Invasion|mode=snd|score1=1|score2=6|winner=2}}
+    |map3={{Map|map=Invasion|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Sub Base|mode=hp|score1=128|score2=250|winner=2}}
+    |map5={{Map|map=Karachi|mode=snd|winner=skip}}
+}}
+
+<!-- Lower Bracket Round 1 -->
+|R1M5={{Match
+    |date=2024-01-26 - 11:55 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12106
+	|breakingpoint=35642
+	|vod=https://www.youtube.com/watch?v=DJ7aPdNFvMo
+    |opponent1={{TeamOpponent|lag}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Karachi|mode=hp|score1=250|score2=233|winner=1}}
+    |map2={{Map|map=Invasion|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Karachi|mode=con|score1=0|score2=3|winner=2}}
+    |map4={{Map|map=Skidrow|mode=hp|score1=250|score2=182|winner=1}}
+    |map5={{Map|map=Terminal|mode=snd|winner=skip}}
+}}
+|R1M6={{Match
+    |date=2024-01-26 - 13:25 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12107
+	|breakingpoint=35643
+	|vod=https://www.youtube.com/watch?v=EDfX2xjoYqk
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|lv}}
+    |map1={{Map|map=Invasion|mode=hp|score1=167|score2=250|winner=2}}
+    |map2={{Map|map=Karachi|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Invasion|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Skidrow|mode=hp|winner=skip}}
+    |map5={{Map|map=Invasion|mode=snd|winner=skip}}
+}}
+|R1M7={{Match
+    |date=2024-01-26 - 15:00 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12108
+	|breakingpoint=35644
+	|vod=https://www.youtube.com/watch?v=BHjKjFf-wKU
+    |opponent1={{TeamOpponent|sea}}
+    |opponent2={{TeamOpponent|bos}}
+    |map1={{Map|map=Sub Base|mode=hp|score1=196|score2=250|winner=2}}
+    |map2={{Map|map=Invasion|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Karachi|mode=con|score1=0|score2=3|winner=2}}
+    |map4={{Map|map=Karachi|mode=hp|score1=250|score2=226|winner=1}}
+    |map5={{Map|map=Highrise|mode=snd|score1=6|score2=1|winner=1}}
+}}
+|R1M8={{Match
+    |date=2024-01-26 - 10:30 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12109
+	|breakingpoint=35641
+	|vod=https://www.youtube.com/watch?v=c1PqgDdl1W4
+    |opponent1={{TeamOpponent|ny}}
+    |opponent2={{TeamOpponent|car}}
+    |map1={{Map|map=Karachi|mode=hp|score1=238|score2=250|winner=2}}
+    |map2={{Map|map=Invasion|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Karachi|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Terminal|mode=hp|score1=128|score2=250|winner=2}}
+    |map5={{Map|map=Highrise|mode=snd|winner=skip}}
+}}
+
+<!-- Lower Bracket Round 2 -->
+|R2M1={{Match
+    |date=2024-01-26 - 16:30 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12110
+	|breakingpoint=35645
+	|vod=https://www.youtube.com/watch?v=_wTjqcWfoeI
+    |opponent1={{TeamOpponent|lag}}
+    |opponent2={{TeamOpponent|lv}}
+    |map1={{Map|map=Skidrow|mode=hp|score1=227|score2=250|winner=2}}
+    |map2={{Map|map=Invasion|mode=snd|score1=1|score2=6|winner=2}}
+    |map3={{Map|map=Highrise|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Karachi|mode=hp|score1=250|score2=227|winner=1}}
+    |map5={{Map|map=Terminal|mode=snd|score1=6|score2=1|winner=1}}
+}}
+|R2M2={{Match
+    |date=2024-01-27 - 10:30 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12111
+	|breakingpoint=35646
+	|vod=https://www.youtube.com/watch?v=GZTf3hzwUyU
+    |opponent1={{TeamOpponent|sea}}
+    |opponent2={{TeamOpponent|car}}
+    |map1={{Map|map=Karachi|mode=hp|score1=159|score2=250|winner=2}}
+    |map2={{Map|map=Karachi|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Invasion|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Invasion|mode=hp|score1=250|score2=247|winner=1}}
+    |map5={{Map|map=Terminal|mode=snd|score1=6|score2=1|winner=1}}
+}}
+
+<!-- Lower Bracket Quarterfinals -->
+|R3M3={{Match
+    |date=2024-01-27 - 16:30 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12112
+	|breakingpoint=35650
+	|vod=
+    |opponent1={{TeamOpponent|min}}
+    |opponent2={{TeamOpponent|lag}}
+    |map1={{Map|map=Karachi|mode=hp|score1=215|score2=250|winner=2}}
+    |map2={{Map|map=Invasion|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Invasion|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Skidrow|mode=hp|score1=250|score2=135|winner=1}}
+    |map5={{Map|map=Terminal|mode=snd|score1=6|score2=3|winner=1}}
+}}
+|R3M4={{Match
+    |date=2024-01-27 - 15:00 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12113
+	|breakingpoint=35649
+	|vod=https://www.youtube.com/watch?v=yy6EruRoUus
+    |opponent1={{TeamOpponent|optx}}
+    |opponent2={{TeamOpponent|sea}}
+    |map1={{Map|map=Sub Base|mode=hp|score1=250|score2=165|winner=1}}
+    |map2={{Map|map=Terminal|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Invasion|mode=con|score1=3|score2=0|winner=1}}
+    |map4={{Map|map=Terminal|mode=hp|score1=250|score2=137|winner=1}}
+    |map5={{Map|map=Invasion|mode=snd|score1=|score2=|winner=skip}}
+}}
+
+<!-- Lower Bracket Semifinal -->
+|R4M1={{Match
+    |date=2024-01-28 - 10:30 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12114
+	|breakingpoint=35651
+	|vod=https://www.youtube.com/watch?v=u7vpbepaDlo
+    |opponent1={{TeamOpponent|min}}
+    |opponent2={{TeamOpponent|optx}}
+    |map1={{Map|map=Invasion|mode=hp|score1=149|score2=250|winner=2}}
+    |map2={{Map|map=Karachi|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Invasion|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Skidrow|mode=hp|score1=176|score2=250|winner=2}}
+    |map5={{Map|map=Invasion|mode=snd|winner=skip}}
+}}
+
+<!-- Lower Bracket Final -->
+|R5M2={{Match
+    |date=2024-01-28 - 13:30 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12115
+	|breakingpoint=35653
+	|vod=https://youtu.be/Bl7V4R-TR9Y
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|optx}}
+    |map1={{Map|map=Terminal|mode=hp|score1=250|score2=169|winner=1}}
+    |map2={{Map|map=Invasion|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Invasion|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Invasion|mode=hp|score1=250|score2=212|winner=1}}
+    |map5={{Map|map=Karachi|mode=snd|winner=skip}}
+}}
+
+<!-- Grand Final -->
+|R6M1={{Match|bestof=7
+    |date=2024-01-28 - 15:00 {{Abbr/PST}}
+    |youtube=CODLeague
+	|cdl=12104
+	|breakingpoint=35654
+	|vod=https://youtu.be/MbBdLBhEzDI
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|atl}}
+    |map1={{Map|map=Karachi|mode=hp|score1=250|score2=239|winner=1}}
+    |map2={{Map|map=Skidrow|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Invasion|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Skidrow|mode=hp|score1=250|score2=237|winner=1}}
+    |map5={{Map|map=Karachi|mode=snd|score1=6|score2=2|winner=1}}
+    |map6={{Map|map=Karachi|mode=con|winner=skip}}
+    |map7={{Map|map=Invasion|mode=snd|winner=skip}}
+}}
+}}
+
+==Additional Information==
+===Country Representation===
+{{Country representation}}
+===Streams===
+{{#lst:Call of Duty_League/Season_5/Stage_1|Streams}}
+
+==References==
+{{reflist}}

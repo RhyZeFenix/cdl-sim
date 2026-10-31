@@ -1,0 +1,1772 @@
+{
+ "season": "2026",
+ "fetched": "2026-10-31",
+ "source": "https://cod-esports.fandom.com/api.php (Cargo table PlayerStats)",
+ "license": "CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors",
+ "rows": [
+  {
+   "PlayerLink": "04",
+   "Gamemode": "Hardpoint",
+   "Maps": "100",
+   "PM": "57",
+   "PM2": "7021"
+  },
+  {
+   "PlayerLink": "04",
+   "Gamemode": "Overload",
+   "Maps": "63",
+   "PM": "-66",
+   "PM2": "3028"
+  },
+  {
+   "PlayerLink": "04",
+   "Gamemode": "Search and Destroy",
+   "Maps": "85",
+   "PM": "-4",
+   "PM2": "1182"
+  },
+  {
+   "PlayerLink": "Abe",
+   "Gamemode": "Hardpoint",
+   "Maps": "41",
+   "PM": "-64",
+   "PM2": "2138"
+  },
+  {
+   "PlayerLink": "Abe",
+   "Gamemode": "Overload",
+   "Maps": "28",
+   "PM": "-83",
+   "PM2": "1667"
+  },
+  {
+   "PlayerLink": "Abe",
+   "Gamemode": "Search and Destroy",
+   "Maps": "35",
+   "PM": "-31",
+   "PM2": "533"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "Gamemode": "Hardpoint",
+   "Maps": "93",
+   "PM": "103",
+   "PM2": "3531"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "Gamemode": "Overload",
+   "Maps": "63",
+   "PM": "11",
+   "PM2": "1899"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "80",
+   "PM": "44",
+   "PM2": "1116"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "Gamemode": "Hardpoint",
+   "Maps": "100",
+   "PM": "150",
+   "PM2": "5752"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "Gamemode": "Overload",
+   "Maps": "63",
+   "PM": "139",
+   "PM2": "2317"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "Gamemode": "Search and Destroy",
+   "Maps": "85",
+   "PM": "52",
+   "PM2": "918"
+  },
+  {
+   "PlayerLink": "Afro",
+   "Gamemode": "Hardpoint",
+   "Maps": "55",
+   "PM": "9",
+   "PM2": "2667"
+  },
+  {
+   "PlayerLink": "Afro",
+   "Gamemode": "Overload",
+   "Maps": "31",
+   "PM": "22",
+   "PM2": "1332"
+  },
+  {
+   "PlayerLink": "Afro",
+   "Gamemode": "Search and Destroy",
+   "Maps": "42",
+   "PM": "-18",
+   "PM2": "396"
+  },
+  {
+   "PlayerLink": "Alluka",
+   "Gamemode": "Hardpoint",
+   "Maps": "8",
+   "PM": "20",
+   "PM2": "360"
+  },
+  {
+   "PlayerLink": "Alluka",
+   "Gamemode": "Overload",
+   "Maps": "5",
+   "PM": "11",
+   "PM2": "123"
+  },
+  {
+   "PlayerLink": "Alluka",
+   "Gamemode": "Search and Destroy",
+   "Maps": "6",
+   "PM": "11",
+   "PM2": "75"
+  },
+  {
+   "PlayerLink": "Aspekt",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "PM": "-24",
+   "PM2": "264"
+  },
+  {
+   "PlayerLink": "Aspekt",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "PM": "-27",
+   "PM2": "347"
+  },
+  {
+   "PlayerLink": "Aspekt",
+   "Gamemode": "Search and Destroy",
+   "Maps": "3",
+   "PM": "-4",
+   "PM2": "24"
+  },
+  {
+   "PlayerLink": "Beans",
+   "Gamemode": "Hardpoint",
+   "Maps": "27",
+   "PM": "-91",
+   "PM2": "1335"
+  },
+  {
+   "PlayerLink": "Beans",
+   "Gamemode": "Overload",
+   "Maps": "15",
+   "PM": "-12",
+   "PM2": "350"
+  },
+  {
+   "PlayerLink": "Beans",
+   "Gamemode": "Search and Destroy",
+   "Maps": "22",
+   "PM": "46",
+   "PM2": "640"
+  },
+  {
+   "PlayerLink": "Brack",
+   "Gamemode": "Hardpoint",
+   "Maps": "7",
+   "PM": "-26",
+   "PM2": "412"
+  },
+  {
+   "PlayerLink": "Brack",
+   "Gamemode": "Overload",
+   "Maps": "5",
+   "PM": "-26",
+   "PM2": "298"
+  },
+  {
+   "PlayerLink": "Brack",
+   "Gamemode": "Search and Destroy",
+   "Maps": "7",
+   "PM": "11",
+   "PM2": "133"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "Gamemode": "Hardpoint",
+   "Maps": "26",
+   "PM": "-30",
+   "PM2": "1582"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "Gamemode": "Overload",
+   "Maps": "14",
+   "PM": "-46",
+   "PM2": "642"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "18",
+   "PM": "-26",
+   "PM2": "258"
+  },
+  {
+   "PlayerLink": "Capsidal",
+   "Gamemode": "Hardpoint",
+   "Maps": "15",
+   "PM": "-64",
+   "PM2": "792"
+  },
+  {
+   "PlayerLink": "Capsidal",
+   "Gamemode": "Overload",
+   "Maps": "9",
+   "PM": "-41",
+   "PM2": "539"
+  },
+  {
+   "PlayerLink": "Capsidal",
+   "Gamemode": "Search and Destroy",
+   "Maps": "11",
+   "PM": "0",
+   "PM2": "88"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "Gamemode": "Hardpoint",
+   "Maps": "82",
+   "PM": "241",
+   "PM2": "3529"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "Gamemode": "Overload",
+   "Maps": "51",
+   "PM": "164",
+   "PM2": "2076"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "Gamemode": "Search and Destroy",
+   "Maps": "64",
+   "PM": "-7",
+   "PM2": "749"
+  },
+  {
+   "PlayerLink": "Censor",
+   "Gamemode": "Hardpoint",
+   "Maps": "5",
+   "PM": "-44",
+   "PM2": "506"
+  },
+  {
+   "PlayerLink": "Censor",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "PM": "-31",
+   "PM2": "349"
+  },
+  {
+   "PlayerLink": "Censor",
+   "Gamemode": "Search and Destroy",
+   "Maps": "4",
+   "PM": "-8",
+   "PM2": "42"
+  },
+  {
+   "PlayerLink": "Cimbels",
+   "Gamemode": "Hardpoint",
+   "Maps": "2",
+   "PM": "-13",
+   "PM2": "97"
+  },
+  {
+   "PlayerLink": "Cimbels",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "PM": "-13",
+   "PM2": "85"
+  },
+  {
+   "PlayerLink": "Cimbels",
+   "Gamemode": "Search and Destroy",
+   "Maps": "2",
+   "PM": "-8",
+   "PM2": "32"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "Gamemode": "Hardpoint",
+   "Maps": "86",
+   "PM": "-17",
+   "PM2": "2723"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "Gamemode": "Overload",
+   "Maps": "56",
+   "PM": "41",
+   "PM2": "2681"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "Gamemode": "Search and Destroy",
+   "Maps": "70",
+   "PM": "-48",
+   "PM2": "718"
+  },
+  {
+   "PlayerLink": "Craze",
+   "Gamemode": "Hardpoint",
+   "Maps": "67",
+   "PM": "-139",
+   "PM2": "2749"
+  },
+  {
+   "PlayerLink": "Craze",
+   "Gamemode": "Overload",
+   "Maps": "42",
+   "PM": "-72",
+   "PM2": "1976"
+  },
+  {
+   "PlayerLink": "Craze",
+   "Gamemode": "Search and Destroy",
+   "Maps": "54",
+   "PM": "-30",
+   "PM2": "632"
+  },
+  {
+   "PlayerLink": "d7om",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "PM": "-33",
+   "PM2": "563"
+  },
+  {
+   "PlayerLink": "d7om",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "PM": "-7",
+   "PM2": "49"
+  },
+  {
+   "PlayerLink": "d7om",
+   "Gamemode": "Search and Destroy",
+   "Maps": "2",
+   "PM": "-5",
+   "PM2": "17"
+  },
+  {
+   "PlayerLink": "d7oom",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "PM": "-22",
+   "PM2": "174"
+  },
+  {
+   "PlayerLink": "d7oom",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "PM": "-14",
+   "PM2": "130"
+  },
+  {
+   "PlayerLink": "d7oom",
+   "Gamemode": "Search and Destroy",
+   "Maps": "2",
+   "PM": "2",
+   "PM2": "34"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "Gamemode": "Hardpoint",
+   "Maps": "97",
+   "PM": "21",
+   "PM2": "3883"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "Gamemode": "Overload",
+   "Maps": "68",
+   "PM": "164",
+   "PM2": "2638"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "86",
+   "PM": "16",
+   "PM2": "1126"
+  },
+  {
+   "PlayerLink": "Denza",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "PM": "-24",
+   "PM2": "288"
+  },
+  {
+   "PlayerLink": "Denza",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "PM": "-15",
+   "PM2": "459"
+  },
+  {
+   "PlayerLink": "Denza",
+   "Gamemode": "Search and Destroy",
+   "Maps": "3",
+   "PM": "-9",
+   "PM2": "41"
+  },
+  {
+   "PlayerLink": "Derek",
+   "Gamemode": "Hardpoint",
+   "Maps": "2",
+   "PM": "-12",
+   "PM2": "104"
+  },
+  {
+   "PlayerLink": "Derek",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "PM": "-7",
+   "PM2": "25"
+  },
+  {
+   "PlayerLink": "Derek",
+   "Gamemode": "Search and Destroy",
+   "Maps": "2",
+   "PM": "-2",
+   "PM2": "2"
+  },
+  {
+   "PlayerLink": "Diamondcon",
+   "Gamemode": "Hardpoint",
+   "Maps": "9",
+   "PM": "-29",
+   "PM2": "367"
+  },
+  {
+   "PlayerLink": "Diamondcon",
+   "Gamemode": "Overload",
+   "Maps": "5",
+   "PM": "-16",
+   "PM2": "114"
+  },
+  {
+   "PlayerLink": "Diamondcon",
+   "Gamemode": "Search and Destroy",
+   "Maps": "7",
+   "PM": "0",
+   "PM2": "52"
+  },
+  {
+   "PlayerLink": "DK",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "PM": "-8",
+   "PM2": "50"
+  },
+  {
+   "PlayerLink": "DK",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "PM": "-1",
+   "PM2": "53"
+  },
+  {
+   "PlayerLink": "DK",
+   "Gamemode": "Search and Destroy",
+   "Maps": "3",
+   "PM": "2",
+   "PM2": "12"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "Gamemode": "Hardpoint",
+   "Maps": "100",
+   "PM": "2",
+   "PM2": "4736"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "Gamemode": "Overload",
+   "Maps": "63",
+   "PM": "21",
+   "PM2": "2309"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "Gamemode": "Search and Destroy",
+   "Maps": "85",
+   "PM": "-22",
+   "PM2": "1130"
+  },
+  {
+   "PlayerLink": "Encourage",
+   "Gamemode": "Hardpoint",
+   "Maps": "45",
+   "PM": "-108",
+   "PM2": "2154"
+  },
+  {
+   "PlayerLink": "Encourage",
+   "Gamemode": "Overload",
+   "Maps": "29",
+   "PM": "-60",
+   "PM2": "946"
+  },
+  {
+   "PlayerLink": "Encourage",
+   "Gamemode": "Search and Destroy",
+   "Maps": "32",
+   "PM": "-29",
+   "PM2": "415"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "Gamemode": "Hardpoint",
+   "Maps": "101",
+   "PM": "-271",
+   "PM2": "5041"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "Gamemode": "Overload",
+   "Maps": "60",
+   "PM": "-191",
+   "PM2": "2269"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "81",
+   "PM": "-29",
+   "PM2": "805"
+  },
+  {
+   "PlayerLink": "EriKBooM",
+   "Gamemode": "Hardpoint",
+   "Maps": "7",
+   "PM": "-26",
+   "PM2": "278"
+  },
+  {
+   "PlayerLink": "EriKBooM",
+   "Gamemode": "Overload",
+   "Maps": "5",
+   "PM": "-24",
+   "PM2": "194"
+  },
+  {
+   "PlayerLink": "EriKBooM",
+   "Gamemode": "Search and Destroy",
+   "Maps": "6",
+   "PM": "-5",
+   "PM2": "35"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "Gamemode": "Hardpoint",
+   "Maps": "91",
+   "PM": "94",
+   "PM2": "4010"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "Gamemode": "Overload",
+   "Maps": "61",
+   "PM": "102",
+   "PM2": "2832"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "Gamemode": "Search and Destroy",
+   "Maps": "77",
+   "PM": "-6",
+   "PM2": "826"
+  },
+  {
+   "PlayerLink": "Ethan",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "PM": "-4",
+   "PM2": "10"
+  },
+  {
+   "PlayerLink": "Ethan",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "PM": "10",
+   "PM2": "306"
+  },
+  {
+   "PlayerLink": "Ethan",
+   "Gamemode": "Search and Destroy",
+   "Maps": "3",
+   "PM": "0",
+   "PM2": "72"
+  },
+  {
+   "PlayerLink": "Exceed",
+   "Gamemode": "Hardpoint",
+   "Maps": "59",
+   "PM": "-64",
+   "PM2": "2174"
+  },
+  {
+   "PlayerLink": "Exceed",
+   "Gamemode": "Overload",
+   "Maps": "36",
+   "PM": "-43",
+   "PM2": "1929"
+  },
+  {
+   "PlayerLink": "Exceed",
+   "Gamemode": "Search and Destroy",
+   "Maps": "48",
+   "PM": "-3",
+   "PM2": "373"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "Gamemode": "Hardpoint",
+   "Maps": "82",
+   "PM": "4",
+   "PM2": "3444"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "Gamemode": "Overload",
+   "Maps": "51",
+   "PM": "8",
+   "PM2": "1814"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "Gamemode": "Search and Destroy",
+   "Maps": "64",
+   "PM": "-39",
+   "PM2": "635"
+  },
+  {
+   "PlayerLink": "FeLo",
+   "Gamemode": "Hardpoint",
+   "Maps": "4",
+   "PM": "2",
+   "PM2": "130"
+  },
+  {
+   "PlayerLink": "FeLo",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "PM": "4",
+   "PM2": "90"
+  },
+  {
+   "PlayerLink": "FeLo",
+   "Gamemode": "Search and Destroy",
+   "Maps": "4",
+   "PM": "-3",
+   "PM2": "57"
+  },
+  {
+   "PlayerLink": "Fire",
+   "Gamemode": "Hardpoint",
+   "Maps": "28",
+   "PM": "-23",
+   "PM2": "1305"
+  },
+  {
+   "PlayerLink": "Fire",
+   "Gamemode": "Overload",
+   "Maps": "17",
+   "PM": "-5",
+   "PM2": "473"
+  },
+  {
+   "PlayerLink": "Fire",
+   "Gamemode": "Search and Destroy",
+   "Maps": "25",
+   "PM": "-46",
+   "PM2": "330"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "Gamemode": "Hardpoint",
+   "Maps": "103",
+   "PM": "193",
+   "PM2": "6797"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "Gamemode": "Overload",
+   "Maps": "64",
+   "PM": "42",
+   "PM2": "2784"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "Gamemode": "Search and Destroy",
+   "Maps": "83",
+   "PM": "-23",
+   "PM2": "853"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "Gamemode": "Hardpoint",
+   "Maps": "50",
+   "PM": "-72",
+   "PM2": "2370"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "Gamemode": "Overload",
+   "Maps": "32",
+   "PM": "-99",
+   "PM2": "2185"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "Gamemode": "Search and Destroy",
+   "Maps": "37",
+   "PM": "-5",
+   "PM2": "553"
+  },
+  {
+   "PlayerLink": "Hide",
+   "Gamemode": "Hardpoint",
+   "Maps": "47",
+   "PM": "-235",
+   "PM2": "2509"
+  },
+  {
+   "PlayerLink": "Hide",
+   "Gamemode": "Overload",
+   "Maps": "30",
+   "PM": "-134",
+   "PM2": "1526"
+  },
+  {
+   "PlayerLink": "Hide",
+   "Gamemode": "Search and Destroy",
+   "Maps": "34",
+   "PM": "-7",
+   "PM2": "405"
+  },
+  {
+   "PlayerLink": "Huke",
+   "Gamemode": "Hardpoint",
+   "Maps": "97",
+   "PM": "141",
+   "PM2": "4535"
+  },
+  {
+   "PlayerLink": "Huke",
+   "Gamemode": "Overload",
+   "Maps": "68",
+   "PM": "177",
+   "PM2": "2813"
+  },
+  {
+   "PlayerLink": "Huke",
+   "Gamemode": "Search and Destroy",
+   "Maps": "86",
+   "PM": "-28",
+   "PM2": "936"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "Gamemode": "Hardpoint",
+   "Maps": "93",
+   "PM": "48",
+   "PM2": "4116"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "Gamemode": "Overload",
+   "Maps": "63",
+   "PM": "77",
+   "PM2": "2437"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "Gamemode": "Search and Destroy",
+   "Maps": "80",
+   "PM": "102",
+   "PM2": "962"
+  },
+  {
+   "PlayerLink": "Insight",
+   "Gamemode": "Hardpoint",
+   "Maps": "86",
+   "PM": "-140",
+   "PM2": "3944"
+  },
+  {
+   "PlayerLink": "Insight",
+   "Gamemode": "Overload",
+   "Maps": "56",
+   "PM": "38",
+   "PM2": "1846"
+  },
+  {
+   "PlayerLink": "Insight",
+   "Gamemode": "Search and Destroy",
+   "Maps": "70",
+   "PM": "-61",
+   "PM2": "651"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "Gamemode": "Hardpoint",
+   "Maps": "93",
+   "PM": "335",
+   "PM2": "5751"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "Gamemode": "Overload",
+   "Maps": "60",
+   "PM": "218",
+   "PM2": "3594"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "Gamemode": "Search and Destroy",
+   "Maps": "74",
+   "PM": "69",
+   "PM2": "1073"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "Gamemode": "Hardpoint",
+   "Maps": "19",
+   "PM": "-62",
+   "PM2": "1280"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "Gamemode": "Overload",
+   "Maps": "14",
+   "PM": "-31",
+   "PM2": "1131"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "Gamemode": "Search and Destroy",
+   "Maps": "17",
+   "PM": "-12",
+   "PM2": "218"
+  },
+  {
+   "PlayerLink": "Khhx",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "PM": "-14",
+   "PM2": "170"
+  },
+  {
+   "PlayerLink": "Khhx",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "PM": "-1",
+   "PM2": "41"
+  },
+  {
+   "PlayerLink": "Khhx",
+   "Gamemode": "Search and Destroy",
+   "Maps": "2",
+   "PM": "1",
+   "PM2": "13"
+  },
+  {
+   "PlayerLink": "Kips",
+   "Gamemode": "Hardpoint",
+   "Maps": "60",
+   "PM": "18",
+   "PM2": "2056"
+  },
+  {
+   "PlayerLink": "Kips",
+   "Gamemode": "Overload",
+   "Maps": "40",
+   "PM": "26",
+   "PM2": "1382"
+  },
+  {
+   "PlayerLink": "Kips",
+   "Gamemode": "Search and Destroy",
+   "Maps": "48",
+   "PM": "55",
+   "PM2": "705"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "Gamemode": "Hardpoint",
+   "Maps": "82",
+   "PM": "-44",
+   "PM2": "3420"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "Gamemode": "Overload",
+   "Maps": "51",
+   "PM": "-110",
+   "PM2": "2306"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "Gamemode": "Search and Destroy",
+   "Maps": "64",
+   "PM": "14",
+   "PM2": "676"
+  },
+  {
+   "PlayerLink": "KnoX",
+   "Gamemode": "Hardpoint",
+   "Maps": "4",
+   "PM": "-6",
+   "PM2": "142"
+  },
+  {
+   "PlayerLink": "KnoX",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "PM": "-10",
+   "PM2": "66"
+  },
+  {
+   "PlayerLink": "KnoX",
+   "Gamemode": "Search and Destroy",
+   "Maps": "4",
+   "PM": "7",
+   "PM2": "53"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "Gamemode": "Hardpoint",
+   "Maps": "89",
+   "PM": "76",
+   "PM2": "4714"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "Gamemode": "Overload",
+   "Maps": "57",
+   "PM": "52",
+   "PM2": "2408"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "Gamemode": "Search and Destroy",
+   "Maps": "75",
+   "PM": "88",
+   "PM2": "1016"
+  },
+  {
+   "PlayerLink": "Lqgend",
+   "Gamemode": "Hardpoint",
+   "Maps": "9",
+   "PM": "-59",
+   "PM2": "503"
+  },
+  {
+   "PlayerLink": "Lqgend",
+   "Gamemode": "Overload",
+   "Maps": "6",
+   "PM": "-28",
+   "PM2": "254"
+  },
+  {
+   "PlayerLink": "Lqgend",
+   "Gamemode": "Search and Destroy",
+   "Maps": "8",
+   "PM": "-16",
+   "PM2": "72"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "Gamemode": "Hardpoint",
+   "Maps": "61",
+   "PM": "33",
+   "PM2": "2797"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "Gamemode": "Overload",
+   "Maps": "40",
+   "PM": "-27",
+   "PM2": "1131"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "Gamemode": "Search and Destroy",
+   "Maps": "48",
+   "PM": "-18",
+   "PM2": "554"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "Gamemode": "Hardpoint",
+   "Maps": "68",
+   "PM": "175",
+   "PM2": "3289"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "Gamemode": "Overload",
+   "Maps": "42",
+   "PM": "22",
+   "PM2": "1474"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "Gamemode": "Search and Destroy",
+   "Maps": "55",
+   "PM": "-11",
+   "PM2": "593"
+  },
+  {
+   "PlayerLink": "Mack",
+   "Gamemode": "Hardpoint",
+   "Maps": "23",
+   "PM": "-23",
+   "PM2": "1081"
+  },
+  {
+   "PlayerLink": "Mack",
+   "Gamemode": "Overload",
+   "Maps": "13",
+   "PM": "-24",
+   "PM2": "372"
+  },
+  {
+   "PlayerLink": "Mack",
+   "Gamemode": "Search and Destroy",
+   "Maps": "19",
+   "PM": "-47",
+   "PM2": "331"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "Gamemode": "Hardpoint",
+   "Maps": "77",
+   "PM": "-61",
+   "PM2": "3655"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "Gamemode": "Overload",
+   "Maps": "52",
+   "PM": "-61",
+   "PM2": "1943"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "Gamemode": "Search and Destroy",
+   "Maps": "67",
+   "PM": "-34",
+   "PM2": "764"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "Gamemode": "Hardpoint",
+   "Maps": "97",
+   "PM": "92",
+   "PM2": "4536"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "Gamemode": "Overload",
+   "Maps": "68",
+   "PM": "52",
+   "PM2": "2456"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "Gamemode": "Search and Destroy",
+   "Maps": "86",
+   "PM": "144",
+   "PM2": "1226"
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "Gamemode": "Hardpoint",
+   "Maps": "78",
+   "PM": "-130",
+   "PM2": "3624"
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "Gamemode": "Overload",
+   "Maps": "52",
+   "PM": "-178",
+   "PM2": "3078"
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "Gamemode": "Search and Destroy",
+   "Maps": "64",
+   "PM": "-57",
+   "PM2": "965"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "Gamemode": "Hardpoint",
+   "Maps": "76",
+   "PM": "17",
+   "PM2": "2269"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "Gamemode": "Overload",
+   "Maps": "43",
+   "PM": "54",
+   "PM2": "1528"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "Gamemode": "Search and Destroy",
+   "Maps": "56",
+   "PM": "-15",
+   "PM2": "801"
+  },
+  {
+   "PlayerLink": "Nate",
+   "Gamemode": "Hardpoint",
+   "Maps": "4",
+   "PM": "-1",
+   "PM2": "161"
+  },
+  {
+   "PlayerLink": "Nate",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "PM": "-26",
+   "PM2": "244"
+  },
+  {
+   "PlayerLink": "Nate",
+   "Gamemode": "Search and Destroy",
+   "Maps": "4",
+   "PM": "-5",
+   "PM2": "13"
+  },
+  {
+   "PlayerLink": "Nejra",
+   "Gamemode": "Hardpoint",
+   "Maps": "43",
+   "PM": "-109",
+   "PM2": "1983"
+  },
+  {
+   "PlayerLink": "Nejra",
+   "Gamemode": "Overload",
+   "Maps": "27",
+   "PM": "5",
+   "PM2": "1067"
+  },
+  {
+   "PlayerLink": "Nejra",
+   "Gamemode": "Search and Destroy",
+   "Maps": "30",
+   "PM": "-18",
+   "PM2": "254"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "Gamemode": "Hardpoint",
+   "Maps": "80",
+   "PM": "144",
+   "PM2": "3684"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "Gamemode": "Overload",
+   "Maps": "49",
+   "PM": "50",
+   "PM2": "1432"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "Gamemode": "Search and Destroy",
+   "Maps": "64",
+   "PM": "-34",
+   "PM2": "850"
+  },
+  {
+   "PlayerLink": "Nero",
+   "Gamemode": "Hardpoint",
+   "Maps": "64",
+   "PM": "20",
+   "PM2": "3608"
+  },
+  {
+   "PlayerLink": "Nero",
+   "Gamemode": "Overload",
+   "Maps": "41",
+   "PM": "-3",
+   "PM2": "1657"
+  },
+  {
+   "PlayerLink": "Nero",
+   "Gamemode": "Search and Destroy",
+   "Maps": "50",
+   "PM": "-24",
+   "PM2": "766"
+  },
+  {
+   "PlayerLink": "Nium",
+   "Gamemode": "Hardpoint",
+   "Maps": "74",
+   "PM": "-104",
+   "PM2": "3066"
+  },
+  {
+   "PlayerLink": "Nium",
+   "Gamemode": "Overload",
+   "Maps": "49",
+   "PM": "-23",
+   "PM2": "2805"
+  },
+  {
+   "PlayerLink": "Nium",
+   "Gamemode": "Search and Destroy",
+   "Maps": "63",
+   "PM": "-3",
+   "PM2": "677"
+  },
+  {
+   "PlayerLink": "oJohnny",
+   "Gamemode": "Hardpoint",
+   "Maps": "8",
+   "PM": "-11",
+   "PM2": "229"
+  },
+  {
+   "PlayerLink": "oJohnny",
+   "Gamemode": "Overload",
+   "Maps": "5",
+   "PM": "-8",
+   "PM2": "190"
+  },
+  {
+   "PlayerLink": "oJohnny",
+   "Gamemode": "Search and Destroy",
+   "Maps": "7",
+   "PM": "-14",
+   "PM2": "44"
+  },
+  {
+   "PlayerLink": "Okis",
+   "Gamemode": "Hardpoint",
+   "Maps": "31",
+   "PM": "-217",
+   "PM2": "2523"
+  },
+  {
+   "PlayerLink": "Okis",
+   "Gamemode": "Overload",
+   "Maps": "20",
+   "PM": "-135",
+   "PM2": "1711"
+  },
+  {
+   "PlayerLink": "Okis",
+   "Gamemode": "Search and Destroy",
+   "Maps": "22",
+   "PM": "-9",
+   "PM2": "133"
+  },
+  {
+   "PlayerLink": "Pred",
+   "Gamemode": "Hardpoint",
+   "Maps": "74",
+   "PM": "121",
+   "PM2": "3007"
+  },
+  {
+   "PlayerLink": "Pred",
+   "Gamemode": "Overload",
+   "Maps": "46",
+   "PM": "92",
+   "PM2": "1354"
+  },
+  {
+   "PlayerLink": "Pred",
+   "Gamemode": "Search and Destroy",
+   "Maps": "58",
+   "PM": "-2",
+   "PM2": "796"
+  },
+  {
+   "PlayerLink": "Prolute",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "PM": "-8",
+   "PM2": "200"
+  },
+  {
+   "PlayerLink": "Prolute",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "PM": "-11",
+   "PM2": "145"
+  },
+  {
+   "PlayerLink": "Prolute",
+   "Gamemode": "Search and Destroy",
+   "Maps": "3",
+   "PM": "-1",
+   "PM2": "43"
+  },
+  {
+   "PlayerLink": "Purj",
+   "Gamemode": "Hardpoint",
+   "Maps": "70",
+   "PM": "-233",
+   "PM2": "4069"
+  },
+  {
+   "PlayerLink": "Purj",
+   "Gamemode": "Overload",
+   "Maps": "39",
+   "PM": "-95",
+   "PM2": "2247"
+  },
+  {
+   "PlayerLink": "Purj",
+   "Gamemode": "Search and Destroy",
+   "Maps": "49",
+   "PM": "-32",
+   "PM2": "662"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "Gamemode": "Hardpoint",
+   "Maps": "40",
+   "PM": "-39",
+   "PM2": "1597"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "Gamemode": "Overload",
+   "Maps": "25",
+   "PM": "-12",
+   "PM2": "1296"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "Gamemode": "Search and Destroy",
+   "Maps": "34",
+   "PM": "-30",
+   "PM2": "450"
+  },
+  {
+   "PlayerLink": "Renegade",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "PM": "16",
+   "PM2": "416"
+  },
+  {
+   "PlayerLink": "Renegade",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "PM": "-8",
+   "PM2": "64"
+  },
+  {
+   "PlayerLink": "Renegade",
+   "Gamemode": "Search and Destroy",
+   "Maps": "3",
+   "PM": "1",
+   "PM2": "29"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "Gamemode": "Hardpoint",
+   "Maps": "78",
+   "PM": "283",
+   "PM2": "4649"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "Gamemode": "Overload",
+   "Maps": "52",
+   "PM": "60",
+   "PM2": "2702"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "Gamemode": "Search and Destroy",
+   "Maps": "64",
+   "PM": "12",
+   "PM2": "834"
+  },
+  {
+   "PlayerLink": "Rxld",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "PM": "-19",
+   "PM2": "189"
+  },
+  {
+   "PlayerLink": "Rxld",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "PM": "-31",
+   "PM2": "541"
+  },
+  {
+   "PlayerLink": "Rxld",
+   "Gamemode": "Search and Destroy",
+   "Maps": "2",
+   "PM": "-10",
+   "PM2": "52"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "Gamemode": "Hardpoint",
+   "Maps": "93",
+   "PM": "131",
+   "PM2": "5251"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "Gamemode": "Overload",
+   "Maps": "63",
+   "PM": "24",
+   "PM2": "2548"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "Gamemode": "Search and Destroy",
+   "Maps": "80",
+   "PM": "34",
+   "PM2": "810"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "Gamemode": "Hardpoint",
+   "Maps": "97",
+   "PM": "1",
+   "PM2": "5689"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "Gamemode": "Overload",
+   "Maps": "68",
+   "PM": "91",
+   "PM2": "3075"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "86",
+   "PM": "57",
+   "PM2": "1285"
+  },
+  {
+   "PlayerLink": "Sib",
+   "Gamemode": "Hardpoint",
+   "Maps": "103",
+   "PM": "-65",
+   "PM2": "4969"
+  },
+  {
+   "PlayerLink": "Sib",
+   "Gamemode": "Overload",
+   "Maps": "64",
+   "PM": "2",
+   "PM2": "2612"
+  },
+  {
+   "PlayerLink": "Sib",
+   "Gamemode": "Search and Destroy",
+   "Maps": "83",
+   "PM": "-20",
+   "PM2": "1076"
+  },
+  {
+   "PlayerLink": "Simp",
+   "Gamemode": "Hardpoint",
+   "Maps": "100",
+   "PM": "211",
+   "PM2": "5353"
+  },
+  {
+   "PlayerLink": "Simp",
+   "Gamemode": "Overload",
+   "Maps": "63",
+   "PM": "102",
+   "PM2": "2810"
+  },
+  {
+   "PlayerLink": "Simp",
+   "Gamemode": "Search and Destroy",
+   "Maps": "85",
+   "PM": "76",
+   "PM2": "1442"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "Gamemode": "Hardpoint",
+   "Maps": "89",
+   "PM": "-49",
+   "PM2": "5073"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "Gamemode": "Overload",
+   "Maps": "57",
+   "PM": "-143",
+   "PM2": "1967"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "Gamemode": "Search and Destroy",
+   "Maps": "75",
+   "PM": "-17",
+   "PM2": "741"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "Gamemode": "Hardpoint",
+   "Maps": "9",
+   "PM": "-8",
+   "PM2": "144"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "Gamemode": "Overload",
+   "Maps": "6",
+   "PM": "-11",
+   "PM2": "211"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "Gamemode": "Search and Destroy",
+   "Maps": "7",
+   "PM": "-17",
+   "PM2": "67"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "Gamemode": "Hardpoint",
+   "Maps": "42",
+   "PM": "-120",
+   "PM2": "1752"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "Gamemode": "Overload",
+   "Maps": "23",
+   "PM": "31",
+   "PM2": "1343"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "29",
+   "PM": "-11",
+   "PM2": "249"
+  },
+  {
+   "PlayerLink": "Spart",
+   "Gamemode": "Hardpoint",
+   "Maps": "47",
+   "PM": "-32",
+   "PM2": "1538"
+  },
+  {
+   "PlayerLink": "Spart",
+   "Gamemode": "Overload",
+   "Maps": "27",
+   "PM": "-10",
+   "PM2": "1186"
+  },
+  {
+   "PlayerLink": "Spart",
+   "Gamemode": "Search and Destroy",
+   "Maps": "34",
+   "PM": "-7",
+   "PM2": "307"
+  },
+  {
+   "PlayerLink": "Standy",
+   "Gamemode": "Hardpoint",
+   "Maps": "13",
+   "PM": "-73",
+   "PM2": "667"
+  },
+  {
+   "PlayerLink": "Standy",
+   "Gamemode": "Overload",
+   "Maps": "8",
+   "PM": "-15",
+   "PM2": "183"
+  },
+  {
+   "PlayerLink": "Standy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "12",
+   "PM": "-11",
+   "PM2": "97"
+  },
+  {
+   "PlayerLink": "SupeR",
+   "Gamemode": "Hardpoint",
+   "Maps": "1",
+   "PM": "2",
+   "PM2": "4"
+  },
+  {
+   "PlayerLink": "SupeR",
+   "Gamemode": "Overload",
+   "Maps": "1",
+   "PM": "-10",
+   "PM2": "100"
+  },
+  {
+   "PlayerLink": "SupeR",
+   "Gamemode": "Search and Destroy",
+   "Maps": "1",
+   "PM": "-1",
+   "PM2": "1"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "Gamemode": "Hardpoint",
+   "Maps": "77",
+   "PM": "89",
+   "PM2": "2919"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "Gamemode": "Overload",
+   "Maps": "51",
+   "PM": "65",
+   "PM2": "2603"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "Gamemode": "Search and Destroy",
+   "Maps": "63",
+   "PM": "59",
+   "PM2": "901"
+  },
+  {
+   "PlayerLink": "Swooty",
+   "Gamemode": "Hardpoint",
+   "Maps": "5",
+   "PM": "-25",
+   "PM2": "179"
+  },
+  {
+   "PlayerLink": "Swooty",
+   "Gamemode": "Overload",
+   "Maps": "4",
+   "PM": "-28",
+   "PM2": "234"
+  },
+  {
+   "PlayerLink": "Swooty",
+   "Gamemode": "Search and Destroy",
+   "Maps": "5",
+   "PM": "-15",
+   "PM2": "67"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "Gamemode": "Hardpoint",
+   "Maps": "61",
+   "PM": "-178",
+   "PM2": "2654"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "Gamemode": "Overload",
+   "Maps": "37",
+   "PM": "-111",
+   "PM2": "943"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "44",
+   "PM": "-18",
+   "PM2": "626"
+  },
+  {
+   "PlayerLink": "Traixx",
+   "Gamemode": "Hardpoint",
+   "Maps": "61",
+   "PM": "-27",
+   "PM2": "2017"
+  },
+  {
+   "PlayerLink": "Traixx",
+   "Gamemode": "Overload",
+   "Maps": "40",
+   "PM": "-38",
+   "PM2": "1528"
+  },
+  {
+   "PlayerLink": "Traixx",
+   "Gamemode": "Search and Destroy",
+   "Maps": "49",
+   "PM": "16",
+   "PM2": "466"
+  },
+  {
+   "PlayerLink": "Vivid",
+   "Gamemode": "Hardpoint",
+   "Maps": "23",
+   "PM": "-57",
+   "PM2": "785"
+  },
+  {
+   "PlayerLink": "Vivid",
+   "Gamemode": "Overload",
+   "Maps": "13",
+   "PM": "-45",
+   "PM2": "483"
+  },
+  {
+   "PlayerLink": "Vivid",
+   "Gamemode": "Search and Destroy",
+   "Maps": "19",
+   "PM": "-14",
+   "PM2": "218"
+  },
+  {
+   "PlayerLink": "Wevy",
+   "Gamemode": "Hardpoint",
+   "Maps": "12",
+   "PM": "-3",
+   "PM2": "301"
+  },
+  {
+   "PlayerLink": "Wevy",
+   "Gamemode": "Overload",
+   "Maps": "7",
+   "PM": "-2",
+   "PM2": "302"
+  },
+  {
+   "PlayerLink": "Wevy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "8",
+   "PM": "10",
+   "PM2": "86"
+  }
+ ]
+}

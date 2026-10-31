@@ -4,6 +4,8 @@
 //
 //   npx tsx scripts/fetch-stats.ts   -> data/stats/{year}.raw.json      (player and team-map aggregates)
 //                                    -> data/stats/{year}.lineups.json  (maps per team, player and event page)
+//                                    -> data/stats/{year}.consistency.json (per player and mode: maps, sum and
+//                                       sum of squares of per-map kills minus deaths, for map-to-map spread)
 //
 // Two requests per season, spaced well apart; Cargo rate-limits aggregate queries, so a
 // rate-limit answer backs off and retries. Seasons already on disk are skipped.
@@ -124,5 +126,37 @@ for (const y of ["2024", "2025", "2026"]) {
     ) + "\n",
   );
   console.log(`${y} lineups: ${rows.length} team-player-event rows`);
+  await sleep(GAP_MS);
+}
+
+// Map-to-map spread: the wiki sums per-map (kills - deaths) and its square per player and mode.
+for (const y of ["2024", "2025", "2026"]) {
+  const file = `data/stats/${y}.consistency.json`;
+  if (existsSync(file)) {
+    console.log(`${y} consistency: already downloaded`);
+    continue;
+  }
+  const rows = await cargoAll({
+    tables: "PlayerStats",
+    fields: "PlayerLink,Gamemode,COUNT(*)=Maps,SUM(Kills-Deaths)=PM,SUM((Kills-Deaths)*(Kills-Deaths))=PM2",
+    where: seasonWhere(y),
+    group_by: "PlayerLink,Gamemode",
+    order_by: "PlayerLink,Gamemode",
+  });
+  writeFileSync(
+    file,
+    JSON.stringify(
+      {
+        season: y,
+        fetched: new Date().toISOString().slice(0, 10),
+        source: `${API} (Cargo table PlayerStats)`,
+        license: "CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors",
+        rows,
+      },
+      null,
+      1,
+    ) + "\n",
+  );
+  console.log(`${y} consistency: ${rows.length} player-mode rows`);
   await sleep(GAP_MS);
 }

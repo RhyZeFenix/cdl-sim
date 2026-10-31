@@ -24,6 +24,8 @@ export interface SeasonOptions {
   gmTeam?: string;
   /** Skip the regular season: play Champs only, seeded with the real Champs seeds. */
   champsOnly?: boolean;
+  /** Chaos: strong per-event team form, so upsets and hot streaks are far more common. */
+  chaos?: boolean;
 }
 
 export type Step =
@@ -336,7 +338,7 @@ function formKey(phase: PoolPhase): string {
 
 /** A team's form for one weekend: fixed by the season seed, so replays and GM vetoes agree. */
 export function eventForm(state: SeasonState, teamId: string, phase: PoolPhase): number {
-  const sd = TUNING.eventFormSd;
+  const sd = state.options.chaos ? TUNING.chaosFormSd : TUNING.eventFormSd;
   if (!sd) return 0;
   return createRng(state.options.seed).fork(`form/${formKey(phase)}/${teamId}`).normal(0, sd);
 }

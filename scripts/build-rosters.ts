@@ -11,12 +11,12 @@
 // Ratings come from season stat lines (data/stats/{year}.raw.json, see fetch-stats.ts and
 // stat-ratings.ts) wherever a player has them. Players without stats keep the placeholder
 // model: the average placement of the teams they played for plus deterministic variation.
-// Consistency has no published stat and always uses the placeholder.
+// Consistency comes from map-to-map spread (stat-ratings.ts) when that file is downloaded.
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { Season } from "../src/engine/data/schema";
 import { CODES, GUESTS } from "./fandom-codes";
-import { ratingsFromStats, statLines, teamMapMods, type RawStats } from "./stat-ratings";
+import { consistencyFromStats, ratingsFromStats, statLines, teamMapMods, type RawStats } from "./stat-ratings";
 
 const WIKI = "https://cod-esports.fandom.com/wiki/";
 
@@ -198,6 +198,12 @@ function build(dir: string, year: "2024" | "2025" | "2026") {
   const raw: RawStats | null = existsSync(rawPath) ? JSON.parse(readFileSync(rawPath, "utf8")) : null;
   const lines = raw ? statLines(raw, linkToId, season.thirdMode) : new Map();
   const statRatings = ratingsFromStats(lines);
+  // Map-to-map spread (data/stats/{year}.consistency.json), when downloaded.
+  const consPath = `data/stats/${year}.consistency.json`;
+  const consistency =
+    existsSync(consPath) && raw
+      ? consistencyFromStats(JSON.parse(readFileSync(consPath, "utf8")).rows, linkToId, raw)
+      : new Map<string, number>();
   const unmatchedTeams = new Set<string>();
   const mods = raw
     ? teamMapMods(raw, (name) => {
@@ -229,7 +235,7 @@ function build(dir: string, year: "2024" | "2025" | "2026") {
       snd_iq: blend(fromStats.snd_iq),
       third_mode: blend(fromStats.third_mode),
       clutch: blend(fromStats.clutch),
-      consistency: placeholder.consistency,
+      consistency: consistency.get(id) ?? placeholder.consistency,
     };
   };
   const round2 = (x: number) => Math.round(x * 100) / 100;
@@ -284,7 +290,7 @@ function build(dir: string, year: "2024" | "2025" | "2026") {
   const out = {
     season: year,
     ratingsNote: raw
-      ? `Ratings from ${year} season stat lines (${raw.source}, fetched ${raw.fetched}; ${raw.license}). Players without stats (ratingSource "placeholder") use team placements. Consistency is always a placeholder; clutch is a mild SnD K/D proxy. Roles default to flex.`
+      ? `Ratings from ${year} season stat lines (${raw.source}, fetched ${raw.fetched}; ${raw.license}). Players without stats (ratingSource "placeholder") use team placements. Consistency comes from map-to-map spread in kills minus deaths where available; clutch is a mild SnD K/D proxy. Roles default to flex.`
       : "PLACEHOLDER ratings: derived from team placements at the events each player attended plus deterministic per-player variation. Roles default to flex.",
     teams: season.teams.map((t) => toRoster(t.id)),
     guests: [...snaps.keys()].filter((t) => GUESTS.has(t)).map(toRoster),

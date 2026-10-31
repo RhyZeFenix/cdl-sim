@@ -1,0 +1,884 @@
+{{Liquipedia links|counterstrike=Intel Extreme Masters/2026/Atlanta|halo=Dreamhack/Atlanta/2026}}
+{{DISPLAYTITLE:Call of Duty League 2026: Stage 3 Major}}
+{{CDL 2026 Navbox}}
+{{CDL 2026 Tabs}}
+{{tabs static
+|name1=Overview|link1=Call_of_Duty_League/Season_7/Regular_Season
+|name2=Stage 1|link2=Call_of_Duty_League/Season_7/Stage_1
+|name3=Stage 2|link3=Call_of_Duty_League/Season_7/Stage_2
+|name4=Stage 3|link4=Call_of_Duty_League/Season_7/Stage_3
+|name5=Stage 4|link5=Call_of_Duty_League/Season_7/Stage_4
+}}
+{{Tabs static
+|name1=Qualifiers|link1=Call_of_Duty_League/Season_7/Stage_3
+|name2=Minor|link2=Call_of_Duty_League/Season_7/Stage_3/Minor
+|name3=Major|link3=Call_of_Duty_League/Season_7/Stage_3/Major
+}}
+{{Infobox league
+|name=Call of Duty League 2026: Stage 3 Major
+|tickername=CDL '26 Atlanta Major
+|image=CDL 2026 Major 3 lightmode.png
+|imagedark=CDL 2026 Major 3 darkmode.png
+|series=Call of Duty League
+|abbreviation=CDL
+|organizer=Activision
+|organizer2=DreamHack
+|game=bo7
+|type=Offline
+|country=United States
+|city=Atlanta, Georgia
+|venue=Georgia World Congress Center
+|venuelink=
+|format=4v4
+|sdate=2026-05-15
+|edate=2026-05-17
+|liquipediatier=1|highlighted=true
+|prizepoolusd=365000
+|web=https://callofdutyleague.com/en-us/
+|twitter=codleague
+|facebook=codleague
+|youtube=CODLeague
+|twitch=CallofDuty
+|instagram=codleague
+|team_number=16
+|previous=Call of Duty League/Season 7/Stage 3/Minor{{!}} Stage 3 Minor 
+|next=Call of Duty League/Season 7/Stage 4{{!}} Stage 4 Qualifiers 
+}}
+
+==About==
+===Format===
+* All 12 CDL teams
+* Top 4 Challengers teams
+* Seeding determinated by [[Call of Duty League/Season_7/Stage 3|Qualifiers]]
+* Group stage is 4 team double elimnation GSL style format
+* Playoffs is Double Elimination
+* All matches are {{Abbr/Bo5}}, except for Grand Finals which are {{Abbr/Bo7}}
+
+===Broadcast Talent===
+{{box|start|padding=2em}}
+{{BroadcasterCard
+|position=Hosts
+|b1=Puckett
+}}
+{{BroadcasterCard
+|position=Analyst
+|b1=Rosalie
+|b2=Attach
+}}
+{{box|break|padding=1em}}
+{{BroadcasterCard
+|position=Commentator
+|b1=Enigma|b1flag=uk
+|b2=Chance
+|b3=MerK
+|b4=Maven
+|b5=IHOLDSHIFT
+|b6=StuDyy
+|b7=Bricey
+|b8=GOJJ
+|b9=Dandro
+|b10=Reflections
+|b11=Spidertiff
+}}
+{{box|end}}
+
+===Map Pool===
+{{CDL 2026 Major 3 Map Pool}}
+
+===Restricted Items===
+{{GeneralCollapsible|title=Restricted Items|content={{CDL 2026 Bans}}}}
+
+===Prize Pool===
+{{TeamPrizePool|points1=cdl
+|{{Slot|points1=100|usdprize=150,000}}
+|{{Slot|points1=75|usdprize=90,000}}
+|{{Slot|points1=60|usdprize=50,000}}
+|{{Slot|points1=45|usdprize=30,000}}
+|{{Slot|points1=30|usdprize=15,000|place=5-6}}
+|{{Slot|points1=15|usdprize=7,500|place=7-8}}
+|{{Slot|points1=0|usdprize=|place=9-12}}
+|{{Slot|points1=0|usdprize=|place=13-16}}
+}}
+
+===Player Awards===
+{{prize pool start award|noprize=y|margin=false}}
+{{prize pool slot award|award=MVP|Scrap|flag1=us|team1=lat}}
+{{prize pool end}}
+
+==Participants==
+{{TeamParticipants|minimumplayers=4
+|{{Opponent|OpTic Texas
+  |players={{Persons
+    |{{Person|Dashy}}
+    |{{Person|Huke}}
+    |{{Person|Mercules}}
+    |{{Person|Shotzzy}}
+<!--STAFF-->
+    |{{Person|Karma|role=Coach|type=staff}}
+|{{Person|JP Krez|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Stage 3|placement=1}}
+}}
+|{{Opponent|Toronto KOI
+  |players={{Persons
+    |{{Person|CleanX}}
+    |{{Person|Insight}}
+    |{{Person|JoeDeceives}}
+    |{{Person|Kips}}
+<!--STAFF-->
+    |{{Person|Flux|role=Coach|type=staff}}
+|{{Person|Joee|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Stage 3|placement=2}}
+}}
+|{{Opponent|Los Angeles Thieves
+  |players={{Persons
+    |{{Person|aBeZy}}
+    |{{Person|HyDra}}
+    |{{Person|Nium}}
+    |{{Person|Scrap}}
+<!--STAFF-->
+    |{{Person|ShAnE|role=Coach|type=staff}}
+|{{Person|Sender|role=Coach|type=staff}}
+   }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Stage 3|placement=3}}
+}}
+|{{Opponent|FaZe Vegas
+  |players={{Persons
+    |{{Person|04}}
+    |{{Person|Abuzah}}
+    |{{Person|Drazah}}
+    |{{Person|Simp}}
+
+|{{Person|Alluka|status=sub|played=false}}
+<!--STAFF-->
+    |{{Person|Crowder|role=Coach|type=staff}}
+|{{Person|RJ|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Stage 3|placement=4}}
+}}
+|{{Opponent|Riyadh Falcons
+  |players={{Persons
+    |{{Person|Cellium}}
+    |{{Person|Exnid}}
+    |{{Person|KiSMET}}
+    |{{Person|Pred}}
+<!--STAFF-->
+    |{{Person|Clayster|role=Coach|type=staff}}
+	|{{Person|Mutab|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Stage 3|placement=5}}
+}}
+|{{Opponent|Paris Gentle Mates
+  |players={{Persons
+    |{{Person|Envoy}}
+    |{{Person|Ghosty}}
+    |{{Person|Neptune}}
+    |{{Person|Sib}}
+<!--STAFF-->
+    |{{Person|Mayhem|role=Coach|type=staff}}
+|{{Person|Cheek|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Stage 3|placement=6}}
+}}
+|{{Opponent|Carolina Royal Ravens
+  |players={{Persons
+    |{{Person|Craze}}
+    |{{Person|Exceed}}
+    |{{Person|Fire}}
+    |{{Person|Lurqxx}}
+<!--STAFF-->
+    |{{Person|Saintt|role=Coach|type=staff}}
+	|{{Person|Quids|role=Analyst|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Stage 3|placement=7}}
+}}
+|{{Opponent|G2 Minnesota
+  |players={{Persons
+    |{{Person|Estreal}}
+    |{{Person|Kremp}}
+    |{{Person|Mamba}}
+    |{{Person|Skyz}}
+<!--STAFF-->
+    |{{Person|Loony|role=Coach|type=staff}}
+|{{Person|Alexdotzip|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Stage 3|placement=8}}
+}}
+|{{Opponent|Vancouver Surge
+  |players={{Persons
+    |{{Person|Gwinn}}
+    |{{Person|Lunarz}}
+    |{{Person|Nero}}
+    |{{Person|TJHaLy}}
+
+|{{Person|Lqgend|status=sub|played=false}}
+<!--STAFF-->
+    |{{Person|Atura|role=Coach|type=staff}}
+|{{Person|Jokr|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Stage 3|placement=9}}
+}}
+|{{Opponent|Miami Heretics
+  |players={{Persons
+    |{{Person|MettalZ}}
+    |{{Person|RenKoR}}
+    |{{Person|SupeR}}
+    |{{Person|Traix}}
+	
+	|{{Person|ReeaL|status=sub|played=false}}
+<!--STAFF-->
+    |{{Person|MethodZ|role=Coach|type=staff}}
+|{{Person|Lucky|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Stage 3|placement=10}}
+}}
+|{{Opponent|Boston Breach
+  |players={{Persons
+    |{{Person|Afro}}
+    |{{Person|Nastie}}
+    |{{Person|Purj}}
+    |{{Person|Spart}}
+<!--STAFF-->
+    |{{Person|Seany|role=Coach|type=staff}}
+|{{Person|Magick|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Stage 3|placement=11}}
+}}
+|{{Opponent|Cloud9 New York
+  |players={{Persons
+    |{{Person|Encourage}}
+    |{{Person|Hide}}
+    |{{Person|Nejra}}
+    |{{Person|Okis}}
+<!--STAFF-->
+    |{{Person|Arian|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Stage 3|placement=12}}
+}}
+|{{Opponent|huntsmen
+  |players={{Persons
+    |{{Person|Brack}}
+    |{{Person|oJohnny}}
+    |{{Person|Renegade}}
+    |{{Person|Swooty}}
+<!--STAFF-->
+    |{{Person|MajorManiak|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty Challengers/2026/Elite/3/North America|placement=2}}
+}}
+|{{Opponent|omit
+  |players={{Persons
+    |{{Person|Aspekt|team=p7e}}
+    |{{Person|Denza}}
+    |{{Person|DK|flag=wls}}
+    |{{Person|Ethan|flag=uk}}
+<!--STAFF-->
+    |{{Person|Bance|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty Challengers/2026/Elite/3/Europe|placement=2}}
+     |notes={{Notes
+	|{{Notes|March 20th - '''[[OMiT Noir]]''' moves to '''[[OMiT]]'''. <ref name="omit">{{cite web|url=https://x.com/OMiTNoir/status/2053301768692396032|title=ProAm bound means @OMiTGG can be repped again. Follow us over there for Blitz Boys EU media, content, and updates for the remainder of Dreamhack and beyond.|date=2026-05-09|author=[[OMiT Noir]]}}</ref>}}
+	}}
+}}
+|{{Opponent|pn
+  |players={{Persons
+    |{{Person|Beans}}
+    |{{Person|Diamondcon}}
+    |{{Person|EriKBooM}}
+    |{{Person|Snoopy}}
+<!--STAFF-->
+    |{{Person|Joshh|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty Challengers/2026/Open/Birmingham|placement=1}}
+}}
+|{{Opponent|ROC eSports
+  |players={{Persons
+    |{{Person|d7oomx}}
+    |{{Person|d7om}}
+    |{{Person|Khhx}}
+    |{{Person|Rxld}}
+<!--STAFF-->
+    |{{Person|Vortex|role=Coach|type=staff}}
+	|{{Person|LewisJB|flag=uk|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty Challengers/2026/Open/Birmingham|placement=2}}
+}}
+}}
+{{TeamCard columns end}}
+
+==Results==
+
+===Group Stage===
+{{Toggle group start|state=show}}
+{{Box|start|padding=1em}}
+===={{HiddenSort|Group A}}====
+{{MatchSection|Group A}}
+<section begin="Group A"/>
+{{GroupTableLeague|title=Group A|width=350px|tiebreaker1=series|tiebreaker2=diff|tiebreaker3=h2h
+|pbg1=up|pbg2=up|pbg3=down|pbg4=down
+|team1=tx|bg1=up
+|team2=g2m|bg2=up
+|team3=van|bg3=down
+|team4=omit|bg4=down
+}}
+{{Matchlist|id=CDL26S3MGA|attached=true|width=350px|title=Group A Matches|collapsed=true
+|M1header=Opening Matches
+|M1={{Match
+|bestof=5
+    |date=2026-05-15 11:00 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tx|score=}}
+	|opponent2={{TeamOpponent|omit|score=}}
+    |map1={{Map|map=Gridlock|mode=hp |score1=250|score2=210|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Den|mode=ovl|score1=5|score2=2|winner=1}}
+	|map4={{Map|map=Scar|mode=hp |score1=|score2=|winner=skip}}
+	|map5={{Map|map=Scar|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12839|breakingpoint=332874
+    |vod=https://www.youtube.com/watch?v=U6voREkKvfw
+    }}
+|M2={{Match
+    |date=2026-05-15 11:00 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|g2m|score=}}
+	|opponent2={{TeamOpponent|van|score=}}
+    |map1={{Map|map=Scar|mode=hp |score1=250|score2=123|winner=1}}
+    |map2={{Map|map=Gridlock|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=6|score2=1|winner=1}}
+	|map4={{Map|map=Gridlock|mode=hp |score1=250|score2=107|winner=1}}
+	|map5={{Map|map=Plaza|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12840|breakingpoint=332875
+    |vod=https://www.youtube.com/watch?v=5hHj3s8MEiM
+    }}
+|M3header=Winners Match
+|M3={{Match
+    |date=2026-05-15 14:00 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tx|score=}}
+	|opponent2={{TeamOpponent|g2m|score=}}
+    |map1={{Map|map=Scar|mode=hp |score1=231|score2=250|winner=2}}
+    |map2={{Map|map=Plaza|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Den|mode=ovl|score1=4|score2=3|winner=1}}
+	|map4={{Map|map=Den|mode=hp |score1=250|score2=165|winner=1}}
+	|map5={{Map|map=Fringe|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12841|breakingpoint=332882
+    |vod=https://www.youtube.com/watch?v=BWdGM44woio
+    }}
+|M4header=Elimination Match
+|M4={{Match
+    |date=2026-05-15 14:00 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|omit|score=}}
+	|opponent2={{TeamOpponent|van|score=}}
+    |map1={{Map|map=Scar|mode=hp |score1=250|score2=197|winner=1}}
+    |map2={{Map|map=Fringe|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=8|score2=0|winner=1}}
+	|map4={{Map|map=Gridlock|mode=hp |score1=|score2=|winner=skip}}
+	|map5={{Map|map=Raid|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12842|breakingpoint=332883
+    |vod=https://www.youtube.com/watch?v=feWxTbqbWBA
+    }}
+|M5header=Decider Match
+|M5={{Match
+    |date=2026-05-15 17:00 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|omit|score=0}}
+	|opponent2={{TeamOpponent|g2m|score=3}}
+    |map1={{Map|map=Scar|mode=hp |score1=183|score2=250|winner=2}}
+    |map2={{Map|map=Fringe|mode=snd|score1=1|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=0|score2=7|winner=2}}
+	|map4={{Map|map=Gridlock|mode=hp |score1=|score2=|winner=skip}}
+	|map5={{Map|map=Plaza|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12843|breakingpoint=332890
+    |vod=https://www.youtube.com/watch?v=4M2BF7bf_iA
+    }}
+}}
+<section end="Group A"/>
+{{Box|break|padding=1em}}
+
+===={{HiddenSort|Group B}}====
+{{MatchSection|Group B}}
+<section begin="Group B"/>
+{{GroupTableLeague|title=Group B|width=350px|tiebreaker1=series|tiebreaker2=diff|tiebreaker3=h2h
+|pbg1=up|pbg2=up|pbg3=down|pbg4=down
+|team1=tor|bg1=up
+|team2=car|bg2=down
+|team3=mia|bg3=up
+|team4=hunt|bg4=down
+}}
+{{Matchlist|id=CDL26S3MGB|attached=true|width=350px|title=Group B Matches|collapsed=true
+|M1header=Opening Matches
+|M1={{Match
+|bestof=5
+    |date=2026-05-15 12:30 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tor|score=}}
+	|opponent2={{TeamOpponent|hunt|score=}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=164|winner=1}}
+    |map2={{Map|map=Den|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=8|score2=0|winner=1}}
+	|map4={{Map|map=Scar|mode=hp |score1=|score2=|winner=skip}}
+	|map5={{Map|map=Fringe|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12844|breakingpoint=332876
+    |vod=https://www.youtube.com/watch?v=TaJhLnNLOe0
+    }}
+|M2={{Match
+    |date=2026-05-15 12:30 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|car|score=}}
+	|opponent2={{TeamOpponent|mia|score=}}
+    |map1={{Map|map=Den|mode=hp |score1=214|score2=250|winner=2}}
+    |map2={{Map|map=Raid|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=1|score2=7|winner=2}}
+	|map4={{Map|map=Colossus|mode=hp |score1=|score2=|winner=skip}}
+	|map5={{Map|map=Fringe|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12845|breakingpoint=332877
+    |vod=https://www.youtube.com/watch?v=HqqYvJSZfts
+    }}
+|M3header=Winners Match
+|M3={{Match
+    |date=2026-05-15 15:30 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tor|score=}}
+	|opponent2={{TeamOpponent|mia|score=}}
+    |map1={{Map|map=Sake|mode=hp |score1=250|score2=214|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Scar|mode=ovl|score1=5|score2=4|winner=1}}
+	|map4={{Map|map=Scar|mode=hp |score1=250|score2=137|winner=1}}
+	|map5={{Map|map=Den|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12846|breakingpoint=332884
+    |vod=https://www.youtube.com/watch?v=_yrdn1akRGY
+    }}
+|M4header=Elimination Match
+|M4={{Match
+    |date=2026-05-15 15:30 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|hunt|score=}}
+	|opponent2={{TeamOpponent|car|score=}}
+    |map1={{Map|map=Colossus|mode=hp |score1=250|score2=204|winner=1}}
+    |map2={{Map|map=Den|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=4|score2=2|winner=1}}
+	|map4={{Map|map=Scar|mode=hp |score1=206|score2=250|winner=2}}
+	|map5={{Map|map=Raid|mode=snd|score1=4|score2=6|winner=2}}
+	|cdl=12847|breakingpoint=332885
+    |vod=https://www.youtube.com/watch?v=kXsMOvDNS_g
+    }}
+|M5header=Decider Match
+|M5={{Match
+    |date=2026-05-15 17:00 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|mia|score=3}}
+	|opponent2={{TeamOpponent|car|score=1}}
+    |map1={{Map|map=Colossus|mode=hp |score1=190|score2=250|winner=2}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=4|score2=3|winner=1}}
+	|map4={{Map|map=Den|mode=hp |score1=250|score2=213|winner=1}}
+	|map5={{Map|map=Den|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12848|breakingpoint=332891
+    |vod=https://www.youtube.com/watch?v=d3yMFbepCp0
+    }}
+}}
+<section end="Group B"/>
+{{Box|break|padding=1em}}
+
+===={{HiddenSort|Group C}}====
+{{MatchSection|Group C}}
+<section begin="Group C"/>
+{{GroupTableLeague|title=Group C|width=350px|tiebreaker1=series|tiebreaker2=diff|tiebreaker3=h2h
+|pbg1=up|pbg2=up|pbg3=down|pbg4=down
+|team1=lat|bg1=up
+|team2=pgm|bg2=up
+|team3=bos|bg3=down
+|team4=pn|bg4=down
+}}
+{{Matchlist|id=CDL26S3MGC|attached=true|width=350px|title=Group C Matches|collapsed=true
+|M1header=Opening Matches
+|M1={{Match
+|bestof=5
+    |date=2026-05-15 12:30 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|lat|score=}}
+	|opponent2={{TeamOpponent|pn|score=}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=157|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Scar|mode=ovl|score1=3|score2=0|winner=1}}
+	|map4={{Map|map=Colossus|mode=hp |score1=250|score2=206|winner=1}}
+	|map5={{Map|map=Scar|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12849|breakingpoint=332878
+    |vod=https://www.youtube.com/watch?v=WDEhMGqfnsQ
+    }}
+|M2={{Match
+    |date=2026-05-15 12:30 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|pgm|score=}}
+	|opponent2={{TeamOpponent|bos|score=}}
+    |map1={{Map|map=Scar|mode=hp |score1=146|score2=250|winner=2}}
+    |map2={{Map|map=Gridlock|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Scar|mode=ovl|score1=5|score2=3|winner=1}}
+	|map4={{Map|map=Den|mode=hp |score1=225|score2=250|winner=2}}
+	|map5={{Map|map=Scar|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12850|breakingpoint=332879
+    |vod=https://www.youtube.com/watch?v=sIy43FRgkIk
+    }}
+|M3header=Winners Match
+|M3={{Match
+    |date=2026-05-15 15:30 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|lat|score=}}
+	|opponent2={{TeamOpponent|bos|score=}}
+    |map1={{Map|map=Sake|mode=hp |score1=250|score2=205|winner=1}}
+    |map2={{Map|map=Den|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Den|mode=ovl|score1=6|score2=5|winner=1}}
+	|map4={{Map|map=Den|mode=hp |score1=|score2=|winner=skip}}
+	|map5={{Map|map=Scar|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12851|breakingpoint=332886
+    |vod=https://www.youtube.com/watch?v=sIy43FRgkIk
+    }}
+|M4header=Elimination Match
+|M4={{Match
+    |date=2026-05-15 15:30 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|pn|score=}}
+	|opponent2={{TeamOpponent|pgm|score=}}
+    |map1={{Map|map=Colossus|mode=hp |score1=125|score2=250|winner=2}}
+    |map2={{Map|map=Scar|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=5|score2=3|winner=1}}
+	|map4={{Map|map=Den|mode=hp |score1=139|score2=250|winner=2}}
+	|map5={{Map|map=Plaza|mode=snd|score1=5|score2=6|winner=2}}
+	|cdl=12852|breakingpoint=332887
+    |vod=https://www.youtube.com/watch?v=e8FzLZ6tZG8
+    }}
+|M5header=Decider Match
+|M5={{Match
+    |date=2026-05-15 17:00 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|bos|score=1}}
+	|opponent2={{TeamOpponent|pgm|score=3}}
+    |map1={{Map|map=Gridlock|mode=hp |score1=250|score2=107|winner=1}}
+    |map2={{Map|map=Gridlock|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=2|score2=5|winner=2}}
+	|map4={{Map|map=Den|mode=hp |score1=181|score2=250|winner=2}}
+	|map5={{Map|map=Scar|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12853|breakingpoint=332892
+    |vod=https://www.youtube.com/watch?v=IWpLAhXldQg
+    }}
+}}
+<section end="Group C"/>
+{{Box|break|padding=1em}}
+
+===={{HiddenSort|Group D}}====
+{{MatchSection|Group D}}
+<section begin="Group D"/>
+{{GroupTableLeague|title=Group D|width=350px|tiebreaker1=series|tiebreaker2=diff|tiebreaker3=h2h
+|pbg1=up|pbg2=up|pbg3=down|pbg4=down
+|team1=fv|bg1=up
+|team2=ryd|bg2=up
+|team3=c9ny|bg3=down
+|team4=roc|bg4=down
+}}
+{{Matchlist|id=CDL26S3MGD|attached=true|width=350px|title=Group D Matches|collapsed=true
+|M1header=Opening Matches
+|M1={{Match
+|bestof=5
+    |date=2026-05-15 11:00 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|fv|score=}}
+	|opponent2={{TeamOpponent|roc|score=}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=143|winner=1}}
+    |map2={{Map|map=Den|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=8|score2=2|winner=1}}
+	|map4={{Map|map=Sake|mode=hp |score1=250|score2=49|winner=1}}
+	|map5={{Map|map=Gridlock|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12854|breakingpoint=332880
+    |vod=https://www.youtube.com/watch?v=GBx5c-RM2vw
+    }}
+|M2={{Match
+    |date=2026-05-15 11:00 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|ryd|score=}}
+	|opponent2={{TeamOpponent|c9ny|score=}}
+    |map1={{Map|map=Colossus|mode=hp |score1=250|score2=184|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=4|score2=3|winner=1}}
+	|map4={{Map|map=Gridlock|mode=hp |score1=|score2=|winner=skip}}
+	|map5={{Map|map=Den|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12855|breakingpoint=332881
+    |vod=https://www.youtube.com/watch?v=Xjw-1xOKjHY
+    }}
+|M3header=Winners Match
+|M3={{Match
+    |date=2026-05-15 14:00 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|fv|score=}}
+	|opponent2={{TeamOpponent|ryd|score=}}
+    |map1={{Map|map=Colossus|mode=hp |score1=222|score2=250|winner=2}}
+    |map2={{Map|map=Den|mode=snd|score1=1|score2=6|winner=2}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=3|score2=4|winner=2}}
+	|map4={{Map|map=Sake|mode=hp |score1=|score2=|winner=skip}}
+	|map5={{Map|map=Raid|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12856|breakingpoint=332888
+    |vod=https://www.youtube.com/watch?v=nvsTQm6gWbc
+    }}
+|M4header=Elimination Match
+|M4={{Match
+    |date=2026-05-15 14:00 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|roc|score=}}
+	|opponent2={{TeamOpponent|c9ny|score=}}
+    |map1={{Map|map=Gridlock|mode=hp |score1=188|score2=250|winner=2}}
+    |map2={{Map|map=Scar|mode=snd|score1=1|score2=6|winner=2}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=1|score2=5|winner=2}}
+	|map4={{Map|map=Sake|mode=hp |score1=|score2=|winner=skip}}
+	|map5={{Map|map=Raid|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12857|breakingpoint=332889
+    |vod=https://www.youtube.com/watch?v=OMVDSQKCsCM
+    }}
+|M5header=Decider Match
+|M5={{Match
+    |date=2026-05-15 17:00 {{abbr/MDT}}
+	|twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|fv|score=3}}
+	|opponent2={{TeamOpponent|c9ny|score=0}}
+    |map1={{Map|map=Scar|mode=hp |score1=250|score2=174|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=8|score2=3|winner=1}}
+	|map4={{Map|map=Den|mode=hp |score1=|score2=|winner=skip}}
+	|map5={{Map|map=Plaza|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12858|breakingpoint=332893
+    |vod=https://www.youtube.com/watch?v=01fhoZOpK1U
+    }}
+}}
+<section begin="Group D"/>
+{{Box|end}}
+
+===Playoffs===
+{{Bracket|Bracket/8U4L2DSL1D|id=CDL26MAJS3
+|R1M1header=
+|R2M1header=
+|R4M1header=
+|R1M5header=
+|R2M3header=
+|R3M1header=
+|R4M2header=
+|R5M1header=
+
+<!-- Upper Bracket Quarterfinals -->
+|R1M1={{Match
+    |bestof=5
+    |winner=
+    |date=2026-05-16 14:30 {{abbr/EDT}}
+    |twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=118|winner=1}}
+    |map2={{Map|map=Plaza|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=5|score2=3|winner=1}}
+    |map4={{Map|map=Scar|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Raid|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12859|breakingpoint=332920
+	|vod=https://www.youtube.com/watch?v=6z2vJlk5gLw
+    }}
+|R1M2={{Match
+    |winner=
+    |date=2026-05-16 14:30 {{abbr/EDT}}
+    |twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|ryd}}
+    |opponent2={{TeamOpponent|pgm}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=199|winner=1}}
+    |map2={{Map|map=Den|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=4|score2=3|winner=1}}
+    |map4={{Map|map=Colossus|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Gridlock|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12860|breakingpoint=332921
+	|vod=https://www.youtube.com/watch?v=4kvtuNYNO1Q
+    }}
+|R1M3={{Match
+    |winner=
+    |date=2026-05-16 13:00 {{abbr/EDT}}
+    |twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|g2m}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=152|winner=1}}
+    |map2={{Map|map=Fringe|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Den|mode=ovl|score1=2|score2=6|winner=2}}
+    |map4={{Map|map=Scar|mode=hp |score1=230|score2=250|winner=2}}
+    |map5={{Map|map=Raid|mode=snd|score1=6|score2=2|winner=1}}
+	|cdl=12861|breakingpoint=332922
+	|vod=https://www.youtube.com/watch?v=f1NNyQb0yTU
+    }}
+|R1M4={{Match
+    |winner=
+    |date=2026-05-16 13:00 {{abbr/EDT}}
+    |twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|fv}}
+    |map1={{Map|map=Sake|mode=hp |score1=250|score2=136|winner=1}}
+    |map2={{Map|map=Den|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=6|score2=5|winner=1}}
+    |map4={{Map|map=Den|mode=hp |score1=225|score2=250|winner=2}}
+    |map5={{Map|map=Raid|mode=snd|score1=2|score2=6|winner=2}}
+	|cdl=12862|breakingpoint=332923
+	|vod=https://www.youtube.com/watch?v=-ANPohK06CA
+    }}
+
+<!-- Upper Bracket Semifinals -->
+|R2M1={{Match
+    |winner=
+    |date=2026-05-16 17:30 {{abbr/EDT}}
+    |twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|ryd}}
+    |map1={{Map|map=Sake|mode=hp |score1=202|score2=250|winner=2}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=3|score2=5|winner=2}}
+    |map4={{Map|map=Den|mode=hp |score1=250|score2=112|winner=1}}
+    |map5={{Map|map=Den|mode=snd|score1=6|score2=3|winner=1}}
+	|cdl=12863|breakingpoint=332924
+	|vod=https://www.youtube.com/watch?v=x4te-vYpqwk
+    }}
+|R2M2={{Match
+    |winner=
+    |date=2026-05-16 16:00 {{abbr/EDT}}
+    |twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|fv}}
+    |map1={{Map|map=Sake|mode=hp |score1=250|score2=151|winner=1}}
+    |map2={{Map|map=Scar|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Den|mode=ovl|score1=4|score2=6|winner=2}}
+    |map4={{Map|map=Den|mode=hp |score1=250|score2=193|winner=1}}
+    |map5={{Map|map=Fringe|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12864|breakingpoint=332926
+	|vod=https://www.youtube.com/watch?v=HZJlzh751Ew
+    }}
+
+<!-- Upper Bracket Final -->
+|R4M1={{Match
+    |winner=
+    |date=2026-05-17 12:30 {{abbr/EDT}}
+    |twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=Gridlock|mode=hp |score1=250|score2=152|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=1|score2=6|winner=2}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=5|score2=4|winner=1}}
+    |map4={{Map|map=Scar|mode=hp |score1=212|score2=250|winner=2}}
+    |map5={{Map|map=Scar|mode=snd|score1=6|score2=2|winner=1}}
+	|cdl=12865|breakingpoint=332931
+	|vod=https://www.youtube.com/watch?v=2nqMoI00p_4
+    }}
+
+<!-- Lower Bracket Round 1 -->
+|R1M5={{Match
+    |winner=
+    |date=2026-05-16 17:30 {{abbr/EDT}}
+    |twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|pgm}}
+    |map1={{Map|map=Colossus|mode=hp |score1=250|score2=143|winner=1}}
+    |map2={{Map|map=Plaza|mode=snd|score1=6|score2=1|winner=1}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=3|score2=5|winner=2}}
+    |map4={{Map|map=Sake|mode=hp |score1=212|score2=250|winner=2}}
+    |map5={{Map|map=Fringe|mode=snd|score1=4|score2=6|winner=2}}
+	|cdl=12868|breakingpoint=332925
+	|vod=https://www.youtube.com/watch?v=Xs1ggVi-6Pk
+    }}
+|R1M6={{Match
+    |winner=
+    |date=2026-05-16 16:00 {{abbr/EDT}}
+    |twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|min}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Den|mode=hp |score1=211|score2=250|winner=2}}
+    |map2={{Map|map=Scar|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=2|score2=1|winner=1}}
+    |map4={{Map|map=Colossus|mode=hp |score1=104|score2=250|winner=2}}
+    |map5={{Map|map=Gridlock|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12869|breakingpoint=332927
+	|vod=https://www.youtube.com/watch?v=Yuv0rjIqJEg&pp=0gcJCQQLAYcqIYzv
+    }}
+
+<!-- Lower Bracket Quarterfinals -->
+|R2M3={{Match
+    |winner=
+    |date=2026-05-16 19:00 {{abbr/EDT}}
+    |twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|fv}}
+    |opponent2={{TeamOpponent|pgm}}
+    |map1={{Map|map=Colossus|mode=hp |score1=250|score2=113|winner=1}}
+    |map2={{Map|map=Plaza|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=5|score2=3|winner=1}}
+    |map4={{Map|map=Gridlock|mode=hp |score1=250|score2=213|winner=1}}
+    |map5={{Map|map=Scar|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12870|breakingpoint=332928
+	|vod=https://www.youtube.com/watch?v=KiqafCRuJOQ
+    }}
+|R2M4={{Match
+    |winner=
+    |date=2026-05-16 19:00 {{abbr/EDT}}
+    |twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|ryd}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Sake|mode=hp |score1=221|score2=250|winner=2}}
+    |map2={{Map|map=Den|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Scar|mode=ovl|score1=4|score2=5|winner=2}}
+    |map4={{Map|map=Scar|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Fringe|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12871|breakingpoint=332929
+	|vod=https://www.youtube.com/watch?v=E6qedMTD_WE
+    }}
+
+<!-- Lower Bracket Semifinal -->
+|R3M1={{Match
+    |winner=
+    |date=2026-05-17 11:00 {{abbr/EDT}}
+    |twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|fv}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Gridlock|mode=hp |score1=245|score2=250|winner=2}}
+    |map2={{Map|map=Den|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=5|score2=4|winner=1}}
+    |map4={{Map|map=Den|mode=hp |score1=164|score2=250|winner=2}}
+    |map5={{Map|map=Fringe|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12872|breakingpoint=332930
+	|vod=https://www.youtube.com/watch?v=yVd5sGCBDys
+    }}
+
+<!-- Lower Bracket Final -->
+|R4M2={{Match
+    |winner=
+    |date=2026-05-17 14:00 {{abbr/EDT}}
+    |twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Sake|mode=hp |score1=93|score2=250|winner=2}}
+    |map2={{Map|map=Den|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=0|score2=4|winner=2}}
+    |map4={{Map|map=Gridlock|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Fringe|mode=snd|score1=|score2=|winner=skip}}
+	|cdl=12873|breakingpoint=332932
+	|vod=https://www.youtube.com/watch?v=Fz-eFSaK6JM
+    }}
+
+<!-- Grand Final -->
+|R5M1={{Match
+    |winner=lat
+	|bestof=7
+    |date=2026-05-17 15:30 {{abbr/EDT}}
+    |twitch=Call of Duty|youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Colossus|mode=hp |score1=250|score2=219|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=3|score2=8|winner=2}}
+    |map4={{Map|map=Den|mode=hp |score1=250|score2=242|winner=1}}
+    |map5={{Map|map=Scar|mode=snd|score1=6|score2=4|winner=1}}
+	|map6={{Map|map=Scar|mode=ovl|score1=4|score2=5|winner=2}}
+	|map7={{Map|map=Den|mode=snd|score1=2|score2=6|winner=2}}
+	|cdl=12866|breakingpoint=332933
+	|vod=https://www.youtube.com/watch?v=Ew6mHrMBeAg
+    }}
+}}
+
+==References==
+{{Reflist}}

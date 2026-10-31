@@ -56,11 +56,13 @@ export function doubleElim(prefix: string, upper: Src[], entrants: Src[], bo: Be
   ];
   let lowerRound = 1;
   if (entrants.length === 4) {
+    // As in the real 2024-2025 Majors (Liquipedia brackets): the 1v8 loser plays seed 9,
+    // 4v5 plays 12, 2v7 plays 10 and 3v6 plays 11 (entrants are seeds 9-12 in order).
     defs.push(
-      m("L1a", "Losers R1", "lower", 1, L(id("W1")), entrants[3]!, { loserPlace: [9, 12] }),
-      m("L1b", "Losers R1", "lower", 1, L(id("W2")), entrants[2]!, { loserPlace: [9, 12] }),
+      m("L1a", "Losers R1", "lower", 1, L(id("W1")), entrants[0]!, { loserPlace: [9, 12] }),
+      m("L1b", "Losers R1", "lower", 1, L(id("W2")), entrants[3]!, { loserPlace: [9, 12] }),
       m("L1c", "Losers R1", "lower", 1, L(id("W3")), entrants[1]!, { loserPlace: [9, 12] }),
-      m("L1d", "Losers R1", "lower", 1, L(id("W4")), entrants[0]!, { loserPlace: [9, 12] }),
+      m("L1d", "Losers R1", "lower", 1, L(id("W4")), entrants[2]!, { loserPlace: [9, 12] }),
       m("L2a", "Losers R2", "lower", 2, W(id("L1a")), W(id("L1b")), { loserPlace: [7, 8] }),
       m("L2b", "Losers R2", "lower", 2, W(id("L1c")), W(id("L1d")), { loserPlace: [7, 8] }),
     );

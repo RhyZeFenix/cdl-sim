@@ -1,0 +1,420 @@
+{{DISPLAYTITLE:Call of Duty League Championship 2026}}
+{{World Championship Events}}
+{{CDL 2026 Navbox}}
+{{CDL 2026 Tabs}}
+{{Infobox league
+|highlighted=true
+|name=Call of Duty League 2026: Playoffs
+|shortname=CDL Championship 2026
+|tickername=CDL Championship 2026
+|image=CDL Championship Logo Generic lightmode.png
+|imagedark=CDL Championship Logo Generic darkmode.png
+|series=Call of Duty League
+|abbreviation=CDL|organizer=Activision|organizer-link=http://activision.com/
+|organizer2=FaZe Vegas
+|series2=World Championship
+|game=bo7
+|platform=cdl
+|type=Offline
+|country=United States
+|city=Las Vegas, Nevada
+|venue=Michelob Ultra Arena|venuelink=https://mandalaybay.mgmresorts.com/en/entertainment/michelob-ultra-arena.html
+|format=4v4
+|sdate=2026-07-16
+|edate=2026-07-19
+|liquipediatier=1
+|prizepoolusd=2000000
+|web=https://callofdutyleague.com/en-us/
+|twitter=codleague
+|facebook=codleague
+|youtube=CODLeague
+|twitch=CallofDuty
+|instagram=codleague
+|team_number=8
+|previous=Call_of_Duty_League/Season_7/Stage_4/Major {{!}} Stage 4 Major
+|previous2=Call of Duty League/Season 6/Playoffs {{!}}Black Ops 6
+|next2=Call of Duty League/Season 8/Playoffs{{!}}Call of Duty 2026
+}}
+
+==About==
+<p style="max-width:990px; padding-top:15px">The '''2026 Call of Duty League Championship''' is the final event and the World Championship of the [[Call of Duty: Black Ops 7|Black Ops 7]] Competitive Season organized by [[Activision]]. Best teams throughout the CDL Season 7 have qualified to this event.</p>
+===Broadcast Talent===
+{{box|start|padding=2em}}
+{{BroadcasterCard
+|position=Hosts
+|b1=Puckett
+}}
+{{BroadcasterCard
+|position=Analyst
+|b1=Rosalie
+|b2=NAMELESS
+|b3=Attach
+}}
+{{box|break|padding=1em}}
+{{BroadcasterCard
+|position=Commentator
+|b1=Miles Ross
+|b2=Chance
+|b3=MerK
+|b4=Maven
+|b5=IHOLDSHIFT
+|b6=StuDyy
+}}
+{{box|end}}
+
+===Format===
+* <span class="bg-up">Top 8</span> teams from the [[Call of Duty League/Season 7#Regular Season|Regular Season]]
+* Double Elimination Bracket
+* All the matches are {{Abbr/Bo5}}, except for the Grand Finals which is {{Abbr/Bo9}}
+
+===Map Pool===
+{{CDL 2026 Map Pool Champs}}
+
+===Restricted Items===
+{{GeneralCollapsible|title=Restricted Items|content={{CDL 2026 Bans}}}}
+
+===Prize Pool===
+{{TeamPrizePool
+|{{Slot|usdprize=800000}}
+|{{Slot|usdprize=480000}}
+|{{Slot|usdprize=320000}}
+|{{Slot|usdprize=160000}}
+|{{Slot|usdprize=80000|place=5-6}}
+|{{Slot|usdprize=40000|place=7-8}}
+}}
+
+===Player Awards===
+{{prize pool start award|noprize=y|margin=false}}
+{{prize pool slot award|award=MVP|Simp|flag1=us|team1=fv}}
+{{prize pool end}}
+
+==Participants==
+{{TeamParticipants|minimumplayers=4
+|{{Opponent|Optic Texas
+  |players={{Persons
+    |{{Person|Dashy|trophies=2}}
+    |{{Person|Huke|trophies=2}}
+    |{{Person|Mercules|trophies=1}}
+    |{{Person|Shotzzy|trophies=3}}
+<!--STAFF-->
+    |{{Person|Karma|trophies=5|role=Coach|type=staff}}
+    |{{Person|JP Krez|trophies=2|role=Analyst|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular Season|placement=1}}
+}}
+|{{Opponent|Los Angeles Thieves
+  |players={{Persons
+    |{{Person|aBeZy|trophies=2}}
+    |{{Person|HyDra|trophies=1}}
+    |{{Person|Nium|trophies=}}
+    |{{Person|Scrap|trophies=}}
+<!--STAFF-->
+    |{{Person|ShAnE|trophies=1|role=Coach|type=staff}}
+    |{{Person|Sender|trophies=1|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular Season|placement=2}}
+}}
+|{{Opponent|Faze Vegas
+  |players={{Persons
+    |{{Person|04|trophies=}}
+    |{{Person|Abuzah|trophies=}}
+    |{{Person|Drazah|trophies=1}}
+    |{{Person|Simp|trophies=2}}
+	
+	|{{Person|Alluka|status=sub|played=false}}
+<!--STAFF-->
+    |{{Person|Crowder|trophies=2|role=Coach|type=staff}}
+    |{{Person|RJ|trophies=1|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular Season|placement=3}}
+}}
+|{{Opponent|Paris Gentle Mates
+  |players={{Persons
+    |{{Person|Estreal|trophies=}}
+    |{{Person|Ghosty|trophies=}}
+    |{{Person|JoeDeceives|trophies=}}
+    |{{Person|Sib|trophies=}}
+<!--STAFF-->
+    |{{Person|Mayhem|trophies=|role=Coach|type=staff}}
+    |{{Person|Cheek|trophies=|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular Season|placement=4}}
+}}
+|{{Opponent|Toronto KOI
+  |players={{Persons
+    |{{Person|Abe|trophies=}}
+    |{{Person|CleanX|trophies=}}
+    |{{Person|Insight|trophies=}}
+    |{{Person|Kips|trophies=}}
+<!--STAFF-->
+    |{{Person|Flux|trophies=|role=Coach|type=staff}}
+    |{{Person|Joee|trophies=|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular Season|placement=5}}
+}}
+|{{Opponent|G2 Minnesota
+  |players={{Persons
+    |{{Person|Envoy|trophies=1}}
+    |{{Person|Kremp|trophies=}}
+    |{{Person|Nastie|trophies=}}
+    |{{Person|Skyz|trophies=1}}
+<!--STAFF-->
+    |{{Person|Loony|trophies=|role=Coach|type=staff}}
+    |{{Person|Alexdotzip|trophies=|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular Season|placement=6}}
+}}
+|{{Opponent|Riyadh Falcons
+  |players={{Persons
+    |{{Person|Alluka|team=fv|trophies=}}
+    |{{Person|Cellium|trophies=1}}
+    |{{Person|Exnid|trophies=}}
+    |{{Person|KiSMET|trophies=1}}
+	
+	|{{Person|Pred|trophies=1|status=sub|played=false}}
+<!--STAFF-->
+    |{{Person|Clayster|trophies=3|role=Coach|type=staff}}
+    |{{Person|Mutab|trophies=|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular Season|placement=7}}
+}}
+|{{Opponent|Miami Heretics
+  |players={{Persons
+    |{{Person|MettalZ|trophies=}}
+    |{{Person|ReeaL|trophies=}}
+    |{{Person|RenKoR|trophies=}}
+    |{{Person|SupeR|trophies=}}
+<!--STAFF-->
+    |{{Person|MethodZ|trophies=|role=Coach|type=staff}}
+	|{{Person|Lucky|trophies=|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular Season|placement=8}}
+}}
+}}
+
+==Results==
+<section begin="Playoffs"/>
+{{Toggle bracket start|tournament=Call of Duty League/Season 7/Playoffs}}
+{{MatchSection|Playoffs}}
+{{Bracket|Bracket/8U4L2DSL1D|id=CDL26Final
+|R1M1header=Winners Round 1
+|R2M1header=Winners Round 2
+|R4M1header=Winners Final
+|R1M5header=Elimination Round 1
+|R2M3header=Elimination Round 2
+|R3M1header=Elimination Round 3
+|R4M2header=Elimination Finals
+|R5M1header=Grand Final
+
+<!-- Upper Bracket Quarterfinals -->
+|R1M1={{Match
+    |bestof=5
+    |date=2026-07-16 17:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=Call of Duty|vod=https://www.youtube.com/watch?v=enAH2yHEpas
+	|breakingpoint=215020
+	|cdl=12904
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Hacienda|mode=hp|score1=250|score2=202|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=0|winner=1}}
+    |map3={{Map|map=Den|mode=ovl|score1=4|score2=2|winner=1}}
+    |map4={{Map|map=Gridlock|mode=hp|score1=|score2=|winner=skip}}
+    |map5={{Map|map=Gridlock|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R1M2={{Match
+    |date=2026-07-16 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=Call of Duty|vod=https://www.youtube.com/watch?v=pPTe5TlBKW8
+	|breakingpoint=215021
+	|cdl=12905
+    |opponent1={{TeamOpponent|pgm}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=Scar|mode=hp|score1=250|score2=237|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Den|mode=hp|score1=|score2=|winner=skip}}
+    |map5={{Map|map=Gridlock|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R1M3={{Match
+    |date=2026-07-16 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=Call of Duty|vod=https://www.youtube.com/watch?v=mxhd6S5Gd3A
+	|breakingpoint=215022
+	|cdl=12906
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|ryd}}
+    |map1={{Map|map=Sake|mode=hp|score1=109|score2=250|winner=2}}
+    |map2={{Map|map=Fringe|mode=snd|score1=1|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Hacienda|mode=hp|score1=207|score2=250|winner=2}}
+    |map5={{Map|map=Den|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R1M4={{Match
+    |date=2026-07-16 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=Call of Duty|vod=https://www.youtube.com/watch?v=Ia-JYQk6V8o
+	|breakingpoint=215023
+	|cdl=12907
+    |opponent1={{TeamOpponent|fv}}
+    |opponent2={{TeamOpponent|g2m}}
+    |map1={{Map|map=Den|mode=hp|score1=250|score2=187|winner=1}}
+    |map2={{Map|map=Fringe|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Gridlock|mode=ovl|score1=4|score2=3|winner=1}}
+    |map4={{Map|map=Colossus|mode=hp|score1=250|score2=162|winner=1}}
+    |map5={{Map|map=Den|mode=snd|score1=|score2=|winner=skip}}
+    }}
+
+<!-- Upper Bracket Semifinals -->
+|R2M1={{Match
+    |date=2026-07-17 17:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=Call of Duty|vod=https://www.youtube.com/watch?v=NbWGuvUChqY
+	|breakingpoint=215026
+	|cdl=12908
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|pgm}}
+    |map1={{Map|map=Scar|mode=hp|score1=250|score2=183|winner=1}}
+    |map2={{Map|map=Den|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Scar|mode=ovl|score1=5|score2=4|winner=1}}
+    |map4={{Map|map=Colossus|mode=hp|score1=250|score2=127|winner=1}}
+    |map5={{Map|map=Raid|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R2M2={{Match
+    |date=2026-07-17 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=Call of Duty|vod=https://www.youtube.com/watch?v=lx94fSPzQ14
+	|breakingpoint=215027
+	|cdl=12909
+    |opponent1={{TeamOpponent|ryd}}
+    |opponent2={{TeamOpponent|fv}}
+    |map1={{Map|map=Scar|mode=hp|score1=192|score2=250|winner=2}}
+    |map2={{Map|map=Sake|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Scar|mode=ovl|score1=3|score2=5|winner=2}}
+    |map4={{Map|map=Den|mode=hp|score1=|score2=|winner=skip}}
+    |map5={{Map|map=Gridlock|mode=snd|score1=|score2=|winner=skip}}
+    }}
+
+<!-- Upper Bracket Final -->
+|R4M1={{Match
+    |date=2026-07-18 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=Call of Duty|vod=https://www.youtube.com/watch?v=ZQVxOnQtZ0c
+	|breakingpoint=215030
+	|cdl=12910
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|fv}}
+    |map1={{Map|map=Scar|mode=hp|score1=245|score2=250|winner=2}}
+    |map2={{Map|map=Den|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=4|score2=2|winner=1}}
+    |map4={{Map|map=Den|mode=hp|score1=164|score2=250|winner=2}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=2|score2=6|winner=2}}
+    }}
+
+<!-- Lower Bracket Round 1 -->
+|R1M5={{Match
+    |date=2026-07-17 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=Call of Duty|vod=https://www.youtube.com/watch?v=Ajw4XRsVDXs
+	|breakingpoint=215024
+	|cdl=12913
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=Colossus|mode=hp|score1=250|score2=167|winner=1}}
+    |map2={{Map|map=Gridlock|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=0|score2=6|winner=2}}
+    |map4={{Map|map=Gridlock|mode=hp|score1=250|score2=210|winner=1}}
+    |map5={{Map|map=Den|mode=snd|score1=6|score2=4|winner=1}}
+    }}
+|R1M6={{Match
+    |date=2026-07-17 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=Call of Duty|vod=https://www.youtube.com/watch?v=QJTpE1gP1qA
+	|breakingpoint=215025
+	|cdl=12914
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|g2m}}
+    |map1={{Map|map=Sake|mode=hp|score1=250|score2=249|winner=1}}
+    |map2={{Map|map=Gridlock|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Den|mode=ovl|score1=1|score2=6|winner=2}}
+    |map4={{Map|map=Hacienda|mode=hp|score1=149|score2=250|winner=2}}
+    |map5={{Map|map=Sake|mode=snd|score1=4|score2=6|winner=2}}
+    }}
+
+<!-- Lower Bracket Quarterfinals -->
+|R2M3={{Match
+    |date=2026-07-18 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=Call of Duty|vod=https://www.youtube.com/watch?v=nNDYgDkS8qY
+	|breakingpoint=215029
+	|cdl=12915
+    |opponent1={{TeamOpponent|ryd}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Hacienda|mode=hp|score1=250|score2=122|winner=1}}
+    |map2={{Map|map=Gridlock|mode=snd|score1=6|score2=1|winner=1}}
+    |map3={{Map|map=Gridlock|mode=ovl|score1=2|score2=0|winner=1}}
+    |map4={{Map|map=Den|mode=hp|score1=|score2=|winner=skip}}
+    |map5={{Map|map=Fringe|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R2M4={{Match
+    |date=2026-07-18 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=Call of Duty|vod=https://www.youtube.com/watch?v=y_tm4B3ysaI
+	|breakingpoint=215028
+	|cdl=12916
+    |opponent1={{TeamOpponent|pgm}}
+    |opponent2={{TeamOpponent|g2m}}
+    |map1={{Map|map=Den|mode=hp|score1=250|score2=183|winner=1}}
+    |map2={{Map|map=Fringe|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=6|score2=2|winner=1}}
+    |map4={{Map|map=Hacienda|mode=hp|score1=|score2=|winner=skip}}
+    |map5={{Map|map=Raid|mode=snd|score1=|score2=|winner=skip}}
+    }}
+
+<!-- Lower Bracket Semifinal -->
+|R3M1={{Match
+    |date=2026-07-18 17:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=Call of Duty|vod=https://www.youtube.com/watch?v=SJAtug21Fyg
+	|breakingpoint=215031
+	|cdl=12917
+    |opponent1={{TeamOpponent|ryd}}
+    |opponent2={{TeamOpponent|pgm}}
+    |map1={{Map|map=Den|mode=hp|score1=250|score2=138|winner=1}}
+    |map2={{Map|map=Fringe|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=1|score2=2|winner=2}}
+    |map4={{Map|map=Sake|mode=hp|score1=198|score2=250|winner=2}}
+    |map5={{Map|map=Raid|mode=snd|score1=6|score2=4|winner=1}}
+    }}
+
+<!-- Lower Bracket Final -->
+|R4M2={{Match
+    |date=2026-07-18 20:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=Call of Duty|vod=https://www.youtube.com/watch?v=U62X6cdJFeo
+	|breakingpoint=215032
+	|cdl=12918
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|ryd}}
+    |map1={{Map|map=Hacienda|mode=hp|score1=250|score2=153|winner=1}}
+    |map2={{Map|map=Den|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Scar|mode=ovl|score1=7|score2=2|winner=1}}
+    |map4={{Map|map=Gridlock|mode=hp|score1=250|score2=155|winner=1}}
+    |map5={{Map|map=Raid|mode=snd|score1=|score2=|winner=skip}}
+    }}
+
+<!-- Grand Final -->
+|R5M1={{Match
+    |bestof=9
+    |date=2026-07-19 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=Call of Duty|vod=https://www.youtube.com/watch?v=OtkL2tJOpIc
+	|breakingpoint=215033
+	|cdl=12911
+    |opponent1={{TeamOpponent|fv}}
+    |opponent2={{TeamOpponent|tx}}
+    |map1={{Map|map=Colossus|mode=hp|score1=216|score2=250|winner=2}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=4|score2=3|winner=1}}
+    |map4={{Map|map=Scar|mode=hp|score1=250|score2=194|winner=1}}
+    |map5={{Map|map=Den|mode=snd|score1=6|score2=5|winner=1}}
+	|map6={{Map|map=Den|mode=ovl|score1=3|score2=4|winner=2}}
+	|map7={{Map|map=Hacienda|mode=snd|score1=6|score2=5|winner=1}}
+    |map8={{Map|map=Gridlock|mode=hp|score1=|score2=|winner=skip}}
+    |map9={{Map|map=Sake|mode=snd|score1=|score2=|winner=skip}}
+    }}
+}}
+<section end="Playoffs"/>
+
+==Additional Information==
+
+===Country Representation===
+{{Country representation}}
+===Streams===
+{{#lst:Call of Duty_League/Season_7/Stage_1|Streams}}

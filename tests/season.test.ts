@@ -125,6 +125,13 @@ describe("brackets", () => {
     expect(run.matches.at(-1)!.def.bestOf).toBe(7);
   });
 
+  it("12-team Major Losers R1 pairs like the real 2024-2025 Majors", () => {
+    // Chalk: the higher seed wins every Winners R1 match, so the losers are seeds 8, 5, 7, 6.
+    const { run } = play(bracketPlan(DE12, 5, 7), ids(12));
+    const lr1 = run.matches.filter((m) => m.def.id.startsWith("L1")).map((m) => [...m.teams].sort().join(" v "));
+    expect(lr1).toEqual(["t8 v t9", "t12 v t5", "t10 v t7", "t11 v t6"]);
+  });
+
   it("double elimination: nobody plays after their second loss; LB entrants are out after one", () => {
     for (let i = 0; i < 30; i++) {
       const plan = bracketPlan(DE12, 5, 7);
@@ -282,6 +289,17 @@ describe("season pipeline", () => {
     const s = createSeason(data, { seed: "champs", ratingMode: "historical", champsOnly: true });
     expect(s.points["optic-texas"]).toBe(575);
     expect(s.points["cloud9-new-york"]).toBe(30);
+  });
+
+  it("Chaos changes results but stays deterministic per seed", () => {
+    const data = loadSeasonData("2026");
+    const run = (chaos: boolean) => {
+      const s = createSeason(data, { seed: "chaos", ratingMode: "historical", chaos });
+      advanceSeason(s, data);
+      return JSON.stringify(s.series);
+    };
+    expect(run(true)).toBe(run(true));
+    expect(run(true)).not.toBe(run(false));
   });
 
   it("a full season simulates in under 5 seconds", () => {

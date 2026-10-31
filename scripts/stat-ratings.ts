@@ -159,3 +159,99 @@ export function teamMapMods(raw: RawStats, teamIdOf: (name: string) => string | 
   }
   return out;
 }
+
+/**
+ * Consistency from map-to-map spread. Per mode, a player's standard deviation of per-map
+ * (kills - deaths) is divided by the spread expected from their own volume (sqrt of kills
+ * + deaths per map, as for a count), so high-volume slayers aren't marked inconsistent
+ * just for trading more; that ratio is then compared with the mode's typical ratio and
+ * modes are combined weighted by maps. Bigger swings than expected = lower rating.
+ */
+export function consistencyFromStats(
+  rows: Record<string, string>[],
+  idOf: (playerLink: string) => string,
+  raw: RawStats,
+): Map<string, number> {
+  // Kills + deaths per map, per player and mode, from the season aggregates.
+  const FIELDS: Record<string, [string, string, string]> = {
+    Hardpoint: ["HPKills", "HPDeaths", "HPMaps"],
+    "Search and Destroy": ["SDKills", "SDDeaths", "SDMaps"],
+    Control: ["ConKills", "ConDeaths", "ConMaps"],
+    Overload: ["OVRKills", "OVRDeaths", "OVRMaps"],
+  };
+  const vol = new Map<string, { kd: number; maps: number }>();
+  for (const r of raw.players) {
+    for (const [mode, [k, d, m]] of Object.entries(FIELDS)) {
+      const key = `${idOf(r.PlayerLink!)}|${mode}`;
+      const v = vol.get(key) ?? { kd: 0, maps: 0 };
+      v.kd += num(r, k) + num(r, d);
+      v.maps += num(r, m);
+      vol.set(key, v);
+    }
+  }
+  const expectedSd = (id: string, mode: string) => {
+    const v = vol.get(`${id}|${mode}`);
+    return v && v.maps ? Math.sqrt(v.kd / v.maps) : 0;
+  };
+  type Acc = { n: number; pm: number; pm2: number };
+  const byPlayerMode = new Map<string, Map<string, Acc>>();
+  for (const r of rows) {
+    const id = idOf(r.PlayerLink!);
+    const modes = byPlayerMode.get(id) ?? new Map<string, Acc>();
+    const a = modes.get(r.Gamemode!) ?? { n: 0, pm: 0, pm2: 0 };
+    a.n += num(r, "Maps");
+    a.pm += num(r, "PM");
+    a.pm2 += num(r, "PM2");
+    modes.set(r.Gamemode!, a);
+    byPlayerMode.set(id, modes);
+  }
+  const rawSd = (a: Acc) => Math.sqrt(Math.max(0, a.pm2 / a.n - (a.pm / a.n) ** 2));
+
+  // Spread relative to the player's own volume, per mode.
+  const relSd = new Map<string, Map<string, number>>();
+  for (const [id, modes] of byPlayerMode) {
+    const m = new Map<string, number>();
+    for (const [mode, a] of modes) {
+      const e = expectedSd(id, mode);
+      if (e > 0) m.set(mode, rawSd(a) / e);
+    }
+    relSd.set(id, m);
+  }
+  const sdOf = (id: string, mode: string) => relSd.get(id)?.get(mode);
+
+  // Typical ratio per mode: median among players with 8+ maps in it.
+  const typical = new Map<string, number>();
+  const sds = new Map<string, number[]>();
+  for (const [id, modes] of byPlayerMode) {
+    for (const [mode, a] of modes) {
+      const x = sdOf(id, mode);
+      if (a.n >= 8 && x !== undefined) sds.set(mode, [...(sds.get(mode) ?? []), x]);
+    }
+  }
+  for (const [mode, xs] of sds) {
+    const s = [...xs].sort((a, b) => a - b);
+    typical.set(mode, s[Math.floor(s.length / 2)]!);
+  }
+
+  const rel = new Map<string, { r: number; n: number }>();
+  for (const [id, modes] of byPlayerMode) {
+    let w = 0, sum = 0;
+    for (const [mode, a] of modes) {
+      const t = typical.get(mode);
+      const x = sdOf(id, mode);
+      if (!t || x === undefined || a.n < 2) continue;
+      sum += a.n * (x / t);
+      w += a.n;
+    }
+    if (w > 0) rel.set(id, { r: sum / w, n: w });
+  }
+  const regulars = [...rel.values()].filter((x) => x.n >= MIN_MAPS_FOR_POPULATION).map((x) => x.r);
+  const mean = regulars.reduce((a, b) => a + b, 0) / regulars.length;
+  const sd = Math.sqrt(regulars.reduce((a, b) => a + (b - mean) ** 2, 0) / regulars.length) || 1;
+  const out = new Map<string, number>();
+  for (const [id, { r, n }] of rel) {
+    const z = (-(r - mean) / sd) * (n / (n + SHRINK.all));
+    out.set(id, Math.max(60, Math.min(97, Math.round(80 + SCALE * z))));
+  }
+  return out;
+}

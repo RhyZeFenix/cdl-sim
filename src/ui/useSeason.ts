@@ -2,9 +2,6 @@
 // lives in a ref and a version counter drives re-renders.
 import { useCallback, useRef, useState } from "react";
 import {
-  advance,
-  advanceSeason,
-  advanceStage,
   createSeason,
   isDone,
   loadSeasonData,
@@ -14,6 +11,9 @@ import {
   type SeasonState,
   type Step,
 } from "../engine";
+import { runSim, type SimKind, type SimRequest, type SimResponse } from "./simWorker";
+
+export type { SimKind };
 
 export interface SeasonConfig {
   seasonId: SeasonId;
@@ -23,9 +23,9 @@ export interface SeasonConfig {
   gmTeam?: string;
   /** Play Champs only, from the real seeds. */
   champsOnly?: boolean;
+  /** Hot and cold weekends: more upsets. */
+  chaos?: boolean;
 }
-
-export type SimKind = "step" | "stage" | "season";
 
 export interface SimOutcome {
   steps: Step[];
@@ -44,6 +44,7 @@ const optionsOf = (cfg: SeasonConfig) => ({
   ratingMode: cfg.ratingMode,
   gmTeam: cfg.gmTeam,
   champsOnly: cfg.champsOnly,
+  chaos: cfg.chaos,
 });
 
 export function useSeason(initial: SeasonConfig) {
@@ -54,7 +55,24 @@ export function useSeason(initial: SeasonConfig) {
   }
   const [version, setVersion] = useState(0);
   const [busy, setBusy] = useState(false);
+  /** Live progress while a worker sim runs (the state itself only updates when it finishes). */
+  const [progress, setProgress] = useState<{ next: number; total: number } | null>(null);
   const bump = () => setVersion((v) => v + 1);
+
+  // The simulation runs in a Web Worker so the page stays responsive; if workers are
+  // unavailable or fail, it runs inline exactly as before.
+  const workerRef = useRef<Worker | null | undefined>(undefined);
+  const reqId = useRef(0);
+  const getWorker = (): Worker | null => {
+    if (workerRef.current === undefined) {
+      try {
+        workerRef.current = new Worker(new URL("./simWorker.ts", import.meta.url), { type: "module" });
+      } catch {
+        workerRef.current = null;
+      }
+    }
+    return workerRef.current;
+  };
 
   const start = useCallback((cfg: SeasonConfig) => {
     const d = loadSeasonData(cfg.seasonId);
@@ -63,29 +81,65 @@ export function useSeason(initial: SeasonConfig) {
     bump();
   }, []);
 
-  /** Runs on the next frame so the "simulating" state can paint first. */
-  const sim = useCallback(
-    (kind: SimKind): Promise<SimOutcome> =>
-      new Promise((resolve) => {
-        setBusy(true);
-        requestAnimationFrame(() =>
-          setTimeout(() => {
-            const s = stateRef.current!;
-            const d = loadSeasonData(s.seasonId);
-            const before = new Set(Object.keys(s.series));
-            const from = s.next;
-            if (kind === "step") advance(s, d);
-            else if (kind === "stage") advanceStage(s, d);
-            else advanceSeason(s, d);
-            const newSeries = Object.keys(s.series).filter((id) => !before.has(id));
-            setBusy(false);
-            bump();
-            resolve({ steps: s.steps.slice(from, s.next), newSeries, paused: !!s.pending });
-          }, 0),
-        );
-      }),
-    [],
-  );
+  const runInline = (kind: SimKind): Promise<SimOutcome> =>
+    new Promise((resolve) => {
+      // Next frame, so the "simulating" state can paint first.
+      requestAnimationFrame(() =>
+        setTimeout(() => {
+          const s = stateRef.current!;
+          const out = runSim(s, kind);
+          resolve({ ...out, paused: !!s.pending });
+        }, 0),
+      );
+    });
+
+  const runInWorker = (worker: Worker, kind: SimKind): Promise<SimOutcome> =>
+    new Promise((resolve, reject) => {
+      const id = ++reqId.current;
+      const onMessage = (e: MessageEvent<SimResponse>) => {
+        const msg = e.data;
+        if (msg.id !== id) return;
+        if (msg.type === "progress") {
+          setProgress({ next: msg.next, total: msg.total });
+          return;
+        }
+        worker.removeEventListener("message", onMessage);
+        worker.removeEventListener("error", onError);
+        if (msg.type === "error") return reject(new Error(msg.message));
+        stateRef.current = msg.state;
+        resolve({ steps: msg.steps, newSeries: msg.newSeries, paused: !!msg.state.pending });
+      };
+      const onError = (e: ErrorEvent) => {
+        worker.removeEventListener("message", onMessage);
+        worker.removeEventListener("error", onError);
+        reject(e.error ?? new Error(e.message));
+      };
+      worker.addEventListener("message", onMessage);
+      worker.addEventListener("error", onError);
+      worker.postMessage({ id, kind, state: stateRef.current! } satisfies SimRequest);
+    });
+
+  const sim = useCallback(async (kind: SimKind): Promise<SimOutcome> => {
+    setBusy(true);
+    try {
+      const worker = getWorker();
+      if (worker) {
+        try {
+          return await runInWorker(worker, kind);
+        } catch (err) {
+          // The state on this side is untouched (the worker had a copy), so retry inline.
+          console.warn("Simulation worker failed; running inline instead.", err);
+          workerRef.current?.terminate();
+          workerRef.current = null;
+        }
+      }
+      return await runInline(kind);
+    } finally {
+      setBusy(false);
+      setProgress(null);
+      bump();
+    }
+  }, []);
 
   const exportJson = useCallback(() => {
     const s = stateRef.current!;
@@ -107,7 +161,7 @@ export function useSeason(initial: SeasonConfig) {
       throw new Error("Not a CDL Sim season file.");
     }
     stateRef.current = s as SeasonState;
-    setConfig({ seasonId: s.seasonId, seed: s.options.seed, ratingMode: s.options.ratingMode, gmTeam: s.gm?.team, champsOnly: s.options.champsOnly });
+    setConfig({ seasonId: s.seasonId, seed: s.options.seed, ratingMode: s.options.ratingMode, gmTeam: s.gm?.team, champsOnly: s.options.champsOnly, chaos: s.options.chaos });
     bump();
   }, []);
 
@@ -132,6 +186,7 @@ export function useSeason(initial: SeasonConfig) {
     state,
     version,
     busy,
+    progress,
     done: isDone(state),
     start,
     sim,

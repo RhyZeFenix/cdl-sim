@@ -1,0 +1,510 @@
+{{Liquipedia_links/DreamHack_Dallas_2025}}
+{{DISPLAYTITLE:Call of Duty League 2025: Stage 4 Major}}
+{{CDL 2025 Navbox}}
+{{CDL 2025 Stage Tabs}}
+{{tabs static
+|name1=Overview|link1=Call_of_Duty_League/Season_6/Regular_Season
+|name2=Stage 1|link2=Call_of_Duty_League/Season_6/Stage_1
+|name3=Stage 2|link3=Call_of_Duty_League/Season_6/Stage_2
+|name4=Stage 3|link4=Call_of_Duty_League/Season_6/Stage_3
+|name5=Stage 4|link5=Call_of_Duty_League/Season_6/Stage_4
+}}
+{{Tabs static
+|name1=Qualifiers|link1=Call_of_Duty_League/Season_6/Stage_4
+|name2=Major|link2=Call_of_Duty_League/Season_6/Stage_4/Major
+}}
+{{Infobox league
+|name=Call of Duty League 2025: Stage 4 Major
+|tickername=CDL '25 Major 4
+|image=CDL Major 4 2025 lightmode.png
+|imagedark=CDL Major 4 2025 darkmode.png
+|series=Call of Duty League
+|abbreviation=CDL
+|organizer=Activision
+|organizer2=DreamHack
+|game=bo6
+|type=Offline
+|country=us
+|city=Dallas
+|venue=Kay Bailey Hutchison Convention Center
+|venuelink=https://www.dallasconventioncenter.com
+|format=4v4
+|sdate=2025-05-23
+|edate=2025-05-25
+|liquipediatier=1|highlighted=true
+|prizepoolusd=375000
+|web=https://callofdutyleague.com/en-us/
+|twitter=codleague
+|facebook=codleague
+|youtube=CODLeague
+|twitch=CallofDuty
+|instagram=codleague
+|team_number=12
+|previous=Call of Duty League/Season 6/Stage 4{{!}} Stage 4 Qualifiers 
+|next=Call_of_Duty_League/Season_6/Playoffs{{!}} CDL Championship
+}}
+
+==About==
+===Format===
+* All 12 CDL teams
+* Seeding determinated by [[Call of Duty League/Season_6/Stage 4|Qualifiers]]
+* Double Elimination
+* All matches are {{Abbr/Bo5}}, except for Grand Finals which are {{Abbr/Bo7}}
+
+===Broadcast Talent===
+{{box|start|padding=1em}}
+{{BroadcasterCard
+|position=Stage Host
+|b1=Blaze
+}}
+{{BroadcasterCard
+|position=Hosts
+|b1=Puckett
+}}
+{{BroadcasterCard
+|position=Analyst
+|b1=Allycxt
+|b2=NAMELESS
+|b3=TacticalRab |b3flag=uk |b3name=Arran Francis
+}}
+{{box|break|padding=1em}}
+{{BroadcasterCard
+|position=Commentator
+|b1=Miles Ross
+|b2=Chance
+|b3=MerK
+|b4=Maven
+|b5=IHOLDSHIFT
+|b6=StuDyy
+|b7=Enigma |b7flag=uk
+}}
+{{box|end}}
+
+===Map Pool===
+{{CDL 2025 Map Pool Stage 4 Major}}
+
+===Restricted Items===
+{{GeneralCollapsible|title=Restricted Items|content={{CDL 2025 Bans}}}}
+
+===Prize Pool===
+{{TeamPrizePool|points1=cdl
+|{{Slot|points1=100|usdprize=150000}}
+|{{Slot|points1=75|usdprize=90000}}
+|{{Slot|points1=60|usdprize=60000}}
+|{{Slot|points1=45|usdprize=30000}}
+|{{Slot|points1=30|usdprize=15000|place=5-6}}
+|{{Slot|points1=15|usdprize=7500|place=7-8}}
+|{{Slot|points1=0|usdprize=0|place=9-12}}
+}}
+
+===Player Awards===
+{{prize pool start award|noprize=y|margin=false}}
+{{prize pool slot award|award=MVP|Scrap|flag1=us|team1=LAT}}
+{{prize pool end}}
+
+==Participants==
+{{TeamCardToggleButton}}
+{{TeamCard columns start|cols=4|height=200}}
+{{TeamCard
+|team=Miami Heretics
+|p1=MettalZ
+|p2=ReeaL
+|p3=RenKoR
+|p4=SupeR
+|t2title=Staff
+|t2c1=MethodZ
+|t2c2=Sikotik
+|t3title=Subs
+|t3p1=Lucky |t3p1dnp=true
+|qualifier=[[Call of Duty League/Season_6/Stage 4|Stage 4 - 1st Seed]]
+}}
+{{TeamCard
+|team=Atlanta FaZe
+|p1=aBeZy
+|p2=Cellium
+|p3=Drazah
+|p4=Simp
+|t2title=Staff
+|t2c1=Crowder
+|t2c2=RJ
+|qualifier=[[Call of Duty League/Season_6/Stage 4|Stage 4 - 2nd Seed]]
+}}
+{{TeamCard
+|team=OpTic Texas
+|p1=Dashy
+|p2=Huke
+|p3=Mercules
+|p4=Shotzzy
+|t2title=Staff
+|t2c1=Karma
+|t2c2flag=us|t2c2=JP Krez|t2c2pos={{Abbr|A|Analyst}}
+|t3title=Subs
+|t3p1=Skyz|t3p1dnp=true
+|qualifier=[[Call of Duty League/Season_6/Stage 4|Stage 4 - 3rd Seed]]
+}}
+{{TeamCard
+|team=Los Angeles Thieves
+|p1=Envoy
+|p2=Ghosty
+|p3=HyDra
+|p4=Scrap
+|t2title=Staff
+|t2c1=ShAnE
+|t2c2=Sender
+|qualifier=[[Call of Duty League/Season_6/Stage 4|Stage 4 - 4th Seed]]
+}}
+{{TeamCard
+|team=Vancouver Surge
+|p1=04
+|p2=Abuzah
+|p3=Neptune
+|p4=Nastie
+|t2title=Staff
+|t2c1=Rambo
+|qualifier=[[Call of Duty League/Season_6/Stage 4|Stage 4 - 5th Seed]]
+}}
+{{TeamCard
+|team=Toronto Ultra
+|p1=Beans
+|p2=CleanX
+|p3=Insight
+|p4=JoeDeceives
+|t2title=Staff
+|t2c1=Flux
+|t2c2=Joee
+|qualifier=[[Call of Duty League/Season_6/Stage 4|Stage 4 - 6th Seed]]
+}}
+{{TeamCard
+|team=Cloud9 New York
+|p1=Capsidal
+|p2=Kremp
+|p3=Sib
+|p4=Spart
+|t2title=Staff
+|t2c1=Accuracy
+|t2c2=Arian
+|qualifier=[[Call of Duty League/Season_6/Stage 4|Stage 4 - 7th Seed]]
+}}
+{{TeamCard
+|team=Minnesota RØKKR
+|p1=Estreal
+|p2=Gio
+|p3=Kenny
+|p4=Nero
+|t2title=Staff
+|t2c1=Loony
+|t2c2=Alexdotzip |t2c2flag=us
+|qualifier=[[Call of Duty League/Season_6/Stage 4|Stage 4 - 8th Seed]]
+}}
+{{TeamCard
+|team=Boston Breach
+|p1=Cammy
+|p2=Owakening
+|p3=Purj
+|p4=Snoopy
+|t2title=Staff
+|t2c1=Seany
+|t2c2=Magick
+|qualifier=[[Call of Duty League/Season_6/Stage 4|Stage 4 - 9th Seed]]
+}}
+{{TeamCard
+|team=Los Angeles Guerrillas M8
+|p1=FeLo
+|p2=KiSMET
+|p3=Lunarz
+|p4=oJohnny
+|t2title=Staff
+|t2c1=DREAL
+|t2c2=MarkyB
+|t2c3=Mohsen |t2c3pos={{Abbr|A|Analyst}}
+|t3title=Subs
+|t3p1=Lynz|t3p1dnp=true
+|qualifier=[[Call of Duty League/Season_6/Stage 4|Stage 4 - 10th Seed]]
+}}
+{{TeamCard
+|team=Carolina Royal Ravens
+|p1=Gwinn
+|p2=SlasheR
+|p3=TJHaLy
+|p4=Wrecks
+|t2title=Staff
+|t2c1=Saintt
+|qualifier=[[Call of Duty League/Season_6/Stage 4|Stage 4 - 11th Seed]]
+}}
+{{TeamCard
+|team=Vegas Falcons
+|p1=Arcitys
+|p2=Exnid
+|p3=Pred
+|p4=Priestahh
+|t2title=Staff
+|t2c1=Clayster
+|t3title=Subs
+|t3p1=qk4b|t3p1dnp=true
+|t3p2=WXSL|t3p2dnp=true
+|t3p3=KingAbody|t3p3dnp=true
+|t3p4=Roxas|t3p4dnp=true
+|t3p5=KiinG|t3p5dnp=true
+|qualifier=[[Call of Duty League/Season_6/Stage 4|Stage 4 - 12th Seed]]
+}}
+{{TeamCard columns end}}
+
+==Results==
+{{Bracket|Bracket/8U8L2DSL1D|id=CDL25MAJS4
+
+<!-- Upper Bracket Quarterfinals -->
+|R1M1={{Match
+    |bestof=5
+    |date=2025-05-23 - 11:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=_qsfyv3UXSU
+	|cdl=12512
+	|breakingpoint=94036
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|min}}
+    |map1={{Map|map=Skyline|mode=hp |score1=250|score2=210|winner=1}}
+    |map2={{Map|map=Dealership|mode=snd|score1=6|score2=1|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Red Card|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Red Card|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R1M2={{Match
+    |date=2025-05-23 - 11:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=YmR174RfcgQ&pp=0gcJCY0JAYcqIYzv
+	|cdl=12513
+	|breakingpoint=94035
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|van}}
+    |map1={{Map|map=Skyline|mode=hp |score1=250|score2=103|winner=1}}
+    |map2={{Map|map=Dealership|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Hacienda|mode=con|score1=3|score2=0|winner=1}}
+    |map4={{Map|map=Hacienda|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Rewind|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R1M3={{Match
+    |date=2025-05-23 - 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=xs50JIuFRjI
+	|cdl=12514
+	|breakingpoint=94038
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|c9ny}}
+    |map1={{Map|map=Rewind|mode=hp |score1=250|score2=142|winner=1}}
+    |map2={{Map|map=Dealership|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Hacienda|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Skyline|mode=hp |score1=250|score2=151|winner=1}}
+    |map5={{Map|map=Red Card|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R1M4={{Match
+    |date=2025-05-23 - 12:40 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=GmGiVndZKzg
+	|cdl=12515
+	|breakingpoint=94037
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=Vault|mode=hp |score1=250|score2=184|winner=1}}
+    |map2={{Map|map=Dealership|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Protocol|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Rewind|mode=hp |score1=250|score2=176|winner=1}}
+    |map5={{Map|map=Protocol|mode=snd|score1=|score2=|winner=skip}}
+    }}
+
+<!-- Upper Bracket Semifinals -->
+|R3M1={{Match
+    |date=2025-05-24 - 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=_9zSt3w-wtQ
+	|cdl=12516
+	|breakingpoint=94045
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Hacienda|mode=hp |score1=250|score2=151|winner=1}}
+    |map2={{Map|map=Red Card|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Protocol|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Skyline|mode=hp |score1=250|score2=244|winner=1}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=6|score2=2|winner=1}}
+    }}
+|R3M2={{Match
+    |date=2025-05-24 - 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=_CCmv6rnXKk
+	|cdl=12517
+	|breakingpoint=94046
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|tx}}
+    |map1={{Map|map=Rewind|mode=hp |score1=250|score2=246|winner=1}}
+    |map2={{Map|map=Protocol|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Hacienda|mode=con|score1=0|score2=3|winner=2}}
+    |map4={{Map|map=Red Card|mode=hp |score1=250|score2=158|winner=1}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=|score2=|winner=skip}}
+    }}
+
+<!-- Upper Bracket Final -->
+|R5M1={{Match
+    |date=2025-05-25 - 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=qYXHbjHPl54
+	|cdl=12518
+	|breakingpoint=94050
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|atl}}
+    |map1={{Map|map=Hacienda|mode=hp |score1=250|score2=249|winner=1}}
+    |map2={{Map|map=Protocol|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Hacienda|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Rewind|mode=hp |score1=216|score2=250|winner=2}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=|score2=|winner=skip}}
+    }}
+
+<!-- Lower Bracket Round 1 -->
+|R1M5={{Match
+    |date=2025-05-23 - 14:15 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=oDlIKz77qjw
+	|cdl=12521
+	|breakingpoint=94039
+    |opponent1={{TeamOpponent|min}}
+    |opponent2={{TeamOpponent|bos}}
+    |map1={{Map|map=Rewind|mode=hp |score1=130|score2=250|winner=2}}
+    |map2={{Map|map=Red Card|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Vault|mode=hp |score1=230|score2=229|winner=1}}
+    |map5={{Map|map=Dealership|mode=snd|score1=6|score2=1|winner=1}}
+    }}
+|R1M6={{Match
+    |date=2025-05-23 - 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=mNp2L4TiHvg
+	|cdl=12522
+	|breakingpoint=94040
+    |opponent1={{TeamOpponent|van}}
+    |opponent2={{TeamOpponent|vf}}
+    |map1={{Map|map=Vault|mode=hp |score1=250|score2=160|winner=1}}
+    |map2={{Map|map=Rewind|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Hacienda|mode=con|score1=0|score2=3|winner=2}}
+    |map4={{Map|map=Rewind|mode=hp |score1=250|score2=138|winner=1}}
+    |map5={{Map|map=Dealership|mode=snd|score1=4|score2=6|winner=2}}
+    }}
+|R1M7={{Match
+    |date=2025-05-23 - 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=Ez8gQhA79h0
+	|cdl=12523
+	|breakingpoint=94041
+    |opponent1={{TeamOpponent|c9ny}}
+    |opponent2={{TeamOpponent|lagm}}
+    |map1={{Map|map=Rewind|mode=hp |score1=223|score2=250|winner=2}}
+    |map2={{Map|map=Red Card|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Hacienda|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Red Card|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Rewind|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R1M8={{Match
+    |date=2025-05-23 - 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=1arDcQ1as6M
+	|cdl=12524
+	|breakingpoint=94042
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|car}}
+    |map1={{Map|map=Vault|mode=hp |score1=250|score2=155|winner=1}}
+    |map2={{Map|map=Dealership|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Protocol|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Rewind|mode=hp |score1=250|score2=175|winner=1}}
+    |map5={{Map|map=Protocol|mode=snd|score1=6|score2=5|winner=1}}
+    }}
+
+<!-- Lower Bracket Round 2 -->
+|R2M1={{Match
+    |date=2025-05-23 - 17:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=xc5x0WanuQY
+	|cdl=12525
+	|breakingpoint=94043
+    |opponent1={{TeamOpponent|min}}
+    |opponent2={{TeamOpponent|vf}}
+    |map1={{Map|map=Rewind|mode=hp |score1=250|score2=222|winner=1}}
+    |map2={{Map|map=Red Card|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Hacienda|mode=hp |score1=250|score2=159|winner=1}}
+    |map5={{Map|map=Dealership|mode=snd|score1=6|score2=1|winner=1}}
+    }}
+|R2M2={{Match
+    |date=2025-05-24 - 11:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=v46_FQfk5NE
+	|cdl=12526
+	|breakingpoint=94044
+    |opponent1={{TeamOpponent|lagm}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=Skyline|mode=hp |score1=34|score2=250|winner=2}}
+    |map2={{Map|map=Dealership|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Protocol|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Red Card|mode=hp |score1=246|score2=250|winner=2}}
+    |map5={{Map|map=Protocol|mode=snd|score1=|score2=|winner=skip}}
+    }}
+
+<!-- Lower Bracket Quarterfinals -->
+|R3M3={{Match
+    |date=2025-05-24 - 17:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=jSNuNs-KIms
+	|cdl=12527
+	|breakingpoint=94048
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|min}}
+    |map1={{Map|map=Rewind|mode=hp |score1=250|score2=153|winner=1}}
+    |map2={{Map|map=Dealership|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=0|score2=3|winner=2}}
+    |map4={{Map|map=Hacienda|mode=hp |score1=250|score2=235|winner=1}}
+    |map5={{Map|map=Rewind|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R3M4={{Match
+    |date=2025-05-24 - 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=bmYNXn-JSc8
+	|cdl=12528
+	|breakingpoint=94047
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=Rewind|mode=hp |score1=250|score2=195|winner=1}}
+    |map2={{Map|map=Hacienda|mode=snd|score1=6|score2=1|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Skyline|mode=hp |score1=250|score2=224|winner=1}}
+    |map5={{Map|map=Red Card|mode=snd|score1=|score2=|winner=skip}}
+    }}
+
+<!-- Lower Bracket Semifinal -->
+|R4M1={{Match
+    |date=2025-05-25 - 11:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=sdMjltTdmTE
+	|cdl=12529
+	|breakingpoint=94049
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Skyline|mode=hp |score1=250|score2=237|winner=1}}
+    |map2={{Map|map=Dealership|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Hacienda|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Vault|mode=hp |score1=136|score2=250|winner=2}}
+    |map5={{Map|map=Rewind|mode=snd|score1=|score2=|winner=skip}}
+    }}
+
+<!-- Lower Bracket Final -->
+|R5M2={{Match
+    |date=2025-05-25 - 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=xkcKC2MidyA
+	|cdl=12530
+	|breakingpoint=94051
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Vault|mode=hp |score1=202|score2=250|winner=2}}
+    |map2={{Map|map=Red Card|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Rewind|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=|score2=|winner=skip}}
+    }}
+
+<!-- Grand Final -->
+|R6M1={{Match
+	|bestof=7
+    |date=2025-05-25 - 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=TqgHSE3wCSc
+	|cdl=12519
+	|breakingpoint=94052
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Red Card|mode=hp |score1=177|score2=250|winner=2}}
+    |map2={{Map|map=Rewind|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Protocol|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Skyline|mode=hp |score1=250|score2=235|winner=1}}
+    |map5={{Map|map=Red Card|mode=snd|score1=3|score2=6|winner=2}}
+	|map6={{Map|map=Hacienda|mode=con |score1=0|score2=3|winner=2}}
+    |map7={{Map|map=Dealership|mode=snd|score1=|score2=|winner=skip}}
+    }}
+}}

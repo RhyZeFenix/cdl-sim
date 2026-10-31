@@ -13,6 +13,8 @@ export const TUNING = {
   teamFormSd: 0.05,
   /** Spread of a team's form per event / qualifier week (skill units); set by the backtest. */
   eventFormSd: 0,
+  /** Per-event form used when a season is started with Chaos on (hot and cold weekends, more upsets). */
+  chaosFormSd: 0.04,
   /** Selection weight for who takes the next gunfight: exp(engageK * skill). */
   engageK: 3,
   /** Stat weights per mode: [slaying, mode stat]. */

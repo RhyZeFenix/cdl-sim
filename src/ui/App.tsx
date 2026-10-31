@@ -69,7 +69,8 @@ export function App() {
     draft.seed !== store.config.seed ||
     draft.ratingMode !== store.config.ratingMode ||
     draft.gmTeam !== store.config.gmTeam ||
-    !!draft.champsOnly !== !!store.config.champsOnly;
+    !!draft.champsOnly !== !!store.config.champsOnly ||
+    !!draft.chaos !== !!store.config.chaos;
   const startNew = () => {
     if (state.next > 0 && !confirm("Start a new season? Unsaved progress on this one will be lost.")) return;
     store.start(draft);
@@ -113,7 +114,9 @@ export function App() {
 
   const next = state.steps[state.next];
   const paused = !!state.pending;
-  const pct = Math.round((100 * state.next) / state.steps.length);
+  // While a worker sim runs, show its live progress.
+  const shownNext = store.progress?.next ?? state.next;
+  const pct = Math.round((100 * shownNext) / state.steps.length);
 
   return (
     <div className="app">
@@ -154,6 +157,10 @@ export function App() {
               </button>
             ))}
           </div>
+          <label className="field" title="Hot and cold weekends: each team's form swings per event, so upsets and surprise runs are far more common">
+            <input type="checkbox" checked={!!draft.chaos} onChange={(e) => setDraft({ ...draft, chaos: e.target.checked })} style={{ width: "auto" }} />
+            Chaos
+          </label>
           <div className="seg" role="group" aria-label="Season length">
             <button aria-pressed={!draft.champsOnly} onClick={() => setDraft({ ...draft, champsOnly: false })}>
               Full season
@@ -198,6 +205,7 @@ export function App() {
         <div className="row">
           <span className="status">
             {data.season.label} · seed <b>{state.options.seed}</b> · {state.options.ratingMode}
+            {state.options.chaos ? <> · <b>Chaos</b></> : null}
             {state.options.champsOnly ? <> · <b>Champs only</b> (real seeds)</> : null}
             {state.gm ? <> · GM: <b>{data.season.teams.find((t) => t.id === state.gm!.team)?.abbr}</b></> : null}
             {state.gm && state.options.champsOnly && !data.season.historical?.champsSeeds?.includes(state.gm.team) ? (

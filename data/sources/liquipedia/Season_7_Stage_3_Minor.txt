@@ -1,0 +1,396 @@
+{{DISPLAYTITLE:Call of Duty League 2026: Stage 3 Minor}}
+{{CDL 2026 Navbox}}
+{{CDL 2026 Tabs}}
+{{tabs static
+|name1=Overview|link1=Call_of_Duty_League/Season_7/Regular_Season
+|name2=Stage 1|link2=Call_of_Duty_League/Season_7/Stage_1
+|name3=Stage 2|link3=Call_of_Duty_League/Season_7/Stage_2
+|name4=Stage 3|link4=Call_of_Duty_League/Season_7/Stage_3
+|name5=Stage 4|link5=Call_of_Duty_League/Season_7/Stage_4
+}}
+{{Tabs static
+|name1=Qualifiers|link1=Call_of_Duty_League/Season_7/Stage_3
+|name2=Minor|link2=Call_of_Duty_League/Season_7/Stage_3/Minor
+|name3=Major|link3=Call_of_Duty_League/Season_7/Stage_3/Major
+}}
+{{Infobox league
+|name=Call of Duty League 2026: Stage 3 Minor
+|tickername=CDL '26 Stage 3 Minor
+|image=CDL 2025 Minor 1 lightmode.png
+|imagedark=CDL 2025 Minor 1 darkmode.png
+|series=Call of Duty League
+|abbreviation=CDL
+|organizer=Activision
+|game=bo7
+|type=Online
+|country=World
+|format=4v4
+|sdate=2026-04-24
+|edate=2026-04-26
+|liquipediatier=1|highlighted=true
+|prizepoolusd=20000
+|web=https://callofdutyleague.com/en-us/
+|twitter=codleague
+|facebook=codleague
+|youtube=CODLeague
+|twitch=CallofDuty
+|instagram=codleague
+|team_number=12
+|previous=Call of Duty League/Season 7/Stage 3{{!}} Stage 3 Qualifiers 
+|next=Call of Duty League/Season 7/Stage 3/Major{{!}} Stage 3 Major
+}}
+
+==About==
+===Format===
+* All 12 CDL teams
+* Seeding determinated by [[Call of Duty League/Season_7#Points|Points]] standings after the second Major
+* Single Elimination
+* All matches are {{Abbr/Bo5}}
+
+===Broadcast Talent===
+{{box|start|padding=2em}}
+{{BroadcasterCard
+|position=Hosts
+|b1=Puckett
+}}
+{{BroadcasterCard
+|position=Analyst
+|b1=Rosalie
+|b2=NAMELESS
+}}
+{{box|break|padding=1em}}
+{{BroadcasterCard
+|position=Commentator
+|b1=Miles Ross
+|b2=Chance
+|b3=MerK
+|b4=Maven
+}}
+{{box|end}}
+
+===Map Pool===
+{{CDL 2026 Major 3 Minor Map Pool}}
+
+===Restricted Items===
+{{GeneralCollapsible|title=Restricted Items|content={{CDL 2026 Bans}}}}
+
+===Prize Pool===
+{{TeamPrizePool|points1=cdl
+|{{Slot|points1=30|usdprize=20,000}}
+|{{Slot|points1=20}}
+|{{Slot|points1=10|place=3-4}}
+|{{Slot|points1=0|place=5-8}}
+|{{Slot|points1=0|place=9-12}}
+}}
+
+==Participants==
+{{TeamParticipants|minimumplayers=4
+|{{Opponent|tx
+  |players={{Persons
+    |{{Person|Dashy}}
+    |{{Person|Huke}}
+    |{{Person|Mercules}}
+    |{{Person|Shotzzy}}
+<!--STAFF-->
+    |{{Person|Karma|role=Coach|type=staff}}
+|{{Person|JP Krez|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular_Season|placement=1}}
+}}
+|{{Opponent|fv
+  |players={{Persons
+    |{{Person|04}}
+    |{{Person|Abuzah}}
+    |{{Person|Drazah}}
+    |{{Person|Simp}}
+
+|{{Person|Alluka|status=sub|played=false}}
+<!--STAFF-->
+    |{{Person|Crowder|role=Coach|type=staff}}
+|{{Person|RJ|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular_Season|placement=2}}
+}}
+|{{Opponent|pgm
+  |players={{Persons
+    |{{Person|Envoy}}
+    |{{Person|Ghosty}}
+    |{{Person|Neptune}}
+    |{{Person|Sib}}
+<!--STAFF-->
+    |{{Person|Mayhem|role=Coach|type=staff}}
+|{{Person|Cheek|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular_Season|placement=3}}
+}}
+|{{Opponent|lat
+  |players={{Persons
+    |{{Person|aBeZy}}
+    |{{Person|HyDra}}
+    |{{Person|Nium}}
+    |{{Person|Scrap}}
+<!--STAFF-->
+    |{{Person|ShAnE|role=Coach|type=staff}}
+|{{Person|Sender|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular_Season|placement=4}}
+}}
+|{{Opponent|min
+  |players={{Persons
+    |{{Person|Estreal}}
+    |{{Person|Kremp}}
+    |{{Person|Mamba}}
+    |{{Person|Skyz}}
+<!--STAFF-->
+    |{{Person|Loony|role=Coach|type=staff}}
+|{{Person|Alexdotzip|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular_Season|placement=5}}
+}}
+|{{Opponent|mia
+  |players={{Persons
+    |{{Person|MettalZ}}
+    |{{Person|RenKoR}}
+    |{{Person|SupeR}}
+    |{{Person|Traix}}
+	
+	|{{Person|ReeaL|status=sub|played=false}}
+<!--STAFF-->
+    |{{Person|MethodZ|role=Coach|type=staff}}
+|{{Person|Lucky|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular_Season|placement=6}}
+}}
+|{{Opponent|riy
+  |players={{Persons
+    |{{Person|Cellium}}
+    |{{Person|Exnid}}
+    |{{Person|KiSMET}}
+    |{{Person|Pred}}
+<!--STAFF-->
+    |{{Person|Clayster|role=Coach|type=staff}}
+	|{{Person|Mutab|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular_Season|placement=7}}
+}}
+|{{Opponent|tor
+  |players={{Persons
+    |{{Person|CleanX}}
+    |{{Person|Insight}}
+    |{{Person|JoeDeceives}}
+    |{{Person|Kips}}
+<!--STAFF-->
+    |{{Person|Flux|role=Coach|type=staff}}
+|{{Person|Joee|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular_Season|placement=8}}
+}}
+|{{Opponent|car
+  |players={{Persons
+    |{{Person|Craze}}
+    |{{Person|Exceed}}
+    |{{Person|Fire}}
+    |{{Person|Lurqxx}}
+<!--STAFF-->
+    |{{Person|Saintt|role=Coach|type=staff}}
+	|{{Person|Quids|role=Analyst|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular_Season|placement=9}}
+}}
+|{{Opponent|van
+  |players={{Persons
+    |{{Person|Gwinn}}
+    |{{Person|Lunarz}}
+    |{{Person|Nero}}
+    |{{Person|TJHaLy}}
+
+|{{Person|Lqgend|status=sub|played=false}}
+<!--STAFF-->
+    |{{Person|Atura|role=Coach|type=staff}}
+|{{Person|Jokr|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular_Season|placement=10}}
+}}
+|{{Opponent|bos
+  |players={{Persons
+    |{{Person|Afro}}
+    |{{Person|Nastie}}
+    |{{Person|Purj}}
+    |{{Person|Spart}}
+<!--STAFF-->
+    |{{Person|Seany|role=Coach|type=staff}}
+|{{Person|Magick|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular_Season|placement=11}}
+}}
+|{{Opponent|c9ny
+  |players={{Persons
+    |{{Person|Encourage}}
+    |{{Person|Hide}}
+    |{{Person|Nejra}}
+    |{{Person|Okis}}
+<!--STAFF-->
+    |{{Person|Arian|role=Coach|type=staff}}
+  }}
+  |qualification={{Qualification|method=qual|page=Call of Duty League/Season 7/Regular_Season|placement=12}}
+}}
+}}
+
+==Results==
+{{Bracket|Bracket/8L4DSS|id=CDL26MINS3
+
+<!-- Round 1 -->
+|R1M1={{Match
+    |bestof=5
+    |date=2026-04-24 17:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=PhSBJFGAQeg
+	|breakingpoint=214933
+	|cdl=12875
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|car}}
+    |map1={{Map|map=Scar|mode=hp |score1=250|score2=249|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=4|score2=1|winner=1}}
+    |map4={{Map|map=Gridlock|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Den|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R1M2={{Match
+    |date=2026-04-24 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=zqq5HamABa4
+	|breakingpoint=214932
+	|cdl=12877
+    |opponent1={{TeamOpponent|min}}
+    |opponent2={{TeamOpponent|c9ny}}
+    |map1={{Map|map=Scar|mode=hp |score1=250|score2=93|winner=1}}
+    |map2={{Map|map=Scar|mode=snd|score1=6|score2=1|winner=1}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=6|score2=5|winner=1}}
+    |map4={{Map|map=Colossus|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Raid|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R1M3={{Match
+    |date=2026-04-24 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=DO-r3DfrBIs
+	|breakingpoint=214930
+	|cdl=12879
+    |opponent1={{TeamOpponent|riy}}
+    |opponent2={{TeamOpponent|van}}
+    |map1={{Map|map=Den|mode=hp |score1=246|score2=250|winner=2}}
+    |map2={{Map|map=Plaza|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=4|score2=3|winner=1}}
+    |map4={{Map|map=Sake|mode=hp |score1=250|score2=174|winner=1}}
+    |map5={{Map|map=Gridlock|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R1M4={{Match
+    |date=2026-04-24 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=dFLf5JlFVVA
+	|breakingpoint=214931
+	|cdl=12881
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|bos}}
+    |map1={{Map|map=Colossus|mode=hp |score1=250|score2=199|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=0|winner=1}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=4|score2=3|winner=1}}
+    |map4={{Map|map=Sake|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Fringe|mode=snd|score1=|score2=|winner=skip}}
+    }}
+
+<!-- Quarterfinals -->
+|R2M1={{Match
+    |date=2026-04-25 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=FRpBiUAvcfA
+	|breakingpoint=214936
+	|cdl=12882
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=219|winner=1}}
+    |map2={{Map|map=Gridlock|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=1|score2=5|winner=2}}
+    |map4={{Map|map=Scar|mode=hp |score1=250|score2=81|winner=1}}
+    |map5={{Map|map=Fringe|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R2M2={{Match
+    |date=2026-04-25 17:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=fG-pwp4GyCg
+	|breakingpoint=214937
+	|cdl=12883
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|min}}
+    |map1={{Map|map=Sake|mode=hp |score1=250|score2=229|winner=1}}
+    |map2={{Map|map=Scar|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=6|score2=0|winner=1}}
+    |map4={{Map|map=Gridlock|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Fringe|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R2M3={{Match
+    |date=2026-04-25 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=ZDqtq3Xvqm4
+	|breakingpoint=214935
+	|cdl=12884
+    |opponent1={{TeamOpponent|fv}}
+    |opponent2={{TeamOpponent|riy}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=146|winner=1}}
+    |map2={{Map|map=Fringe|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=3|score2=5|winner=2}}
+    |map4={{Map|map=Sake|mode=hp |score1=250|score2=187|winner=1}}
+    |map5={{Map|map=Plaza|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|R2M4={{Match
+    |date=2026-04-25 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=tG1NZQ5RsF8
+	|breakingpoint=214934
+	|cdl=12885
+    |opponent1={{TeamOpponent|pgm}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Sake|mode=hp |score1=250|score2=236|winner=1}}
+    |map2={{Map|map=Fringe|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Scar|mode=ovl|score1=3|score2=4|winner=2}}
+    |map4={{Map|map=Colossus|mode=hp |score1=203|score2=250|winner=2}}
+    |map5={{Map|map=Scar|mode=snd|score1=|score2=|winner=skip}}
+    }}
+
+<!-- Semifinals -->
+|R3M1={{Match
+    |date=2026-04-26 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=aXQ--GVW1Fo
+	|breakingpoint=214938
+	|cdl=12886
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Den|mode=hp |score1=216|score2=250|winner=2}}
+    |map2={{Map|map=Gridlock|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Scar|mode=ovl|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Colossus|mode=hp |score1=250|score2=216|winner=1}}
+    |map5={{Map|map=Fringe|mode=snd|score1=2|score2=6|winner=2}}
+    }}
+|R3M2={{Match
+    |date=2026-04-26 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=AdLxPM264A8
+	|breakingpoint=214939
+	|cdl=12887
+    |opponent1={{TeamOpponent|fv}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Colossus|mode=hp |score1=224|score2=250|winner=2}}
+    |map2={{Map|map=Fringe|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=3|score2=4|winner=2}}
+    |map4={{Map|map=Sake|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Raid|mode=snd|score1=|score2=|winner=skip}}
+    }}
+
+<!-- Grand Final -->
+|R4M1={{Match
+    |bestof=7
+    |date=2026-04-26 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=CEAQfIVHBzg
+	|breakingpoint=214940
+	|cdl=12888
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Sake|mode=hp |score1=250|score2=199|winner=1}}
+    |map2={{Map|map=Fringe|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=6|score2=7|winner=2}}
+    |map4={{Map|map=Colossus|mode=hp |score1=250|score2=161|winner=1}}
+    |map5={{Map|map=Scar|mode=snd|score1=6|score2=2|winner=1}}
+	|map6={{Map|map=Scar|mode=ovl|score1=5|score2=2|winner=1}}
+    |map7={{Map|map=Gridlock|mode=snd|score1=|score2=|winner=skip}}
+    }}
+}}

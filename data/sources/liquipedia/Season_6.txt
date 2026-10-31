@@ -1,0 +1,108 @@
+{{DISPLAYTITLE:Call of Duty League - 2025 Season}}
+{{CDL 2025 Navbox}}
+{{CDL 2025 Tabs}}
+{{LPDB storage|false}}
+{{Infobox league|smwoff=true
+|name=Call of Duty League - 2025 Season
+|shortname=CDL 2025 Season
+|image=CDL_2024_lightmode.png
+|imagedark=CDL_2024_darkmode.png
+|series=Call of Duty League
+|abbreviation=CDL
+
+|tickername=CDL 2025 Season
+|organizer=Activision
+|type=Offline
+|country=World
+|highlighted=true
+|game=bo6
+|liquipediatier=1
+|format=4v4<br>Regular Season<br>Playoffs
+|prizepoolusd=
+|sdate=2024-12-06
+|edate=2025-06-29
+|web=https://callofdutyleague.com/en-us/
+|twitter=CODLeague
+|facebook=codleague
+|youtube=CODLeague
+|twitch=CallofDuty
+|instagram=codleague
+|team_number=12
+|rulebook=
+|previous=Call of Duty League/Season 5 {{!}} CDL Season 5
+|next=Call of Duty League/Season 7 {{!}} CDL Season 7
+}}
+
+==Format==
+*'''Regular Season''' - ''December 6th, 2024 - May 25th, 2025''
+** '''4-Stage Season'''
+*** All Matches {{Abbr/Bo5}}
+*** Each Stage comprised of Online Qualifiers, a Minor and a Major
+** '''Online Qualifiers'''
+*** 7 matches played per team (Stages 1 & 2)
+*** 5 matches played per team (Stages 3 & 4)
+*** Online Qualifier standings will be used to determine seeding in each Minor and Major for all 12 Teams
+** '''Minor'''
+*** Single Elimination Bracket
+** '''Major'''
+*** Double Elimination Bracket
+** '''CDL Points'''
+*** Teams will earn CDL Points for each match win
+*** Addditional CDL Points distributed based on the performance in each Minor and Major
+
+===Map Pool===
+{{CDL 2025 Map Pool}}
+
+===Restricted Items===
+{{GeneralCollapsible|title=Restricted Items|content={{CDL 2025 Bans}}}}
+
+==News==
+===Roster Moves===
+====Offseason====
+{{#lst:Call of Duty League/Season 6/Additional Content/Signings and Trades|Offseason}}
+====Midseason====
+{{#lst:Call of Duty League/Season 6/Additional Content/Signings and Trades|Midseason}}
+
+==Participants==
+{{#lst:Call of Duty League/Season 6/Regular_Season|Teams}}
+
+==Results==
+===Standings===
+{{#lst:Call of Duty League/Season 6/Regular_Season|Grouponly}}
+
+===Points===
+{{#lst:Call of Duty League/Season 6/Regular_Season|Pointstable}}
+
+===Playoffs===
+{{ShowBracket|id=CDL25Final}}
+
+==Broadcast==
+===Streams===
+<section begin="Streams"/>{{Streams|title=
+|lang1=usuk|twitch1=Call of Duty|youtube1=call of duty league
+}}<section end="Streams"/>
+===Broadcast Talent===
+{{box|start|padding=1em}}
+{{BroadcasterCard
+|position=Hosts
+|b1=Puckett
+}}
+{{BroadcasterCard
+|position=Analyst
+|b1=Allycxt
+|b2=NAMELESS
+}}
+{{box|break|padding=1em}}
+{{BroadcasterCard
+|position=Commentator
+|b1=Miles Ross
+|b2=Chance
+|b3=MerK
+|b4=Maven
+|b5=IHOLDSHIFT
+|b6=StuDyy
+}}
+{{box|end}}
+
+==References==
+{{reflist}}

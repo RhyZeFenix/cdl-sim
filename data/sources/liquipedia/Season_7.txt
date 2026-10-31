@@ -1,0 +1,150 @@
+{{DISPLAYTITLE:Call of Duty League - 2026 Season}}
+{{CDL 2026 Navbox}}
+{{CDL 2026 Tabs}}
+{{LPDB storage|false}}
+{{Infobox league|smwoff=true
+|name=Call of Duty League - 2026 Season
+|shortname=CDL 2026 Season
+|image=CDL_2024_lightmode.png
+|imagedark=CDL_2024_darkmode.png
+|series=Call of Duty League
+|abbreviation=CDL
+|tickername=CDL 2026 Season
+|organizer=Activision
+|type=Offline
+|country=World
+|highlighted=true
+|game=Black Ops 7
+|liquipediatier=1
+|format=4v4<br>Regular Season<br>Playoffs
+|prizepoolusd=
+|sdate=2025-12-05
+|edate=2026-07-19
+|web=https://callofdutyleague.com/en-us/
+|twitter=CODLeague
+|facebook=codleague
+|youtube=CODLeague
+|twitch=CallofDuty
+|instagram=codleague
+|team_number=12
+|rulebook=
+|previous=Call of Duty League/Season 6 {{!}} CDL Season 6
+|next=
+}}
+
+==Format==
+*'''Regular Season''' - ''December 5th, 2025 - June 28th, 2026''
+** '''4-Stage Season'''
+*** All Matches {{Abbr/Bo5}}
+*** Each Stage comprised of Online Qualifiers, a Minor and a Major
+** '''Online Qualifiers'''
+*** 7 matches played per team (Stage 1)
+*** 11 matches played per team (Stage 2)
+*** 5 matches played per team (Stages 3 & 4)
+*** Online Qualifier standings will be used to determine seeding in each Minor and Major for all 12 Teams
+** '''Minor'''
+*** Single Elimination Bracket
+** '''Major'''
+*** Double Elimination Bracket
+** '''CDL Points'''
+*** Teams will earn CDL Points for each match win
+*** Addditional CDL Points distributed based on the performance in each Minor and Major
+
+<!--===Map Pool===
+<!--{{CDL 2026 Map Pool}}
+
+{{GeneralCollapsible|title=Restricted Items|content={{CDL 2025 Bans}}}}-->
+
+==News==
+===Roster Moves===
+====Offseason====
+{{#lst:Call of Duty League/Season 7/Additional Content/Signings and Trades|Offseason}}
+====Midseason====
+{{#lst:Call of Duty League/Season 7/Additional Content/Signings and Trades|Midseason}}
+
+==Participants==
+{{#lst:Call of Duty League/Season 7/Regular_Season|Teams}}
+
+==Results==
+===Standings===
+{{#lst:Call of Duty League/Season 7/Regular_Season|Grouponly}}
+
+===Points===
+{{#lst:Call of Duty League/Season 7/Regular_Season|Pointstable}}
+
+===Playoffs===
+{{ShowBracket|id=CDL26Final}}
+
+==Broadcast==
+
+===Streams===
+{{box|start|padding=2em}}
+{{Streams|title=Primary
+|lang1=usuk  |twitch1=Call of Duty
+             |youtube1=call of duty league
+}}
+{{Streams|title=Secondary
+|lang1=es|twitch1=FECOD_es|youtube1=FECOD_es
+}}
+{{box|end}}
+
+===Broadcast Talent===
+{{Tabs dynamic|name1=English Broadcast|name2=Spanish Broadcast}}
+{{tabs dynamic/tab|1}}
+===English Broadcast===
+{{box|start|padding=2em}}
+{{BroadcasterCard
+|position=Hosts|lang=en
+|b1=
+}}
+{{BroadcasterCard
+|position=Analyst|lang=en
+|b1=
+|b2=
+}}
+{{box|break|padding=1em}}
+{{BroadcasterCard
+|position=Commentator|lang=en
+|b1=
+|b2=
+|b3=
+|b4=
+|b5=
+|b6=
+}}
+{{box|end}}
+{{tabs dynamic/tab|2}}
+
+===Spanish Broadcast===
+{{box|start|padding=2em}}
+{{BroadcasterCard
+|position=Spanish Hosts|lang=es
+|b1=YaatiCG|b1flag=es
+|b2=jjavicr|b2flag=es
+}}
+{{BroadcasterCard
+|position=Spanish Analyst|lang=es
+|b1=vDemoniatic|b1flag=es
+|b2=PuNi|b2flag=es
+}}
+{{box|break|padding=1em}}
+{{BroadcasterCard
+|position=Spanish Commentator|lang=es
+|b1=juanmacazalla|b1flag=es
+|b2=MAMBA|b2flag=es
+|b3=Mayor|b3flag=es
+|b4=Diiegobgg|b4flag=es
+|b5=YungPutrid|b5flag=es
+|b6=Enrique|b6flag=es
+}}
+{{broadcasterCard
+|position=Spanish Production|lang=es
+|b1=Jorii|b1flag=es
+|b2=
+|b3=
+}}
+{{box|end}}
+{{tabs dynamic/tab|3}}
+
+==References==
+{{reflist}}

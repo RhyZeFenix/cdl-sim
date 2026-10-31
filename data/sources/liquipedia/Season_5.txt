@@ -1,0 +1,106 @@
+{{DISPLAYTITLE:Call of Duty League - 2024 Season}}
+{{CDL 2024 Navbox}}
+{{CDL 2024 Tabs}}
+{{LPDB storage|false}}
+{{Infobox league|smwoff=true
+|name=Call of Duty League - 2024 Season
+|shortname=CDL 2024 Season
+|image=CDL_2024_lightmode.png
+|imagedark=CDL_2024_darkmode.png
+|series=Call of Duty League
+|abbreviation=CDL
+
+|tickername=CDL 2024 Season
+|organizer=Activision
+|type=Offline
+|country=World
+|highlighted=true
+|game=mwiii
+|liquipediatier=1
+|format=4v4<br>Regular Season<br>Playoffs
+|prizepoolusd=
+|sdate=2023-12-08
+|edate=2024-07-21
+|web=https://callofdutyleague.com/en-us/
+|twitter=CODLeague
+|facebook=codleague
+|youtube=CODLeague
+|twitch=CallofDuty
+|instagram=codleague
+|team_number=12
+|rulebook=
+|previous=Call of Duty League/Season 4 {{!}} CDL Season 4
+|next=Call of Duty League/Season 6 {{!}} CDL Season 6
+}}
+
+==About==
+===Format===
+*'''Regular Season''' - ''December 8th, 2023 - June 23rd, 2024''
+** '''4-Stage Season'''
+*** All Matches {{Abbr/Bo5}}
+*** Each Stage comprised of Online Qualifiers and a Major
+** '''Online Qualifiers'''
+*** 7 matches played per team
+*** Online Qualifier standings will be used to determine seeding in each Major for all 12 Teams
+** '''Major'''
+*** Double Elimination Bracket
+** '''CDL Points'''
+*** Teams will earn CDL Points for each match win
+*** Addditional CDL Points distributed based on the performance in each Major
+
+===Broadcast Talent===
+{{box|start|padding=1em}}
+{{BroadcasterCard
+|position=Hosts
+|b1=Puckett
+}}
+{{BroadcasterCard
+|position=Analyst
+|b1=Allycxt
+|b2=NAMELESS
+}}
+{{box|break|padding=1em}}
+{{BroadcasterCard
+|position=Commentator
+|b1=Miles Ross
+|b2=Chance
+|b3=MerK
+|b4=Maven
+|b5=IHOLDSHIFT
+|b6=StuDyy
+}}
+{{box|end}}
+
+===Map Pool===
+{{CDL 2024 Map Pool}}
+
+===Restricted Items===
+{{GeneralCollapsible|title=Restricted Items|content={{CDL 2024 Bans}}}}
+
+==News==
+===Roster Moves===
+====Offseason====
+{{#lst:Call of Duty League/Season 5/Additional Content/Signings and Trades|Offseason}}
+====Midseason====
+{{#lst:Call of Duty League/Season 5/Additional Content/Signings and Trades|Midseason}}
+
+==Participants==
+{{#lst:Call of Duty League/Season 5/Regular_Season|Teams}}
+
+==Results==
+===Standings===
+{{#lst:Call of Duty League/Season 5/Regular_Season|Grouponly}}
+===Points===
+{{#lst:Call of Duty League/Season 5/Regular_Season|Pointstable}}
+
+===Playoffs===
+{{ShowBracket|id=CDL24Final}}
+
+==Additional Information==
+===Streams===
+<section begin="Streams"/>{{Streams|title=
+|lang1=usuk|twitch1=Call of Duty|youtube1=call of duty league
+}}<section end="Streams"/>
+
+==References==
+{{reflist}}

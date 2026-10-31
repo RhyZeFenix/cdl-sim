@@ -14,7 +14,8 @@
     "series": "tsx scripts/sim-series.ts",
     "calibrate": "tsx scripts/calibrate.ts",
     "season": "tsx scripts/sim-season.ts",
-    "parity": "tsx scripts/parity.ts"
+    "parity": "tsx scripts/parity.ts",
+    "backtest": "tsx scripts/backtest.ts"
   },
   "dependencies": {
     "react": "^18.3.1",

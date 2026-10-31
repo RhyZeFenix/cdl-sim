@@ -1,7 +1,11 @@
 // Every knob the calibration script tunes. Skill values are ratings / 100.
+// duelK, modeDuelScale, catchUp and overload.gapSecs were set by the backtest against
+// real 2024-2026 results (docs/backtest.md); rerun `npm run backtest` after changing them.
 export const TUNING = {
   /** Logit slope of a 1v1 gunfight on skill difference. */
-  duelK: 1.1,
+  duelK: 2.0,
+  /** Per-mode multiplier on duelK: modes with fewer gunfights per map need a steeper curve for team edges to show. */
+  modeDuelScale: { hp: 1, snd: 2.2, control: 1, overload: 1 },
   /** Logit bonus per extra player alive on your side. */
   manAdvantage: 0.3,
   /** Per-map form noise for a player with 0 consistency (scaled down as consistency rises). */
@@ -11,6 +15,12 @@ export const TUNING = {
   engageK: 3,
   /** Stat weights per mode: [slaying, mode stat]. */
   weights: { hp: [0.65, 0.35], snd: [0.55, 0.45], control: [0.6, 0.4], overload: [0.6, 0.4] },
+  /**
+   * Catch-up: logit bonus for the team behind on the map, per unit of deficit (HP: per 50
+   * points; SnD/Control: per round), capped. Keeps maps close while team edges still show
+   * over a season, as real CDL results do.
+   */
+  catchUp: { hp: 0.06, snd: 0.04, control: 0.06, cap: 0.5 },
   /** AI veto noise (skill units). */
   vetoNoise: 0.03,
 
@@ -51,7 +61,7 @@ export const TUNING = {
   overload: {
     fightKills: [2, 6],
     killSecs: [0.6, 1.4],
-    gapSecs: [10, 16],
+    gapSecs: [6, 10],
     /** Fight wins needed while carrying to score. */
     capNeed: 3,
   },

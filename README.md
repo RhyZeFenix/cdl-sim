@@ -92,6 +92,19 @@ Engine API (`src/engine/season/season.ts`): `advance` returns `undefined` and se
 - **Map modifiers:** each team's win rate on a map relative to its average in that mode, shrunk for small samples and capped at ±0.03 skill. The AI veto uses them, and so does the sim.
 - **Rebuilding rosters:** `npx tsx scripts/build-rosters.ts` reads the committed event pages in `data/sources/fandom/` plus the stats. Players who only appear in qualifier stats join their team's bench. Each player records `ratingSource` (`stats` or `placeholder`) and a stat line, which My Team shows as K/D with "est." for placeholders.
 
+## Backtest
+
+`npm run backtest -- --n 200` simulates each season 200 times with Historical ratings, compares the results with what really happened, and writes [docs/backtest.md](docs/backtest.md). It checks:
+
+- **Event winners:** the win probability the sim gives each real Major/Champs winner, and the rank correlation of placements.
+- **Team strength:** each team's real map win % per mode against the simulated one: correlation, plus spread with the real data's sampling noise removed.
+- **Scorelines:** real map score distributions from the committed Liquipedia pages, compared with simulated ones.
+- **CDL points:** real points rebuilt from the series results (`npx tsx scripts/fetch-results.ts`) and real Major placements.
+
+`--tune key=value,...` overrides any `TUNING` value for a sweep, for example `--tune duelK=2.4,modeDuelScale.snd=2,overload.gapSecs=6:10`. The current `duelK`, `modeDuelScale`, `catchUp` and Overload pacing were chosen this way.
+
+Overload note: the real 2026 map scores have 4–3 and 3–2 as the most common results, as the original brief said. But nearly half of the winners scored 5 or more, so the sim now produces more captures per map than the brief's "winner on 2–5" target.
+
 ## Data notes
 
 - Every JSON file is validated on load. Bad data throws a `DataError` listing every problem.

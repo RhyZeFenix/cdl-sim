@@ -1,0 +1,566 @@
+{{DISPLAYTITLE:Call of Duty League 2024: Stage 4 Major}}
+{{CDL 2024 Navbox}}
+{{CDL 2024 Stage Tabs}}
+{{tabs static
+|name1=Overview|link1=Call_of_Duty_League/Season_5/Regular_Season
+|name2=Stage 1|link2=Call_of_Duty_League/Season_5/Stage_1
+|name3=Stage 2|link3=Call_of_Duty_League/Season_5/Stage_2
+|name4=Stage 3|link4=Call_of_Duty_League/Season_5/Stage_3
+|name5=Stage 4|link5=Call_of_Duty_League/Season_5/Stage_4
+}}
+{{Tabs static
+|name1=Qualifiers|link1=Call_of_Duty_League/Season_5/Stage_4
+|name2=Major|link2=Call_of_Duty_League/Season_5/Stage_4/Major
+|This=2
+}}
+{{Infobox league
+|name=Call of Duty League 2024: Stage 4 Major
+|tickername=CDL '24 Major 4
+|image=CDL_2024_lightmode.png
+|imagedark=CDL_2024_darkmode.png
+|series=Call of Duty League
+|abbreviation=CDL
+
+|organizer=Activision
+|game=mwiii
+|type=Offline
+|country=United States
+|city=Burbank
+|format=4v4
+|sdate=2024-06-27
+|edate=2024-06-30
+|liquipediatier=1|highlighted=true
+|prizepoolusd=375000
+|web=https://callofdutyleague.com/en-us/
+|twitter=codleague
+|facebook=codleague
+|youtube=CODLeague
+|twitch=CallofDuty
+|instagram=codleague
+|team_number=12
+|next=Call_of_Duty_League/Season_5/Playoffs{{!}} CDL Championship
+|previous=Call of Duty League/Season 5/Stage 4{{!}} Stage 4 Qualifiers 
+}}
+
+==About==
+===Broadcast Talent===
+{{box|start|padding=1em}}
+{{BroadcasterCard
+|position=Hosts
+|b1=Puckett|b1name=|b1flag=us
+}}
+{{BroadcasterCard
+|position=Analyst
+|b1=Allycxt
+|b2=NAMELESS
+}}
+{{box|break|padding=1em}}
+{{BroadcasterCard
+|position=Commentator
+|b1=Merk
+|b2=Maven
+|b3=Miles Ross
+|b4=Chance
+|b5=
+|b6=
+}}
+{{BroadcasterCard
+|position=Stage Host
+|b1=Blaze|b1name=|b1flag=us
+}}
+{{box|end}}
+
+===Format===
+* All 12 CDL teams
+* Seeding determinated by [[Call of Duty League/Season_5/Stage 4|Qualifiers]]
+* Double Elimination
+* All matches are {{Abbr/Bo5}}, except for Grand Finals which are {{Abbr/Bo7}}
+
+===Map Pool===
+{{CDL 2024 Map Pool Stage 4}}
+
+===Restricted Items===
+{{GeneralCollapsible|title=Restricted Items|content={{CDL 2024 Bans}}}}
+
+===Prize Pool===
+{{TeamPrizePool|points1=cdl
+|{{Slot|points1=100|usdprize=150,000}}
+|{{Slot|points1=75|usdprize=90,000}}
+|{{Slot|points1=60|usdprize=60,000}}
+|{{Slot|points1=45|usdprize=30,000}}
+|{{Slot|points1=30|usdprize=15,000|place=5-6}}
+|{{Slot|points1=15|usdprize=7,500|place=7-8}}
+|{{Slot|points1=0|usdprize=|place=9-12}}
+}}
+
+===Player Awards===
+{{prize pool start award|noprize=y|margin=false}}
+{{prize pool slot award|award=MVP|HyDra|flag1=fr|team1=nys}}
+{{prize pool end}}
+
+==Participants==
+{{TeamCardToggleButton}}
+{{TeamCard columns start|cols=4|height=180}}
+{{TeamCard
+|team=Toronto Ultra
+|p1=CleanX
+|p2=Envoy
+|p3=Insight
+|p4=Scrap
+|t2title=Staff
+|t2c1flag=uk|t2c1=Flux
+|t2c2=Joee
+|t3title=Subs
+|t3p1=
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_4|Stage 4 - #1 Seed]]
+}}
+{{TeamCard
+|team=Atlanta FaZe
+|p1=aBeZy
+|p2=Cellium
+|p3=Drazah
+|p4=Simp
+|t2title=Staff
+|t2c1=Crowder
+|t2c2flag=us|t2c2=RJ
+|t2c3flag=us|t2c3=x2Pac ThuGLorD|t2c3pos={{Abbr|A|Analyst}}
+|t3title=Subs
+|t3p1=Classic|t3p1dnp=true
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_4|Stage 4 - #2 Seed]]
+}}
+{{TeamCard
+|team=Seattle Surge
+|p1=04
+|p2=Abuzah
+|p3=Breszy
+|p4=Huke
+|t2title=Staff
+|t2c1=Rambo
+|t3title=Subs
+|t3p1=|t3p1dnp=true
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_4|Stage 4 - #3 Seed]]
+}}
+{{TeamCard
+|team=Los Angeles Thieves
+|p1=Ghosty
+|p2=JoeDeceives
+|p3=Kremp
+|p4=Nastie
+|t2title=Staff
+|t2c1=JKap
+|t2c2=ShAnE
+|t3title=Subs
+|t3p1=Afro|t3p1dnp=true
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_4|Stage 4 - #4 Seed]]
+}}
+{{TeamCard
+|team=Miami Heretics
+|p1=Lucky
+|p2=MettalZ
+|p3=ReeaL
+|p4=Vikul
+|t2title=Staff
+|t2c1=MethodZ
+|t3title=Subs
+|t3p1=EriKBooM|t3p1dnp=true
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_4|Stage 4 - #5 Seed]]
+}}
+{{TeamCard
+|team=Las Vegas Legion
+|p1=Attach
+|p2=Gio
+|p3=Nero
+|p4=oJohnny
+|t2title=Staff
+|t2c1=Theory
+|t2c2=Fenix|t2c2flag=us
+|t3title=Subs
+|t3p1=
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_4|Stage 4 - #6 Seed]]
+}}
+{{TeamCard
+|team=New York Subliners
+|p1=HyDra
+|p2=KiSMET
+|p3=Sib
+|p4=Skyz
+|t2title=Staff
+|t2c1=DREAL
+|t2c2=Sender
+|t3title=Subs
+|t3p1=
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_4|Stage 4 - #7 Seed]]
+}}
+{{TeamCard
+|team=Los Angeles Guerrillas
+|p1=Diamondcon
+|p2=Estreal
+|p3=Fame
+|p4=Flames
+|t2title=Staff
+|t2c1=Veohz
+|t2c2=Arian
+|t2c3=Cheek|t2c3pos={{Abbr|A|Analyst}}
+|t2c4=GBursted
+|t3title=Subs
+|t3p1=Assault|t3p1dnp=true
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_4|Stage 4 - #8 Seed]]
+}}
+{{TeamCard
+|team=Carolina Royal Ravens
+|p1=Clayster
+|p2=FeLo
+|p3=Gwinn
+|p4=TJHaLy
+|t2title=Staff
+|t2c1=Saintt
+|t2c2=Nagafen
+|t2c3=KennKyoko |t2c3flag=us |t2c3pos={{Abbr|A|Analyst}}
+|t3title=Subs
+|t3p1=|t3p1dnp=true
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_4|Stage 4 - #9 Seed]]
+}}
+{{TeamCard
+|team=Minnesota RØKKR 
+|p1=Accuracy
+|p2=Gunless
+|p3=Lynz
+|p4=Standy
+|t2title=Staff
+|t2c1=Loony
+|t2c2=Alexdotzip
+|t3title=Subs
+|t3p1=
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_4|Stage 4 - #10 Seed]]
+}}
+{{TeamCard
+|team=Boston Breach
+|p1=Beans
+|p2=MajorManiak
+|p3=Priestahh
+|p4=Snoopy
+|t2title=Staff
+|t2c1=Zed
+|t2c2=Seany
+|t2c3=Magick
+|t2c4=Denz |t2c4pos={{Abbr|M|Manager}}
+|t3title=Subs
+|t3p1=Pentagrxm|t3p1dnp=true
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_4|Stage 4 - #11 Seed]]
+}}
+{{TeamCard
+|team=OpTic Texas
+|p1=Dashy
+|p2=Kenny
+|p3=Pred
+|p4=Shotzzy
+|t2title=Staff
+|t2c1=Karma
+|t2c2flag=us|t2c2=JP Krez|t2c2pos={{Abbr|A|Analyst}}
+|t3title=Subs
+|t3p1=
+|qualifier=[[Call_of_Duty_League/Season_5/Stage_4|Stage 4 - #12 Seed]]
+}}
+{{TeamCard columns end}}
+
+==Results==
+<section begin="Major 4"/>
+{{Toggle bracket start|tournament=Call of Duty League/Season 5/Stage 4/Major}}
+{{MatchSection|Major 4}}
+{{Bracket|Bracket/8U8L2DSL1D|id=CDL24S4Maj
+
+|R1M1header=Winners Round 1
+|R3M1header=Winners Round 2
+|R5M1header=Winners Final
+|R1M5header=Elimination Round 1
+|R2M1header=Elimination Round 2
+|R3M3header=Elimination Round 3
+|R4M1header=Elimination Round 4
+|R5M2header=Elimination Final
+|R6M1header=Grand Final
+
+
+<!-- Upper Bracket Quarterfinals -->
+|R1M1={{Match
+    |bestof=5
+    |date=2024-06-27 - 14:30 {{abbr/MDT}}
+	|cdl=12020
+	|breakingpoint=91337
+	|vod=https://www.youtube.com/watch?v=m99wiZEa72U
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|lag}}
+    |map1={{Map|map=Karachi|mode=hp |score1=154|score2=250|winner=2}}
+    |map2={{Map|map=6 Star|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Highrise|mode=con|score1=3|score2=0|winner=1}}
+    |map4={{Map|map=6 Star|mode=hp |score1=221|score2=250|winner=2}}
+    |map5={{Map|map=Rio|mode=snd|score1=|score2=|winner=skip}}
+}}
+|R1M2={{Match
+    |date=2024-06-27 - 17:30 {{abbr/MDT}}
+	|cdl=12021
+	|breakingpoint=91339
+	|vod=https://www.youtube.com/watch?v=8rGDD7YhYcI
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Rio|mode=hp |score1=250|score2=149|winner=1}}
+    |map2={{Map|map=Invasion|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Highrise|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Karachi|mode=hp |score1=250|score2=245|winner=1}}
+    |map5={{Map|map=Karachi|mode=snd|score1=|score2=|winner=skip}}
+}}
+|R1M3={{Match
+    |date=2024-06-27 - 16:00 {{abbr/MDT}}
+	|cdl=12022
+	|breakingpoint=91338
+	|vod=https://www.youtube.com/watch?v=_7ifEWBnKzw
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|ny}}
+    |map1={{Map|map=6 Star|mode=hp |score1=250|score2=211|winner=1}}
+    |map2={{Map|map=6 Star|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Invasion|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Karachi|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Highrise|mode=snd|score1=|score2=|winner=skip}}
+}}
+|R1M4={{Match
+    |date=2024-06-27 - 13:00 {{abbr/MDT}}
+	|cdl=12023
+	|breakingpoint=91336
+	|vod=https://www.youtube.com/watch?v=SLmVXTqHpe8
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|sea}}
+    |opponent2={{TeamOpponent|lv}}
+    |map1={{Map|map=Karachi|mode=hp |score1=244|score2=250|winner=2}}
+    |map2={{Map|map=Karachi|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Invasion|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Rio|mode=hp |score1=250|score2=161|winner=1}}
+    |map5={{Map|map=6 Star|mode=snd|score1=6|score2=5|winner=1}}
+}}
+
+<!-- Upper Bracket Semifinals -->
+|R3M1={{Match
+    |date=2024-06-29 - 16:00 {{abbr/MDT}}
+	|cdl=12024
+	|breakingpoint=91347
+	|vod=https://youtu.be/9opFUWZErxg?si=bsXQzMUKst7mX75x
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|lag}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Rio|mode=hp |score1=250|score2=233|winner=1}}
+    |map2={{Map|map=Highrise|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Invasion|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=6 Star|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Rio|mode=snd|score1=|score2=|winner=skip}}
+}}
+|R3M2={{Match
+    |date=2024-06-29 - 14:30 {{abbr/MDT}}
+	|cdl=12025
+	|breakingpoint=91346
+	|vod=https://youtu.be/C3pQ1usOSmc?si=lKlrdIT6y4WG8bME
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|sea}}
+    |map1={{Map|map=Sub Base|mode=hp |score1=250|score2=188|winner=1}}
+    |map2={{Map|map=Karachi|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Highrise|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Karachi|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Highrise|mode=snd|score1=|score2=|winner=skip}}
+}}
+
+<!-- Upper Bracket Final -->
+|R5M1={{Match
+    |date=2024-06-30 - 14:30 {{abbr/MDT}}
+	|cdl=12026
+	|breakingpoint=91351
+	|vod=https://youtu.be/aEhVvkV5xto?si=Le-ADsnDZvbCvdnT
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|lag}}
+    |opponent2={{TeamOpponent|atl}}
+    |map1={{Map|map=6 Star|mode=hp |score1=156|score2=250|winner=2}}
+    |map2={{Map|map=Rio|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Invasion|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Vista|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=6 Star|mode=snd|score1=|score2=|winner=skip}}
+}}
+
+<!-- Lower Bracket Round 1 -->
+|R1M5={{Match
+    |date=2024-06-28 - 13:00 {{abbr/MDT}}
+	|cdl=12029
+	|breakingpoint=91340
+	|vod=https://www.youtube.com/watch?v=cRqd1C9jOBQ
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|car}}
+    |map1={{Map|map=Karachi|mode=hp |score1=250|score2=151|winner=1}}
+    |map2={{Map|map=Karachi|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Karachi|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=6 Star|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Rio|mode=snd|score1=|score2=|winner=skip}}
+}}
+|R1M6={{Match
+    |date=2024-06-28 - 17:30 {{abbr/MDT}}
+	|cdl=12030
+	|breakingpoint=91343
+	|vod=https://youtu.be/k8zKf7gre_U?si=j0lGgV-IdwucoQ61
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|optx}}
+    |map1={{Map|map=Sub Base|mode=hp |score1=183|score2=250|winner=2}}
+    |map2={{Map|map=Invasion|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Highrise|mode=con|score1=3|score2=0|winner=1}}
+    |map4={{Map|map=Rio|mode=hp |score1=233|score2=250|winner=2}}
+    |map5={{Map|map=Karachi|mode=snd|score1=6|score2=5|winner=1}}
+}}
+|R1M7={{Match
+    |date=2024-06-28 - 16:00 {{abbr/MDT}}
+	|cdl=12031
+	|breakingpoint=91342
+	|vod=https://youtu.be/EWEW2L8emW8?si=7BvfGHPnTDH9ZuhY
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|nys}}
+    |opponent2={{TeamOpponent|min}}
+    |map1={{Map|map=Vista|mode=hp |score1=250|score2=116|winner=1}}
+    |map2={{Map|map=Highrise|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Invasion|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Karachi|mode=hp |score1=250|score2=181|winner=1}}
+    |map5={{Map|map=6 Star|mode=snd|score1=|score2=|winner=skip}}
+}}
+|R1M8={{Match
+    |date=2024-06-28 - 14:30 {{abbr/MDT}}
+	|cdl=12032
+	|breakingpoint=91341
+	|vod=https://www.youtube.com/watch?v=eLZXbdh2CN0
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|lv}}
+    |opponent2={{TeamOpponent|bos}}
+    |map1={{Map|map=6 Star|mode=hp |score1=250|score2=203|winner=1}}
+    |map2={{Map|map=Rio|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Highrise|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Vista|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=6 Star|mode=snd|score1=|score2=|winner=skip}}
+}}
+
+<!-- Lower Bracket Round 2 -->
+|R2M1={{Match
+    |date=2024-06-29 - 13:00 {{abbr/MDT}}
+	|cdl=12033
+	|breakingpoint=91345
+	|vod=https://youtu.be/XdAtj4Ol9v4?si=WcaD7dwExMc2xW_G
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Vista|mode=hp |score1=218|score2=250|winner=2}}
+    |map2={{Map|map=6 Star|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Highrise|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=6 Star|mode=hp |score1=250|score2=243|winner=1}}
+    |map5={{Map|map=Karachi|mode=snd|score1=|score2=|winner=skip}}
+}}
+|R2M2={{Match
+    |date=2024-06-28 - 19:00 {{abbr/MDT}}
+	|cdl=12034
+	|breakingpoint=91344
+	|vod=https://youtu.be/5PGjucNCezo?si=qn24HdisrMYzY-bb
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|nys}}
+    |opponent2={{TeamOpponent|lv}}
+    |map1={{Map|map=Karachi|mode=hp |score1=250|score2=210|winner=1}}
+    |map2={{Map|map=Highrise|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Highrise|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Rio|mode=hp |score1=250|score2=204|winner=1}}
+    |map5={{Map|map=6 Star|mode=snd|score1=|score2=|winner=skip}}
+}}
+
+<!-- Lower Bracket Quarterfinals -->
+|R3M3={{Match
+    |date=2024-06-29 - 17:30 {{abbr/MDT}}
+	|cdl=12035
+	|breakingpoint=91348
+	|vod=https://youtu.be/Qrtsnjjc2N4?si=8CekFz5YKJZHAkz0
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|sea}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=Vista|mode=hp |score1=165|score2=250|winner=2}}
+    |map2={{Map|map=6 Star|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Karachi|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Karachi|mode=hp |score1=250|score2=125|winner=1}}
+    |map5={{Map|map=Invasion|mode=snd|score1=1|score2=6|winner=2}}
+}}
+|R3M4={{Match
+    |date=2024-06-29 - 19:00 {{abbr/MDT}}
+	|cdl=12036
+	|breakingpoint=91349
+	|vod=https://youtu.be/tgKhSniYf5g?si=y_yfPpW5lsnqlAC_
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|nys}}
+    |map1={{Map|map=Rio|mode=hp |score1=115|score2=250|winner=2}}
+    |map2={{Map|map=Invasion|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Invasion|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Vista|mode=hp |score1=250|score2=105|winner=2}}
+    |map5={{Map|map=Highrise|mode=snd|score1=|score2=|winner=skip}}
+}}
+
+<!-- Lower Bracket Semifinal -->
+|R4M1={{Match
+    |date=2024-06-30 - 13:00 {{abbr/MDT}}
+	|cdl=12037
+	|breakingpoint=91350
+	|vod=https://youtu.be/6x3gdWTljOw?si=KN-mT3nFmHRgTu1Y
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|nys}}
+    |map1={{Map|map=Vista|mode=hp |score1=154|score2=250|winner=2}}
+    |map2={{Map|map=6 Star|mode=snd|score1=1|score2=6|winner=2}}
+    |map3={{Map|map=Karachi|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Karachi|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Invasion|mode=snd|score1=|score2=|winner=skip}}
+}}
+
+<!-- Lower Bracket Final -->
+|R5M2={{Match
+    |date=2024-06-30 - 16:00 {{abbr/MDT}}
+	|cdl=12038
+	|breakingpoint=91352
+	|vod=https://www.youtube.com/watch?v=BWHHBflWg4A
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|lag}}
+    |opponent2={{TeamOpponent|nys}}
+    |map1={{Map|map=Rio|mode=hp |score1=151|score2=250|winner=2}}
+    |map2={{Map|map=6 Star|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Highrise|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Karachi|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Highrise|mode=snd|score1=|score2=|winner=skip}}
+}}
+
+<!-- Grand Final -->
+|R6M1={{Match|bestof=7
+    |date=2024-06-30 - 17:30 {{abbr/MDT}}
+	|cdl=12027
+	|breakingpoint=91353
+	|vod=
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|nys}}
+    |map1={{Map|map=6 Star|mode=hp |score1=178|score2=250|winner=2}}
+    |map2={{Map|map=Highrise|mode=snd|score1=6|score2=1|winner=1}}
+    |map3={{Map|map=Highrise|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Rio|mode=hp |score1=172|score2=250|winner=2}}
+    |map5={{Map|map=Karachi|mode=snd|score1=2|score2=6|winner=2}}
+    |map6={{Map|map=Invasion|mode=con|score1=2|score2=3|winner=2}}
+    |map7={{Map|map=6 Star|mode=snd|score1=|score2=|winner=skip}}
+}}
+}}
+<section end="Major 4"/>
+
+==Additional Information==
+
+===Country Representation===
+{{Country representation}}
+===Streams===
+{{#lst:Call of Duty_League/Season_5/Stage_1|Streams}}
+
+==References==
+{{reflist}}

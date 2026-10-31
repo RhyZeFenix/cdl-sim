@@ -1,0 +1,458 @@
+{{DISPLAYTITLE:Call of Duty League Championship 2024}}
+{{World Championship Events}}
+{{CDL 2024 Navbox}}
+{{CDL 2024 Tabs}}
+{{Infobox league
+|highlighted=true
+|name=Call of Duty League 2024: Playoffs
+|shortname=CDL Championship 2024
+|tickername=CDL Championship 2024
+|image=CDL_2024_Championship_lightmode.png
+|imagedark=CDL_2024_Championship_darkmode.png
+|series=Call of Duty League
+|abbreviation=CDL|organizer=Activision|organizer-link=http://activision.com/
+|series2=World Championship
+|game=mwiii
+|platform=cdl
+|type=Offline
+|country=United States|city=Allen
+|venue=Credit Union of Texas Event Center |venuelink=https://www.cutxeventcenter.com
+|format=4v4
+|sdate=2024-07-18
+|edate=2024-07-21
+|liquipediatier=1
+|prizepoolusd=2000000
+|web=https://callofdutyleague.com/en-us/
+|twitter=codleague
+|facebook=codleague
+|youtube=CODLeague
+|twitch=CallofDuty
+|instagram=codleague
+|team_number=8
+|previous=Call_of_Duty_League/Season_5/Stage_4/Major {{!}} Stage 4 Major
+|previous2=Call of Duty League/Season 4/Playoffs {{!}}Modern Warfare II
+|next2=Call of Duty League/Season 6/Playoffs{{!}}Black Ops 6
+}}
+
+==About==
+<p style="max-width:990px; padding-top:15px">The '''2024 Call of Duty League Championship''' is the final event and the World Championship of the [[Call of Duty: Modern Warfare III|Modern Warfare III]] Competitive Season organized by [[Activision]]. Best teams throughout the CDL Season 5 have qualified to this event.</p>
+===Format===
+* <span class="bg-up">Top 8</span> teams from the [[Call of Duty League/Season 5#Regular Season|Regular Season]]
+* Double Elimination Bracket
+* All the matches are {{Abbr/Bo5}}, except for the Grand Finals which is {{Abbr/Bo9}}
+
+===Map Pool===
+{{CDL 2024 Map Pool Champs}}
+
+===Restricted Items===
+{{GeneralCollapsible|title=Restricted Items|content={{CDL 2024 Bans}}}}
+
+===Prize Pool===
+''Results of this event will determine [[Esports_World_Cup/2024/MW3|EWC]] seedings''
+{{TeamPrizePool
+|{{Slot|usdprize=800000}}
+|{{Slot|usdprize=480000}}
+|{{Slot|usdprize=320000}}
+|{{Slot|usdprize=160000}}
+|{{Slot|usdprize=80000|place=5-6}}
+|{{Slot|usdprize=40000|place=7-8}}
+}}
+
+===Player Awards===
+{{prize pool start award|noprize=y|margin=false}}
+{{prize pool slot award|award=MVP|Shotzzy|flag1=us|team1=tx}}
+{{prize pool end}}
+
+==Participants==
+{{TeamCardToggleButton}}
+{{TeamCard columns start|cols=4|height=180}}
+{{TeamCard
+|team=Atlanta FaZe
+|p1=aBeZy|p1wins=2
+|p2=Cellium|p2wins=1
+|p3=Drazah|p3wins=1
+|p4=Simp|p4wins=2
+|t2title=Staff
+|t2c1=Crowder|t2c1wins=2
+|t2c2flag=us|t2c2=RJ|t2c2wins=1
+|t2c3flag=us|t2c3=x2Pac ThuGLorD|t2c3pos={{Abbr|A|Analyst}}|t2c3wins=1
+|t3title=Subs
+|t3p1=Classic|t3p1dnp=true
+|qualifier=[[Call of Duty League/Season 5#Regular_Season|CDL Points - #1 Seed]]
+|placement=1
+|placementicon={{LeagueIconSmall/cdl|Call of Duty League/Season 2/Playoffs}} '''(2021)'''
+}}
+{{TeamCard
+|team=Toronto Ultra
+|p1=CleanX
+|p2=Envoy|p2wins=1
+|p3=Insight
+|p4=Scrap
+|t2title=Staff
+|t2c1flag=uk|t2c1=Flux
+|t2c2=Joee
+|t3title=Subs
+|t3p1=
+|qualifier=[[Call of Duty League/Season 5#Regular_Season|CDL Points - #2 Seed]]
+|placement=2
+|placementicon={{LeagueIconSmall/cdl|Call of Duty League/Season 4/Playoffs}} '''(2023)'''
+}}
+{{TeamCard
+|team=OpTic Texas
+|p1=Dashy
+|p2=Kenny|p2wins=1
+|p3=Pred
+|p4=Shotzzy|p4wins=1
+|t2title=Staff
+|t2c1=Karma|t2c1wins=3
+|t2c2flag=us|t2c2=JP Krez|t2c2pos={{Abbr|A|Analyst}}
+|qualifier=[[Call of Duty League/Season 5#Regular_Season|CDL Points - #3 Seed]]
+|placement=4
+|placementicon={{LeagueIconSmall/cdl|Call of Duty League/Season 3/Playoffs}} '''(2022)'''
+}}
+{{TeamCard
+|team=New York Subliners
+|p1=HyDra|p1wins=1
+|p2=KiSMET|p2wins=1
+|p3=Sib
+|p4=Skyz|p4wins=1
+|t2title=Staff
+|t2c1=DREAL|t2c1wins=1
+|t2c2=Sender|t2c2wins=1
+|qualifier=[[Call of Duty League/Season 5#Regular_Season|CDL Points - #4 Seed]]
+|placement=1
+|placementicon={{LeagueIconSmall/cdl|Call of Duty League/Season 4/Playoffs}} '''(2023)'''
+}}
+{{TeamCard
+|team=Seattle Surge
+|p1=04
+|p2=Abuzah
+|p3=Breszy
+|p4=Huke|p4wins=1
+|t2title=Staff
+|t2c1=Rambo|t2c1wins=1
+|t3title=Subs
+|t3p1=|t3p1dnp=true
+|qualifier=[[Call of Duty League/Season 5#Regular_Season|CDL Points - #5 Seed]]
+|placement=3
+|placementicon={{LeagueIconSmall/cdl|Call of Duty League/Season 3/Playoffs}} '''(2022)'''
+}}
+{{TeamCard
+|team=Los Angeles Guerrillas
+|p1=Diamondcon
+|p2=Estreal
+|p3=Fame
+|p4=Flames
+|t2title=Staff
+|t2c1=Veohz
+|t2c2=Arian
+|t2c3=Cheek|t2c3pos={{Abbr|A|Analyst}}
+|t2c4=GBursted
+|t3title=Subs
+|t3p1=Assault|t3p1dnp=true|t3p1wins=1
+|qualifier=[[Call of Duty League/Season 5#Regular_Season|CDL Points - #6 Seed]]
+|placement=11-12
+|placementicon={{LeagueIconSmall/cdl|Call of Duty League/Season 1/Playoffs}} '''(2020)'''
+}}
+{{TeamCard
+|team=Los Angeles Thieves
+|p1=Ghosty
+|p2=JoeDeceives
+|p3=Kremp
+|p4=Nastie
+|t2title=Staff
+|t2c1=JKap|t2c1wins=3
+|t2c2=ShAnE|t2c2wins=1
+|t3title=Subs
+|t3p1=Afro|t3p1dnp=true
+|qualifier=[[Call of Duty League/Season 5#Regular_Season|CDL Points - #7 Seed]]
+|placement=1
+|placementicon={{LeagueIconSmall/cdl|Call of Duty League/Season 3/Playoffs}} '''(2022)'''
+}}
+{{TeamCard
+|team=Miami Heretics
+|p1=Lucky
+|p2=MettalZ
+|p3=ReeaL
+|p4=Vikul
+|t2title=Staff
+|t2c1=MethodZ
+|t3title=Subs
+|t3p1=EriKBooM|t3p1dnp=true
+|qualifier=[[Call of Duty League/Season 5#Regular_Season|CDL Points - #8 Seed]]
+|placement=7-8
+|placementicon={{LeagueIconSmall/cdl|Call of Duty League/Season 1/Playoffs}} '''(2020)''', '''(2021)'''
+}}
+{{TeamCard columns end}}
+
+==Results==
+<section begin="Playoffs"/>
+{{Toggle bracket start|tournament=Call of Duty League/Season 5/Playoffs}}
+{{MatchSection|Playoffs}}
+{{Bracket|Bracket/8U4L2DSL1D|id=CDL24Final
+|R1M1header=Winners Round 1
+|R2M1header=Winners Round 2
+|R4M1header=Winners Final
+|R1M5header=Elimination Round 1
+|R2M3header=Elimination Round 2
+|R3M1header=Elimination Round 3
+|R4M2header=Elimination Finals
+|R5M1header=Grand Final
+
+<!-- Upper Bracket Quarterfinals -->
+|R1M1={{Match
+    |bestof=5
+    |date=2024-07-18 - 14:30 {{abbr/MDT}}
+	|vod=https://www.youtube.com/watch?v=n7HOP5MIVo0
+	|breakingpoint=91830
+	|cdl=12121
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Vista|mode=hp |score1=250|score2=222|winner=1}}
+    |map2={{Map|map=Invasion|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Invasion|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Karachi|mode=hp |score1=250|score2=240|winner=1}}
+    |map5={{Map|map=6 Star|mode=snd|score1=|score2=|winner=skip}}
+}}
+|R1M2={{Match
+    |date=2024-07-18 - 13:00 {{abbr/MDT}}
+	|vod=https://www.youtube.com/watch?v=udFfiPfC7Dc
+	|breakingpoint=91829
+	|cdl=12122
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|nys}}
+    |opponent2={{TeamOpponent|sea}}
+    |map1={{Map|map=Karachi|mode=hp |score1=250|score2=243|winner=1}}
+    |map2={{Map|map=6 Star|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Invasion|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Vista|mode=hp |score1=219|score2=250|winner=2}}
+    |map5={{Map|map=Karachi|mode=snd|score1=6|score2=3|winner=1}}
+}}
+|R1M3={{Match
+    |date=2024-07-18 - 16:00 {{abbr/MDT}}
+	|vod=https://www.youtube.com/watch?v=J-n9a1czpvc
+	|breakingpoint=91831
+	|cdl=12123
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=6 Star|mode=hp |score1=184|score2=250|winner=2}}
+    |map2={{Map|map=Rio|mode=snd|score1=6|score2=0|winner=1}}
+    |map3={{Map|map=Invasion|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Rio|mode=hp |score1=236|score2=250|winner=2}}
+    |map5={{Map|map=Invasion|mode=snd|score1=|score2=|winner=skip}}
+}}
+|R1M4={{Match
+    |date=2024-07-18 - 17:30 {{abbr/MDT}}
+	|vod=https://www.youtube.com/watch?v=rl5pjTgHzL4
+	|breakingpoint=91832
+	|cdl=12124
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|lag}}
+    |map1={{Map|map=Rio|mode=hp |score1=250|score2=208|winner=1}}
+    |map2={{Map|map=Highrise|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Karachi|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Karachi|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Invasion|mode=snd|score1=|score2=|winner=skip}}
+}}
+
+<!-- Upper Bracket Semifinals -->
+|R2M1={{Match
+    |date=2024-07-19 - 17:30 {{abbr/MDT}}
+	|vod=https://www.youtube.com/watch?v=3SJNvviK5nM
+	|breakingpoint=91836
+	|cdl=12125
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|ny}}
+    |map1={{Map|map=Rio|mode=hp |score1=206|score2=250|winner=2}}
+    |map2={{Map|map=6 Star|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Invasion|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Karachi|mode=hp |score1=224|score2=250|winner=2}}
+    |map5={{Map|map=Invasion|mode=snd|score1=3|score2=6|winner=2}}
+}}
+|R2M2={{Match
+    |date=2024-07-19 - 16:00 {{abbr/MDT}}
+	|vod=https://www.youtube.com/watch?v=dNtBhMYHtNk
+	|breakingpoint=91835
+	|cdl=12126
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|tx}}
+    |map1={{Map|map=Karachi|mode=hp |score1=250|score2=177|winner=1}}
+    |map2={{Map|map=Highrise|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Karachi|mode=con|score1=0|score2=3|winner=2}}
+    |map4={{Map|map=6 Star|mode=hp |score1=169|score2=250|winner=2}}
+    |map5={{Map|map=Karachi|mode=snd|score1=3|score2=6|winner=2}}
+}}
+
+<!-- Upper Bracket Final -->
+|R4M1={{Match
+    |date=2024-07-20 - 16:00 {{abbr/MDT}}
+	|vod=https://www.youtube.com/watch?v=rJSiGtFvICs
+	|breakingpoint=91839
+	|cdl=12127
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|nys}}
+    |opponent2={{TeamOpponent|tx}}
+    |map1={{Map|map=Karachi|mode=hp |score1=219|score2=250|winner=2}}
+    |map2={{Map|map=6 Star|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Invasion|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Rio|mode=hp |score1=250|score2=245|winner=1}}
+    |map5={{Map|map=Invasion|mode=snd|score1=1|score2=6|winner=2}}
+}}
+
+<!-- Lower Bracket Round 1 -->
+|R1M5={{Match
+    |date=2024-07-19 - 13:00 {{abbr/MDT}}
+	|vod=https://www.youtube.com/watch?v=DhM0E6oFZLc
+	|breakingpoint=91833
+	|cdl=12130
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|sea}}
+    |map1={{Map|map=6 Star|mode=hp |score1=112|score2=250|winner=2}}
+    |map2={{Map|map=Karachi|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Invasion|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Rio|mode=hp |score1=150|score2=250|winner=2}}
+    |map5={{Map|map=Invasion|mode=snd|score1=6|score2=5|winner=1}}
+}}
+|R1M6={{Match
+    |date=2024-07-19 - 14:30 {{abbr/MDT}}
+	|vod=https://www.youtube.com/watch?v=oHIKM1Z5qjM
+	|breakingpoint=91834
+	|cdl=12131
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|lag}}
+    |map1={{Map|map=Karachi|mode=hp |score1=250|score2=85|winner=1}}
+    |map2={{Map|map=6 Star|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Highrise|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Rio|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Invasion|mode=snd|score1=|score2=|winner=skip}}
+}}
+
+<!-- Lower Bracket Quarterfinals -->
+|R2M3={{Match
+    |date=2024-07-20 - 14:30 {{abbr/MDT}}
+	|vod=https://www.youtube.com/watch?v=z6c92Fe808o
+	|breakingpoint=91838
+	|cdl=12132
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Vista|mode=hp |score1=250|score2=218|winner=1}}
+    |map2={{Map|map=Invasion|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Karachi|mode=con|score1=3|score2=0|winner=1}}
+    |map4={{Map|map=6 Star|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=6 Star|mode=snd|score1=|score2=|winner=skip}}
+}}
+|R2M4={{Match
+    |date=2024-07-20 - 13:00 {{abbr/MDT}}
+	|vod=https://www.youtube.com/watch?v=DHHLTrdpFSs
+	|breakingpoint=91837
+	|cdl=12133
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=6 Star|mode=hp |score1=160|score2=250|winner=2}}
+    |map2={{Map|map=Rio|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Invasion|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Rio|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Karachi|mode=snd|score1=|score2=|winner=skip}}
+}}
+
+<!-- Lower Bracket Semifinal -->
+|R3M1={{Match
+    |date=2024-07-20 - 17:30 {{abbr/MDT}}
+	|vod=https://www.youtube.com/watch?v=ibzAeRkt0gw
+	|breakingpoint=91840
+	|cdl=12134
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=6 Star|mode=hp |score1=250|score2=213|winner=1}}
+    |map2={{Map|map=Invasion|mode=snd|score1=1|score2=6|winner=2}}
+    |map3={{Map|map=Invasion|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Rio|mode=hp |score1=250|score2=186|winner=1}}
+    |map5={{Map|map=Rio|mode=snd|score1=4|score2=6|winner=2}}
+}}
+
+<!-- Lower Bracket Final -->
+|R4M2={{Match
+    |date=2024-07-20 - 19:00 {{abbr/MDT}}
+	|vod=https://www.youtube.com/watch?v=e9iSpga6RRM
+	|breakingpoint=91841
+	|cdl=12135
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|nys}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=Karachi|mode=hp |score1=214|score2=250|winner=2}}
+    |map2={{Map|map=Karachi|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Highrise|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Vista|mode=hp |score1=250|score2=189|winner=1}}
+    |map5={{Map|map=Invasion|mode=snd|score1=6|score2=2|winner=1}}
+}}
+
+<!-- Grand Final -->
+|R5M1={{Match
+	|bestof=9
+    |date=2024-07-21 - 13:00 {{abbr/MDT}}
+	|vod=https://www.youtube.com/watch?v=1_GdtK1O4as
+	|breakingpoint=92204
+	|cdl=12128
+    |youtube=Call of Duty League
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|nys}}
+    |map1={{Map|map=Karachi|mode=hp |score1=250|score2=212|winner=1}}
+    |map2={{Map|map=Karachi|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Karachi|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Rio|mode=hp |score1=250|score2=130|winner=1}}
+    |map5={{Map|map=Invasion|mode=snd|score1=6|score2=3|winner=1}}
+	|map6={{Map|map=Invasion|mode=con|score1=3|score2=2|winner=1}}
+	|map7={{Map|map=6 Star|mode=snd|score1=|score2=|winner=skip}}
+	|map8={{Map|map=Sub Base|mode=hp |score1=|score2=|winner=skip}}
+	|map9={{Map|map=Rio|mode=snd|score1=|score2=|winner=skip}}
+}}
+}}
+<section end="Playoffs"/>
+
+==Broadcast==
+===Streams===
+{{#lst:Call of Duty_League/Season_5/Stage_1|Streams}}
+===Broadcast Talent===
+{{box|start|padding=1em}}
+{{BroadcasterCard
+|position=Hosts
+|b1=Puckett|b1name=|b1flag=us
+}}
+{{BroadcasterCard
+|position=Floor Host
+|b1=Praagy |b1name=Lottie Van-Praag |b1flag=gb
+}}
+{{BroadcasterCard
+|position=Stage Host
+|b1=Blaze|b1name=|b1flag=us
+}}
+{{BroadcasterCard
+|position=Analyst
+|b1=Clayster
+|b2=Allycxt
+|b3=NAMELESS
+}}
+{{box|break|padding=1em}}
+{{BroadcasterCard
+|position=Commentator
+|b1=Merk
+|b2=Maven
+|b3=Miles Ross
+|b4=Chance
+}}
+{{box|end}}
+
+==Additional Information==
+
+===Country Representation===
+{{Country representation}}

@@ -1,0 +1,728 @@
+{{DISPLAYTITLE:Call of Duty League 2026: Stage 4 Major Qualifiers}}
+{{CDL 2026 Navbox}}
+{{CDL 2026 Tabs}}
+{{tabs static
+|name1=Overview|link1=Call_of_Duty_League/Season_7/Regular_Season
+|name2=Stage 1|link2=Call_of_Duty_League/Season_7/Stage_1
+|name3=Stage 2|link3=Call_of_Duty_League/Season_7/Stage_2
+|name4=Stage 3|link4=Call_of_Duty_League/Season_7/Stage_3
+|name5=Stage 4|link5=Call_of_Duty_League/Season_7/Stage_4
+}}
+{{Tabs static
+|name1=Qualifiers|link1=Call_of_Duty_League/Season_7/Stage_4
+|name2=Minor|link2=Call_of_Duty_League/Season_7/Stage_4/Minor
+|name3=Major|link3=Call_of_Duty_League/Season_7/Stage_4/Major
+}}
+{{Infobox league
+|name=Call of Duty League 2026: Stage 4 Major Qualifiers
+|tickername=CDL '26 Major 4 Qual.
+|image=CDL_2024_lightmode.png
+|imagedark=CDL_2024_darkmode.png
+|series=Call of Duty League
+|abbreviation=CDL
+|organizer=Activision
+|game=bo7
+|type=Online
+|country=World
+|format=4v4
+|sdate=2026-05-29
+|edate=2026-06-21
+|liquipediatier=1|liquipediatiertype=Qualifier
+|prizepoolusd=
+|web=https://callofdutyleague.com/en-us/
+|twitter=codleague
+|facebook=codleague
+|youtube=CODLeague
+|twitch=CallofDuty
+|instagram=codleague
+|team_number=12
+|previous=Call of Duty League/Season 7/Stage 3/Major {{!}} Stage 3 Major
+|next=Call of Duty League/Season 7/Stage 4/Minor {{!}} Stage 4 Minor
+}}
+
+==About==
+===Format===
+* 5 matches played per team
+* All teams qualify for [[Call of Duty League/Season 7/Stage 4/Major|Major 4]] and [[Call of Duty League/Season 7/Stage 4/Minor|Minor 2]]
+* Each team recieves 10 CDL points for each win
+
+===Broadcast Talent===
+===Broadcast Talent===
+{{box|start|padding=2em}}
+{{BroadcasterCard
+|position=Hosts
+|b1=Puckett
+}}
+{{BroadcasterCard
+|position=Analyst
+|b1=Rosalie
+|b2=NAMELESS
+}}
+{{box|break|padding=1em}}
+{{BroadcasterCard
+|position=Commentator
+|b1=Miles Ross
+|b2=Chance
+|b3=MerK
+|b4=Maven
+|b5=IHOLDSHIFT
+|b6=StuDyy
+}}
+{{box|end}}
+
+===Map Pool===
+{{CDL 2026 Major 4 Qualifiers Map Pool}}
+
+===Restricted Items===
+{{GeneralCollapsible|title=Restricted Items|content={{CDL 2026 Bans}}}}
+
+===Prize Pool===
+{{TeamPrizePool|points1=cdl|points1link=Call of Duty League/Season 7/Regular Season#Results|cutafter=12|prizesummary=false
+|{{Slot|points1=50}}
+|{{Slot|points1=40}}
+|{{Slot|points1=30}}
+|{{Slot|points1=30}}
+|{{Slot|points1=30}}
+|{{Slot|points1=30}}
+|{{Slot|points1=20}}
+|{{Slot|points1=20}}
+|{{Slot|points1=20}}
+|{{Slot|points1=20}}
+|{{Slot|points1=10}}
+|{{Slot|points1=0}}
+}}
+
+==Participants==
+{{TeamParticipants|minimumplayers=4
+|{{Opponent|Boston Breach
+  |players={{Persons
+    |{{Person|Afro}}
+    |{{Person|Purj}}
+    |{{Person|Spart}}
+    |{{Person|TJHaLy}}
+<!--STAFF-->
+    |{{Person|Seany|role=Coach|type=staff}}
+|{{Person|Magick|role=Coach|type=staff}}
+<!--FORMER-->
+  }}
+}}
+|{{Opponent|Carolina Royal Ravens
+  |players={{Persons
+    |{{Person|Exceed}}
+    |{{Person|Fire}}
+	|{{Person|KnoX|team=falg}}
+    |{{Person|Lurqxx}}
+	
+	|{{Person|Standy|status=sub|played=true}}
+<!--STAFF-->
+    |{{Person|Saintt|role=Coach|type=staff}}
+	|{{Person|Quids|role=Analyst|type=staff}}
+<!--FORMER-->
+  }}
+}}
+|{{Opponent|Los Angeles Thieves
+  |players={{Persons
+    |{{Person|aBeZy}}
+    |{{Person|HyDra}}
+    |{{Person|Nium}}
+    |{{Person|Scrap}}
+<!--STAFF-->
+    |{{Person|ShAnE|role=Coach|type=staff}}
+|{{Person|Sender|role=Coach|type=staff}}
+<!--FORMER-->
+  }}
+}}
+|{{Opponent|Miami Heretics
+  |players={{Persons
+    |{{Person|MettalZ}}
+    |{{Person|ReeaL}}
+    |{{Person|RenKoR}}
+    |{{Person|SupeR}}
+	
+<!--STAFF-->
+    |{{Person|MethodZ|role=Coach|type=staff}}
+|{{Person|Lucky|role=Coach|type=staff}}
+<!--FORMER-->
+|{{Person|Traix|team=|status=former}}
+  }}
+}}
+|{{Opponent|G2 Minnesota
+  |players={{Persons
+    |{{Person|Envoy}}
+    |{{Person|Kremp}}
+    |{{Person|Nastie}}
+    |{{Person|Skyz}}
+<!--STAFF-->
+    |{{Person|Loony|role=Coach|type=staff}}
+|{{Person|Alexdotzip|role=Coach|type=staff}}
+<!--FORMER-->
+  }}
+}}
+|{{Opponent|Cloud9 New York
+  |players={{Persons
+    |{{Person|Encourage}}
+    |{{Person|Hide}}
+    |{{Person|Nejra}}
+    |{{Person|Wevy}}
+<!--STAFF-->
+    |{{Person|Arian|role=Coach|type=staff}}
+<!--FORMER-->
+  }}
+}}
+|{{Opponent|Paris Gentle Mates
+  |players={{Persons
+    |{{Person|Estreal}}
+    |{{Person|Ghosty}}
+    |{{Person|JoeDeceives}}
+    |{{Person|Sib}}
+	
+	|{{Person|Neptune|team=|status=sub}}
+<!--STAFF-->
+    |{{Person|Mayhem|role=Coach|type=staff}}
+|{{Person|Cheek|role=Coach|type=staff}}
+<!--FORMER-->
+  }}
+}}
+|{{Opponent|Riyadh Falcons
+  |players={{Persons
+    |{{Person|Cellium}}
+    |{{Person|Exnid}}
+    |{{Person|KiSMET}}
+    |{{Person|Pred}}
+<!--STAFF-->
+    |{{Person|Clayster|role=Coach|type=staff}}
+	|{{Person|Mutab|role=Coach|type=staff}}
+<!--FORMER-->
+  }}
+}}
+|{{Opponent|OpTic Texas
+  |players={{Persons
+    |{{Person|Dashy}}
+    |{{Person|Huke}}
+    |{{Person|Mercules}}
+    |{{Person|Shotzzy}}
+<!--STAFF-->
+    |{{Person|Karma|role=Coach|type=staff}}
+|{{Person|JP Krez|role=Coach|type=staff}}
+<!--FORMER-->
+  }}
+}}
+|{{Opponent|Toronto KOI
+  |players={{Persons
+    |{{Person|Abe}}
+    |{{Person|CleanX}}
+    |{{Person|Insight}}
+    |{{Person|Kips}}
+<!--STAFF-->
+    |{{Person|Flux|role=Coach|type=staff}}
+|{{Person|Joee|role=Coach|type=staff}}
+<!--FORMER-->
+    |{{Person|JoeDeceives|status=former}}
+  }}
+}}
+|{{Opponent|Vancouver Surge
+  |players={{Persons
+    |{{Person|Craze}}
+    |{{Person|Lunarz}}
+    |{{Person|Mamba}}
+    |{{Person|Nero}}
+
+|{{Person|Lqgend|status=sub|played=false}}
+<!--STAFF-->
+    |{{Person|Atura|role=Coach|type=staff}}
+|{{Person|Jokr|role=Coach|type=staff}}
+<!--FORMER-->
+  }}
+}}
+|{{Opponent|FaZe Vegas
+  |players={{Persons
+    |{{Person|04}}
+    |{{Person|Abuzah}}
+    |{{Person|Drazah}}
+    |{{Person|Simp}}
+
+|{{Person|Alluka|status=sub|played=false}}
+<!--STAFF-->
+    |{{Person|Crowder|role=Coach|type=staff}}
+|{{Person|RJ|role=Coach|type=staff}}
+<!--FORMER-->
+  }}
+}}
+}}
+
+==Results==
+===Standings===
+{{box|start|padding=2em}}
+{{GroupTableLeague|title=Online Qualifiers|width=450px|show_g=true|diff=true|edate=June 21, 2026 23:00 {{abbr/MDT}}|tiebreaker1=points|tiebreaker3=h2h series|tiebreaker4=diff|tiebreaker2=series%|show_p=true|win_p=10|tie_p=0|lose_p=0
+|pbg1=up|pbg2=up|pbg3=up|pbg4=up|pbg5=up|pbg6=up|pbg7=up|pbg8=up|pbg9=stay|pbg10=stay|pbg11=stay|pbg12=stay
+|team1=fv |bg1=up|temp_tie1=1
+|team2=bos|bg2=up
+|team3=car|bg3=up|temp_tie3=2
+|team4=riy|bg4=up
+|team5=pm8|bg5=up|temp_tie5=2
+|team6=lat|bg6=up
+|team7=mia|bg7=stay|temp_tie7=1
+|team8=min|bg8=up
+|team9=c9ny|bg9=stay
+|team10=van|bg10=stay
+|team11=tx|bg11=up
+|team12=tor|bg12=stay
+}}
+{{box|break|padding=2em}}
+{{CrossTableLeague
+|tournament=Call_of_Duty_League/Season_7/Stage_4
+|team1=fv
+|team2=bos
+|team3=mia
+|team4=pm8
+|team5=lat
+|team6=riy
+|team7=car
+|team8=optx
+|team9=min
+|team10=c9ny
+|team11=van
+|team12=tor
+|single=true
+}}
+{{box|end|padding=2em}}
+
+===Detailed Matches===
+{{box|start|padding=2em}}
+====={{HiddenSort|Week 1}}=====
+{{Matchlist|id=CDL26M4WK1|title=Week 1 Matches
+|M1header=Day 1
+|M1={{Match
+    |bestof=5
+    |date=2026-05-29 - 15:00 {{Abbr/EDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=i9rhGR6wWWE
+	|cdl=13069
+	|breakingpoint=214961
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|car}}
+    |map1={{Map|map=Sake|mode=hp |score1=178|score2=250|winner=2}}
+    |map2={{Map|map=Fringe|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Gridlock|mode=ovl|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Den|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Raid|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M2header=
+|M2={{Match
+    |date=2026-05-29 - 16:30 {{Abbr/EDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=SoeMyW6WeYE
+	|cdl=13070
+	|breakingpoint=214962
+    |opponent1={{TeamOpponent|g2m}}
+    |opponent2={{TeamOpponent|c9ny}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=240|winner=1}}
+    |map2={{Map|map=Fringe|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Den|mode=ovl|score1=2|score2=6|winner=2}}
+    |map4={{Map|map=Scar|mode=hp |score1=250|score2=109|winner=1}}
+    |map5={{Map|map=Gridlock|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M3header=
+|M3={{Match
+    |date=2026-05-29 - 18:00 {{Abbr/EDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=SJary_P_mwU
+	|cdl=13071
+	|breakingpoint=214963
+    |opponent1={{TeamOpponent|van}}
+    |opponent2={{TeamOpponent|tx}}
+    |map1={{Map|map=Sake|mode=hp |score1=98|score2=250|winner=2}}
+    |map2={{Map|map=Hacienda|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=3|score2=4|winner=2}}
+    |map4={{Map|map=Hacienda|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Raid|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M4header=Day 2
+|M4={{Match
+    |date=2026-05-30 - 15:00 {{Abbr/EDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=rWswQh3xunc
+	|cdl=13072
+	|breakingpoint=214964
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|fv}}
+    |map1={{Map|map=Gridlock|mode=hp |score1=207|score2=250|winner=2}}
+    |map2={{Map|map=Fringe|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Gridlock|mode=ovl|score1=5|score2=2|winner=1}}
+    |map4={{Map|map=Scar|mode=hp |score1=119|score2=250|winner=2}}
+    |map5={{Map|map=Gridlock|mode=snd|score1=6|score2=3|winner=1}}
+    }}
+|M5header=
+|M5={{Match
+    |date=2026-05-30 - 16:30 {{Abbr/EDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=ZjN9LOG9LIk
+	|cdl=13073
+	|breakingpoint=214965
+    |opponent1={{TeamOpponent|pgm}}
+    |opponent2={{TeamOpponent|car}}
+    |map1={{Map|map=Colossus|mode=hp |score1=250|score2=197|winner=1}}
+    |map2={{Map|map=Gridlock|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=5|score2=4|winner=1}}
+    |map4={{Map|map=Den|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Fringe|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M6header=
+|M6={{Match
+    |date=2026-05-30 - 18:00 {{Abbr/EDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=68ePVqsCbz0
+	|cdl=13074
+	|breakingpoint=214966
+    |opponent1={{TeamOpponent|van}}
+    |opponent2={{TeamOpponent|bos}}
+    |map1={{Map|map=Scar|mode=hp |score1=250|score2=234|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Gridlock|mode=ovl|score1=1|score2=4|winner=2}}
+    |map4={{Map|map=Den|mode=hp |score1=192|score2=250|winner=2}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=3|score2=6|winner=2}}
+    }}
+|M7header=
+|M7={{Match
+    |date=2026-05-30 - 19:30 {{Abbr/EDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=2j_sjAiJpis
+	|cdl=13075
+	|breakingpoint=214967
+    |opponent1={{TeamOpponent|ryd}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Colossus|mode=hp |score1=234|score2=250|winner=2}}
+    |map2={{Map|map=Fringe|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=6|score2=5|winner=1}}
+    |map4={{Map|map=Hacienda|mode=hp |score1=207|score2=250|winner=2}}
+    |map5={{Map|map=Sake|mode=snd|score1=6|score2=1|winner=1}}
+    }}
+|M8header=Day 3
+|M8={{Match
+    |date=2026-05-31 - 15:00 {{Abbr/EDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=CyhmOwbAnQg
+	|cdl=13076
+	|breakingpoint=214968
+    |opponent1={{TeamOpponent|ryd}}
+    |opponent2={{TeamOpponent|pgm}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=240|winner=1}}
+    |map2={{Map|map=Sake|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Sake|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Gridlock|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M9header=
+|M9={{Match
+    |date=2026-05-31 - 16:30 {{Abbr/EDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=5Nc9v2KgRoc
+	|cdl=13077
+	|breakingpoint=214969
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Scar|mode=hp |score1=250|score2=215|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=6|score2=1|winner=1}}
+    |map4={{Map|map=Hacienda|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M10header=
+|M10={{Match
+    |date=2026-05-31 - 18:00 {{Abbr/EDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=LlHQI-c53Yw
+	|cdl=13078
+	|breakingpoint=214970
+    |opponent1={{TeamOpponent|c9ny}}
+    |opponent2={{TeamOpponent|bos}}
+    |map1={{Map|map=Den|mode=hp |score1=241|score2=250|winner=2}}
+    |map2={{Map|map=Sake|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Den|mode=ovl|score1=3|score2=5|winner=2}}
+    |map4={{Map|map=Scar|mode=hp |score1=245|score2=250|winner=2}}
+    |map5={{Map|map=Raid|mode=snd|score1=|score2=|winner=skip}}
+    }}
+}}
+{{box|break|padding=2em}}
+
+====={{HiddenSort|Week 2}}=====
+{{Matchlist|id=CDL26M4WK2|title=Week 2 Matches
+|M1header=Day 1
+|M1={{Match
+    |bestof=5
+    |date=2026-06-12 - 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=v5feYmFLEAc
+	|cdl=13079
+	|breakingpoint=214982
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|g2m}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=162|winner=1}}
+    |map2={{Map|map=Gridlock|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Colossus|mode=hp |score1=171|score2=250|winner=2}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=4|score2=6|winner=2}}
+    }}
+|M2header=
+|M2={{Match
+    |date=2026-06-12 - 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=bIWt9No31Z8
+	|cdl=13080
+	|breakingpoint=214983
+    |opponent1={{TeamOpponent|pgm}}
+    |opponent2={{TeamOpponent|fv}}
+    |map1={{Map|map=Colossus|mode=hp |score1=249|score2=250|winner=2}}
+    |map2={{Map|map=Hacienda|mode=snd|score1=6|score2=0|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Scar|mode=hp |score1=250|score2=191|winner=1}}
+    |map5={{Map|map=Den|mode=snd|score1=5|score2=6|winner=2}}
+    }}
+|M3header=
+|M3={{Match
+    |date=2026-06-12 - 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=nGrKn0vD-_I
+	|cdl=13081
+	|breakingpoint=214984
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|bos}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=200|winner=1}}
+    |map2={{Map|map=Fringe|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Gridlock|mode=ovl|score1=3|score2=5|winner=2}}
+    |map4={{Map|map=Gridlock|mode=hp |score1=198|score2=250|winner=2}}
+    |map5={{Map|map=Raid|mode=snd|score1=6|score2=2|winner=1}}
+    }}
+|M4header=Day 2
+|M4={{Match
+    |date=2026-06-13 - 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=NMqT9wQblWo
+	|cdl=13082
+	|breakingpoint=214985
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|bos}}
+    |map1={{Map|map=Gridlock|mode=hp |score1=233|score2=250|winner=2}}
+    |map2={{Map|map=Raid|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=2|score2=1|winner=1}}
+    |map4={{Map|map=Den|mode=hp |score1=219|score2=250|winner=2}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M5header=
+|M5={{Match
+    |date=2026-06-13 - 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=asdxToWDbV0
+	|cdl=13083
+	|breakingpoint=214986
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|car}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=147|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=3|score2=4|winner=2}}
+    |map4={{Map|map=Sake|mode=hp |score1=250|score2=207|winner=1}}
+    |map5={{Map|map=Den|mode=snd|score1=5|score2=6|winner=2}}
+    }}
+|M6header=
+|M6={{Match
+    |date=2026-06-13 - 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=i8cFrceDZks
+	|cdl=13084
+	|breakingpoint=214987
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|fv}}
+    |map1={{Map|map=Sake|mode=hp |score1=250|score2=149|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Gridlock|mode=ovl|score1=1|score2=7|winner=2}}
+    |map4={{Map|map=Gridlock|mode=hp |score1=250|score2=205|winner=1}}
+    |map5={{Map|map=Fringe|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M7header=
+|M7={{Match
+    |date=2026-06-13 - 17:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=_Eb1obYV1YI
+	|cdl=13085
+	|breakingpoint=214988
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|g2m}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=214|winner=1}}
+    |map2={{Map|map=Fringe|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Gridlock|mode=ovl|score1=5|score2=6|winner=2}}
+    |map4={{Map|map=Scar|mode=hp |score1=250|score2=222|winner=1}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=6|score2=4|winner=1}}
+    }}
+|M8header=Day 3
+|M8={{Match
+    |date=2026-06-14 - 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=qDJMo9xmUv4
+	|cdl=13086
+	|breakingpoint=214989
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|c9ny}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=223|winner=1}}
+    |map2={{Map|map=Den|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Gridlock|mode=hp |score1=250|score2=158|winner=1}}
+    |map5={{Map|map=Gridlock|mode=snd|score1=6|score2=5|winner=1}}
+    }}
+|M9header=
+|M9={{Match
+    |date=2026-06-14 - 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=G0vtsrnOuWE
+	|cdl=13087
+	|breakingpoint=214990
+    |opponent1={{TeamOpponent|van}}
+    |opponent2={{TeamOpponent|pgm}}
+    |map1={{Map|map=Sake|mode=hp |score1=149|score2=250|winner=2}}
+    |map2={{Map|map=Hacienda|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=0|score2=7|winner=2}}
+    |map4={{Map|map=Scar|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Gridlock|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M10header=
+|M10={{Match
+    |date=2026-06-14 - 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=y0FtX6xoBOM
+	|cdl=13088
+	|breakingpoint=214991
+    |opponent1={{TeamOpponent|ryd}}
+    |opponent2={{TeamOpponent|car}}
+    |map1={{Map|map=Sake|mode=hp |score1=250|score2=200|winner=1}}
+    |map2={{Map|map=Hacienda|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Gridlock|mode=ovl|score1=2|score2=5|winner=2}}
+    |map4={{Map|map=Colossus|mode=hp |score1=250|score2=112|winner=1}}
+    |map5={{Map|map=Den|mode=snd|score1=6|score2=3|winner=1}}
+    }}
+}}
+{{box|break|padding=2em}}
+
+====={{HiddenSort|Week 3}}=====
+{{Matchlist|id=CDL26M4WK3|title=Week 3 Matches
+|M1header=Day 1
+|M1={{Match
+    |bestof=5
+    |date=2026-06-19 - 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=lnHfnsGbdRg
+	|cdl=13089
+	|breakingpoint=214992
+    |opponent1={{TeamOpponent|ryd}}
+    |opponent2={{TeamOpponent|fv}}
+    |map1={{Map|map=Gridlock|mode=hp |score1=166|score2=250|winner=2}}
+    |map2={{Map|map=Gridlock|mode=snd|score1=1|score2=6|winner=2}}
+    |map3={{Map|map=Gridlock|mode=ovl|score1=0|score2=7|winner=2}}
+    |map4={{Map|map=Sake|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Raid|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M2header=
+|M2={{Match
+    |date=2026-06-19 - 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=eGoboICT9LI
+	|cdl=13090
+	|breakingpoint=214993
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|c9ny}}
+    |map1={{Map|map=Hacienda|mode=hp |score1=250|score2=158|winner=1}}
+    |map2={{Map|map=Sake|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Scar|mode=ovl|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Den|mode=hp |score1=250|score2=210|winner=1}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M3header=
+|M3={{Match
+    |date=2026-06-19 - 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=G2NzGIiMy_k
+	|cdl=13091
+	|breakingpoint=214994
+    |opponent1={{TeamOpponent|pgm}}
+    |opponent2={{TeamOpponent|bos}}
+    |map1={{Map|map=Gridlock|mode=hp |score1=250|score2=121|winner=1}}
+    |map2={{Map|map=Fringe|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Sake|mode=hp |score1=250|score2=233|winner=1}}
+    |map5={{Map|map=Raid|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M4header=Day 2
+|M4={{Match
+    |date=2026-06-20 - 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=3yvVYAFZJyc
+	|cdl=13092
+	|breakingpoint=214995
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|c9ny}}
+    |map1={{Map|map=Colossus|mode=hp |score1=250|score2=164|winner=1}}
+    |map2={{Map|map=Den|mode=snd|score1=1|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=6|score2=2|winner=1}}
+    |map4={{Map|map=Den|mode=hp |score1=250|score2=235|winner=1}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M5header=
+|M5={{Match
+    |date=2026-06-20 - 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=6pyPLwdrzq4
+	|cdl=13093
+	|breakingpoint=214996
+    |opponent1={{TeamOpponent|van}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Hacienda|mode=hp |score1=156|score2=250|winner=2}}
+    |map2={{Map|map=Hacienda|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Den|mode=ovl|score1=0|score2=8|winner=2}}
+    |map4={{Map|map=Scar|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Sake|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M6header=
+|M6={{Match
+    |date=2026-06-20 - 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=y-NW4qX9CPA
+	|cdl=13094
+	|breakingpoint=214997
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|tx}}
+    |map1={{Map|map=Den|mode=hp |score1=250|score2=177|winner=1}}
+    |map2={{Map|map=Gridlock|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=3|score2=4|winner=2}}
+    |map4={{Map|map=Sake|mode=hp |score1=250|score2=208|winner=1}}
+    |map5={{Map|map=Den|mode=snd|score1=5|score2=6|winner=2}}
+    }}
+|M7header=
+|M7={{Match
+    |date=2026-06-20 - 17:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=IF1rlswJvnk
+	|cdl=13095
+	|breakingpoint=214998
+    |opponent1={{TeamOpponent|ryd}}
+    |opponent2={{TeamOpponent|g2m}}
+    |map1={{Map|map=Colossus|mode=hp |score1=250|score2=124|winner=1}}
+    |map2={{Map|map=Gridlock|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Exposure|mode=ovl|score1=4|score2=3|winner=1}}
+    |map4={{Map|map=Gridlock|mode=hp |score1=138|score2=250|winner=2}}
+    |map5={{Map|map=Den|mode=snd|score1=6|score2=4|winner=1}}
+    }}
+|M8header=Day 3
+|M8={{Match
+    |date=2026-06-21 - 13:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=d7j-obe6nUo
+	|cdl=13096
+	|breakingpoint=214999
+    |opponent1={{TeamOpponent|van}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Colossus|mode=hp |score1=250|score2=243|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=2|score2=0|winner=1}}
+    |map4={{Map|map=Scar|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M9header=
+|M9={{Match
+    |date=2026-06-21 - 14:30 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=Ys5h4LFrQQU
+	|cdl=13097
+	|breakingpoint=215000
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|g2m}}
+    |map1={{Map|map=Gridlock|mode=hp |score1=185|score2=250|winner=2}}
+    |map2={{Map|map=Den|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Scar|mode=ovl|score1=4|score2=3|winner=1}}
+    |map4={{Map|map=Den|mode=hp |score1=250|score2=239|winner=1}}
+    |map5={{Map|map=Fringe|mode=snd|score1=6|score2=5|winner=1}}
+    }}
+|M10header=
+|M10={{Match
+    |date=2026-06-21 - 16:00 {{abbr/MDT}}
+    |youtube=Call of Duty League|twitch=COD Esports|vod=https://www.youtube.com/watch?v=xlfFRLozGNs
+	|cdl=13098
+	|breakingpoint=215001
+    |opponent1={{TeamOpponent|fv}}
+    |opponent2={{TeamOpponent|car}}
+    |map1={{Map|map=Sake|mode=hp |score1=250|score2=94|winner=1}}
+    |map2={{Map|map=Raid|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Scar|mode=ovl|score1=5|score2=2|winner=1}}
+    |map4={{Map|map=Gridlock|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Fringe|mode=snd|score1=|score2=|winner=skip}}
+    }}
+}}
+{{box|end}}

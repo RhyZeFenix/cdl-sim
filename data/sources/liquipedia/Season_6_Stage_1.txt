@@ -1,0 +1,889 @@
+{{DISPLAYTITLE:Call of Duty League 2025: Stage 1 Major Qualifiers}}
+{{CDL 2025 Navbox}}
+{{CDL 2025 Stage Tabs}}
+{{tabs static
+|name1=Overview|link1=Call_of_Duty_League/Season_6/Regular_Season
+|name2=Stage 1|link2=Call_of_Duty_League/Season_6/Stage_1
+|name3=Stage 2|link3=Call_of_Duty_League/Season_6/Stage_2
+|name4=Stage 3|link4=Call_of_Duty_League/Season_6/Stage_3
+|name5=Stage 4|link5=Call_of_Duty_League/Season_6/Stage_4
+}}
+{{Tabs static
+|name1=Qualifiers|link1=Call_of_Duty_League/Season_6/Stage_1
+|name2=Minor|link2=Call_of_Duty_League/Season_6/Stage_1/Minor
+|name3=Major|link3=Call_of_Duty_League/Season_6/Stage_1/Major
+}}
+{{Infobox league
+|name=Call of Duty League 2025: Stage 1 Major Qualifiers
+|tickername=CDL '25 Major 1 Qual.
+|image=CDL 2025 Major 1 lightmode.png
+|imagedark=CDL 2025 Major 1 darkmode.png
+|series=Call of Duty League
+|abbreviation=CDL
+|organizer=Activision
+|game=bo6
+|type=Online
+|country=World
+|format=4v4
+|sdate=2024-12-06
+|edate=2025-01-26
+|liquipediatier=1|liquipediatiertype=Qualifier
+|prizepoolusd=
+|web=https://callofdutyleague.com/en-us/
+|twitter=codleague
+|facebook=codleague
+|youtube=CODLeague
+|twitch=CallofDuty
+|instagram=codleague
+|team_number=12
+|next=Call of Duty League/Season 6/Stage 1/Minor {{!}} Stage 1 Minor
+}}
+
+==About==
+===Format===
+* 7 matches played per team
+* All teams qualify for [[Call of Duty League/Season 6/Stage 1/Minor|Minor 1]] and [[Call of Duty League/Season 6/Stage 1/Major|Major 1]]
+* Each team recieves 10 CDL points for each win
+
+===Broadcast Talent===
+{{box|start|padding=1em}}
+{{BroadcasterCard
+|position=Hosts
+|b1=Puckett
+}}
+{{BroadcasterCard
+|position=Analyst
+|b1=Allycxt
+|b2=NAMELESS
+}}
+{{box|break|padding=1em}}
+{{BroadcasterCard
+|position=Commentator
+|b1=Miles Ross
+|b2=Chance
+|b3=MerK
+|b4=Maven
+|b5=IHOLDSHIFT
+|b6=StuDyy
+}}
+{{box|end}}
+
+===Map Pool===
+{{CDL 2025 Map Pool Stage 1 Qualifiers}}
+
+===Restricted Items===
+{{GeneralCollapsible|title=Restricted Items|content={{CDL 2025 Bans}}}}
+
+===Prize Pool===
+{{TeamPrizePool|points1=cdl|points1link=Call of Duty League/Season 6/Regular Season#Results|cutafter=12|prizesummary=false
+|{{Slot|points1=60}}
+|{{Slot|points1=60}}
+|{{Slot|points1=50}}
+|{{Slot|points1=50}}
+|{{Slot|points1=50}}
+|{{Slot|points1=40}}
+|{{Slot|points1=40}}
+|{{Slot|points1=20}}
+|{{Slot|points1=20}}
+|{{Slot|points1=20}}
+|{{Slot|points1=10}}
+|{{Slot|points1=0}}
+}}
+
+==Participants==
+{{TeamCardToggleButton}}
+{{TeamCard columns start|cols=4|height=200}}
+{{TeamCard
+|team=Atlanta FaZe
+|p1=aBeZy
+|p2=Cellium
+|p3=Drazah
+|p4=Simp
+|t2title=Staff
+|t2c1=Crowder
+|t2c2=RJ
+|t3title=Subs
+|t3p1=
+}}
+{{TeamCard
+|team=Boston Breach
+|p1=Cammy
+|p2=Owakening
+|p3=Purj
+|p4=Snoopy
+|t2title=Staff
+|t2c1=Seany
+|t2c2=Magick
+}}
+{{TeamCard
+|team=Carolina Royal Ravens
+|p1=Gwinn
+|p2=SlasheR
+|p3=TJHaLy
+|p4=Vivid
+|t2title=Staff
+|t2c1=Saintt
+|t2c2=KennKyoko|t2c2flag=us
+}}
+{{TeamCard
+|team=Los Angeles Guerrillas M8
+|p1=KiSMET
+|p2=Lynz
+|p3=Priestahh
+|p4=Skyz
+|t2title=Staff
+|t2c1=DREAL
+|t2c2=MarkyB
+}}
+{{TeamCard
+|team=Los Angeles Thieves
+|p1=Envoy
+|p2=Ghosty
+|p3=HyDra
+|p4=Scrap
+|t2title=Staff
+|t2c1=ShAnE
+|t2c2=Sender
+}}
+{{TeamCard
+|team=Miami Heretics
+|p1=Lucky
+|p2=MettalZ
+|p3=ReeaL
+|p4=RenKoR
+|t2title=Staff
+|t2c1=MethodZ
+|t2c2=Sikotik
+|t3title=Subs
+|t3p1=SupeR |t3p1dnp=true
+}}
+{{TeamCard
+|team=Minnesota RØKKR
+|p1=Estreal
+|p2=Gio
+|p3=Nero
+|p4=PaulEhx
+|t2title=Staff
+|t2c1=Loony
+|t2c2=Alexdotzip |t2c2flag=us
+}}
+{{TeamCard
+|team=Cloud9 New York
+|p1=Attach
+|p2=Kremp
+|p3=Mack
+|p4=Sib
+|t2title=Staff
+|t2c1=Accuracy
+|t2c2=Arian
+|t2c3=x2Pac ThuGLorD
+}}
+{{TeamCard
+|team=OpTic Texas
+|p1=Dashy
+|p2=Huke
+|p3=Kenny
+|p4=Shotzzy
+|t2title=Staff
+|t2c1=Karma
+|t2c2flag=us|t2c2=JP Krez|t2c2pos={{Abbr|A|Analyst}}
+|t3title=Former
+|t3p1=Pred |t3p1leave=true
+|inotes=
+{{NoteBig|n1=December 12th - {{player|Huke|flag=us}} joins. {{player|Pred|flag=au}} is moved to a substitute position. <ref name="huke pred swap">{{cite web|url=https://x.com/OpTic/status/1867273569023275292|title=Friday the 13th ⏳|date=2024-12-12|author=[[OpTic Gaming]]}}</ref>}}
+{{NoteBig|n1=December 16th - {{player|Pred|flag=au}} leaves. <ref name="pred fa">{{cite web|url=https://x.com/intelCDL/status/1868555275558646150|title=Pred has CONFIRMED that he is a F/A|date=2024-12-16|author=[[CDL Intel]]}}</ref>}}
+}}
+{{TeamCard
+|team=Toronto Ultra
+|p1=Beans
+|p2=CleanX
+|p3=Insight
+|p4=JoeDeceives
+|t2title=Staff
+|t2c1=Flux
+|t2c2=Joee
+}}
+{{TeamCard
+|team=Vancouver Surge
+|p1=04
+|p2=Abuzah
+|p3=Hicksy
+|p4=Nastie
+|t2title=Staff
+|t2c1=Rambo
+}}
+{{TeamCard
+|team=Vegas Falcons
+|p1=Exnid
+|p2=d7oomx
+|p3=KiinG
+|p4=Roxas
+|t2title=Staff
+|t2c1=LewTee
+|t2c2=Clayster
+|t3title=Subs
+|t3p1=qk4b|t3p1dnp=true
+|t3p2=Khhx
+|t3p3=KingAbody
+|t3p4=WXSL
+|inotes=
+{{NoteBig|n1=December 31st - {{player|KingAbody|flag=sa}} moves to substitute role. <ref name="kingabody vf academy">{{cite web|url=https://x.com/CDCIntel/status/1874172822135972326|title=It appears that Falcons Academy have added HamzaFrosty and KingAbody from the Main team to the lineup|date=2024-12-31|author=[[CDC Intel]]}}</ref>}}
+{{NoteBig|n1=December 31st - {{player|Khhx|flag=sa}} moves to inactive roster. <ref name="khhx inactive">{{cite web|url=https://x.com/VegasFalcons/status/1874220980639559827|title=Official roster statement from Head Coach LewTee|date=2024-12-31|author=[[Vegas Falcons]]}}</ref>}}
+{{NoteBig|n1=January 10th - {{player|d7oomx|flag=sa}} and {{player|WXSL|flag=sa}} move to active roster. <ref name="wxsl d7oomx">{{cite web|url=https://x.com/VegasFalcons/status/1877762334476677505|title=And Here We Go|date=2025-01-10|author=[[Vegas Falcons]]}}</ref>}}
+{{NoteBig|n1=January 25th - {{player|WXSL|flag=sa}} moves to subsitute role. {{player|KiinG|flag=sa}} moves to active roster. <ref name="wxsl kiing">{{cite web|url=https://www.youtube.com/watch?v=EMF3E3IFclA|title=‪@LVFalcons‬ vs ‪@LAGuerrillas‬ | Major I Qualifiers | Week 4 Day 2|date=2025-01-25|author=[[Call of Duty League]]}}</ref>}}
+}}
+{{TeamCard columns end}}
+
+==Results==
+===Standings===
+{{box|start|padding=2em}}
+{{GroupTableLeague|title=Online Qualifiers|width=450px|show_g=true|diff=true|edate=January 27, 2025|tiebreaker1=points|tiebreaker3=h2h series|tiebreaker2=diff|tiebreaker4=series%|tiebreaker5=games loss|show_p=true|win_p=10|tie_p=0|lose_p=0
+|pbg1=up|pbg2=up|pbg3=up|pbg4=up|pbg5=up|pbg6=up|pbg7=up|pbg8=up|pbg9=stay|pbg10=stay|pbg11=stay|pbg12=stay
+|team1=atl|bg1=up
+|team2=bos|bg2=up
+|team3=car|bg3=up
+|team4=vf|bg4=stay
+|team5=lagm|bg5=stay
+|team6=lat|bg6=up
+|team7=mia|bg7=up
+|team8=min|bg8=stay
+|team9=c9ny|bg9=stay
+|team10=van|bg10=up
+|team11=tx|bg11=up
+|team12=tor|bg12=up
+}}
+{{box|break|padding=2em}}
+{{CrossTableLeague
+|tournament=Call_of_Duty_League/Season_6/Stage_1
+|team1=atl
+|team2=bos
+|team3=mia
+|team4=lagm
+|team5=lat
+|team6=vf
+|team7=car
+|team8=optx
+|team9=min
+|team10=c9ny
+|team11=van
+|team12=tor
+|single=true
+}}
+{{box|end|padding=2em}}
+
+===Detailed Matches===
+{{box|start|padding=2em}}
+====={{HiddenSort|Week 1}}=====
+{{Matchlist|id=CDL6M1WEK1|title=Week 1 Matches
+|M1header=December 6
+|M1={{Match
+    |bestof=5
+    |date=2024-12-06 - 13:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/DAsm9_wCmMw
+	|cdl=12178
+	|breakingpoint=93815
+    |opponent1={{TeamOpponent|lagm}}
+    |opponent2={{TeamOpponent|min}}
+    |map1={{Map|map=Vault|mode=hp |score1=243|score2=250|winner=2}}
+    |map2={{Map|map=Vault|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Skyline|mode=hp |score1=250|score2=175|winner=1}}
+    |map5={{Map|map=Rewind|mode=snd|score1=5|score2=6|winner=2}}
+    }}
+|M2header=
+|M2={{Match
+    |date=2024-12-06 - 14:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/dgX6bEZA06c
+	|cdl=12179
+	|breakingpoint=93816
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|bos}}
+    |map1={{Map|map=Skyline|mode=hp |score1=250|score2=136|winner=1}}
+    |map2={{Map|map=Rewind|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Red Card|mode=hp |score1=185|score2=250|winner=2}}
+    |map5={{Map|map=Red Card|mode=snd|score1=3|score2=6|winner=2}}
+    }}
+|M3header=
+|M3={{Match
+    |date=2024-12-06 - 16:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/f8RFtiL0HxQ
+	|cdl=12180
+	|breakingpoint=93817
+    |opponent1={{TeamOpponent|vf}}
+    |opponent2={{TeamOpponent|car}}
+    |map1={{Map|map=Skyline|mode=hp |score1=179|score2=250|winner=2}}
+    |map2={{Map|map=Skyline|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=0|score2=3|winner=2}}
+    |map4={{Map|map=Protocol|mode=hp |score1=236|score2=250|winner=2}}
+    |map5={{Map|map=Vault|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M4header=
+|M4={{Match
+    |date=2024-12-06 - 17:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/dvvsilu-_x8
+	|cdl=12181
+	|breakingpoint=93818
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=Protocol|mode=hp |score1=250|score2=141|winner=1}}
+    |map2={{Map|map=Red Card|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Skyline|mode=hp |score1=178|score2=250|winner=2}}
+    |map5={{Map|map=Vault|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M5header=December 7
+|M5={{Match
+    |date=2024-12-07 - 13:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=3i3lfygZPGA
+	|cdl=12182
+	|breakingpoint=93819
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|vf}}
+    |map1={{Map|map=Skyline|mode=hp |score1=250|score2=236|winner=1}}
+    |map2={{Map|map=Protocol|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Red Card|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Vault|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M6header=
+|M6={{Match
+    |date=2024-12-07 - 14:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=_cJJxbm1m7g
+	|cdl=12183
+	|breakingpoint=93820
+    |opponent1={{TeamOpponent|min}}
+    |opponent2={{TeamOpponent|bos}}
+    |map1={{Map|map=Red Card|mode=hp |score1=186|score2=250|winner=2}}
+    |map2={{Map|map=Skyline|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=0|score2=3|winner=2}}
+    |map4={{Map|map=Vault|mode=hp |score1=250|score2=245|winner=1}}
+    |map5={{Map|map=Rewind|mode=snd|score1=6|score2=5|winner=1}}
+    }}
+|M7header=
+|M7={{Match
+    |date=2024-12-07 - 16:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=A6zkqUgQF80
+	|cdl=12184
+	|breakingpoint=93821
+    |opponent1={{TeamOpponent|van}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=Vault|mode=hp |score1=250|score2=162|winner=1}}
+    |map2={{Map|map=Red Card|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Protocol|mode=hp |score1=149|score2=250|winner=2}}
+    |map5={{Map|map=Protocol|mode=snd|score1=5|score2=6|winner=2}}
+    }}
+|M8header=
+|M8={{Match
+    |date=2024-12-07 - 17:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=Dg8zQi7V8sU
+	|cdl=12185
+	|breakingpoint=93822
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|c9ny}}
+    |map1={{Map|map=Rewind|mode=hp |score1=250|score2=94|winner=1}}
+    |map2={{Map|map=Vault|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Red Card|mode=hp |score1=250|score2=128|winner=1}}
+    |map5={{Map|map=Red Card|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M9header=December 8
+|M9={{Match
+    |date=2024-12-08 - 13:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/qL9biYu6UOA
+	|cdl=12186
+	|breakingpoint=93823
+    |opponent1={{TeamOpponent|lagm}}
+    |opponent2={{TeamOpponent|car}}
+    |map1={{Map|map=Vault|mode=hp |score1=161|score2=250|winner=2}}
+    |map2={{Map|map=Rewind|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Skyline|mode=hp |score1=149|score2=250|winner=2}}
+    |map5={{Map|map=Red Card|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M10header=
+|M10={{Match
+    |date=2024-12-08 - 14:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/wFpN9zW5HT4
+	|cdl=12187
+	|breakingpoint=93824
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|van}}
+    |map1={{Map|map=Rewind|mode=hp |score1=250|score2=189|winner=1}}
+    |map2={{Map|map=Rewind|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=3|score2=0|winner=1}}
+    |map4={{Map|map=Protocol|mode=hp |score1=222|score2=250|winner=2}}
+    |map5={{Map|map=Red Card|mode=snd|score1=5|score2=6|winner=2}}
+    }}
+|M11header=
+|M11={{Match
+    |date=2024-12-08 - 16:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/sik233FiIuI
+	|cdl=12188
+	|breakingpoint=93825
+    |opponent1={{TeamOpponent|c9ny}}
+    |opponent2={{TeamOpponent|tx}}
+    |map1={{Map|map=Vault|mode=hp |score1=130|score2=250|winner=2}}
+    |map2={{Map|map=Red Card|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Protocol|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Vault|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M12header=
+|M12={{Match
+    |date=2024-12-08 - 17:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/PYbwbq_JAAk
+	|cdl=12189
+	|breakingpoint=93826
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Vault|mode=hp |score1=77|score2=250|winner=2}}
+    |map2={{Map|map=Skyline|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Rewind|mode=hp |score1=250|score2=244|winner=1}}
+    |map5={{Map|map=Vault|mode=snd|score1=4|score2=6|winner=2}}
+    }}
+}}
+{{box|break|padding=2em}}
+
+====={{HiddenSort|Week 2}}=====
+{{Matchlist|id=CDL6M1WEK2|title=Week 2 Matches
+|M1header=December 13
+|M1={{Match
+    |bestof=5
+    |date=2024-12-13 - 13:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/inCVwlVjlEw?si=iw5w_zefOM1KT-ZG
+	|cdl=12190
+	|breakingpoint=93827
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|lagm}}
+    |map1={{Map|map=Rewind|mode=hp |score1=250|score2=241|winner=1}}
+    |map2={{Map|map=Skyline|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Skyline|mode=hp |score1=250|score2=249|winner=1}}
+    |map5={{Map|map=Red Card|mode=snd|winner=skip}}
+    }}
+|M2header=
+|M2={{Match
+    |date=2024-12-13 - 14:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/wuWxS_1LX5I?si=z8A5J2CW1xuT7wHW
+	|cdl=12191
+	|breakingpoint=93828
+    |opponent1={{TeamOpponent|c9ny}}
+    |opponent2={{TeamOpponent|min}}
+    |map1={{Map|map=Protocol|mode=hp |score1=250|score2=227|winner=1}}
+    |map2={{Map|map=Skyline|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=0|score2=3|winner=2}}
+    |map4={{Map|map=Skyline|mode=hp |score1=250|score2=109|winner=1}}
+    |map5={{Map|map=Vault|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M3header=
+|M3={{Match
+    |date=2024-12-13 - 16:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/FcfFRFSr8oQ?si=CaNqqBIlZaso-m3a
+	|cdl=12192
+	|breakingpoint=93829
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|bos}}
+    |map1={{Map|map=Vault|mode=hp |score1=208|score2=250|winner=2}}
+    |map2={{Map|map=Rewind|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Red Card|mode=hp |score1=250|score2=205|winner=1}}
+    |map5={{Map|map=Skyline|mode=snd|score1=2|score2=6|winner=2}}
+    }}
+|M4header=
+|M4={{Match
+    |date=2024-12-13 - 17:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/5LsWEfcBHM4?si=JOtEigF8NpF5WJm0
+	|cdl=12193
+	|breakingpoint=93830
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|van}}
+    |map1={{Map|map=Red Card|mode=hp |score1=227|score2=250|winner=2}}
+    |map2={{Map|map=Red Card|mode=snd|score1=6|score2=1|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Protocol|mode=hp |score1=250|score2=109|winner=1}}
+    |map5={{Map|map=Protocol|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M5header=December 14
+|M5={{Match
+    |date=2024-12-14 - 13:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/CrSSoA1FHAE?si=1cBDb_HLCkX3gtvc
+	|cdl=12194
+	|breakingpoint=93831
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|vf}}
+    |map1={{Map|map=Skyline|mode=hp |score1=250|score2=186|winner=1}}
+    |map2={{Map|map=Protocol|mode=snd|score1=6|score2=5|winner=1}}
+    |map3={{Map|map=Protocol|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Protocol|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Protocol|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M6header=
+|M6={{Match
+    |date=2024-12-14 - 14:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/ATDDIbKffKU?si=zDWSeqt2kqxvivOv
+	|cdl=12195
+	|breakingpoint=93832
+    |opponent1={{TeamOpponent|tx}}
+    |opponent2={{TeamOpponent|lagm}}
+    |map1={{Map|map=Vault|mode=hp |score1=250|score2=221|winner=1}}
+    |map2={{Map|map=Vault|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Skyline|mode=hp |score1=175|score2=250|winner=2}}
+    |map5={{Map|map=Protocol|mode=snd|score1=6|score2=3|winner=1}}
+    }}
+|M7header=
+|M7={{Match
+    |date=2024-12-14 - 16:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/IPq5pkU1ZoU?si=x6n7rd1-KMK0yP6k
+	|cdl=12196
+	|breakingpoint=93833
+    |opponent1={{TeamOpponent|car}}
+    |opponent2={{TeamOpponent|atl}}
+    |map1={{Map|map=Protocol|mode=hp |score1=250|score2=88|winner=1}}
+    |map2={{Map|map=Protocol|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Red Card|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Vault|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M8header=
+|M8={{Match
+    |date=2024-12-14 - 17:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://youtu.be/Lc0c6nD7XtU?si=lsGtRpCmnyfe7fJy
+	|cdl=12197
+	|breakingpoint=93834
+    |opponent1={{TeamOpponent|bos}}
+    |opponent2={{TeamOpponent|van}}
+    |map1={{Map|map=Rewind|mode=hp |score1=250|score2=165|winner=1}}
+    |map2={{Map|map=Skyline|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=0|score2=3|winner=2}}
+    |map4={{Map|map=Vault|mode=hp |score1=250|score2=169|winner=1}}
+    |map5={{Map|map=Red Card|mode=snd|score1=6|score2=4|winner=1}}
+    }}
+|M9header=December 15
+|M9={{Match
+    |date=2024-12-15 - 13:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=U5LAhSXKIDU&pp=0gcJCYUJAYcqIYzv
+	|cdl=12198
+	|breakingpoint=93835
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Vault|mode=hp |score1=250|score2=197|winner=1}}
+    |map2={{Map|map=Red Card|mode=snd|score1=6|score2=1|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Skyline|mode=hp |score1=244|score2=250|winner=2}}
+    |map5={{Map|map=Vault|mode=snd|score1=6|score2=1|winner=1}}
+    }}
+|M10header=
+|M10={{Match
+    |date=2024-12-15 - 14:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=wDr55824GBs
+	|cdl=12199
+	|breakingpoint=93836
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|vf}}
+    |map1={{Map|map=Skyline|mode=hp |score1=250|score2=120|winner=1}}
+    |map2={{Map|map=Skyline|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Vault|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Vault|mode=hp |score1=250|score2=82|winner=1}}
+    |map5={{Map|map=Vault|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M11header=
+|M11={{Match
+    |date=2024-12-15 - 16:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=XjsqE3-4r-M
+	|cdl=12200
+	|breakingpoint=93837
+    |opponent1={{TeamOpponent|car}}
+    |opponent2={{TeamOpponent|c9ny}}
+    |map1={{Map|map=Skyline|mode=hp |score1=237|score2=250|winner=2}}
+    |map2={{Map|map=Rewind|mode=snd|score1=2|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Protocol|mode=hp |score1=250|score2=105|winner=1}}
+    |map5={{Map|map=Vault|mode=snd|score1=6|score2=3|winner=1}}
+    }}
+|M12header=
+|M12={{Match
+    |date=2024-12-15 - 17:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=JvhjK1sOOZM
+	|cdl=12201
+	|breakingpoint=93838
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|min}}
+    |map1={{Map|map=Red Card|mode=hp |score1=250|score2=235|winner=1}}
+    |map2={{Map|map=Vault|mode=snd|score1=1|score2=6|winner=2}}
+    |map3={{Map|map=Protocol|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Rewind|mode=hp |score1=250|score2=184|winner=1}}
+    |map5={{Map|map=Skyline|mode=snd|score1=|score2=|winner=skip}}
+    }}
+}}
+{{box|break|padding=2em}}
+
+====={{HiddenSort|Week 3}}=====
+{{Matchlist|id=CDL6M1WEK3|title=Week 3 Matches
+|M1header=January 17
+|M1={{Match
+    |bestof=5
+    |date=2025-01-17 - 13:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=d2_PcuMkM88
+	|cdl=12202
+	|breakingpoint=93850
+    |opponent1={{TeamOpponent|lagm}}
+    |opponent2={{TeamOpponent|c9ny}}
+    |map1={{Map|map=Skyline|mode=hp |score1=250|score2=190|winner=1}}
+    |map2={{Map|map=Skyline|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Hacienda|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Vault|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Red Card|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M2header=
+|M2={{Match
+    |date=2025-01-17 - 14:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=CcayvOKoglk
+	|cdl=12203
+	|breakingpoint=93851
+    |opponent1={{TeamOpponent|vf}}
+    |opponent2={{TeamOpponent|tx}}
+    |map1={{Map|map=Vault|mode=hp |score1=179|score2=250|winner=2}}
+    |map2={{Map|map=Vault|mode=snd|score1=6|score2=4|winner=1}}
+    |map3={{Map|map=Hacienda|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Skyline|mode=hp |score1=144|score2=250|winner=2}}
+    |map5={{Map|map=Skyline|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M3header=
+|M3={{Match
+    |date=2025-01-17 - 16:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=BR3cEjjev7k
+	|cdl=12204
+	|breakingpoint=93852
+    |opponent1={{TeamOpponent|min}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=Protocol|mode=hp |score1=185|score2=250|winner=2}}
+    |map2={{Map|map=Hacienda|mode=snd|score1=6|score2=2|winner=1}}
+    |map3={{Map|map=Protocol|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Vault|mode=hp |score1=250|score2=230|winner=1}}
+    |map5={{Map|map=Protocol|mode=snd|score1=0|score2=6|winner=2}}
+    }}
+|M4header=January 18
+|M4={{Match
+    |date=2025-01-18 - 13:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=YQhKSmCEbKU
+	|cdl=12205
+	|breakingpoint=93853
+    |opponent1={{TeamOpponent|van}}
+    |opponent2={{TeamOpponent|vf}}
+    |map1={{Map|map=Vault|mode=hp |score1=250|score2=214|winner=1}}
+    |map2={{Map|map=Red Card|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Hacienda|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Red Card|mode=hp |score1=250|score2=171|winner=1}}
+    |map5={{Map|map=Vault|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M5header=
+|M5={{Match
+    |date=2025-01-18 - 14:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=hna-qeVrhn0
+	|cdl=12206
+	|breakingpoint=93854
+    |opponent1={{TeamOpponent|c9ny}}
+    |opponent2={{TeamOpponent|mia}}
+    |map1={{Map|map=Skyline|mode=hp |score1=250|score2=228|winner=1}}
+    |map2={{Map|map=Red Card|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Hacienda|mode=con|score1=3|score2=0|winner=1}}
+    |map4={{Map|map=Vault|mode=hp |score1=183|score2=250|winner=2}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=4|score2=6|winner=2}}
+    }}
+|M6header=
+|M6={{Match
+    |date=2025-01-18 - 16:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=jUWVN7W1IOc
+	|cdl=12207
+	|breakingpoint=93855
+    |opponent1={{TeamOpponent|bos}}
+    |opponent2={{TeamOpponent|car}}
+    |map1={{Map|map=Skyline|mode=hp |score1=250|score2=198|winner=1}}
+    |map2={{Map|map=Hacienda|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Hacienda|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Vault|mode=hp |score1=250|score2=109|winner=1}}
+    |map5={{Map|map=Red Card|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M7header=January 19
+|M7={{Match
+    |date=2025-01-19 - 13:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=Lagz6jZs4lE
+	|cdl=12208
+	|breakingpoint=93856
+    |opponent1={{TeamOpponent|lagm}}
+    |opponent2={{TeamOpponent|tor}}
+    |map1={{Map|map=Vault|mode=hp |score1=180|score2=250|winner=2}}
+    |map2={{Map|map=Vault|mode=snd|score1=1|score2=6|winner=2}}
+    |map3={{Map|map=Hacienda|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Skyline|mode=hp |score1=228|score2=250|winner=2}}
+    |map5={{Map|map=Red Card|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M8header=
+|M8={{Match
+    |date=2025-01-19 - 14:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=xqPo59-iDfc&pp=0gcJCYUJAYcqIYzv
+	|cdl=12209
+	|breakingpoint=93857
+    |opponent1={{TeamOpponent|lat}}
+    |opponent2={{TeamOpponent|tx}}
+    |map1={{Map|map=Hacienda|mode=hp |score1=96|score2=250|winner=2}}
+    |map2={{Map|map=Red Card|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Hacienda|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Skyline|mode=hp |score1=206|score2=250|winner=2}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=5|score2=6|winner=2}}
+    }}
+|M9header=
+|M9={{Match
+    |date=2025-01-19 - 16:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=-mZN1YMGOJo
+	|cdl=12210
+	|breakingpoint=93858
+    |opponent1={{TeamOpponent|min}}
+    |opponent2={{TeamOpponent|atl}}
+    |map1={{Map|map=Hacienda|mode=hp |score1=250|score2=239|winner=1}}
+    |map2={{Map|map=Red Card|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Protocol|mode=con|score1=0|score2=3|winner=2}}
+    |map4={{Map|map=Red Card|mode=hp |score1=169|score2=250|winner=2}}
+    |map5={{Map|map=Vault|mode=snd|score1=|score2=|winner=skip}}
+    }}
+}}
+{{box|break|padding=2em}}
+
+====={{HiddenSort|Week 3}}=====
+{{Matchlist|id=CDL6M1WEK4|title=Week 4 Matches
+|M1header=January 24
+|M1={{Match
+    |bestof=5
+    |date=2025-01-24 - 13:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=_qz1tFqnfEM
+	|cdl=12211
+	|breakingpoint=93859
+    |opponent1={{TeamOpponent|car}}
+    |opponent2={{TeamOpponent|van}}
+    |map1={{Map|map=Red Card|mode=hp |score1=250|score2=192|winner=1}}
+    |map2={{Map|map=Vault|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Hacienda|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Skyline|mode=hp |score1=250|score2=218|winner=1}}
+    |map5={{Map|map=Protocol|mode=snd|score1=5|score2=6|winner=2}}
+    }}
+|M2header=
+|M2={{Match
+    |date=2025-01-24 - 14:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=8ppGETIFgiY
+	|cdl=12212
+	|breakingpoint=93860
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Vault|mode=hp |score1=150|score2=250|winner=2}}
+    |map2={{Map|map=Protocol|mode=snd|score1=6|score2=1|winner=1}}
+    |map3={{Map|map=Hacienda|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Hacienda|mode=hp |score1=250|score2=226|winner=1}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=2|score2=6|winner=2}}
+    }}
+|M3header=
+|M3={{Match
+    |date=2025-01-24 - 16:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=JxTRmIhleTQ
+	|cdl=12213
+	|breakingpoint=93861
+    |opponent1={{TeamOpponent|bos}}
+    |opponent2={{TeamOpponent|atl}}
+    |map1={{Map|map=Skyline|mode=hp |score1=234|score2=250|winner=2}}
+    |map2={{Map|map=Protocol|mode=snd|score1=1|score2=6|winner=2}}
+    |map3={{Map|map=Protocol|mode=con|score1=0|score2=3|winner=2}}
+    |map4={{Map|map=Red Card|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Red Card|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M4header=January 25
+|M4={{Match
+    |date=2025-01-25 - 13:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=E3GAhFCtxj4
+	|cdl=12214
+	|breakingpoint=93862
+    |opponent1={{TeamOpponent|van}}
+    |opponent2={{TeamOpponent|min}}
+    |map1={{Map|map=Skyline|mode=hp |score1=250|score2=237|winner=1}}
+    |map2={{Map|map=Vault|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Protocol|mode=con|score1=3|score2=2|winner=1}}
+    |map4={{Map|map=Vault|mode=hp |score1=224|score2=250|winner=2}}
+    |map5={{Map|map=Red Card|mode=snd|score1=6|score2=5|winner=1}}
+    }}
+|M5header=
+|M5={{Match
+    |date=2025-01-25 - 14:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=EMF3E3IFclA
+	|cdl=12215
+	|breakingpoint=93863
+    |opponent1={{TeamOpponent|vf}}
+    |opponent2={{TeamOpponent|lagm}}
+    |map1={{Map|map=Skyline|mode=hp |score1=188|score2=250|winner=2}}
+    |map2={{Map|map=Skyline|mode=snd|score1=3|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=1|score2=3|winner=2}}
+    |map4={{Map|map=Protocol|mode=hp |score1=|score2=|winner=skip}}
+    |map5={{Map|map=Protocol|mode=snd|score1=|score2=|winner=skip}}
+    }}
+|M6header=
+|M6={{Match
+    |date=2025-01-25 - 16:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=iqp6hGxK8KY&pp=0gcJCYUJAYcqIYzv
+	|cdl=12216
+	|breakingpoint=93864
+    |opponent1={{TeamOpponent|mia}}
+    |opponent2={{TeamOpponent|car}}
+    |map1={{Map|map=Skyline|mode=hp |score1=250|score2=186|winner=1}}
+    |map2={{Map|map=Red Card|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Hacienda|mode=con|score1=2|score2=3|winner=2}}
+    |map4={{Map|map=Hacienda|mode=hp |score1=174|score2=250|winner=2}}
+    |map5={{Map|map=Vault|mode=snd|score1=4|score2=6|winner=2}}
+    }}
+|M7header=January 26
+|M7={{Match
+    |date=2025-01-26 - 13:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=03ijnBeFXf8
+	|cdl=12217
+	|breakingpoint=93865
+    |opponent1={{TeamOpponent|bos}}
+    |opponent2={{TeamOpponent|lat}}
+    |map1={{Map|map=Vault|mode=hp |score1=250|score2=206|winner=1}}
+    |map2={{Map|map=Red Card|mode=snd|score1=6|score2=3|winner=1}}
+    |map3={{Map|map=Hacienda|mode=con|score1=0|score2=3|winner=2}}
+    |map4={{Map|map=Protocol|mode=hp |score1=187|score2=250|winner=2}}
+    |map5={{Map|map=Hacienda|mode=snd|score1=6|score2=3|winner=1}}
+    }}
+|M8header=
+|M8={{Match
+    |date=2025-01-26 - 14:30 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=r5eW2iEwYJ4
+	|cdl=12218
+	|breakingpoint=93866
+    |opponent1={{TeamOpponent|atl}}
+    |opponent2={{TeamOpponent|c9ny}}
+    |map1={{Map|map=Red Card|mode=hp |score1=250|score2=130|winner=1}}
+    |map2={{Map|map=Hacienda|mode=snd|score1=5|score2=6|winner=2}}
+    |map3={{Map|map=Hacienda|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Vault|mode=hp |score1=241|score2=250|winner=2}}
+    |map5={{Map|map=Vault|mode=snd|score1=6|score2=4|winner=1}}
+    }}
+|M9header=
+|M9={{Match
+    |date=2025-01-26 - 16:00 {{abbr/MST}}
+    |youtube=Call of Duty League|vod=https://www.youtube.com/watch?v=r3ls-5U2D8c
+	|cdl=12219
+	|breakingpoint=93867
+    |opponent1={{TeamOpponent|tor}}
+    |opponent2={{TeamOpponent|tx}}
+    |map1={{Map|map=Vault|mode=hp |score1=184|score2=250|winner=2}}
+    |map2={{Map|map=Red Card|mode=snd|score1=4|score2=6|winner=2}}
+    |map3={{Map|map=Vault|mode=con|score1=3|score2=1|winner=1}}
+    |map4={{Map|map=Protocol|mode=hp |score1=156|score2=250|winner=2}}
+    |map5={{Map|map=Skyline|mode=snd|score1=|score2=|winner=skip}}
+    }}
+}}
+{{box|end|padding=2em}}
+
+==References==
+{{Reflist}}

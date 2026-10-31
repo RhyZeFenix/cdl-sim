@@ -11,6 +11,8 @@ export interface Arena {
   players: SimPlayer[];
   /** Mode-specific skill per player for this map, including form. */
   skill: number[];
+  /** Duel logit slope for this map (overall slope times the mode multiplier). */
+  k: number;
   t: number;
   events: MapEvent[];
 }
@@ -40,16 +42,23 @@ export function createArena(rng: Rng, teams: [SimTeam, SimTeam], mode: Mode, map
     const mod = teams[s].mapMods?.[`${mode}:${map}`] ?? 0;
     return base + form + teamForm[s]! + mod;
   });
-  return { rng, players, skill, t: 0, events: [] };
+  return { rng, players, skill, k: TUNING.duelK * TUNING.modeDuelScale[mode], t: 0, events: [] };
 }
 
 export const allAlive = () => [true, true, true, true, true, true, true, true];
 export const aliveOn = (alive: boolean[], s: Side) => sideIdx(s).filter((i) => alive[i]);
 export const countAlive = (alive: boolean[], s: Side) => aliveOn(alive, s).length;
 
+/** Logit bonus for the trailing side, given the current map score and units of deficit per step. */
+export function catchUpBonus(score: Pair, perUnit: number, unit = 1): Pair {
+  const diff = (score[0] - score[1]) / unit;
+  const b = Math.min(TUNING.catchUp.cap, Math.abs(diff) * perUnit);
+  return diff > 0 ? [0, b] : diff < 0 ? [b, 0] : [0, 0];
+}
+
 /** Probability that player a beats player b, with an extra logit bonus for a. */
 export function duelProb(arena: Arena, a: number, b: number, bonusA: number): number {
-  return sigmoid(TUNING.duelK * (arena.skill[a]! - arena.skill[b]!) + bonusA);
+  return sigmoid(arena.k * (arena.skill[a]! - arena.skill[b]!) + bonusA);
 }
 
 /**

@@ -315,7 +315,7 @@
   "unverified": [
     "Stage I and II qualifier week dates; Stage II assumed 6 weeks for 11 matches.",
     "Which Stage I week Blackheart HP entered the pool (assumed week 3).",
-    "Overload half length (300s placeholder) — tune with the calibration script.",
+    "Overload half length (300s placeholder); capture pacing is fitted to real 2026 map scores by the backtest instead.",
     "Bo9 veto procedure (no official text).",
     "Final points standings come from the project brief, not yet cross-checked."
   ],

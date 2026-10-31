@@ -15,32 +15,14 @@
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { Season } from "../src/engine/data/schema";
+import { CODES, GUESTS } from "./fandom-codes";
 import { ratingsFromStats, statLines, teamMapMods, type RawStats } from "./stat-ratings";
 
 const WIKI = "https://cod-esports.fandom.com/wiki/";
 
-const CODES: Record<string, Record<string, string>> = {
-  "2024": {
-    ATL: "atlanta-faze", BOS: "boston-breach", CAR: "carolina-royal-ravens", LVL: "las-vegas-legion",
-    LAG: "la-guerrillas", LAT: "la-thieves", MIA: "miami-heretics", MIN: "minnesota-rokkr",
-    NY: "ny-subliners", TEX: "optic-texas", SEA: "seattle-surge", TOR: "toronto-ultra",
-  },
-  "2025": {
-    ATL: "atlanta-faze", BOS: "boston-breach", CAR: "carolina-royal-ravens", CNY: "cloud9-new-york",
-    LAM: "la-guerrillas-m8", LAT: "la-thieves", MIA: "miami-heretics", MIN: "minnesota-rokkr",
-    TEX: "optic-texas", TOR: "toronto-ultra", VAN: "vancouver-surge", LVF: "vegas-falcons",
-  },
-  "2026": {
-    BOS: "boston-breach", CAR: "carolina-royal-ravens", CNY: "cloud9-new-york", FLV: "faze-vegas",
-    VGS: "faze-vegas", GMN: "g2-minnesota", LAT: "la-thieves", MIA: "miami-heretics", OTX: "optic-texas",
-    PGM: "paris-gentle-mates", RYD: "riyadh-falcons", TOK: "toronto-koi", VAN: "vancouver-surge",
-    OM: "omit", HUN: "huntsmen", P7N: "project-notorious", ROC: "roc-esports",
-  },
-};
 const STAT_TEAM_ALIASES: Record<string, Record<string, string>> = {
   "2025": { "las vegas falcons": "vegas-falcons" },
 };
-const GUESTS = new Set(["omit", "huntsmen", "project-notorious", "roc-esports"]);
 
 /** Team strength 0..1 by final placement (lower bound of the range). */
 function placeStrength(place: number): number {

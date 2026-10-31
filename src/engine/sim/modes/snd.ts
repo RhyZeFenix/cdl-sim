@@ -1,7 +1,7 @@
 // Search & Destroy: round by round, one life each, sides swap every round.
 // A round is a sequence of 1v1 gunfights with plant / retake / defuse logic.
 import type { ModeSettings } from "../../data/schema";
-import { aliveOn, allAlive, clamp, countAlive, duelStep, pickBy, type Arena } from "../arena";
+import { aliveOn, allAlive, catchUpBonus, clamp, countAlive, duelStep, pickBy, type Arena } from "../arena";
 import { TUNING } from "../tuning";
 import { other, type MapEvent, type Pair, type Side } from "../types";
 
@@ -49,7 +49,7 @@ export function playSnd(a: Arena, s: ModeSettings["snd"], firstAtk: Side): Pair 
         break;
       }
 
-      const bonus: Pair = [0, 0];
+      const bonus: Pair = catchUpBonus(score, TUNING.catchUp.snd);
       if (planted) bonus[atk] += T.postPlantBonus;
       else bonus[def] += T.defenseBonus;
       a.t = roundStart + t;

@@ -1,7 +1,8 @@
 # 3D replay — design notes
 
-Status: built (layouts, timeline, renderer, Watch integration). Next: trace the remaining maps
-(BO7 pool first, then BO6 and MWIII), and consider fixing the 0:00 SnD plant in the engine.
+Status: built (layouts, timeline, renderer, Watch integration), and every map in the 2024-2026
+pools is traced. Open: real bomb site / Control zone / Overload goal positions (none published),
+6 Star's hill positions, and the 0:00 SnD plant in the engine.
 
 Goal: watch a map in 3D, driven by the existing `MapResult.events` live feed, inside the
 spoiler-free map-by-map flow in `MatchView` (live mode) and the normal Watch panel.

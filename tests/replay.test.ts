@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { advance, createSeason, loadSeasonData, replaySeries, type MapResult } from "../src/engine";
 import { layoutFor, TRACED_MAPS } from "../src/ui/replay/layouts";
-import { buildTimeline, DT, hillIndex, positionAt, walkable, type Timeline } from "../src/ui/replay/timeline";
+import { buildGrid, buildTimeline, DT, hillIndex, positionAt, snap, walkable, type Timeline } from "../src/ui/replay/timeline";
 
 /** Every map from a couple of weeks of a season (all modes the season uses). */
 function maps(year: "2025" | "2026", weeks = 1): MapResult[] {
@@ -101,6 +101,65 @@ describe("3D replay timeline", () => {
     }
     expect(caps).toBeGreaterThan(3);
     expect(near / caps).toBeGreaterThan(0.7);
+  });
+
+  it("traced layouts: every spawn and objective is on open ground and reachable from the others", () => {
+    const problems: string[] = [];
+    for (const name of TRACED_MAPS) {
+      const L = layoutFor(name, 1);
+      const g = buildGrid(L);
+      const pts = {
+        ...Object.fromEntries(L.spawns.flatMap((s, k) => s.map((p, i) => [`spawn${k}.${i}`, p]))),
+        ...Object.fromEntries(L.hills.map((h, i) => [`hill${i + 1}`, h])),
+        sndAtk: L.snd.atk,
+        sndDef: L.snd.def,
+        siteA: L.snd.A,
+        siteB: L.snd.B,
+        device: L.overload.device,
+        goal0: L.overload.goals[0],
+        goal1: L.overload.goals[1],
+      };
+      // Flood fill from the first spawn.
+      const N = 100;
+      const seen = new Uint8Array(N * N);
+      const start = snap(g, L.spawns[0][0]!);
+      const q = [Math.floor(start.y) * N + Math.floor(start.x)];
+      seen[q[0]!] = 1;
+      while (q.length) {
+        const c = q.pop()!;
+        for (const d of [-1, 1, -N, N]) {
+          const n = c + d;
+          if (n >= 0 && n < N * N && !seen[n] && g.walk[n] && Math.abs((n % N) - (c % N)) <= 1) {
+            seen[n] = 1;
+            q.push(n);
+          }
+        }
+      }
+      for (const [what, p] of Object.entries(pts)) {
+        const s = snap(g, p);
+        if (Math.hypot(s.x - p.x, s.y - p.y) >= 3) problems.push(`${name} ${what} is inside a wall or off the map`);
+        else if (!seen[Math.floor(s.y) * N + Math.floor(s.x)]) problems.push(`${name} ${what} can't be reached from the first spawn`);
+      }
+    }
+    expect(problems).toEqual([]);
+  });
+
+  it("every map in every season's pools has a traced layout, with a spot for each hill", () => {
+    const missing: string[] = [];
+    for (const year of ["2024", "2025", "2026"] as const) {
+      const { season } = loadSeasonData(year);
+      for (const pool of season.mapPools) {
+        for (const mode of ["hp", "snd", "third"] as const) {
+          for (const map of (pool as Record<string, unknown>)[mode] as string[] | undefined ?? []) {
+            if (!TRACED_MAPS.includes(map)) missing.push(`${year} ${map}`);
+            const hills = season.hardpointHills?.[map]?.count ?? 0;
+            const traced = TRACED_MAPS.includes(map) ? layoutFor(map, 1).hills.length : 0;
+            if (mode === "hp" && traced < hills) missing.push(`${year} ${map}: ${traced} of ${hills} hills`);
+          }
+        }
+      }
+    }
+    expect([...new Set(missing)]).toEqual([]);
   });
 
   it("generic layouts cover maps without a traced one", () => {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { weekDate, type SeriesRecord, type Step } from "../../engine";
+import { eventMatchIds, toggleWatch, weekDate, type SeriesRecord, type Step } from "../../engine";
 import type { Nav } from "../App";
 import { directory, type Directory } from "../names";
 import type { SeasonStore } from "../useSeason";
@@ -11,16 +11,20 @@ function FixtureCard({
   hidden,
   dir,
   onOpen,
+  watch,
 }: {
   teams: [string, string];
   rec?: SeriesRecord;
-  /** Played, but the result is hidden until the GM watches their match. */
+  /** Played, but the result is hidden until it's watched. */
   hidden: boolean;
   dir: Directory;
   onOpen: () => void;
+  /** Before it's played: whether it's on the watchlist, and how to toggle it (absent = always watched). */
+  watch?: { on: boolean; toggle: () => void } | "gm";
 }) {
   const shown = rec && !hidden ? rec : undefined;
   return (
+    <div className="fixture-wrap">
     <button className="fixture" disabled={!rec} onClick={onOpen} title={hidden ? "Unwatched — open to watch" : rec ? "Open match" : "Not played yet"}>
       {teams.map((t, i) => {
         const lost = shown && shown.winner !== t;
@@ -34,11 +38,21 @@ function FixtureCard({
       })}
       {hidden && <span className="next-tag">Unwatched</span>}
     </button>
+      {!rec && watch === "gm" && <div className="watch-toggle on static">Your match · you'll watch it live</div>}
+      {!rec && watch && watch !== "gm" && (
+        <button className={`watch-toggle ${watch.on ? "on" : ""}`} aria-pressed={watch.on} onClick={watch.toggle} title={watch.on ? "Stop watching: the result shows as soon as it's simmed" : "Watch this match live: its result stays hidden until you watch it"}>
+          {watch.on ? "✓ Watching" : "Watch"}
+        </button>
+      )}
+    </div>
   );
 }
 
 export function Schedule({ store, nav }: { store: SeasonStore; nav: Nav }) {
-  const { state, data } = store;
+  const { state, data, mutate } = store;
+  const watching = new Set(state.watchlist ?? []);
+  const gmLive = (teams: [string, string]) => !!state.gm?.spoilerFree && teams.includes(state.gm.team);
+  const setWatch = (ids: string[], on: boolean) => mutate((s) => ids.forEach((id) => !s.series[id] && toggleWatch(s, id, on)));
   const dir = directory(data);
   const { season } = data;
   const current = state.steps[state.next];
@@ -76,7 +90,8 @@ export function Schedule({ store, nav }: { store: SeasonStore; nav: Nav }) {
             {Math.max(...gf.score)}-{Math.min(...gf.score)}
           </span>
         )}
-        {evHidden && <span className="sub">Results hidden until you watch your match</span>}
+        {evHidden && <span className="sub">Results hidden until you watch</span>}
+        {!rec && <EventWatch kind={kind} stage={st} />}
         {rec && (
           <>
             {gf && (
@@ -95,6 +110,26 @@ export function Schedule({ store, nav }: { store: SeasonStore; nav: Nav }) {
             {ev.realResult.score ? ` ${ev.realResult.score}` : ""}
           </span>
         )}
+      </div>
+    );
+  };
+
+  const EventWatch = ({ kind, stage: st }: { kind: "minor" | "major" | "championship"; stage?: number }) => {
+    const ids = eventMatchIds(data, kind, st);
+    const all = ids.all.every((id) => watching.has(id));
+    const final = watching.has(ids.final);
+    return (
+      <div className="seg" role="group" aria-label="Watch this event">
+        <button
+          aria-pressed={final && !all}
+          onClick={() => (all ? setWatch(ids.all.filter((id) => id !== ids.final), false) : setWatch([ids.final], !final))}
+          title="Watch the final live"
+        >
+          Watch final
+        </button>
+        <button aria-pressed={all} onClick={() => setWatch(ids.all, !all)} title="Watch every match live, one by one">
+          Watch all
+        </button>
       </div>
     );
   };
@@ -132,7 +167,15 @@ export function Schedule({ store, nav }: { store: SeasonStore; nav: Nav }) {
             </div>
             <div className="fixtures">
               {fixtures.map((fx) => (
-                <FixtureCard key={fx.id} teams={fx.teams} rec={state.series[fx.id]} hidden={store.spoil.isHidden(fx.id)} dir={dir} onOpen={() => nav.openMatch(fx.id)} />
+                <FixtureCard
+                  key={fx.id}
+                  teams={fx.teams}
+                  rec={state.series[fx.id]}
+                  hidden={store.spoil.isHidden(fx.id)}
+                  dir={dir}
+                  onOpen={() => nav.openMatch(fx.id)}
+                  watch={gmLive(fx.teams) ? "gm" : { on: watching.has(fx.id), toggle: () => setWatch([fx.id], !watching.has(fx.id)) }}
+                />
               ))}
             </div>
           </section>

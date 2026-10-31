@@ -215,6 +215,10 @@ export interface SeasonState {
   gmVetoes?: Record<string, GmVeto>;
   /** Set when a step stopped to wait for the GM's veto. */
   pending?: PendingSeries;
+  /** Series the user wants to watch live: when played, their results stay hidden until watched. */
+  watchlist?: string[];
+  /** Watchlisted series that have been played but not watched or skipped yet (GM series use gm.unwatched). */
+  unwatched?: string[];
   /** AI rosters changed by trades: the team's players in lineup order (starters first). */
   aiRosters?: Record<string, string[]>;
   /** Dynasty: players kept from earlier seasons, with their progressed ratings. */
@@ -554,6 +558,8 @@ function playSeries(state: SeasonState, data: SeasonData, spec: SeriesSpec): Ser
   if (gmVeto) delete state.gmVetoes![spec.id];
   state.series[spec.id] = rec;
   if (gm && gmSide !== null && gm.spoilerFree) gm.unwatched = [...(gm.unwatched ?? []), spec.id];
+  else if (state.watchlist?.includes(spec.id)) state.unwatched = [...(state.unwatched ?? []), spec.id];
+  if (state.watchlist?.includes(spec.id)) state.watchlist = state.watchlist.filter((id) => id !== spec.id);
   if (gm && gmSide !== null) onGmSeries(state, data, rec);
   return rec;
 }
@@ -703,13 +709,39 @@ export function gmVetoSession(state: SeasonState, data: SeasonData, lineup: stri
   return { session, gmSide, teamA: a, teams, spec };
 }
 
-/** True while the GM team has a played series the user hasn't watched or skipped. */
-export const isMatchDay = (s: SeasonState) => !!s.gm?.unwatched?.length;
+/** Played series waiting to be watched or skipped (your GM matches and your watchlist), in play order. */
+export function allUnwatched(s: SeasonState): string[] {
+  const ids = [...(s.gm?.unwatched ?? []), ...(s.unwatched ?? [])];
+  const order = Object.keys(s.series);
+  return ids.sort((a, b) => order.indexOf(a) - order.indexOf(b));
+}
 
-/** Marks a GM series as watched (or skipped): its result may now be shown everywhere. */
-export function gmMarkWatched(state: SeasonState, seriesId: string): void {
-  if (!state.gm) throw new Error("not in GM mode");
-  state.gm.unwatched = (state.gm.unwatched ?? []).filter((id) => id !== seriesId);
+/** True while a played series is waiting to be watched or skipped: sims stop until it is. */
+export const isMatchDay = (s: SeasonState) => allUnwatched(s).length > 0;
+
+/** Marks a series as watched (or skipped): its result may now be shown everywhere. */
+export function markWatched(state: SeasonState, seriesId: string): void {
+  if (state.gm) state.gm.unwatched = (state.gm.unwatched ?? []).filter((id) => id !== seriesId);
+  state.unwatched = (state.unwatched ?? []).filter((id) => id !== seriesId);
+}
+
+export const gmMarkWatched = markWatched;
+
+/** Adds a not-yet-played series to the watchlist, or takes it off. */
+export function toggleWatch(state: SeasonState, seriesId: string, on?: boolean): void {
+  if (state.series[seriesId]) throw new Error("That match has already been played.");
+  const list = state.watchlist ?? [];
+  const want = on ?? !list.includes(seriesId);
+  state.watchlist = want ? [...new Set([...list, seriesId])] : list.filter((id) => id !== seriesId);
+}
+
+/** Series ids of an event's matches (known before the bracket is played) and of its final. */
+export function eventMatchIds(data: SeasonData, kind: "minor" | "major" | "championship", stage?: number): { all: string[]; final: string } {
+  const ev = kind === "championship" ? data.season.championship : data.season.stages[stage! - 1]![kind]!;
+  const prefix = kind === "championship" ? "champs" : `s${stage}-${kind}`;
+  const defs = bracketPlan(ev.format, ev.bestOf, ev.finalBestOf).defs;
+  const final = defs.find((d) => d.section === "final") ?? defs[defs.length - 1]!;
+  return { all: defs.map((d) => `${prefix}-${d.id}`), final: `${prefix}-${final.id}` };
 }
 
 export function gmSetSpoilerFree(state: SeasonState, on: boolean): void {

@@ -2,6 +2,7 @@
 // lives in a ref and a version counter drives re-renders.
 import { useCallback, useRef, useState } from "react";
 import {
+  allUnwatched,
   createSeason,
   isDone,
   loadSeasonData,
@@ -91,7 +92,7 @@ export function useSeason(initial: SeasonConfig) {
         setTimeout(() => {
           const s = stateRef.current!;
           const out = runSim(s, kind);
-          resolve({ ...out, paused: !!s.pending, matchDay: s.gm?.unwatched ?? [] });
+          resolve({ ...out, paused: !!s.pending, matchDay: allUnwatched(s) });
         }, 0),
       );
     });
@@ -110,7 +111,7 @@ export function useSeason(initial: SeasonConfig) {
         worker.removeEventListener("error", onError);
         if (msg.type === "error") return reject(new Error(msg.message));
         stateRef.current = msg.state;
-        resolve({ steps: msg.steps, newSeries: msg.newSeries, paused: !!msg.state.pending, matchDay: msg.state.gm?.unwatched ?? [] });
+        resolve({ steps: msg.steps, newSeries: msg.newSeries, paused: !!msg.state.pending, matchDay: allUnwatched(msg.state) });
       };
       const onError = (e: ErrorEvent) => {
         worker.removeEventListener("message", onMessage);

@@ -7,6 +7,10 @@ import {
   gmSetSpoilerFree,
   isMatchDay,
   loadSeasonData,
+  toggleWatch,
+  markWatched,
+  eventMatchIds,
+  advanceStage,
   type SeasonState,
 } from "../src/engine";
 import { runSim } from "../src/ui/simWorker";
@@ -98,5 +102,41 @@ describe("spoiler-free match day", () => {
     expect(isMatchDay(s)).toBe(false);
     advance(s, data);
     expect(s.gm!.unwatched).toEqual([]);
+  });
+});
+
+describe("watchlist (any match, any mode)", () => {
+  it("a watched match stays hidden until watched, and only that match", () => {
+    const s = createSeason(data, { seed: "wl-1", ratingMode: "historical" });
+    const [fx, other] = s.schedule[0]![0]!;
+    toggleWatch(s, fx!.id);
+    expect(s.watchlist).toEqual([fx!.id]);
+    advance(s, data);
+    expect(s.unwatched).toEqual([fx!.id]);
+    expect(s.watchlist).toEqual([]);
+    expect(isMatchDay(s)).toBe(true);
+    const sp = spoilers(s, data);
+    expect(sp.isHidden(fx!.id)).toBe(true);
+    expect(sp.isHidden(other!.id)).toBe(false);
+    // Sims don't run past it.
+    runSim(s, "season");
+    expect(s.next).toBe(1);
+    markWatched(s, fx!.id);
+    expect(isMatchDay(s)).toBe(false);
+  });
+
+  it("an event's final can be queued before the bracket exists", () => {
+    const s = createSeason(data, { seed: "wl-2", ratingMode: "historical" });
+    advanceStage(s, data); // through Stage 1's Major
+    const step = s.steps[s.next]!;
+    expect(step.kind).toBe("week");
+    // Queue Stage 2's Major final, then play the stage.
+    const ids = eventMatchIds(data, "major", 2);
+    toggleWatch(s, ids.final);
+    advanceStage(s, data);
+    const major = s.events.find((e) => e.kind === "major" && e.stage === 2)!;
+    expect(major.matches.map((m) => m.seriesId)).toEqual(expect.arrayContaining(ids.all));
+    expect(s.unwatched).toEqual([ids.final]);
+    expect(spoilers(s, data).eventHidden(major)).toBe(true);
   });
 });

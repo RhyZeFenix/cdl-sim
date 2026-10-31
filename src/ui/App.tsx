@@ -14,7 +14,6 @@ import { Office } from "./views/Office";
 import { PlayerPage } from "./views/PlayerPage";
 
 type Tab = "office" | "myteam" | "schedule" | "standings" | "brackets" | "summary";
-export type Speed = "instant" | "watch";
 
 export interface Nav {
   openMatch(id: string, opts?: { watch?: boolean }): void;
@@ -45,7 +44,7 @@ export function App() {
   const [match, setMatch] = useState<{ id: string; watch: boolean } | null>(null);
   const [player, setPlayer] = useState<string | null>(null);
   const [bracketEvent, setBracketEvent] = useState<number | null>(null);
-  const [speed, setSpeed] = useState<Speed>("instant");
+  const [setupOpen, setSetupOpen] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
   const lastKind = useRef<SimKind>("step");
@@ -77,16 +76,10 @@ export function App() {
     },
   };
 
-  const dirty =
-    draft.seasonId !== store.config.seasonId ||
-    draft.seed !== store.config.seed ||
-    draft.ratingMode !== store.config.ratingMode ||
-    draft.gmTeam !== store.config.gmTeam ||
-    !!draft.champsOnly !== !!store.config.champsOnly ||
-    !!draft.chaos !== !!store.config.chaos;
   const startNew = () => {
     if (state.next > 0 && !confirm("Start a new season? Unsaved progress on this one will be lost.")) return;
     store.start(draft);
+    setSetupOpen(false);
     setMatch(null);
     setPlayer(null);
     setBracketEvent(null);
@@ -97,16 +90,7 @@ export function App() {
     lastKind.current = kind;
     const out = await store.sim(kind);
     if (afterMatchDay(out.matchDay)) return;
-    if (out.paused) {
-      setMatch(null);
-      return;
-    }
-    if (speed === "watch" && out.newSeries.length) {
-      // Watch the headline series of what just ran: an event's final, else the week's first match.
-      const last = out.steps[out.steps.length - 1];
-      const id = last && last.kind !== "week" ? out.newSeries[out.newSeries.length - 1]! : out.newSeries[0]!;
-      setMatch({ id, watch: true });
-    }
+    if (out.paused) setMatch(null);
   };
 
   const onImport = async (f: File | undefined) => {
@@ -122,19 +106,19 @@ export function App() {
   };
 
   /** After the GM submits a veto: keep running the sim the user started. */
-  const resume = async (gmSeriesId: string) => {
+  const resume = async () => {
     const out = await store.sim(lastKind.current);
-    if (afterMatchDay(out.matchDay)) return;
-    if (!out.paused && speed === "watch") setMatch({ id: gmSeriesId, watch: true });
+    afterMatchDay(out.matchDay);
   };
 
   /**
-   * Spoiler-free match day: when your result is ready, show the match day banner (or,
-   * in Watch speed, go straight to watching it live). Returns true if it handled things.
+   * Match day: when a match you're watching (or your GM match) is ready, go back to the
+   * tabs so the banner offers Watch or Skip. Returns true if it handled things.
    */
   function afterMatchDay(unwatched: string[]): boolean {
     if (!unwatched.length) return false;
-    setMatch(speed === "watch" ? { id: unwatched[0]!, watch: true } : null);
+    setMatch(null);
+    setPlayer(null);
     return true;
   }
 
@@ -155,97 +139,129 @@ export function App() {
           <div className="brand">
             CDL <span>Season Sim</span>
           </div>
-          <label className="field">
-            Season
-            <select
-              value={draft.seasonId}
-              onChange={(e) => {
-                const seasonId = e.target.value as SeasonId;
-                const teams = loadSeasonData(seasonId).season.teams;
-                const gmTeam = draft.gmTeam && !teams.some((t) => t.id === draft.gmTeam) ? teams[0]!.id : draft.gmTeam;
-                setDraft({ ...draft, seasonId, gmTeam });
-              }}
-            >
-              {SEASON_IDS.map((id) => (
-                <option key={id} value={id}>
-                  {SEASON_LABEL[id]}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label className="field">
-            Seed
-            <input value={draft.seed} onChange={(e) => setDraft({ ...draft, seed: e.target.value.trim() })} spellCheck={false} />
-          </label>
-          <button className="btn icon" title="Random seed" aria-label="Random seed" onClick={() => setDraft({ ...draft, seed: randomSeed() })}>
-            ⟳
-          </button>
-          <div className="seg" role="group" aria-label="Ratings">
-            {(["historical", "randomized"] as const).map((m) => (
-              <button key={m} aria-pressed={draft.ratingMode === m} onClick={() => setDraft({ ...draft, ratingMode: m })}>
-                {m === "historical" ? "Historical" : "Randomized"}
-              </button>
-            ))}
-          </div>
-          <label className="field" title="Hot and cold weekends: each team's form swings per event, so upsets and surprise runs are far more common">
-            <input type="checkbox" checked={!!draft.chaos} onChange={(e) => setDraft({ ...draft, chaos: e.target.checked })} style={{ width: "auto" }} />
-            Chaos
-          </label>
-          <div className="seg" role="group" aria-label="Season length">
-            <button aria-pressed={!draft.champsOnly} onClick={() => setDraft({ ...draft, champsOnly: false })}>
-              Full season
-            </button>
-            <button
-              aria-pressed={!!draft.champsOnly}
-              title="Skip the regular season and play Champs from the real seeds"
-              onClick={() => setDraft({ ...draft, champsOnly: true })}
-            >
-              Champs only
-            </button>
-          </div>
-          <div className="seg" role="group" aria-label="Mode">
-            <button aria-pressed={!draft.gmTeam} onClick={() => setDraft({ ...draft, gmTeam: undefined })}>
-              Commissioner
-            </button>
-            <button aria-pressed={!!draft.gmTeam} onClick={() => setDraft({ ...draft, gmTeam: draft.gmTeam ?? draftData.season.teams[0]!.id })}>
-              GM
-            </button>
-          </div>
-          {draft.gmTeam && (
-            <select className="plain" aria-label="GM team" value={draft.gmTeam} onChange={(e) => setDraft({ ...draft, gmTeam: e.target.value })}>
-              {draftData.season.teams.map((t) => (
-                <option key={t.id} value={t.id}>
-                  {t.name}
-                </option>
-              ))}
-            </select>
-          )}
-          <button className={`btn ${dirty ? "primary" : ""}`} onClick={startNew} disabled={!draft.seed}>
-            New season
-          </button>
-          <div className="spacer" />
-          <button className="btn" onClick={store.exportJson}>
-            Export
-          </button>
-          <button className="btn" onClick={() => fileRef.current?.click()}>
-            Import
-          </button>
-          <input ref={fileRef} type="file" accept="application/json,.json" hidden onChange={(e) => onImport(e.target.files?.[0])} />
-        </div>
-        <div className="row">
           <span className="status">
             {seasonLabel(state, data)} · seed <b>{state.options.seed}</b> · {state.options.ratingMode}
             {state.options.chaos ? <> · <b>Chaos</b></> : null}
             {state.options.champsOnly ? <> · <b>Champs only</b> (real seeds)</> : null}
-            {state.gm ? <> · GM: <b>{data.season.teams.find((t) => t.id === state.gm!.team)?.abbr}</b></> : null}
+            {state.gm ? <> · GM: <b>{data.season.teams.find((t) => t.id === state.gm!.team)?.abbr}</b></> : <> · Commissioner</>}
             {state.gm && state.options.champsOnly && !data.season.historical?.champsSeeds?.includes(state.gm.team) ? (
               <span className="muted"> (didn't make the real Champs)</span>
-            ) : null}{" "}
-            —{" "}
+            ) : null}
+          </span>
+          <div className="spacer" />
+          <button className={`btn ${setupOpen ? "primary" : ""}`} aria-expanded={setupOpen} onClick={() => setSetupOpen(!setupOpen)}>
+            New season
+          </button>
+          <button className="btn" onClick={store.exportJson} title="Download this season as a JSON file">
+            Save
+          </button>
+          <button className="btn" onClick={() => fileRef.current?.click()} title="Load a saved season">
+            Load
+          </button>
+          <input ref={fileRef} type="file" accept="application/json,.json" hidden onChange={(e) => onImport(e.target.files?.[0])} />
+        </div>
+
+        {setupOpen && (
+          <div className="setup">
+            <label className="field">
+              Game
+              <select
+                value={draft.seasonId}
+                onChange={(e) => {
+                  const seasonId = e.target.value as SeasonId;
+                  const teams = loadSeasonData(seasonId).season.teams;
+                  const gmTeam = draft.gmTeam && !teams.some((t) => t.id === draft.gmTeam) ? teams[0]!.id : draft.gmTeam;
+                  setDraft({ ...draft, seasonId, gmTeam });
+                }}
+              >
+                {SEASON_IDS.map((id) => (
+                  <option key={id} value={id}>
+                    {SEASON_LABEL[id]}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label className="field">
+              Seed
+              <span className="row" style={{ gap: 4 }}>
+                <input value={draft.seed} onChange={(e) => setDraft({ ...draft, seed: e.target.value.trim() })} spellCheck={false} />
+                <button className="btn icon" title="Random seed" aria-label="Random seed" onClick={() => setDraft({ ...draft, seed: randomSeed() })}>
+                  ⟳
+                </button>
+              </span>
+            </label>
+            <div className="field">
+              Mode
+              <span className="row" style={{ gap: 6 }}>
+                <span className="seg" role="group" aria-label="Mode">
+                  <button aria-pressed={!draft.gmTeam} onClick={() => setDraft({ ...draft, gmTeam: undefined })} title="Watch the whole league; no team of your own">
+                    Commissioner
+                  </button>
+                  <button aria-pressed={!!draft.gmTeam} onClick={() => setDraft({ ...draft, gmTeam: draft.gmTeam ?? draftData.season.teams[0]!.id })} title="Run one team: roster, vetoes, prep, contracts">
+                    GM
+                  </button>
+                </span>
+                {draft.gmTeam && (
+                  <select className="plain" aria-label="GM team" value={draft.gmTeam} onChange={(e) => setDraft({ ...draft, gmTeam: e.target.value })}>
+                    {draftData.season.teams.map((t) => (
+                      <option key={t.id} value={t.id}>
+                        {t.name}
+                      </option>
+                    ))}
+                  </select>
+                )}
+              </span>
+            </div>
+            <div className="field">
+              Ratings
+              <span className="seg" role="group" aria-label="Ratings">
+                {(["historical", "randomized"] as const).map((m) => (
+                  <button key={m} aria-pressed={draft.ratingMode === m} onClick={() => setDraft({ ...draft, ratingMode: m })}>
+                    {m === "historical" ? "Historical" : "Randomized"}
+                  </button>
+                ))}
+              </span>
+            </div>
+            <div className="field">
+              Format
+              <span className="row" style={{ gap: 8 }}>
+                <span className="seg" role="group" aria-label="Season length">
+                  <button aria-pressed={!draft.champsOnly} onClick={() => setDraft({ ...draft, champsOnly: false })}>
+                    Full season
+                  </button>
+                  <button aria-pressed={!!draft.champsOnly} title="Skip the regular season and play Champs from the real seeds" onClick={() => setDraft({ ...draft, champsOnly: true })}>
+                    Champs only
+                  </button>
+                </span>
+                <label className="row" style={{ gap: 4 }} title="Hot and cold weekends: each team's form swings per event, so upsets and surprise runs are far more common">
+                  <input type="checkbox" checked={!!draft.chaos} onChange={(e) => setDraft({ ...draft, chaos: e.target.checked })} style={{ width: "auto" }} />
+                  Chaos
+                </label>
+              </span>
+            </div>
+            <div className="setup-actions">
+              <button className="btn primary" onClick={startNew} disabled={!draft.seed}>
+                Start season
+              </button>
+              <button
+                className="btn"
+                onClick={() => {
+                  setDraft(store.config);
+                  setSetupOpen(false);
+                }}
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        )}
+
+        <div className="row">
+          <span className="status">
             {done && !spoil.active ? (
               <b>Season complete</b>
             ) : spoil.active ? (
-              <b>Match day — your result is ready</b>
+              <b>{spoil.unwatched.some((id) => state.gm && state.series[id]?.teams.includes(state.gm.team)) ? "Match day — your result is ready" : "Ready to watch"}</b>
             ) : paused ? (
               <b>{state.pending!.between ? "Waiting for your lineup" : "Waiting for your veto"}</b>
             ) : (
@@ -258,6 +274,9 @@ export function App() {
             <div style={{ width: `${pct}%` }} />
           </div>
           <div className="spacer" />
+          <span className="sub" title="Pick matches to watch on the Schedule; everything else is simmed instantly">
+            {(state.watchlist?.length ?? 0) > 0 ? `${state.watchlist!.length} on your watchlist` : "Tip: hit Watch on any match in the Schedule"}
+          </span>
           <button className="btn primary" disabled={busy || done || blocked} onClick={() => runSim("step")}>
             {next && next.kind !== "week" ? `Sim ${stepLabel(data.season, next)}` : "Sim week"}
           </button>
@@ -267,15 +286,8 @@ export function App() {
           <button className="btn" disabled={busy || done || blocked} onClick={() => runSim("season")}>
             Sim season
           </button>
-          <div className="seg" role="group" aria-label="Speed">
-            {(["instant", "watch"] as const).map((s) => (
-              <button key={s} aria-pressed={speed === s} onClick={() => setSpeed(s)} title={s === "watch" ? "After each sim, open the headline match and play it back" : "Just show results"}>
-                {s === "instant" ? "Instant" : "Watch"}
-              </button>
-            ))}
-          </div>
         </div>
-        {error && <div className="sub" style={{ color: "var(--ban)" }}>Import failed: {error}</div>}
+        {error && <div className="sub" style={{ color: "var(--ban)" }}>Load failed: {error}</div>}
       </header>
 
       <main className={busy ? "busy" : ""} key={`${state.seasonId}-${state.options.seed}-${store.config.ratingMode}-${state.gm?.team ?? ""}`}>

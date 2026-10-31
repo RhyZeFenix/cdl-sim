@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { addLines, emptyLine, gmMarkWatched, mapLogEntries, playerInfo, replaySeries, type MapResult, type Mode, type PlayerLine } from "../../engine";
+import { addLines, emptyLine, markWatched, mapLogEntries, playerInfo, replaySeries, type MapResult, type Mode, type PlayerLine } from "../../engine";
 import type { Nav } from "../App";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
@@ -110,7 +110,7 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
     },
     [0, 0],
   );
-  const finishWatching = () => mutate((s) => gmMarkWatched(s, seriesId));
+  const finishWatching = () => mutate((s) => markWatched(s, seriesId));
 
   const map = live ? maps[current] : sel === "series" ? null : maps[sel];
   const seriesLines = maps.length
@@ -144,7 +144,7 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
       <div className="card">
         {live && (
           <div className="pill" style={{ marginBottom: 6 }}>
-            Match day · watching live
+            Watching live
           </div>
         )}
         <div className="match-head">

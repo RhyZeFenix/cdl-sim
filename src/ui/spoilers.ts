@@ -1,7 +1,7 @@
 // Spoiler-free match day: which results the UI may show while the GM team has an
 // unwatched series. The engine has already decided everything; this only controls
 // what is revealed, and every view uses it the same way.
-import type { EventRecord, PointsSnapshot, SeasonData, SeasonState, SeriesRecord, Src } from "../engine";
+import { allUnwatched, type EventRecord, type PointsSnapshot, type SeasonData, type SeasonState, type SeriesRecord, type Src } from "../engine";
 
 export interface Spoilers {
   /** Unwatched GM series, in play order (the first one is "up next" on match day). */
@@ -31,7 +31,7 @@ function stepIndexOf(state: SeasonState, rec: SeriesRecord): number {
 const refId = (src: Src) => ("winner" in src ? src.winner : "loser" in src ? src.loser : null);
 
 export function spoilers(state: SeasonState, data: SeasonData): Spoilers {
-  const unwatched = state.gm?.unwatched ?? [];
+  const unwatched = allUnwatched(state);
   const hidden = new Set(unwatched);
 
   // Bracket matches downstream of an unwatched one: their teams reveal who advanced.

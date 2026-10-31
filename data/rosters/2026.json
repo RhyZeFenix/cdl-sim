@@ -1,0 +1,2854 @@
+{
+  "season": "2026",
+  "ratingsNote": "Ratings from 2026 season stat lines (https://cod-esports.fandom.com/api.php (Cargo table PlayerStats), fetched 2026-10-31; CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors). Players without stats (ratingSource \"placeholder\") use team placements. Consistency is always a placeholder; clutch is a mild SnD K/D proxy. Roles default to flex.",
+  "teams": [
+    {
+      "team": "boston-breach",
+      "players": [
+        {
+          "id": "snoopy",
+          "handle": "Snoopy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 76,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 77
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 94,
+            "kd": 0.95,
+            "hpKd": 0.9,
+            "hpTimePerMap": 58,
+            "sndKd": 0.95,
+            "sndOpeningNet": 0.14,
+            "thirdKd": 1.06
+          }
+        },
+        {
+          "id": "cammy",
+          "handle": "Cammy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 79,
+            "snd_iq": 77,
+            "third_mode": 76,
+            "clutch": 77,
+            "consistency": 69
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 58,
+            "kd": 0.91,
+            "hpKd": 0.96,
+            "hpTimePerMap": 73,
+            "sndKd": 0.77,
+            "sndOpeningNet": 0.22,
+            "thirdKd": 0.87
+          }
+        },
+        {
+          "id": "purj",
+          "handle": "Purj",
+          "role": "flex",
+          "ratings": {
+            "slaying": 76,
+            "hp_obj": 76,
+            "snd_iq": 77,
+            "third_mode": 78,
+            "clutch": 78,
+            "consistency": 73
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 158,
+            "kd": 0.89,
+            "hpKd": 0.88,
+            "hpTimePerMap": 52,
+            "sndKd": 0.9,
+            "sndOpeningNet": -0.29,
+            "thirdKd": 0.9
+          }
+        },
+        {
+          "id": "nastie",
+          "handle": "Nastie",
+          "role": "flex",
+          "ratings": {
+            "slaying": 81,
+            "hp_obj": 80,
+            "snd_iq": 79,
+            "third_mode": 81,
+            "clutch": 79,
+            "consistency": 86
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 175,
+            "kd": 1.02,
+            "hpKd": 1.01,
+            "hpTimePerMap": 65,
+            "sndKd": 0.96,
+            "sndOpeningNet": 0.05,
+            "thirdKd": 1.06
+          }
+        },
+        {
+          "id": "spart",
+          "handle": "Spart",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 80,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 71
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 108,
+            "kd": 0.98,
+            "hpKd": 0.97,
+            "hpTimePerMap": 80,
+            "sndKd": 0.97,
+            "sndOpeningNet": 0.03,
+            "thirdKd": 0.98
+          }
+        },
+        {
+          "id": "afro",
+          "handle": "Afro",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 79,
+            "snd_iq": 78,
+            "third_mode": 80,
+            "clutch": 79,
+            "consistency": 75
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 128,
+            "kd": 1.01,
+            "hpKd": 1.01,
+            "hpTimePerMap": 54,
+            "sndKd": 0.93,
+            "sndOpeningNet": -0.29,
+            "thirdKd": 1.03
+          }
+        },
+        {
+          "id": "tjhaly",
+          "handle": "TJHaLy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 76,
+            "hp_obj": 77,
+            "snd_iq": 78,
+            "third_mode": 77,
+            "clutch": 79,
+            "consistency": 84
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 142,
+            "kd": 0.9,
+            "hpKd": 0.89,
+            "hpTimePerMap": 59,
+            "sndKd": 0.94,
+            "sndOpeningNet": -0.45,
+            "thirdKd": 0.89
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2025-12-05",
+          "event": "Major I",
+          "starters": [
+            "snoopy",
+            "cammy",
+            "purj",
+            "nastie"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_1"
+        },
+        {
+          "effective": "2026-04-17",
+          "event": "Major III (Pro-Am)",
+          "starters": [
+            "purj",
+            "nastie",
+            "spart",
+            "afro"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_3"
+        },
+        {
+          "effective": "2026-05-29",
+          "event": "Major IV",
+          "starters": [
+            "purj",
+            "spart",
+            "afro",
+            "tjhaly"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_4"
+        }
+      ],
+      "mapMods": {
+        "hp:Blackheart": -0.015,
+        "hp:Colossus": 0.003,
+        "snd:Colossus": 0.017,
+        "hp:Cortex": 0.009,
+        "hp:Den": -0.007,
+        "overload:Den": 0.007,
+        "snd:Den": -0.013,
+        "hp:Exposure": 0.006,
+        "overload:Exposure": -0.018,
+        "snd:Fringe": 0.008,
+        "hp:Gridlock": 0.006,
+        "overload:Gridlock": 0.012,
+        "snd:Gridlock": -0.003,
+        "hp:Hacienda": 0.003,
+        "snd:Hacienda": 0.013,
+        "snd:Plaza": -0.006,
+        "snd:Raid": -0.006,
+        "hp:Sake": -0.013,
+        "snd:Sake": -0.006,
+        "hp:Scar": 0.01,
+        "snd:Scar": -0.003
+      }
+    },
+    {
+      "team": "carolina-royal-ravens",
+      "players": [
+        {
+          "id": "nero",
+          "handle": "Nero",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 80,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 78,
+            "consistency": 77
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 155,
+            "kd": 1,
+            "hpKd": 1.01,
+            "hpTimePerMap": 72,
+            "sndKd": 0.93,
+            "sndOpeningNet": 0.2,
+            "thirdKd": 1
+          }
+        },
+        {
+          "id": "lurqxx",
+          "handle": "Lurqxx",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 81,
+            "snd_iq": 77,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 78
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 165,
+            "kd": 1.06,
+            "hpKd": 1.1,
+            "hpTimePerMap": 62,
+            "sndKd": 0.97,
+            "sndOpeningNet": -0.4,
+            "thirdKd": 1.02
+          }
+        },
+        {
+          "id": "craze",
+          "handle": "Craze",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 77,
+            "snd_iq": 78,
+            "third_mode": 77,
+            "clutch": 78,
+            "consistency": 75
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 163,
+            "kd": 0.93,
+            "hpKd": 0.93,
+            "hpTimePerMap": 51,
+            "sndKd": 0.92,
+            "sndOpeningNet": -0.26,
+            "thirdKd": 0.93
+          }
+        },
+        {
+          "id": "exceed",
+          "handle": "Exceed",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 79,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 143,
+            "kd": 0.96,
+            "hpKd": 0.96,
+            "hpTimePerMap": 74,
+            "sndKd": 0.99,
+            "sndOpeningNet": 0.06,
+            "thirdKd": 0.95
+          }
+        },
+        {
+          "id": "fire",
+          "handle": "Fire",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 80,
+            "snd_iq": 76,
+            "third_mode": 79,
+            "clutch": 77,
+            "consistency": 68
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 70,
+            "kd": 0.94,
+            "hpKd": 0.96,
+            "hpTimePerMap": 81,
+            "sndKd": 0.74,
+            "sndOpeningNet": -0.32,
+            "thirdKd": 0.99
+          }
+        },
+        {
+          "id": "knox",
+          "handle": "KnoX",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 78,
+            "snd_iq": 80,
+            "third_mode": 77,
+            "clutch": 79,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 11,
+            "kd": 0.95,
+            "hpKd": 0.94,
+            "hpTimePerMap": 45,
+            "sndKd": 1.28,
+            "sndOpeningNet": 1,
+            "thirdKd": 0.86
+          }
+        },
+        {
+          "id": "slasher",
+          "handle": "SlasheR",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 79,
+            "snd_iq": 77,
+            "third_mode": 77,
+            "clutch": 77,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 22,
+            "kd": 0.9,
+            "hpKd": 0.96,
+            "hpTimePerMap": 64,
+            "sndKd": 0.6,
+            "sndOpeningNet": 0.29,
+            "thirdKd": 0.91
+          }
+        },
+        {
+          "id": "standy",
+          "handle": "Standy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 75,
+            "hp_obj": 76,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 78,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 33,
+            "kd": 0.84,
+            "hpKd": 0.79,
+            "hpTimePerMap": 60,
+            "sndKd": 0.86,
+            "sndOpeningNet": 0.08,
+            "thirdKd": 0.92
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2025-12-05",
+          "event": "Major I",
+          "starters": [
+            "nero",
+            "lurqxx",
+            "craze",
+            "exceed"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_1"
+        },
+        {
+          "effective": "2026-04-17",
+          "event": "Major III (Pro-Am)",
+          "starters": [
+            "lurqxx",
+            "craze",
+            "exceed",
+            "fire"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_3"
+        },
+        {
+          "effective": "2026-05-29",
+          "event": "Major IV",
+          "starters": [
+            "lurqxx",
+            "exceed",
+            "fire",
+            "knox"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_4"
+        }
+      ],
+      "mapMods": {
+        "hp:Blackheart": 0.018,
+        "hp:Colossus": -0.012,
+        "snd:Colossus": -0.004,
+        "hp:Cortex": -0.006,
+        "hp:Exposure": 0.007,
+        "overload:Exposure": 0.002,
+        "snd:Exposure": 0.01,
+        "snd:Fringe": -0.002,
+        "hp:Gridlock": 0.008,
+        "overload:Gridlock": 0.009,
+        "snd:Gridlock": -0.015,
+        "hp:Hacienda": -0.011,
+        "snd:Hacienda": 0.014,
+        "snd:Plaza": -0.006,
+        "snd:Raid": -0.004,
+        "hp:Sake": -0.008,
+        "hp:Scar": 0.011,
+        "overload:Scar": -0.005,
+        "snd:Scar": 0.006
+      }
+    },
+    {
+      "team": "cloud9-new-york",
+      "players": [
+        {
+          "id": "afro",
+          "handle": "Afro",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 79,
+            "snd_iq": 78,
+            "third_mode": 80,
+            "clutch": 79,
+            "consistency": 75
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 128,
+            "kd": 1.01,
+            "hpKd": 1.01,
+            "hpTimePerMap": 54,
+            "sndKd": 0.93,
+            "sndOpeningNet": -0.29,
+            "thirdKd": 1.03
+          }
+        },
+        {
+          "id": "beans",
+          "handle": "Beans",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 76,
+            "snd_iq": 82,
+            "third_mode": 79,
+            "clutch": 81,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 64,
+            "kd": 0.95,
+            "hpKd": 0.88,
+            "hpTimePerMap": 57,
+            "sndKd": 1.37,
+            "sndOpeningNet": 0.95,
+            "thirdKd": 0.97
+          }
+        },
+        {
+          "id": "vivid",
+          "handle": "Vivid",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 77,
+            "snd_iq": 78,
+            "third_mode": 77,
+            "clutch": 78,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 55,
+            "kd": 0.89,
+            "hpKd": 0.91,
+            "hpTimePerMap": 63,
+            "sndKd": 0.89,
+            "sndOpeningNet": 0,
+            "thirdKd": 0.86
+          }
+        },
+        {
+          "id": "mack",
+          "handle": "Mack",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 79,
+            "snd_iq": 77,
+            "third_mode": 77,
+            "clutch": 76,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 55,
+            "kd": 0.92,
+            "hpKd": 0.97,
+            "hpTimePerMap": 62,
+            "sndKd": 0.68,
+            "sndOpeningNet": 0,
+            "thirdKd": 0.93
+          }
+        },
+        {
+          "id": "okis",
+          "handle": "Okis",
+          "role": "flex",
+          "ratings": {
+            "slaying": 72,
+            "hp_obj": 75,
+            "snd_iq": 78,
+            "third_mode": 75,
+            "clutch": 79,
+            "consistency": 76
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 73,
+            "kd": 0.77,
+            "hpKd": 0.76,
+            "hpTimePerMap": 67,
+            "sndKd": 0.93,
+            "sndOpeningNet": -0.05,
+            "thirdKd": 0.76
+          }
+        },
+        {
+          "id": "nejra",
+          "handle": "Nejra",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 75,
+            "snd_iq": 78,
+            "third_mode": 79,
+            "clutch": 78,
+            "consistency": 78
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 100,
+            "kd": 0.94,
+            "hpKd": 0.91,
+            "hpTimePerMap": 37,
+            "sndKd": 0.91,
+            "sndOpeningNet": -0.27,
+            "thirdKd": 1.01
+          }
+        },
+        {
+          "id": "encourage",
+          "handle": "Encourage",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 77,
+            "snd_iq": 77,
+            "third_mode": 77,
+            "clutch": 77,
+            "consistency": 73
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 106,
+            "kd": 0.91,
+            "hpKd": 0.91,
+            "hpTimePerMap": 56,
+            "sndKd": 0.86,
+            "sndOpeningNet": -0.19,
+            "thirdKd": 0.91
+          }
+        },
+        {
+          "id": "hide",
+          "handle": "Hide",
+          "role": "flex",
+          "ratings": {
+            "slaying": 75,
+            "hp_obj": 75,
+            "snd_iq": 79,
+            "third_mode": 75,
+            "clutch": 79,
+            "consistency": 73
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 111,
+            "kd": 0.84,
+            "hpKd": 0.82,
+            "hpTimePerMap": 54,
+            "sndKd": 0.97,
+            "sndOpeningNet": 0.32,
+            "thirdKd": 0.83
+          }
+        },
+        {
+          "id": "wevy",
+          "handle": "Wevy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 79,
+            "snd_iq": 80,
+            "third_mode": 79,
+            "clutch": 80,
+            "consistency": 76
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 27,
+            "kd": 1.01,
+            "hpKd": 0.99,
+            "hpTimePerMap": 71,
+            "sndKd": 1.21,
+            "sndOpeningNet": 0.5,
+            "thirdKd": 0.99
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2025-12-05",
+          "event": "Major I",
+          "starters": [
+            "afro",
+            "beans",
+            "vivid",
+            "mack"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_1"
+        },
+        {
+          "effective": "2026-04-17",
+          "event": "Major III (Pro-Am)",
+          "starters": [
+            "okis",
+            "nejra",
+            "encourage",
+            "hide"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_3"
+        },
+        {
+          "effective": "2026-05-29",
+          "event": "Major IV",
+          "starters": [
+            "encourage",
+            "hide",
+            "nejra",
+            "wevy"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_4"
+        }
+      ],
+      "mapMods": {
+        "hp:Blackheart": 0.003,
+        "hp:Colossus": -0.005,
+        "snd:Colossus": 0.009,
+        "hp:Cortex": 0.012,
+        "hp:Den": -0.009,
+        "overload:Den": -0.007,
+        "snd:Den": 0.005,
+        "hp:Exposure": -0.005,
+        "overload:Exposure": -0.003,
+        "snd:Exposure": -0.006,
+        "hp:Gridlock": 0.013,
+        "snd:Gridlock": -0.013,
+        "hp:Hacienda": -0.003,
+        "snd:Raid": -0.016,
+        "hp:Sake": -0.005,
+        "snd:Sake": 0.012,
+        "hp:Scar": 0.007,
+        "overload:Scar": 0.009,
+        "snd:Scar": 0.004
+      }
+    },
+    {
+      "team": "faze-vegas",
+      "players": [
+        {
+          "id": "simp",
+          "handle": "Simp",
+          "role": "flex",
+          "ratings": {
+            "slaying": 84,
+            "hp_obj": 83,
+            "snd_iq": 83,
+            "third_mode": 83,
+            "clutch": 83,
+            "consistency": 88
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 248,
+            "kd": 1.08,
+            "hpKd": 1.08,
+            "hpTimePerMap": 67,
+            "sndKd": 1.14,
+            "sndOpeningNet": 0.15,
+            "thirdKd": 1.07
+          }
+        },
+        {
+          "id": "drazah",
+          "handle": "Drazah",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 80,
+            "snd_iq": 80,
+            "third_mode": 82,
+            "clutch": 80,
+            "consistency": 88
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 248,
+            "kd": 1,
+            "hpKd": 1,
+            "hpTimePerMap": 60,
+            "sndKd": 0.96,
+            "sndOpeningNet": 0.04,
+            "thirdKd": 1.01
+          }
+        },
+        {
+          "id": "04",
+          "handle": "04",
+          "role": "flex",
+          "ratings": {
+            "slaying": 81,
+            "hp_obj": 80,
+            "snd_iq": 80,
+            "third_mode": 80,
+            "clutch": 80,
+            "consistency": 76
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 248,
+            "kd": 1,
+            "hpKd": 1.02,
+            "hpTimePerMap": 54,
+            "sndKd": 0.99,
+            "sndOpeningNet": -0.18,
+            "thirdKd": 0.96
+          }
+        },
+        {
+          "id": "abuzah",
+          "handle": "Abuzah",
+          "role": "flex",
+          "ratings": {
+            "slaying": 84,
+            "hp_obj": 84,
+            "snd_iq": 82,
+            "third_mode": 85,
+            "clutch": 82,
+            "consistency": 86
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 248,
+            "kd": 1.08,
+            "hpKd": 1.06,
+            "hpTimePerMap": 83,
+            "sndKd": 1.11,
+            "sndOpeningNet": 0.28,
+            "thirdKd": 1.1
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2025-12-05",
+          "event": "Major I",
+          "starters": [
+            "simp",
+            "drazah",
+            "04",
+            "abuzah"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_1"
+        }
+      ],
+      "mapMods": {
+        "hp:Blackheart": 0.008,
+        "hp:Colossus": -0.005,
+        "snd:Colossus": 0.008,
+        "hp:Cortex": -0.008,
+        "hp:Den": -0.011,
+        "overload:Den": -0.005,
+        "snd:Exposure": 0.003,
+        "snd:Fringe": -0.003,
+        "hp:Gridlock": 0.01,
+        "overload:Gridlock": 0.005,
+        "snd:Gridlock": -0.006,
+        "hp:Hacienda": -0.008,
+        "snd:Hacienda": 0.004,
+        "snd:Plaza": -0.007,
+        "hp:Raid": 0.006,
+        "snd:Raid": 0.007,
+        "hp:Sake": -0.004,
+        "hp:Scar": 0.009,
+        "overload:Scar": 0.005,
+        "snd:Scar": -0.008
+      }
+    },
+    {
+      "team": "g2-minnesota",
+      "players": [
+        {
+          "id": "estreal",
+          "handle": "Estreal",
+          "role": "flex",
+          "ratings": {
+            "slaying": 83,
+            "hp_obj": 82,
+            "snd_iq": 81,
+            "third_mode": 82,
+            "clutch": 80,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 229,
+            "kd": 1.04,
+            "hpKd": 1.04,
+            "hpTimePerMap": 75,
+            "sndKd": 0.99,
+            "sndOpeningNet": 0.13,
+            "thirdKd": 1.07
+          }
+        },
+        {
+          "id": "kremp",
+          "handle": "Kremp",
+          "role": "flex",
+          "ratings": {
+            "slaying": 83,
+            "hp_obj": 80,
+            "snd_iq": 82,
+            "third_mode": 81,
+            "clutch": 82,
+            "consistency": 74
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 221,
+            "kd": 1.05,
+            "hpKd": 1.03,
+            "hpTimePerMap": 57,
+            "sndKd": 1.18,
+            "sndOpeningNet": 0.31,
+            "thirdKd": 1.04
+          }
+        },
+        {
+          "id": "mamba",
+          "handle": "Mamba",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 80,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 78
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 196,
+            "kd": 0.96,
+            "hpKd": 0.97,
+            "hpTimePerMap": 63,
+            "sndKd": 0.92,
+            "sndOpeningNet": 0.04,
+            "thirdKd": 0.95
+          }
+        },
+        {
+          "id": "skyz",
+          "handle": "Skyz",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 80,
+            "snd_iq": 80,
+            "third_mode": 78,
+            "clutch": 80,
+            "consistency": 75
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 221,
+            "kd": 0.95,
+            "hpKd": 0.98,
+            "hpTimePerMap": 69,
+            "sndKd": 0.96,
+            "sndOpeningNet": 0.29,
+            "thirdKd": 0.89
+          }
+        },
+        {
+          "id": "envoy",
+          "handle": "Envoy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 79,
+            "snd_iq": 79,
+            "third_mode": 78,
+            "clutch": 80,
+            "consistency": 82
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 242,
+            "kd": 0.9,
+            "hpKd": 0.91,
+            "hpTimePerMap": 69,
+            "sndKd": 0.95,
+            "sndOpeningNet": -0.2,
+            "thirdKd": 0.88
+          }
+        },
+        {
+          "id": "nastie",
+          "handle": "Nastie",
+          "role": "flex",
+          "ratings": {
+            "slaying": 81,
+            "hp_obj": 80,
+            "snd_iq": 79,
+            "third_mode": 81,
+            "clutch": 79,
+            "consistency": 86
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 175,
+            "kd": 1.02,
+            "hpKd": 1.01,
+            "hpTimePerMap": 65,
+            "sndKd": 0.96,
+            "sndOpeningNet": 0.05,
+            "thirdKd": 1.06
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2025-12-05",
+          "event": "Major I",
+          "starters": [
+            "estreal",
+            "kremp",
+            "mamba",
+            "skyz"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_1"
+        },
+        {
+          "effective": "2026-05-29",
+          "event": "Major IV",
+          "starters": [
+            "kremp",
+            "skyz",
+            "envoy",
+            "nastie"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_4"
+        }
+      ],
+      "mapMods": {
+        "hp:Blackheart": 0.005,
+        "hp:Colossus": 0.002,
+        "snd:Colossus": 0.005,
+        "hp:Den": -0.005,
+        "overload:Den": 0.002,
+        "hp:Exposure": -0.012,
+        "overload:Exposure": 0.004,
+        "snd:Fringe": -0.004,
+        "hp:Gridlock": 0.017,
+        "overload:Gridlock": 0.006,
+        "snd:Gridlock": -0.005,
+        "snd:Hacienda": 0.01,
+        "snd:Plaza": -0.007,
+        "hp:Raid": 0.007,
+        "snd:Raid": -0.005,
+        "hp:Sake": -0.016,
+        "overload:Scar": -0.008,
+        "snd:Scar": 0.005
+      }
+    },
+    {
+      "team": "la-thieves",
+      "players": [
+        {
+          "id": "scrap",
+          "handle": "Scrap",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 83,
+            "snd_iq": 82,
+            "third_mode": 83,
+            "clutch": 82,
+            "consistency": 83
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 236,
+            "kd": 1.04,
+            "hpKd": 1.05,
+            "hpTimePerMap": 78,
+            "sndKd": 1.07,
+            "sndOpeningNet": 0.71,
+            "thirdKd": 1.02
+          }
+        },
+        {
+          "id": "hydra",
+          "handle": "HyDra",
+          "role": "flex",
+          "ratings": {
+            "slaying": 83,
+            "hp_obj": 81,
+            "snd_iq": 84,
+            "third_mode": 82,
+            "clutch": 83,
+            "consistency": 75
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 236,
+            "kd": 1.05,
+            "hpKd": 1.02,
+            "hpTimePerMap": 60,
+            "sndKd": 1.22,
+            "sndOpeningNet": 0.3,
+            "thirdKd": 1.05
+          }
+        },
+        {
+          "id": "kenny",
+          "handle": "Kenny",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 79,
+            "snd_iq": 78,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 72
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 50,
+            "kd": 0.89,
+            "hpKd": 0.88,
+            "hpTimePerMap": 74,
+            "sndKd": 0.88,
+            "sndOpeningNet": -0.65,
+            "thirdKd": 0.91
+          }
+        },
+        {
+          "id": "abezy",
+          "handle": "aBeZy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 82,
+            "snd_iq": 81,
+            "third_mode": 82,
+            "clutch": 82,
+            "consistency": 78
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 236,
+            "kd": 1.04,
+            "hpKd": 1.04,
+            "hpTimePerMap": 68,
+            "sndKd": 1.09,
+            "sndOpeningNet": -0.15,
+            "thirdKd": 1.01
+          }
+        },
+        {
+          "id": "nium",
+          "handle": "Nium",
+          "role": "flex",
+          "ratings": {
+            "slaying": 81,
+            "hp_obj": 81,
+            "snd_iq": 81,
+            "third_mode": 82,
+            "clutch": 81,
+            "consistency": 89
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 186,
+            "kd": 0.96,
+            "hpKd": 0.94,
+            "hpTimePerMap": 68,
+            "sndKd": 0.99,
+            "sndOpeningNet": 0.03,
+            "thirdKd": 0.98
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2025-12-05",
+          "event": "Major I",
+          "starters": [
+            "scrap",
+            "hydra",
+            "kenny",
+            "abezy"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_1"
+        },
+        {
+          "effective": "2026-02-13",
+          "event": "Major II",
+          "starters": [
+            "scrap",
+            "hydra",
+            "abezy",
+            "nium"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_2"
+        }
+      ],
+      "mapMods": {
+        "hp:Blackheart": -0.009,
+        "snd:Colossus": -0.019,
+        "hp:Den": 0.002,
+        "snd:Den": 0.018,
+        "hp:Exposure": 0.011,
+        "overload:Exposure": -0.01,
+        "snd:Exposure": -0.014,
+        "snd:Fringe": -0.003,
+        "hp:Gridlock": -0.01,
+        "overload:Gridlock": -0.014,
+        "snd:Gridlock": 0.012,
+        "snd:Hacienda": 0.002,
+        "hp:Raid": -0.009,
+        "snd:Raid": -0.012,
+        "hp:Sake": 0.018,
+        "hp:Scar": -0.01,
+        "overload:Scar": 0.011,
+        "snd:Scar": 0.006
+      }
+    },
+    {
+      "team": "miami-heretics",
+      "players": [
+        {
+          "id": "mettalz",
+          "handle": "MettalZ",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 80,
+            "snd_iq": 77,
+            "third_mode": 77,
+            "clutch": 78,
+            "consistency": 73
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 194,
+            "kd": 0.91,
+            "hpKd": 0.94,
+            "hpTimePerMap": 69,
+            "sndKd": 0.87,
+            "sndOpeningNet": -0.44,
+            "thirdKd": 0.87
+          }
+        },
+        {
+          "id": "renkor",
+          "handle": "RenKoR",
+          "role": "flex",
+          "ratings": {
+            "slaying": 84,
+            "hp_obj": 84,
+            "snd_iq": 80,
+            "third_mode": 82,
+            "clutch": 80,
+            "consistency": 82
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 194,
+            "kd": 1.1,
+            "hpKd": 1.15,
+            "hpTimePerMap": 71,
+            "sndKd": 1.03,
+            "sndOpeningNet": -0.05,
+            "thirdKd": 1.05
+          }
+        },
+        {
+          "id": "super",
+          "handle": "SupeR",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 81,
+            "snd_iq": 82,
+            "third_mode": 82,
+            "clutch": 82,
+            "consistency": 71
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 194,
+            "kd": 1.06,
+            "hpKd": 1.05,
+            "hpTimePerMap": 63,
+            "sndKd": 1.15,
+            "sndOpeningNet": 0.59,
+            "thirdKd": 1.05
+          }
+        },
+        {
+          "id": "traixx",
+          "handle": "Traixx",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 79,
+            "snd_iq": 81,
+            "third_mode": 80,
+            "clutch": 80,
+            "consistency": 72
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 150,
+            "kd": 0.98,
+            "hpKd": 0.98,
+            "hpTimePerMap": 57,
+            "sndKd": 1.05,
+            "sndOpeningNet": -0.08,
+            "thirdKd": 0.96
+          }
+        },
+        {
+          "id": "reeal",
+          "handle": "ReeaL",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 79,
+            "snd_iq": 78,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 71
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 99,
+            "kd": 0.96,
+            "hpKd": 0.96,
+            "hpTimePerMap": 63,
+            "sndKd": 0.87,
+            "sndOpeningNet": -0.24,
+            "thirdKd": 0.98
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2025-12-05",
+          "event": "Major I",
+          "starters": [
+            "mettalz",
+            "renkor",
+            "super",
+            "traixx"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_1"
+        },
+        {
+          "effective": "2026-05-29",
+          "event": "Major IV",
+          "starters": [
+            "mettalz",
+            "renkor",
+            "super",
+            "reeal"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_4"
+        }
+      ],
+      "mapMods": {
+        "hp:Blackheart": 0.006,
+        "hp:Colossus": 0.006,
+        "snd:Colossus": 0.006,
+        "hp:Den": 0.007,
+        "overload:Den": 0.005,
+        "snd:Den": -0.006,
+        "overload:Exposure": -0.004,
+        "snd:Exposure": 0.005,
+        "hp:Gridlock": 0.005,
+        "overload:Gridlock": -0.004,
+        "snd:Gridlock": -0.012,
+        "snd:Hacienda": -0.012,
+        "snd:Plaza": 0.005,
+        "snd:Raid": 0.011,
+        "hp:Sake": -0.017,
+        "snd:Sake": -0.007,
+        "hp:Scar": -0.008,
+        "snd:Scar": -0.003
+      }
+    },
+    {
+      "team": "optic-texas",
+      "players": [
+        {
+          "id": "shotzzy",
+          "handle": "Shotzzy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 84,
+            "hp_obj": 82,
+            "snd_iq": 83,
+            "third_mode": 84,
+            "clutch": 83,
+            "consistency": 88
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 251,
+            "kd": 1.03,
+            "hpKd": 1,
+            "hpTimePerMap": 57,
+            "sndKd": 1.1,
+            "sndOpeningNet": 0.12,
+            "thirdKd": 1.06
+          }
+        },
+        {
+          "id": "dashy",
+          "handle": "Dashy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 84,
+            "hp_obj": 85,
+            "snd_iq": 82,
+            "third_mode": 85,
+            "clutch": 82,
+            "consistency": 93
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 251,
+            "kd": 1.05,
+            "hpKd": 1.01,
+            "hpTimePerMap": 94,
+            "sndKd": 1.03,
+            "sndOpeningNet": 0.2,
+            "thirdKd": 1.11
+          }
+        },
+        {
+          "id": "huke",
+          "handle": "Huke",
+          "role": "flex",
+          "ratings": {
+            "slaying": 84,
+            "hp_obj": 82,
+            "snd_iq": 83,
+            "third_mode": 84,
+            "clutch": 82,
+            "consistency": 82
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 251,
+            "kd": 1.06,
+            "hpKd": 1.06,
+            "hpTimePerMap": 51,
+            "sndKd": 0.95,
+            "sndOpeningNet": -0.03,
+            "thirdKd": 1.11
+          }
+        },
+        {
+          "id": "mercules",
+          "handle": "Mercules",
+          "role": "flex",
+          "ratings": {
+            "slaying": 84,
+            "hp_obj": 84,
+            "snd_iq": 84,
+            "third_mode": 84,
+            "clutch": 84,
+            "consistency": 91
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 251,
+            "kd": 1.06,
+            "hpKd": 1.04,
+            "hpTimePerMap": 74,
+            "sndKd": 1.29,
+            "sndOpeningNet": 0.13,
+            "thirdKd": 1.03
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2025-12-05",
+          "event": "Major I",
+          "starters": [
+            "shotzzy",
+            "dashy",
+            "huke",
+            "mercules"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_1"
+        }
+      ],
+      "mapMods": {
+        "hp:Blackheart": -0.01,
+        "hp:Colossus": 0.004,
+        "snd:Colossus": -0.015,
+        "hp:Cortex": 0.004,
+        "overload:Den": 0.009,
+        "hp:Exposure": -0.004,
+        "overload:Exposure": 0.008,
+        "snd:Exposure": 0.003,
+        "snd:Fringe": -0.015,
+        "hp:Gridlock": 0.008,
+        "overload:Gridlock": 0.004,
+        "snd:Gridlock": 0.008,
+        "hp:Hacienda": 0.012,
+        "snd:Hacienda": -0.01,
+        "snd:Plaza": 0.019,
+        "hp:Sake": -0.007,
+        "snd:Sake": -0.003,
+        "overload:Scar": -0.016,
+        "snd:Scar": 0.003
+      }
+    },
+    {
+      "team": "paris-gentle-mates",
+      "players": [
+        {
+          "id": "envoy",
+          "handle": "Envoy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 79,
+            "snd_iq": 79,
+            "third_mode": 78,
+            "clutch": 80,
+            "consistency": 82
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 242,
+            "kd": 0.9,
+            "hpKd": 0.91,
+            "hpTimePerMap": 69,
+            "sndKd": 0.95,
+            "sndOpeningNet": -0.2,
+            "thirdKd": 0.88
+          }
+        },
+        {
+          "id": "sib",
+          "handle": "Sib",
+          "role": "flex",
+          "ratings": {
+            "slaying": 81,
+            "hp_obj": 81,
+            "snd_iq": 81,
+            "third_mode": 81,
+            "clutch": 81,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 250,
+            "kd": 0.98,
+            "hpKd": 0.98,
+            "hpTimePerMap": 60,
+            "sndKd": 0.96,
+            "sndOpeningNet": 0.19,
+            "thirdKd": 1
+          }
+        },
+        {
+          "id": "ghosty",
+          "handle": "Ghosty",
+          "role": "flex",
+          "ratings": {
+            "slaying": 83,
+            "hp_obj": 85,
+            "snd_iq": 81,
+            "third_mode": 83,
+            "clutch": 81,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 250,
+            "kd": 1.05,
+            "hpKd": 1.08,
+            "hpTimePerMap": 90,
+            "sndKd": 0.95,
+            "sndOpeningNet": -0.01,
+            "thirdKd": 1.03
+          }
+        },
+        {
+          "id": "neptune",
+          "handle": "Neptune",
+          "role": "flex",
+          "ratings": {
+            "slaying": 83,
+            "hp_obj": 81,
+            "snd_iq": 79,
+            "third_mode": 82,
+            "clutch": 80,
+            "consistency": 87
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 193,
+            "kd": 1.04,
+            "hpKd": 1.07,
+            "hpTimePerMap": 52,
+            "sndKd": 0.92,
+            "sndOpeningNet": 0.02,
+            "thirdKd": 1.04
+          }
+        },
+        {
+          "id": "estreal",
+          "handle": "Estreal",
+          "role": "flex",
+          "ratings": {
+            "slaying": 83,
+            "hp_obj": 82,
+            "snd_iq": 81,
+            "third_mode": 82,
+            "clutch": 80,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 229,
+            "kd": 1.04,
+            "hpKd": 1.04,
+            "hpTimePerMap": 75,
+            "sndKd": 0.99,
+            "sndOpeningNet": 0.13,
+            "thirdKd": 1.07
+          }
+        },
+        {
+          "id": "joedeceives",
+          "handle": "JoeDeceives",
+          "role": "flex",
+          "ratings": {
+            "slaying": 86,
+            "hp_obj": 83,
+            "snd_iq": 84,
+            "third_mode": 84,
+            "clutch": 82,
+            "consistency": 77
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 227,
+            "kd": 1.15,
+            "hpKd": 1.14,
+            "hpTimePerMap": 58,
+            "sndKd": 1.15,
+            "sndOpeningNet": 0.3,
+            "thirdKd": 1.16
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2025-12-05",
+          "event": "Major I",
+          "starters": [
+            "envoy",
+            "sib",
+            "ghosty",
+            "neptune"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_1"
+        },
+        {
+          "effective": "2026-05-29",
+          "event": "Major IV",
+          "starters": [
+            "ghosty",
+            "sib",
+            "estreal",
+            "joedeceives"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_4"
+        }
+      ],
+      "mapMods": {
+        "hp:Blackheart": -0.014,
+        "hp:Colossus": 0.008,
+        "snd:Colossus": 0.004,
+        "hp:Den": 0.004,
+        "snd:Den": 0.005,
+        "hp:Exposure": 0.006,
+        "overload:Exposure": 0.004,
+        "snd:Exposure": 0.005,
+        "snd:Fringe": -0.002,
+        "hp:Gridlock": -0.02,
+        "overload:Gridlock": -0.007,
+        "snd:Gridlock": 0.009,
+        "hp:Hacienda": -0.008,
+        "snd:Hacienda": 0.011,
+        "snd:Plaza": -0.004,
+        "snd:Raid": -0.002,
+        "hp:Sake": 0.018,
+        "snd:Sake": -0.007,
+        "hp:Scar": -0.015,
+        "overload:Scar": -0.006,
+        "snd:Scar": -0.012
+      }
+    },
+    {
+      "team": "riyadh-falcons",
+      "players": [
+        {
+          "id": "exnid",
+          "handle": "Exnid",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 80,
+            "snd_iq": 79,
+            "third_mode": 80,
+            "clutch": 79,
+            "consistency": 87
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 197,
+            "kd": 0.99,
+            "hpKd": 1,
+            "hpTimePerMap": 56,
+            "sndKd": 0.9,
+            "sndOpeningNet": -0.09,
+            "thirdKd": 1.01
+          }
+        },
+        {
+          "id": "pred",
+          "handle": "Pred",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 80,
+            "snd_iq": 79,
+            "third_mode": 81,
+            "clutch": 79,
+            "consistency": 83
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 178,
+            "kd": 1.06,
+            "hpKd": 1.06,
+            "hpTimePerMap": 49,
+            "sndKd": 0.99,
+            "sndOpeningNet": -0.05,
+            "thirdKd": 1.09
+          }
+        },
+        {
+          "id": "cellium",
+          "handle": "Cellium",
+          "role": "flex",
+          "ratings": {
+            "slaying": 85,
+            "hp_obj": 84,
+            "snd_iq": 79,
+            "third_mode": 85,
+            "clutch": 80,
+            "consistency": 85
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 197,
+            "kd": 1.12,
+            "hpKd": 1.13,
+            "hpTimePerMap": 78,
+            "sndKd": 0.98,
+            "sndOpeningNet": 0.08,
+            "thirdKd": 1.16
+          }
+        },
+        {
+          "id": "kismet",
+          "handle": "KiSMET",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 81,
+            "snd_iq": 80,
+            "third_mode": 80,
+            "clutch": 80,
+            "consistency": 75
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 197,
+            "kd": 0.96,
+            "hpKd": 0.98,
+            "hpTimePerMap": 75,
+            "sndKd": 1.03,
+            "sndOpeningNet": -0.08,
+            "thirdKd": 0.91
+          }
+        },
+        {
+          "id": "alluka",
+          "handle": "Alluka",
+          "role": "flex",
+          "ratings": {
+            "slaying": 84,
+            "hp_obj": 82,
+            "snd_iq": 82,
+            "third_mode": 81,
+            "clutch": 82,
+            "consistency": 84
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 19,
+            "kd": 1.12,
+            "hpKd": 1.11,
+            "hpTimePerMap": 71,
+            "sndKd": 1.32,
+            "sndOpeningNet": 0.67,
+            "thirdKd": 1.09
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2025-12-05",
+          "event": "Major I",
+          "starters": [
+            "exnid",
+            "pred",
+            "cellium",
+            "kismet"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_1"
+        },
+        {
+          "effective": "2026-07-16",
+          "event": "Championship",
+          "starters": [
+            "exnid",
+            "cellium",
+            "kismet",
+            "alluka"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League_Championship_2026"
+        }
+      ],
+      "mapMods": {
+        "hp:Blackheart": 0.017,
+        "hp:Colossus": 0.004,
+        "snd:Colossus": -0.011,
+        "hp:Cortex": 0.007,
+        "hp:Den": 0.002,
+        "overload:Den": -0.017,
+        "snd:Den": -0.006,
+        "hp:Exposure": -0.004,
+        "overload:Exposure": 0.01,
+        "snd:Exposure": -0.003,
+        "snd:Fringe": 0.013,
+        "hp:Gridlock": -0.008,
+        "overload:Gridlock": -0.003,
+        "hp:Hacienda": 0.005,
+        "snd:Hacienda": -0.012,
+        "snd:Plaza": -0.005,
+        "snd:Raid": 0.008,
+        "hp:Scar": -0.017,
+        "snd:Scar": 0.011
+      }
+    },
+    {
+      "team": "toronto-koi",
+      "players": [
+        {
+          "id": "cleanx",
+          "handle": "CleanX",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 80,
+            "snd_iq": 79,
+            "third_mode": 81,
+            "clutch": 79,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 212,
+            "kd": 0.99,
+            "hpKd": 0.99,
+            "hpTimePerMap": 58,
+            "sndKd": 0.9,
+            "sndOpeningNet": 0.2,
+            "thirdKd": 1.03
+          }
+        },
+        {
+          "id": "insight",
+          "handle": "Insight",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 80,
+            "snd_iq": 78,
+            "third_mode": 82,
+            "clutch": 78,
+            "consistency": 78
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 212,
+            "kd": 0.96,
+            "hpKd": 0.93,
+            "hpTimePerMap": 74,
+            "sndKd": 0.86,
+            "sndOpeningNet": 0.11,
+            "thirdKd": 1.03
+          }
+        },
+        {
+          "id": "joedeceives",
+          "handle": "JoeDeceives",
+          "role": "flex",
+          "ratings": {
+            "slaying": 86,
+            "hp_obj": 83,
+            "snd_iq": 84,
+            "third_mode": 84,
+            "clutch": 82,
+            "consistency": 77
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 227,
+            "kd": 1.15,
+            "hpKd": 1.14,
+            "hpTimePerMap": 58,
+            "sndKd": 1.15,
+            "sndOpeningNet": 0.3,
+            "thirdKd": 1.16
+          }
+        },
+        {
+          "id": "reeal",
+          "handle": "ReeaL",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 79,
+            "snd_iq": 78,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 71
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 99,
+            "kd": 0.96,
+            "hpKd": 0.96,
+            "hpTimePerMap": 63,
+            "sndKd": 0.87,
+            "sndOpeningNet": -0.24,
+            "thirdKd": 0.98
+          }
+        },
+        {
+          "id": "kips",
+          "handle": "Kips",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 81,
+            "snd_iq": 82,
+            "third_mode": 82,
+            "clutch": 82,
+            "consistency": 84
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 148,
+            "kd": 1.03,
+            "hpKd": 1.01,
+            "hpTimePerMap": 73,
+            "sndKd": 1.17,
+            "sndOpeningNet": 0.48,
+            "thirdKd": 1.03
+          }
+        },
+        {
+          "id": "abe",
+          "handle": "Abe",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 79,
+            "snd_iq": 78,
+            "third_mode": 77,
+            "clutch": 79,
+            "consistency": 84
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 104,
+            "kd": 0.91,
+            "hpKd": 0.94,
+            "hpTimePerMap": 62,
+            "sndKd": 0.87,
+            "sndOpeningNet": -0.4,
+            "thirdKd": 0.88
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2025-12-05",
+          "event": "Major I",
+          "starters": [
+            "cleanx",
+            "insight",
+            "joedeceives",
+            "reeal"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_1"
+        },
+        {
+          "effective": "2026-02-13",
+          "event": "Major II",
+          "starters": [
+            "cleanx",
+            "insight",
+            "joedeceives",
+            "kips"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_2"
+        },
+        {
+          "effective": "2026-05-29",
+          "event": "Major IV",
+          "starters": [
+            "cleanx",
+            "insight",
+            "kips",
+            "abe"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_4"
+        }
+      ],
+      "mapMods": {
+        "hp:Blackheart": -0.02,
+        "hp:Colossus": -0.007,
+        "snd:Colossus": -0.003,
+        "hp:Den": 0.004,
+        "overload:Den": 0.005,
+        "snd:Den": -0.004,
+        "overload:Exposure": -0.007,
+        "snd:Fringe": 0.011,
+        "hp:Gridlock": -0.012,
+        "overload:Gridlock": -0.008,
+        "snd:Gridlock": 0.003,
+        "hp:Raid": -0.002,
+        "snd:Raid": 0.003,
+        "hp:Sake": 0.011,
+        "hp:Scar": 0.01,
+        "overload:Scar": 0.005,
+        "snd:Scar": -0.006
+      }
+    },
+    {
+      "team": "vancouver-surge",
+      "players": [
+        {
+          "id": "abe",
+          "handle": "Abe",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 79,
+            "snd_iq": 78,
+            "third_mode": 77,
+            "clutch": 79,
+            "consistency": 84
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 104,
+            "kd": 0.91,
+            "hpKd": 0.94,
+            "hpTimePerMap": 62,
+            "sndKd": 0.87,
+            "sndOpeningNet": -0.4,
+            "thirdKd": 0.88
+          }
+        },
+        {
+          "id": "lunarz",
+          "handle": "Lunarz",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 79,
+            "snd_iq": 78,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 82
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 149,
+            "kd": 1,
+            "hpKd": 1.02,
+            "hpTimePerMap": 56,
+            "sndKd": 0.94,
+            "sndOpeningNet": 0.06,
+            "thirdKd": 0.97
+          }
+        },
+        {
+          "id": "gwinn",
+          "handle": "Gwinn",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 80,
+            "snd_iq": 79,
+            "third_mode": 77,
+            "clutch": 79,
+            "consistency": 78
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 119,
+            "kd": 0.93,
+            "hpKd": 0.95,
+            "hpTimePerMap": 75,
+            "sndKd": 0.98,
+            "sndOpeningNet": 0.14,
+            "thirdKd": 0.88
+          }
+        },
+        {
+          "id": "tjhaly",
+          "handle": "TJHaLy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 76,
+            "hp_obj": 77,
+            "snd_iq": 78,
+            "third_mode": 77,
+            "clutch": 79,
+            "consistency": 84
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 142,
+            "kd": 0.9,
+            "hpKd": 0.89,
+            "hpTimePerMap": 59,
+            "sndKd": 0.94,
+            "sndOpeningNet": -0.45,
+            "thirdKd": 0.89
+          }
+        },
+        {
+          "id": "capsidal",
+          "handle": "Capsidal",
+          "role": "flex",
+          "ratings": {
+            "slaying": 76,
+            "hp_obj": 76,
+            "snd_iq": 79,
+            "third_mode": 76,
+            "clutch": 79,
+            "consistency": 74
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 35,
+            "kd": 0.86,
+            "hpKd": 0.85,
+            "hpTimePerMap": 50,
+            "sndKd": 1,
+            "sndOpeningNet": 0.18,
+            "thirdKd": 0.82
+          }
+        },
+        {
+          "id": "nero",
+          "handle": "Nero",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 80,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 78,
+            "consistency": 77
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 155,
+            "kd": 1,
+            "hpKd": 1.01,
+            "hpTimePerMap": 72,
+            "sndKd": 0.93,
+            "sndOpeningNet": 0.2,
+            "thirdKd": 1
+          }
+        },
+        {
+          "id": "craze",
+          "handle": "Craze",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 77,
+            "snd_iq": 78,
+            "third_mode": 77,
+            "clutch": 78,
+            "consistency": 75
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 163,
+            "kd": 0.93,
+            "hpKd": 0.93,
+            "hpTimePerMap": 51,
+            "sndKd": 0.92,
+            "sndOpeningNet": -0.26,
+            "thirdKd": 0.93
+          }
+        },
+        {
+          "id": "mamba",
+          "handle": "Mamba",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 80,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 78
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 196,
+            "kd": 0.96,
+            "hpKd": 0.97,
+            "hpTimePerMap": 63,
+            "sndKd": 0.92,
+            "sndOpeningNet": 0.04,
+            "thirdKd": 0.95
+          }
+        },
+        {
+          "id": "lqgend",
+          "handle": "Lqgend",
+          "role": "flex",
+          "ratings": {
+            "slaying": 74,
+            "hp_obj": 76,
+            "snd_iq": 77,
+            "third_mode": 76,
+            "clutch": 77,
+            "consistency": 75
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 23,
+            "kd": 0.75,
+            "hpKd": 0.75,
+            "hpTimePerMap": 57,
+            "sndKd": 0.69,
+            "sndOpeningNet": 0.25,
+            "thirdKd": 0.78
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2025-12-05",
+          "event": "Major I",
+          "starters": [
+            "abe",
+            "lunarz",
+            "gwinn",
+            "tjhaly"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_1"
+        },
+        {
+          "effective": "2026-02-13",
+          "event": "Major II",
+          "starters": [
+            "lunarz",
+            "gwinn",
+            "tjhaly",
+            "capsidal"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_2"
+        },
+        {
+          "effective": "2026-04-17",
+          "event": "Major III (Pro-Am)",
+          "starters": [
+            "lunarz",
+            "gwinn",
+            "tjhaly",
+            "nero"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_3"
+        },
+        {
+          "effective": "2026-05-29",
+          "event": "Major IV",
+          "starters": [
+            "lunarz",
+            "nero",
+            "craze",
+            "mamba"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_4"
+        }
+      ],
+      "mapMods": {
+        "hp:Colossus": 0.009,
+        "snd:Colossus": 0.011,
+        "hp:Cortex": 0.004,
+        "hp:Den": 0.013,
+        "overload:Den": -0.004,
+        "snd:Den": -0.005,
+        "hp:Exposure": -0.014,
+        "overload:Exposure": 0.003,
+        "snd:Exposure": 0.002,
+        "snd:Fringe": -0.004,
+        "hp:Gridlock": -0.005,
+        "overload:Gridlock": -0.005,
+        "snd:Gridlock": 0.004,
+        "hp:Hacienda": -0.005,
+        "snd:Hacienda": -0.016,
+        "snd:Plaza": 0.004,
+        "snd:Raid": 0.01,
+        "hp:Sake": -0.007,
+        "hp:Scar": 0.002,
+        "overload:Scar": 0.004,
+        "snd:Scar": -0.009
+      }
+    }
+  ],
+  "guests": [
+    {
+      "team": "huntsmen",
+      "players": [
+        {
+          "id": "renegade",
+          "handle": "Renegade",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 79,
+            "snd_iq": 79,
+            "third_mode": 78,
+            "clutch": 78,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 8,
+            "kd": 1.06,
+            "hpKd": 1.21,
+            "hpTimePerMap": 36,
+            "sndKd": 1.05,
+            "sndOpeningNet": 0.33,
+            "thirdKd": 0.85
+          }
+        },
+        {
+          "id": "ojohnny",
+          "handle": "oJohnny",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 78,
+            "snd_iq": 78,
+            "third_mode": 78,
+            "clutch": 77,
+            "consistency": 76
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 20,
+            "kd": 0.92,
+            "hpKd": 0.95,
+            "hpTimePerMap": 69,
+            "sndKd": 0.73,
+            "sndOpeningNet": 1.29,
+            "thirdKd": 0.93
+          }
+        },
+        {
+          "id": "brack",
+          "handle": "Brack",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 78,
+            "snd_iq": 79,
+            "third_mode": 76,
+            "clutch": 80,
+            "consistency": 70
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 19,
+            "kd": 0.89,
+            "hpKd": 0.86,
+            "hpTimePerMap": 79,
+            "sndKd": 1.3,
+            "sndOpeningNet": -0.14,
+            "thirdKd": 0.81
+          }
+        },
+        {
+          "id": "swooty",
+          "handle": "Swooty",
+          "role": "flex",
+          "ratings": {
+            "slaying": 74,
+            "hp_obj": 77,
+            "snd_iq": 78,
+            "third_mode": 80,
+            "clutch": 77,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 14,
+            "kd": 0.74,
+            "hpKd": 0.82,
+            "hpTimePerMap": 47,
+            "sndKd": 0.61,
+            "sndOpeningNet": 1.2,
+            "thirdKd": 0.7
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2026-04-17",
+          "event": "Major III (Pro-Am)",
+          "starters": [
+            "renegade",
+            "ojohnny",
+            "brack",
+            "swooty"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_3"
+        }
+      ],
+      "mapMods": {
+        "hp:Colossus": 0.01,
+        "hp:Den": -0.005,
+        "snd:Den": -0.008,
+        "snd:Raid": 0.01,
+        "hp:Scar": -0.005
+      }
+    },
+    {
+      "team": "omit",
+      "players": [
+        {
+          "id": "aspekt",
+          "handle": "Aspekt",
+          "role": "flex",
+          "ratings": {
+            "slaying": 75,
+            "hp_obj": 77,
+            "snd_iq": 78,
+            "third_mode": 76,
+            "clutch": 78,
+            "consistency": 81
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 9,
+            "kd": 0.71,
+            "hpKd": 0.75,
+            "hpTimePerMap": 27,
+            "sndKd": 0.79,
+            "sndOpeningNet": -0.67,
+            "thirdKd": 0.64
+          }
+        },
+        {
+          "id": "dk",
+          "handle": "DK",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 79,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 83
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 9,
+            "kd": 0.96,
+            "hpKd": 0.91,
+            "hpTimePerMap": 83,
+            "sndKd": 1.13,
+            "sndOpeningNet": 0.33,
+            "thirdKd": 0.99
+          }
+        },
+        {
+          "id": "ethan",
+          "handle": "Ethan",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 79,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 9,
+            "kd": 1.03,
+            "hpKd": 0.96,
+            "hpTimePerMap": 89,
+            "sndKd": 1,
+            "sndOpeningNet": -0.67,
+            "thirdKd": 1.14
+          }
+        },
+        {
+          "id": "denza",
+          "handle": "Denza",
+          "role": "flex",
+          "ratings": {
+            "slaying": 76,
+            "hp_obj": 77,
+            "snd_iq": 78,
+            "third_mode": 78,
+            "clutch": 77,
+            "consistency": 69
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 9,
+            "kd": 0.75,
+            "hpKd": 0.75,
+            "hpTimePerMap": 52,
+            "sndKd": 0.57,
+            "sndOpeningNet": 0.33,
+            "thirdKd": 0.8
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2026-04-17",
+          "event": "Major III (Pro-Am)",
+          "starters": [
+            "aspekt",
+            "dk",
+            "ethan",
+            "denza"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_3"
+        }
+      ],
+      "mapMods": {
+        "overload:Den": -0.008,
+        "snd:Fringe": 0.004,
+        "hp:Gridlock": -0.005,
+        "snd:Raid": -0.005,
+        "hp:Scar": 0.004,
+        "overload:Scar": 0.01
+      }
+    },
+    {
+      "team": "project-notorious",
+      "players": [
+        {
+          "id": "beans",
+          "handle": "Beans",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 76,
+            "snd_iq": 82,
+            "third_mode": 79,
+            "clutch": 81,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 64,
+            "kd": 0.95,
+            "hpKd": 0.88,
+            "hpTimePerMap": 57,
+            "sndKd": 1.37,
+            "sndOpeningNet": 0.95,
+            "thirdKd": 0.97
+          }
+        },
+        {
+          "id": "diamondcon",
+          "handle": "Diamondcon",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 76,
+            "snd_iq": 79,
+            "third_mode": 77,
+            "clutch": 78,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 21,
+            "kd": 0.89,
+            "hpKd": 0.88,
+            "hpTimePerMap": 37,
+            "sndKd": 1,
+            "sndOpeningNet": 0.57,
+            "thirdKd": 0.87
+          }
+        },
+        {
+          "id": "erikboom",
+          "handle": "EriKBooM",
+          "role": "flex",
+          "ratings": {
+            "slaying": 76,
+            "hp_obj": 78,
+            "snd_iq": 79,
+            "third_mode": 77,
+            "clutch": 78,
+            "consistency": 76
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 18,
+            "kd": 0.84,
+            "hpKd": 0.86,
+            "hpTimePerMap": 66,
+            "sndKd": 0.88,
+            "sndOpeningNet": 1.33,
+            "thirdKd": 0.81
+          }
+        },
+        {
+          "id": "snoopy",
+          "handle": "Snoopy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 76,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 77
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 94,
+            "kd": 0.95,
+            "hpKd": 0.9,
+            "hpTimePerMap": 58,
+            "sndKd": 0.95,
+            "sndOpeningNet": 0.14,
+            "thirdKd": 1.06
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2026-04-17",
+          "event": "Major III (Pro-Am)",
+          "starters": [
+            "beans",
+            "diamondcon",
+            "erikboom",
+            "snoopy"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_3"
+        }
+      ],
+      "mapMods": {
+        "overload:Exposure": 0.007,
+        "snd:Plaza": -0.01,
+        "snd:Raid": 0.005,
+        "overload:Scar": -0.007,
+        "snd:Scar": 0.005
+      }
+    },
+    {
+      "team": "roc-esports",
+      "players": [
+        {
+          "id": "d7om",
+          "handle": "d7om",
+          "role": "flex",
+          "ratings": {
+            "slaying": 75,
+            "hp_obj": 76,
+            "snd_iq": 77,
+            "third_mode": 78,
+            "clutch": 78,
+            "consistency": 75
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 7,
+            "kd": 0.69,
+            "hpKd": 0.59,
+            "hpTimePerMap": 26,
+            "sndKd": 0.67,
+            "sndOpeningNet": -1,
+            "thirdKd": 0.85
+          }
+        },
+        {
+          "id": "rxld",
+          "handle": "Rxld",
+          "role": "flex",
+          "ratings": {
+            "slaying": 73,
+            "hp_obj": 77,
+            "snd_iq": 76,
+            "third_mode": 73,
+            "clutch": 76,
+            "consistency": 73
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 7,
+            "kd": 0.58,
+            "hpKd": 0.76,
+            "hpTimePerMap": 51,
+            "sndKd": 0.29,
+            "sndOpeningNet": -1.5,
+            "thirdKd": 0.39
+          }
+        },
+        {
+          "id": "d7oom",
+          "handle": "d7oom",
+          "role": "flex",
+          "ratings": {
+            "slaying": 76,
+            "hp_obj": 76,
+            "snd_iq": 79,
+            "third_mode": 76,
+            "clutch": 79,
+            "consistency": 73
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 7,
+            "kd": 0.73,
+            "hpKd": 0.7,
+            "hpTimePerMap": 33,
+            "sndKd": 1.2,
+            "sndOpeningNet": 0.5,
+            "thirdKd": 0.67
+          }
+        },
+        {
+          "id": "khhx",
+          "handle": "Khhx",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 77,
+            "snd_iq": 78,
+            "third_mode": 78,
+            "clutch": 78,
+            "consistency": 70
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 7,
+            "kd": 0.89,
+            "hpKd": 0.81,
+            "hpTimePerMap": 44,
+            "sndKd": 1.08,
+            "sndOpeningNet": 0,
+            "thirdKd": 0.97
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2026-04-17",
+          "event": "Major III (Pro-Am)",
+          "starters": [
+            "d7om",
+            "rxld",
+            "d7oom",
+            "khhx"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_3"
+        }
+      ],
+      "mapMods": {
+        "snd:Den": 0.007,
+        "snd:Scar": -0.007
+      }
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "id": "2024",
+  "label": "CDL 2024 — Modern Warfare III",
+  "game": "Modern Warfare III",
+  "cdlSeason": 5,
+  "thirdMode": "control",
+  "teams": [
+    { "id": "atlanta-faze", "name": "Atlanta FaZe", "abbr": "ATL" },
+    { "id": "boston-breach", "name": "Boston Breach", "abbr": "BOS" },
+    { "id": "carolina-royal-ravens", "name": "Carolina Royal Ravens", "abbr": "CAR" },
+    { "id": "las-vegas-legion", "name": "Las Vegas Legion", "abbr": "LVL" },
+    { "id": "la-guerrillas", "name": "Los Angeles Guerrillas", "abbr": "LAG" },
+    { "id": "la-thieves", "name": "Los Angeles Thieves", "abbr": "LAT" },
+    { "id": "miami-heretics", "name": "Miami Heretics", "abbr": "MIA" },
+    { "id": "minnesota-rokkr", "name": "Minnesota RØKKR", "abbr": "MIN" },
+    { "id": "ny-subliners", "name": "New York Subliners", "abbr": "NYSL" },
+    { "id": "optic-texas", "name": "OpTic Texas", "abbr": "OTX" },
+    { "id": "seattle-surge", "name": "Seattle Surge", "abbr": "SEA" },
+    { "id": "toronto-ultra", "name": "Toronto Ultra", "abbr": "TOR" }
+  ],
+  "modeSettings": {
+    "hp": { "target": 250, "hillSeconds": 60 },
+    "snd": { "roundsToWin": 6, "roundSeconds": 90, "bombSeconds": 45 },
+    "control": { "roundsToWin": 3, "livesPerTeam": 30 }
+  },
+  "seriesFormats": {
+    "bo5": ["hp", "snd", "third", "hp", "snd"],
+    "bo7": ["hp", "snd", "third", "hp", "snd", "third", "snd"],
+    "bo9": ["hp", "snd", "third", "hp", "snd", "third", "snd", "hp", "snd"]
+  },
+  "veto": { "bo5": "cdl-classic-bo5", "bo7": "cdl-classic-bo7", "bo9": "cdl-classic-bo9" },
+  "points": { "qualifierWin": 10 },
+  "tiebreakers": ["seriesWins", "mapDiff", "h2hSeries", "seriesWinPct", "mapsLost"],
+  "mapPools": [
+    {
+      "id": "launch",
+      "label": "Launch → Major I",
+      "hp": ["Invasion", "Karachi", "Skidrow", "Sub Base", "Terminal"],
+      "snd": ["Highrise", "Invasion", "Karachi", "Skidrow", "Terminal"],
+      "third": ["Highrise", "Invasion", "Karachi"]
+    },
+    {
+      "id": "stage2",
+      "label": "Major II quals → Major II",
+      "hp": ["Invasion", "Karachi", "Rio", "Skidrow", "Sub Base"],
+      "snd": ["Highrise", "Invasion", "Karachi", "Rio", "Terminal"],
+      "third": ["Highrise", "Invasion", "Karachi"],
+      "note": "Rio replaced Terminal (HP) and Skidrow (SnD)."
+    },
+    {
+      "id": "stage3",
+      "label": "Major III quals → Champs",
+      "hp": ["6 Star", "Karachi", "Rio", "Sub Base", "Vista"],
+      "snd": ["6 Star", "Highrise", "Invasion", "Karachi", "Rio"],
+      "third": ["Highrise", "Invasion", "Karachi"],
+      "note": "Vista and 6 Star replaced Invasion and Skidrow (HP); 6 Star replaced Terminal (SnD). Matches maps played at Major IV and Champs."
+    }
+  ],
+  "stages": [
+    {
+      "stage": 1,
+      "qualifiers": {
+        "start": "2023-12-08",
+        "end": "2024-01-21",
+        "matchesPerTeam": 7,
+        "weeks": [
+          { "week": 1, "mapPool": "launch" },
+          { "week": 2, "mapPool": "launch" },
+          { "week": 3, "mapPool": "launch" },
+          { "week": 4, "mapPool": "launch" }
+        ]
+      },
+      "minor": null,
+      "major": {
+        "name": "Major I",
+        "start": "2024-01-25",
+        "end": "2024-01-28",
+        "city": "Boston",
+        "venue": "MGM Music Hall",
+        "host": "boston-breach",
+        "mapPool": "launch",
+        "bestOf": 5,
+        "finalBestOf": 7,
+        "format": { "type": "double-elim", "winnersSeeds": [1, 2, 3, 4, 5, 6, 7, 8], "losersSeeds": [9, 10, 11, 12] },
+        "seeding": { "by": "qualifiers" },
+        "points": [
+          { "from": 1, "to": 1, "points": 100 },
+          { "from": 2, "to": 2, "points": 75 },
+          { "from": 3, "to": 3, "points": 60 },
+          { "from": 4, "to": 4, "points": 45 },
+          { "from": 5, "to": 6, "points": 30 },
+          { "from": 7, "to": 8, "points": 15 },
+          { "from": 9, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 375000,
+        "realResult": { "winner": "toronto-ultra", "runnerUp": "atlanta-faze" },
+        "sources": ["https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"]
+      }
+    },
+    {
+      "stage": 2,
+      "qualifiers": {
+        "start": "2024-02-16",
+        "end": "2024-03-17",
+        "matchesPerTeam": 7,
+        "weeks": [
+          { "week": 1, "mapPool": "stage2" },
+          { "week": 2, "mapPool": "stage2" },
+          { "week": 3, "mapPool": "stage2" },
+          { "week": 4, "mapPool": "stage2" },
+          { "week": 5, "mapPool": "stage2" }
+        ]
+      },
+      "minor": null,
+      "major": {
+        "name": "Major II",
+        "start": "2024-03-21",
+        "end": "2024-03-24",
+        "city": "Fort Lauderdale",
+        "venue": "Broward County Convention Center",
+        "host": "miami-heretics",
+        "mapPool": "stage2",
+        "bestOf": 5,
+        "finalBestOf": 7,
+        "format": { "type": "double-elim", "winnersSeeds": [1, 2, 3, 4, 5, 6, 7, 8], "losersSeeds": [9, 10, 11, 12] },
+        "seeding": { "by": "qualifiers" },
+        "points": [
+          { "from": 1, "to": 1, "points": 100 },
+          { "from": 2, "to": 2, "points": 75 },
+          { "from": 3, "to": 3, "points": 60 },
+          { "from": 4, "to": 4, "points": 45 },
+          { "from": 5, "to": 6, "points": 30 },
+          { "from": 7, "to": 8, "points": 15 },
+          { "from": 9, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 375000,
+        "realResult": { "winner": "atlanta-faze", "runnerUp": "optic-texas" },
+        "sources": ["https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2"]
+      }
+    },
+    {
+      "stage": 3,
+      "qualifiers": {
+        "start": "2024-04-12",
+        "end": "2024-05-12",
+        "matchesPerTeam": 7,
+        "weeks": [
+          { "week": 1, "mapPool": "stage3" },
+          { "week": 2, "mapPool": "stage3" },
+          { "week": 3, "mapPool": "stage3" },
+          { "week": 4, "mapPool": "stage3" },
+          { "week": 5, "mapPool": "stage3" }
+        ]
+      },
+      "minor": null,
+      "major": {
+        "name": "Major III",
+        "start": "2024-05-16",
+        "end": "2024-05-19",
+        "city": "Toronto",
+        "venue": "Mattamy Athletic Centre",
+        "host": "toronto-ultra",
+        "mapPool": "stage3",
+        "bestOf": 5,
+        "finalBestOf": 7,
+        "format": { "type": "double-elim", "winnersSeeds": [1, 2, 3, 4, 5, 6, 7, 8], "losersSeeds": [9, 10, 11, 12] },
+        "seeding": { "by": "qualifiers" },
+        "points": [
+          { "from": 1, "to": 1, "points": 100 },
+          { "from": 2, "to": 2, "points": 75 },
+          { "from": 3, "to": 3, "points": 60 },
+          { "from": 4, "to": 4, "points": 45 },
+          { "from": 5, "to": 6, "points": 30 },
+          { "from": 7, "to": 8, "points": 15 },
+          { "from": 9, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 375000,
+        "realResult": { "winner": "optic-texas", "runnerUp": "toronto-ultra" },
+        "sources": ["https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3"]
+      }
+    },
+    {
+      "stage": 4,
+      "qualifiers": {
+        "start": "2024-05-24",
+        "end": "2024-06-16",
+        "matchesPerTeam": 7,
+        "weeks": [
+          { "week": 1, "mapPool": "stage3" },
+          { "week": 2, "mapPool": "stage3" },
+          { "week": 3, "mapPool": "stage3" },
+          { "week": 4, "mapPool": "stage3" }
+        ]
+      },
+      "minor": null,
+      "major": {
+        "name": "Major IV",
+        "start": "2024-06-27",
+        "end": "2024-06-30",
+        "city": "Burbank",
+        "mapPool": "stage3",
+        "bestOf": 5,
+        "finalBestOf": 7,
+        "format": { "type": "double-elim", "winnersSeeds": [1, 2, 3, 4, 5, 6, 7, 8], "losersSeeds": [9, 10, 11, 12] },
+        "seeding": { "by": "qualifiers" },
+        "points": [
+          { "from": 1, "to": 1, "points": 100 },
+          { "from": 2, "to": 2, "points": 75 },
+          { "from": 3, "to": 3, "points": 60 },
+          { "from": 4, "to": 4, "points": 45 },
+          { "from": 5, "to": 6, "points": 30 },
+          { "from": 7, "to": 8, "points": 15 },
+          { "from": 9, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 375000,
+        "realResult": { "winner": "ny-subliners", "runnerUp": "atlanta-faze" },
+        "sources": [
+          "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_4",
+          "https://liquipedia.net/callofduty/Call_of_Duty_League/Season_5/Stage_4/Major"
+        ]
+      }
+    }
+  ],
+  "championship": {
+    "name": "Championship",
+    "start": "2024-07-18",
+    "end": "2024-07-21",
+    "city": "Allen, TX",
+    "venue": "Credit Union of Texas Event Center",
+    "host": "optic-texas",
+    "mapPool": "stage3",
+    "bestOf": 5,
+    "finalBestOf": 9,
+    "format": { "type": "double-elim", "winnersSeeds": [1, 2, 3, 4, 5, 6, 7, 8], "losersSeeds": [] },
+    "seeding": { "by": "season-points" },
+    "points": [{ "from": 1, "to": 8, "points": 0 }],
+    "prizeUsd": 2000000,
+    "realResult": { "winner": "optic-texas", "runnerUp": "ny-subliners", "score": "5-1" },
+    "sources": [
+      "https://cod-esports.fandom.com/wiki/Call_of_Duty_League_Championship_2024",
+      "https://liquipedia.net/callofduty/Call_of_Duty_League/Season_5/Playoffs"
+    ]
+  },
+  "unverified": [
+    "Qualifier week dates for every stage (only start/end of each stage are known).",
+    "Tiebreaker order copied from 2025 Liquipedia tables; 2024 order not checked.",
+    "SnD round/bomb timers (90s/45s) are the 2026 values; MWIII values not checked.",
+    "Bo7 and Bo9 veto procedures (no official 2024 text found)."
+  ],
+  "sources": [
+    "https://liquipedia.net/callofduty/Call_of_Duty_League/Season_5",
+    "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season"
+  ]
+}

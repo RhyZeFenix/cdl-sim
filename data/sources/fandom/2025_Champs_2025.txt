@@ -1,0 +1,273 @@
+{{Call of Duty League Championship Navbox}}
+{{Tabs:Call of Duty League 2025}}
+{{Infobox Tournament
+|name=Call of Duty League Championship 2025
+|image=Call of Duty League Championship 2025.png
+|organizer=[[Activision]]
+|host=TOR
+|sponsor=
+|type=Offline
+|tier=Premier
+|region=International
+|country=Canada
+|location=Kitchener
+|venue=Kitchener Memorial Auditorium
+|prizepool=$ 2,000,000
+|platform=PC
+|game=Black Ops 6
+|mode=4v4
+|numberofteams=8
+|sdate=2025-06-26
+|edate=2025-06-29
+|web=https://callofdutyleague.com/
+|bracket=
+|streams={{stream|url=http://www.youtube.com/codleague/live|lang=en}}
+|linkstreams=yes
+|league=Call of Duty League Championship
+<!--Results-->
+|first=TEX
+|second=VAN
+|third=BOS
+|fourth=MIA
+}}{{TOCRWI|2}}
+
+The '''Call of Duty League Championship 2025''' is the playoffs portion of the global professional [[New To Call of Duty/Franchising|franchised]] Call of Duty league operated by [[Activision]] that decided the World Champions of the ''[[Black Ops 6]]'' season.
+
+==Overview==
+===Format===
+*Double Elimination
+*Best of 5 Series
+*Best of 9 Series for Grand Finals
+
+===Game Types and Maps===
+{{2025 Maps and Rules|v=4}}
+
+===Prize Pool===
+{{TournamentResults|prize=yes|prizeunit=USD|totalprize=2,000,000|prize_ref=
+|{{TournamentResults/Line|place=1 |prize=800000 |team=TEX |roster={{TeamRoster/Line|player=Shotzzy}}{{TeamRoster/Line|player=Dashy}}{{TeamRoster/Line|player=Huke}}{{TeamRoster/Line|player=Mercules}}{{TeamRoster/Line|player=Karma|role=c}}{{TeamRoster/Line|player=JP Krez|role=c}} }}
+|{{TournamentResults/Line|place=2 |prize=480000 |team=VAN |roster={{TeamRoster/Line|player=Abuzah}}{{TeamRoster/Line|player=04}}{{TeamRoster/Line|player=Nastie}}{{TeamRoster/Line|player=Neptune}}{{TeamRoster/Line|player=Rambo|role=c}} }}
+|{{TournamentResults/Line|place=3 |prize=320000 |team=BOS |roster={{TeamRoster/Line|player=Snoopy}}{{TeamRoster/Line|player=Cammy}}{{TeamRoster/Line|player=Owakening}}{{TeamRoster/Line|player=Purj}}{{TeamRoster/Line|player=Seany|role=c}}{{TeamRoster/Line|player=Magxck|role=c}} }}
+|{{TournamentResults/Line|place=4 |prize=160000 |team=MIA |roster={{TeamRoster/Line|player=MettalZ}}{{TeamRoster/Line|player=ReeaL}}{{TeamRoster/Line|player=RenKoR}}{{TeamRoster/Line|player=SupeR (Diego Escudero)}}{{TeamRoster/Line|player=MethodZ (Jorge Bancells)|role=c}}{{TeamRoster/Line|player=Sikotik|role=c}} }}
+|{{TournamentResults/Line|place=5-6 |prize=80000 |team=TOR |roster={{TeamRoster/Line|player=CleanX}}{{TeamRoster/Line|player=Insight}}{{TeamRoster/Line|player=Beans}}{{TeamRoster/Line|player=JoeDeceives}}{{TeamRoster/Line|player=Flux|role=c}}{{TeamRoster/Line|player=Joee|role=c}} }}
+|{{TournamentResults/Line|place=5-6 |prize=80000 |team=ATL |roster={{TeamRoster/Line|player=aBeZy}}{{TeamRoster/Line|player=Cellium}}{{TeamRoster/Line|player=Simp}}{{TeamRoster/Line|player=Drazah}}{{TeamRoster/Line|player=Crowder|role=c}}{{TeamRoster/Line|player=RJ|role=c}} }}
+|{{TournamentResults/Line|place=7-8 |prize=40000 |team=LAT |roster={{TeamRoster/Line|player=Ghosty}}{{TeamRoster/Line|player=Scrap}}{{TeamRoster/Line|player=HyDra}}{{TeamRoster/Line|player=Envoy}}{{TeamRoster/Line|player=ShAnE|role=c}}{{TeamRoster/Line|player=Sender|role=c}} }}
+|{{TournamentResults/Line|place=7-8 |prize=40000 |team=CAR |roster={{TeamRoster/Line|player=Gwinn}}{{TeamRoster/Line|player=TJHaLy}}{{TeamRoster/Line|player=SlasheR}}{{TeamRoster/Line|player=Wrecks}}{{TeamRoster/Line|player=Saintt|role=c}} }}
+}}
+
+===MVP===
+{{MVP|TEX|Mercules|Mercules|1.17|Event MVP}}
+
+===Broadcast Talent===
+{{Box|start|padding=1em}}
+====Casters====
+{{Talent/Line|eng|Miles Ross|Miles Ross|Caster}}
+{{Talent/Line|us|Thomas Ashworth|Chance (Thomas Ashworth)|Caster}}
+{{Talent/Line|us|Clint Evans|Maven|Caster}}
+{{Talent/Line|us|Joe DeLuca|MerK|Caster}}
+{{Talent/Line|us|Alan Donofrio|IHOLDSHIFT|Caster}}
+{{Talent/Line|us|Jeremy Astacio|StuDyy|Caster}}
+{{Box|break|padding=1em}}
+====Hosts====
+{{Talent/Line|us|Chris Puckett|Puckett|Desk Host}}
+{{Talent/Line|us|Guy Spencer|Blaze|Stage Host}}
+{{Talent/Line|eng|Lottie Van-Praag|Lottie Van-Praag|Host}}
+{{Box|break|padding=1em}}
+====Analysts====
+{{Talent/Line|us|Rosalie Parker|Allycxt|Analyst}}
+{{Talent/Line|us|Anthony Wheeler|NAMELESS|Analyst}}
+{{Box|end|padding=1em}}
+
+==Participants==
+{{RostersStart|maxteams=4
+}}
+{{Box|start}}
+{{TeamRoster|team=LAT
+|seed=[[Call of Duty League/2025 Season#Results|CDL Points #1]]
+|{{TeamRoster/Line|player=Ghosty |flag=us }}
+|{{TeamRoster/Line|player=Scrap |flag=us }}
+|{{TeamRoster/Line|player=HyDra |flag=fr }}
+|{{TeamRoster/Line|player=Envoy |flag=us }}
+|{{TeamRoster/Line|player=ShAnE |flag=eng |role=c}}
+|{{TeamRoster/Line|player=Sender |flag=us |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=ATL
+|seed=[[Call of Duty League/2025 Season#Results|CDL Points #2]]
+|{{TeamRoster/Line|player=aBeZy |flag=us }}
+|{{TeamRoster/Line|player=Cellium |flag=us }}
+|{{TeamRoster/Line|player=Simp |flag=us }}
+|{{TeamRoster/Line|player=Drazah |flag=us }}
+|{{TeamRoster/Line|player=Crowder |flag=us |role=c}}
+|{{TeamRoster/Line|player=RJ |flag=us |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=TOR
+|seed=[[Call of Duty League/2025 Season#Results|CDL Points #3]]
+|{{TeamRoster/Line|player=CleanX |flag=dk }}
+|{{TeamRoster/Line|player=Insight |flag=eng }}
+|{{TeamRoster/Line|player=Beans |flag=eng }}
+|{{TeamRoster/Line|player=JoeDeceives |flag=us }}
+|{{TeamRoster/Line|player=Flux |flag=eng |role=c}}
+|{{TeamRoster/Line|player=Joee |flag=eng |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=VAN
+|seed=[[Call of Duty League/2025 Season#Results|CDL Points #4]]
+|{{TeamRoster/Line|player=Abuzah |flag=be }}
+|{{TeamRoster/Line|player=04 |flag=us }}
+|{{TeamRoster/Line|player=Nastie |flag=eng }}
+|{{TeamRoster/Line|player=Neptune |flag=us }}
+|{{TeamRoster/Line|player=Rambo |flag=ca |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=MIA
+|seed=[[Call of Duty League/2025 Season#Results|CDL Points #5]]
+|{{TeamRoster/Line|player=MettalZ |flag=es }}
+|{{TeamRoster/Line|player=ReeaL |flag=es }}
+|{{TeamRoster/Line|player=RenKoR |flag=es }}
+|{{TeamRoster/Line|player=SupeR (Diego Escudero) |flag=es }}
+|{{TeamRoster/Line|player=MethodZ (Jorge Bancells) |flag=es |role=c}}
+|{{TeamRoster/Line|player=Sikotik |flag=es |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=CAR
+|seed=[[Call of Duty League/2025 Season#Results|CDL Points #6]]
+|{{TeamRoster/Line|player=Gwinn |flag=us }}
+|{{TeamRoster/Line|player=TJHaLy |flag=us }}
+|{{TeamRoster/Line|player=SlasheR |flag=us }}
+|{{TeamRoster/Line|player=Wrecks |flag=us }}
+|{{TeamRoster/Line|player=Saintt |flag=us |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=TEX
+|seed=[[Call of Duty League/2025 Season#Results|CDL Points #7]]
+|{{TeamRoster/Line|player=Shotzzy |flag=us }}
+|{{TeamRoster/Line|player=Dashy |flag=ca }}
+|{{TeamRoster/Line|player=Huke |flag=us }}
+|{{TeamRoster/Line|player=Mercules |flag=us }}
+|{{TeamRoster/Line|player=Karma |flag=ca |role=c}}
+|{{TeamRoster/Line|player=JP Krez |flag=us |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=BOS
+|seed=[[Call of Duty League/2025 Season#Results|CDL Points #8]]
+|{{TeamRoster/Line|player=Snoopy |flag=mx }}
+|{{TeamRoster/Line|player=Cammy |flag=sct }}
+|{{TeamRoster/Line|player=Owakening |flag=us }}
+|{{TeamRoster/Line|player=Purj |flag=us }}
+|{{TeamRoster/Line|player=Seany |flag=sct |role=c}}
+|{{TeamRoster/Line|player=Magxck |flag=eng |role=c}}
+}}
+{{Box|end}}
+{{RostersEnd}}
+
+==Results==
+{{Bracket|8DE|cargo=yes|R1_title=WR1 / LR1|R2_title=WR2 / LR2|R3_title=LR3|R4_title=WF / LF|R5_title=GF
+|R1M1_cargomatch=Winners Bracket_2
+|R1M2_cargomatch=Winners Bracket_1
+|R1M3_cargomatch=Winners Bracket_4
+|R1M4_cargomatch=Winners Bracket_3
+|R1M5_cargomatch=Losers Bracket_1
+|R1M6_cargomatch=Losers Bracket_2
+
+|R2M1_cargomatch=Winners Bracket_5
+|R2M2_cargomatch=Winners Bracket_6
+|R2M3_cargomatch=Losers Bracket_4
+|R2M4_cargomatch=Losers Bracket_3
+
+|R3M3_cargomatch=Losers Bracket_5
+
+|R4M1_cargomatch=Winners Bracket_7
+|R4M2_cargomatch=Losers Bracket_6
+
+|R5M1_cargomatch=Grand Finals_1
+}}
+
+==Players==
+{{Distribution|regions=be;ca;dk;eng;fr;mx;sa;sct;es;us
+|format=country
+|rounds=T8;T6;4th;3rd;2nd;1st
+|T8=1;1;1;3;1;1;1;1;4;18
+|T6=1;1;1;3;;1;1;1;4;11
+|4th=1;1;;1;;1;1;1;4;6
+|3rd=1;1;;1;;1;1;1;;6
+|2nd=1;1;;1;;;1;;;4
+|1st=;1;;;;;1;;;2
+}}
+:''Players who played at least one game are listed here. Country of birth used.
+
+==Schedule==
+{{AutoMatches|This=}}
+
+==VODs==
+{{MatchDetails|This=
+|matchfields=pbp,color,Reddit,interview,with,VODs
+}}
+
+==Streams==
+=== Official Streams ===
+{{TournamentStreams/Start}}
+{{TournamentStreams|Call of Duty League|lang=en|links= {{TournamentStreams/Link|https://www.youtube.com/@CODLeague/live|YouTube}} }}
+{{TournamentStreams/End}}
+
+===  Costreamers ===
+{{TournamentStreams/Start}}
+{{TournamentStreams|{{player|ZooMaa|flag=us|name=Thomas Paparatto}}|lang=en|links={{TournamentStreams/Link|https://www.youtube.com/@ZooMaa/live|YouTube}} }}
+{{TournamentStreams|{{player|Scump|flag=us|name=Seth Abner}}|lang=en|links={{TournamentStreams/Link|https://www.youtube.com/@Scumpii/live|YouTube}} }}
+{{TournamentStreams|{{player|Octane|flag=us|name=Sam Larew}}|lang=en|links={{TournamentStreams/Link|https://www.youtube.com/@OctaneSam/live|YouTube}} }}
+{{TournamentStreams|{{player|Clayster|flag=us|name=James Eubanks}}|lang=en|links={{TournamentStreams/Link|https://www.youtube.com/@Clayster/live|YouTube}} }}
+{{TournamentStreams|{{player|Priestahh|flag=us|name=Preston Greiner}}|lang=en|links={{TournamentStreams/Link|https://www.youtube.com/@Priestah/live|YouTube}} }}
+{{TournamentStreams|{{player|Parasite|flag=us|name=Chris Duarte}}|lang=en|links={{TournamentStreams/Link|https://www.youtube.com/@ParasiteCD/live|YouTube}} }}
+{{TournamentStreams|{{player|DREAL|flag=eng|name=Ehsan Javed}}|lang=en|links={{TournamentStreams/Link|https://www.youtube.com/@DREAL_JE/live|YouTube}} }}
+{{TournamentStreams|{{player|Toronto Ultra|flag=ca|name=}}|lang=en|links={{TournamentStreams/Link|https://www.youtube.com/@TorontoUltra/live|YouTube}} }}
+{{TournamentStreams|{{player|Ben Nissim|flag=us|name=}}|lang=en|links={{TournamentStreams/Link|https://www.youtube.com/@benjnissim/live|YouTube}} }}
+{{TournamentStreams|{{player|Breaking Point|flag=en|name=}}|lang=en|links={{TournamentStreams/Link|https://www.youtube.com/@BreakingPointGG/live|YouTube}} }}
+{{TournamentStreams|{{player|Jake Maverik|flag=us|name=}}|lang=en|links={{TournamentStreams/Link|https://www.youtube.com/@JMaverik/live|YouTube}} }}
+{{TournamentStreams|{{player|MysTK|flag=fr|name=Sacha Ragenard}}|lang=fr|links={{TournamentStreams/Link|https://www.youtube.com/@MysTKv/live|YouTube}} }}
+{{TournamentStreams/End}}
+
+==Media==
+{{TournamentMedia|names=Pre Event,Mid Event,Post Event|dates=2025-06-01,2025-06-26,2025-06-30}}
+
+== Viewership Statistics ==
+Data sourced from [https://escharts.com/tournaments/cod/call-duty-league-2025-playoffs Esports Charts].
+{|class="wikitable"
+! colspan=2 | Viewers stats
+|-
+! Peak viewers
+|353 525 
+|-
+! colspan=2 | Other stats
+|-
+! Hours Watched
+|3 787 435 
+|-
+! Avg Concurrent Viewers
+|158 914 
+|-
+! colspan=2 | Popular match
+|-
+! by peak viewers
+|TEX vs VAN
+|}
+
+==Location==
+{| class="wikitable"
+|-
+|align = 'center' |{{flag|ca}} Kitchener, Canada
+|-
+|align = 'center' | [https://en.wikipedia.org/wiki/Kitchener_Memorial_Auditorium_Complex Kitchener Memorial Auditorium]
+|-
+|align = 'center' | Full Capacity: Up to 8,462
+|-
+|align = 'center' | [[File:Kitchener Memorial Auditorium.jpg|250px]]
+|-
+|align = 'center' | 400 East Ave, Kitchener, ON N2H 0B8, Canada
+|-
+|align = 'center' | Photo by Rwharrison20 on [https://commons.wikimedia.org/wiki/File:The_Aud.jpg Wikipedia]
+|}
+
+==External links==
+
+==References==
+<references />

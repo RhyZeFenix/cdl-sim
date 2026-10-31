@@ -1,0 +1,252 @@
+{{Tabs:Call of Duty League 2025}}
+{{Infobox Tournament
+|name=Call of Duty League 2025 - Major 1 Madrid
+|image=CDL 2025 Major 1.png
+|organizer=[[Activision]]
+|host=TOR
+|sponsor=
+|type=Offline
+|tier=Premier
+|region=International
+|country=Spain
+|location=Madrid
+|venue=Caja Mágica
+|prizepool=$ 365,000
+|platform=PC
+|game=Black Ops 6
+|mode=4v4
+|numberofteams=12
+|sdate=2025-01-30
+|edate=2025-02-02
+|web=https://www.callofdutyleague.com/
+|bracket=
+|streams={{stream|url=https://www.youtube.com/codleague/live|lang=en}}
+|linkstreams=<!--yes-->
+|league=Call of Duty League 2025
+<!--Results-->
+|first=ATL
+|second=LAT
+|third=MIA
+|fourth=CAR
+}}{{TOCRWI|2}}
+
+==Overview==
+===Format===
+*All teams attend
+*Seeding determined by [[Call of Duty League/2025 Season/Major 1/Qualifiers|Qualifier]] matches
+*Double Elimination
+*Best of 5 Series
+*Best of 7 Series in Grand Finals
+
+===Game Types and Maps===
+{{2025 Maps and Rules|v=2}}
+
+===Prize Pool===
+{{TournamentResults|prize=yes|prizeunit=USD|totalprize=365000|prize_ref=|pointstitle=[[Call of Duty League/2025 Season#Results|CDL Points]]|points=yes
+|{{TournamentResults/Line|place=1 |prize=150000 |points=100 |team=ATL |roster={{TeamRoster/Line|player=aBeZy}}{{TeamRoster/Line|player=Cellium}}{{TeamRoster/Line|player=Simp}}{{TeamRoster/Line|player=Drazah}}{{TeamRoster/Line|player=Crowder|role=c}}{{TeamRoster/Line|player=RJ|role=c}} }}
+|{{TournamentResults/Line|place=2 |prize=90000 |points=75 |team=LAT |roster={{TeamRoster/Line|player=Ghosty}}{{TeamRoster/Line|player=Scrap}}{{TeamRoster/Line|player=HyDra}}{{TeamRoster/Line|player=Envoy}}{{TeamRoster/Line|player=ShAnE|role=c}}{{TeamRoster/Line|player=Sender|role=c}} }}
+|{{TournamentResults/Line|place=3 |prize=50000 |points=60 |team=MIA |roster={{TeamRoster/Line|player=Lucky (Alejandro López)}}{{TeamRoster/Line|player=MettalZ}}{{TeamRoster/Line|player=ReeaL}}{{TeamRoster/Line|player=RenKoR}}{{TeamRoster/Line|player=MethodZ (Jorge Bancells)|role=c}}{{TeamRoster/Line|player=Sikotik|role=c}} }}
+|{{TournamentResults/Line|place=4 |prize=30000 |points=45 |team=CAR |roster={{TeamRoster/Line|player=Gwinn}}{{TeamRoster/Line|player=TJHaLy}}{{TeamRoster/Line|player=SlasheR}}{{TeamRoster/Line|player=Vivid}}{{TeamRoster/Line|player=Saintt|role=c}} }}
+|{{TournamentResults/Line|place=5-6 |prize=15000 |points=30 |team=TOR |roster={{TeamRoster/Line|player=CleanX}}{{TeamRoster/Line|player=Insight}}{{TeamRoster/Line|player=Beans}}{{TeamRoster/Line|player=JoeDeceives}}{{TeamRoster/Line|player=Flux|role=c}}{{TeamRoster/Line|player=Joee|role=c}} }}
+|{{TournamentResults/Line|place=5-6 |prize=15000 |points=30 |team=MIN |roster={{TeamRoster/Line|player=Nero}}{{TeamRoster/Line|player=Gio}}{{TeamRoster/Line|player=Estreal}}{{TeamRoster/Line|player=PaulEhx}}{{TeamRoster/Line|player=Loony|role=c}}{{TeamRoster/Line|player=Alexdotzip|role=c}} }}
+|{{TournamentResults/Line|place=7-8 |prize=7500 |points=15 |team=TEX |roster={{TeamRoster/Line|player=Shotzzy}}{{TeamRoster/Line|player=Dashy}}{{TeamRoster/Line|player=Kenny}}{{TeamRoster/Line|player=Huke}}{{TeamRoster/Line|player=Karma|role=c}}{{TeamRoster/Line|player=JP Krez|role=c}} }}
+|{{TournamentResults/Line|place=7-8 |prize=7500|points=15 |team=CNY |roster={{TeamRoster/Line|player=Sib}}{{TeamRoster/Line|player=Attach}}{{TeamRoster/Line|player=Kremp}}{{TeamRoster/Line|player=Mack}}{{TeamRoster/Line|player=Accuracy|role=c}}{{TeamRoster/Line|player=Arian|role=c}} }}
+|{{TournamentResults/Line|place=9-12 |prize= |points=0 |team=LAM |roster={{TeamRoster/Line|player=Lynz}}{{TeamRoster/Line|player=KiSMET}}{{TeamRoster/Line|player=Skyz}}{{TeamRoster/Line|player=Priestahh}}{{TeamRoster/Line|player=DREAL|role=c}}{{TeamRoster/Line|player=MarkyB|role=c}} }}
+|{{TournamentResults/Line|place=9-12 |prize= |points=0 |team=LVF |roster={{TeamRoster/Line|player=Roxas}}{{TeamRoster/Line|player=Exnid}}{{TeamRoster/Line|player=d7oom}}{{TeamRoster/Line|player=KiinG}}{{TeamRoster/Line|player=LewTee|role=c}}{{TeamRoster/Line|player=Clayster|role=c}} }}
+|{{TournamentResults/Line|place=9-12 |prize= |points=0 |team=VAN |roster={{TeamRoster/Line|player=Abuzah}}{{TeamRoster/Line|player=04}}{{TeamRoster/Line|player=Hicksy}}{{TeamRoster/Line|player=Nastie}}{{TeamRoster/Line|player=Rambo|role=c}} }}
+|{{TournamentResults/Line|place=9-12 |prize= |points=0 |team=BOS |roster={{TeamRoster/Line|player=Snoopy}}{{TeamRoster/Line|player=Cammy}}{{TeamRoster/Line|player=Owakening}}{{TeamRoster/Line|player=Purj}}{{TeamRoster/Line|player=Seany|role=c}}{{TeamRoster/Line|player=Magxck|role=c}} }}
+}}
+
+===MVP===
+{{MVP|ATL|Simp|Simp|1.07|Event MVP}}
+
+===Broadcast Talent===
+{{Box|start|padding=1em}}
+====Casters====
+{{Talent/Line|eng|Miles Ross|Miles Ross|Caster}}
+{{Talent/Line|us|Thomas Ashworth|Chance (Thomas Ashworth)|Caster}}
+{{Talent/Line|us|Clint Evans|Maven|Caster}}
+{{Talent/Line|us|Joe DeLuca|MerK|Caster}}
+{{Talent/Line|us|Alan Donofrio|IHOLDSHIFT|Caster}}
+{{Talent/Line|us|Jeremy Astacio|StuDyy|Caster}}
+{{Box|break|padding=1em}}
+====Hosts====
+{{Talent/Line|us|Chris Puckett|Puckett|Desk Host}}
+{{Talent/Line|es|Ulises Prieto|uLISES|Stage Host}}
+{{Box|break|padding=1em}}
+
+====Analysts====
+{{Talent/Line|us|Rosalie Parker|Rosalie|Analyst}}
+{{Talent/Line|us|Anthony Wheeler|NAMELESS|Analyst}}
+*{{flag|eng}} Arran "[[TacticalRab]]" Francis
+{{Box|end|padding=1em}}
+
+==Participants==
+{{RostersStart|maxteams=6
+}}
+{{Box|start}}
+{{TeamRoster|team=TEX
+|seed=[[Call of Duty League/2025 Season/Major 1/Qualifiers|Qualifiers #1]]
+|{{TeamRoster/Line|player=Shotzzy |flag=us }}
+|{{TeamRoster/Line|player=Dashy |flag=ca }}
+|{{TeamRoster/Line|player=Kenny |flag=us }}
+|{{TeamRoster/Line|player=Huke |flag=us }}
+|{{TeamRoster/Line|player=Karma |flag=ca |role=c}}
+|{{TeamRoster/Line|player=JP Krez |flag=us |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=TOR
+|seed=[[Call of Duty League/2025 Season/Major 1/Qualifiers|Qualifiers #2]]
+|{{TeamRoster/Line|player=CleanX |flag=dk }}
+|{{TeamRoster/Line|player=Insight |flag=eng }}
+|{{TeamRoster/Line|player=Beans |flag=eng }}
+|{{TeamRoster/Line|player=JoeDeceives |flag=us }}
+|{{TeamRoster/Line|player=Flux |flag=eng |role=c}}
+|{{TeamRoster/Line|player=Joee |flag=eng |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=BOS
+|seed=[[Call of Duty League/2025 Season/Major 1/Qualifiers|Qualifiers #3]]
+|{{TeamRoster/Line|player=Snoopy |flag=mx }}
+|{{TeamRoster/Line|player=Cammy |flag=sct }}
+|{{TeamRoster/Line|player=Owakening |flag=us }}
+|{{TeamRoster/Line|player=Purj |flag=us }}
+|{{TeamRoster/Line|player=Seany |flag=sct |role=c}}
+|{{TeamRoster/Line|player=Magxck |flag=eng |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=CAR
+|seed=[[Call of Duty League/2025 Season/Major 1/Qualifiers|Qualifiers #4]]
+|{{TeamRoster/Line|player=Gwinn |flag=us }}
+|{{TeamRoster/Line|player=TJHaLy |flag=us }}
+|{{TeamRoster/Line|player=SlasheR |flag=us }}
+|{{TeamRoster/Line|player=Vivid |flag=us }}
+|{{TeamRoster/Line|player=Saintt |flag=us |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=LAT
+|seed=[[Call of Duty League/2025 Season/Major 1/Qualifiers|Qualifiers #5]]
+|{{TeamRoster/Line|player=Ghosty |flag=us }}
+|{{TeamRoster/Line|player=Scrap |flag=us }}
+|{{TeamRoster/Line|player=HyDra |flag=fr }}
+|{{TeamRoster/Line|player=Envoy |flag=us }}
+|{{TeamRoster/Line|player=ShAnE |flag=eng |role=c}}
+|{{TeamRoster/Line|player=Sender |flag=us |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=ATL
+|seed=[[Call of Duty League/2025 Season/Major 1/Qualifiers|Qualifiers #6]]
+|{{TeamRoster/Line|player=aBeZy |flag=us }}
+|{{TeamRoster/Line|player=Cellium |flag=us }}
+|{{TeamRoster/Line|player=Simp |flag=us }}
+|{{TeamRoster/Line|player=Drazah |flag=us }}
+|{{TeamRoster/Line|player=Crowder |flag=us |role=c}}
+|{{TeamRoster/Line|player=RJ |flag=us |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=VAN
+|seed=[[Call of Duty League/2025 Season/Major 1/Qualifiers|Qualifiers #7]]
+|{{TeamRoster/Line|player=Abuzah |flag=be }}
+|{{TeamRoster/Line|player=04 |flag=us }}
+|{{TeamRoster/Line|player=Hicksy |flag=eng }}
+|{{TeamRoster/Line|player=Nastie |flag=eng }}
+|{{TeamRoster/Line|player=Rambo |flag=ca |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=MIA
+|seed=[[Call of Duty League/2025 Season/Major 1/Qualifiers|Qualifiers #8]]
+|{{TeamRoster/Line|player=Lucky (Alejandro López) |flag=es }}
+|{{TeamRoster/Line|player=MettalZ |flag=es }}
+|{{TeamRoster/Line|player=ReeaL |flag=es }}
+|{{TeamRoster/Line|player=RenKoR |flag=es }}
+|{{TeamRoster/Line|player=MethodZ (Jorge Bancells) |flag=es |role=c}}
+|{{TeamRoster/Line|player=Sikotik |flag=es |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=LAM
+|seed=[[Call of Duty League/2025 Season/Major 1/Qualifiers|Qualifiers #9]]
+|{{TeamRoster/Line|player=Lynz |flag=fr }}
+|{{TeamRoster/Line|player=KiSMET |flag=us }}
+|{{TeamRoster/Line|player=Skyz |flag=us }}
+|{{TeamRoster/Line|player=Priestahh |flag=us }}
+|{{TeamRoster/Line|player=DREAL |flag=eng |role=c}}
+|{{TeamRoster/Line|player=MarkyB |flag=sct |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=MIN
+|seed=[[Call of Duty League/2025 Season/Major 1/Qualifiers|Qualifiers #10]]
+|{{TeamRoster/Line|player=Nero |flag=us }}
+|{{TeamRoster/Line|player=Gio |flag=us }}
+|{{TeamRoster/Line|player=Estreal |flag=us }}
+|{{TeamRoster/Line|player=PaulEhx |flag=us }}
+|{{TeamRoster/Line|player=Loony |flag=us |role=c}}
+|{{TeamRoster/Line|player=Alexdotzip |flag=us |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=CNY
+|seed=[[Call of Duty League/2025 Season/Major 1/Qualifiers|Qualifiers #11]]
+|{{TeamRoster/Line|player=Sib |flag=us }}
+|{{TeamRoster/Line|player=Attach |flag=us }}
+|{{TeamRoster/Line|player=Kremp |flag=us }}
+|{{TeamRoster/Line|player=Mack |flag=us }}
+|{{TeamRoster/Line|player=Accuracy |flag=us |role=c}}
+|{{TeamRoster/Line|player=Arian |flag=eng |role=c}}
+}}
+{{Box|break}}
+{{TeamRoster|team=LVF
+|seed=[[Call of Duty League/2025 Season/Major 1/Qualifiers|Qualifiers #12]]
+|{{TeamRoster/Line|player=Roxas |flag=sa }}
+|{{TeamRoster/Line|player=Exnid |flag=sa }}
+|{{TeamRoster/Line|player=d7oom |flag=sa }}
+|{{TeamRoster/Line|player=KiinG |flag=sa }}
+|{{TeamRoster/Line|player=LewTee |flag=eng |role=c}}
+|{{TeamRoster/Line|player=Clayster |flag=us |role=c}}
+}}
+{{Box|end}}
+{{RostersEnd}}
+
+==Results==
+{{Bracket|8DE4LSeeds|cargo=yes|R1_title=WR1 / LR1|R2_title=LR2|R3_title=WR2 / LR3|R4_title=LR4|R5_title=WF / LF|R6_title=Grand Final
+|R1M1_cargomatch=Winners Bracket_4
+|R1M2_cargomatch=Winners Bracket_3
+|R1M3_cargomatch=Winners Bracket_2
+|R1M4_cargomatch=Winners Bracket_1
+|R1M5_cargomatch=Losers Bracket_3
+|R1M6_cargomatch=Losers Bracket_1
+|R1M7_cargomatch=Losers Bracket_2
+|R1M8_cargomatch=Losers Bracket_4
+
+|R2M5_cargomatch=Losers Bracket_5
+|R2M6_cargomatch=Losers Bracket_6
+
+|R3M1_cargomatch=Winners Bracket_5
+|R3M2_cargomatch=Winners Bracket_6
+|R3M3_cargomatch=Losers Bracket_8
+|R3M4_cargomatch=Losers Bracket_7
+ 
+|R4M3_cargomatch=Losers Bracket_9
+
+|R5M1_cargomatch=Winners Bracket_7
+|R5M2_cargomatch=Losers Bracket_10
+
+|R6M1_cargomatch=Grand Finals_1
+}}
+
+==Schedule==
+{{AutoMatches|This=}}
+
+==VODs==
+{{MatchDetails|This=
+|matchfields=pbp,color,Reddit,interview,with,VODs
+}}
+
+==Streams==
+*{{flag|en}} [https://www.youtube.com/codleague/live YouTube - Call of Duty League]
+
+==Media==
+{{TournamentMedia}}
+
+==External links==
+
+==References==
+<references />

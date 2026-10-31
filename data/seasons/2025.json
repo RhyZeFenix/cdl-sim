@@ -1,0 +1,301 @@
+{
+  "id": "2025",
+  "label": "CDL 2025 — Black Ops 6",
+  "game": "Black Ops 6",
+  "cdlSeason": 6,
+  "thirdMode": "control",
+  "teams": [
+    { "id": "atlanta-faze", "name": "Atlanta FaZe", "abbr": "ATL" },
+    { "id": "boston-breach", "name": "Boston Breach", "abbr": "BOS" },
+    { "id": "carolina-royal-ravens", "name": "Carolina Royal Ravens", "abbr": "CAR" },
+    { "id": "cloud9-new-york", "name": "Cloud9 New York", "abbr": "C9NY" },
+    { "id": "la-guerrillas-m8", "name": "Los Angeles Guerrillas M8", "abbr": "LAG" },
+    { "id": "la-thieves", "name": "Los Angeles Thieves", "abbr": "LAT" },
+    { "id": "miami-heretics", "name": "Miami Heretics", "abbr": "MIA" },
+    { "id": "minnesota-rokkr", "name": "Minnesota RØKKR", "abbr": "MIN" },
+    { "id": "optic-texas", "name": "OpTic Texas", "abbr": "OTX" },
+    { "id": "toronto-ultra", "name": "Toronto Ultra", "abbr": "TOR" },
+    { "id": "vancouver-surge", "name": "Vancouver Surge", "abbr": "VAN", "formerly": "Seattle Surge" },
+    { "id": "vegas-falcons", "name": "Vegas Falcons", "abbr": "LVF", "formerly": "Las Vegas Legion" }
+  ],
+  "modeSettings": {
+    "hp": { "target": 250, "hillSeconds": 60 },
+    "snd": { "roundsToWin": 6, "roundSeconds": 90, "bombSeconds": 45 },
+    "control": { "roundsToWin": 3, "livesPerTeam": 30 }
+  },
+  "seriesFormats": {
+    "bo5": ["hp", "snd", "third", "hp", "snd"],
+    "bo7": ["hp", "snd", "third", "hp", "snd", "third", "snd"],
+    "bo9": ["hp", "snd", "third", "hp", "snd", "third", "snd", "hp", "snd"]
+  },
+  "veto": { "bo5": "cdl-classic-bo5", "bo7": "cdl-classic-bo7", "bo9": "cdl-classic-bo9" },
+  "points": { "qualifierWin": 10 },
+  "tiebreakers": ["seriesWins", "mapDiff", "h2hSeries", "seriesWinPct", "mapsLost"],
+  "mapPools": [
+    {
+      "id": "s1-early",
+      "label": "Stage I weeks 1–2",
+      "hp": ["Protocol", "Red Card", "Rewind", "Skyline", "Vault"],
+      "snd": ["Protocol", "Red Card", "Rewind", "Skyline", "Vault"],
+      "third": ["Protocol", "Vault"],
+      "note": "Only two Control maps: one ban, remaining map is played."
+    },
+    {
+      "id": "s1-minor",
+      "label": "Stage I Minor",
+      "hp": ["Hacienda", "Protocol", "Red Card", "Skyline", "Vault"],
+      "snd": ["Hacienda", "Protocol", "Red Card", "Skyline", "Vault"],
+      "third": ["Protocol", "Vault"],
+      "note": "Hacienda was in for HP/SnD but not yet Control (maps played at the Minor)."
+    },
+    {
+      "id": "s1-late",
+      "label": "Stage I week 3 → Stage II",
+      "hp": ["Hacienda", "Protocol", "Red Card", "Skyline", "Vault"],
+      "snd": ["Hacienda", "Protocol", "Red Card", "Skyline", "Vault"],
+      "third": ["Hacienda", "Protocol", "Vault"],
+      "note": "Rewind out, Hacienda in."
+    },
+    {
+      "id": "s3",
+      "label": "Stage III",
+      "hp": ["Hacienda", "Protocol", "Red Card", "Skyline", "Vault"],
+      "snd": ["Dealership", "Hacienda", "Protocol", "Red Card", "Rewind"],
+      "third": ["Hacienda", "Protocol", "Vault"],
+      "note": "SnD: Vault and Skyline out, Dealership and Rewind in."
+    },
+    {
+      "id": "s4",
+      "label": "Stage IV → Champs",
+      "hp": ["Hacienda", "Red Card", "Rewind", "Skyline", "Vault"],
+      "snd": ["Dealership", "Hacienda", "Protocol", "Red Card", "Rewind"],
+      "third": ["Hacienda", "Protocol", "Vault"],
+      "note": "HP: Protocol out, Rewind back. Matches maps played at Champs."
+    }
+  ],
+  "stages": [
+    {
+      "stage": 1,
+      "qualifiers": {
+        "start": "2024-12-06",
+        "end": "2025-01-26",
+        "matchesPerTeam": 7,
+        "weeks": [
+          { "week": 1, "start": "2024-12-06", "end": "2024-12-08", "mapPool": "s1-early" },
+          { "week": 2, "start": "2024-12-13", "end": "2024-12-15", "mapPool": "s1-early" },
+          { "week": 3, "start": "2025-01-17", "end": "2025-01-19", "mapPool": "s1-late" },
+          { "week": 4, "start": "2025-01-24", "end": "2025-01-26", "mapPool": "s1-late" }
+        ]
+      },
+      "minor": {
+        "name": "Minor I",
+        "start": "2025-01-10",
+        "end": "2025-01-12",
+        "mapPool": "s1-minor",
+        "bestOf": 5,
+        "finalBestOf": 5,
+        "format": { "type": "single-elim", "size": 12, "byes": 4 },
+        "seeding": { "by": "qualifiers-after-week", "week": 2 },
+        "points": [
+          { "from": 1, "to": 1, "points": 30 },
+          { "from": 2, "to": 2, "points": 20 },
+          { "from": 3, "to": 4, "points": 10 },
+          { "from": 5, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 20000,
+        "sources": ["https://liquipedia.net/callofduty/Call_of_Duty_League/Season_6/Stage_1/Minor"]
+      },
+      "major": {
+        "name": "Major I",
+        "start": "2025-01-30",
+        "end": "2025-02-02",
+        "city": "Madrid",
+        "venue": "Caja Mágica",
+        "host": "toronto-ultra",
+        "mapPool": "s1-late",
+        "bestOf": 5,
+        "finalBestOf": 7,
+        "format": { "type": "double-elim", "winnersSeeds": [1, 2, 3, 4, 5, 6, 7, 8], "losersSeeds": [9, 10, 11, 12] },
+        "seeding": { "by": "qualifiers" },
+        "points": [
+          { "from": 1, "to": 1, "points": 100 },
+          { "from": 2, "to": 2, "points": 75 },
+          { "from": 3, "to": 3, "points": 60 },
+          { "from": 4, "to": 4, "points": 45 },
+          { "from": 5, "to": 6, "points": 30 },
+          { "from": 7, "to": 8, "points": 15 },
+          { "from": 9, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 375000,
+        "realResult": { "winner": "atlanta-faze", "runnerUp": "la-thieves" },
+        "sources": [
+          "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1",
+          "https://liquipedia.net/callofduty/Call_of_Duty_League/Season_6/Stage_1/Major"
+        ]
+      }
+    },
+    {
+      "stage": 2,
+      "qualifiers": {
+        "start": "2025-02-14",
+        "end": "2025-03-16",
+        "matchesPerTeam": 7,
+        "weeks": [
+          { "week": 1, "mapPool": "s1-late" },
+          { "week": 2, "mapPool": "s1-late" },
+          { "week": 3, "mapPool": "s1-late" },
+          { "week": 4, "mapPool": "s1-late" }
+        ]
+      },
+      "minor": {
+        "name": "Minor II",
+        "start": "2025-02-27",
+        "end": "2025-03-02",
+        "mapPool": "s1-late",
+        "bestOf": 5,
+        "finalBestOf": 7,
+        "format": { "type": "single-elim", "size": 12, "byes": 4 },
+        "seeding": { "by": "points-after-stage", "stage": 1 },
+        "points": [
+          { "from": 1, "to": 1, "points": 30 },
+          { "from": 2, "to": 2, "points": 20 },
+          { "from": 3, "to": 4, "points": 10 },
+          { "from": 5, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 20000,
+        "sources": ["https://liquipedia.net/callofduty/Call_of_Duty_League/Season_6/Stage_2/Minor"]
+      },
+      "major": {
+        "name": "Major II",
+        "start": "2025-03-20",
+        "end": "2025-03-23",
+        "city": "Allen, TX",
+        "venue": "Credit Union of Texas Event Center",
+        "host": "optic-texas",
+        "mapPool": "s1-late",
+        "bestOf": 5,
+        "finalBestOf": 7,
+        "format": { "type": "double-elim", "winnersSeeds": [1, 2, 3, 4, 5, 6, 7, 8], "losersSeeds": [9, 10, 11, 12] },
+        "seeding": { "by": "qualifiers" },
+        "points": [
+          { "from": 1, "to": 1, "points": 100 },
+          { "from": 2, "to": 2, "points": 75 },
+          { "from": 3, "to": 3, "points": 60 },
+          { "from": 4, "to": 4, "points": 45 },
+          { "from": 5, "to": 6, "points": 30 },
+          { "from": 7, "to": 8, "points": 15 },
+          { "from": 9, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 375000,
+        "realResult": { "winner": "atlanta-faze", "runnerUp": "vancouver-surge" },
+        "sources": ["https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_2"]
+      }
+    },
+    {
+      "stage": 3,
+      "qualifiers": {
+        "start": "2025-04-04",
+        "end": "2025-04-20",
+        "matchesPerTeam": 5,
+        "weeks": [
+          { "week": 1, "mapPool": "s3" },
+          { "week": 2, "mapPool": "s3" },
+          { "week": 3, "mapPool": "s3" }
+        ]
+      },
+      "minor": null,
+      "major": {
+        "name": "Major III",
+        "start": "2025-04-24",
+        "end": "2025-04-27",
+        "city": "Boca Raton",
+        "venue": "Eleanor R. Baldwin Arena",
+        "host": "miami-heretics",
+        "mapPool": "s3",
+        "bestOf": 5,
+        "finalBestOf": 7,
+        "format": { "type": "double-elim", "winnersSeeds": [1, 2, 3, 4, 5, 6, 7, 8], "losersSeeds": [9, 10, 11, 12] },
+        "seeding": { "by": "qualifiers" },
+        "points": [
+          { "from": 1, "to": 1, "points": 100 },
+          { "from": 2, "to": 2, "points": 75 },
+          { "from": 3, "to": 3, "points": 60 },
+          { "from": 4, "to": 4, "points": 45 },
+          { "from": 5, "to": 6, "points": 30 },
+          { "from": 7, "to": 8, "points": 15 },
+          { "from": 9, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 375000,
+        "realResult": { "winner": "la-thieves", "runnerUp": "vancouver-surge" },
+        "sources": ["https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_3"]
+      }
+    },
+    {
+      "stage": 4,
+      "qualifiers": {
+        "start": "2025-05-02",
+        "end": "2025-05-18",
+        "matchesPerTeam": 5,
+        "weeks": [
+          { "week": 1, "mapPool": "s4" },
+          { "week": 2, "mapPool": "s4" },
+          { "week": 3, "mapPool": "s4" }
+        ]
+      },
+      "minor": null,
+      "major": {
+        "name": "Major IV",
+        "start": "2025-05-23",
+        "end": "2025-05-25",
+        "city": "Dallas",
+        "venue": "Kay Bailey Hutchison Convention Center (DreamHack Dallas)",
+        "mapPool": "s4",
+        "bestOf": 5,
+        "finalBestOf": 7,
+        "format": { "type": "double-elim", "winnersSeeds": [1, 2, 3, 4, 5, 6, 7, 8], "losersSeeds": [9, 10, 11, 12] },
+        "seeding": { "by": "qualifiers" },
+        "points": [
+          { "from": 1, "to": 1, "points": 100 },
+          { "from": 2, "to": 2, "points": 75 },
+          { "from": 3, "to": 3, "points": 60 },
+          { "from": 4, "to": 4, "points": 45 },
+          { "from": 5, "to": 6, "points": 30 },
+          { "from": 7, "to": 8, "points": 15 },
+          { "from": 9, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 375000,
+        "realResult": { "winner": "la-thieves", "runnerUp": "atlanta-faze" },
+        "sources": ["https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_4"]
+      }
+    }
+  ],
+  "championship": {
+    "name": "Championship",
+    "start": "2025-06-26",
+    "end": "2025-06-29",
+    "city": "Kitchener, ON",
+    "venue": "Kitchener Memorial Auditorium",
+    "host": "toronto-ultra",
+    "mapPool": "s4",
+    "bestOf": 5,
+    "finalBestOf": 9,
+    "format": { "type": "double-elim", "winnersSeeds": [1, 2, 3, 4, 5, 6, 7, 8], "losersSeeds": [] },
+    "seeding": { "by": "season-points" },
+    "points": [{ "from": 1, "to": 8, "points": 0 }],
+    "prizeUsd": 2000000,
+    "realResult": { "winner": "optic-texas", "runnerUp": "vancouver-surge", "score": "5-3" },
+    "sources": [
+      "https://cod-esports.fandom.com/wiki/Call_of_Duty_League_Championship_2025",
+      "https://liquipedia.net/callofduty/Call_of_Duty_League/Season_6/Playoffs"
+    ]
+  },
+  "unverified": [
+    "Qualifier week dates for Stages II–IV.",
+    "SnD round/bomb timers (90s/45s) are the 2026 values; BO6 values not checked.",
+    "Bo7 and Bo9 veto procedures (no official 2025 text found)."
+  ],
+  "sources": [
+    "https://liquipedia.net/callofduty/Call_of_Duty_League/Season_6",
+    "https://liquipedia.net/callofduty/Call_of_Duty_League/Season_6/Stage_1"
+  ]
+}

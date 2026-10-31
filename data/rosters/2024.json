@@ -1,0 +1,2107 @@
+{
+  "season": "2024",
+  "ratingsNote": "Ratings from 2024 season stat lines (https://cod-esports.fandom.com/api.php (Cargo table PlayerStats), fetched 2026-10-31; CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors). Players without stats (ratingSource \"placeholder\") use team placements. Consistency is always a placeholder; clutch is a mild SnD K/D proxy. Roles default to flex.",
+  "teams": [
+    {
+      "team": "atlanta-faze",
+      "players": [
+        {
+          "id": "abezy",
+          "handle": "aBeZy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 84,
+            "hp_obj": 81,
+            "snd_iq": 83,
+            "third_mode": 84,
+            "clutch": 82,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 190,
+            "kd": 1.05,
+            "hpKd": 1.01,
+            "hpTimePerMap": 51,
+            "sndKd": 1.09,
+            "sndOpeningNet": 1.58,
+            "thirdKd": 1.11
+          }
+        },
+        {
+          "id": "cellium",
+          "handle": "Cellium",
+          "role": "flex",
+          "ratings": {
+            "slaying": 88,
+            "hp_obj": 86,
+            "snd_iq": 83,
+            "third_mode": 86,
+            "clutch": 84,
+            "consistency": 89
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 190,
+            "kd": 1.2,
+            "hpKd": 1.15,
+            "hpTimePerMap": 77,
+            "sndKd": 1.28,
+            "sndOpeningNet": 0.61,
+            "thirdKd": 1.25
+          }
+        },
+        {
+          "id": "simp",
+          "handle": "Simp",
+          "role": "flex",
+          "ratings": {
+            "slaying": 86,
+            "hp_obj": 84,
+            "snd_iq": 84,
+            "third_mode": 84,
+            "clutch": 84,
+            "consistency": 89
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 190,
+            "kd": 1.14,
+            "hpKd": 1.14,
+            "hpTimePerMap": 65,
+            "sndKd": 1.2,
+            "sndOpeningNet": 0.88,
+            "thirdKd": 1.12
+          }
+        },
+        {
+          "id": "drazah",
+          "handle": "Drazah",
+          "role": "flex",
+          "ratings": {
+            "slaying": 84,
+            "hp_obj": 84,
+            "snd_iq": 81,
+            "third_mode": 84,
+            "clutch": 80,
+            "consistency": 89
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 190,
+            "kd": 1.07,
+            "hpKd": 1.08,
+            "hpTimePerMap": 64,
+            "sndKd": 0.93,
+            "sndOpeningNet": 0.97,
+            "thirdKd": 1.11
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2023-12-08",
+          "event": "Major I",
+          "starters": [
+            "abezy",
+            "cellium",
+            "simp",
+            "drazah"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+        }
+      ],
+      "mapMods": {
+        "hp:6 Star": -0.003,
+        "snd:Invasion": -0.009,
+        "hp:Karachi": 0.008,
+        "snd:Karachi": 0.008,
+        "hp:Rio": 0.006,
+        "snd:Rio": 0.006,
+        "hp:Sub Base": -0.017,
+        "snd:Terminal": -0.006,
+        "hp:Vista": 0.003
+      }
+    },
+    {
+      "team": "boston-breach",
+      "players": [
+        {
+          "id": "snoopy",
+          "handle": "Snoopy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 78,
+            "snd_iq": 79,
+            "third_mode": 78,
+            "clutch": 80,
+            "consistency": 78
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 134,
+            "kd": 0.97,
+            "hpKd": 0.97,
+            "hpTimePerMap": 53,
+            "sndKd": 1.08,
+            "sndOpeningNet": 0.96,
+            "thirdKd": 0.93
+          }
+        },
+        {
+          "id": "priestahh",
+          "handle": "Priestahh",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 79,
+            "snd_iq": 77,
+            "third_mode": 79,
+            "clutch": 77,
+            "consistency": 73
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 134,
+            "kd": 0.95,
+            "hpKd": 0.96,
+            "hpTimePerMap": 61,
+            "sndKd": 0.79,
+            "sndOpeningNet": 0.55,
+            "thirdKd": 0.99
+          }
+        },
+        {
+          "id": "slasher",
+          "handle": "SlasheR",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 80,
+            "snd_iq": 78,
+            "third_mode": 78,
+            "clutch": 79,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 68,
+            "kd": 1,
+            "hpKd": 1.05,
+            "hpTimePerMap": 63,
+            "sndKd": 0.93,
+            "sndOpeningNet": 0.57,
+            "thirdKd": 0.95
+          }
+        },
+        {
+          "id": "capsidal",
+          "handle": "Capsidal",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 78,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 74
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 33,
+            "kd": 0.97,
+            "hpKd": 0.93,
+            "hpTimePerMap": 59,
+            "sndKd": 1.08,
+            "sndOpeningNet": 0,
+            "thirdKd": 0.98
+          }
+        },
+        {
+          "id": "asim",
+          "handle": "Asim",
+          "role": "flex",
+          "ratings": {
+            "slaying": 75,
+            "hp_obj": 77,
+            "snd_iq": 77,
+            "third_mode": 75,
+            "clutch": 77,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 47,
+            "kd": 0.86,
+            "hpKd": 0.91,
+            "hpTimePerMap": 41,
+            "sndKd": 0.77,
+            "sndOpeningNet": 1.13,
+            "thirdKd": 0.82
+          }
+        },
+        {
+          "id": "beans",
+          "handle": "Beans",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 79,
+            "snd_iq": 77,
+            "third_mode": 79,
+            "clutch": 77,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 57,
+            "kd": 1.01,
+            "hpKd": 1.02,
+            "hpTimePerMap": 58,
+            "sndKd": 0.83,
+            "sndOpeningNet": 0.81,
+            "thirdKd": 1.08
+          }
+        },
+        {
+          "id": "pentagrxm",
+          "handle": "Pentagrxm",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 77,
+            "snd_iq": 77,
+            "third_mode": 79,
+            "clutch": 77,
+            "consistency": 78
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 37,
+            "kd": 0.9,
+            "hpKd": 0.91,
+            "hpTimePerMap": 55,
+            "sndKd": 0.71,
+            "sndOpeningNet": 1.43,
+            "thirdKd": 1.01
+          }
+        },
+        {
+          "id": "majormaniak",
+          "handle": "MajorManiak",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 79,
+            "snd_iq": 77,
+            "third_mode": 77,
+            "clutch": 77,
+            "consistency": 70
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 29,
+            "kd": 0.93,
+            "hpKd": 1.04,
+            "hpTimePerMap": 40,
+            "sndKd": 0.71,
+            "sndOpeningNet": 0.4,
+            "thirdKd": 0.88
+          }
+        },
+        {
+          "id": "seany",
+          "handle": "Seany",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 79,
+            "snd_iq": 78,
+            "third_mode": 78,
+            "clutch": 78,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 9,
+            "kd": 0.86,
+            "hpKd": 0.88,
+            "hpTimePerMap": 77,
+            "sndKd": 0.71,
+            "sndOpeningNet": 1,
+            "thirdKd": 0.87
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2023-12-08",
+          "event": "Major I",
+          "starters": [
+            "snoopy",
+            "priestahh",
+            "slasher",
+            "capsidal"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+        },
+        {
+          "effective": "2024-02-16",
+          "event": "Major II",
+          "starters": [
+            "snoopy",
+            "priestahh",
+            "slasher",
+            "asim"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2"
+        },
+        {
+          "effective": "2024-04-12",
+          "event": "Major III",
+          "starters": [
+            "snoopy",
+            "priestahh",
+            "beans",
+            "pentagrxm"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3"
+        },
+        {
+          "effective": "2024-05-24",
+          "event": "Major IV",
+          "starters": [
+            "snoopy",
+            "priestahh",
+            "beans",
+            "majormaniak"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_4"
+        }
+      ],
+      "mapMods": {
+        "hp:6 Star": -0.015,
+        "snd:6 Star": -0.003,
+        "snd:Highrise": -0.012,
+        "control:Invasion": -0.009,
+        "hp:Invasion": 0.013,
+        "snd:Invasion": -0.002,
+        "control:Karachi": 0.011,
+        "hp:Karachi": -0.011,
+        "snd:Karachi": 0.006,
+        "hp:Rio": 0.01,
+        "hp:Sub Base": 0.006,
+        "hp:Terminal": 0.009,
+        "snd:Terminal": 0.01,
+        "hp:Vista": -0.006
+      }
+    },
+    {
+      "team": "carolina-royal-ravens",
+      "players": [
+        {
+          "id": "clayster",
+          "handle": "Clayster",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 79,
+            "snd_iq": 78,
+            "third_mode": 78,
+            "clutch": 78,
+            "consistency": 76
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 153,
+            "kd": 0.92,
+            "hpKd": 0.94,
+            "hpTimePerMap": 58,
+            "sndKd": 0.86,
+            "sndOpeningNet": 0.67,
+            "thirdKd": 0.91
+          }
+        },
+        {
+          "id": "gwinn",
+          "handle": "Gwinn",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 81,
+            "snd_iq": 79,
+            "third_mode": 81,
+            "clutch": 79,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 153,
+            "kd": 1.07,
+            "hpKd": 1.08,
+            "hpTimePerMap": 56,
+            "sndKd": 0.97,
+            "sndOpeningNet": 0.84,
+            "thirdKd": 1.09
+          }
+        },
+        {
+          "id": "tjhaly",
+          "handle": "TJHaLy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 79,
+            "snd_iq": 81,
+            "third_mode": 79,
+            "clutch": 80,
+            "consistency": 85
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 139,
+            "kd": 0.97,
+            "hpKd": 0.96,
+            "hpTimePerMap": 57,
+            "sndKd": 1.04,
+            "sndOpeningNet": 1.3,
+            "thirdKd": 0.97
+          }
+        },
+        {
+          "id": "felo",
+          "handle": "FeLo",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 79,
+            "snd_iq": 78,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 71
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 136,
+            "kd": 0.94,
+            "hpKd": 0.95,
+            "hpTimePerMap": 59,
+            "sndKd": 0.92,
+            "sndOpeningNet": 0.62,
+            "thirdKd": 0.92
+          }
+        },
+        {
+          "id": "godrx",
+          "handle": "GodRx",
+          "role": "flex",
+          "ratings": {
+            "slaying": 75,
+            "hp_obj": 77,
+            "snd_iq": 77,
+            "third_mode": 76,
+            "clutch": 77,
+            "consistency": 68
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 17,
+            "kd": 0.77,
+            "hpKd": 0.85,
+            "hpTimePerMap": 42,
+            "sndKd": 0.67,
+            "sndOpeningNet": 0,
+            "thirdKd": 0.72
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2023-12-08",
+          "event": "Major I",
+          "starters": [
+            "clayster",
+            "gwinn",
+            "tjhaly",
+            "felo"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+        }
+      ],
+      "mapMods": {
+        "hp:6 Star": 0.008,
+        "snd:6 Star": -0.011,
+        "snd:Highrise": -0.01,
+        "hp:Invasion": -0.024,
+        "snd:Invasion": 0.01,
+        "hp:Karachi": 0.014,
+        "snd:Karachi": 0.011,
+        "hp:Rio": -0.013,
+        "snd:Rio": 0.011,
+        "snd:Skidrow": -0.014,
+        "hp:Sub Base": 0.014,
+        "hp:Terminal": 0.008,
+        "snd:Terminal": -0.013,
+        "hp:Vista": -0.007
+      }
+    },
+    {
+      "team": "las-vegas-legion",
+      "players": [
+        {
+          "id": "attach",
+          "handle": "Attach",
+          "role": "flex",
+          "ratings": {
+            "slaying": 83,
+            "hp_obj": 81,
+            "snd_iq": 81,
+            "third_mode": 81,
+            "clutch": 81,
+            "consistency": 83
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 144,
+            "kd": 1.1,
+            "hpKd": 1.08,
+            "hpTimePerMap": 55,
+            "sndKd": 1.16,
+            "sndOpeningNet": 0.73,
+            "thirdKd": 1.1
+          }
+        },
+        {
+          "id": "nero",
+          "handle": "Nero",
+          "role": "flex",
+          "ratings": {
+            "slaying": 83,
+            "hp_obj": 83,
+            "snd_iq": 79,
+            "third_mode": 82,
+            "clutch": 79,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 144,
+            "kd": 1.07,
+            "hpKd": 1.12,
+            "hpTimePerMap": 66,
+            "sndKd": 0.91,
+            "sndOpeningNet": 0.92,
+            "thirdKd": 1.07
+          }
+        },
+        {
+          "id": "purj",
+          "handle": "Purj",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 79,
+            "snd_iq": 79,
+            "third_mode": 78,
+            "clutch": 79,
+            "consistency": 74
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 87,
+            "kd": 0.88,
+            "hpKd": 0.88,
+            "hpTimePerMap": 73,
+            "sndKd": 0.9,
+            "sndOpeningNet": 0.93,
+            "thirdKd": 0.88
+          }
+        },
+        {
+          "id": "standy",
+          "handle": "Standy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 76,
+            "snd_iq": 80,
+            "third_mode": 78,
+            "clutch": 80,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 101,
+            "kd": 0.91,
+            "hpKd": 0.87,
+            "hpTimePerMap": 53,
+            "sndKd": 1.04,
+            "sndOpeningNet": 0.94,
+            "thirdKd": 0.91
+          }
+        },
+        {
+          "id": "gio",
+          "handle": "Gio",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 81,
+            "snd_iq": 78,
+            "third_mode": 80,
+            "clutch": 78,
+            "consistency": 77
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 107,
+            "kd": 1.06,
+            "hpKd": 1.12,
+            "hpTimePerMap": 49,
+            "sndKd": 0.92,
+            "sndOpeningNet": 0.67,
+            "thirdKd": 1
+          }
+        },
+        {
+          "id": "ojohnny",
+          "handle": "oJohnny",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 80,
+            "snd_iq": 80,
+            "third_mode": 78,
+            "clutch": 79,
+            "consistency": 78
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 48,
+            "kd": 0.97,
+            "hpKd": 1.02,
+            "hpTimePerMap": 69,
+            "sndKd": 0.98,
+            "sndOpeningNet": 1.53,
+            "thirdKd": 0.9
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2023-12-08",
+          "event": "Major I",
+          "starters": [
+            "attach",
+            "nero",
+            "purj",
+            "standy"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+        },
+        {
+          "effective": "2024-02-16",
+          "event": "Major II",
+          "starters": [
+            "attach",
+            "nero",
+            "purj",
+            "gio"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2"
+        },
+        {
+          "effective": "2024-04-12",
+          "event": "Major III",
+          "starters": [
+            "attach",
+            "nero",
+            "gio",
+            "ojohnny"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3"
+        }
+      ],
+      "mapMods": {
+        "hp:6 Star": 0.006,
+        "snd:6 Star": -0.005,
+        "control:Highrise": 0.003,
+        "snd:Highrise": -0.011,
+        "control:Invasion": 0.006,
+        "hp:Invasion": 0.006,
+        "snd:Invasion": -0.005,
+        "control:Karachi": -0.016,
+        "hp:Karachi": -0.009,
+        "snd:Karachi": 0.01,
+        "snd:Rio": 0.01,
+        "hp:Skidrow": 0.007,
+        "snd:Skidrow": -0.006,
+        "hp:Sub Base": 0.013,
+        "hp:Terminal": -0.006,
+        "snd:Terminal": 0.009,
+        "hp:Vista": -0.014
+      }
+    },
+    {
+      "team": "la-guerrillas",
+      "players": [
+        {
+          "id": "assault",
+          "handle": "Assault",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 78,
+            "snd_iq": 78,
+            "third_mode": 79,
+            "clutch": 78,
+            "consistency": 82
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 90,
+            "kd": 0.93,
+            "hpKd": 0.95,
+            "hpTimePerMap": 53,
+            "sndKd": 0.85,
+            "sndOpeningNet": 0.43,
+            "thirdKd": 0.94
+          }
+        },
+        {
+          "id": "diamondcon",
+          "handle": "Diamondcon",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 80,
+            "snd_iq": 81,
+            "third_mode": 79,
+            "clutch": 80,
+            "consistency": 84
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 154,
+            "kd": 0.99,
+            "hpKd": 1.01,
+            "hpTimePerMap": 50,
+            "sndKd": 1.05,
+            "sndOpeningNet": 1.04,
+            "thirdKd": 0.94
+          }
+        },
+        {
+          "id": "fame",
+          "handle": "Fame",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 79,
+            "snd_iq": 80,
+            "third_mode": 80,
+            "clutch": 80,
+            "consistency": 85
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 154,
+            "kd": 0.96,
+            "hpKd": 0.93,
+            "hpTimePerMap": 65,
+            "sndKd": 1.02,
+            "sndOpeningNet": 1.12,
+            "thirdKd": 0.98
+          }
+        },
+        {
+          "id": "estreal",
+          "handle": "Estreal",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 79,
+            "snd_iq": 80,
+            "third_mode": 80,
+            "clutch": 79,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 154,
+            "kd": 0.97,
+            "hpKd": 0.97,
+            "hpTimePerMap": 52,
+            "sndKd": 0.91,
+            "sndOpeningNet": 1,
+            "thirdKd": 0.98
+          }
+        },
+        {
+          "id": "flames",
+          "handle": "Flames",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 78,
+            "snd_iq": 79,
+            "third_mode": 80,
+            "clutch": 80,
+            "consistency": 73
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 64,
+            "kd": 0.94,
+            "hpKd": 0.89,
+            "hpTimePerMap": 62,
+            "sndKd": 0.99,
+            "sndOpeningNet": 0.67,
+            "thirdKd": 1
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2023-12-08",
+          "event": "Major I",
+          "starters": [
+            "assault",
+            "diamondcon",
+            "fame",
+            "estreal"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+        },
+        {
+          "effective": "2024-04-12",
+          "event": "Major III",
+          "starters": [
+            "diamondcon",
+            "fame",
+            "estreal",
+            "flames"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3"
+        }
+      ],
+      "mapMods": {
+        "hp:6 Star": -0.009,
+        "snd:6 Star": 0.004,
+        "control:Highrise": 0.003,
+        "snd:Highrise": 0.011,
+        "control:Invasion": 0.004,
+        "hp:Invasion": -0.008,
+        "snd:Invasion": -0.004,
+        "control:Karachi": -0.005,
+        "hp:Karachi": 0.003,
+        "snd:Karachi": -0.012,
+        "snd:Rio": -0.005,
+        "control:Skidrow": -0.005,
+        "hp:Skidrow": 0.003,
+        "hp:Sub Base": 0.003,
+        "hp:Terminal": -0.005,
+        "snd:Terminal": 0.008,
+        "hp:Vista": 0.007
+      }
+    },
+    {
+      "team": "la-thieves",
+      "players": [
+        {
+          "id": "afro",
+          "handle": "Afro",
+          "role": "flex",
+          "ratings": {
+            "slaying": 76,
+            "hp_obj": 75,
+            "snd_iq": 79,
+            "third_mode": 77,
+            "clutch": 79,
+            "consistency": 75
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 67,
+            "kd": 0.89,
+            "hpKd": 0.84,
+            "hpTimePerMap": 47,
+            "sndKd": 1.09,
+            "sndOpeningNet": 0.95,
+            "thirdKd": 0.89
+          }
+        },
+        {
+          "id": "cammy",
+          "handle": "Cammy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 76,
+            "hp_obj": 76,
+            "snd_iq": 77,
+            "third_mode": 78,
+            "clutch": 79,
+            "consistency": 69
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 30,
+            "kd": 0.88,
+            "hpKd": 0.83,
+            "hpTimePerMap": 49,
+            "sndKd": 0.93,
+            "sndOpeningNet": -0.33,
+            "thirdKd": 0.92
+          }
+        },
+        {
+          "id": "ghosty",
+          "handle": "Ghosty",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 82,
+            "snd_iq": 80,
+            "third_mode": 82,
+            "clutch": 81,
+            "consistency": 76
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 170,
+            "kd": 1.05,
+            "hpKd": 1.05,
+            "hpTimePerMap": 67,
+            "sndKd": 1.06,
+            "sndOpeningNet": 0.82,
+            "thirdKd": 1.06
+          }
+        },
+        {
+          "id": "joedeceives",
+          "handle": "JoeDeceives",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 78,
+            "snd_iq": 81,
+            "third_mode": 80,
+            "clutch": 80,
+            "consistency": 76
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 133,
+            "kd": 0.93,
+            "hpKd": 0.89,
+            "hpTimePerMap": 61,
+            "sndKd": 0.99,
+            "sndOpeningNet": 1.26,
+            "thirdKd": 0.97
+          }
+        },
+        {
+          "id": "nastie",
+          "handle": "Nastie",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 78,
+            "snd_iq": 80,
+            "third_mode": 80,
+            "clutch": 80,
+            "consistency": 87
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 140,
+            "kd": 0.95,
+            "hpKd": 0.93,
+            "hpTimePerMap": 57,
+            "sndKd": 1,
+            "sndOpeningNet": 0.85,
+            "thirdKd": 0.96
+          }
+        },
+        {
+          "id": "kremp",
+          "handle": "Kremp",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 78,
+            "snd_iq": 81,
+            "third_mode": 78,
+            "clutch": 80,
+            "consistency": 74
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 140,
+            "kd": 0.94,
+            "hpKd": 0.95,
+            "hpTimePerMap": 54,
+            "sndKd": 1,
+            "sndOpeningNet": 1.52,
+            "thirdKd": 0.9
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2023-12-08",
+          "event": "Major I",
+          "starters": [
+            "afro",
+            "cammy",
+            "ghosty",
+            "joedeceives"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+        },
+        {
+          "effective": "2024-02-16",
+          "event": "Major II",
+          "starters": [
+            "afro",
+            "ghosty",
+            "nastie",
+            "kremp"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2"
+        },
+        {
+          "effective": "2024-04-12",
+          "event": "Major III",
+          "starters": [
+            "ghosty",
+            "kremp",
+            "joedeceives",
+            "nastie"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3"
+        }
+      ],
+      "mapMods": {
+        "hp:6 Star": 0.01,
+        "snd:6 Star": -0.017,
+        "control:Highrise": 0.003,
+        "snd:Highrise": 0.009,
+        "control:Invasion": -0.005,
+        "hp:Invasion": 0.004,
+        "snd:Invasion": 0.003,
+        "control:Karachi": 0.005,
+        "hp:Karachi": -0.003,
+        "snd:Karachi": -0.007,
+        "hp:Rio": 0.003,
+        "snd:Rio": 0.009,
+        "hp:Skidrow": -0.014,
+        "snd:Skidrow": -0.008,
+        "hp:Sub Base": -0.008,
+        "hp:Terminal": -0.006,
+        "hp:Vista": 0.005
+      }
+    },
+    {
+      "team": "miami-heretics",
+      "players": [
+        {
+          "id": "vikul",
+          "handle": "Vikul",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 79,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 71
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 160,
+            "kd": 0.94,
+            "hpKd": 0.94,
+            "hpTimePerMap": 60,
+            "sndKd": 0.96,
+            "sndOpeningNet": 0.78,
+            "thirdKd": 0.94
+          }
+        },
+        {
+          "id": "lucky",
+          "handle": "Lucky",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 80,
+            "snd_iq": 81,
+            "third_mode": 78,
+            "clutch": 81,
+            "consistency": 83
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 163,
+            "kd": 0.98,
+            "hpKd": 0.98,
+            "hpTimePerMap": 67,
+            "sndKd": 1.14,
+            "sndOpeningNet": 0.87,
+            "thirdKd": 0.93
+          }
+        },
+        {
+          "id": "mettalz",
+          "handle": "MettalZ",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 80,
+            "snd_iq": 80,
+            "third_mode": 77,
+            "clutch": 80,
+            "consistency": 72
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 163,
+            "kd": 0.98,
+            "hpKd": 1,
+            "hpTimePerMap": 60,
+            "sndKd": 1.03,
+            "sndOpeningNet": 0.85,
+            "thirdKd": 0.92
+          }
+        },
+        {
+          "id": "jurnii",
+          "handle": "JurNii",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 78,
+            "snd_iq": 77,
+            "third_mode": 77,
+            "clutch": 77,
+            "consistency": 82
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 32,
+            "kd": 0.9,
+            "hpKd": 1,
+            "hpTimePerMap": 45,
+            "sndKd": 0.79,
+            "sndOpeningNet": -0.7,
+            "thirdKd": 0.82
+          }
+        },
+        {
+          "id": "erikboom",
+          "handle": "EriKBooM",
+          "role": "flex",
+          "ratings": {
+            "slaying": 75,
+            "hp_obj": 77,
+            "snd_iq": 77,
+            "third_mode": 75,
+            "clutch": 77,
+            "consistency": 77
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 33,
+            "kd": 0.83,
+            "hpKd": 0.87,
+            "hpTimePerMap": 63,
+            "sndKd": 0.75,
+            "sndOpeningNet": 1.18,
+            "thirdKd": 0.8
+          }
+        },
+        {
+          "id": "reeal",
+          "handle": "ReeaL",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 79,
+            "snd_iq": 81,
+            "third_mode": 78,
+            "clutch": 80,
+            "consistency": 71
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 112,
+            "kd": 0.97,
+            "hpKd": 0.99,
+            "hpTimePerMap": 52,
+            "sndKd": 1.02,
+            "sndOpeningNet": 1.31,
+            "thirdKd": 0.93
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2023-12-08",
+          "event": "Major I",
+          "starters": [
+            "vikul",
+            "lucky",
+            "mettalz",
+            "jurnii"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+        },
+        {
+          "effective": "2024-02-16",
+          "event": "Major II",
+          "starters": [
+            "vikul",
+            "lucky",
+            "mettalz",
+            "erikboom"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2"
+        },
+        {
+          "effective": "2024-04-12",
+          "event": "Major III",
+          "starters": [
+            "vikul",
+            "lucky",
+            "mettalz",
+            "reeal"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3"
+        }
+      ],
+      "mapMods": {
+        "hp:6 Star": -0.003,
+        "snd:6 Star": 0.011,
+        "snd:Highrise": 0.009,
+        "control:Invasion": -0.003,
+        "hp:Invasion": 0.013,
+        "snd:Invasion": -0.008,
+        "control:Karachi": 0.004,
+        "hp:Karachi": -0.016,
+        "snd:Karachi": 0.004,
+        "hp:Rio": -0.003,
+        "snd:Rio": -0.013,
+        "hp:Skidrow": 0.002,
+        "hp:Sub Base": 0.006,
+        "hp:Terminal": -0.002,
+        "snd:Terminal": -0.006,
+        "hp:Vista": 0.003
+      }
+    },
+    {
+      "team": "minnesota-rokkr",
+      "players": [
+        {
+          "id": "accuracy",
+          "handle": "Accuracy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 76,
+            "hp_obj": 78,
+            "snd_iq": 78,
+            "third_mode": 78,
+            "clutch": 78,
+            "consistency": 76
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 137,
+            "kd": 0.88,
+            "hpKd": 0.87,
+            "hpTimePerMap": 73,
+            "sndKd": 0.84,
+            "sndOpeningNet": 0.67,
+            "thirdKd": 0.9
+          }
+        },
+        {
+          "id": "lynz",
+          "handle": "Lynz",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 78,
+            "snd_iq": 81,
+            "third_mode": 79,
+            "clutch": 81,
+            "consistency": 84
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 146,
+            "kd": 1,
+            "hpKd": 0.99,
+            "hpTimePerMap": 41,
+            "sndKd": 1.14,
+            "sndOpeningNet": 1.29,
+            "thirdKd": 0.95
+          }
+        },
+        {
+          "id": "owakening",
+          "handle": "Owakening",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 79,
+            "snd_iq": 77,
+            "third_mode": 81,
+            "clutch": 77,
+            "consistency": 85
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 82,
+            "kd": 0.89,
+            "hpKd": 0.88,
+            "hpTimePerMap": 73,
+            "sndKd": 0.73,
+            "sndOpeningNet": 0.39,
+            "thirdKd": 0.96
+          }
+        },
+        {
+          "id": "vivid",
+          "handle": "Vivid",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 78,
+            "snd_iq": 80,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 84
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 82,
+            "kd": 0.92,
+            "hpKd": 0.92,
+            "hpTimePerMap": 50,
+            "sndKd": 0.92,
+            "sndOpeningNet": 0.46,
+            "thirdKd": 0.91
+          }
+        },
+        {
+          "id": "standy",
+          "handle": "Standy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 76,
+            "snd_iq": 80,
+            "third_mode": 78,
+            "clutch": 80,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 101,
+            "kd": 0.91,
+            "hpKd": 0.87,
+            "hpTimePerMap": 53,
+            "sndKd": 1.04,
+            "sndOpeningNet": 0.94,
+            "thirdKd": 0.91
+          }
+        },
+        {
+          "id": "gunless",
+          "handle": "Gunless",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 79,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 82
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 64,
+            "kd": 0.96,
+            "hpKd": 0.94,
+            "hpTimePerMap": 66,
+            "sndKd": 1.01,
+            "sndOpeningNet": 0.86,
+            "thirdKd": 0.98
+          }
+        },
+        {
+          "id": "spart",
+          "handle": "Spart",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 77,
+            "snd_iq": 80,
+            "third_mode": 79,
+            "clutch": 80,
+            "consistency": 70
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 9,
+            "kd": 1.01,
+            "hpKd": 0.9,
+            "hpTimePerMap": 23,
+            "sndKd": 1.59,
+            "sndOpeningNet": 2.33,
+            "thirdKd": 1
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2023-12-08",
+          "event": "Major I",
+          "starters": [
+            "accuracy",
+            "lynz",
+            "owakening",
+            "vivid"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+        },
+        {
+          "effective": "2024-04-12",
+          "event": "Major III",
+          "starters": [
+            "accuracy",
+            "lynz",
+            "standy",
+            "gunless"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3"
+        }
+      ],
+      "mapMods": {
+        "hp:6 Star": -0.012,
+        "snd:6 Star": 0.011,
+        "control:Highrise": -0.018,
+        "snd:Highrise": 0.016,
+        "control:Invasion": 0.003,
+        "snd:Invasion": -0.006,
+        "control:Karachi": 0.005,
+        "snd:Karachi": -0.004,
+        "snd:Rio": -0.002,
+        "control:Skidrow": 0.009,
+        "hp:Skidrow": 0.006,
+        "snd:Skidrow": -0.007,
+        "hp:Sub Base": -0.004,
+        "hp:Terminal": 0.012,
+        "snd:Terminal": -0.009
+      }
+    },
+    {
+      "team": "ny-subliners",
+      "players": [
+        {
+          "id": "hydra",
+          "handle": "HyDra",
+          "role": "flex",
+          "ratings": {
+            "slaying": 86,
+            "hp_obj": 83,
+            "snd_iq": 82,
+            "third_mode": 83,
+            "clutch": 82,
+            "consistency": 76
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 210,
+            "kd": 1.14,
+            "hpKd": 1.15,
+            "hpTimePerMap": 44,
+            "sndKd": 1.12,
+            "sndOpeningNet": 0.99,
+            "thirdKd": 1.13
+          }
+        },
+        {
+          "id": "kismet",
+          "handle": "KiSMET",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 81,
+            "snd_iq": 83,
+            "third_mode": 81,
+            "clutch": 82,
+            "consistency": 78
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 210,
+            "kd": 0.96,
+            "hpKd": 0.93,
+            "hpTimePerMap": 69,
+            "sndKd": 1.12,
+            "sndOpeningNet": 1.24,
+            "thirdKd": 0.94
+          }
+        },
+        {
+          "id": "skyz",
+          "handle": "Skyz",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 83,
+            "snd_iq": 81,
+            "third_mode": 81,
+            "clutch": 82,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 210,
+            "kd": 1.02,
+            "hpKd": 1.02,
+            "hpTimePerMap": 77,
+            "sndKd": 1.07,
+            "sndOpeningNet": 0.69,
+            "thirdKd": 1.01
+          }
+        },
+        {
+          "id": "sib",
+          "handle": "Sib",
+          "role": "flex",
+          "ratings": {
+            "slaying": 84,
+            "hp_obj": 82,
+            "snd_iq": 81,
+            "third_mode": 82,
+            "clutch": 80,
+            "consistency": 81
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 210,
+            "kd": 1.05,
+            "hpKd": 1.09,
+            "hpTimePerMap": 51,
+            "sndKd": 0.92,
+            "sndOpeningNet": 0.94,
+            "thirdKd": 1.04
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2023-12-08",
+          "event": "Major I",
+          "starters": [
+            "hydra",
+            "kismet",
+            "skyz",
+            "sib"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+        }
+      ],
+      "mapMods": {
+        "hp:6 Star": -0.007,
+        "snd:6 Star": -0.007,
+        "control:Highrise": 0.003,
+        "hp:Invasion": 0.009,
+        "snd:Invasion": 0.002,
+        "control:Karachi": -0.006,
+        "hp:Rio": 0.009,
+        "snd:Rio": -0.015,
+        "hp:Skidrow": 0.006,
+        "snd:Skidrow": 0.01,
+        "hp:Sub Base": -0.009,
+        "hp:Terminal": -0.018,
+        "snd:Terminal": 0.009
+      }
+    },
+    {
+      "team": "optic-texas",
+      "players": [
+        {
+          "id": "shotzzy",
+          "handle": "Shotzzy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 83,
+            "hp_obj": 83,
+            "snd_iq": 84,
+            "third_mode": 83,
+            "clutch": 83,
+            "consistency": 87
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 206,
+            "kd": 1.04,
+            "hpKd": 1.02,
+            "hpTimePerMap": 64,
+            "sndKd": 1.1,
+            "sndOpeningNet": 1.19,
+            "thirdKd": 1.06
+          }
+        },
+        {
+          "id": "dashy",
+          "handle": "Dashy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 84,
+            "hp_obj": 85,
+            "snd_iq": 81,
+            "third_mode": 85,
+            "clutch": 83,
+            "consistency": 92
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 206,
+            "kd": 1.05,
+            "hpKd": 1.02,
+            "hpTimePerMap": 90,
+            "sndKd": 1.08,
+            "sndOpeningNet": 0.42,
+            "thirdKd": 1.09
+          }
+        },
+        {
+          "id": "kenny",
+          "handle": "Kenny",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 83,
+            "snd_iq": 80,
+            "third_mode": 83,
+            "clutch": 80,
+            "consistency": 76
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 206,
+            "kd": 0.99,
+            "hpKd": 1.02,
+            "hpTimePerMap": 61,
+            "sndKd": 0.9,
+            "sndOpeningNet": 0.94,
+            "thirdKd": 0.98
+          }
+        },
+        {
+          "id": "pred",
+          "handle": "Pred",
+          "role": "flex",
+          "ratings": {
+            "slaying": 85,
+            "hp_obj": 83,
+            "snd_iq": 81,
+            "third_mode": 84,
+            "clutch": 81,
+            "consistency": 89
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 206,
+            "kd": 1.09,
+            "hpKd": 1.09,
+            "hpTimePerMap": 45,
+            "sndKd": 0.98,
+            "sndOpeningNet": 0.84,
+            "thirdKd": 1.13
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2023-12-08",
+          "event": "Major I",
+          "starters": [
+            "shotzzy",
+            "dashy",
+            "kenny",
+            "pred"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+        }
+      ],
+      "mapMods": {
+        "hp:6 Star": 0.012,
+        "snd:6 Star": -0.01,
+        "control:Highrise": -0.013,
+        "snd:Highrise": -0.009,
+        "hp:Invasion": -0.006,
+        "snd:Invasion": 0.009,
+        "control:Karachi": 0.009,
+        "hp:Karachi": -0.009,
+        "snd:Karachi": 0.007,
+        "hp:Rio": -0.004,
+        "snd:Rio": -0.007,
+        "hp:Sub Base": 0.011,
+        "hp:Terminal": 0.004,
+        "hp:Vista": -0.007
+      }
+    },
+    {
+      "team": "seattle-surge",
+      "players": [
+        {
+          "id": "abuzah",
+          "handle": "Abuzah",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 82,
+            "snd_iq": 80,
+            "third_mode": 80,
+            "clutch": 81,
+            "consistency": 83
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 170,
+            "kd": 1,
+            "hpKd": 1,
+            "hpTimePerMap": 89,
+            "sndKd": 1.08,
+            "sndOpeningNet": 0.58,
+            "thirdKd": 0.98
+          }
+        },
+        {
+          "id": "arcitys",
+          "handle": "Arcitys",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 78,
+            "snd_iq": 79,
+            "third_mode": 76,
+            "clutch": 80,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 74,
+            "kd": 0.93,
+            "hpKd": 0.94,
+            "hpTimePerMap": 53,
+            "sndKd": 1.04,
+            "sndOpeningNet": 0.09,
+            "thirdKd": 0.88
+          }
+        },
+        {
+          "id": "huke",
+          "handle": "Huke",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 77,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 78,
+            "consistency": 75
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 170,
+            "kd": 0.91,
+            "hpKd": 0.91,
+            "hpTimePerMap": 50,
+            "sndKd": 0.86,
+            "sndOpeningNet": 1.09,
+            "thirdKd": 0.95
+          }
+        },
+        {
+          "id": "illey",
+          "handle": "iLLeY",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 80,
+            "snd_iq": 81,
+            "third_mode": 80,
+            "clutch": 82,
+            "consistency": 83
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 46,
+            "kd": 1.04,
+            "hpKd": 1,
+            "hpTimePerMap": 56,
+            "sndKd": 1.22,
+            "sndOpeningNet": 0.33,
+            "thirdKd": 1.04
+          }
+        },
+        {
+          "id": "breszy",
+          "handle": "Breszy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 77,
+            "snd_iq": 78,
+            "third_mode": 77,
+            "clutch": 78,
+            "consistency": 86
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 124,
+            "kd": 0.89,
+            "hpKd": 0.91,
+            "hpTimePerMap": 50,
+            "sndKd": 0.85,
+            "sndOpeningNet": 0.98,
+            "thirdKd": 0.87
+          }
+        },
+        {
+          "id": "04",
+          "handle": "04",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 78,
+            "snd_iq": 81,
+            "third_mode": 79,
+            "clutch": 80,
+            "consistency": 73
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 96,
+            "kd": 0.93,
+            "hpKd": 0.91,
+            "hpTimePerMap": 55,
+            "sndKd": 1.03,
+            "sndOpeningNet": 1.5,
+            "thirdKd": 0.92
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2023-12-08",
+          "event": "Major I",
+          "starters": [
+            "abuzah",
+            "arcitys",
+            "huke",
+            "illey"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+        },
+        {
+          "effective": "2024-02-16",
+          "event": "Major II",
+          "starters": [
+            "abuzah",
+            "arcitys",
+            "huke",
+            "breszy"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2"
+        },
+        {
+          "effective": "2024-04-12",
+          "event": "Major III",
+          "starters": [
+            "abuzah",
+            "huke",
+            "breszy",
+            "04"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3"
+        }
+      ],
+      "mapMods": {
+        "hp:6 Star": 0.008,
+        "snd:6 Star": 0.005,
+        "control:Highrise": 0.006,
+        "snd:Highrise": 0.01,
+        "hp:Invasion": -0.01,
+        "snd:Invasion": 0.004,
+        "control:Karachi": -0.004,
+        "snd:Karachi": -0.023,
+        "hp:Skidrow": -0.015,
+        "hp:Sub Base": -0.017,
+        "hp:Terminal": 0.008,
+        "snd:Terminal": 0.01,
+        "hp:Vista": 0.021
+      }
+    },
+    {
+      "team": "toronto-ultra",
+      "players": [
+        {
+          "id": "cleanx",
+          "handle": "CleanX",
+          "role": "flex",
+          "ratings": {
+            "slaying": 83,
+            "hp_obj": 81,
+            "snd_iq": 82,
+            "third_mode": 82,
+            "clutch": 82,
+            "consistency": 84
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 188,
+            "kd": 1.03,
+            "hpKd": 1.04,
+            "hpTimePerMap": 44,
+            "sndKd": 1,
+            "sndOpeningNet": 1.12,
+            "thirdKd": 1.03
+          }
+        },
+        {
+          "id": "insight",
+          "handle": "Insight",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 85,
+            "snd_iq": 81,
+            "third_mode": 81,
+            "clutch": 82,
+            "consistency": 82
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 188,
+            "kd": 1.02,
+            "hpKd": 1.08,
+            "hpTimePerMap": 86,
+            "sndKd": 1.08,
+            "sndOpeningNet": 0.47,
+            "thirdKd": 0.92
+          }
+        },
+        {
+          "id": "scrap",
+          "handle": "Scrap",
+          "role": "flex",
+          "ratings": {
+            "slaying": 87,
+            "hp_obj": 84,
+            "snd_iq": 82,
+            "third_mode": 85,
+            "clutch": 82,
+            "consistency": 85
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 188,
+            "kd": 1.16,
+            "hpKd": 1.16,
+            "hpTimePerMap": 60,
+            "sndKd": 1.04,
+            "sndOpeningNet": 1.1,
+            "thirdKd": 1.19
+          }
+        },
+        {
+          "id": "envoy",
+          "handle": "Envoy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 81,
+            "hp_obj": 81,
+            "snd_iq": 81,
+            "third_mode": 83,
+            "clutch": 80,
+            "consistency": 85
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 188,
+            "kd": 0.98,
+            "hpKd": 0.96,
+            "hpTimePerMap": 67,
+            "sndKd": 0.9,
+            "sndOpeningNet": 0.93,
+            "thirdKd": 1.04
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "effective": "2023-12-08",
+          "event": "Major I",
+          "starters": [
+            "cleanx",
+            "insight",
+            "scrap",
+            "envoy"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+        }
+      ],
+      "mapMods": {
+        "snd:6 Star": 0.009,
+        "snd:Highrise": -0.024,
+        "control:Invasion": -0.008,
+        "hp:Invasion": 0.012,
+        "control:Karachi": 0.009,
+        "hp:Karachi": 0.01,
+        "snd:Karachi": -0.002,
+        "hp:Rio": -0.01,
+        "snd:Rio": 0.003,
+        "hp:Skidrow": 0.007,
+        "snd:Skidrow": 0.016,
+        "hp:Sub Base": 0.002,
+        "hp:Terminal": -0.01,
+        "snd:Terminal": -0.008,
+        "hp:Vista": -0.016
+      }
+    }
+  ],
+  "guests": []
+}

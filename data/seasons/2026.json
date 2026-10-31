@@ -1,0 +1,327 @@
+{
+  "id": "2026",
+  "label": "CDL 2026 — Black Ops 7",
+  "game": "Black Ops 7",
+  "cdlSeason": 7,
+  "thirdMode": "overload",
+  "teams": [
+    { "id": "boston-breach", "name": "Boston Breach", "abbr": "BOS" },
+    { "id": "carolina-royal-ravens", "name": "Carolina Royal Ravens", "abbr": "CAR" },
+    { "id": "cloud9-new-york", "name": "Cloud9 New York", "abbr": "C9NY" },
+    { "id": "faze-vegas", "name": "FaZe Vegas", "abbr": "FAZE", "formerly": "Atlanta FaZe" },
+    { "id": "g2-minnesota", "name": "G2 Minnesota", "abbr": "G2MN", "formerly": "Minnesota RØKKR" },
+    { "id": "la-thieves", "name": "Los Angeles Thieves", "abbr": "LAT" },
+    { "id": "miami-heretics", "name": "Miami Heretics", "abbr": "MIA" },
+    { "id": "optic-texas", "name": "OpTic Texas", "abbr": "OTX" },
+    { "id": "paris-gentle-mates", "name": "Paris Gentle Mates", "abbr": "PGM", "formerly": "Los Angeles Guerrillas M8" },
+    { "id": "riyadh-falcons", "name": "Riyadh Falcons", "abbr": "RYD", "formerly": "Vegas Falcons" },
+    { "id": "toronto-koi", "name": "Toronto KOI", "abbr": "TKOI", "formerly": "Toronto Ultra" },
+    { "id": "vancouver-surge", "name": "Vancouver Surge", "abbr": "VAN" }
+  ],
+  "modeSettings": {
+    "hp": { "target": 250, "hillSeconds": 60 },
+    "snd": { "roundsToWin": 6, "roundSeconds": 90, "bombSeconds": 45 },
+    "overload": { "halfCap": 4, "scoreCap": 8, "halfSeconds": 300 }
+  },
+  "seriesFormats": {
+    "bo5": ["hp", "snd", "third", "hp", "snd"],
+    "bo7": ["hp", "snd", "third", "hp", "snd", "third", "snd"],
+    "bo9": ["hp", "snd", "third", "hp", "snd", "third", "snd", "hp", "snd"]
+  },
+  "veto": { "bo5": "cdl-2026-bo5", "bo7": "cdl-2026-bo7", "bo9": "cdl-2026-bo9" },
+  "points": { "qualifierWin": 10 },
+  "tiebreakers": ["seriesWins", "seriesWinPct", "h2hSeries", "mapDiff"],
+  "mapPools": [
+    {
+      "id": "s1-early",
+      "label": "Stage I weeks 1–2",
+      "hp": ["Colossus", "Den", "Exposure", "Scar"],
+      "snd": ["Colossus", "Den", "Exposure", "Raid", "Scar"],
+      "third": ["Den", "Exposure", "Scar"],
+      "note": "Blackheart HP not used yet."
+    },
+    {
+      "id": "s1",
+      "label": "Stage I week 3 → Stage II",
+      "hp": ["Blackheart", "Colossus", "Den", "Exposure", "Scar"],
+      "snd": ["Colossus", "Den", "Exposure", "Raid", "Scar"],
+      "third": ["Den", "Exposure", "Scar"]
+    },
+    {
+      "id": "s3",
+      "label": "Stage III",
+      "hp": ["Cliff Town", "Colossus", "Den", "Gridlock", "Sake", "Scar"],
+      "snd": ["Den", "Fringe", "Gridlock", "Plaza", "Raid", "Scar"],
+      "third": ["Den", "Exposure", "Scar"],
+      "note": "First six-map pools. Cliff Town HP was never played in Stage III qualifiers or the Minor."
+    },
+    {
+      "id": "s4",
+      "label": "Stage IV → Champs",
+      "hp": ["Colossus", "Den", "Gridlock", "Hacienda", "Sake", "Scar"],
+      "snd": ["Den", "Fringe", "Gridlock", "Hacienda", "Raid", "Sake"],
+      "third": ["Den", "Exposure", "Gridlock", "Scar"],
+      "note": "Listed on the official competitive-settings page (updated 2026-06-04); matches Stage IV play data."
+    }
+  ],
+  "stages": [
+    {
+      "stage": 1,
+      "qualifiers": {
+        "start": "2025-12-05",
+        "end": "2026-01-25",
+        "matchesPerTeam": 7,
+        "weeks": [
+          { "week": 1, "mapPool": "s1-early" },
+          { "week": 2, "mapPool": "s1-early" },
+          { "week": 3, "mapPool": "s1" },
+          { "week": 4, "mapPool": "s1" },
+          { "week": 5, "mapPool": "s1" }
+        ]
+      },
+      "minor": null,
+      "major": {
+        "name": "Major I",
+        "start": "2026-01-29",
+        "end": "2026-02-01",
+        "city": "University Park, TX",
+        "venue": "Moody Coliseum",
+        "host": "optic-texas",
+        "mapPool": "s1",
+        "bestOf": 5,
+        "finalBestOf": 7,
+        "format": { "type": "double-elim", "winnersSeeds": [1, 2, 3, 4, 5, 6, 7, 8], "losersSeeds": [9, 10, 11, 12] },
+        "seeding": { "by": "qualifiers" },
+        "points": [
+          { "from": 1, "to": 1, "points": 100 },
+          { "from": 2, "to": 2, "points": 75 },
+          { "from": 3, "to": 3, "points": 60 },
+          { "from": 4, "to": 4, "points": 45 },
+          { "from": 5, "to": 6, "points": 30 },
+          { "from": 7, "to": 8, "points": 15 },
+          { "from": 9, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 375000,
+        "realResult": { "winner": "paris-gentle-mates", "runnerUp": "optic-texas", "score": "4-3" },
+        "sources": ["https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_1"]
+      }
+    },
+    {
+      "stage": 2,
+      "qualifiers": {
+        "start": "2026-02-13",
+        "end": "2026-03-22",
+        "matchesPerTeam": 11,
+        "weeks": [
+          { "week": 1, "mapPool": "s1" },
+          { "week": 2, "mapPool": "s1" },
+          { "week": 3, "mapPool": "s1" },
+          { "week": 4, "mapPool": "s1" },
+          { "week": 5, "mapPool": "s1" },
+          { "week": 6, "mapPool": "s1" }
+        ]
+      },
+      "minor": null,
+      "major": {
+        "name": "Major II",
+        "start": "2026-03-27",
+        "end": "2026-03-29",
+        "city": "Birmingham, UK",
+        "venue": "National Exhibition Centre (DreamHack Birmingham)",
+        "mapPool": "s1",
+        "bestOf": 5,
+        "finalBestOf": 7,
+        "format": {
+          "type": "double-elim-playin",
+          "mainSeeds": [1, 2, 3, 4, 5, 6],
+          "playinSeeds": [7, 8, 9, 10],
+          "playinSpots": 2,
+          "eliminatedSeeds": [11, 12]
+        },
+        "seeding": { "by": "qualifiers" },
+        "points": [
+          { "from": 1, "to": 1, "points": 100 },
+          { "from": 2, "to": 2, "points": 75 },
+          { "from": 3, "to": 3, "points": 60 },
+          { "from": 4, "to": 4, "points": 45 },
+          { "from": 5, "to": 6, "points": 30 },
+          { "from": 7, "to": 8, "points": 15 },
+          { "from": 9, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 375000,
+        "realResult": { "winner": "faze-vegas", "runnerUp": "optic-texas", "score": "4-1" },
+        "sources": ["https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_2"]
+      }
+    },
+    {
+      "stage": 3,
+      "qualifiers": {
+        "start": "2026-04-17",
+        "end": "2026-05-10",
+        "matchesPerTeam": 5,
+        "weeks": [
+          { "week": 1, "start": "2026-04-17", "end": "2026-04-19", "mapPool": "s3" },
+          { "week": 2, "start": "2026-05-01", "end": "2026-05-03", "mapPool": "s3" },
+          { "week": 3, "start": "2026-05-08", "end": "2026-05-10", "mapPool": "s3" }
+        ]
+      },
+      "minor": {
+        "name": "Minor I",
+        "start": "2026-04-24",
+        "end": "2026-04-26",
+        "mapPool": "s3",
+        "bestOf": 5,
+        "finalBestOf": 5,
+        "format": { "type": "single-elim", "size": 12, "byes": 4 },
+        "seeding": { "by": "points-after-stage", "stage": 2 },
+        "points": [
+          { "from": 1, "to": 1, "points": 30 },
+          { "from": 2, "to": 2, "points": 20 },
+          { "from": 3, "to": 4, "points": 10 },
+          { "from": 5, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 20000,
+        "sources": ["https://liquipedia.net/callofduty/Call_of_Duty_League/Season_7/Stage_3/Minor"]
+      },
+      "major": {
+        "name": "Major III (Pro-Am)",
+        "start": "2026-05-15",
+        "end": "2026-05-17",
+        "city": "Atlanta",
+        "venue": "Georgia World Congress Center",
+        "mapPool": "s3",
+        "bestOf": 5,
+        "finalBestOf": 7,
+        "format": {
+          "type": "proam-gsl",
+          "groups": 4,
+          "groupSize": 4,
+          "advancePerGroup": 2,
+          "guests": [
+            { "id": "omit", "name": "OMiT", "abbr": "OM" },
+            { "id": "huntsmen", "name": "Huntsmen", "abbr": "HUN" },
+            { "id": "project-notorious", "name": "Project Notorious", "abbr": "P7N" },
+            { "id": "roc-esports", "name": "ROC Esports", "abbr": "ROC" }
+          ]
+        },
+        "seeding": { "by": "qualifiers" },
+        "points": [
+          { "from": 1, "to": 1, "points": 100 },
+          { "from": 2, "to": 2, "points": 75 },
+          { "from": 3, "to": 3, "points": 60 },
+          { "from": 4, "to": 4, "points": 45 },
+          { "from": 5, "to": 6, "points": 30 },
+          { "from": 7, "to": 8, "points": 15 },
+          { "from": 9, "to": 16, "points": 0 }
+        ],
+        "prizeUsd": 375000,
+        "realResult": { "winner": "la-thieves", "runnerUp": "optic-texas", "score": "4-3" },
+        "sources": ["https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_3"]
+      }
+    },
+    {
+      "stage": 4,
+      "qualifiers": {
+        "start": "2026-05-29",
+        "end": "2026-06-21",
+        "matchesPerTeam": 5,
+        "weeks": [
+          { "week": 1, "start": "2026-05-29", "end": "2026-05-31", "mapPool": "s4" },
+          { "week": 2, "start": "2026-06-12", "end": "2026-06-14", "mapPool": "s4" },
+          { "week": 3, "start": "2026-06-19", "end": "2026-06-21", "mapPool": "s4" }
+        ]
+      },
+      "minor": {
+        "name": "Minor II",
+        "start": "2026-06-05",
+        "end": "2026-06-07",
+        "mapPool": "s4",
+        "bestOf": 5,
+        "finalBestOf": 7,
+        "format": { "type": "single-elim", "size": 12, "byes": 4 },
+        "seeding": { "by": "points-after-stage", "stage": 3 },
+        "points": [
+          { "from": 1, "to": 1, "points": 30 },
+          { "from": 2, "to": 2, "points": 20 },
+          { "from": 3, "to": 4, "points": 10 },
+          { "from": 5, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 20000,
+        "sources": ["https://liquipedia.net/callofduty/Call_of_Duty_League/Season_7/Stage_4/Minor"]
+      },
+      "major": {
+        "name": "Major IV",
+        "start": "2026-06-26",
+        "end": "2026-06-28",
+        "city": "Nanterre (Paris)",
+        "venue": "Paris La Défense Arena",
+        "host": "paris-gentle-mates",
+        "mapPool": "s4",
+        "bestOf": 5,
+        "finalBestOf": 7,
+        "format": { "type": "double-elim", "winnersSeeds": [1, 2, 3, 4, 5, 6, 7, 8], "losersSeeds": [9, 10, 11, 12] },
+        "seeding": { "by": "qualifiers" },
+        "points": [
+          { "from": 1, "to": 1, "points": 100 },
+          { "from": 2, "to": 2, "points": 75 },
+          { "from": 3, "to": 3, "points": 60 },
+          { "from": 4, "to": 4, "points": 45 },
+          { "from": 5, "to": 6, "points": 30 },
+          { "from": 7, "to": 8, "points": 15 },
+          { "from": 9, "to": 12, "points": 0 }
+        ],
+        "prizeUsd": 375000,
+        "realResult": { "winner": "optic-texas", "runnerUp": "la-thieves", "score": "4-3" },
+        "sources": ["https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2026_Season/Major_4"]
+      }
+    }
+  ],
+  "championship": {
+    "name": "Championship",
+    "start": "2026-07-16",
+    "end": "2026-07-19",
+    "city": "Las Vegas",
+    "venue": "Michelob ULTRA Arena",
+    "host": "faze-vegas",
+    "mapPool": "s4",
+    "bestOf": 5,
+    "finalBestOf": 9,
+    "format": { "type": "double-elim", "winnersSeeds": [1, 2, 3, 4, 5, 6, 7, 8], "losersSeeds": [] },
+    "seeding": { "by": "season-points" },
+    "points": [{ "from": 1, "to": 8, "points": 0 }],
+    "prizeUsd": 2000000,
+    "realResult": { "winner": "faze-vegas", "runnerUp": "optic-texas", "score": "5-2" },
+    "sources": [
+      "https://cod-esports.fandom.com/wiki/Call_of_Duty_League_Championship_2026",
+      "https://dotesports.com/call-of-duty/news/cdl-champs-2026-experience"
+    ]
+  },
+  "historical": {
+    "finalPoints": {
+      "optic-texas": 575,
+      "la-thieves": 500,
+      "faze-vegas": 440,
+      "paris-gentle-mates": 380,
+      "toronto-koi": 290,
+      "g2-minnesota": 250,
+      "riyadh-falcons": 240,
+      "miami-heretics": 235,
+      "carolina-royal-ravens": 150,
+      "boston-breach": 115,
+      "vancouver-surge": 95,
+      "cloud9-new-york": 30
+    }
+  },
+  "unverified": [
+    "Stage I and II qualifier week dates; Stage II assumed 6 weeks for 11 matches.",
+    "Which Stage I week Blackheart HP entered the pool (assumed week 3).",
+    "Overload half length (300s placeholder) — tune with the calibration script.",
+    "Bo9 veto procedure (no official text).",
+    "Final points standings come from the project brief, not yet cross-checked."
+  ],
+  "sources": [
+    "https://www.callofdutyleague.com/en-us/competitive-settings?tab=map-veto",
+    "https://liquipedia.net/callofduty/Call_of_Duty_League/Season_7",
+    "https://breakingpoint.gg/posts/sake-cliff-town-highlight-new-cdl-map-pool"
+  ]
+}

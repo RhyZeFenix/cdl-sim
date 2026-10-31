@@ -30,15 +30,58 @@ export interface MoraleChange {
   deltas: Record<string, number>;
 }
 
+/** Something the GM can answer from the inbox. */
+export type InboxAction =
+  | { type: "press"; seriesId: string; opponent: string; won: boolean }
+  | { type: "tradeOffer"; team: string; give: string[]; get: string[]; window: number }
+  | { type: "raise"; player: string; salary: number }
+  | { type: "tradeRequest"; player: string };
+
+export interface InboxChoice {
+  id: string;
+  label: string;
+  hint: string;
+}
+
 export interface InboxItem {
   id: string;
   date: string;
-  kind: "welcome" | "recap" | "roundup" | "event" | "owner" | "morale" | "contract" | "trade" | "scout";
+  kind: "welcome" | "recap" | "roundup" | "event" | "owner" | "morale" | "contract" | "trade" | "scout" | "press" | "offer" | "demand" | "story" | "staff" | "academy" | "award";
   title: string;
   body: string;
   /** Series whose results this item gives away: it stays hidden while any is unwatched. */
   refs?: string[];
   read?: boolean;
+  action?: InboxAction;
+  choices?: InboxChoice[];
+  /** The choice made (or "expired"). */
+  answered?: string;
+}
+
+export interface StaffMember {
+  id: string;
+  name: string;
+  role: "coach" | "analyst";
+  /** 1-5 stars. */
+  rating: number;
+  /** $k a season, from the staff budget. */
+  salary: number;
+}
+
+export interface Prospect {
+  player: Player;
+  /** Overall the prospect could grow into. */
+  potential: number;
+  age: number;
+  team: string;
+}
+
+export interface SeasonAwards {
+  mvp?: string;
+  rookie?: string;
+  champsMvp?: string;
+  /** First and second All-CDL teams, four players each. */
+  allCdl: [string[], string[]];
 }
 
 export type OwnerGoal =

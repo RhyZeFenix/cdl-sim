@@ -14,6 +14,7 @@ import {
   type SeasonState,
 } from "../season/season";
 import { moraleForm } from "./morale";
+import { analystForm, analystLevel, coachFactor } from "./staff";
 import type { GmBoost, Prep } from "./types";
 import { overall } from "./values";
 
@@ -45,32 +46,60 @@ export function gmSetPrep(state: SeasonState, prep: Prep): void {
   state.gm.prep = prep;
 }
 
-/** The boost the GM team plays with in a series of this phase. */
-export function gmBoostFor(state: SeasonState, data: SeasonData, phase: PoolPhase): GmBoost {
+// ------------------------------------------------------------------ practice
+
+/** Fatigue change per step for each prep, plus per scrim. Above 50 it costs form. */
+export const FATIGUE = { balanced: -10, map: -4, mode: -4, rest: -30, grind: 10, scrim: 12 } as const;
+/** Edge against a team you scrimmed, for the next two steps. */
+export const SCRIM_EDGE = 0.012;
+export const MAX_SCRIMS = 2;
+export const fatiguePenalty = (f: number) => (f > 50 ? -((f - 50) / 50) * 0.015 : 0);
+
+export function gmSetScrims(state: SeasonState, data: SeasonData, teams: string[]): void {
+  const gm = state.gm;
+  if (!gm) throw new Error("not in GM mode");
+  if (state.pending) throw new Error("Practice is locked while a match is waiting.");
+  const uniq = [...new Set(teams)];
+  if (uniq.length > MAX_SCRIMS) throw new Error(`At most ${MAX_SCRIMS} scrim partners a week.`);
+  if (uniq.some((t) => t === gm.team || !data.season.teams.some((x) => x.id === t))) throw new Error("Pick other CDL teams.");
+  gm.scrims = uniq;
+}
+
+/** True if the GM team has scrimmed this team recently (an edge and scouting intel). */
+export const isFamiliar = (state: SeasonState, team: string) => (state.gm?.familiarity?.[team] ?? -1) > state.next || !!state.gm?.scrims?.includes(team);
+
+/** The boost the GM team plays with in a series of this phase (against `opponent`). */
+export function gmBoostFor(state: SeasonState, data: SeasonData, phase: PoolPhase, opponent?: string): GmBoost {
   const gm = state.gm!;
   const boost: GmBoost = {};
   const prep = gm.prep;
+  const coach = coachFactor(state);
   if (prep?.kind === "map" || prep?.kind === "mode") {
     const pool = mapPoolFor(data.season, phase);
     const out: Record<string, number> = {};
     for (const slot of ["hp", "snd", "third"] as const) {
       const mode = slotToMode(data.season, slot);
       for (const map of pool[slot]) {
-        if (prep.kind === "map" && prep.mode === mode && prep.map === map) out[`${mode}:${map}`] = PREP_BONUS.map;
-        if (prep.kind === "mode" && prep.mode === mode) out[`${mode}:${map}`] = PREP_BONUS.mode;
+        const bonus = prep.kind === "map" ? (prep.mode === mode && prep.map === map ? PREP_BONUS.map : 0) : prep.mode === mode ? PREP_BONUS.mode : 0;
+        if (bonus) out[`${mode}:${map}`] = round4(bonus * coach);
       }
     }
     if (Object.keys(out).length) boost.prep = out;
   }
-  if (prep?.kind === "grind") boost.form = PREP_BONUS.grind;
+  let form = prep?.kind === "grind" ? PREP_BONUS.grind * coach : 0;
+  form += analystForm(state) + fatiguePenalty(gm.fatigue ?? 0);
+  if (opponent && (gm.familiarity?.[opponent] ?? -1) > state.next) form += SCRIM_EDGE;
+  if (Math.abs(form) > 1e-5) boost.form = round4(form);
   const players: Record<string, number> = {};
   for (const id of gm.roster) {
     const f = moraleForm(gm.morale?.[id] ?? 70);
-    if (Math.abs(f) > 1e-4) players[id] = Math.round(f * 10000) / 10000;
+    if (Math.abs(f) > 1e-4) players[id] = round4(f);
   }
   if (Object.keys(players).length) boost.players = players;
   return boost;
 }
+
+const round4 = (x: number) => Math.round(x * 10000) / 10000;
 
 // ------------------------------------------------------------------ scouting
 
@@ -128,6 +157,12 @@ export interface ScoutReport {
   maps: ScoutMap[];
   /** Your starters' average overall minus theirs. */
   edge: number;
+  /**
+   * How much you know: "full" (map numbers and reads) with a 3+ star analyst or after
+   * scrimming them, "reads" (likely picks and bans only) with a lesser analyst, else "basic".
+   */
+  intel: "full" | "reads" | "basic";
+  familiar: boolean;
 }
 
 /** What you know about an opponent, leaving out `hidden` (unwatched) series. */
@@ -170,7 +205,11 @@ export function scoutReport(state: SeasonState, data: SeasonData, opponent: stri
     }
     maps.push(...rows);
   }
+  const familiar = isFamiliar(state, opponent);
+  const level = analystLevel(state);
   return {
+    intel: familiar || level >= 3 ? "full" : level >= 1 ? "reads" : "basic",
+    familiar,
     opponent,
     record: [wins, theirs.length - wins],
     recent,

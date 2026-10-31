@@ -316,3 +316,17 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .watch-toggle:hover { border-color: var(--text-3); color: var(--text); }
 .watch-toggle.on { border-style: solid; border-color: var(--accent); color: var(--accent); background: var(--win-bg); }
 .watch-toggle.static { cursor: default; }
+
+/* ---------- office sub-tabs and extras */
+.subtabs { margin: 12px 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { border: 1px solid var(--border); background: var(--surface-2); color: var(--text); border-radius: 999px; padding: 3px 10px; font: inherit; font-size: 12px; cursor: pointer; }
+.chip.on { border-color: var(--accent); background: var(--win-bg); color: var(--accent); }
+.chip:disabled { opacity: 0.45; cursor: default; }
+.msg { cursor: default; }
+.msg .msg-head { background: none; border: none; padding: 0; font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.msg.ask { border-color: var(--accent); }
+.offer { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--surface-2); flex-wrap: wrap; }
+.tbl tr.window-row td { background: var(--surface-2); }
+.tbl tr.cal-next td { font-weight: 600; }
+.tbl tr.cal-done td { opacity: 0.6; }

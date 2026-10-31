@@ -25,7 +25,18 @@ export const ovrOf = (state: SeasonState, data: SeasonData, id: string): number 
 /** What a player would sign for, for `years` seasons. */
 export function contractFor(state: SeasonState, data: SeasonData, id: string, years: number): Contract {
   const y = Math.max(1, Math.min(3, Math.round(years)));
-  return { salary: askFor(ovrOf(state, data, id), y), years: y };
+  return { salary: Math.round((askFor(ovrOf(state, data, id), y) * reputationOf(state, id)) / 5) * 5, years: y };
+}
+
+/** Award winners ask for more (1 = no awards). */
+export const reputationOf = (state: SeasonState, id: string) => state.reputation?.[id] ?? 1;
+
+/** What a player asks per season on a two-year deal, with any award premium. */
+export const marketAsk = (state: SeasonState, data: SeasonData, id: string) => Math.round((askingSalary(ovrOf(state, data, id)) * reputationOf(state, id)) / 5) * 5;
+
+/** Trades close at the deadline: the window before Champs is signings only. */
+export function tradesOpen(state: SeasonState): boolean {
+  return gmCanMakeMoves(state) && state.steps[state.next]?.kind !== "championship";
 }
 
 /** Salary on the books: contracts plus dead money. */
@@ -99,6 +110,7 @@ export function evaluateTrade(state: SeasonState, data: SeasonData, offer: Trade
   const no = (reason: string, valueIn = 0, valueOut = 0): TradeVerdict => ({ accepted: false, reason, valueIn, valueOut, payrollAfter: payroll(state) });
   if (!data.season.teams.some((t) => t.id === team) || team === gm.team) return no("Pick another CDL team.");
   if (!gmCanMakeMoves(state)) return no("Trades are only allowed before the season and between stages.");
+  if (!tradesOpen(state)) return no("The trade deadline has passed (no trades before Champs).");
   if (!give.length && !get.length) return no("Pick players to trade.");
   if (give.some((id) => !gm.roster.includes(id))) return no("You can only trade players on your roster.");
   if (get.some((id) => !ai.includes(id))) return no("That player isn't on their roster.");
@@ -136,7 +148,12 @@ const teamName = (data: SeasonData, id: string) => data.season.teams.find((t) =>
 /** Makes the trade if the AI team accepts it. Returns the verdict either way. */
 export function proposeTrade(state: SeasonState, data: SeasonData, offer: TradeOffer): TradeVerdict {
   const v = evaluateTrade(state, data, offer);
-  if (!v.accepted) return v;
+  if (v.accepted) executeTrade(state, data, offer);
+  return v;
+}
+
+/** Swaps the players (no questions asked: callers check it's allowed). */
+export function executeTrade(state: SeasonState, data: SeasonData, offer: TradeOffer): void {
   const gm = state.gm!;
   const { team, give, get } = offer;
   const date = nextStepDate(state, data);
@@ -175,5 +192,5 @@ export function proposeTrade(state: SeasonState, data: SeasonData, offer: TradeO
     title: `Trade with ${teamName(data, team)} done`,
     body: `You sent ${give.map(name).join(", ") || "nothing"} and got ${get.map(name).join(", ") || "nothing"}. Payroll is now $${payroll(state)}k of $${SALARY_CAP}k.`,
   });
-  return v;
+  gm.tradeBlock = (gm.tradeBlock ?? []).filter((id) => !give.includes(id));
 }

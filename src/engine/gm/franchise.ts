@@ -2,7 +2,9 @@
 // GM series and each finished step into morale changes, owner trust and news.
 import type { SeasonData } from "../data/registry";
 import {
+  gmCanMakeMoves,
   isDone,
+  playerIndex,
   playerInfo,
   pointsTable,
   type EventRecord,
@@ -14,8 +16,13 @@ import { initialContracts, payroll } from "./contracts";
 import { pushInbox } from "./inbox";
 import { addMorale, MORALE_START, seriesMorale, stepMorale } from "./morale";
 import { goalsFor, goalText, ordinal, ownerVerdict, strengthRanking, verdictText } from "./owner";
-import { PREP_MORALE } from "./weekly";
+import { FATIGUE, PREP_MORALE } from "./weekly";
 import { SALARY_CAP } from "./values";
+import { initialStaff, coachMoraleShield } from "./staff";
+import { initialRivals, storyAfterSeries } from "./story";
+import { marketWindow } from "./market";
+import { developProspects, prospectPool } from "./academy";
+import { awardSeason } from "./awards";
 
 export { gmBoostFor } from "./weekly";
 
@@ -41,6 +48,18 @@ export function initFranchise(state: SeasonState, data: SeasonData): void {
   gm.expectedRank = ranking.findIndex((r) => r.team === gm.team) + 1;
   gm.goals = goalsFor(gm.expectedRank, data);
   gm.inbox = gm.inbox ?? [];
+  gm.staff = gm.staff ?? initialStaff(state);
+  gm.fatigue = gm.fatigue ?? 0;
+  gm.scrims = gm.scrims ?? [];
+  gm.familiarity = gm.familiarity ?? {};
+  gm.rivals = gm.rivals ?? initialRivals(state, data);
+  gm.streak = gm.streak ?? 0;
+  gm.tradeBlock = gm.tradeBlock ?? [];
+  gm.academy = gm.academy ?? [];
+  if (!gm.prospects) {
+    const taken = new Set([...playerIndex(data).values()].map((p) => p.handle.toLowerCase()));
+    gm.prospects = prospectPool(state, taken);
+  }
   pushInbox(state, {
     date,
     kind: "welcome",
@@ -50,6 +69,7 @@ export function initFranchise(state: SeasonState, data: SeasonData): void {
       `The owner's goals: ${gm.goals.map(goalText).join("; ")}. ` +
       `Payroll is $${payroll(state)}k against a $${SALARY_CAP}k cap. Set a prep focus each week in the Office.`,
   });
+  marketWindow(state, data);
 }
 
 /** After a GM series: morale changes and a recap (both hidden until the series is watched). */
@@ -60,7 +80,10 @@ export function onGmSeries(state: SeasonState, data: SeasonData, rec: SeriesReco
   const side = rec.teams[0] === gm.team ? 0 : 1;
   const won = rec.winner === gm.team;
   const opp = rec.teams[1 - side]!;
-  addMorale(state, { refs: [rec.id], why: `${won ? "Win" : "Loss"} vs ${abbr(data, opp)}`, deltas: seriesMorale(state, rec) });
+  // A better coach takes the sting out of losses.
+  const shield = coachMoraleShield(state);
+  const deltas = Object.fromEntries(Object.entries(seriesMorale(state, rec)).map(([id, d]) => [id, d < 0 ? Math.round(d * shield) : d]));
+  addMorale(state, { refs: [rec.id], why: `${won ? "Win" : "Loss"} vs ${abbr(data, opp)}`, deltas });
 
   // Top fragger for the recap.
   const lines = new Map<string, [number, number]>();
@@ -80,6 +103,7 @@ export function onGmSeries(state: SeasonState, data: SeasonData, rec: SeriesReco
     body: `${rec.label}. Maps: ${maps}. ${playerInfo(state, data, star)?.handle ?? star} led the way at ${k}-${d}.`,
     refs: [rec.id],
   });
+  storyAfterSeries(state, data, rec);
 }
 
 /** After a whole step: prep and drift on morale, league news, and the owner's reaction to events. */
@@ -88,6 +112,13 @@ export function onStepComplete(state: SeasonState, data: SeasonData, step: Step)
   const mine = Object.values(state.series).filter((r) => r.teams.includes(gm.team) && inStep(r, step)).map((r) => r.id);
   const prepDelta = gm.prep?.kind === "rest" ? PREP_MORALE.rest : gm.prep?.kind === "grind" ? PREP_MORALE.grind : 0;
   addMorale(state, { refs: mine, why: prepDelta ? `Prep: ${gm.prep!.kind}` : "Settling", deltas: stepMorale(state, prepDelta) });
+
+  // Practice: fatigue from prep and scrims; scrim partners become familiar for two steps.
+  const scrims = gm.scrims ?? [];
+  const prepFatigue = FATIGUE[gm.prep?.kind ?? "balanced"];
+  gm.fatigue = Math.max(0, Math.min(100, (gm.fatigue ?? 0) + prepFatigue + scrims.length * FATIGUE.scrim));
+  if (scrims.length) gm.familiarity = { ...(gm.familiarity ?? {}), ...Object.fromEntries(scrims.map((t) => [t, state.next + 2])) };
+  developProspects(state);
 
   const date = state.pointsHistory[state.pointsHistory.length - 1]?.date ?? "";
   // Anyone unhappy says so.
@@ -118,7 +149,11 @@ export function onStepComplete(state: SeasonState, data: SeasonData, step: Step)
   } else {
     const ev = state.events[state.events.length - 1]!;
     eventNews(state, data, ev, mine);
+    if (step.kind === "championship") {
+      awardSeason(state, data, ev.matches.map((m) => m.seriesId), (id) => playerInfo(state, data, id)?.handle ?? id);
+    }
   }
+  if (gmCanMakeMoves(state)) marketWindow(state, data);
 }
 
 function inStep(r: SeriesRecord, step: Step): boolean {

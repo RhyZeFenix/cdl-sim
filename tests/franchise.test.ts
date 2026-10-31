@@ -27,6 +27,7 @@ import {
   ovrOf,
   SALARY_CAP,
   MIN_EXCEPTION,
+  coachFactor,
   contractFor,
   type SeasonData,
   type SeasonState,
@@ -50,7 +51,7 @@ describe("weekly loop", () => {
     expect(Object.keys(gm.contracts!).sort()).toEqual([...gm.roster].sort());
     expect(Object.values(gm.morale!).every((m) => m === 70)).toBe(true);
     expect(gm.goals!.length).toBeGreaterThan(0);
-    expect(gm.inbox![0]!.kind).toBe("welcome");
+    expect(gm.inbox!.some((i) => i.kind === "welcome")).toBe(true);
     expect(gm.expectedRank).toBeGreaterThan(0);
   });
 
@@ -72,7 +73,8 @@ describe("weekly loop", () => {
     gmSetPrep(s, { kind: "map", mode: "hp", map });
     advance(s, d26);
     const rec = gmSeries(s)[0]!;
-    expect(rec.gmBoost?.prep).toEqual({ [`hp:${map}`]: 0.04 });
+    // Scaled by the coach (a two-star coach to start).
+    expect(rec.gmBoost?.prep).toEqual({ [`hp:${map}`]: Math.round(0.04 * coachFactor(s) * 10000) / 10000 });
     const again = replaySeries(s, d26, rec.id);
     expect(again.maps.map((m) => m.score)).toEqual(rec.maps.map((m) => m.score));
   });

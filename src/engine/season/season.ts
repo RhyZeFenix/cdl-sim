@@ -19,6 +19,9 @@ import { DEAD_CAP_SHARE } from "../gm/values";
 import type {
   CarriedPlayers,
   Contract,
+  Prospect,
+  SeasonAwards,
+  StaffMember,
   DynastyInfo,
   GmBoost,
   InboxItem,
@@ -112,6 +115,23 @@ export interface GmState {
   /** Salary still owed to released players this season ($k). */
   deadCap?: number;
   trades?: TradeRecord[];
+  staff?: { coach?: StaffMember; analyst?: StaffMember };
+  /** Practice: scrim partners for the next step. */
+  scrims?: string[];
+  /** Teams you've scrimmed recently: an edge against them until this step index. */
+  familiarity?: Record<string, number>;
+  /** Fatigue from practice, 0-100. */
+  fatigue?: number;
+  /** Rivalry heat per team, 0-100. */
+  rivals?: Record<string, number>;
+  /** Current series streak: positive wins, negative losses. */
+  streak?: number;
+  /** Players you're open to trading (AI offers target them). */
+  tradeBlock?: string[];
+  /** Academy prospects signed by the GM (ids into prospects). */
+  academy?: string[];
+  /** The Challengers prospect pool for this season. */
+  prospects?: Record<string, Prospect>;
 }
 
 /** What the user decided for one GM series: Team A/B (if higher seed), each veto answer, and the lineup. */
@@ -226,6 +246,10 @@ export interface SeasonState {
   /** Dynasty seasons past the real data: rating change per player since the data season. */
   ratingAdj?: Record<string, number>;
   dynasty?: DynastyInfo;
+  /** End-of-season awards (set when Champs is played). */
+  awards?: SeasonAwards;
+  /** Award reputation per player: raises their asking salary (1 = none). */
+  reputation?: Record<string, number>;
 }
 
 /** Thrown inside a step to stop at a GM series; the step resumes on the next advance. */
@@ -526,7 +550,7 @@ function playSeries(state: SeasonState, data: SeasonData, spec: SeriesSpec): Ser
   if (existing) return existing;
   const gm = state.gm;
   const gmSide = gmSideOf(state, spec.teams);
-  if (gm && gmSide !== null) spec = { ...spec, boost: gmBoostFor(state, data, spec.phase) };
+  if (gm && gmSide !== null) spec = { ...spec, boost: gmBoostFor(state, data, spec.phase, spec.teams[gmSide === 0 ? 1 : 0]) };
   let gmVeto: GmVeto | undefined;
   if (gm && gmSide !== null && !gm.autoVeto) {
     gmVeto = state.gmVetoes?.[spec.id];

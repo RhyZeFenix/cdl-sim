@@ -194,8 +194,21 @@ export function startNextSeason(prev: SeasonState, prevData: SeasonData, opts: N
     contracts,
     trust: prev.gm!.trust,
     inbox: [],
+    staff: gm.staff,
+    // Rivalries cool off over the summer.
+    rivals: Object.fromEntries(Object.entries(gm.rivals ?? {}).map(([t, h]) => [FRANCHISE_LINEAGE[prev.seasonId]?.[t] ?? t, Math.round(h / 2)])),
+    academy: gm.academy ?? [],
   };
+  state.reputation = prev.reputation;
   initFranchise(state, data);
+  // initFranchise drew a fresh prospect pool; academy players join it a year older and better.
+  const academy = Object.fromEntries(
+    (gm.academy ?? []).map((id) => {
+      const p = gm.prospects![id]!;
+      return [id, { ...p, age: p.age + 1, player: { ...p.player, ratings: progressRatings(p.player.ratings, progression(id, p.age, year)) } }];
+    }),
+  );
+  state.gm!.prospects = { ...(state.gm!.prospects ?? {}), ...academy };
   const left = gm.roster.filter((id) => !kept.includes(id)).map((id) => playerInfo(prev, prevData, id)?.handle ?? id);
   pushInbox(state, {
     date: data.season.stages[0]!.qualifiers.start,

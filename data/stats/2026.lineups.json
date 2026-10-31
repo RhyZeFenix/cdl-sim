@@ -1,0 +1,4760 @@
+{
+ "season": "2026",
+ "fetched": "2026-10-31",
+ "source": "https://cod-esports.fandom.com/api.php (Cargo table PlayerStats)",
+ "license": "CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors",
+ "rows": [
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "First": "2026-01-30",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "First": "2026-01-30",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "First": "2026-01-30",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "First": "2026-01-30",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2025-12-05",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2025-12-05",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2025-12-05",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2025-12-05",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "14",
+   "First": "2026-02-13",
+   "Last": "2026-02-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "First": "2026-02-13",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "First": "2026-02-13",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "First": "2026-02-13",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2026-02-27",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "11",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "11",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "11",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "11",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-18",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-18",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-18",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-18",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "4",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "4",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "4",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "4",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "First": "2026-05-30",
+   "Last": "2026-06-19"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "First": "2026-05-30",
+   "Last": "2026-06-19"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "First": "2026-05-30",
+   "Last": "2026-06-19"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "First": "2026-05-30",
+   "Last": "2026-06-19"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "15",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "15",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "15",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "15",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "First": "2026-01-29",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "First": "2026-01-29",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "First": "2026-01-29",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "First": "2026-01-29",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2025-12-05",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "22",
+   "First": "2026-01-09",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2025-12-05",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2025-12-05",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "7",
+   "First": "2025-12-05",
+   "Last": "2025-12-12"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "First": "2026-02-13",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "First": "2026-02-13",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "First": "2026-02-13",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "First": "2026-02-13",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "12",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "12",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Fire",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "12",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "12",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Fire",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "23",
+   "First": "2026-04-17",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "23",
+   "First": "2026-04-17",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Fire",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "23",
+   "First": "2026-04-17",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "23",
+   "First": "2026-04-17",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Fire",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "KnoX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "5",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Fire",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "5",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "5",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Standy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "5",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "First": "2026-05-29",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Fire",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "First": "2026-05-29",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "KnoX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "3",
+   "First": "2026-06-21",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "First": "2026-05-29",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Standy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "16",
+   "First": "2026-05-29",
+   "Last": "2026-06-14"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "20",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "20",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "20",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "20",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "First": "2026-01-30",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "First": "2026-01-30",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "First": "2026-01-30",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "First": "2026-01-30",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "First": "2025-12-06",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "First": "2025-12-06",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "First": "2025-12-06",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "First": "2025-12-06",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "First": "2026-02-15",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "First": "2026-02-15",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Nejra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "First": "2026-02-15",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Okis",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "First": "2026-02-15",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Nejra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Okis",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Nejra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Okis",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2026-04-19",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2026-04-19",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Nejra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2026-04-19",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Okis",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2026-04-19",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "3",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "3",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Nejra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "3",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Wevy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "3",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Nejra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Wevy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2026-05-29",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2026-05-29",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Nejra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2026-05-29",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Wevy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2026-05-29",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "First": "2026-07-16",
+   "Last": "2026-07-19"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "First": "2026-07-16",
+   "Last": "2026-07-19"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "First": "2026-07-16",
+   "Last": "2026-07-19"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "First": "2026-07-16",
+   "Last": "2026-07-19"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "16",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "16",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "16",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "16",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "25",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "25",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "25",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "25",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2025-12-05",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2025-12-05",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2025-12-05",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2025-12-05",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "First": "2026-02-13",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "First": "2026-02-13",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "First": "2026-02-13",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "First": "2026-02-13",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "First": "2026-04-25",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "First": "2026-04-25",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "First": "2026-04-25",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "First": "2026-04-25",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-18",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-18",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-18",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-18",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "17",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "17",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "17",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "17",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "20",
+   "First": "2026-05-30",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "20",
+   "First": "2026-05-30",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "20",
+   "First": "2026-05-30",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "FaZe Vegas",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "20",
+   "First": "2026-05-30",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "12",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "12",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "12",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "12",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "26",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "26",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "26",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "26",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "14",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "14",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "14",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "14",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "First": "2025-12-06",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "First": "2025-12-06",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "First": "2025-12-06",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "First": "2025-12-06",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "10",
+   "First": "2026-03-27",
+   "Last": "2026-03-28"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "10",
+   "First": "2026-03-27",
+   "Last": "2026-03-28"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "10",
+   "First": "2026-03-27",
+   "Last": "2026-03-28"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "10",
+   "First": "2026-03-27",
+   "Last": "2026-03-28"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "First": "2026-02-14",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "First": "2026-02-14",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "First": "2026-02-14",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "First": "2026-02-14",
+   "Last": "2026-03-21"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "20",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "20",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "20",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "20",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "6",
+   "First": "2026-04-24",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "6",
+   "First": "2026-04-24",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "6",
+   "First": "2026-04-24",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "6",
+   "First": "2026-04-24",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "First": "2026-06-26",
+   "Last": "2026-06-27"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "First": "2026-06-26",
+   "Last": "2026-06-27"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "First": "2026-06-26",
+   "Last": "2026-06-27"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "First": "2026-06-26",
+   "Last": "2026-06-27"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "7",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "7",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "7",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "7",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "24",
+   "First": "2026-05-29",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "24",
+   "First": "2026-05-29",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "24",
+   "First": "2026-05-29",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "G2 Minnesota",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "24",
+   "First": "2026-05-29",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Huntsmen",
+   "PlayerLink": "Brack",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "8",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Huntsmen",
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "8",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Huntsmen",
+   "PlayerLink": "Renegade",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "8",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Huntsmen",
+   "PlayerLink": "Swooty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "8",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "9",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "9",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "9",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "9",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "First": "2026-01-29",
+   "Last": "2026-01-31"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "First": "2026-01-29",
+   "Last": "2026-01-31"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "First": "2026-01-29",
+   "Last": "2026-01-31"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "First": "2026-01-29",
+   "Last": "2026-01-31"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "First": "2025-12-05",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "First": "2025-12-05",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "First": "2025-12-05",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "First": "2025-12-05",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "43",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "43",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "43",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "43",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "33",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "33",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "33",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "33",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "14",
+   "First": "2026-04-25",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "14",
+   "First": "2026-04-25",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "14",
+   "First": "2026-04-25",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "14",
+   "First": "2026-04-25",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "18",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "18",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "18",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "18",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "First": "2026-05-30",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "First": "2026-05-30",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "First": "2026-05-30",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "First": "2026-05-30",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "11",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "11",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "11",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "11",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "EriKBooM",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "9",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "9",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "9",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "3",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "6",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "11",
+   "First": "2026-01-30",
+   "Last": "2026-01-31"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "11",
+   "First": "2026-01-30",
+   "Last": "2026-01-31"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "11",
+   "First": "2026-01-30",
+   "Last": "2026-01-31"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "11",
+   "First": "2026-01-30",
+   "Last": "2026-01-31"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2025-12-06",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2025-12-06",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2025-12-06",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2025-12-06",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "7",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "7",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "7",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "7",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "39",
+   "First": "2026-02-13",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "39",
+   "First": "2026-02-13",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "39",
+   "First": "2026-02-13",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "39",
+   "First": "2026-02-13",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "19",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "19",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "19",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "19",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "16",
+   "First": "2026-04-24",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "16",
+   "First": "2026-04-24",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "16",
+   "First": "2026-04-24",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "16",
+   "First": "2026-04-24",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "10",
+   "First": "2026-06-26",
+   "Last": "2026-06-27"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "10",
+   "First": "2026-06-26",
+   "Last": "2026-06-27"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "10",
+   "First": "2026-06-26",
+   "Last": "2026-06-27"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "10",
+   "First": "2026-06-26",
+   "Last": "2026-06-27"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "First": "2026-06-05",
+   "Last": "2026-06-05"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "First": "2026-05-30",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "11",
+   "First": "2026-06-13",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "First": "2026-05-30",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "First": "2026-05-30",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "8",
+   "First": "2026-05-30",
+   "Last": "2026-05-31"
+  },
+  {
+   "Team": "OMiT",
+   "PlayerLink": "Aspekt",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "OMiT",
+   "PlayerLink": "Denza",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "OMiT",
+   "PlayerLink": "DK",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "OMiT",
+   "PlayerLink": "Ethan",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "OMiT Brooklyn",
+   "PlayerLink": "Brack",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "11",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "OMiT Brooklyn",
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "11",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "OMiT Brooklyn",
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "11",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "OMiT Brooklyn",
+   "PlayerLink": "Nate",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "11",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "23",
+   "First": "2026-07-16",
+   "Last": "2026-07-19"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "23",
+   "First": "2026-07-16",
+   "Last": "2026-07-19"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "23",
+   "First": "2026-07-16",
+   "Last": "2026-07-19"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "23",
+   "First": "2026-07-16",
+   "Last": "2026-07-19"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "19",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "19",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "19",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "19",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "16",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "16",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "16",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "16",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "First": "2025-12-05",
+   "Last": "2026-01-23"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "First": "2025-12-05",
+   "Last": "2026-01-23"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "First": "2025-12-05",
+   "Last": "2026-01-23"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "First": "2025-12-05",
+   "Last": "2026-01-23"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "First": "2026-02-13",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "First": "2026-02-13",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "First": "2026-02-13",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "First": "2026-02-13",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "9",
+   "First": "2026-04-25",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "9",
+   "First": "2026-04-25",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "9",
+   "First": "2026-04-25",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "9",
+   "First": "2026-04-25",
+   "Last": "2026-04-26"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-19",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-19",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-19",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-19",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "20",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "20",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "20",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "20",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2026-05-29",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2026-05-29",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2026-05-29",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2026-05-29",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "15",
+   "First": "2026-07-16",
+   "Last": "2026-07-18"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "15",
+   "First": "2026-07-16",
+   "Last": "2026-07-18"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "15",
+   "First": "2026-07-16",
+   "Last": "2026-07-18"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "15",
+   "First": "2026-07-16",
+   "Last": "2026-07-18"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "22",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "22",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "22",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "22",
+   "First": "2026-01-29",
+   "Last": "2026-02-01"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2025-12-06",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2025-12-06",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2025-12-06",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2025-12-06",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "First": "2026-03-27",
+   "Last": "2026-03-28"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "First": "2026-03-27",
+   "Last": "2026-03-28"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "First": "2026-03-27",
+   "Last": "2026-03-28"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "First": "2026-03-27",
+   "Last": "2026-03-28"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "46",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "46",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "46",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "46",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "25",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "25",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "25",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "25",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "First": "2026-04-25",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "First": "2026-04-25",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "First": "2026-04-25",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "First": "2026-04-25",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2026-04-17",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "24",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "24",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "24",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "24",
+   "First": "2026-06-26",
+   "Last": "2026-06-28"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "First": "2026-06-06",
+   "Last": "2026-06-07"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2026-05-30",
+   "Last": "2026-06-19"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2026-05-30",
+   "Last": "2026-06-19"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "12",
+   "First": "2026-06-12",
+   "Last": "2026-06-19"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "6",
+   "First": "2026-05-30",
+   "Last": "2026-05-31"
+  },
+  {
+   "Team": "Paris Gentle Mates",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2026-05-30",
+   "Last": "2026-06-19"
+  },
+  {
+   "Team": "Project Notorious",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Project Notorious",
+   "PlayerLink": "Diamondcon",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Project Notorious",
+   "PlayerLink": "EriKBooM",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Project Notorious",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Alluka",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "First": "2026-07-16",
+   "Last": "2026-07-18"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "First": "2026-07-16",
+   "Last": "2026-07-18"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "First": "2026-07-16",
+   "Last": "2026-07-18"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "First": "2026-07-16",
+   "Last": "2026-07-18"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "12",
+   "First": "2026-01-29",
+   "Last": "2026-01-31"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "12",
+   "First": "2026-01-29",
+   "Last": "2026-01-31"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "12",
+   "First": "2026-01-29",
+   "Last": "2026-01-31"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "12",
+   "First": "2026-01-29",
+   "Last": "2026-01-31"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2025-12-05",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2025-12-05",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2025-12-05",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2025-12-05",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "6",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "6",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "6",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "6",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "17",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "17",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "17",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "17",
+   "First": "2026-05-15",
+   "Last": "2026-05-16"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "8",
+   "First": "2026-04-24",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "8",
+   "First": "2026-04-24",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "8",
+   "First": "2026-04-24",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "8",
+   "First": "2026-04-24",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-18",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-18",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-18",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-18",
+   "Last": "2026-05-09"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2026-05-30",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2026-05-30",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2026-05-30",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "Riyadh Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2026-05-30",
+   "Last": "2026-06-20"
+  },
+  {
+   "Team": "ROC Esports",
+   "PlayerLink": "d7om",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "ROC Esports",
+   "PlayerLink": "d7oom",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "ROC Esports",
+   "PlayerLink": "Khhx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "ROC Esports",
+   "PlayerLink": "Rxld",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Stallions",
+   "PlayerLink": "Cimbels",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "6",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Stallions",
+   "PlayerLink": "Derek",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "6",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Stallions",
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "6",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Stallions",
+   "PlayerLink": "Swooty",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "6",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Still Orgless",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "25",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "Still Orgless",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "25",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "Still Orgless",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "25",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "Still Orgless",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "25",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "Team WaR",
+   "PlayerLink": "Censor",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "12",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Team WaR",
+   "PlayerLink": "Diamondcon",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "12",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Team WaR",
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "12",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Team WaR",
+   "PlayerLink": "Standy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "12",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Telluride Bush Gaming",
+   "PlayerLink": "Capsidal",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Telluride Bush Gaming",
+   "PlayerLink": "Prolute",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Telluride Bush Gaming",
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Telluride Bush Gaming",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "8",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "8",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "8",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "8",
+   "First": "2026-07-16",
+   "Last": "2026-07-17"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "21",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "21",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "21",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "21",
+   "First": "2025-11-22",
+   "Last": "2025-11-23"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "First": "2026-01-29",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "First": "2026-01-29",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "First": "2026-01-29",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "First": "2026-01-29",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2025-12-06",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2025-12-06",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2025-12-06",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2025-12-06",
+   "Last": "2026-01-24"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "First": "2026-03-27",
+   "Last": "2026-03-29"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "37",
+   "First": "2026-02-13",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "37",
+   "First": "2026-02-13",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "37",
+   "First": "2026-02-13",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "31",
+   "First": "2026-02-20",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "6",
+   "First": "2026-02-13",
+   "Last": "2026-02-14"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "24",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "24",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "24",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "24",
+   "First": "2026-05-15",
+   "Last": "2026-05-17"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "First": "2026-04-24",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "First": "2026-04-24",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "First": "2026-04-24",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "First": "2026-04-24",
+   "Last": "2026-04-25"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-18",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-18",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-18",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2026-04-18",
+   "Last": "2026-05-10"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "9",
+   "First": "2026-06-26",
+   "Last": "2026-06-27"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "9",
+   "First": "2026-06-26",
+   "Last": "2026-06-27"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "9",
+   "First": "2026-06-26",
+   "Last": "2026-06-27"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "9",
+   "First": "2026-06-26",
+   "Last": "2026-06-27"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "First": "2026-06-13",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "First": "2026-05-29",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "First": "2026-05-29",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "3",
+   "First": "2026-05-29",
+   "Last": "2026-05-29"
+  },
+  {
+   "Team": "Toronto KOI",
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "First": "2026-05-29",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Lqgend",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "First": "2025-11-22",
+   "Last": "2025-11-22"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "First": "2026-01-30",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "First": "2026-01-30",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "First": "2026-01-30",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "First": "2026-01-30",
+   "Last": "2026-01-30"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "24",
+   "First": "2025-12-06",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "24",
+   "First": "2025-12-06",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Lqgend",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "9",
+   "First": "2025-12-06",
+   "Last": "2025-12-13"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "24",
+   "First": "2025-12-06",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "15",
+   "First": "2026-01-10",
+   "Last": "2026-01-25"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Capsidal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "First": "2026-03-27",
+   "Last": "2026-03-27"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "17",
+   "First": "2026-02-14",
+   "Last": "2026-03-01"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Capsidal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "23",
+   "First": "2026-03-06",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "First": "2026-02-14",
+   "Last": "2026-03-22"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "First": "2026-05-15",
+   "Last": "2026-05-15"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "First": "2026-04-24",
+   "Last": "2026-04-24"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2026-04-17",
+   "Last": "2026-05-08"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2026-04-17",
+   "Last": "2026-05-08"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2026-04-17",
+   "Last": "2026-05-08"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2026-04-17",
+   "Last": "2026-05-08"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "5",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "5",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "5",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "5",
+   "First": "2026-06-26",
+   "Last": "2026-06-26"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "First": "2026-06-05",
+   "Last": "2026-06-06"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2026-05-29",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2026-05-29",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2026-05-29",
+   "Last": "2026-06-21"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2026-05-29",
+   "Last": "2026-06-21"
+  }
+ ]
+}

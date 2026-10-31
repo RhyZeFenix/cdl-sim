@@ -127,6 +127,14 @@ export function parseSeason(raw: unknown, veto: VetoFile, file: string): Season 
   for (const t of Object.keys(s.historical?.finalPoints ?? {})) {
     if (!teamIds.has(t)) problems.push(`historical.finalPoints: unknown team "${t}"`);
   }
+  const champsSeeds = s.historical?.champsSeeds;
+  if (champsSeeds) {
+    const fmt = s.championship.format;
+    const size = fmt.type === "double-elim" ? fmt.winnersSeeds.length + fmt.losersSeeds.length : 0;
+    if (champsSeeds.length !== size) problems.push(`historical.champsSeeds: expected ${size} teams, got ${champsSeeds.length}`);
+    if (new Set(champsSeeds).size !== champsSeeds.length) problems.push("historical.champsSeeds: duplicate team");
+    for (const t of champsSeeds) if (!teamIds.has(t)) problems.push(`historical.champsSeeds: unknown team "${t}"`);
+  }
 
   if (problems.length) throw new DataError(file, problems);
   return s;

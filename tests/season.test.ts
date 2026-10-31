@@ -264,6 +264,26 @@ describe("season pipeline", () => {
     expect(JSON.stringify(loaded)).toBe(JSON.stringify(uninterrupted));
   });
 
+  it.each(["2024", "2025", "2026"] as const)("%s Champs-only mode uses the real seeds", (id) => {
+    const data = loadSeasonData(id);
+    const s = createSeason(data, { seed: "champs", ratingMode: "historical", champsOnly: true });
+    expect(s.steps).toEqual([{ kind: "championship" }]);
+    advanceSeason(s, data);
+    expect(isDone(s)).toBe(true);
+    const champs = s.events[0]!;
+    expect(champs.kind).toBe("championship");
+    expect(champs.seeds).toEqual(data.season.historical!.champsSeeds);
+    expect(champs.matches).toHaveLength(14);
+    expect(Object.keys(s.series)).toHaveLength(14);
+  });
+
+  it("Champs-only 2026 starts from the real final points", () => {
+    const data = loadSeasonData("2026");
+    const s = createSeason(data, { seed: "champs", ratingMode: "historical", champsOnly: true });
+    expect(s.points["optic-texas"]).toBe(575);
+    expect(s.points["cloud9-new-york"]).toBe(30);
+  });
+
   it("a full season simulates in under 5 seconds", () => {
     const data = loadSeasonData("2026");
     const t0 = performance.now();

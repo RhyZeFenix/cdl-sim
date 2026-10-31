@@ -22,6 +22,8 @@ export interface SeasonOptions {
   /** Keep full event logs for every series (default: only LAN events and the GM team). */
   keepAllEvents?: boolean;
   gmTeam?: string;
+  /** Skip the regular season: play Champs only, seeded with the real Champs seeds. */
+  champsOnly?: boolean;
 }
 
 export type Step =
@@ -193,7 +195,10 @@ export function createSeason(data: SeasonData, options: SeasonOptions): SeasonSt
   const { season } = data;
   const root = createRng(options.seed);
   const teamIds = season.teams.map((t) => t.id);
-  const points = Object.fromEntries(teamIds.map((t) => [t, 0]));
+  if (options.champsOnly && !season.historical?.champsSeeds) throw new Error(`${season.id}: no real Champs seeds for a Champs-only season`);
+  // Champs-only starts from the real final points where they are known.
+  const realPoints = options.champsOnly ? season.historical?.finalPoints : undefined;
+  const points = Object.fromEntries(teamIds.map((t) => [t, realPoints?.[t] ?? 0]));
   let gm: GmState | undefined;
   if (options.gmTeam) {
     if (!teamIds.includes(options.gmTeam)) throw new Error(`${season.id}: unknown GM team ${options.gmTeam}`);
@@ -206,7 +211,7 @@ export function createSeason(data: SeasonData, options: SeasonOptions): SeasonSt
     version: 1,
     seasonId: season.id,
     options,
-    steps: seasonSteps(season),
+    steps: options.champsOnly ? [{ kind: "championship" }] : seasonSteps(season),
     next: 0,
     schedule: season.stages.map((st) => buildQualifierSchedule(st, teamIds, root.fork(`schedule-s${st.stage}`))),
     series: {},
@@ -591,6 +596,10 @@ function eventSeeds(state: SeasonState, data: SeasonData, ev: LanEvent, stage: n
       break;
     }
     case "season-points":
+      if (state.options.champsOnly && season.historical?.champsSeeds) {
+        order = [...season.historical.champsSeeds];
+        break;
+      }
       order = pointsTable(state, data).map((r) => r.team);
       break;
   }

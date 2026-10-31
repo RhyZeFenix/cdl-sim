@@ -98,9 +98,18 @@ describe("stat-based ratings", () => {
 describe("rosters", () => {
   it("picks the lineup in effect on a date", () => {
     const { rosters } = loadSeasonData("2025");
-    expect(startersOn(rosters, "optic-texas", "2025-01-01")).toContain("kenny");
-    expect(startersOn(rosters, "optic-texas", "2025-02-20")).toContain("skyz");
+    // Real OpTic 2025: Pred back for Stage 2 qualifiers, Skyz from Major II, Mercules in Stage 4.
+    expect(startersOn(rosters, "optic-texas", "2025-01-01")).toContain("huke");
+    expect(startersOn(rosters, "optic-texas", "2025-02-20")).toEqual(expect.arrayContaining(["pred", "kenny"]));
+    expect(startersOn(rosters, "optic-texas", "2025-03-21")).toContain("skyz");
     expect(startersOn(rosters, "optic-texas", "2025-05-10")).toContain("mercules");
+  });
+
+  it("2026 Cloud9 switches lineups at Stage 2 qualifiers (they missed the 10-team Major II)", () => {
+    const { rosters } = loadSeasonData("2026");
+    expect(startersOn(rosters, "cloud9-new-york", "2026-01-10").sort()).toEqual(["afro", "beans", "mack", "vivid"]);
+    expect(startersOn(rosters, "cloud9-new-york", "2026-02-20").sort()).toEqual(["encourage", "hide", "nejra", "okis"]);
+    expect(startersOn(rosters, "cloud9-new-york", "2026-06-01")).toContain("wevy");
   });
 
   it("2026 Pro-Am guests have rosters", () => {

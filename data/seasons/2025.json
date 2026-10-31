@@ -289,6 +289,9 @@
       "https://liquipedia.net/callofduty/Call_of_Duty_League/Season_6/Playoffs"
     ]
   },
+  "historical": {
+    "champsSeeds": ["la-thieves", "atlanta-faze", "toronto-ultra", "vancouver-surge", "miami-heretics", "carolina-royal-ravens", "optic-texas", "boston-breach"]
+  },
   "unverified": [
     "Qualifier week dates for Stages II–IV.",
     "SnD round/bomb timers (90s/45s) are the 2026 values; BO6 values not checked.",

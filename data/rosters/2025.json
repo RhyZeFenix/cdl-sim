@@ -52,29 +52,6 @@
           }
         },
         {
-          "id": "simp",
-          "handle": "Simp",
-          "role": "flex",
-          "ratings": {
-            "slaying": 84,
-            "hp_obj": 84,
-            "snd_iq": 84,
-            "third_mode": 83,
-            "clutch": 83,
-            "consistency": 89
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 192,
-            "kd": 1.06,
-            "hpKd": 1.05,
-            "hpTimePerMap": 71,
-            "sndKd": 1.17,
-            "sndOpeningNet": 1,
-            "thirdKd": 1.03
-          }
-        },
-        {
           "id": "drazah",
           "handle": "Drazah",
           "role": "flex",
@@ -96,20 +73,43 @@
             "sndOpeningNet": 1.28,
             "thirdKd": 0.98
           }
+        },
+        {
+          "id": "simp",
+          "handle": "Simp",
+          "role": "flex",
+          "ratings": {
+            "slaying": 84,
+            "hp_obj": 84,
+            "snd_iq": 84,
+            "third_mode": 83,
+            "clutch": 83,
+            "consistency": 89
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 192,
+            "kd": 1.06,
+            "hpKd": 1.05,
+            "hpTimePerMap": 71,
+            "sndKd": 1.17,
+            "sndOpeningNet": 1,
+            "thirdKd": 1.03
+          }
         }
       ],
       "snapshots": [
         {
           "effective": "2024-12-06",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
             "abezy",
             "cellium",
-            "simp",
-            "drazah"
+            "drazah",
+            "simp"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1/Qualifiers"
         }
       ],
       "mapMods": {
@@ -132,29 +132,6 @@
     {
       "team": "boston-breach",
       "players": [
-        {
-          "id": "snoopy",
-          "handle": "Snoopy",
-          "role": "flex",
-          "ratings": {
-            "slaying": 81,
-            "hp_obj": 81,
-            "snd_iq": 83,
-            "third_mode": 80,
-            "clutch": 82,
-            "consistency": 81
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 159,
-            "kd": 1.03,
-            "hpKd": 1.04,
-            "hpTimePerMap": 65,
-            "sndKd": 1.13,
-            "sndOpeningNet": 0.95,
-            "thirdKd": 0.96
-          }
-        },
         {
           "id": "cammy",
           "handle": "Cammy",
@@ -223,20 +200,43 @@
             "sndOpeningNet": 1.32,
             "thirdKd": 0.93
           }
+        },
+        {
+          "id": "snoopy",
+          "handle": "Snoopy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 81,
+            "hp_obj": 81,
+            "snd_iq": 83,
+            "third_mode": 80,
+            "clutch": 82,
+            "consistency": 81
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 159,
+            "kd": 1.03,
+            "hpKd": 1.04,
+            "hpTimePerMap": 65,
+            "sndKd": 1.13,
+            "sndOpeningNet": 0.95,
+            "thirdKd": 0.96
+          }
         }
       ],
       "snapshots": [
         {
           "effective": "2024-12-06",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
-            "snoopy",
             "cammy",
             "owakening",
-            "purj"
+            "purj",
+            "snoopy"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1/Qualifiers"
         }
       ],
       "mapMods": {
@@ -283,29 +283,6 @@
           }
         },
         {
-          "id": "tjhaly",
-          "handle": "TJHaLy",
-          "role": "flex",
-          "ratings": {
-            "slaying": 79,
-            "hp_obj": 79,
-            "snd_iq": 83,
-            "third_mode": 79,
-            "clutch": 81,
-            "consistency": 85
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 160,
-            "kd": 0.98,
-            "hpKd": 0.95,
-            "hpTimePerMap": 62,
-            "sndKd": 1.15,
-            "sndOpeningNet": 1.57,
-            "thirdKd": 0.98
-          }
-        },
-        {
           "id": "slasher",
           "handle": "SlasheR",
           "role": "flex",
@@ -326,6 +303,29 @@
             "sndKd": 0.94,
             "sndOpeningNet": 0.9,
             "thirdKd": 0.96
+          }
+        },
+        {
+          "id": "tjhaly",
+          "handle": "TJHaLy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 79,
+            "snd_iq": 83,
+            "third_mode": 79,
+            "clutch": 81,
+            "consistency": 85
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 160,
+            "kd": 0.98,
+            "hpKd": 0.95,
+            "hpTimePerMap": 62,
+            "sndKd": 1.15,
+            "sndOpeningNet": 1.57,
+            "thirdKd": 0.98
           }
         },
         {
@@ -378,18 +378,18 @@
       "snapshots": [
         {
           "effective": "2024-12-06",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
             "gwinn",
-            "tjhaly",
             "slasher",
+            "tjhaly",
             "vivid"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1/Qualifiers"
         },
         {
-          "effective": "2025-04-04",
+          "effective": "2025-04-24",
           "event": "Major III",
           "starters": [
             "gwinn",
@@ -419,29 +419,6 @@
     {
       "team": "cloud9-new-york",
       "players": [
-        {
-          "id": "sib",
-          "handle": "Sib",
-          "role": "flex",
-          "ratings": {
-            "slaying": 79,
-            "hp_obj": 79,
-            "snd_iq": 79,
-            "third_mode": 78,
-            "clutch": 80,
-            "consistency": 76
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 137,
-            "kd": 0.98,
-            "hpKd": 0.99,
-            "hpTimePerMap": 52,
-            "sndKd": 1.02,
-            "sndOpeningNet": 1.09,
-            "thirdKd": 0.95
-          }
-        },
         {
           "id": "attach",
           "handle": "Attach",
@@ -512,6 +489,29 @@
           }
         },
         {
+          "id": "sib",
+          "handle": "Sib",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 79,
+            "snd_iq": 79,
+            "third_mode": 78,
+            "clutch": 80,
+            "consistency": 76
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 137,
+            "kd": 0.98,
+            "hpKd": 0.99,
+            "hpTimePerMap": 52,
+            "sndKd": 1.02,
+            "sndOpeningNet": 1.09,
+            "thirdKd": 0.95
+          }
+        },
+        {
           "id": "capsidal",
           "handle": "Capsidal",
           "role": "flex",
@@ -561,27 +561,27 @@
       "snapshots": [
         {
           "effective": "2024-12-06",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
-            "sib",
             "attach",
             "kremp",
-            "mack"
+            "mack",
+            "sib"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1/Qualifiers"
         },
         {
           "effective": "2025-05-02",
-          "event": "Major IV",
+          "event": "Stage 4 Qualifiers",
           "starters": [
-            "sib",
-            "kremp",
             "capsidal",
+            "kremp",
+            "sib",
             "spart"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_4"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_4/Qualifiers"
         }
       ],
       "mapMods": {
@@ -606,29 +606,6 @@
       "team": "la-guerrillas-m8",
       "players": [
         {
-          "id": "lynz",
-          "handle": "Lynz",
-          "role": "flex",
-          "ratings": {
-            "slaying": 80,
-            "hp_obj": 79,
-            "snd_iq": 79,
-            "third_mode": 79,
-            "clutch": 79,
-            "consistency": 82
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 75,
-            "kd": 1.02,
-            "hpKd": 1.04,
-            "hpTimePerMap": 54,
-            "sndKd": 0.95,
-            "sndOpeningNet": 1.24,
-            "thirdKd": 1.01
-          }
-        },
-        {
           "id": "kismet",
           "handle": "KiSMET",
           "role": "flex",
@@ -652,26 +629,26 @@
           }
         },
         {
-          "id": "skyz",
-          "handle": "Skyz",
+          "id": "lynz",
+          "handle": "Lynz",
           "role": "flex",
           "ratings": {
-            "slaying": 77,
-            "hp_obj": 78,
-            "snd_iq": 78,
-            "third_mode": 78,
-            "clutch": 78,
-            "consistency": 73
+            "slaying": 80,
+            "hp_obj": 79,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 82
           },
           "ratingSource": "stats",
           "stats": {
-            "maps": 88,
-            "kd": 0.92,
-            "hpKd": 0.92,
-            "hpTimePerMap": 63,
-            "sndKd": 0.91,
-            "sndOpeningNet": 0.76,
-            "thirdKd": 0.93
+            "maps": 75,
+            "kd": 1.02,
+            "hpKd": 1.04,
+            "hpTimePerMap": 54,
+            "sndKd": 0.95,
+            "sndOpeningNet": 1.24,
+            "thirdKd": 1.01
           }
         },
         {
@@ -695,6 +672,29 @@
             "sndKd": 0.87,
             "sndOpeningNet": 0.9,
             "thirdKd": 0.85
+          }
+        },
+        {
+          "id": "skyz",
+          "handle": "Skyz",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 78,
+            "snd_iq": 78,
+            "third_mode": 78,
+            "clutch": 78,
+            "consistency": 73
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 88,
+            "kd": 0.92,
+            "hpKd": 0.92,
+            "hpTimePerMap": 63,
+            "sndKd": 0.91,
+            "sndOpeningNet": 0.76,
+            "thirdKd": 0.93
           }
         },
         {
@@ -770,39 +770,39 @@
       "snapshots": [
         {
           "effective": "2024-12-06",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
-            "lynz",
             "kismet",
-            "skyz",
-            "priestahh"
+            "lynz",
+            "priestahh",
+            "skyz"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1/Qualifiers"
         },
         {
           "effective": "2025-02-14",
-          "event": "Major II",
+          "event": "Stage 2 Qualifiers",
           "starters": [
-            "lynz",
             "kismet",
-            "priestahh",
-            "lunarz"
+            "lynz",
+            "lunarz",
+            "priestahh"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_2"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_2/Qualifiers"
         },
         {
           "effective": "2025-04-04",
-          "event": "Major III",
+          "event": "Stage 3 Qualifiers",
           "starters": [
+            "felo",
             "kismet",
             "lunarz",
-            "felo",
             "ojohnny"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_3"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_3/Qualifiers"
         }
       ],
       "mapMods": {
@@ -827,6 +827,29 @@
       "team": "la-thieves",
       "players": [
         {
+          "id": "envoy",
+          "handle": "Envoy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 83,
+            "snd_iq": 81,
+            "third_mode": 84,
+            "clutch": 81,
+            "consistency": 84
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 194,
+            "kd": 1.01,
+            "hpKd": 0.96,
+            "hpTimePerMap": 82,
+            "sndKd": 1.04,
+            "sndOpeningNet": 0.98,
+            "thirdKd": 1.09
+          }
+        },
+        {
           "id": "ghosty",
           "handle": "Ghosty",
           "role": "flex",
@@ -847,29 +870,6 @@
             "sndKd": 1.03,
             "sndOpeningNet": 0.63,
             "thirdKd": 1.07
-          }
-        },
-        {
-          "id": "scrap",
-          "handle": "Scrap",
-          "role": "flex",
-          "ratings": {
-            "slaying": 86,
-            "hp_obj": 83,
-            "snd_iq": 84,
-            "third_mode": 86,
-            "clutch": 84,
-            "consistency": 84
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 194,
-            "kd": 1.13,
-            "hpKd": 1.11,
-            "hpTimePerMap": 59,
-            "sndKd": 1.18,
-            "sndOpeningNet": 1.25,
-            "thirdKd": 1.14
           }
         },
         {
@@ -896,41 +896,41 @@
           }
         },
         {
-          "id": "envoy",
-          "handle": "Envoy",
+          "id": "scrap",
+          "handle": "Scrap",
           "role": "flex",
           "ratings": {
-            "slaying": 82,
+            "slaying": 86,
             "hp_obj": 83,
-            "snd_iq": 81,
-            "third_mode": 84,
-            "clutch": 81,
+            "snd_iq": 84,
+            "third_mode": 86,
+            "clutch": 84,
             "consistency": 84
           },
           "ratingSource": "stats",
           "stats": {
             "maps": 194,
-            "kd": 1.01,
-            "hpKd": 0.96,
-            "hpTimePerMap": 82,
-            "sndKd": 1.04,
-            "sndOpeningNet": 0.98,
-            "thirdKd": 1.09
+            "kd": 1.13,
+            "hpKd": 1.11,
+            "hpTimePerMap": 59,
+            "sndKd": 1.18,
+            "sndOpeningNet": 1.25,
+            "thirdKd": 1.14
           }
         }
       ],
       "snapshots": [
         {
           "effective": "2024-12-06",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
+            "envoy",
             "ghosty",
-            "scrap",
             "hydra",
-            "envoy"
+            "scrap"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1/Qualifiers"
         }
       ],
       "mapMods": {
@@ -1070,7 +1070,7 @@
       "snapshots": [
         {
           "effective": "2024-12-06",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
             "lucky",
             "mettalz",
@@ -1078,11 +1078,11 @@
             "renkor"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1/Qualifiers"
         },
         {
           "effective": "2025-04-04",
-          "event": "Major III",
+          "event": "Stage 3 Qualifiers",
           "starters": [
             "mettalz",
             "reeal",
@@ -1090,7 +1090,7 @@
             "super"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_3"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_3/Qualifiers"
         }
       ],
       "mapMods": {
@@ -1112,26 +1112,26 @@
       "team": "minnesota-rokkr",
       "players": [
         {
-          "id": "nero",
-          "handle": "Nero",
+          "id": "estreal",
+          "handle": "Estreal",
           "role": "flex",
           "ratings": {
-            "slaying": 80,
+            "slaying": 81,
             "hp_obj": 81,
-            "snd_iq": 80,
-            "third_mode": 78,
-            "clutch": 79,
-            "consistency": 79
+            "snd_iq": 79,
+            "third_mode": 81,
+            "clutch": 80,
+            "consistency": 78
           },
           "ratingSource": "stats",
           "stats": {
             "maps": 165,
-            "kd": 1,
-            "hpKd": 1.03,
-            "hpTimePerMap": 63,
-            "sndKd": 0.99,
-            "sndOpeningNet": 1.55,
-            "thirdKd": 0.94
+            "kd": 1.02,
+            "hpKd": 1.02,
+            "hpTimePerMap": 66,
+            "sndKd": 1.02,
+            "sndOpeningNet": 0.96,
+            "thirdKd": 1
           }
         },
         {
@@ -1158,26 +1158,26 @@
           }
         },
         {
-          "id": "estreal",
-          "handle": "Estreal",
+          "id": "nero",
+          "handle": "Nero",
           "role": "flex",
           "ratings": {
-            "slaying": 81,
+            "slaying": 80,
             "hp_obj": 81,
-            "snd_iq": 79,
-            "third_mode": 81,
-            "clutch": 80,
-            "consistency": 78
+            "snd_iq": 80,
+            "third_mode": 78,
+            "clutch": 79,
+            "consistency": 79
           },
           "ratingSource": "stats",
           "stats": {
             "maps": 165,
-            "kd": 1.02,
-            "hpKd": 1.02,
-            "hpTimePerMap": 66,
-            "sndKd": 1.02,
-            "sndOpeningNet": 0.96,
-            "thirdKd": 1
+            "kd": 1,
+            "hpKd": 1.03,
+            "hpTimePerMap": 63,
+            "sndKd": 0.99,
+            "sndOpeningNet": 1.55,
+            "thirdKd": 0.94
           }
         },
         {
@@ -1230,27 +1230,27 @@
       "snapshots": [
         {
           "effective": "2024-12-06",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
-            "nero",
-            "gio",
             "estreal",
+            "gio",
+            "nero",
             "paulehx"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1/Qualifiers"
         },
         {
           "effective": "2025-04-04",
-          "event": "Major III",
+          "event": "Stage 3 Qualifiers",
           "starters": [
-            "nero",
-            "gio",
             "estreal",
-            "kenny"
+            "gio",
+            "kenny",
+            "nero"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_3"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_3/Qualifiers"
         }
       ],
       "mapMods": {
@@ -1273,29 +1273,6 @@
     {
       "team": "optic-texas",
       "players": [
-        {
-          "id": "shotzzy",
-          "handle": "Shotzzy",
-          "role": "flex",
-          "ratings": {
-            "slaying": 83,
-            "hp_obj": 82,
-            "snd_iq": 83,
-            "third_mode": 82,
-            "clutch": 82,
-            "consistency": 84
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 173,
-            "kd": 1.07,
-            "hpKd": 1.07,
-            "hpTimePerMap": 59,
-            "sndKd": 1.09,
-            "sndOpeningNet": 1.65,
-            "thirdKd": 1.06
-          }
-        },
         {
           "id": "dashy",
           "handle": "Dashy",
@@ -1340,6 +1317,29 @@
             "sndKd": 0.87,
             "sndOpeningNet": 1,
             "thirdKd": 0.88
+          }
+        },
+        {
+          "id": "shotzzy",
+          "handle": "Shotzzy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 83,
+            "hp_obj": 82,
+            "snd_iq": 83,
+            "third_mode": 82,
+            "clutch": 82,
+            "consistency": 84
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 173,
+            "kd": 1.07,
+            "hpKd": 1.07,
+            "hpTimePerMap": 59,
+            "sndKd": 1.09,
+            "sndOpeningNet": 1.65,
+            "thirdKd": 1.06
           }
         },
         {
@@ -1438,18 +1438,30 @@
       "snapshots": [
         {
           "effective": "2024-12-06",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
-            "shotzzy",
             "dashy",
             "kenny",
+            "shotzzy",
             "huke"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1/Qualifiers"
         },
         {
           "effective": "2025-02-14",
+          "event": "Stage 2 Qualifiers",
+          "starters": [
+            "dashy",
+            "kenny",
+            "pred",
+            "shotzzy"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_2/Qualifiers"
+        },
+        {
+          "effective": "2025-03-20",
           "event": "Major II",
           "starters": [
             "shotzzy",
@@ -1462,27 +1474,27 @@
         },
         {
           "effective": "2025-04-04",
-          "event": "Major III",
+          "event": "Stage 3 Qualifiers",
           "starters": [
-            "shotzzy",
             "dashy",
-            "skyz",
-            "huke"
+            "huke",
+            "shotzzy",
+            "skyz"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_3"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_3/Qualifiers"
         },
         {
           "effective": "2025-05-02",
-          "event": "Major IV",
+          "event": "Stage 4 Qualifiers",
           "starters": [
-            "shotzzy",
             "dashy",
             "huke",
+            "shotzzy",
             "mercules"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_4"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_4/Qualifiers"
         }
       ],
       "mapMods": {
@@ -1502,6 +1514,29 @@
     {
       "team": "toronto-ultra",
       "players": [
+        {
+          "id": "beans",
+          "handle": "Beans",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 81,
+            "snd_iq": 81,
+            "third_mode": 81,
+            "clutch": 82,
+            "consistency": 84
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 163,
+            "kd": 0.99,
+            "hpKd": 0.97,
+            "hpTimePerMap": 65,
+            "sndKd": 1.12,
+            "sndOpeningNet": 0.79,
+            "thirdKd": 0.96
+          }
+        },
         {
           "id": "cleanx",
           "handle": "CleanX",
@@ -1546,29 +1581,6 @@
             "sndKd": 0.89,
             "sndOpeningNet": 0.8,
             "thirdKd": 0.98
-          }
-        },
-        {
-          "id": "beans",
-          "handle": "Beans",
-          "role": "flex",
-          "ratings": {
-            "slaying": 80,
-            "hp_obj": 81,
-            "snd_iq": 81,
-            "third_mode": 81,
-            "clutch": 82,
-            "consistency": 84
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 163,
-            "kd": 0.99,
-            "hpKd": 0.97,
-            "hpTimePerMap": 65,
-            "sndKd": 1.12,
-            "sndOpeningNet": 0.79,
-            "thirdKd": 0.96
           }
         },
         {
@@ -1621,18 +1633,18 @@
       "snapshots": [
         {
           "effective": "2024-12-06",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
+            "beans",
             "cleanx",
             "insight",
-            "beans",
             "joedeceives"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1/Qualifiers"
         },
         {
-          "effective": "2025-04-04",
+          "effective": "2025-04-24",
           "event": "Major III",
           "starters": [
             "cleanx",
@@ -1645,15 +1657,15 @@
         },
         {
           "effective": "2025-05-02",
-          "event": "Major IV",
+          "event": "Stage 4 Qualifiers",
           "starters": [
+            "beans",
             "cleanx",
             "insight",
-            "beans",
             "joedeceives"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_4"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_4/Qualifiers"
         }
       ],
       "mapMods": {
@@ -1678,29 +1690,6 @@
       "team": "vancouver-surge",
       "players": [
         {
-          "id": "abuzah",
-          "handle": "Abuzah",
-          "role": "flex",
-          "ratings": {
-            "slaying": 81,
-            "hp_obj": 82,
-            "snd_iq": 80,
-            "third_mode": 81,
-            "clutch": 79,
-            "consistency": 86
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 206,
-            "kd": 1,
-            "hpKd": 1.02,
-            "hpTimePerMap": 69,
-            "sndKd": 0.9,
-            "sndOpeningNet": 0.9,
-            "thirdKd": 0.99
-          }
-        },
-        {
           "id": "04",
           "handle": "04",
           "role": "flex",
@@ -1721,6 +1710,29 @@
             "sndKd": 0.98,
             "sndOpeningNet": 1.25,
             "thirdKd": 0.96
+          }
+        },
+        {
+          "id": "abuzah",
+          "handle": "Abuzah",
+          "role": "flex",
+          "ratings": {
+            "slaying": 81,
+            "hp_obj": 82,
+            "snd_iq": 80,
+            "third_mode": 81,
+            "clutch": 79,
+            "consistency": 86
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 206,
+            "kd": 1,
+            "hpKd": 1.02,
+            "hpTimePerMap": 69,
+            "sndKd": 0.9,
+            "sndOpeningNet": 0.9,
+            "thirdKd": 0.99
           }
         },
         {
@@ -1796,27 +1808,27 @@
       "snapshots": [
         {
           "effective": "2024-12-06",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
-            "abuzah",
             "04",
+            "abuzah",
             "hicksy",
             "nastie"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1/Qualifiers"
         },
         {
           "effective": "2025-02-14",
-          "event": "Major II",
+          "event": "Stage 2 Qualifiers",
           "starters": [
-            "abuzah",
             "04",
+            "abuzah",
             "nastie",
             "neptune"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_2"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_2/Qualifiers"
         }
       ],
       "mapMods": {
@@ -1838,6 +1850,29 @@
     {
       "team": "vegas-falcons",
       "players": [
+        {
+          "id": "exnid",
+          "handle": "Exnid",
+          "role": "flex",
+          "ratings": {
+            "slaying": 78,
+            "hp_obj": 76,
+            "snd_iq": 78,
+            "third_mode": 79,
+            "clutch": 78,
+            "consistency": 84
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 115,
+            "kd": 0.95,
+            "hpKd": 0.92,
+            "hpTimePerMap": 45,
+            "sndKd": 0.91,
+            "sndOpeningNet": 1.19,
+            "thirdKd": 1.01
+          }
+        },
         {
           "id": "roxas",
           "handle": "Roxas",
@@ -1862,26 +1897,49 @@
           }
         },
         {
-          "id": "exnid",
-          "handle": "Exnid",
+          "id": "khhx",
+          "handle": "Khhx",
           "role": "flex",
           "ratings": {
-            "slaying": 78,
-            "hp_obj": 76,
-            "snd_iq": 78,
-            "third_mode": 79,
-            "clutch": 78,
-            "consistency": 84
+            "slaying": 82,
+            "hp_obj": 81,
+            "snd_iq": 79,
+            "third_mode": 80,
+            "clutch": 79,
+            "consistency": 72
           },
           "ratingSource": "stats",
           "stats": {
-            "maps": 115,
-            "kd": 0.95,
-            "hpKd": 0.92,
+            "maps": 14,
+            "kd": 1.19,
+            "hpKd": 1.22,
+            "hpTimePerMap": 63,
+            "sndKd": 1.25,
+            "sndOpeningNet": 1.5,
+            "thirdKd": 1.12
+          }
+        },
+        {
+          "id": "kingabody",
+          "handle": "KingAbody",
+          "role": "flex",
+          "ratings": {
+            "slaying": 74,
+            "hp_obj": 76,
+            "snd_iq": 77,
+            "third_mode": 75,
+            "clutch": 77,
+            "consistency": 71
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 14,
+            "kd": 0.72,
+            "hpKd": 0.74,
             "hpTimePerMap": 45,
-            "sndKd": 0.91,
-            "sndOpeningNet": 1.19,
-            "thirdKd": 1.01
+            "sndKd": 0.65,
+            "sndOpeningNet": 1.5,
+            "thirdKd": 0.72
           }
         },
         {
@@ -1954,29 +2012,6 @@
           }
         },
         {
-          "id": "pred",
-          "handle": "Pred",
-          "role": "flex",
-          "ratings": {
-            "slaying": 81,
-            "hp_obj": 78,
-            "snd_iq": 77,
-            "third_mode": 81,
-            "clutch": 77,
-            "consistency": 82
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 95,
-            "kd": 1.05,
-            "hpKd": 1.05,
-            "hpTimePerMap": 41,
-            "sndKd": 0.83,
-            "sndOpeningNet": 0.97,
-            "thirdKd": 1.14
-          }
-        },
-        {
           "id": "arcitys",
           "handle": "Arcitys",
           "role": "flex",
@@ -1997,6 +2032,29 @@
             "sndKd": 0.83,
             "sndOpeningNet": 0.89,
             "thirdKd": 0.9
+          }
+        },
+        {
+          "id": "pred",
+          "handle": "Pred",
+          "role": "flex",
+          "ratings": {
+            "slaying": 81,
+            "hp_obj": 78,
+            "snd_iq": 77,
+            "third_mode": 81,
+            "clutch": 77,
+            "consistency": 82
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 95,
+            "kd": 1.05,
+            "hpKd": 1.05,
+            "hpTimePerMap": 41,
+            "sndKd": 0.83,
+            "sndOpeningNet": 0.97,
+            "thirdKd": 1.14
           }
         },
         {
@@ -2021,57 +2079,23 @@
             "sndOpeningNet": 0.9,
             "thirdKd": 0.85
           }
-        },
-        {
-          "id": "khhx",
-          "handle": "Khhx",
-          "role": "flex",
-          "ratings": {
-            "slaying": 82,
-            "hp_obj": 81,
-            "snd_iq": 79,
-            "third_mode": 80,
-            "clutch": 79,
-            "consistency": 72
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 14,
-            "kd": 1.19,
-            "hpKd": 1.22,
-            "hpTimePerMap": 63,
-            "sndKd": 1.25,
-            "sndOpeningNet": 1.5,
-            "thirdKd": 1.12
-          }
-        },
-        {
-          "id": "kingabody",
-          "handle": "KingAbody",
-          "role": "flex",
-          "ratings": {
-            "slaying": 74,
-            "hp_obj": 76,
-            "snd_iq": 77,
-            "third_mode": 75,
-            "clutch": 77,
-            "consistency": 71
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 14,
-            "kd": 0.72,
-            "hpKd": 0.74,
-            "hpTimePerMap": 45,
-            "sndKd": 0.65,
-            "sndOpeningNet": 1.5,
-            "thirdKd": 0.72
-          }
         }
       ],
       "snapshots": [
         {
           "effective": "2024-12-06",
+          "event": "Stage 1 Qualifiers",
+          "starters": [
+            "exnid",
+            "roxas",
+            "khhx",
+            "kingabody"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_1/Qualifiers"
+        },
+        {
+          "effective": "2025-01-30",
           "event": "Major I",
           "starters": [
             "roxas",
@@ -2084,27 +2108,27 @@
         },
         {
           "effective": "2025-02-14",
-          "event": "Major II",
+          "event": "Stage 2 Qualifiers",
           "starters": [
-            "exnid",
             "d7oom",
+            "exnid",
             "kiing",
             "wxsl"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_2"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_2/Qualifiers"
         },
         {
           "effective": "2025-04-04",
-          "event": "Major III",
+          "event": "Stage 3 Qualifiers",
           "starters": [
+            "arcitys",
             "exnid",
             "pred",
-            "arcitys",
             "priestahh"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_3"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2025_Season/Major_3/Qualifiers"
         }
       ],
       "mapMods": {

@@ -179,7 +179,11 @@ export const Season = z.object({
   stages: z.array(Stage).length(4),
   championship: LanEvent,
   historical: z
-    .object({ finalPoints: z.record(slug, z.number().int()).optional() })
+    .object({
+      finalPoints: z.record(slug, z.number().int()).optional(),
+      /** The real Champs seeds, 1st to last (from the Champs event page). */
+      champsSeeds: z.array(slug).optional(),
+    })
     .optional(),
   /** Free-text notes on anything still unverified; shown in the UI's data page. */
   unverified: z.array(z.string()),

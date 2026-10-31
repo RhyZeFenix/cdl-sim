@@ -67,7 +67,8 @@ export function App() {
     draft.seasonId !== store.config.seasonId ||
     draft.seed !== store.config.seed ||
     draft.ratingMode !== store.config.ratingMode ||
-    draft.gmTeam !== store.config.gmTeam;
+    draft.gmTeam !== store.config.gmTeam ||
+    !!draft.champsOnly !== !!store.config.champsOnly;
   const startNew = () => {
     if (state.next > 0 && !confirm("Start a new season? Unsaved progress on this one will be lost.")) return;
     store.start(draft);
@@ -152,6 +153,18 @@ export function App() {
               </button>
             ))}
           </div>
+          <div className="seg" role="group" aria-label="Season length">
+            <button aria-pressed={!draft.champsOnly} onClick={() => setDraft({ ...draft, champsOnly: false })}>
+              Full season
+            </button>
+            <button
+              aria-pressed={!!draft.champsOnly}
+              title="Skip the regular season and play Champs from the real seeds"
+              onClick={() => setDraft({ ...draft, champsOnly: true })}
+            >
+              Champs only
+            </button>
+          </div>
           <div className="seg" role="group" aria-label="Mode">
             <button aria-pressed={!draft.gmTeam} onClick={() => setDraft({ ...draft, gmTeam: undefined })}>
               Commissioner
@@ -184,7 +197,12 @@ export function App() {
         <div className="row">
           <span className="status">
             {data.season.label} · seed <b>{state.options.seed}</b> · {state.options.ratingMode}
-            {state.gm ? <> · GM: <b>{data.season.teams.find((t) => t.id === state.gm!.team)?.abbr}</b></> : null} —{" "}
+            {state.options.champsOnly ? <> · <b>Champs only</b> (real seeds)</> : null}
+            {state.gm ? <> · GM: <b>{data.season.teams.find((t) => t.id === state.gm!.team)?.abbr}</b></> : null}
+            {state.gm && state.options.champsOnly && !data.season.historical?.champsSeeds?.includes(state.gm.team) ? (
+              <span className="muted"> (didn't make the real Champs)</span>
+            ) : null}{" "}
+            —{" "}
             {done ? <b>Season complete</b> : paused ? <b>Waiting for your veto</b> : <>Next: <b>{stepLabel(data.season, next)}</b></>}
           </span>
           <div className="progress" title={`${state.next} of ${state.steps.length} steps`}>

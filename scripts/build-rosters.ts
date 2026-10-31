@@ -80,6 +80,7 @@ function build(dir: string, year: "2024" | "2025" | "2026") {
       page: `Call_of_Duty_League/${year}_Season/Major_${st.stage}`,
       label: st.major.name,
       effective: st.qualifiers.start,
+      start: st.major.start,
       weight: 1,
     })),
     {
@@ -87,16 +88,35 @@ function build(dir: string, year: "2024" | "2025" | "2026") {
       page: `Call_of_Duty_League_Championship_${year}`,
       label: "Championship",
       effective: season.championship.start,
+      start: season.championship.start,
       weight: 2,
     },
   ];
 
   type Snap = { effective: string; event: string; starters: string[]; subs: string[]; source: string };
-  const snaps = new Map<string, Snap[]>();
+  /** A lineup observation; `order` breaks date ties (qualifier stats before event pages). */
+  type Entry = Snap & { team: string; order: number };
   const handles = new Map<string, string>();
   const strength = new Map<string, { sum: number; w: number }>();
   const changes: string[] = [];
+  const entries: Entry[] = [];
 
+  const linkToId = (link: string) => playerId(link.replace(/\s*\(.*\)$/, ""));
+  const teamNames = new Map<string, string>(season.teams.map((t) => [t.name.toLowerCase(), t.id]));
+  for (const st of season.stages) {
+    if (st.major.format.type === "proam-gsl") for (const g of st.major.format.guests) teamNames.set(g.name.toLowerCase(), g.id);
+  }
+  // Names the stats wiki uses that differ from data/seasons.
+  for (const [alias, id] of Object.entries(STAT_TEAM_ALIASES[year] ?? {})) teamNames.set(alias, id);
+
+  // Per-event lineups from the stats (data/stats/{year}.lineups.json), when downloaded.
+  const lineupsPath = `data/stats/${year}.lineups.json`;
+  const lineupRows: Record<string, string>[] | null = existsSync(lineupsPath)
+    ? JSON.parse(readFileSync(lineupsPath, "utf8")).rows
+    : null;
+
+  // Event participants (Majors, Champs). With qualifier lineups available, an event's
+  // lineup applies from the event itself; otherwise from the start of its stage.
   for (const ev of events) {
     const rows = parseEvent(readFileSync(join(dir, ev.file), "utf8"), CODES[year]!, ev.file);
     for (const row of rows) {
@@ -113,33 +133,71 @@ function build(dir: string, year: "2024" | "2025" | "2026") {
           strength.set(id, s);
         }
       }
-      const list = snaps.get(row.team) ?? [];
-      const prev = list[list.length - 1];
-      const same = prev && [...prev.starters].sort().join() === [...ids].sort().join();
-      if (!same) {
-        if (prev) {
-          const out = prev.starters.filter((p) => !ids.includes(p));
-          const inn = ids.filter((p) => !prev.starters.includes(p));
-          changes.push(`${row.team} @ ${ev.label}: out ${out.join(", ")} / in ${inn.join(", ")}`);
-        }
-        list.push({ effective: ev.effective, event: ev.label, starters: ids, subs: [], source: WIKI + ev.page });
-      }
-      snaps.set(row.team, list);
+      entries.push({
+        team: row.team,
+        effective: lineupRows ? ev.start : ev.effective,
+        event: ev.label,
+        starters: ids,
+        subs: [],
+        source: WIKI + ev.page,
+        order: 1,
+      });
     }
+  }
+
+  // Qualifier lineups: each team's four most-played players in each stage's qualifiers.
+  // This catches changes for teams that missed an event (e.g. 2026 Major II was 10 teams).
+  if (lineupRows) {
+    for (const st of season.stages) {
+      const page = `Call of Duty League/${year} Season/Major ${st.stage}/Qualifiers`;
+      const byTeam = new Map<string, { id: string; maps: number; first: string }[]>();
+      for (const r of lineupRows) {
+        if (r.TournamentPage !== page) continue;
+        const team = teamNames.get(r.Team!.toLowerCase());
+        if (!team || GUESTS.has(team)) continue;
+        const id = linkToId(r.PlayerLink!);
+        if (!handles.has(id)) handles.set(id, r.PlayerLink!.replace(/\s*\(.*\)$/, ""));
+        byTeam.set(team, [...(byTeam.get(team) ?? []), { id, maps: Number(r.Maps), first: r.First ?? "" }]);
+      }
+      for (const [team, ps] of byTeam) {
+        if (ps.length < 4) continue;
+        ps.sort((a, b) => b.maps - a.maps || a.first.localeCompare(b.first));
+        entries.push({
+          team,
+          effective: st.qualifiers.start,
+          event: `Stage ${st.stage} Qualifiers`,
+          starters: ps.slice(0, 4).map((p) => p.id),
+          subs: [],
+          source: `${WIKI}Call_of_Duty_League/${year}_Season/Major_${st.stage}/Qualifiers`,
+          order: 0,
+        });
+      }
+    }
+  }
+
+  // Merge in date order; consecutive identical lineups collapse into one snapshot.
+  entries.sort((a, b) => a.effective.localeCompare(b.effective) || a.order - b.order);
+  const snaps = new Map<string, Snap[]>();
+  for (const { team, order: _order, ...snap } of entries) {
+    const list = snaps.get(team) ?? [];
+    const prev = list[list.length - 1];
+    const same = prev && [...prev.starters].sort().join() === [...snap.starters].sort().join();
+    if (!same) {
+      if (prev) {
+        const out = prev.starters.filter((p) => !snap.starters.includes(p));
+        const inn = snap.starters.filter((p) => !prev.starters.includes(p));
+        changes.push(`${team} @ ${snap.event}: out ${out.join(", ")} / in ${inn.join(", ")}`);
+      }
+      list.push(snap);
+    }
+    snaps.set(team, list);
   }
 
   // Season stats, when downloaded.
   const rawPath = `data/stats/${year}.raw.json`;
   const raw: RawStats | null = existsSync(rawPath) ? JSON.parse(readFileSync(rawPath, "utf8")) : null;
-  const linkToId = (link: string) => playerId(link.replace(/\s*\(.*\)$/, ""));
   const lines = raw ? statLines(raw, linkToId, season.thirdMode) : new Map();
   const statRatings = ratingsFromStats(lines);
-  const teamNames = new Map<string, string>(season.teams.map((t) => [t.name.toLowerCase(), t.id]));
-  for (const st of season.stages) {
-    if (st.major.format.type === "proam-gsl") for (const g of st.major.format.guests) teamNames.set(g.name.toLowerCase(), g.id);
-  }
-  // Names the stats wiki uses that differ from data/seasons.
-  for (const [alias, id] of Object.entries(STAT_TEAM_ALIASES[year] ?? {})) teamNames.set(alias, id);
   const unmatchedTeams = new Set<string>();
   const mods = raw
     ? teamMapMods(raw, (name) => {
@@ -234,6 +292,7 @@ function build(dir: string, year: "2024" | "2025" | "2026") {
   mkdirSync("data/rosters", { recursive: true });
   writeFileSync(`data/rosters/${year}.json`, JSON.stringify(out, null, 2) + "\n");
   console.log(`${year}: ${out.teams.length} teams, ${out.guests.length} guests, ${changes.length} roster changes`);
+  for (const c of changes) console.log(`  ${c}`);
   if (raw) {
     const all = [...out.teams, ...out.guests].flatMap((t) => t.players);
     const withStats = all.filter((p) => p.ratingSource === "stats").length;

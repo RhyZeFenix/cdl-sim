@@ -52,29 +52,6 @@
           }
         },
         {
-          "id": "simp",
-          "handle": "Simp",
-          "role": "flex",
-          "ratings": {
-            "slaying": 86,
-            "hp_obj": 84,
-            "snd_iq": 84,
-            "third_mode": 84,
-            "clutch": 84,
-            "consistency": 89
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 190,
-            "kd": 1.14,
-            "hpKd": 1.14,
-            "hpTimePerMap": 65,
-            "sndKd": 1.2,
-            "sndOpeningNet": 0.88,
-            "thirdKd": 1.12
-          }
-        },
-        {
           "id": "drazah",
           "handle": "Drazah",
           "role": "flex",
@@ -96,20 +73,43 @@
             "sndOpeningNet": 0.97,
             "thirdKd": 1.11
           }
+        },
+        {
+          "id": "simp",
+          "handle": "Simp",
+          "role": "flex",
+          "ratings": {
+            "slaying": 86,
+            "hp_obj": 84,
+            "snd_iq": 84,
+            "third_mode": 84,
+            "clutch": 84,
+            "consistency": 89
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 190,
+            "kd": 1.14,
+            "hpKd": 1.14,
+            "hpTimePerMap": 65,
+            "sndKd": 1.2,
+            "sndOpeningNet": 0.88,
+            "thirdKd": 1.12
+          }
         }
       ],
       "snapshots": [
         {
           "effective": "2023-12-08",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
             "abezy",
             "cellium",
-            "simp",
-            "drazah"
+            "drazah",
+            "simp"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1/Qualifiers"
         }
       ],
       "mapMods": {
@@ -128,26 +128,26 @@
       "team": "boston-breach",
       "players": [
         {
-          "id": "snoopy",
-          "handle": "Snoopy",
+          "id": "capsidal",
+          "handle": "Capsidal",
           "role": "flex",
           "ratings": {
             "slaying": 79,
             "hp_obj": 78,
             "snd_iq": 79,
-            "third_mode": 78,
-            "clutch": 80,
-            "consistency": 78
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 74
           },
           "ratingSource": "stats",
           "stats": {
-            "maps": 134,
+            "maps": 33,
             "kd": 0.97,
-            "hpKd": 0.97,
-            "hpTimePerMap": 53,
+            "hpKd": 0.93,
+            "hpTimePerMap": 59,
             "sndKd": 1.08,
-            "sndOpeningNet": 0.96,
-            "thirdKd": 0.93
+            "sndOpeningNet": 0,
+            "thirdKd": 0.98
           }
         },
         {
@@ -197,26 +197,26 @@
           }
         },
         {
-          "id": "capsidal",
-          "handle": "Capsidal",
+          "id": "snoopy",
+          "handle": "Snoopy",
           "role": "flex",
           "ratings": {
             "slaying": 79,
             "hp_obj": 78,
             "snd_iq": 79,
-            "third_mode": 79,
-            "clutch": 79,
-            "consistency": 74
+            "third_mode": 78,
+            "clutch": 80,
+            "consistency": 78
           },
           "ratingSource": "stats",
           "stats": {
-            "maps": 33,
+            "maps": 134,
             "kd": 0.97,
-            "hpKd": 0.93,
-            "hpTimePerMap": 59,
+            "hpKd": 0.97,
+            "hpTimePerMap": 53,
             "sndKd": 1.08,
-            "sndOpeningNet": 0,
-            "thirdKd": 0.98
+            "sndOpeningNet": 0.96,
+            "thirdKd": 0.93
           }
         },
         {
@@ -243,29 +243,6 @@
           }
         },
         {
-          "id": "beans",
-          "handle": "Beans",
-          "role": "flex",
-          "ratings": {
-            "slaying": 79,
-            "hp_obj": 79,
-            "snd_iq": 77,
-            "third_mode": 79,
-            "clutch": 77,
-            "consistency": 80
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 57,
-            "kd": 1.01,
-            "hpKd": 1.02,
-            "hpTimePerMap": 58,
-            "sndKd": 0.83,
-            "sndOpeningNet": 0.81,
-            "thirdKd": 1.08
-          }
-        },
-        {
           "id": "pentagrxm",
           "handle": "Pentagrxm",
           "role": "flex",
@@ -286,6 +263,29 @@
             "sndKd": 0.71,
             "sndOpeningNet": 1.43,
             "thirdKd": 1.01
+          }
+        },
+        {
+          "id": "beans",
+          "handle": "Beans",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 79,
+            "snd_iq": 77,
+            "third_mode": 79,
+            "clutch": 77,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 57,
+            "kd": 1.01,
+            "hpKd": 1.02,
+            "hpTimePerMap": 58,
+            "sndKd": 0.83,
+            "sndOpeningNet": 0.81,
+            "thirdKd": 1.08
           }
         },
         {
@@ -338,51 +338,51 @@
       "snapshots": [
         {
           "effective": "2023-12-08",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
-            "snoopy",
+            "capsidal",
             "priestahh",
             "slasher",
-            "capsidal"
+            "snoopy"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1/Qualifiers"
         },
         {
           "effective": "2024-02-16",
-          "event": "Major II",
+          "event": "Stage 2 Qualifiers",
           "starters": [
-            "snoopy",
+            "asim",
             "priestahh",
             "slasher",
-            "asim"
+            "snoopy"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2/Qualifiers"
         },
         {
           "effective": "2024-04-12",
-          "event": "Major III",
+          "event": "Stage 3 Qualifiers",
           "starters": [
-            "snoopy",
+            "pentagrxm",
             "priestahh",
-            "beans",
-            "pentagrxm"
+            "snoopy",
+            "beans"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3/Qualifiers"
         },
         {
           "effective": "2024-05-24",
-          "event": "Major IV",
+          "event": "Stage 4 Qualifiers",
           "starters": [
-            "snoopy",
-            "priestahh",
             "beans",
-            "majormaniak"
+            "majormaniak",
+            "priestahh",
+            "snoopy"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_4"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_4/Qualifiers"
         }
       ],
       "mapMods": {
@@ -452,6 +452,52 @@
           }
         },
         {
+          "id": "godrx",
+          "handle": "GodRx",
+          "role": "flex",
+          "ratings": {
+            "slaying": 75,
+            "hp_obj": 77,
+            "snd_iq": 77,
+            "third_mode": 76,
+            "clutch": 77,
+            "consistency": 68
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 17,
+            "kd": 0.77,
+            "hpKd": 0.85,
+            "hpTimePerMap": 42,
+            "sndKd": 0.67,
+            "sndOpeningNet": 0,
+            "thirdKd": 0.72
+          }
+        },
+        {
+          "id": "reeal",
+          "handle": "ReeaL",
+          "role": "flex",
+          "ratings": {
+            "slaying": 80,
+            "hp_obj": 79,
+            "snd_iq": 81,
+            "third_mode": 78,
+            "clutch": 80,
+            "consistency": 71
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 112,
+            "kd": 0.97,
+            "hpKd": 0.99,
+            "hpTimePerMap": 52,
+            "sndKd": 1.02,
+            "sndOpeningNet": 1.31,
+            "thirdKd": 0.93
+          }
+        },
+        {
           "id": "tjhaly",
           "handle": "TJHaLy",
           "role": "flex",
@@ -496,34 +542,23 @@
             "sndOpeningNet": 0.62,
             "thirdKd": 0.92
           }
-        },
-        {
-          "id": "godrx",
-          "handle": "GodRx",
-          "role": "flex",
-          "ratings": {
-            "slaying": 75,
-            "hp_obj": 77,
-            "snd_iq": 77,
-            "third_mode": 76,
-            "clutch": 77,
-            "consistency": 68
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 17,
-            "kd": 0.77,
-            "hpKd": 0.85,
-            "hpTimePerMap": 42,
-            "sndKd": 0.67,
-            "sndOpeningNet": 0,
-            "thirdKd": 0.72
-          }
         }
       ],
       "snapshots": [
         {
           "effective": "2023-12-08",
+          "event": "Stage 1 Qualifiers",
+          "starters": [
+            "clayster",
+            "gwinn",
+            "godrx",
+            "reeal"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1/Qualifiers"
+        },
+        {
+          "effective": "2024-01-25",
           "event": "Major I",
           "starters": [
             "clayster",
@@ -671,6 +706,29 @@
           }
         },
         {
+          "id": "asim",
+          "handle": "Asim",
+          "role": "flex",
+          "ratings": {
+            "slaying": 75,
+            "hp_obj": 77,
+            "snd_iq": 77,
+            "third_mode": 75,
+            "clutch": 77,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 47,
+            "kd": 0.86,
+            "hpKd": 0.91,
+            "hpTimePerMap": 41,
+            "sndKd": 0.77,
+            "sndOpeningNet": 1.13,
+            "thirdKd": 0.82
+          }
+        },
+        {
           "id": "ojohnny",
           "handle": "oJohnny",
           "role": "flex",
@@ -697,7 +755,7 @@
       "snapshots": [
         {
           "effective": "2023-12-08",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
             "attach",
             "nero",
@@ -705,22 +763,34 @@
             "standy"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1/Qualifiers"
         },
         {
           "effective": "2024-02-16",
-          "event": "Major II",
+          "event": "Stage 2 Qualifiers",
           "starters": [
             "attach",
+            "gio",
             "nero",
-            "purj",
-            "gio"
+            "purj"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2/Qualifiers"
         },
         {
           "effective": "2024-04-12",
+          "event": "Stage 3 Qualifiers",
+          "starters": [
+            "attach",
+            "gio",
+            "nero",
+            "asim"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3/Qualifiers"
+        },
+        {
+          "effective": "2024-05-16",
           "event": "Major III",
           "starters": [
             "attach",
@@ -802,29 +872,6 @@
           }
         },
         {
-          "id": "fame",
-          "handle": "Fame",
-          "role": "flex",
-          "ratings": {
-            "slaying": 79,
-            "hp_obj": 79,
-            "snd_iq": 80,
-            "third_mode": 80,
-            "clutch": 80,
-            "consistency": 85
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 154,
-            "kd": 0.96,
-            "hpKd": 0.93,
-            "hpTimePerMap": 65,
-            "sndKd": 1.02,
-            "sndOpeningNet": 1.12,
-            "thirdKd": 0.98
-          }
-        },
-        {
           "id": "estreal",
           "handle": "Estreal",
           "role": "flex",
@@ -844,6 +891,29 @@
             "hpTimePerMap": 52,
             "sndKd": 0.91,
             "sndOpeningNet": 1,
+            "thirdKd": 0.98
+          }
+        },
+        {
+          "id": "fame",
+          "handle": "Fame",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 79,
+            "snd_iq": 80,
+            "third_mode": 80,
+            "clutch": 80,
+            "consistency": 85
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 154,
+            "kd": 0.96,
+            "hpKd": 0.93,
+            "hpTimePerMap": 65,
+            "sndKd": 1.02,
+            "sndOpeningNet": 1.12,
             "thirdKd": 0.98
           }
         },
@@ -874,27 +944,27 @@
       "snapshots": [
         {
           "effective": "2023-12-08",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
             "assault",
             "diamondcon",
-            "fame",
-            "estreal"
+            "estreal",
+            "fame"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1/Qualifiers"
         },
         {
           "effective": "2024-04-12",
-          "event": "Major III",
+          "event": "Stage 3 Qualifiers",
           "starters": [
             "diamondcon",
-            "fame",
             "estreal",
+            "fame",
             "flames"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3/Qualifiers"
         }
       ],
       "mapMods": {
@@ -1013,29 +1083,6 @@
           }
         },
         {
-          "id": "nastie",
-          "handle": "Nastie",
-          "role": "flex",
-          "ratings": {
-            "slaying": 79,
-            "hp_obj": 78,
-            "snd_iq": 80,
-            "third_mode": 80,
-            "clutch": 80,
-            "consistency": 87
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 140,
-            "kd": 0.95,
-            "hpKd": 0.93,
-            "hpTimePerMap": 57,
-            "sndKd": 1,
-            "sndOpeningNet": 0.85,
-            "thirdKd": 0.96
-          }
-        },
-        {
           "id": "kremp",
           "handle": "Kremp",
           "role": "flex",
@@ -1057,12 +1104,35 @@
             "sndOpeningNet": 1.52,
             "thirdKd": 0.9
           }
+        },
+        {
+          "id": "nastie",
+          "handle": "Nastie",
+          "role": "flex",
+          "ratings": {
+            "slaying": 79,
+            "hp_obj": 78,
+            "snd_iq": 80,
+            "third_mode": 80,
+            "clutch": 80,
+            "consistency": 87
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 140,
+            "kd": 0.95,
+            "hpKd": 0.93,
+            "hpTimePerMap": 57,
+            "sndKd": 1,
+            "sndOpeningNet": 0.85,
+            "thirdKd": 0.96
+          }
         }
       ],
       "snapshots": [
         {
           "effective": "2023-12-08",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
             "afro",
             "cammy",
@@ -1070,31 +1140,31 @@
             "joedeceives"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1/Qualifiers"
         },
         {
           "effective": "2024-02-16",
-          "event": "Major II",
+          "event": "Stage 2 Qualifiers",
           "starters": [
             "afro",
             "ghosty",
-            "nastie",
-            "kremp"
-          ],
-          "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2"
-        },
-        {
-          "effective": "2024-04-12",
-          "event": "Major III",
-          "starters": [
-            "ghosty",
             "kremp",
-            "joedeceives",
             "nastie"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2/Qualifiers"
+        },
+        {
+          "effective": "2024-04-12",
+          "event": "Stage 3 Qualifiers",
+          "starters": [
+            "ghosty",
+            "joedeceives",
+            "kremp",
+            "nastie"
+          ],
+          "subs": [],
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3/Qualifiers"
         }
       ],
       "mapMods": {
@@ -1121,26 +1191,26 @@
       "team": "miami-heretics",
       "players": [
         {
-          "id": "vikul",
-          "handle": "Vikul",
+          "id": "jurnii",
+          "handle": "JurNii",
           "role": "flex",
           "ratings": {
-            "slaying": 78,
-            "hp_obj": 79,
-            "snd_iq": 79,
-            "third_mode": 79,
-            "clutch": 79,
-            "consistency": 71
+            "slaying": 77,
+            "hp_obj": 78,
+            "snd_iq": 77,
+            "third_mode": 77,
+            "clutch": 77,
+            "consistency": 82
           },
           "ratingSource": "stats",
           "stats": {
-            "maps": 160,
-            "kd": 0.94,
-            "hpKd": 0.94,
-            "hpTimePerMap": 60,
-            "sndKd": 0.96,
-            "sndOpeningNet": 0.78,
-            "thirdKd": 0.94
+            "maps": 32,
+            "kd": 0.9,
+            "hpKd": 1,
+            "hpTimePerMap": 45,
+            "sndKd": 0.79,
+            "sndOpeningNet": -0.7,
+            "thirdKd": 0.82
           }
         },
         {
@@ -1190,26 +1260,26 @@
           }
         },
         {
-          "id": "jurnii",
-          "handle": "JurNii",
+          "id": "vikul",
+          "handle": "Vikul",
           "role": "flex",
           "ratings": {
-            "slaying": 77,
-            "hp_obj": 78,
-            "snd_iq": 77,
-            "third_mode": 77,
-            "clutch": 77,
-            "consistency": 82
+            "slaying": 78,
+            "hp_obj": 79,
+            "snd_iq": 79,
+            "third_mode": 79,
+            "clutch": 79,
+            "consistency": 71
           },
           "ratingSource": "stats",
           "stats": {
-            "maps": 32,
-            "kd": 0.9,
-            "hpKd": 1,
-            "hpTimePerMap": 45,
-            "sndKd": 0.79,
-            "sndOpeningNet": -0.7,
-            "thirdKd": 0.82
+            "maps": 160,
+            "kd": 0.94,
+            "hpKd": 0.94,
+            "hpTimePerMap": 60,
+            "sndKd": 0.96,
+            "sndOpeningNet": 0.78,
+            "thirdKd": 0.94
           }
         },
         {
@@ -1262,39 +1332,39 @@
       "snapshots": [
         {
           "effective": "2023-12-08",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
-            "vikul",
+            "jurnii",
             "lucky",
             "mettalz",
-            "jurnii"
+            "vikul"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1/Qualifiers"
         },
         {
           "effective": "2024-02-16",
-          "event": "Major II",
+          "event": "Stage 2 Qualifiers",
           "starters": [
-            "vikul",
+            "erikboom",
             "lucky",
             "mettalz",
-            "erikboom"
+            "vikul"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2/Qualifiers"
         },
         {
           "effective": "2024-04-12",
-          "event": "Major III",
+          "event": "Stage 3 Qualifiers",
           "starters": [
-            "vikul",
             "lucky",
             "mettalz",
-            "reeal"
+            "reeal",
+            "vikul"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3/Qualifiers"
         }
       ],
       "mapMods": {
@@ -1412,29 +1482,6 @@
           }
         },
         {
-          "id": "standy",
-          "handle": "Standy",
-          "role": "flex",
-          "ratings": {
-            "slaying": 77,
-            "hp_obj": 76,
-            "snd_iq": 80,
-            "third_mode": 78,
-            "clutch": 80,
-            "consistency": 80
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 101,
-            "kd": 0.91,
-            "hpKd": 0.87,
-            "hpTimePerMap": 53,
-            "sndKd": 1.04,
-            "sndOpeningNet": 0.94,
-            "thirdKd": 0.91
-          }
-        },
-        {
           "id": "gunless",
           "handle": "Gunless",
           "role": "flex",
@@ -1455,6 +1502,29 @@
             "sndKd": 1.01,
             "sndOpeningNet": 0.86,
             "thirdKd": 0.98
+          }
+        },
+        {
+          "id": "standy",
+          "handle": "Standy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 77,
+            "hp_obj": 76,
+            "snd_iq": 80,
+            "third_mode": 78,
+            "clutch": 80,
+            "consistency": 80
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 101,
+            "kd": 0.91,
+            "hpKd": 0.87,
+            "hpTimePerMap": 53,
+            "sndKd": 1.04,
+            "sndOpeningNet": 0.94,
+            "thirdKd": 0.91
           }
         },
         {
@@ -1484,7 +1554,7 @@
       "snapshots": [
         {
           "effective": "2023-12-08",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
             "accuracy",
             "lynz",
@@ -1492,19 +1562,19 @@
             "vivid"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1/Qualifiers"
         },
         {
           "effective": "2024-04-12",
-          "event": "Major III",
+          "event": "Stage 3 Qualifiers",
           "starters": [
             "accuracy",
+            "gunless",
             "lynz",
-            "standy",
-            "gunless"
+            "standy"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3/Qualifiers"
         }
       ],
       "mapMods": {
@@ -1575,29 +1645,6 @@
           }
         },
         {
-          "id": "skyz",
-          "handle": "Skyz",
-          "role": "flex",
-          "ratings": {
-            "slaying": 82,
-            "hp_obj": 83,
-            "snd_iq": 81,
-            "third_mode": 81,
-            "clutch": 82,
-            "consistency": 79
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 210,
-            "kd": 1.02,
-            "hpKd": 1.02,
-            "hpTimePerMap": 77,
-            "sndKd": 1.07,
-            "sndOpeningNet": 0.69,
-            "thirdKd": 1.01
-          }
-        },
-        {
           "id": "sib",
           "handle": "Sib",
           "role": "flex",
@@ -1619,20 +1666,43 @@
             "sndOpeningNet": 0.94,
             "thirdKd": 1.04
           }
+        },
+        {
+          "id": "skyz",
+          "handle": "Skyz",
+          "role": "flex",
+          "ratings": {
+            "slaying": 82,
+            "hp_obj": 83,
+            "snd_iq": 81,
+            "third_mode": 81,
+            "clutch": 82,
+            "consistency": 79
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 210,
+            "kd": 1.02,
+            "hpKd": 1.02,
+            "hpTimePerMap": 77,
+            "sndKd": 1.07,
+            "sndOpeningNet": 0.69,
+            "thirdKd": 1.01
+          }
         }
       ],
       "snapshots": [
         {
           "effective": "2023-12-08",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
             "hydra",
             "kismet",
-            "skyz",
-            "sib"
+            "sib",
+            "skyz"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1/Qualifiers"
         }
       ],
       "mapMods": {
@@ -1654,29 +1724,6 @@
     {
       "team": "optic-texas",
       "players": [
-        {
-          "id": "shotzzy",
-          "handle": "Shotzzy",
-          "role": "flex",
-          "ratings": {
-            "slaying": 83,
-            "hp_obj": 83,
-            "snd_iq": 84,
-            "third_mode": 83,
-            "clutch": 83,
-            "consistency": 87
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 206,
-            "kd": 1.04,
-            "hpKd": 1.02,
-            "hpTimePerMap": 64,
-            "sndKd": 1.1,
-            "sndOpeningNet": 1.19,
-            "thirdKd": 1.06
-          }
-        },
         {
           "id": "dashy",
           "handle": "Dashy",
@@ -1745,20 +1792,43 @@
             "sndOpeningNet": 0.84,
             "thirdKd": 1.13
           }
+        },
+        {
+          "id": "shotzzy",
+          "handle": "Shotzzy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 83,
+            "hp_obj": 83,
+            "snd_iq": 84,
+            "third_mode": 83,
+            "clutch": 83,
+            "consistency": 87
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 206,
+            "kd": 1.04,
+            "hpKd": 1.02,
+            "hpTimePerMap": 64,
+            "sndKd": 1.1,
+            "sndOpeningNet": 1.19,
+            "thirdKd": 1.06
+          }
         }
       ],
       "snapshots": [
         {
           "effective": "2023-12-08",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
-            "shotzzy",
             "dashy",
             "kenny",
-            "pred"
+            "pred",
+            "shotzzy"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1/Qualifiers"
         }
       ],
       "mapMods": {
@@ -1923,7 +1993,7 @@
       "snapshots": [
         {
           "effective": "2023-12-08",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
             "abuzah",
             "arcitys",
@@ -1931,31 +2001,31 @@
             "illey"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1/Qualifiers"
         },
         {
           "effective": "2024-02-16",
-          "event": "Major II",
+          "event": "Stage 2 Qualifiers",
           "starters": [
             "abuzah",
             "arcitys",
-            "huke",
-            "breszy"
+            "breszy",
+            "huke"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_2/Qualifiers"
         },
         {
           "effective": "2024-04-12",
-          "event": "Major III",
+          "event": "Stage 3 Qualifiers",
           "starters": [
+            "04",
             "abuzah",
-            "huke",
             "breszy",
-            "04"
+            "huke"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_3/Qualifiers"
         }
       ],
       "mapMods": {
@@ -1998,6 +2068,29 @@
             "sndKd": 1,
             "sndOpeningNet": 1.12,
             "thirdKd": 1.03
+          }
+        },
+        {
+          "id": "envoy",
+          "handle": "Envoy",
+          "role": "flex",
+          "ratings": {
+            "slaying": 81,
+            "hp_obj": 81,
+            "snd_iq": 81,
+            "third_mode": 83,
+            "clutch": 80,
+            "consistency": 85
+          },
+          "ratingSource": "stats",
+          "stats": {
+            "maps": 188,
+            "kd": 0.98,
+            "hpKd": 0.96,
+            "hpTimePerMap": 67,
+            "sndKd": 0.9,
+            "sndOpeningNet": 0.93,
+            "thirdKd": 1.04
           }
         },
         {
@@ -2045,43 +2138,20 @@
             "sndOpeningNet": 1.1,
             "thirdKd": 1.19
           }
-        },
-        {
-          "id": "envoy",
-          "handle": "Envoy",
-          "role": "flex",
-          "ratings": {
-            "slaying": 81,
-            "hp_obj": 81,
-            "snd_iq": 81,
-            "third_mode": 83,
-            "clutch": 80,
-            "consistency": 85
-          },
-          "ratingSource": "stats",
-          "stats": {
-            "maps": 188,
-            "kd": 0.98,
-            "hpKd": 0.96,
-            "hpTimePerMap": 67,
-            "sndKd": 0.9,
-            "sndOpeningNet": 0.93,
-            "thirdKd": 1.04
-          }
         }
       ],
       "snapshots": [
         {
           "effective": "2023-12-08",
-          "event": "Major I",
+          "event": "Stage 1 Qualifiers",
           "starters": [
             "cleanx",
+            "envoy",
             "insight",
-            "scrap",
-            "envoy"
+            "scrap"
           ],
           "subs": [],
-          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1"
+          "source": "https://cod-esports.fandom.com/wiki/Call_of_Duty_League/2024_Season/Major_1/Qualifiers"
         }
       ],
       "mapMods": {

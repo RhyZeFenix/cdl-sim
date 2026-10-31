@@ -21,6 +21,8 @@ export interface SeasonConfig {
   ratingMode: RatingMode;
   /** Set for GM mode: the team the user runs. */
   gmTeam?: string;
+  /** Play Champs only, from the real seeds. */
+  champsOnly?: boolean;
 }
 
 export type SimKind = "step" | "stage" | "season";
@@ -37,7 +39,12 @@ export const randomSeed = () => Math.random().toString(36).slice(2, 8);
 
 const SAVE_KIND = "cdl-sim-season";
 
-const optionsOf = (cfg: SeasonConfig) => ({ seed: cfg.seed, ratingMode: cfg.ratingMode, gmTeam: cfg.gmTeam });
+const optionsOf = (cfg: SeasonConfig) => ({
+  seed: cfg.seed,
+  ratingMode: cfg.ratingMode,
+  gmTeam: cfg.gmTeam,
+  champsOnly: cfg.champsOnly,
+});
 
 export function useSeason(initial: SeasonConfig) {
   const [config, setConfig] = useState(initial);
@@ -100,7 +107,7 @@ export function useSeason(initial: SeasonConfig) {
       throw new Error("Not a CDL Sim season file.");
     }
     stateRef.current = s as SeasonState;
-    setConfig({ seasonId: s.seasonId, seed: s.options.seed, ratingMode: s.options.ratingMode, gmTeam: s.gm?.team });
+    setConfig({ seasonId: s.seasonId, seed: s.options.seed, ratingMode: s.options.ratingMode, gmTeam: s.gm?.team, champsOnly: s.options.champsOnly });
     bump();
   }, []);
 

@@ -241,6 +241,9 @@
       "https://liquipedia.net/callofduty/Call_of_Duty_League/Season_5/Playoffs"
     ]
   },
+  "historical": {
+    "champsSeeds": ["atlanta-faze", "toronto-ultra", "optic-texas", "ny-subliners", "seattle-surge", "la-guerrillas", "la-thieves", "miami-heretics"]
+  },
   "unverified": [
     "Qualifier week dates for every stage (only start/end of each stage are known).",
     "Tiebreaker order copied from 2025 Liquipedia tables; 2024 order not checked.",

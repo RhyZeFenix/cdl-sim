@@ -1,0 +1,3400 @@
+{
+ "season": "2024",
+ "fetched": "2026-10-31",
+ "source": "https://cod-esports.fandom.com/api.php (Cargo table PlayerStats)",
+ "license": "CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors",
+ "rows": [
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "12",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "12",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "12",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "12",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "21",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "21",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "21",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "21",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "19",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "19",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "19",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "19",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "26",
+   "First": "2024-02-17",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "26",
+   "First": "2024-02-17",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "26",
+   "First": "2024-02-17",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "26",
+   "First": "2024-02-17",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "17",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "17",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "17",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "17",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "25",
+   "First": "2024-04-12",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "25",
+   "First": "2024-04-12",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "25",
+   "First": "2024-04-12",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "25",
+   "First": "2024-04-12",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "15",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "15",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "15",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "15",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "29",
+   "First": "2024-06-02",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "29",
+   "First": "2024-06-02",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "29",
+   "First": "2024-06-02",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "29",
+   "First": "2024-06-02",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Capsidal",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "5",
+   "First": "2024-01-26",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "5",
+   "First": "2024-01-26",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "5",
+   "First": "2024-01-26",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "5",
+   "First": "2024-01-26",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Capsidal",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Asim",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "9",
+   "First": "2024-03-21",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "9",
+   "First": "2024-03-21",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "9",
+   "First": "2024-03-21",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "9",
+   "First": "2024-03-21",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Asim",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "26",
+   "First": "2024-02-17",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "26",
+   "First": "2024-02-17",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "26",
+   "First": "2024-02-17",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "26",
+   "First": "2024-02-17",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "5",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Pentagrxm",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "5",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "5",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "5",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "23",
+   "First": "2024-04-13",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Pentagrxm",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "32",
+   "First": "2024-04-13",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "32",
+   "First": "2024-04-13",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Seany",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "9",
+   "First": "2024-05-03",
+   "Last": "2024-05-05"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "32",
+   "First": "2024-04-13",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "3",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "MajorManiak",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "3",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "3",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "3",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "26",
+   "First": "2024-05-31",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "MajorManiak",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "26",
+   "First": "2024-05-31",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "26",
+   "First": "2024-05-31",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "26",
+   "First": "2024-05-31",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Clayster",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "9",
+   "First": "2024-01-26",
+   "Last": "2024-01-27"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "9",
+   "First": "2024-01-26",
+   "Last": "2024-01-27"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "9",
+   "First": "2024-01-26",
+   "Last": "2024-01-27"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "9",
+   "First": "2024-01-26",
+   "Last": "2024-01-27"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Clayster",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "First": "2023-12-09",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "10",
+   "First": "2024-01-20",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "GodRx",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "17",
+   "First": "2023-12-09",
+   "Last": "2024-01-14"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "First": "2023-12-09",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "14",
+   "First": "2023-12-09",
+   "Last": "2023-12-17"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "13",
+   "First": "2024-01-14",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Clayster",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "11",
+   "First": "2024-03-22",
+   "Last": "2024-03-23"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "11",
+   "First": "2024-03-22",
+   "Last": "2024-03-23"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "11",
+   "First": "2024-03-22",
+   "Last": "2024-03-23"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "11",
+   "First": "2024-03-22",
+   "Last": "2024-03-23"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Clayster",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "28",
+   "First": "2024-02-16",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "28",
+   "First": "2024-02-16",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "28",
+   "First": "2024-02-16",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "28",
+   "First": "2024-02-16",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Clayster",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "12",
+   "First": "2024-05-16",
+   "Last": "2024-05-18"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "12",
+   "First": "2024-05-16",
+   "Last": "2024-05-18"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "12",
+   "First": "2024-05-16",
+   "Last": "2024-05-18"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "12",
+   "First": "2024-05-16",
+   "Last": "2024-05-18"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Clayster",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "30",
+   "First": "2024-04-14",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "30",
+   "First": "2024-04-14",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "30",
+   "First": "2024-04-14",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "30",
+   "First": "2024-04-14",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Clayster",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "3",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "3",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "3",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "3",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Clayster",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "33",
+   "First": "2024-05-31",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "33",
+   "First": "2024-05-31",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "33",
+   "First": "2024-05-31",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "33",
+   "First": "2024-05-31",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "8",
+   "First": "2024-01-26",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "8",
+   "First": "2024-01-26",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "8",
+   "First": "2024-01-26",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Standy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "8",
+   "First": "2024-01-26",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Standy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "12",
+   "First": "2024-03-21",
+   "Last": "2024-03-23"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "12",
+   "First": "2024-03-21",
+   "Last": "2024-03-23"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "12",
+   "First": "2024-03-21",
+   "Last": "2024-03-23"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "12",
+   "First": "2024-03-21",
+   "Last": "2024-03-23"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-18",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-18",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-18",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-18",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "5",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "5",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "5",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "5",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Asim",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "12",
+   "First": "2024-04-20",
+   "Last": "2024-05-04"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "25",
+   "First": "2024-04-12",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "25",
+   "First": "2024-04-12",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "25",
+   "First": "2024-04-12",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "5",
+   "First": "2024-05-11",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "8",
+   "First": "2024-04-12",
+   "Last": "2024-04-14"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "12",
+   "First": "2024-06-27",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "12",
+   "First": "2024-06-27",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "12",
+   "First": "2024-06-27",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "12",
+   "First": "2024-06-27",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "26",
+   "First": "2024-06-01",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "26",
+   "First": "2024-06-01",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "26",
+   "First": "2024-06-01",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Las Vegas Legion",
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "26",
+   "First": "2024-06-01",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Diamondcon",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "6",
+   "First": "2024-07-18",
+   "Last": "2024-07-19"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "6",
+   "First": "2024-07-18",
+   "Last": "2024-07-19"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Fame",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "6",
+   "First": "2024-07-18",
+   "Last": "2024-07-19"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Flames",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "6",
+   "First": "2024-07-18",
+   "Last": "2024-07-19"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Assault",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "17",
+   "First": "2024-01-25",
+   "Last": "2024-01-27"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Diamondcon",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "17",
+   "First": "2024-01-25",
+   "Last": "2024-01-27"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "17",
+   "First": "2024-01-25",
+   "Last": "2024-01-27"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Fame",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "17",
+   "First": "2024-01-25",
+   "Last": "2024-01-27"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Assault",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "25",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Diamondcon",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "25",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "25",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Fame",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "25",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Assault",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "12",
+   "First": "2024-03-22",
+   "Last": "2024-03-23"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Diamondcon",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "12",
+   "First": "2024-03-22",
+   "Last": "2024-03-23"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "12",
+   "First": "2024-03-22",
+   "Last": "2024-03-23"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Fame",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "12",
+   "First": "2024-03-22",
+   "Last": "2024-03-23"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Assault",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-18",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Diamondcon",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-18",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-18",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Fame",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-18",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Diamondcon",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "4",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "4",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Fame",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "4",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Flames",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "4",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Assault",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "9",
+   "First": "2024-04-12",
+   "Last": "2024-04-21"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Diamondcon",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "First": "2024-04-12",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "First": "2024-04-12",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Fame",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "First": "2024-04-12",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Flames",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "15",
+   "First": "2024-04-26",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Diamondcon",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "13",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "13",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Fame",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "13",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Flames",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "13",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Diamondcon",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "26",
+   "First": "2024-05-31",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "26",
+   "First": "2024-05-31",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Fame",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "26",
+   "First": "2024-05-31",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Los Angeles Guerrillas",
+   "PlayerLink": "Flames",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "26",
+   "First": "2024-05-31",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "17",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "17",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "17",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "17",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "4",
+   "First": "2024-01-26",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "4",
+   "First": "2024-01-26",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "4",
+   "First": "2024-01-26",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "4",
+   "First": "2024-01-26",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "9",
+   "First": "2024-03-21",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "9",
+   "First": "2024-03-21",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "9",
+   "First": "2024-03-21",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "9",
+   "First": "2024-03-21",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "28",
+   "First": "2024-02-18",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "28",
+   "First": "2024-02-18",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "28",
+   "First": "2024-02-18",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "28",
+   "First": "2024-02-18",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "13",
+   "First": "2024-05-16",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "13",
+   "First": "2024-05-16",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "13",
+   "First": "2024-05-16",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "13",
+   "First": "2024-05-16",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "32",
+   "First": "2024-04-14",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "32",
+   "First": "2024-04-14",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "32",
+   "First": "2024-04-14",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "32",
+   "First": "2024-04-14",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "11",
+   "First": "2024-06-27",
+   "Last": "2024-06-29"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "11",
+   "First": "2024-06-27",
+   "Last": "2024-06-29"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "11",
+   "First": "2024-06-27",
+   "Last": "2024-06-29"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "11",
+   "First": "2024-06-27",
+   "Last": "2024-06-29"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "30",
+   "First": "2024-06-01",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "30",
+   "First": "2024-06-01",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "30",
+   "First": "2024-06-01",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "30",
+   "First": "2024-06-01",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "12",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "12",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "12",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Vikul",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "12",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "JurNii",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "6",
+   "First": "2024-01-25",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "6",
+   "First": "2024-01-25",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "6",
+   "First": "2024-01-25",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Vikul",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "6",
+   "First": "2024-01-25",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "JurNii",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Vikul",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "EriKBooM",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "6",
+   "First": "2024-03-21",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "6",
+   "First": "2024-03-21",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "6",
+   "First": "2024-03-21",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Vikul",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "6",
+   "First": "2024-03-21",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "EriKBooM",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-16",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-16",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-16",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Vikul",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-16",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "17",
+   "First": "2024-05-16",
+   "Last": "2024-05-18"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "17",
+   "First": "2024-05-16",
+   "Last": "2024-05-18"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "17",
+   "First": "2024-05-16",
+   "Last": "2024-05-18"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Vikul",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "17",
+   "First": "2024-05-16",
+   "Last": "2024-05-18"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "29",
+   "First": "2024-04-13",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "29",
+   "First": "2024-04-13",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "29",
+   "First": "2024-04-13",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Vikul",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "29",
+   "First": "2024-04-13",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "13",
+   "First": "2024-06-27",
+   "Last": "2024-06-29"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "13",
+   "First": "2024-06-27",
+   "Last": "2024-06-29"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "13",
+   "First": "2024-06-27",
+   "Last": "2024-06-29"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Vikul",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "13",
+   "First": "2024-06-27",
+   "Last": "2024-06-29"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "27",
+   "First": "2024-06-01",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "27",
+   "First": "2024-06-01",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "3",
+   "First": "2024-06-01",
+   "Last": "2024-06-01"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "27",
+   "First": "2024-06-01",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Vikul",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "24",
+   "First": "2024-06-07",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Accuracy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "15",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "15",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "15",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "15",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Accuracy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Accuracy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "9",
+   "First": "2024-03-22",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "9",
+   "First": "2024-03-22",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "9",
+   "First": "2024-03-22",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "9",
+   "First": "2024-03-22",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Accuracy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "30",
+   "First": "2024-02-18",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "30",
+   "First": "2024-02-18",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "30",
+   "First": "2024-02-18",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "30",
+   "First": "2024-02-18",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Accuracy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "4",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Gunless",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "4",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "4",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Standy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "4",
+   "First": "2024-05-17",
+   "Last": "2024-05-17"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Accuracy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "27",
+   "First": "2024-04-12",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Gunless",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "27",
+   "First": "2024-04-12",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "27",
+   "First": "2024-04-12",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Standy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "27",
+   "First": "2024-04-12",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Accuracy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "4",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Gunless",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "4",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "4",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Standy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "4",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Accuracy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "20",
+   "First": "2024-05-31",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Gunless",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "29",
+   "First": "2024-05-31",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "29",
+   "First": "2024-05-31",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "9",
+   "First": "2024-06-14",
+   "Last": "2024-06-16"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Standy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "29",
+   "First": "2024-05-31",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "26",
+   "First": "2024-07-18",
+   "Last": "2024-07-21"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "26",
+   "First": "2024-07-18",
+   "Last": "2024-07-21"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "26",
+   "First": "2024-07-18",
+   "Last": "2024-07-21"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "26",
+   "First": "2024-07-18",
+   "Last": "2024-07-21"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "7",
+   "First": "2024-01-25",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "7",
+   "First": "2024-01-25",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "7",
+   "First": "2024-01-25",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "7",
+   "First": "2024-01-25",
+   "Last": "2024-01-26"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "19",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "19",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "19",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "19",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-16",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-16",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-16",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-16",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "16",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "16",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "16",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "16",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "27",
+   "First": "2024-04-13",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "27",
+   "First": "2024-04-13",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "27",
+   "First": "2024-04-13",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "27",
+   "First": "2024-04-13",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "27",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "27",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "27",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "27",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "32",
+   "First": "2024-06-01",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "32",
+   "First": "2024-06-01",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "32",
+   "First": "2024-06-01",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "New York Subliners",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "32",
+   "First": "2024-06-01",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "19",
+   "First": "2024-07-18",
+   "Last": "2024-07-21"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "19",
+   "First": "2024-07-18",
+   "Last": "2024-07-21"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "19",
+   "First": "2024-07-18",
+   "Last": "2024-07-21"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "19",
+   "First": "2024-07-18",
+   "Last": "2024-07-21"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "20",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "20",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "20",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "20",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "First": "2023-12-08",
+   "Last": "2024-01-21"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "20",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "20",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "20",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "20",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "31",
+   "First": "2024-02-18",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "31",
+   "First": "2024-02-18",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "31",
+   "First": "2024-02-18",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "31",
+   "First": "2024-02-18",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "26",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "26",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "26",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "26",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "27",
+   "First": "2024-04-14",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "27",
+   "First": "2024-04-14",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "27",
+   "First": "2024-04-14",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "27",
+   "First": "2024-04-14",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "5",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "5",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "5",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "5",
+   "First": "2024-06-28",
+   "Last": "2024-06-28"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "31",
+   "First": "2024-06-01",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "31",
+   "First": "2024-06-01",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "31",
+   "First": "2024-06-01",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "31",
+   "First": "2024-06-01",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "10",
+   "First": "2024-07-18",
+   "Last": "2024-07-19"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "10",
+   "First": "2024-07-18",
+   "Last": "2024-07-19"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Breszy",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "10",
+   "First": "2024-07-18",
+   "Last": "2024-07-19"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "10",
+   "First": "2024-07-18",
+   "Last": "2024-07-19"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "17",
+   "First": "2024-01-25",
+   "Last": "2024-01-27"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Arcitys",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "17",
+   "First": "2024-01-25",
+   "Last": "2024-01-27"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "17",
+   "First": "2024-01-25",
+   "Last": "2024-01-27"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "iLLeY",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "17",
+   "First": "2024-01-25",
+   "Last": "2024-01-27"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2023-12-08",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Arcitys",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2023-12-08",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2023-12-08",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "iLLeY",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2023-12-08",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "4",
+   "First": "2024-03-22",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Arcitys",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "4",
+   "First": "2024-03-22",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Breszy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "4",
+   "First": "2024-03-22",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "4",
+   "First": "2024-03-22",
+   "Last": "2024-03-22"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "First": "2024-02-17",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Arcitys",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "First": "2024-02-17",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Breszy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "First": "2024-02-17",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "First": "2024-02-17",
+   "Last": "2024-03-17"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "16",
+   "First": "2024-05-16",
+   "Last": "2024-05-18"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "16",
+   "First": "2024-05-16",
+   "Last": "2024-05-18"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Breszy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "16",
+   "First": "2024-05-16",
+   "Last": "2024-05-18"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "16",
+   "First": "2024-05-16",
+   "Last": "2024-05-18"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "28",
+   "First": "2024-04-14",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "28",
+   "First": "2024-04-14",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Breszy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "28",
+   "First": "2024-04-14",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "28",
+   "First": "2024-04-14",
+   "Last": "2024-05-11"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "13",
+   "First": "2024-06-27",
+   "Last": "2024-06-29"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "13",
+   "First": "2024-06-27",
+   "Last": "2024-06-29"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Breszy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "13",
+   "First": "2024-06-27",
+   "Last": "2024-06-29"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "13",
+   "First": "2024-06-27",
+   "Last": "2024-06-29"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "29",
+   "First": "2024-05-31",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "29",
+   "First": "2024-05-31",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Breszy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "29",
+   "First": "2024-05-31",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Seattle Surge",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "29",
+   "First": "2024-05-31",
+   "Last": "2024-06-22"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "20",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "20",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "20",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League Championship 2024",
+   "Maps": "20",
+   "First": "2024-07-18",
+   "Last": "2024-07-20"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "15",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "15",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "15",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1",
+   "Maps": "15",
+   "First": "2024-01-25",
+   "Last": "2024-01-28"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "24",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "24",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "24",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 1/Qualifiers",
+   "Maps": "24",
+   "First": "2023-12-09",
+   "Last": "2024-01-20"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "14",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "14",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "14",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2",
+   "Maps": "14",
+   "First": "2024-03-21",
+   "Last": "2024-03-24"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-16",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-16",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-16",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2024-02-16",
+   "Last": "2024-03-16"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "17",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "17",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "17",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3",
+   "Maps": "17",
+   "First": "2024-05-16",
+   "Last": "2024-05-19"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "First": "2024-04-13",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "First": "2024-04-13",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "First": "2024-04-13",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "First": "2024-04-13",
+   "Last": "2024-05-12"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "19",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "19",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "19",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4",
+   "Maps": "19",
+   "First": "2024-06-27",
+   "Last": "2024-06-30"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "28",
+   "First": "2024-05-31",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "28",
+   "First": "2024-05-31",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "28",
+   "First": "2024-05-31",
+   "Last": "2024-06-23"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2024 Season/Major 4/Qualifiers",
+   "Maps": "28",
+   "First": "2024-05-31",
+   "Last": "2024-06-23"
+  }
+ ]
+}

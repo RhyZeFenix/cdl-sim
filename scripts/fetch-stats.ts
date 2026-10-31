@@ -2,7 +2,8 @@
 // Call of Duty Esports Wiki's Cargo table `PlayerStats` (one row per player per map).
 // Content is CC BY-SA 3.0; attribution is kept in each output file.
 //
-//   npx tsx scripts/fetch-stats.ts            -> data/stats/{2024,2025,2026}.raw.json
+//   npx tsx scripts/fetch-stats.ts   -> data/stats/{year}.raw.json      (player and team-map aggregates)
+//                                    -> data/stats/{year}.lineups.json  (maps per team, player and event page)
 //
 // Two requests per season, spaced well apart; Cargo rate-limits aggregate queries, so a
 // rate-limit answer backs off and retries. Seasons already on disk are skipped.
@@ -13,7 +14,7 @@ const UA = "CDLSeasonSim/0.1 (personal season simulator; one-off stats download)
 const GAP_MS = 45_000;
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
-async function cargo(params: Record<string, string>, attempt = 1): Promise<Record<string, string>[]> {
+async function cargo(params: Record<string, string>, attempt = 1, allowFull = false): Promise<Record<string, string>[]> {
   const q = new URLSearchParams({ action: "cargoquery", format: "json", limit: "500", ...params });
   const res = await fetch(`${API}?${q}`, { headers: { "User-Agent": UA } });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -22,12 +23,23 @@ async function cargo(params: Record<string, string>, attempt = 1): Promise<Recor
     const wait = 90_000 * attempt;
     console.log(`  rate limited; waiting ${wait / 1000}s`);
     await sleep(wait);
-    return cargo(params, attempt + 1);
+    return cargo(params, attempt + 1, allowFull);
   }
   if (j.error) throw new Error(j.error.info);
   const rows = (j.cargoquery ?? []).map((r) => r.title);
-  if (rows.length >= 500) throw new Error("hit the 500-row limit; add paging");
+  if (rows.length >= 500 && !allowFull) throw new Error("hit the 500-row limit; use cargoAll");
   return rows;
+}
+
+/** Pages through a query 500 rows at a time. */
+async function cargoAll(params: Record<string, string>): Promise<Record<string, string>[]> {
+  const all: Record<string, string>[] = [];
+  for (let offset = 0; ; offset += 500) {
+    const rows = await cargo({ ...params, offset: String(offset) }, 1, true);
+    all.push(...rows);
+    if (rows.length < 500) return all;
+    await sleep(GAP_MS);
+  }
 }
 
 const seasonWhere = (y: string) =>
@@ -80,5 +92,37 @@ for (const y of ["2024", "2025", "2026"]) {
   const out = await season(y);
   writeFileSync(`data/stats/${y}.raw.json`, JSON.stringify(out, null, 1) + "\n");
   console.log(`${y}: ${out.players.length} player-team rows, ${out.teamMaps.length} team-map rows`);
+  await sleep(GAP_MS);
+}
+
+// Who played for whom at each event page (qualifier stages included), for roster snapshots.
+for (const y of ["2024", "2025", "2026"]) {
+  const file = `data/stats/${y}.lineups.json`;
+  if (existsSync(file)) {
+    console.log(`${y} lineups: already downloaded`);
+    continue;
+  }
+  const rows = await cargoAll({
+    tables: "PlayerStats",
+    fields: "Team,PlayerLink,TournamentPage,COUNT(*)=Maps,MIN(Date)=First,MAX(Date)=Last",
+    where: seasonWhere(y),
+    group_by: "Team,PlayerLink,TournamentPage",
+    order_by: "Team,TournamentPage,PlayerLink",
+  });
+  writeFileSync(
+    file,
+    JSON.stringify(
+      {
+        season: y,
+        fetched: new Date().toISOString().slice(0, 10),
+        source: `${API} (Cargo table PlayerStats)`,
+        license: "CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors",
+        rows,
+      },
+      null,
+      1,
+    ) + "\n",
+  );
+  console.log(`${y} lineups: ${rows.length} team-player-event rows`);
   await sleep(GAP_MS);
 }

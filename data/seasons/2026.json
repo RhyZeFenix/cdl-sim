@@ -297,6 +297,7 @@
     ]
   },
   "historical": {
+    "champsSeeds": ["optic-texas", "la-thieves", "faze-vegas", "paris-gentle-mates", "toronto-koi", "g2-minnesota", "riyadh-falcons", "miami-heretics"],
     "finalPoints": {
       "optic-texas": 575,
       "la-thieves": 500,

@@ -40,7 +40,7 @@ npm run dev          # UI dev server
 
 ## UI (`npm run dev`, then open http://localhost:5173)
 
-- **Header:** pick a season, seed and Historical/Randomized ratings, then "New season". Sim week, Sim stage and Sim season run the season. In Watch speed, the headline match of each sim (the week's first match, or an event's final) opens and plays back live. Export/Import saves and loads the whole season as JSON.
+- **Header:** pick a season, seed and Historical/Randomized ratings, then "New season". Sim week, Sim stage and Sim season run the season. In Watch speed, the headline match of each sim (the week's first match, or an event's final) opens and plays back live. Export/Import saves and loads the whole season as JSON. **Champs only** skips the regular season and plays Champs from that year's real seeds (2026 also starts from the real final points).
 - **Schedule:** stage by stage, week by week, with the map pool for each week; Minors and Majors appear inline with their real results for comparison.
 - **Standings:** the CDL points table (Champs cut line) and each stage's qualifier table, using the season's tiebreakers.
 - **Brackets:** every Minor, Major and Champs, including play-ins and Pro-Am groups, plus placements and points awarded.
@@ -92,6 +92,7 @@ Engine API (`src/engine/season/season.ts`): `advance` returns `undefined` and se
 
 - **Team results blend:** each rating is 70% stat-based and 30% from team placements, so a good slayer on a losing team isn't over-rated.
 - **Map modifiers:** each team's win rate on a map relative to its average in that mode, shrunk for small samples and capped at ±0.03 skill. The AI veto uses them, and so does the sim.
+- **Lineup timelines:** a team gets a snapshot from each stage's qualifiers (its four most-played players there, from `data/stats/{year}.lineups.json`) and from each Major/Champs participant list (dated from the event). This catches changes at events a team missed; for example, 2026 Cloud9 switched lineups for Stage 2, but missed the 10-team Major II.
 - **Rebuilding rosters:** `npx tsx scripts/build-rosters.ts` reads the committed event pages in `data/sources/fandom/` plus the stats. Players who only appear in qualifier stats join their team's bench. Each player records `ratingSource` (`stats` or `placeholder`) and a stat line, which My Team shows as K/D with "est." for placeholders.
 
 ## Backtest

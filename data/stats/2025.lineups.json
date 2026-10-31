@@ -1,0 +1,4168 @@
+{
+ "season": "2025",
+ "fetched": "2026-10-31",
+ "source": "https://cod-esports.fandom.com/api.php (Cargo table PlayerStats)",
+ "license": "CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors",
+ "rows": [
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "9",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "9",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "9",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "9",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "18",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "18",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "18",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "18",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "17",
+   "First": "2025-01-10",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "17",
+   "First": "2025-01-10",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "17",
+   "First": "2025-01-10",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "17",
+   "First": "2025-01-10",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "16",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "16",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "16",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "16",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "First": "2025-03-01",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "First": "2025-03-01",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "First": "2025-03-01",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "First": "2025-03-01",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2025-02-14",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2025-02-14",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2025-02-14",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2025-02-14",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "First": "2025-04-24",
+   "Last": "2025-04-26"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "First": "2025-04-24",
+   "Last": "2025-04-26"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "First": "2025-04-24",
+   "Last": "2025-04-26"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "First": "2025-04-24",
+   "Last": "2025-04-26"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-04",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-04",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-04",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-04",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "18",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "18",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "18",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "18",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Atlanta FaZe",
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "18",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "18",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "18",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "18",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "8",
+   "First": "2025-01-30",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "8",
+   "First": "2025-01-30",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "8",
+   "First": "2025-01-30",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "8",
+   "First": "2025-01-30",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "First": "2025-01-11",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "First": "2025-01-11",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "First": "2025-01-11",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "First": "2025-01-11",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "11",
+   "First": "2025-03-20",
+   "Last": "2025-03-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "11",
+   "First": "2025-03-20",
+   "Last": "2025-03-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "11",
+   "First": "2025-03-20",
+   "Last": "2025-03-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "11",
+   "First": "2025-03-20",
+   "Last": "2025-03-22"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "11",
+   "First": "2025-04-24",
+   "Last": "2025-04-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "11",
+   "First": "2025-04-24",
+   "Last": "2025-04-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "11",
+   "First": "2025-04-24",
+   "Last": "2025-04-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "11",
+   "First": "2025-04-24",
+   "Last": "2025-04-26"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2025-04-05",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2025-04-05",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2025-04-05",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2025-04-05",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2025-05-03",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2025-05-03",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2025-05-03",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Boston Breach",
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2025-05-03",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "7",
+   "First": "2025-06-26",
+   "Last": "2025-06-27"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "7",
+   "First": "2025-06-26",
+   "Last": "2025-06-27"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "7",
+   "First": "2025-06-26",
+   "Last": "2025-06-27"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Wrecks",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "7",
+   "First": "2025-06-26",
+   "Last": "2025-06-27"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "14",
+   "First": "2025-01-11",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "14",
+   "First": "2025-01-11",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "14",
+   "First": "2025-01-11",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "14",
+   "First": "2025-01-11",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2024-12-06",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2024-12-06",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2024-12-06",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2024-12-06",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "9",
+   "First": "2025-03-20",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "9",
+   "First": "2025-03-20",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "9",
+   "First": "2025-03-20",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "9",
+   "First": "2025-03-20",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "First": "2025-03-01",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "First": "2025-03-01",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "First": "2025-03-01",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "First": "2025-03-01",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "7",
+   "First": "2025-04-24",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "7",
+   "First": "2025-04-24",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "7",
+   "First": "2025-04-24",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Wrecks",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "7",
+   "First": "2025-04-24",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-05",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-05",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-05",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "18",
+   "First": "2025-04-05",
+   "Last": "2025-04-13"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Wrecks",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "3",
+   "First": "2025-04-20",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Wrecks",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Carolina Royal Ravens",
+   "PlayerLink": "Wrecks",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "9",
+   "First": "2025-01-31",
+   "Last": "2025-02-01"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "9",
+   "First": "2025-01-31",
+   "Last": "2025-02-01"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "9",
+   "First": "2025-01-31",
+   "Last": "2025-02-01"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "9",
+   "First": "2025-01-31",
+   "Last": "2025-02-01"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "8",
+   "First": "2025-01-10",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "8",
+   "First": "2025-01-10",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "8",
+   "First": "2025-01-10",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "8",
+   "First": "2025-01-10",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2024-12-07",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2024-12-07",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2024-12-07",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "First": "2024-12-07",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "10",
+   "First": "2025-03-20",
+   "Last": "2025-03-22"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "10",
+   "First": "2025-03-20",
+   "Last": "2025-03-22"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "10",
+   "First": "2025-03-20",
+   "Last": "2025-03-22"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "10",
+   "First": "2025-03-20",
+   "Last": "2025-03-22"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "9",
+   "First": "2025-02-28",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "9",
+   "First": "2025-02-28",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "9",
+   "First": "2025-02-28",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "9",
+   "First": "2025-02-28",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "First": "2025-04-25",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "First": "2025-04-25",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "First": "2025-04-25",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "First": "2025-04-25",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2025-04-05",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2025-04-05",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2025-04-05",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2025-04-05",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Capsidal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Capsidal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Cloud9 New York",
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "d7oom",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "3",
+   "First": "2025-01-31",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "3",
+   "First": "2025-01-31",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "KiinG",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "3",
+   "First": "2025-01-31",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Roxas",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "3",
+   "First": "2025-01-31",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "d7oom",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Roxas",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "WXSL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "d7oom",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "11",
+   "First": "2025-01-17",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "25",
+   "First": "2024-12-06",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Khhx",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "14",
+   "First": "2024-12-06",
+   "Last": "2024-12-15"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "KiinG",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "3",
+   "First": "2025-01-25",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "KingAbody",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "14",
+   "First": "2024-12-06",
+   "Last": "2024-12-15"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Roxas",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "25",
+   "First": "2024-12-06",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "WXSL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "8",
+   "First": "2025-01-17",
+   "Last": "2025-01-18"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "d7oom",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "First": "2025-03-21",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "First": "2025-03-21",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "KiinG",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "First": "2025-03-21",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "WXSL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "First": "2025-03-21",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "d7oom",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "KiinG",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "WXSL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "d7oom",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "KiinG",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "WXSL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Arcitys",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "First": "2025-04-25",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "First": "2025-04-25",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "First": "2025-04-25",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "First": "2025-04-25",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Arcitys",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-04",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-04",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-04",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-04",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Arcitys",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "10",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "10",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "10",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "10",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Arcitys",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Las Vegas Falcons",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "5",
+   "First": "2025-01-31",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "5",
+   "First": "2025-01-31",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "5",
+   "First": "2025-01-31",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "5",
+   "First": "2025-01-31",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2024-12-06",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2024-12-06",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2024-12-06",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "First": "2024-12-06",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "First": "2025-03-21",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "First": "2025-03-21",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "First": "2025-03-21",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "First": "2025-03-21",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "8",
+   "First": "2025-02-28",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "8",
+   "First": "2025-02-28",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "8",
+   "First": "2025-02-28",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "8",
+   "First": "2025-02-28",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "26",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "21",
+   "First": "2025-02-21",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "26",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "19",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "12",
+   "First": "2025-02-15",
+   "Last": "2025-02-22"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "First": "2025-04-25",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "First": "2025-04-25",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "First": "2025-04-25",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "First": "2025-04-25",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "18",
+   "First": "2025-04-05",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "18",
+   "First": "2025-04-05",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "18",
+   "First": "2025-04-05",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "18",
+   "First": "2025-04-05",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "First": "2025-05-23",
+   "Last": "2025-05-24"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "First": "2025-05-23",
+   "Last": "2025-05-24"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "First": "2025-05-23",
+   "Last": "2025-05-24"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "First": "2025-05-23",
+   "Last": "2025-05-24"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2025-05-04",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2025-05-04",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2025-05-04",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Los Angeles Guerrillas M8",
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2025-05-04",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "8",
+   "First": "2025-06-26",
+   "Last": "2025-06-27"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "8",
+   "First": "2025-06-26",
+   "Last": "2025-06-27"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "8",
+   "First": "2025-06-26",
+   "Last": "2025-06-27"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "8",
+   "First": "2025-06-26",
+   "Last": "2025-06-27"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "22",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "22",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "22",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "22",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "First": "2025-01-11",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "First": "2025-01-11",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "First": "2025-01-11",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "First": "2025-01-11",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2024-12-07",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2024-12-07",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2024-12-07",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2024-12-07",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "17",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "17",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "17",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "17",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "14",
+   "First": "2025-03-01",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "14",
+   "First": "2025-03-01",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "14",
+   "First": "2025-03-01",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "14",
+   "First": "2025-03-01",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "23",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "23",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "23",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "23",
+   "First": "2025-02-14",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "17",
+   "First": "2025-04-06",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "17",
+   "First": "2025-04-06",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "17",
+   "First": "2025-04-06",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "17",
+   "First": "2025-04-06",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "25",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "25",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "25",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "25",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2025-05-03",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2025-05-03",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2025-05-03",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Los Angeles Thieves",
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "First": "2025-05-03",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "First": "2025-01-30",
+   "Last": "2025-02-02"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "First": "2024-12-07",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "First": "2024-12-07",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "First": "2024-12-07",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "First": "2024-12-07",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "4",
+   "First": "2025-03-21",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "4",
+   "First": "2025-03-21",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "4",
+   "First": "2025-03-21",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "4",
+   "First": "2025-03-21",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "First": "2025-02-15",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "21",
+   "First": "2025-02-21",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "First": "2025-02-15",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "First": "2025-02-15",
+   "Last": "2025-03-15"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "4",
+   "First": "2025-02-15",
+   "Last": "2025-02-15"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "17",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "17",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "17",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "17",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-05",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-05",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-05",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "First": "2025-04-05",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "15",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "15",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "15",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "15",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2025-05-03",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2025-05-03",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2025-05-03",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Miami Heretics",
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2025-05-03",
+   "Last": "2025-05-17"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "13",
+   "First": "2025-01-31",
+   "Last": "2025-02-01"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "13",
+   "First": "2025-01-31",
+   "Last": "2025-02-01"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "13",
+   "First": "2025-01-31",
+   "Last": "2025-02-01"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "PaulEhx",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "13",
+   "First": "2025-01-31",
+   "Last": "2025-02-01"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "15",
+   "First": "2025-01-10",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "15",
+   "First": "2025-01-10",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "15",
+   "First": "2025-01-10",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "PaulEhx",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "15",
+   "First": "2025-01-10",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2024-12-06",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2024-12-06",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2024-12-06",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "PaulEhx",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "First": "2024-12-06",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "First": "2025-03-20",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "First": "2025-03-20",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "First": "2025-03-20",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "PaulEhx",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "First": "2025-03-20",
+   "Last": "2025-03-21"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "PaulEhx",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "First": "2025-02-28",
+   "Last": "2025-02-28"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "PaulEhx",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "8",
+   "First": "2025-04-25",
+   "Last": "2025-04-26"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "8",
+   "First": "2025-04-25",
+   "Last": "2025-04-26"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "8",
+   "First": "2025-04-25",
+   "Last": "2025-04-26"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "8",
+   "First": "2025-04-25",
+   "Last": "2025-04-26"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "First": "2025-04-04",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "First": "2025-04-04",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "First": "2025-04-04",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "First": "2025-04-04",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "First": "2025-05-23",
+   "Last": "2025-05-24"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "First": "2025-05-23",
+   "Last": "2025-05-24"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "First": "2025-05-23",
+   "Last": "2025-05-24"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "First": "2025-05-23",
+   "Last": "2025-05-24"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2025-05-03",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2025-05-03",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2025-05-03",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Minnesota RØKKR",
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "First": "2025-05-03",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "First": "2025-06-26",
+   "Last": "2025-06-29"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "First": "2025-06-26",
+   "Last": "2025-06-29"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "First": "2025-06-26",
+   "Last": "2025-06-29"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "First": "2025-06-26",
+   "Last": "2025-06-29"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "14",
+   "First": "2025-01-30",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "14",
+   "First": "2025-01-30",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "14",
+   "First": "2025-01-30",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "14",
+   "First": "2025-01-30",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "13",
+   "First": "2025-01-10",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "13",
+   "First": "2025-01-10",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "13",
+   "First": "2025-01-10",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "13",
+   "First": "2025-01-10",
+   "Last": "2025-01-12"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "22",
+   "First": "2024-12-13",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "8",
+   "First": "2024-12-06",
+   "Last": "2024-12-08"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "First": "2025-03-21",
+   "Last": "2025-03-22"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "First": "2025-03-21",
+   "Last": "2025-03-22"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "First": "2025-03-21",
+   "Last": "2025-03-22"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "First": "2025-03-21",
+   "Last": "2025-03-22"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "7",
+   "First": "2025-02-28",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "7",
+   "First": "2025-02-28",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "7",
+   "First": "2025-02-28",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "7",
+   "First": "2025-02-28",
+   "Last": "2025-03-01"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "22",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "22",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "22",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "22",
+   "First": "2025-02-15",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "9",
+   "First": "2025-04-24",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "9",
+   "First": "2025-04-24",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "9",
+   "First": "2025-04-24",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "9",
+   "First": "2025-04-24",
+   "Last": "2025-04-25"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2025-04-04",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2025-04-04",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2025-04-04",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2025-04-04",
+   "Last": "2025-04-20"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "16",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "16",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "16",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "16",
+   "First": "2025-05-23",
+   "Last": "2025-05-25"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "First": "2025-05-03",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "First": "2025-05-03",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "16",
+   "First": "2025-05-09",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "First": "2025-05-03",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "OpTic Texas",
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "3",
+   "First": "2025-05-03",
+   "Last": "2025-05-03"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "10",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "10",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "10",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "10",
+   "First": "2025-06-26",
+   "Last": "2025-06-28"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "11",
+   "First": "2025-01-30",
+   "Last": "2025-02-01"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "11",
+   "First": "2025-01-30",
+   "Last": "2025-02-01"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "11",
+   "First": "2025-01-30",
+   "Last": "2025-02-01"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "11",
+   "First": "2025-01-30",
+   "Last": "2025-02-01"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "First": "2025-01-11",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "First": "2025-01-11",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "First": "2025-01-11",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "First": "2025-01-11",
+   "Last": "2025-01-11"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "First": "2024-12-06",
+   "Last": "2025-01-26"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "19",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "19",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "19",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "19",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "First": "2025-03-01",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "First": "2025-03-01",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "First": "2025-03-01",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "First": "2025-03-01",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2025-02-15",
+   "Last": "2025-03-14"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2025-02-15",
+   "Last": "2025-03-14"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2025-02-15",
+   "Last": "2025-03-14"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "First": "2025-02-15",
+   "Last": "2025-03-14"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "24",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "24",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "24",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "24",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2025-04-04",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2025-04-04",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2025-04-04",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "First": "2025-04-04",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "First": "2025-05-23",
+   "Last": "2025-05-24"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "First": "2025-05-23",
+   "Last": "2025-05-24"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "First": "2025-05-23",
+   "Last": "2025-05-24"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "First": "2025-05-23",
+   "Last": "2025-05-24"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Toronto Ultra",
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "First": "2025-05-02",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "28",
+   "First": "2025-06-26",
+   "Last": "2025-06-29"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "28",
+   "First": "2025-06-26",
+   "Last": "2025-06-29"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "28",
+   "First": "2025-06-26",
+   "Last": "2025-06-29"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "28",
+   "First": "2025-06-26",
+   "Last": "2025-06-29"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "7",
+   "First": "2025-01-30",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "7",
+   "First": "2025-01-30",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Hicksy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "7",
+   "First": "2025-01-30",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "7",
+   "First": "2025-01-30",
+   "Last": "2025-01-31"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Hicksy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "First": "2025-01-10",
+   "Last": "2025-01-10"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "First": "2024-12-07",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "First": "2024-12-07",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Hicksy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "First": "2024-12-07",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "First": "2024-12-07",
+   "Last": "2025-01-25"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "20",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "20",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "20",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "20",
+   "First": "2025-03-20",
+   "Last": "2025-03-23"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "19",
+   "First": "2025-02-28",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "19",
+   "First": "2025-02-28",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "19",
+   "First": "2025-02-28",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "19",
+   "First": "2025-02-28",
+   "Last": "2025-03-02"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "First": "2025-02-14",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "First": "2025-02-14",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "First": "2025-02-14",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "First": "2025-02-14",
+   "Last": "2025-03-16"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "21",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "21",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "21",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "21",
+   "First": "2025-04-24",
+   "Last": "2025-04-27"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2025-04-04",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2025-04-04",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2025-04-04",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "First": "2025-04-04",
+   "Last": "2025-04-19"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "8",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "8",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "8",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "8",
+   "First": "2025-05-23",
+   "Last": "2025-05-23"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "First": "2025-05-02",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "First": "2025-05-02",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "First": "2025-05-02",
+   "Last": "2025-05-18"
+  },
+  {
+   "Team": "Vancouver Surge",
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "First": "2025-05-02",
+   "Last": "2025-05-18"
+  }
+ ]
+}

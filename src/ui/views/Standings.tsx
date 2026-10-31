@@ -5,13 +5,17 @@ import type { SeasonStore } from "../useSeason";
 import { Seg, TeamTag, signed } from "./common";
 
 export function Standings({ store }: { store: SeasonStore }) {
-  const { state, data, version } = store;
+  const { state, data, version, spoil } = store;
   const dir = directory(data);
   const playedStages = data.season.stages.filter((st) => state.qualifiers[st.stage - 1]!.length > 0).map((st) => st.stage);
   const [view, setView] = useState<number>(0);
 
-  const points = useMemo(() => pointsTable(state, data), [state, data, version]);
-  const quals = useMemo(() => (view > 0 ? qualifierStandings(state, data, view) : []), [state, data, version, view]);
+  // Spoiler-free match day: points and records leave out what your unwatched match would reveal.
+  const points = useMemo(() => pointsTable(state, data, spoil.points, spoil.hidden), [state, data, version]);
+  const quals = useMemo(
+    () => (view > 0 ? qualifierStandings(state, data, view, Infinity, spoil.hidden) : []),
+    [state, data, version, view],
+  );
   const champsCut = data.season.championship.format.type === "double-elim" ? data.season.championship.format.winnersSeeds.length : 8;
 
   return (
@@ -29,6 +33,7 @@ export function Standings({ store }: { store: SeasonStore }) {
           options={[{ value: 0, label: "Points" }, ...data.season.stages.map((st) => ({ value: st.stage, label: `Stage ${st.stage}` }))]}
         />
       </div>
+      {spoil.active && <div className="sub" style={{ marginBottom: 8 }}>Standings update after you watch or skip your match.</div>}
       <div className="scroll-x">
         {view === 0 ? (
           <table className="tbl">

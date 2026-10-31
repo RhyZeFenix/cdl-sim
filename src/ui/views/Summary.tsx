@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { playerLines, summarize } from "../../engine";
+import { playerLines, pointsTable, summarize } from "../../engine";
 import { stepLabel, type Nav } from "../App";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
@@ -7,12 +7,12 @@ import { PointsRace } from "./PointsRace";
 import { TeamTag } from "./common";
 
 export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
-  const { state, data, version, done } = store;
+  const { state, data, version, done, spoil } = store;
   const dir = directory(data);
   const { season } = data;
   const sum = useMemo(() => summarize(state, data), [state, data, version]);
   const leaders = useMemo(() => {
-    const lines = playerLines(state, Object.keys(state.series));
+    const lines = playerLines(state, Object.keys(state.series).filter((id) => !spoil.isHidden(id)));
     const maxMaps = Math.max(0, ...lines.map((l) => l.maps));
     return lines.filter((l) => l.maps >= maxMaps * 0.5).slice(0, 10);
   }, [state, version]);
@@ -21,12 +21,16 @@ export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
   if (state.next === 0) return <div className="card empty">Nothing simulated yet. Use “Sim week”, “Sim stage” or “Sim season”.</div>;
 
   const real = season.championship.realResult;
+  // Spoiler-free match day: hide events (and Champs) your unwatched match would give away.
+  const visibleEvent = (i: number) => !spoil.eventHidden(state.events[i]!);
+  const champsHidden = state.events.some((e) => e.kind === "championship" && spoil.eventHidden(e));
+  const finalPoints = pointsTable(state, data, spoil.points, spoil.hidden);
   const champsEvent = state.events.findIndex((e) => e.kind === "championship");
 
   return (
     <div>
       <div className="card">
-        {done && sum.champion ? (
+        {done && sum.champion && !champsHidden ? (
           <div className="hero">
             <div className="stat">
               <span className="l">{season.label} Champion</span>
@@ -78,13 +82,13 @@ export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
           <h3>Points race</h3>
           <span className="sub">Click teams to highlight (up to 3). Hover for every team's total.</span>
         </div>
-        <PointsRace history={state.pointsHistory} teams={teams} />
+        <PointsRace history={spoil.history} teams={teams} />
       </div>
 
       <div className="grid2" style={{ marginTop: 12 }}>
         <div className="card">
           <h3 style={{ marginBottom: 8 }}>Event winners</h3>
-          {sum.eventWinners.length === 0 ? (
+          {sum.eventWinners.filter((_, i) => visibleEvent(i)).length === 0 ? (
             <div className="muted">No events played yet.</div>
           ) : (
             <table className="tbl">
@@ -98,6 +102,7 @@ export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
               </thead>
               <tbody>
                 {sum.eventWinners.map((e, i) => {
+                  if (!visibleEvent(i)) return null;
                   const ev = e.kind === "championship" ? season.championship : season.stages[e.stage! - 1]![e.kind]!;
                   return (
                     <tr key={i} className="click" onClick={() => nav.openBracket(i)}>
@@ -156,7 +161,7 @@ export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
               <tr>
                 <th>#</th>
                 <th className="left">Team</th>
-                {state.pointsHistory
+                {spoil.history
                   .filter((h) => h.label !== "Start" && !/^S\d W\d+$/.test(h.label))
                   .map((h) => (
                     <th key={h.label}>{h.label.replace(" (Pro-Am)", "")}</th>
@@ -165,13 +170,13 @@ export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
               </tr>
             </thead>
             <tbody>
-              {sum.finalPoints.map((r, i) => (
+              {finalPoints.map((r, i) => (
                 <tr key={r.team}>
                   <td className="rank">{i + 1}</td>
                   <td className="left">
                     <TeamTag team={dir.team(r.team)} full={false} />
                   </td>
-                  {state.pointsHistory
+                  {spoil.history
                     .filter((h) => h.label !== "Start" && !/^S\d W\d+$/.test(h.label))
                     .map((h) => (
                       <td key={h.label}>{h.points[r.team] ?? 0}</td>

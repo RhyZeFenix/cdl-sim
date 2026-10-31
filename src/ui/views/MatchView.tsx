@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { addLines, emptyLine, mapLogEntries, replaySeries, type MapResult, type Mode, type PlayerLine } from "../../engine";
+import { addLines, emptyLine, gmMarkWatched, mapLogEntries, replaySeries, type MapResult, type Mode, type PlayerLine } from "../../engine";
 import type { Nav } from "../App";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
@@ -57,7 +57,7 @@ function BoxScore({ lines, handles, teams, modes }: { lines: PlayerLine[]; handl
 }
 
 export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: SeasonStore; seriesId: string; autoWatch: boolean; onBack: () => void; nav: Nav }) {
-  const { state, data } = store;
+  const { state, data, spoil, mutate } = store;
   const dir = directory(data);
   const rec = state.series[seriesId];
   // Series stored without events (online matches) are rebuilt exactly from the seed.
@@ -67,6 +67,11 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
   }, [rec, state, data, seriesId]);
   const [sel, setSel] = useState<number | "series">(0);
   const [panel, setPanel] = useState<"log" | "watch">(autoWatch ? "watch" : "log");
+
+  // Spoiler-free match day: an unwatched GM series plays map by map.
+  const live = spoil.unwatched.includes(seriesId);
+  const [current, setCurrent] = useState(0);
+  const [mapDone, setMapDone] = useState(false);
 
   if (!rec) {
     return (
@@ -78,17 +83,41 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
       </div>
     );
   }
+  if (!live && spoil.isHidden(seriesId)) {
+    return (
+      <div className="card">
+        <button className="btn" onClick={onBack}>
+          ‹ Back
+        </button>
+        <div className="empty">This result is hidden until you watch or skip your own match (it would give your result away).</div>
+      </div>
+    );
+  }
 
   const t0 = dir.team(rec.teams[0]);
   const t1 = dir.team(rec.teams[1]);
   const abbr: [string, string] = [t0.abbr, t1.abbr];
   const winnerSide = rec.winner === rec.teams[0] ? 0 : 1;
-  const map = sel === "series" ? null : maps[sel];
   const handles = (m: MapResult) => m.lineup.map((id) => dir.player(id));
+  const ev = state.events.findIndex((e) => e.matches.some((m) => m.seriesId === seriesId));
+
+  // How many maps' results may be shown, and the series score they add up to.
+  const shown = live ? current + (mapDone ? 1 : 0) : maps.length;
+  const shownScore = maps.slice(0, shown).reduce<[number, number]>(
+    (acc, m) => {
+      acc[m.winner]++;
+      return acc;
+    },
+    [0, 0],
+  );
+  const finishWatching = () => mutate((s) => gmMarkWatched(s, seriesId));
+
+  const map = live ? maps[current] : sel === "series" ? null : maps[sel];
   const seriesLines = maps.length
     ? maps[0]!.lineup.map((_, i) => maps.reduce((acc, m) => addLines(acc, m.box[i]!), emptyLine()))
     : [];
-  const ev = state.events.findIndex((e) => e.matches.some((m) => m.seriesId === seriesId));
+  const modeName = (mode: Mode) =>
+    mode === "hp" ? "Hardpoint" : mode === "snd" ? "Search & Destroy" : mode === "control" ? "Control" : "Overload";
 
   return (
     <div>
@@ -100,7 +129,12 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
           {rec.label} · {rec.date} · Bo{rec.bestOf} · pool “{data.season.mapPools.find((p) => p.id === rec.poolId)?.label}”
         </span>
         <div className="spacer" />
-        {ev >= 0 && (
+        {live && (
+          <button className="btn small" onClick={finishWatching} title="Reveal the whole series now">
+            Skip to result
+          </button>
+        )}
+        {ev >= 0 && !live && (
           <button className="btn small" onClick={() => nav.openBracket(ev)}>
             View bracket
           </button>
@@ -108,15 +142,22 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
       </div>
 
       <div className="card">
+        {live && (
+          <div className="pill" style={{ marginBottom: 6 }}>
+            Match day · watching live
+          </div>
+        )}
         <div className="match-head">
-          <div className={`side ${winnerSide === 1 ? "lost" : ""}`}>
-            <span className="abbr" style={{ alignSelf: "flex-start" }}>{t0.abbr}</span>
+          <div className={`side ${!live && winnerSide === 1 ? "lost" : ""}`}>
+            <span className="abbr" style={{ alignSelf: "flex-start" }}>
+              {t0.abbr}
+            </span>
             <span className="big">{t0.name}</span>
           </div>
           <div className="sscore">
-            {rec.score[0]}–{rec.score[1]}
+            {shownScore[0]}–{shownScore[1]}
           </div>
-          <div className={`side right ${winnerSide === 0 ? "lost" : ""}`}>
+          <div className={`side right ${!live && winnerSide === 0 ? "lost" : ""}`}>
             <span className="abbr">{t1.abbr}</span>
             <span className="big">{t1.name}</span>
           </div>
@@ -162,25 +203,86 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
         <div className="maps">
           {rec.veto.maps.map((vm, i) => {
             const m = maps[i];
+            // While watching live, unplayed maps look the same as upcoming ones ("—"),
+            // so the series length doesn't give the result away.
+            const status = live
+              ? i < shown
+                ? `${m!.score[0]}–${m!.score[1]} · ${abbr[m!.winner]}`
+                : i === current
+                  ? "LIVE"
+                  : "—"
+              : m
+                ? `${m.score[0]}–${m.score[1]} · ${abbr[m.winner]}`
+                : "not played";
             return (
-              <button key={vm.slot} className={`mapcard ${m ? "" : "unplayed"}`} aria-pressed={sel === i} disabled={!m} onClick={() => setSel(i)}>
+              <button
+                key={vm.slot}
+                className={`mapcard ${!live && !m ? "unplayed" : ""}`}
+                aria-pressed={live ? i === current : sel === i}
+                disabled={live || !m}
+                onClick={() => setSel(i)}
+              >
                 <span className="pill">
-                  Map {vm.slot} · {vm.mode === "hp" ? "Hardpoint" : vm.mode === "snd" ? "Search & Destroy" : vm.mode === "control" ? "Control" : "Overload"}
+                  Map {vm.slot} · {modeName(vm.mode)}
                 </span>
                 <b>{vm.map}</b>
-                <span className="mscore">{m ? `${m.score[0]}–${m.score[1]} · ${abbr[m.winner]}` : "not played"}</span>
+                <span className="mscore" style={live && i === current && !mapDone ? { color: "var(--ban)" } : undefined}>
+                  {status}
+                </span>
               </button>
             );
           })}
-          <button className="mapcard" aria-pressed={sel === "series"} onClick={() => setSel("series")}>
-            <span className="pill">Totals</span>
-            <b>Series box score</b>
-            <span className="mscore">{maps.length} maps</span>
-          </button>
+          {!live && (
+            <button className="mapcard" aria-pressed={sel === "series"} onClick={() => setSel("series")}>
+              <span className="pill">Totals</span>
+              <b>Series box score</b>
+              <span className="mscore">{maps.length} maps</span>
+            </button>
+          )}
         </div>
       </div>
 
-      {sel === "series" ? (
+      {live && map ? (
+        <>
+          <div className="card">
+            <div className="card-head">
+              <h3>
+                Map {current + 1}: {map.map} {modeName(map.mode)}
+              </h3>
+            </div>
+            <Watch key={current} map={map} teams={abbr} players={handles(map)} autoPlay onFinished={() => setMapDone(true)} />
+          </div>
+          {mapDone && (
+            <div className="card">
+              <div className="card-head">
+                <h3>
+                  {abbr[map.winner]} take Map {current + 1}, {Math.max(...map.score)}–{Math.min(...map.score)}
+                </h3>
+                <span className="sub">
+                  Series {shownScore[0]}–{shownScore[1]}
+                </span>
+                <div className="spacer" />
+                {current + 1 < maps.length ? (
+                  <button
+                    className="btn primary"
+                    onClick={() => {
+                      setCurrent(current + 1);
+                      setMapDone(false);
+                    }}
+                  >
+                    Watch Map {current + 2}
+                  </button>
+                ) : (
+                  <button className="btn primary" onClick={finishWatching}>
+                    Series over — see the full result
+                  </button>
+                )}
+              </div>
+              <BoxScore lines={map.box} handles={handles(map)} teams={abbr} modes={[map.mode]} />
+            </div>
+          )}
+        </>
+      ) : sel === "series" ? (
         <div className="card">
           <div className="card-head">
             <h3>Series box score</h3>
@@ -225,9 +327,11 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
         </>
       ) : null}
 
-      <div className="sub" style={{ marginTop: 8 }}>
-        <TeamTag team={dir.team(rec.winner)} full={false} /> win {Math.max(...rec.score)}–{Math.min(...rec.score)}
-      </div>
+      {!live && (
+        <div className="sub" style={{ marginTop: 8 }}>
+          <TeamTag team={dir.team(rec.winner)} full={false} /> win {Math.max(...rec.score)}–{Math.min(...rec.score)}
+        </div>
+      )}
     </div>
   );
 }

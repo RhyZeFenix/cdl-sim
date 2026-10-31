@@ -2,7 +2,7 @@
 // Runs simulation steps off the main thread. The page sends the season state and a
 // command; the worker advances it, reports progress after each step, and sends the
 // new state back. The engine is the same code the page would run inline.
-import { advance, isDone, loadSeasonData, type SeasonState, type Step } from "../engine";
+import { advance, isDone, isMatchDay, loadSeasonData, type SeasonState, type Step } from "../engine";
 
 export type SimKind = "step" | "stage" | "season";
 
@@ -12,15 +12,19 @@ export type SimResponse =
   | { id: number; type: "done"; state: SeasonState; steps: Step[]; newSeries: string[] }
   | { id: number; type: "error"; message: string };
 
-/** Same stopping rules as advance / advanceStage / advanceSeason, with a progress callback. */
+/**
+ * Same stopping rules as advance / advanceStage / advanceSeason, plus a stop at the GM
+ * team's match day (spoiler-free), with a progress callback.
+ */
 export function runSim(state: SeasonState, kind: SimKind, onStep?: (s: SeasonState) => void) {
   const data = loadSeasonData(state.seasonId);
   const before = new Set(Object.keys(state.series));
   const from = state.next;
-  while (!isDone(state)) {
+  while (!isDone(state) && !isMatchDay(state)) {
     const step = advance(state, data);
     onStep?.(state);
-    if (!step || kind === "step") break;
+    // Spoiler-free match day: stop as soon as the GM team has a result to watch.
+    if (!step || kind === "step" || isMatchDay(state)) break;
     if (kind === "stage" && (step.kind === "major" || step.kind === "championship")) break;
   }
   return {

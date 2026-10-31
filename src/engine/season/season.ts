@@ -73,6 +73,10 @@ export interface GmState {
   autoVeto: boolean;
   /** When true a GM series stops after each map so the user can make sub swaps. */
   pauseBetweenMaps?: boolean;
+  /** Spoiler-free match day: the GM team's results stay hidden until watched or skipped. */
+  spoilerFree?: boolean;
+  /** GM series that have been played but not yet watched or skipped, in play order. */
+  unwatched?: string[];
   moves: GmMove[];
 }
 
@@ -234,7 +238,7 @@ export function createSeason(data: SeasonData, options: SeasonOptions): SeasonSt
   if (options.gmTeam) {
     if (!teamIds.includes(options.gmTeam)) throw new Error(`${season.id}: unknown GM team ${options.gmTeam}`);
     const starters = startersOn(data.rosters, options.gmTeam, season.stages[0]!.qualifiers.start);
-    gm = { team: options.gmTeam, roster: [...starters], starters: [...starters], autoVeto: false, pauseBetweenMaps: false, moves: [] };
+    gm = { team: options.gmTeam, roster: [...starters], starters: [...starters], autoVeto: false, pauseBetweenMaps: false, spoilerFree: true, unwatched: [], moves: [] };
   }
   return {
     gm,
@@ -473,6 +477,7 @@ function playSeries(state: SeasonState, data: SeasonData, spec: SeriesSpec): Ser
   };
   if (gmVeto) delete state.gmVetoes![spec.id];
   state.series[spec.id] = rec;
+  if (gm && gmSide !== null && gm.spoilerFree) gm.unwatched = [...(gm.unwatched ?? []), spec.id];
   return rec;
 }
 
@@ -607,6 +612,21 @@ export function gmVetoSession(state: SeasonState, data: SeasonData, lineup: stri
   return { session, gmSide, teamA: a, teams, spec };
 }
 
+/** True while the GM team has a played series the user hasn't watched or skipped. */
+export const isMatchDay = (s: SeasonState) => !!s.gm?.unwatched?.length;
+
+/** Marks a GM series as watched (or skipped): its result may now be shown everywhere. */
+export function gmMarkWatched(state: SeasonState, seriesId: string): void {
+  if (!state.gm) throw new Error("not in GM mode");
+  state.gm.unwatched = (state.gm.unwatched ?? []).filter((id) => id !== seriesId);
+}
+
+export function gmSetSpoilerFree(state: SeasonState, on: boolean): void {
+  if (!state.gm) throw new Error("not in GM mode");
+  state.gm.spoilerFree = on;
+  if (!on) state.gm.unwatched = [];
+}
+
 export function gmSetPauseBetweenMaps(state: SeasonState, on: boolean): void {
   if (!state.gm) throw new Error("not in GM mode");
   state.gm.pauseBetweenMaps = on;
@@ -650,11 +670,17 @@ export function submitGmVeto(state: SeasonState, veto: GmVeto): void {
 
 const outcome = (r: SeriesRecord): SeriesOutcome => ({ teams: r.teams, score: r.score });
 
-/** Qualifier standings for a stage, optionally only through a given week. */
-export function qualifierStandings(state: SeasonState, data: SeasonData, stage: number, throughWeek = Infinity): StandingRow[] {
+/** Qualifier standings for a stage, optionally through a given week and without some series (spoilers). */
+export function qualifierStandings(
+  state: SeasonState,
+  data: SeasonData,
+  stage: number,
+  throughWeek = Infinity,
+  exclude?: Set<string>,
+): StandingRow[] {
   const results = state.qualifiers[stage - 1]!
     .map((id) => state.series[id]!)
-    .filter((r) => r.phase.kind === "qualifiers" && r.phase.week <= throughWeek)
+    .filter((r) => r.phase.kind === "qualifiers" && r.phase.week <= throughWeek && !exclude?.has(r.id))
     .map(outcome);
   const teams = data.season.teams.map((t) => t.id);
   return rankStandings(teams, results, data.season.tiebreakers, createRng(state.options.seed).fork(`tb-s${stage}-w${throughWeek}`));
@@ -665,8 +691,16 @@ export interface PointsRow extends StandingRow {
 }
 
 /** CDL points table with qualifier series/map records. */
-export function pointsTable(state: SeasonState, data: SeasonData, points = state.points): PointsRow[] {
-  const quals = state.qualifiers.flat().map((id) => outcome(state.series[id]!));
+export function pointsTable(
+  state: SeasonState,
+  data: SeasonData,
+  points = state.points,
+  exclude?: Set<string>,
+): PointsRow[] {
+  const quals = state.qualifiers
+    .flat()
+    .filter((id) => !exclude?.has(id))
+    .map((id) => outcome(state.series[id]!));
   const teams = data.season.teams.map((t) => t.id);
   const rows = tally(teams, quals);
   const order = rankByPoints(teams, points, quals, createRng(state.options.seed).fork(`points-${state.next}`));

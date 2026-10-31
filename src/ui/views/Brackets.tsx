@@ -1,25 +1,53 @@
 import type { BracketSection, EventMatch, EventRecord } from "../../engine";
 import type { Nav } from "../App";
 import { directory, type Directory } from "../names";
+import type { Spoilers } from "../spoilers";
 import type { SeasonStore } from "../useSeason";
 
-function MatchBox({ m, ev, dir, nav }: { m: EventMatch; ev: EventRecord; dir: Directory; nav: Nav }) {
+function MatchBox({ m, ev, dir, nav, spoil }: { m: EventMatch; ev: EventRecord; dir: Directory; nav: Nav; spoil: Spoilers }) {
   const seed = (t: string) => ev.seeds.indexOf(t) + 1;
+  // Your unwatched match keeps its teams but not its score; matches that depend on it
+  // would reveal who advanced, so they show nothing.
+  const unwatched = spoil.unwatched.includes(m.seriesId);
+  const hidden = spoil.isHidden(m.seriesId);
+  if (hidden && !unwatched) {
+    return (
+      <div className="bm" title="Hidden until you watch your match">
+        <div className="bm-row muted">TBD</div>
+        <div className="bm-row muted">TBD</div>
+      </div>
+    );
+  }
   return (
     <button className="bm" onClick={() => nav.openMatch(m.seriesId)} title={`${m.def.label} · Bo${m.def.bestOf}`}>
       {m.teams.map((t, i) => (
-        <div key={t} className={`bm-row ${m.winner === t ? "won" : ""}`}>
+        <div key={t} className={`bm-row ${!hidden && m.winner === t ? "won" : ""}`}>
           <span className="seed">{seed(t)}</span>
           <span className="abbr">{dir.team(t).abbr}</span>
-          <span className="score">{m.score[i]}</span>
+          <span className="score">{hidden ? "" : m.score[i]}</span>
         </div>
       ))}
+      {unwatched && <div className="bm-meta">Unwatched</div>}
       {m.def.bestOf !== 5 && <div className="bm-meta">Bo{m.def.bestOf}</div>}
     </button>
   );
 }
 
-function Rounds({ matches, ev, dir, nav, compact = false }: { matches: EventMatch[]; ev: EventRecord; dir: Directory; nav: Nav; compact?: boolean }) {
+function Rounds({
+  matches,
+  ev,
+  dir,
+  nav,
+  spoil,
+  compact = false,
+}: {
+  matches: EventMatch[];
+  ev: EventRecord;
+  dir: Directory;
+  nav: Nav;
+  spoil: Spoilers;
+  compact?: boolean;
+}) {
   const byRound = new Map<number, EventMatch[]>();
   for (const m of matches) byRound.set(m.def.round, [...(byRound.get(m.def.round) ?? []), m]);
   return (
@@ -33,7 +61,7 @@ function Rounds({ matches, ev, dir, nav, compact = false }: { matches: EventMatc
               {ms.map((m) => (
                 <div key={m.def.id}>
                   {compact && <div className="round-label">{m.def.label.replace(/^Group \w+ /, "")}</div>}
-                  <MatchBox m={m} ev={ev} dir={dir} nav={nav} />
+                  <MatchBox m={m} ev={ev} dir={dir} nav={nav} spoil={spoil} />
                 </div>
               ))}
             </div>
@@ -97,17 +125,23 @@ export function Brackets({
                 {[...new Set(ms.map((m) => m.def.group!))].map((g) => (
                   <div key={g}>
                     <div className="round-label">Group {g}</div>
-                    <Rounds matches={ms.filter((m) => m.def.group === g)} ev={ev} dir={dir} nav={nav} compact />
+                    <Rounds matches={ms.filter((m) => m.def.group === g)} ev={ev} dir={dir} nav={nav} spoil={store.spoil} compact />
                   </div>
                 ))}
               </div>
             ) : (
-              <Rounds matches={ms} ev={ev} dir={dir} nav={nav} />
+              <Rounds matches={ms} ev={ev} dir={dir} nav={nav} spoil={store.spoil} />
             )}
           </section>
         );
       })}
 
+      {store.spoil.eventHidden(ev) ? (
+        <section className="card">
+          <h3 style={{ marginBottom: 8 }}>Placements & points</h3>
+          <div className="muted">Hidden until you watch your match.</div>
+        </section>
+      ) : (
       <section className="card">
         <h3 style={{ marginBottom: 8 }}>Placements & points</h3>
         <div className="scroll-x">
@@ -138,6 +172,7 @@ export function Brackets({
           </table>
         </div>
       </section>
+      )}
     </div>
   );
 }

@@ -269,3 +269,5 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 @media (max-width: 640px) { .groups { grid-template-columns: 1fr; } }
 .tabs { scrollbar-width: none; }
 @media (max-width: 640px) { .topbar { position: static; } }
+
+.matchday { border-left: 3px solid var(--ban); margin-bottom: 14px; }

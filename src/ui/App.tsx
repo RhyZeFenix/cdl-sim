@@ -9,6 +9,7 @@ import { Summary } from "./views/Summary";
 import { MyTeam } from "./views/MyTeam";
 import { VetoScreen } from "./views/VetoScreen";
 import { BetweenMaps } from "./views/BetweenMaps";
+import { MatchDayBanner } from "./views/MatchDay";
 
 type Tab = "myteam" | "schedule" | "standings" | "brackets" | "summary";
 export type Speed = "instant" | "watch";
@@ -82,6 +83,7 @@ export function App() {
   const runSim = async (kind: SimKind) => {
     lastKind.current = kind;
     const out = await store.sim(kind);
+    if (afterMatchDay(out.matchDay)) return;
     if (out.paused) {
       setMatch(null);
       return;
@@ -109,11 +111,25 @@ export function App() {
   /** After the GM submits a veto: keep running the sim the user started. */
   const resume = async (gmSeriesId: string) => {
     const out = await store.sim(lastKind.current);
+    if (afterMatchDay(out.matchDay)) return;
     if (!out.paused && speed === "watch") setMatch({ id: gmSeriesId, watch: true });
   };
 
+  /**
+   * Spoiler-free match day: when your result is ready, show the match day banner (or,
+   * in Watch speed, go straight to watching it live). Returns true if it handled things.
+   */
+  function afterMatchDay(unwatched: string[]): boolean {
+    if (!unwatched.length) return false;
+    setMatch(speed === "watch" ? { id: unwatched[0]!, watch: true } : null);
+    return true;
+  }
+
   const next = state.steps[state.next];
-  const paused = !!state.pending;
+  const spoil = store.spoil;
+  // Your result comes first: a waiting veto shows once the match day is dealt with.
+  const paused = !!state.pending && !spoil.active;
+  const blocked = paused || spoil.active;
   // While a worker sim runs, show its live progress.
   const shownNext = store.progress?.next ?? state.next;
   const pct = Math.round((100 * shownNext) / state.steps.length);
@@ -212,19 +228,29 @@ export function App() {
               <span className="muted"> (didn't make the real Champs)</span>
             ) : null}{" "}
             —{" "}
-            {done ? <b>Season complete</b> : paused ? <b>{state.pending!.between ? "Waiting for your lineup" : "Waiting for your veto"}</b> : <>Next: <b>{stepLabel(data.season, next)}</b></>}
+            {done && !spoil.active ? (
+              <b>Season complete</b>
+            ) : spoil.active ? (
+              <b>Match day — your result is ready</b>
+            ) : paused ? (
+              <b>{state.pending!.between ? "Waiting for your lineup" : "Waiting for your veto"}</b>
+            ) : (
+              <>
+                Next: <b>{stepLabel(data.season, next)}</b>
+              </>
+            )}
           </span>
           <div className="progress" title={`${state.next} of ${state.steps.length} steps`}>
             <div style={{ width: `${pct}%` }} />
           </div>
           <div className="spacer" />
-          <button className="btn primary" disabled={busy || done || paused} onClick={() => runSim("step")}>
+          <button className="btn primary" disabled={busy || done || blocked} onClick={() => runSim("step")}>
             {next && next.kind !== "week" ? `Sim ${stepLabel(data.season, next)}` : "Sim week"}
           </button>
-          <button className="btn" disabled={busy || done || paused} onClick={() => runSim("stage")}>
+          <button className="btn" disabled={busy || done || blocked} onClick={() => runSim("stage")}>
             Sim stage
           </button>
-          <button className="btn" disabled={busy || done || paused} onClick={() => runSim("season")}>
+          <button className="btn" disabled={busy || done || blocked} onClick={() => runSim("season")}>
             Sim season
           </button>
           <div className="seg" role="group" aria-label="Speed">
@@ -247,6 +273,7 @@ export function App() {
           <MatchView store={store} seriesId={match.id} autoWatch={match.watch} onBack={() => setMatch(null)} nav={nav} />
         ) : (
           <>
+            {spoil.active && <MatchDayBanner store={store} onWatch={(id) => setMatch({ id, watch: true })} />}
             <nav className="tabs" role="tablist">
               {(["myteam", "schedule", "standings", "brackets", "summary"] as const)
                 .filter((t) => t !== "myteam" || state.gm)

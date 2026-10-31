@@ -12,6 +12,7 @@ import {
   type Step,
 } from "../engine";
 import { runSim, type SimKind, type SimRequest, type SimResponse } from "./simWorker";
+import { spoilers } from "./spoilers";
 
 export type { SimKind };
 
@@ -33,6 +34,8 @@ export interface SimOutcome {
   newSeries: string[];
   /** True when the sim stopped at a GM series waiting for the veto. */
   paused: boolean;
+  /** GM series now waiting to be watched or skipped (spoiler-free match day). */
+  matchDay: string[];
 }
 
 export const randomSeed = () => Math.random().toString(36).slice(2, 8);
@@ -88,7 +91,7 @@ export function useSeason(initial: SeasonConfig) {
         setTimeout(() => {
           const s = stateRef.current!;
           const out = runSim(s, kind);
-          resolve({ ...out, paused: !!s.pending });
+          resolve({ ...out, paused: !!s.pending, matchDay: s.gm?.unwatched ?? [] });
         }, 0),
       );
     });
@@ -107,7 +110,7 @@ export function useSeason(initial: SeasonConfig) {
         worker.removeEventListener("error", onError);
         if (msg.type === "error") return reject(new Error(msg.message));
         stateRef.current = msg.state;
-        resolve({ steps: msg.steps, newSeries: msg.newSeries, paused: !!msg.state.pending });
+        resolve({ steps: msg.steps, newSeries: msg.newSeries, paused: !!msg.state.pending, matchDay: msg.state.gm?.unwatched ?? [] });
       };
       const onError = (e: ErrorEvent) => {
         worker.removeEventListener("message", onMessage);
@@ -187,6 +190,8 @@ export function useSeason(initial: SeasonConfig) {
     version,
     busy,
     progress,
+    /** What the UI may reveal (spoiler-free match day). */
+    spoil: spoilers(state, loadSeasonData(state.seasonId)),
     done: isDone(state),
     start,
     sim,

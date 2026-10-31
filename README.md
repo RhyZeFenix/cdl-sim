@@ -57,6 +57,7 @@ Choose **GM** in the header, pick a team, then start a new season.
   1. Lock in a lineup, and choose Team A or B if you're the higher seed.
   2. Answer your bans, picks and sides while the opponent's AI answers instantly ("AI finish" completes the rest).
   3. Play the series. The sim then carries on with the week, stage or season you started.
+- **Spoiler-free match day** (on by default; toggle on My Team): when your series has been played, sims stop and a Match Day banner offers **Watch** or **Skip to result**. Watching plays the series map by map: the series score, map cards (future and unplayed maps both show "—"), box scores and play-by-play only show what has happened so far. Until you watch or skip, standings, points, the points chart, brackets (including matches that depend on yours), the schedule, the summary and My Team all leave your result out (`src/ui/spoilers.ts`).
 - **Sub swaps:** turn on "Pause between maps" (My Team or the veto screen). Your series then stops after each map, showing the series score and each player's K–D so far. Pick the next map's four from your whole roster (sign a 5th or 6th player between stages for a bench), or play the rest of the series with that lineup. This needs manual vetoes; auto-veto never pauses.
 - **Determinism:** each series stores its lineups (per map, including sub swaps) and your veto answers, so GM seasons replay exactly and save/load mid-season.
 

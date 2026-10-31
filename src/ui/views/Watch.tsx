@@ -11,7 +11,20 @@ const SPEEDS = [
 
 const clock = (t: number) => `${Math.floor(t / 60)}:${String(t % 60).padStart(2, "0")}`;
 
-export function Watch({ map, teams, players, autoPlay }: { map: MapResult; teams: [string, string]; players: string[]; autoPlay: boolean }) {
+export function Watch({
+  map,
+  teams,
+  players,
+  autoPlay,
+  onFinished,
+}: {
+  map: MapResult;
+  teams: [string, string];
+  players: string[];
+  autoPlay: boolean;
+  /** Called once when playback reaches the end of the map. */
+  onFinished?: () => void;
+}) {
   const [idx, setIdx] = useState(0);
   const [playing, setPlaying] = useState(autoPlay);
   const [speed, setSpeed] = useState(1);
@@ -43,6 +56,11 @@ export function Watch({ map, teams, players, autoPlay }: { map: MapResult; teams
   const feed = seen.slice(-8).reverse();
   const lines = log.filter((l) => l.i <= idx).reverse();
   const finished = idx >= n - 1;
+  useEffect(() => {
+    if (finished) onFinished?.();
+    // Only when playback first reaches the end.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [finished]);
 
   const describe = (e: MapResult["events"][number]) => {
     const P = (i: number) => players[i] ?? `#${i}`;

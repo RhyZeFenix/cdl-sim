@@ -5,19 +5,34 @@ import { directory, type Directory } from "../names";
 import type { SeasonStore } from "../useSeason";
 import { Seg } from "./common";
 
-function FixtureCard({ teams, rec, dir, onOpen }: { teams: [string, string]; rec?: SeriesRecord; dir: Directory; onOpen: () => void }) {
+function FixtureCard({
+  teams,
+  rec,
+  hidden,
+  dir,
+  onOpen,
+}: {
+  teams: [string, string];
+  rec?: SeriesRecord;
+  /** Played, but the result is hidden until the GM watches their match. */
+  hidden: boolean;
+  dir: Directory;
+  onOpen: () => void;
+}) {
+  const shown = rec && !hidden ? rec : undefined;
   return (
-    <button className="fixture" disabled={!rec} onClick={onOpen} title={rec ? "Open match" : "Not played yet"}>
+    <button className="fixture" disabled={!rec} onClick={onOpen} title={hidden ? "Unwatched — open to watch" : rec ? "Open match" : "Not played yet"}>
       {teams.map((t, i) => {
-        const lost = rec && rec.winner !== t;
+        const lost = shown && shown.winner !== t;
         return (
           <div key={t} className={`fx-row ${lost ? "lost" : ""}`}>
             <span className="abbr">{dir.team(t).abbr}</span>
             <span className="tname">{dir.team(t).name}</span>
-            <span className="score">{rec ? rec.score[i] : ""}</span>
+            <span className="score">{shown ? shown.score[i] : ""}</span>
           </div>
         );
       })}
+      {hidden && <span className="next-tag">Unwatched</span>}
     </button>
   );
 }
@@ -40,7 +55,8 @@ export function Schedule({ store, nav }: { store: SeasonStore; nav: Nav }) {
     const ev = kind === "championship" ? season.championship : season.stages[st! - 1]![kind]!;
     const idx = eventIndex(kind, st);
     const rec = idx >= 0 ? state.events[idx]! : null;
-    const gf = rec?.matches[rec.matches.length - 1];
+    const evHidden = !!rec && store.spoil.eventHidden(rec);
+    const gf = evHidden ? undefined : rec?.matches[rec.matches.length - 1];
     return (
       <div className="event-row">
         <div>
@@ -60,11 +76,14 @@ export function Schedule({ store, nav }: { store: SeasonStore; nav: Nav }) {
             {Math.max(...gf.score)}-{Math.min(...gf.score)}
           </span>
         )}
+        {evHidden && <span className="sub">Results hidden until you watch your match</span>}
         {rec && (
           <>
-            <button className="btn small" onClick={() => nav.openMatch(gf!.seriesId)}>
-              Final
-            </button>
+            {gf && (
+              <button className="btn small" onClick={() => nav.openMatch(gf.seriesId)}>
+                Final
+              </button>
+            )}
             <button className="btn small" onClick={() => nav.openBracket(idx)}>
               Bracket
             </button>
@@ -113,7 +132,7 @@ export function Schedule({ store, nav }: { store: SeasonStore; nav: Nav }) {
             </div>
             <div className="fixtures">
               {fixtures.map((fx) => (
-                <FixtureCard key={fx.id} teams={fx.teams} rec={state.series[fx.id]} dir={dir} onOpen={() => nav.openMatch(fx.id)} />
+                <FixtureCard key={fx.id} teams={fx.teams} rec={state.series[fx.id]} hidden={store.spoil.isHidden(fx.id)} dir={dir} onOpen={() => nav.openMatch(fx.id)} />
               ))}
             </div>
           </section>

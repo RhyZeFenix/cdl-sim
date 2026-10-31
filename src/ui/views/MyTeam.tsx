@@ -7,6 +7,7 @@ import {
   gmRelease,
   gmSetAutoVeto,
   gmSetPauseBetweenMaps,
+  gmSetSpoilerFree,
   gmSetStarters,
   gmSign,
   nextStepDate,
@@ -43,7 +44,7 @@ function RatingCells({ p }: { p: Player }) {
 const RATING_HEADS = ["K/D", "OVR", "Slay", "HP", "SnD", "3rd", "Clutch", "Cons"];
 
 export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
-  const { state, data, version, mutate } = store;
+  const { state, data, version, mutate, spoil } = store;
   const gm = state.gm!;
   const dir = directory(data);
   const idx = playerIndex(data);
@@ -65,7 +66,9 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
     [state, data, version, canMove, idx],
   );
   const shownFas = fas.filter((p) => !query || p.handle.toLowerCase().includes(query.toLowerCase())).slice(0, 30);
-  const gmSeries = Object.values(state.series).filter((r) => r.teams.includes(gm.team));
+  // Unwatched results stay out of your record until you watch or skip them.
+  const allGmSeries = Object.values(state.series).filter((r) => r.teams.includes(gm.team));
+  const gmSeries = allGmSeries.filter((r) => !spoil.isHidden(r.id));
   const wins = gmSeries.filter((r) => r.winner === gm.team).length;
 
   const run = (fn: Parameters<typeof mutate>[0], ok?: string) => {
@@ -97,7 +100,7 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
             <TeamTag team={dir.team(gm.team)} />
           </h2>
           <span className="sub">
-            {wins}-{gmSeries.length - wins} in series · {state.points[gm.team] ?? 0} CDL points
+            {wins}-{gmSeries.length - wins} in series · {spoil.points[gm.team] ?? 0} CDL points
           </span>
           <div className="spacer" />
           <label className="field" title="When on, the AI makes your team's veto decisions and the sim never stops for you.">
@@ -116,6 +119,15 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
               style={{ width: "auto" }}
             />
             Pause between maps (subs)
+          </label>
+          <label className="field" title="Keep your results hidden until you watch or skip them">
+            <input
+              type="checkbox"
+              checked={!!gm.spoilerFree}
+              onChange={(e) => run((s) => gmSetSpoilerFree(s, e.target.checked))}
+              style={{ width: "auto" }}
+            />
+            Spoiler-free match day
           </label>
         </div>
         {msg && <div className="sub" style={{ marginBottom: 8 }}>{msg}</div>}
@@ -256,17 +268,28 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
         </div>
         <div className="card">
           <h3 style={{ marginBottom: 8 }}>Results</h3>
-          {gmSeries.length === 0 ? (
+          {allGmSeries.length === 0 ? (
             <div className="muted">No matches played yet.</div>
           ) : (
             <table className="tbl">
               <tbody>
-                {gmSeries
+                {allGmSeries
                   .slice()
                   .reverse()
                   .slice(0, 12)
                   .map((r) => {
                     const side = r.teams[0] === gm.team ? 0 : 1;
+                    if (spoil.isHidden(r.id)) {
+                      return (
+                        <tr key={r.id} className="click" onClick={() => nav.openMatch(r.id, { watch: true })}>
+                          <td className="left">
+                            <span className="next-tag">Unwatched</span>
+                          </td>
+                          <td className="left">vs {dir.team(r.teams[1 - side]!).abbr}</td>
+                          <td className="left muted">{r.label} · click to watch</td>
+                        </tr>
+                      );
+                    }
                     const opp = r.teams[1 - side]!;
                     const won = r.winner === gm.team;
                     return (

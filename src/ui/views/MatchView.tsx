@@ -250,7 +250,7 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
                 Map {current + 1}: {map.map} {modeName(map.mode)}
               </h3>
             </div>
-            <Watch key={current} map={map} teams={abbr} players={handles(map)} autoPlay onFinished={() => setMapDone(true)} />
+            <Watch key={current} map={map} teams={abbr} players={handles(map)} autoPlay onFinished={() => setMapDone(true)} seed={`${seriesId}:${map.slot}`} />
           </div>
           {mapDone && (
             <div className="card">
@@ -309,7 +309,7 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
               />
             </div>
             {panel === "watch" ? (
-              <Watch map={map} teams={abbr} players={handles(map)} autoPlay={autoWatch} />
+              <Watch map={map} teams={abbr} players={handles(map)} autoPlay={autoWatch} seed={`${seriesId}:${map.slot}`} />
             ) : (
               <div className="log">
                 {mapLogEntries(map, { team: abbr, player: handles(map) }).map((l) => (

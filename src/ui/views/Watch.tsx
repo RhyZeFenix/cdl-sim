@@ -1,15 +1,47 @@
-// Live playback of one map: steps through its events with a scoreboard, kill feed and
-// the play-by-play lines revealed as their closing event is reached.
-import { useEffect, useMemo, useState } from "react";
+// Live playback of one map on the game clock: scoreboard, kill feed and the
+// play-by-play lines revealed as their closing event is reached, with an optional 3D
+// view of the same moment. Nothing after the clock is ever shown.
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { mapLogEntries, scoreFromEvents, type MapResult } from "../../engine";
 
+const Replay3D = lazy(() => import("../replay/Replay3D"));
+
+/** Game seconds per real second. */
 const SPEEDS = [
-  { label: "1×", eps: 4 },
-  { label: "4×", eps: 16 },
-  { label: "16×", eps: 64 },
+  { label: "1×", x: 1 },
+  { label: "4×", x: 4 },
+  { label: "16×", x: 16 },
+  { label: "64×", x: 64 },
 ];
 
-const clock = (t: number) => `${Math.floor(t / 60)}:${String(t % 60).padStart(2, "0")}`;
+const clock = (t: number) => {
+  const s = Math.floor(t);
+  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+};
+
+const VIEW_KEY = "cdl-sim:watch-view";
+const savedView = (): "3d" | "feed" => {
+  try {
+    return localStorage.getItem(VIEW_KEY) === "feed" ? "feed" : "3d";
+  } catch {
+    return "3d";
+  }
+};
+
+/** Index of the last event at or before time t (-1 if none yet). */
+function lastAt(events: MapResult["events"], t: number) {
+  let lo = 0;
+  let hi = events.length - 1;
+  let ans = -1;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    if (events[mid]!.t <= t) {
+      ans = mid;
+      lo = mid + 1;
+    } else hi = mid - 1;
+  }
+  return ans;
+}
 
 export function Watch({
   map,
@@ -17,6 +49,7 @@ export function Watch({
   players,
   autoPlay,
   onFinished,
+  seed,
 }: {
   map: MapResult;
   teams: [string, string];
@@ -24,38 +57,63 @@ export function Watch({
   autoPlay: boolean;
   /** Called once when playback reaches the end of the map. */
   onFinished?: () => void;
+  /** Seeds the 3D movement so a map always plays back the same way. */
+  seed?: string;
 }) {
-  const [idx, setIdx] = useState(0);
+  const [view, setViewState] = useState<"3d" | "feed">(savedView);
+  const setView = (v: "3d" | "feed") => {
+    setViewState(v);
+    try {
+      localStorage.setItem(VIEW_KEY, v);
+    } catch {
+      /* per-viewer convenience only */
+    }
+  };
+  const [now, setNow] = useState(0);
   const [playing, setPlaying] = useState(autoPlay);
-  const [speed, setSpeed] = useState(1);
+  const [speed, setSpeed] = useState(view === "3d" ? 1 : 2);
   const n = map.events.length;
+  const end = n ? map.events[n - 1]!.t : 0;
   const log = useMemo(() => mapLogEntries(map, { team: teams, player: players }), [map, teams, players]);
 
   useEffect(() => {
-    setIdx(0);
+    setNow(0);
     setPlaying(autoPlay);
   }, [map, autoPlay]);
 
+  // The clock runs on animation frames so the 3D view moves smoothly.
+  const speedRef = useRef(SPEEDS[speed]!.x);
+  speedRef.current = SPEEDS[speed]!.x;
   useEffect(() => {
     if (!playing) return;
-    const id = setInterval(() => {
-      setIdx((i) => {
-        if (i >= n - 1) {
-          setPlaying(false);
-          return n - 1;
+    let raf = 0;
+    let last = performance.now();
+    const tick = (ms: number) => {
+      const dt = Math.min(0.25, (ms - last) / 1000);
+      last = ms;
+      let stop = false;
+      setNow((c) => {
+        const next = c + dt * speedRef.current;
+        if (next >= end) {
+          stop = true;
+          return end;
         }
-        return i + 1;
+        return next;
       });
-    }, 1000 / SPEEDS[speed]!.eps);
-    return () => clearInterval(id);
-  }, [playing, speed, n]);
+      if (stop) setPlaying(false);
+      else raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [playing, end]);
 
+  const idx = lastAt(map.events, now);
   const seen = map.events.slice(0, idx + 1);
   const score = scoreFromEvents(map.mode, seen);
-  const t = map.events[idx]?.t ?? 0;
+  const t = now;
   const feed = seen.slice(-8).reverse();
   const lines = log.filter((l) => l.i <= idx).reverse();
-  const finished = idx >= n - 1;
+  const finished = now >= end;
   useEffect(() => {
     if (finished) onFinished?.();
     // Only when playback first reaches the end.
@@ -116,13 +174,17 @@ export function Watch({
         <div style={{ fontWeight: 700, textAlign: "right" }}>{teams[1]}</div>
       </div>
       <div className="row">
-        <button className="btn primary" onClick={() => (finished ? (setIdx(0), setPlaying(true)) : setPlaying(!playing))}>
+        <button className="btn primary" onClick={() => (finished ? (setNow(0), setPlaying(true)) : setPlaying(!playing))}>
           {finished ? "Replay" : playing ? "Pause" : "Play"}
         </button>
-        <button className="btn" onClick={() => setIdx(Math.min(n - 1, (log.find((l) => l.i > idx)?.i ?? n - 1)))} title="Jump to the next hill / round / capture">
+        <button
+          className="btn"
+          onClick={() => setNow(map.events[Math.min(n - 1, log.find((l) => l.i > idx)?.i ?? n - 1)]?.t ?? end)}
+          title="Jump to the next hill / round / capture"
+        >
           Next beat ›
         </button>
-        <button className="btn" onClick={() => (setIdx(n - 1), setPlaying(false))}>
+        <button className="btn" onClick={() => (setNow(end), setPlaying(false))}>
           End
         </button>
         <div className="seg" role="group" aria-label="Playback speed">
@@ -132,11 +194,22 @@ export function Watch({
             </button>
           ))}
         </div>
-        <span className="sub">
-          event {idx + 1} / {n}
-        </span>
+        <div className="spacer" />
+        <div className="seg" role="group" aria-label="View">
+          <button aria-pressed={view === "3d"} onClick={() => setView("3d")}>
+            3D
+          </button>
+          <button aria-pressed={view === "feed"} onClick={() => setView("feed")}>
+            Feed only
+          </button>
+        </div>
       </div>
-      <input type="range" min={0} max={n - 1} value={idx} onChange={(e) => (setIdx(Number(e.target.value)), setPlaying(false))} aria-label="Scrub" />
+      <input type="range" min={0} max={end} step={0.5} value={now} onChange={(e) => (setNow(Number(e.target.value)), setPlaying(false))} aria-label="Scrub" />
+      {view === "3d" && (
+        <Suspense fallback={<div className="replay-msg">Loading 3D…</div>}>
+          <Replay3D map={map} time={now} teams={teams} players={players} seed={seed ?? `${map.map}:${map.slot}`} />
+        </Suspense>
+      )}
       <div className="grid2">
         <div className="card">
           <h3 style={{ marginBottom: 6 }}>Live feed</h3>

@@ -10,12 +10,14 @@ import {
   gmCanMakeMoves,
   gmRelease,
   gmSetAutoVeto,
+  gmSetPauseBetweenMaps,
   gmSetStarters,
   gmSign,
   gmVetoSession,
   isDone,
   loadSeasonData,
   replaySeries,
+  submitGmMapLineup,
   submitGmVeto,
   teamLineup,
   type SeasonState,
@@ -49,7 +51,8 @@ function advanceResolving(s: SeasonState) {
   for (;;) {
     const step = advance(s, data);
     if (step || !s.pending) return step;
-    resolvePending(s);
+    if (s.pending.between) submitGmMapLineup(s, s.pending.between.lineup);
+    else resolvePending(s);
   }
 }
 
@@ -201,5 +204,59 @@ describe("GM roster moves", () => {
         if (t !== GM) expect(r.lineups![i]).not.toContain(target.p);
       });
     }
+  });
+});
+
+describe("GM sub swaps", () => {
+  /** A GM season paused before map 2 of its first series, with a 5-man roster. */
+  function atMapTwo(seed: string) {
+    const s = gmSeason(seed);
+    gmSetPauseBetweenMaps(s, true);
+    gmSign(s, data, freeAgents(s, data)[0]!);
+    advance(s, data);
+    const id = s.pending!.spec.id;
+    resolvePending(s);
+    expect(advance(s, data)).toBeUndefined();
+    return { s, id };
+  }
+
+  it("stops between maps with the series so far", () => {
+    const { s, id } = atMapTwo("subs-pause");
+    const p = s.pending!;
+    expect(p.spec.id).toBe(id);
+    expect(p.between!.nextSlot).toBe(2);
+    expect(p.between!.played).toHaveLength(1);
+    expect(p.between!.played[0]!.gmLines.map((l) => l.player)).toEqual(s.gm!.starters);
+    expect(p.between!.score[0] + p.between!.score[1]).toBe(1);
+    expect(s.series[id]).toBeUndefined();
+    expect(() => submitGmMapLineup(s, ["nobody", "a", "b", "c"])).toThrow(/four players from the GM roster/);
+  });
+
+  it("a subbed-in player plays the remaining maps, and the series replays exactly", () => {
+    const { s, id } = atMapTwo("subs-play");
+    const bench = s.gm!.roster.find((p) => !s.gm!.starters.includes(p))!;
+    const subbed = [bench, ...s.gm!.starters.slice(1)];
+    submitGmMapLineup(s, subbed, true);
+    advanceResolving(s);
+    const rec = s.series[id]!;
+    const side = rec.teams[0] === GM ? 0 : 1;
+    const gmLineup = (m: (typeof rec.maps)[number]) => m.lineup.slice(side * 4, side * 4 + 4);
+    expect(gmLineup(rec.maps[0]!)).toEqual(s.gm!.starters);
+    for (const m of rec.maps.slice(1)) expect(gmLineup(m)).toEqual(subbed);
+    expect(rec.gmVeto!.mapLineups![2]).toEqual(subbed);
+    const re = replaySeries(s, data, id);
+    expect(re.score).toEqual(rec.score);
+    expect(re.maps.map((m) => m.lineup)).toEqual(rec.maps.map((m) => m.lineup));
+  });
+
+  it("the same sub choices give the same series", () => {
+    const run = () => {
+      const { s, id } = atMapTwo("subs-same");
+      const bench = s.gm!.roster.find((p) => !s.gm!.starters.includes(p))!;
+      submitGmMapLineup(s, [bench, ...s.gm!.starters.slice(1)]);
+      advanceResolving(s);
+      return JSON.stringify(s.series[id]);
+    };
+    expect(run()).toBe(run());
   });
 });

@@ -57,7 +57,8 @@ Choose **GM** in the header, pick a team, then start a new season.
   1. Lock in a lineup, and choose Team A or B if you're the higher seed.
   2. Answer your bans, picks and sides while the opponent's AI answers instantly ("AI finish" completes the rest).
   3. Play the series. The sim then carries on with the week, stage or season you started.
-- **Determinism:** each series stores its lineups and your veto answers, so GM seasons replay exactly and save/load mid-season.
+- **Sub swaps:** turn on "Pause between maps" (My Team or the veto screen). Your series then stops after each map, showing the series score and each player's K–D so far. Pick the next map's four from your whole roster (sign a 5th or 6th player between stages for a bench), or play the rest of the series with that lineup. This needs manual vetoes; auto-veto never pauses.
+- **Determinism:** each series stores its lineups (per map, including sub swaps) and your veto answers, so GM seasons replay exactly and save/load mid-season.
 
 Engine API (`src/engine/season/season.ts`): `advance` returns `undefined` and sets `state.pending` at a GM series. `gmVetoSession` starts the interactive veto (a `VetoSession` that only waits on your decisions) and `submitGmVeto` stores it. The next `advance` resumes the step. Roster functions: `gmSign`, `gmRelease`, `gmSetStarters`, `gmSetAutoVeto`, `freeAgents`, `gmCanMakeMoves`.
 

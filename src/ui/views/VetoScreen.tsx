@@ -4,6 +4,7 @@ import { useMemo, useRef, useState } from "react";
 import {
   aiChooser,
   createRng,
+  gmSetPauseBetweenMaps,
   gmVetoSession,
   mapValue,
   playerIndex,
@@ -216,9 +217,20 @@ export function VetoScreen({ store, onPlayed }: { store: SeasonStore; onPlayed: 
                   </div>
                 ))}
               </div>
-              <button className="btn primary" onClick={play}>
-                Play series
-              </button>
+              <div className="row">
+                <button className="btn primary" onClick={play}>
+                  Play series
+                </button>
+                <label className="field" title="Stop after each map to sub players in or out">
+                  <input
+                    type="checkbox"
+                    checked={!!gm.pauseBetweenMaps}
+                    onChange={(e) => mutate((s) => gmSetPauseBetweenMaps(s, e.target.checked))}
+                    style={{ width: "auto" }}
+                  />
+                  Pause between maps for subs
+                </label>
+              </div>
             </div>
           )}
         </>

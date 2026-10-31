@@ -6,6 +6,7 @@ import {
   gmCanMakeMoves,
   gmRelease,
   gmSetAutoVeto,
+  gmSetPauseBetweenMaps,
   gmSetStarters,
   gmSign,
   nextStepDate,
@@ -102,6 +103,19 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
           <label className="field" title="When on, the AI makes your team's veto decisions and the sim never stops for you.">
             <input type="checkbox" checked={gm.autoVeto} onChange={(e) => run((s) => gmSetAutoVeto(s, e.target.checked))} style={{ width: "auto" }} />
             Auto-veto my matches
+          </label>
+          <label
+            className="field"
+            title={gm.autoVeto ? "Sub swaps need manual vetoes (turn off auto-veto)" : "Stop after each map of your series to sub players in or out"}
+          >
+            <input
+              type="checkbox"
+              checked={!!gm.pauseBetweenMaps}
+              disabled={gm.autoVeto}
+              onChange={(e) => run((s) => gmSetPauseBetweenMaps(s, e.target.checked))}
+              style={{ width: "auto" }}
+            />
+            Pause between maps (subs)
           </label>
         </div>
         {msg && <div className="sub" style={{ marginBottom: 8 }}>{msg}</div>}

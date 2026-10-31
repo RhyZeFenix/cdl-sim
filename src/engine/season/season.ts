@@ -2,7 +2,7 @@
 // The state is plain JSON (save/load = JSON.stringify/parse). `advance` runs one step
 // (a qualifier week or an event) and mutates the state in place; everything is
 // deterministic from options.seed, so any series can be replayed from its id.
-import type { LanEvent, PlacementPoints, Player, Season } from "../data/schema";
+import type { LanEvent, Mode, PlacementPoints, Player, Season } from "../data/schema";
 import { mapPoolFor, type PoolPhase } from "../data/pools";
 import { startersOn, type SeasonData, type SeasonId } from "../data/registry";
 import { createRng } from "../rng";
@@ -69,6 +69,8 @@ export interface GmState {
   starters: string[];
   /** When true the AI makes the GM team's veto decisions. */
   autoVeto: boolean;
+  /** When true a GM series stops after each map so the user can make sub swaps. */
+  pauseBetweenMaps?: boolean;
   moves: GmMove[];
 }
 
@@ -76,6 +78,31 @@ export interface GmState {
 export interface GmVeto {
   teamA?: Side;
   answers: string[];
+  /** Lineup for the first map (and the veto). */
+  lineup: string[];
+  /** Sub swaps: the GM lineup per map slot. A slot without an entry keeps the previous map's lineup. */
+  mapLineups?: Record<number, string[]>;
+}
+
+/** How a finished map went for the GM team, shown when deciding the next map's lineup. */
+export interface PlayedMapSummary {
+  slot: number;
+  mode: Mode;
+  map: string;
+  score: [number, number];
+  winner: Side;
+  gmLines: { player: string; kills: number; deaths: number }[];
+}
+
+/** A GM series stopped between maps so the user can sub players in or out. */
+export interface BetweenMaps {
+  nextSlot: number;
+  nextMode: Mode;
+  nextMap: string;
+  /** Series score so far (side 0 first). */
+  score: [number, number];
+  played: PlayedMapSummary[];
+  /** The lineup that played the last map. */
   lineup: string[];
 }
 
@@ -94,6 +121,8 @@ export interface SeriesSpec {
 export interface PendingSeries {
   spec: SeriesSpec;
   gmSide: Side;
+  /** Set when the series is mid-way and waiting for the next map's lineup; otherwise the veto is waiting. */
+  between?: BetweenMaps;
 }
 
 export const GM_ROSTER_MIN = 4;
@@ -203,7 +232,7 @@ export function createSeason(data: SeasonData, options: SeasonOptions): SeasonSt
   if (options.gmTeam) {
     if (!teamIds.includes(options.gmTeam)) throw new Error(`${season.id}: unknown GM team ${options.gmTeam}`);
     const starters = startersOn(data.rosters, options.gmTeam, season.stages[0]!.qualifiers.start);
-    gm = { team: options.gmTeam, roster: [...starters], starters: [...starters], autoVeto: false, moves: [] };
+    gm = { team: options.gmTeam, roster: [...starters], starters: [...starters], autoVeto: false, pauseBetweenMaps: false, moves: [] };
   }
   return {
     gm,
@@ -334,7 +363,8 @@ function runSeries(
   data: SeasonData,
   spec: SeriesSpec,
   gmVeto?: GmVeto,
-): SeriesResult & { lineups: [string[], string[]] } {
+  replay = false,
+): SeriesResult & { lineups: [string[], string[]]; mapLineups: Record<number, string[]> } {
   const gmSide = gmSideOf(state, spec.teams);
   const lineups: [string[], string[]] = spec.lineups ?? [
     gmSide === 0 && gmVeto ? gmVeto.lineup : teamLineup(state, data, spec.teams[0], spec.date),
@@ -342,7 +372,52 @@ function runSeries(
   ];
   const choosers: [Chooser?, Chooser?] = [undefined, undefined];
   if (gmVeto && gmSide !== null) choosers[gmSide] = scriptedChooser(gmVeto.answers);
+
+  // Sub swaps: the GM side's lineup can change between maps.
+  const mapLineups: Record<number, string[]> = {};
+  let teamsForMap: Parameters<typeof simulateSeries>[0]["teamsForMap"];
+  if (gmVeto && gmSide !== null) {
+    let current = lineups[gmSide];
+    teamsForMap = (vm, sofar) => {
+      if (sofar.maps.length > 0) {
+        const planned = gmVeto.mapLineups?.[vm.slot];
+        if (planned) current = planned;
+        else if (!replay && state.gm?.pauseBetweenMaps) {
+          const lo = gmSide * 4;
+          state.pending = {
+            spec,
+            gmSide,
+            between: {
+              nextSlot: vm.slot,
+              nextMode: vm.mode,
+              nextMap: vm.map,
+              score: sofar.score,
+              lineup: [...current],
+              played: sofar.maps.map((m) => ({
+                slot: m.slot,
+                mode: m.mode,
+                map: m.map,
+                score: m.score,
+                winner: m.winner,
+                gmLines: m.lineup.slice(lo, lo + 4).map((player, i) => ({
+                  player,
+                  kills: m.box[lo + i]!.kills,
+                  deaths: m.box[lo + i]!.deaths,
+                })),
+              })),
+            },
+          };
+          throw new PauseForGm();
+        }
+      }
+      mapLineups[vm.slot] = [...current];
+      const ids: [string[], string[]] = gmSide === 0 ? [current, lineups[1]] : [lineups[0], current];
+      return [buildTeam(state, data, spec.teams[0], ids[0], spec.phase), buildTeam(state, data, spec.teams[1], ids[1], spec.phase)];
+    };
+  }
+
   const r = simulateSeries({
+    teamsForMap,
     teams: [
       buildTeam(state, data, spec.teams[0], lineups[0], spec.phase),
       buildTeam(state, data, spec.teams[1], lineups[1], spec.phase),
@@ -355,7 +430,7 @@ function runSeries(
     choosers,
     teamA: gmVeto && gmSide === 0 ? gmVeto.teamA : undefined,
   });
-  return { ...r, lineups };
+  return { ...r, lineups, mapLineups };
 }
 
 /**
@@ -391,7 +466,8 @@ function playSeries(state: SeasonState, data: SeasonData, spec: SeriesSpec): Ser
     maps: r.maps.map((m) => (keep ? m : { ...m, events: undefined })),
     hasEvents: keep,
     lineups: r.lineups,
-    gmVeto,
+    // Keep every map's lineup so replays never need to ask again.
+    gmVeto: gmVeto ? { ...gmVeto, mapLineups: r.mapLineups } : undefined,
   };
   if (gmVeto) delete state.gmVetoes![spec.id];
   state.series[spec.id] = rec;
@@ -412,7 +488,7 @@ export function replaySeries(state: SeasonState, data: SeasonData, id: string): 
     lan: false,
     lineups: rec.lineups,
   };
-  return runSeries(state, data, spec, rec.gmVeto);
+  return runSeries(state, data, spec, rec.gmVeto, true);
 }
 
 // ------------------------------------------------------------------ GM mode
@@ -507,6 +583,7 @@ export interface GmVetoContext {
 export function gmVetoSession(state: SeasonState, data: SeasonData, lineup: string[], teamA?: Side): GmVetoContext {
   const p = state.pending;
   if (!p) throw new Error("no GM series is waiting");
+  if (p.between) throw new Error("the series is waiting for a lineup between maps, not a veto");
   const { spec, gmSide } = p;
   const opp: Side = gmSide === 0 ? 1 : 0;
   const ids: [string[], string[]] = [
@@ -526,6 +603,32 @@ export function gmVetoSession(state: SeasonState, data: SeasonData, lineup: stri
     choosers,
   );
   return { session, gmSide, teamA: a, teams, spec };
+}
+
+export function gmSetPauseBetweenMaps(state: SeasonState, on: boolean): void {
+  if (!state.gm) throw new Error("not in GM mode");
+  state.gm.pauseBetweenMaps = on;
+}
+
+/**
+ * Sets the GM lineup for the next map of a series stopped between maps (or, with
+ * `restOfSeries`, for every remaining map). The next advance resumes the series.
+ */
+export function submitGmMapLineup(state: SeasonState, lineup: string[], restOfSeries = false): void {
+  const p = state.pending;
+  const gm = state.gm;
+  if (!p?.between) throw new Error("no GM series is waiting between maps");
+  if (!gm) throw new Error("not in GM mode");
+  if (lineup.length !== 4 || new Set(lineup).size !== 4 || lineup.some((id) => !gm.roster.includes(id))) {
+    throw new Error("the lineup must be four players from the GM roster");
+  }
+  const veto = state.gmVetoes?.[p.spec.id];
+  if (!veto) throw new Error("missing veto for the paused series");
+  const last = restOfSeries ? p.spec.bestOf : p.between.nextSlot;
+  const planned = { ...(veto.mapLineups ?? {}) };
+  for (let slot = p.between.nextSlot; slot <= last; slot++) planned[slot] = [...lineup];
+  veto.mapLineups = planned;
+  state.pending = undefined;
 }
 
 /** Stores the GM's decisions for the paused series; the next advance plays it. */

@@ -8,6 +8,7 @@ import { MatchView } from "./views/MatchView";
 import { Summary } from "./views/Summary";
 import { MyTeam } from "./views/MyTeam";
 import { VetoScreen } from "./views/VetoScreen";
+import { BetweenMaps } from "./views/BetweenMaps";
 
 type Tab = "myteam" | "schedule" | "standings" | "brackets" | "summary";
 export type Speed = "instant" | "watch";
@@ -203,7 +204,7 @@ export function App() {
               <span className="muted"> (didn't make the real Champs)</span>
             ) : null}{" "}
             —{" "}
-            {done ? <b>Season complete</b> : paused ? <b>Waiting for your veto</b> : <>Next: <b>{stepLabel(data.season, next)}</b></>}
+            {done ? <b>Season complete</b> : paused ? <b>{state.pending!.between ? "Waiting for your lineup" : "Waiting for your veto"}</b> : <>Next: <b>{stepLabel(data.season, next)}</b></>}
           </span>
           <div className="progress" title={`${state.next} of ${state.steps.length} steps`}>
             <div style={{ width: `${pct}%` }} />
@@ -230,7 +231,9 @@ export function App() {
       </header>
 
       <main className={busy ? "busy" : ""} key={`${state.seasonId}-${state.options.seed}-${store.config.ratingMode}-${state.gm?.team ?? ""}`}>
-        {paused ? (
+        {paused && state.pending!.between ? (
+          <BetweenMaps key={`${state.pending!.spec.id}-${state.pending!.between.nextSlot}`} store={store} onPlayed={resume} />
+        ) : paused ? (
           <VetoScreen key={state.pending!.spec.id} store={store} onPlayed={resume} />
         ) : match ? (
           <MatchView store={store} seriesId={match.id} autoWatch={match.watch} onBack={() => setMatch(null)} nav={nav} />

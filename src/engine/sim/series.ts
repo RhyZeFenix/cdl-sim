@@ -90,6 +90,11 @@ export function simulateSeries(opts: {
   choosers?: [Chooser?, Chooser?];
   /** Which side acts as veto Team A. The higher seed (side 0) chooses; AI picks at random. */
   teamA?: Side;
+  /**
+   * Teams for each map (sub swaps). Defaults to `teams`. Gets the series so far, so a
+   * caller can decide lineups between maps.
+   */
+  teamsForMap?: (vm: VetoMap, sofar: { score: Pair; maps: MapResult[] }) => [SimTeam, SimTeam];
 }): SeriesResult {
   const { teams, bestOf, season, pool, rng } = opts;
   const setup = seriesVetoSetup(teams, rng);
@@ -102,7 +107,8 @@ export function simulateSeries(opts: {
   const maps: MapResult[] = [];
   for (const vm of veto.maps) {
     if (score[0] === need || score[1] === need) break;
-    const m = simulateMap({ teams, season, vm, rng: rng.fork(`map${vm.slot}`) });
+    const mapTeams = opts.teamsForMap?.(vm, { score: [score[0], score[1]], maps: [...maps] }) ?? teams;
+    const m = simulateMap({ teams: mapTeams, season, vm, rng: rng.fork(`map${vm.slot}`) });
     score[m.winner]++;
     maps.push(m);
   }

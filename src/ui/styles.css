@@ -285,3 +285,23 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 @media (max-width: 640px) { .topbar { position: static; } }
 
 .matchday { border-left: 3px solid var(--ban); margin-bottom: 14px; }
+
+/* ---------- GM office */
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.kpi { display: grid; gap: 2px; background: var(--surface-2); border-radius: var(--radius); padding: 8px 10px; }
+.kpi .l { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-3); }
+.kpi .v { font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.meter { display: block; height: 4px; border-radius: 2px; background: var(--border); overflow: hidden; margin-top: 4px; }
+.meter > span { display: block; height: 100%; background: var(--accent); border-radius: 2px; }
+.prep { display: grid; gap: 6px; }
+.prep-opt { display: flex; gap: 8px; align-items: flex-start; padding: 6px 8px; border: 1px solid var(--border); border-radius: var(--radius); cursor: pointer; }
+.prep-opt.on { border-color: var(--accent); background: var(--win-bg); }
+.prep-opt input { margin-top: 3px; }
+.inbox { display: grid; gap: 4px; max-height: 420px; overflow-y: auto; }
+.msg { display: grid; gap: 4px; text-align: left; background: none; border: 1px solid var(--border); border-radius: var(--radius); padding: 6px 8px; color: var(--text); font: inherit; cursor: pointer; }
+.msg.unread { border-left: 3px solid var(--accent); }
+.msg:not(.unread) b { font-weight: 500; }
+.msg-head { display: flex; gap: 6px; align-items: baseline; flex-wrap: wrap; }
+.msg-body { color: var(--text-2); line-height: 1.45; }
+.linklike { background: none; border: none; padding: 0; font: inherit; color: inherit; cursor: pointer; text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 2px; }
+.linklike:hover { text-decoration-color: var(--accent); color: var(--accent); }

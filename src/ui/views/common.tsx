@@ -32,3 +32,13 @@ export function Seg<T extends string | number>({
     </div>
   );
 }
+
+/** A player's name that opens their page. */
+export function PlayerLink({ id, name, nav }: { id: string; name: string; nav?: { openPlayer(id: string): void } }) {
+  if (!nav || id.startsWith("repl-")) return <>{name}</>;
+  return (
+    <button className="linklike" onClick={() => nav.openPlayer(id)} title={`Open ${name}'s page`}>
+      {name}
+    </button>
+  );
+}

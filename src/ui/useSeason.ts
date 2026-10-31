@@ -144,6 +144,13 @@ export function useSeason(initial: SeasonConfig) {
     }
   }, []);
 
+  /** Swaps in a new season state (the next season of a dynasty). */
+  const replace = useCallback((s: SeasonState) => {
+    stateRef.current = s;
+    setConfig({ seasonId: s.seasonId, seed: s.options.seed, ratingMode: s.options.ratingMode, gmTeam: s.gm?.team, champsOnly: s.options.champsOnly, chaos: s.options.chaos });
+    bump();
+  }, []);
+
   const exportJson = useCallback(() => {
     const s = stateRef.current!;
     const blob = new Blob([JSON.stringify({ kind: SAVE_KIND, savedAt: new Date().toISOString(), state: s })], {
@@ -194,6 +201,7 @@ export function useSeason(initial: SeasonConfig) {
     spoil: spoilers(state, loadSeasonData(state.seasonId)),
     done: isDone(state),
     start,
+    replace,
     sim,
     exportJson,
     importJson,

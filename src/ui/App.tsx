@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { SEASON_IDS, loadSeasonData, type Season, type SeasonId, type Step } from "../engine";
+import { SEASON_IDS, loadSeasonData, seasonLabel, visibleInbox, type Season, type SeasonId, type Step } from "../engine";
 import { randomSeed, useSeason, type SeasonConfig, type SimKind } from "./useSeason";
 import { Standings } from "./views/Standings";
 import { Schedule } from "./views/Schedule";
@@ -10,13 +10,16 @@ import { MyTeam } from "./views/MyTeam";
 import { VetoScreen } from "./views/VetoScreen";
 import { BetweenMaps } from "./views/BetweenMaps";
 import { MatchDayBanner } from "./views/MatchDay";
+import { Office } from "./views/Office";
+import { PlayerPage } from "./views/PlayerPage";
 
-type Tab = "myteam" | "schedule" | "standings" | "brackets" | "summary";
+type Tab = "office" | "myteam" | "schedule" | "standings" | "brackets" | "summary";
 export type Speed = "instant" | "watch";
 
 export interface Nav {
   openMatch(id: string, opts?: { watch?: boolean }): void;
   openBracket(eventIndex: number): void;
+  openPlayer(id: string): void;
 }
 
 export function stepLabel(season: Season, step: Step | undefined): string {
@@ -40,6 +43,7 @@ export function App() {
   const [draft, setDraft] = useState<SeasonConfig>(store.config);
   const [tab, setTab] = useState<Tab>("schedule");
   const [match, setMatch] = useState<{ id: string; watch: boolean } | null>(null);
+  const [player, setPlayer] = useState<string | null>(null);
   const [bracketEvent, setBracketEvent] = useState<number | null>(null);
   const [speed, setSpeed] = useState<Speed>("instant");
   const [error, setError] = useState<string | null>(null);
@@ -57,11 +61,19 @@ export function App() {
   }, [state]);
 
   const nav: Nav = {
-    openMatch: (id, opts) => setMatch({ id, watch: !!opts?.watch }),
+    openMatch: (id, opts) => {
+      setPlayer(null);
+      setMatch({ id, watch: !!opts?.watch });
+    },
     openBracket: (i) => {
       setBracketEvent(i);
       setMatch(null);
+      setPlayer(null);
       setTab("brackets");
+    },
+    openPlayer: (id) => {
+      setMatch(null);
+      setPlayer(id);
     },
   };
 
@@ -76,8 +88,9 @@ export function App() {
     if (state.next > 0 && !confirm("Start a new season? Unsaved progress on this one will be lost.")) return;
     store.start(draft);
     setMatch(null);
+    setPlayer(null);
     setBracketEvent(null);
-    setTab(draft.gmTeam ? "myteam" : "schedule");
+    setTab(draft.gmTeam ? "office" : "schedule");
   };
 
   const runSim = async (kind: SimKind) => {
@@ -127,6 +140,7 @@ export function App() {
 
   const next = state.steps[state.next];
   const spoil = store.spoil;
+  const unread = state.gm ? visibleInbox(state, spoil.hidden).filter((i) => !i.read).length : 0;
   // Your result comes first: a waiting veto shows once the match day is dealt with.
   const paused = !!state.pending && !spoil.active;
   const blocked = paused || spoil.active;
@@ -220,7 +234,7 @@ export function App() {
         </div>
         <div className="row">
           <span className="status">
-            {data.season.label} · seed <b>{state.options.seed}</b> · {state.options.ratingMode}
+            {seasonLabel(state, data)} · seed <b>{state.options.seed}</b> · {state.options.ratingMode}
             {state.options.chaos ? <> · <b>Chaos</b></> : null}
             {state.options.champsOnly ? <> · <b>Champs only</b> (real seeds)</> : null}
             {state.gm ? <> · GM: <b>{data.season.teams.find((t) => t.id === state.gm!.team)?.abbr}</b></> : null}
@@ -271,18 +285,22 @@ export function App() {
           <VetoScreen key={state.pending!.spec.id} store={store} onPlayed={resume} />
         ) : match ? (
           <MatchView store={store} seriesId={match.id} autoWatch={match.watch} onBack={() => setMatch(null)} nav={nav} />
+        ) : player ? (
+          <PlayerPage store={store} id={player} nav={nav} onBack={() => setPlayer(null)} />
         ) : (
           <>
             {spoil.active && <MatchDayBanner store={store} onWatch={(id) => setMatch({ id, watch: true })} />}
             <nav className="tabs" role="tablist">
-              {(["myteam", "schedule", "standings", "brackets", "summary"] as const)
-                .filter((t) => t !== "myteam" || state.gm)
+              {(["office", "myteam", "schedule", "standings", "brackets", "summary"] as const)
+                .filter((t) => (t !== "myteam" && t !== "office") || state.gm)
                 .map((t) => (
                   <button key={t} role="tab" aria-selected={tab === t} onClick={() => setTab(t)}>
                     {t === "myteam" ? "My Team" : t[0]!.toUpperCase() + t.slice(1)}
+                    {t === "office" && unread > 0 ? <span className="next-tag" style={{ marginLeft: 6 }}>{unread}</span> : null}
                   </button>
                 ))}
             </nav>
+            {tab === "office" && state.gm && <Office store={store} nav={nav} />}
             {tab === "myteam" && state.gm && <MyTeam store={store} nav={nav} />}
             {tab === "schedule" && <Schedule store={store} nav={nav} />}
             {tab === "standings" && <Standings store={store} />}

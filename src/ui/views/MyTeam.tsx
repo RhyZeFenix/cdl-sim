@@ -11,13 +11,19 @@ import {
   gmSetStarters,
   gmSign,
   nextStepDate,
-  playerIndex,
+  playerInfo,
+  contractFor,
+  signingProblem,
+  payroll,
+  shownMorale,
+  moraleWord,
+  SALARY_CAP,
   type Player,
 } from "../../engine";
 import { stepLabel, type Nav } from "../App";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
-import { TeamTag } from "./common";
+import { PlayerLink, TeamTag } from "./common";
 
 const ovr = (p: Player) => Math.round((p.ratings.slaying + p.ratings.hp_obj + p.ratings.snd_iq + p.ratings.third_mode) / 4);
 
@@ -47,7 +53,9 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
   const { state, data, version, mutate, spoil } = store;
   const gm = state.gm!;
   const dir = directory(data);
-  const idx = playerIndex(data);
+  const idx = { get: (id: string) => playerInfo(state, data, id) };
+  const morale = shownMorale(state, spoil.hidden);
+  const [years, setYears] = useState(2);
   const [msg, setMsg] = useState<string | null>(null);
   const [draft, setDraft] = useState<string[] | null>(null);
   const [query, setQuery] = useState("");
@@ -63,7 +71,7 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
   }, [data]);
   const fas = useMemo(
     () => (canMove ? freeAgents(state, data).map((id) => idx.get(id)!).sort((a, b) => ovr(b) - ovr(a)) : []),
-    [state, data, version, canMove, idx],
+    [state, data, version, canMove],
   );
   const shownFas = fas.filter((p) => !query || p.handle.toLowerCase().includes(query.toLowerCase())).slice(0, 30);
   // Unwatched results stay out of your record until you watch or skip them.
@@ -134,6 +142,9 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
 
         <h3 style={{ margin: "4px 0 8px" }}>
           Roster ({gm.roster.length}/{GM_ROSTER_MAX}) · pick four starters
+          <span className="sub" style={{ marginLeft: 8, fontWeight: 400 }}>
+            Payroll ${payroll(state)}k of ${SALARY_CAP}k
+          </span>
         </h3>
         <div className="scroll-x">
           <table className="tbl">
@@ -146,6 +157,9 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
                     {h}
                   </th>
                 ))}
+                <th>Salary</th>
+                <th>Yrs</th>
+                <th title="Morale moves with results, playing time and prep; it adds or costs a little form">Morale</th>
                 <th />
               </tr>
             </thead>
@@ -158,9 +172,17 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
                       <input type="checkbox" checked={starters.includes(id)} onChange={() => toggleStarter(id)} aria-label={`Start ${p.handle}`} />
                     </td>
                     <td className="left">
-                      <b>{p.handle}</b> <span className="muted">{p.role}</span>
+                      <b>
+                        <PlayerLink id={id} name={p.handle} nav={nav} />
+                      </b>{" "}
+                      <span className="muted">{p.role}</span>
                     </td>
                     <RatingCells p={p} />
+                    <td>{gm.contracts?.[id] ? `$${gm.contracts[id]!.salary}k` : "—"}</td>
+                    <td>{gm.contracts?.[id]?.years ?? "—"}</td>
+                    <td title={moraleWord(morale[id] ?? 70)}>
+                      <span style={{ color: (morale[id] ?? 70) < 50 ? "var(--ban)" : (morale[id] ?? 70) >= 80 ? "var(--pick)" : undefined }}>{morale[id] ?? 70}</span>
+                    </td>
                     <td>
                       {canMove && gm.roster.length > GM_ROSTER_MIN && (
                         <button className="btn small" onClick={() => run((s, d) => gmRelease(s, d, id), `Released ${p.handle}.`)}>
@@ -195,6 +217,18 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
           <span className="sub">{moveWindow}</span>
           <div className="spacer" />
           {canMove && (
+            <label className="field" title="Longer deals ask a little less per season">
+              Contract
+              <select className="plain" value={years} onChange={(e) => setYears(Number(e.target.value))}>
+                {[1, 2, 3].map((y) => (
+                  <option key={y} value={y}>
+                    {y} season{y > 1 ? "s" : ""}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
+          {canMove && (
             <label className="field">
               Search
               <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="handle" />
@@ -211,29 +245,37 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
                   {RATING_HEADS.map((h) => (
                     <th key={h}>{h}</th>
                   ))}
+                  <th>Asks</th>
                   <th />
                 </tr>
               </thead>
               <tbody>
-                {shownFas.map((p) => (
+                {shownFas.map((p) => {
+                  const ask = contractFor(state, data, p.id, years).salary;
+                  const problem = signingProblem(state, ask);
+                  return (
                   <tr key={p.id}>
                     <td className="left">
-                      <b>{p.handle}</b>
+                      <b>
+                        <PlayerLink id={p.id} name={p.handle} nav={nav} />
+                      </b>
                     </td>
                     <td className="left muted">{dir.team(lastTeam.get(p.id) ?? "").abbr}</td>
                     <RatingCells p={p} />
+                    <td>${ask}k</td>
                     <td>
                       <button
                         className="btn small"
-                        disabled={gm.roster.length >= GM_ROSTER_MAX}
-                        title={gm.roster.length >= GM_ROSTER_MAX ? "Roster is full — release someone first" : "Sign"}
-                        onClick={() => run((s, d) => gmSign(s, d, p.id), `Signed ${p.handle}.`)}
+                        disabled={gm.roster.length >= GM_ROSTER_MAX || !!problem}
+                        title={gm.roster.length >= GM_ROSTER_MAX ? "Roster is full — release someone first" : (problem ?? `Sign for ${years} season${years > 1 ? "s" : ""} at $${ask}k`)}
+                        onClick={() => run((s, d) => gmSign(s, d, p.id, years), `Signed ${p.handle}: ${years} season${years > 1 ? "s" : ""} at $${ask}k.`)}
                       >
                         Sign
                       </button>
                     </td>
                   </tr>
-                ))}
+                  );
+                })}
               </tbody>
             </table>
             <div className="sub" style={{ marginTop: 6 }}>
@@ -256,7 +298,7 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
                 {gm.moves.map((m, i) => (
                   <tr key={i}>
                     <td className="left muted">{m.beforeStage === 5 ? "Before Champs" : `Before Stage ${m.beforeStage}`}</td>
-                    <td className="left">{m.action === "sign" ? "Signed" : "Released"}</td>
+                    <td className="left">{{ sign: "Signed", release: "Released", "trade-in": "Traded for", "trade-out": "Traded away" }[m.action]}</td>
                     <td className="left">
                       <b>{idx.get(m.player)?.handle ?? m.player}</b>
                     </td>

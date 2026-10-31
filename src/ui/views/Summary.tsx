@@ -1,10 +1,10 @@
 import { useMemo } from "react";
-import { playerLines, pointsTable, summarize } from "../../engine";
+import { playerLines, pointsTable, seasonLabel, summarize } from "../../engine";
 import { stepLabel, type Nav } from "../App";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
 import { PointsRace } from "./PointsRace";
-import { TeamTag } from "./common";
+import { PlayerLink, TeamTag } from "./common";
 
 export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
   const { state, data, version, done, spoil } = store;
@@ -20,7 +20,9 @@ export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
 
   if (state.next === 0) return <div className="card empty">Nothing simulated yet. Use “Sim week”, “Sim stage” or “Sim season”.</div>;
 
-  const real = season.championship.realResult;
+  // Dynasty seasons past 2026 reuse the 2026 data, so its real results don't apply.
+  const fictional = !!state.ratingAdj;
+  const real = fictional ? undefined : season.championship.realResult;
   // Spoiler-free match day: hide events (and Champs) your unwatched match would give away.
   const visibleEvent = (i: number) => !spoil.eventHidden(state.events[i]!);
   const champsHidden = state.events.some((e) => e.kind === "championship" && spoil.eventHidden(e));
@@ -33,7 +35,7 @@ export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
         {done && sum.champion && !champsHidden ? (
           <div className="hero">
             <div className="stat">
-              <span className="l">{season.label} Champion</span>
+              <span className="l">{seasonLabel(state, data)} Champion</span>
               <span className="champ">{dir.team(sum.champion).name}</span>
               <span className="sub">
                 def. {dir.team(sum.runnerUp!).name} {sum.finalScore![0]}–{sum.finalScore![1]} in the Grand Final
@@ -42,7 +44,9 @@ export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
             {sum.mvp && (
               <div className="stat">
                 <span className="l">Champs MVP (best K/D)</span>
-                <span className="v">{dir.player(sum.mvp.player)}</span>
+                <span className="v">
+                  <PlayerLink id={sum.mvp.player} name={dir.player(sum.mvp.player)} nav={nav} />
+                </span>
                 <span className="sub">
                   {dir.team(sum.mvp.team).abbr} · {sum.mvp.kills}-{sum.mvp.deaths} ({sum.mvp.kd.toFixed(2)}) over {sum.mvp.maps} maps
                 </span>
@@ -113,7 +117,7 @@ export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
                       <td>
                         {e.score[0]}–{e.score[1]}
                       </td>
-                      <td className="left muted">{ev.realResult ? dir.team(ev.realResult.winner).abbr : "—"}</td>
+                      <td className="left muted">{!fictional && ev.realResult ? dir.team(ev.realResult.winner).abbr : "—"}</td>
                     </tr>
                   );
                 })}
@@ -137,7 +141,7 @@ export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
               {leaders.map((l) => (
                 <tr key={l.player}>
                   <td className="left">
-                    {dir.player(l.player)} <span className="muted">{dir.team(l.team).abbr}</span>
+                    <PlayerLink id={l.player} name={dir.player(l.player)} nav={nav} /> <span className="muted">{dir.team(l.team).abbr}</span>
                   </td>
                   <td>{l.maps}</td>
                   <td>{l.kills}</td>

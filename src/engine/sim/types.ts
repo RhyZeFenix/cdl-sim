@@ -9,6 +9,8 @@ export interface SimPlayer {
   id: string;
   handle: string;
   ratings: Ratings;
+  /** Extra skill for this map (GM morale), in skill units. */
+  form?: number;
 }
 
 export interface SimTeam {
@@ -21,6 +23,9 @@ export interface SimTeam {
   mapMods?: Record<string, number>;
   /** Form for this event or qualifier week, in skill units (hot and cold weekends). */
   form?: number;
+  /** GM weekly prep: extra skill on specific maps, keyed "mode:Map" like mapMods. Unlike
+   * mapMods it is hidden from the opponent's veto. */
+  prep?: Record<string, number>;
 }
 
 /**

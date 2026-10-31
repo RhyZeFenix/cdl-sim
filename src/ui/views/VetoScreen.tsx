@@ -7,7 +7,7 @@ import {
   gmSetPauseBetweenMaps,
   gmVetoSession,
   mapValue,
-  playerIndex,
+  playerInfo,
   submitGmVeto,
   type GmVetoContext,
   type Mode,
@@ -50,7 +50,7 @@ export function VetoScreen({ store, onPlayed }: { store: SeasonStore; onPlayed: 
   const gm = state.gm!;
   const pending = state.pending!;
   const dir = directory(data);
-  const idx = playerIndex(data);
+  const idx = { get: (id: string) => playerInfo(state, data, id) };
   const { spec, gmSide } = pending;
   const oppSide: Side = gmSide === 0 ? 1 : 0;
   const abbr: [string, string] = [dir.team(spec.teams[0]).abbr, dir.team(spec.teams[1]).abbr];

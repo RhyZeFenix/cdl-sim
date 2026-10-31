@@ -13,6 +13,20 @@ import { scriptedChooser, VetoSession, type Chooser, type VetoResult } from "../
 import { bracketPlan, runBracket, type MatchDef } from "./bracket";
 import { buildQualifierSchedule, type Fixture } from "./schedule";
 import { rankByPoints, rankStandings, tally, type SeriesOutcome, type StandingRow } from "./standings";
+import { gmBoostFor, initFranchise, onGmSeries, onStepComplete } from "../gm/franchise";
+import { contractFor, signingProblem } from "../gm/contracts";
+import { DEAD_CAP_SHARE } from "../gm/values";
+import type {
+  CarriedPlayers,
+  Contract,
+  DynastyInfo,
+  GmBoost,
+  InboxItem,
+  MoraleChange,
+  OwnerGoal,
+  Prep,
+  TradeRecord,
+} from "../gm/types";
 
 export type RatingMode = "historical" | "randomized";
 
@@ -53,13 +67,15 @@ export interface SeriesRecord {
   lineups?: [string[], string[]];
   /** The GM's veto decisions, when the user made them. */
   gmVeto?: GmVeto;
+  /** What the GM's prep and morale added (replays use it to rebuild the same teams). */
+  gmBoost?: GmBoost;
 }
 
 export interface GmMove {
   date: string;
   /** The stage the move was made before (5 = before Champs). */
   beforeStage: number;
-  action: "sign" | "release";
+  action: "sign" | "release" | "trade-in" | "trade-out";
   player: string;
 }
 
@@ -78,6 +94,24 @@ export interface GmState {
   /** GM series that have been played but not yet watched or skipped, in play order. */
   unwatched?: string[];
   moves: GmMove[];
+  // ---- the sim-game layer (src/engine/gm); optional so older saves still load
+  /** Focus for the next step. */
+  prep?: Prep;
+  /** Morale per roster player, 0-100. */
+  morale?: Record<string, number>;
+  moraleLog?: MoraleChange[];
+  inbox?: InboxItem[];
+  /** GM series already turned into morale and news. */
+  processed?: string[];
+  goals?: OwnerGoal[];
+  /** Owner trust, 0-100. */
+  trust?: number;
+  /** Where the team was expected to finish (preseason strength rank). */
+  expectedRank?: number;
+  contracts?: Record<string, Contract>;
+  /** Salary still owed to released players this season ($k). */
+  deadCap?: number;
+  trades?: TradeRecord[];
 }
 
 /** What the user decided for one GM series: Team A/B (if higher seed), each veto answer, and the lineup. */
@@ -122,6 +156,8 @@ export interface SeriesSpec {
   lan: boolean;
   /** Fixed lineups (replays); otherwise resolved from rosters on the date. */
   lineups?: [string[], string[]];
+  /** The GM side's prep and morale boost (replays pass the stored one). */
+  boost?: GmBoost;
 }
 
 export interface PendingSeries {
@@ -179,6 +215,13 @@ export interface SeasonState {
   gmVetoes?: Record<string, GmVeto>;
   /** Set when a step stopped to wait for the GM's veto. */
   pending?: PendingSeries;
+  /** AI rosters changed by trades: the team's players in lineup order (starters first). */
+  aiRosters?: Record<string, string[]>;
+  /** Dynasty: players kept from earlier seasons, with their progressed ratings. */
+  carried?: CarriedPlayers;
+  /** Dynasty seasons past the real data: rating change per player since the data season. */
+  ratingAdj?: Record<string, number>;
+  dynasty?: DynastyInfo;
 }
 
 /** Thrown inside a step to stop at a GM series; the step resumes on the next advance. */
@@ -240,7 +283,7 @@ export function createSeason(data: SeasonData, options: SeasonOptions): SeasonSt
     const starters = startersOn(data.rosters, options.gmTeam, season.stages[0]!.qualifiers.start);
     gm = { team: options.gmTeam, roster: [...starters], starters: [...starters], autoVeto: false, pauseBetweenMaps: false, spoilerFree: true, unwatched: [], moves: [] };
   }
-  return {
+  const state: SeasonState = {
     gm,
     gmVetoes: {},
     version: 1,
@@ -255,6 +298,8 @@ export function createSeason(data: SeasonData, options: SeasonOptions): SeasonSt
     points,
     pointsHistory: [{ label: "Start", date: season.stages[0]!.qualifiers.start, points: { ...points } }],
   };
+  if (gm) initFranchise(state, data);
+  return state;
 }
 
 export const isDone = (s: SeasonState) => s.next >= s.steps.length;
@@ -289,8 +334,23 @@ export function playerIndex(data: SeasonData): Map<string, Player> {
 
 export const isReplacement = (id: string) => id.startsWith("repl-");
 
-function simPlayer(data: SeasonData, id: string): SimPlayer {
+/**
+ * A player as this season sees them: a dynasty's carried player (with progressed
+ * ratings), else the season data with any progression since the data season.
+ */
+export function playerInfo(state: SeasonState, data: SeasonData, id: string): Player | undefined {
+  const carried = state.carried?.[id];
+  if (carried) return carried;
   const p = playerIndex(data).get(id);
+  const adj = state.ratingAdj?.[id];
+  if (!p || !adj) return p;
+  const f = (v: number) => Math.max(50, Math.min(99, Math.round(v + adj)));
+  const r = p.ratings;
+  return { ...p, ratings: { ...r, slaying: f(r.slaying), hp_obj: f(r.hp_obj), snd_iq: f(r.snd_iq), third_mode: f(r.third_mode), clutch: f(r.clutch) } };
+}
+
+function simPlayer(state: SeasonState, data: SeasonData, id: string): SimPlayer {
+  const p = playerInfo(state, data, id);
   if (p) return { id: p.id, handle: p.handle, ratings: p.ratings };
   if (!isReplacement(id)) throw new Error(`unknown player ${id}`);
   const r = 72;
@@ -319,9 +379,17 @@ function teamInfo(data: SeasonData, teamId: string) {
 export function teamLineup(state: SeasonState, data: SeasonData, teamId: string, date: string): string[] {
   const gm = state.gm;
   if (gm && teamId === gm.team) return [...gm.starters];
+  // Players this team can't field: the GM's, and anyone a trade sent to another AI team.
+  const owned = new Set(gm?.roster ?? []);
+  for (const [t, ids] of Object.entries(state.aiRosters ?? {})) if (t !== teamId) for (const id of ids) owned.add(id);
+  const traded = state.aiRosters?.[teamId];
+  if (traded) {
+    const ids = traded.filter((id) => !owned.has(id)).slice(0, 4);
+    while (ids.length < 4) ids.push(`repl-${teamId}-${ids.length + 1}`);
+    return ids;
+  }
   const starters = startersOn(data.rosters, teamId, date);
-  if (!gm) return starters;
-  const owned = new Set(gm.roster);
+  if (!owned.size) return starters;
   const roster = [...data.rosters.teams, ...data.rosters.guests].find((t) => t.team === teamId)!;
   const bench = roster.players.map((p) => p.id).filter((id) => !starters.includes(id) && !owned.has(id));
   return starters.map((id, i) => (owned.has(id) ? (bench.shift() ?? `repl-${teamId}-${i + 1}`) : id));
@@ -347,16 +415,21 @@ export function eventForm(state: SeasonState, teamId: string, phase: PoolPhase):
   return createRng(state.options.seed).fork(`form/${formKey(phase)}/${teamId}`).normal(0, sd);
 }
 
-function buildTeam(state: SeasonState, data: SeasonData, teamId: string, lineup: string[], phase: PoolPhase): SimTeam {
+function buildTeam(state: SeasonState, data: SeasonData, teamId: string, lineup: string[], phase: PoolPhase, boost?: GmBoost): SimTeam {
   const info = teamInfo(data, teamId);
   const mapMods = [...data.rosters.teams, ...data.rosters.guests].find((t) => t.team === teamId)?.mapMods;
   const team: SimTeam = {
     id: teamId,
     name: info.name,
     abbr: info.abbr,
-    players: lineup.map((id) => simPlayer(data, id)),
+    players: lineup.map((id) => {
+      const p = simPlayer(state, data, id);
+      const f = boost?.players?.[id];
+      return f ? { ...p, form: f } : p;
+    }),
     mapMods,
-    form: eventForm(state, teamId, phase),
+    form: eventForm(state, teamId, phase) + (boost?.form ?? 0),
+    prep: boost?.prep,
   };
   return ratingTransform(team, state.options.ratingMode);
 }
@@ -378,6 +451,10 @@ function runSeries(
   ];
   const choosers: [Chooser?, Chooser?] = [undefined, undefined];
   if (gmVeto && gmSide !== null) choosers[gmSide] = scriptedChooser(gmVeto.answers);
+
+  // The GM side plays with its prep and morale boost.
+  const build = (side: Side, ids: string[]) =>
+    buildTeam(state, data, spec.teams[side], ids, spec.phase, side === gmSide ? spec.boost : undefined);
 
   // Sub swaps: the GM side's lineup can change between maps.
   const mapLineups: Record<number, string[]> = {};
@@ -418,16 +495,13 @@ function runSeries(
       }
       mapLineups[vm.slot] = [...current];
       const ids: [string[], string[]] = gmSide === 0 ? [current, lineups[1]] : [lineups[0], current];
-      return [buildTeam(state, data, spec.teams[0], ids[0], spec.phase), buildTeam(state, data, spec.teams[1], ids[1], spec.phase)];
+      return [build(0, ids[0]), build(1, ids[1])];
     };
   }
 
   const r = simulateSeries({
     teamsForMap,
-    teams: [
-      buildTeam(state, data, spec.teams[0], lineups[0], spec.phase),
-      buildTeam(state, data, spec.teams[1], lineups[1], spec.phase),
-    ],
+    teams: [build(0, lineups[0]), build(1, lineups[1])],
     bestOf: spec.bestOf,
     season: data.season,
     veto: data.veto,
@@ -448,6 +522,7 @@ function playSeries(state: SeasonState, data: SeasonData, spec: SeriesSpec): Ser
   if (existing) return existing;
   const gm = state.gm;
   const gmSide = gmSideOf(state, spec.teams);
+  if (gm && gmSide !== null) spec = { ...spec, boost: gmBoostFor(state, data, spec.phase) };
   let gmVeto: GmVeto | undefined;
   if (gm && gmSide !== null && !gm.autoVeto) {
     gmVeto = state.gmVetoes?.[spec.id];
@@ -474,10 +549,12 @@ function playSeries(state: SeasonState, data: SeasonData, spec: SeriesSpec): Ser
     lineups: r.lineups,
     // Keep every map's lineup so replays never need to ask again.
     gmVeto: gmVeto ? { ...gmVeto, mapLineups: r.mapLineups } : undefined,
+    gmBoost: spec.boost,
   };
   if (gmVeto) delete state.gmVetoes![spec.id];
   state.series[spec.id] = rec;
   if (gm && gmSide !== null && gm.spoilerFree) gm.unwatched = [...(gm.unwatched ?? []), spec.id];
+  if (gm && gmSide !== null) onGmSeries(state, data, rec);
   return rec;
 }
 
@@ -494,6 +571,7 @@ export function replaySeries(state: SeasonState, data: SeasonData, id: string): 
     teams: rec.teams,
     lan: false,
     lineups: rec.lineups,
+    boost: rec.gmBoost,
   };
   return runSeries(state, data, spec, rec.gmVeto, true);
 }
@@ -525,6 +603,7 @@ export function freeAgents(state: SeasonState, data: SeasonData): string[] {
   if (!state.gm) return [];
   const date = nextStepDate(state, data);
   const taken = new Set(state.gm.roster);
+  for (const ids of Object.values(state.aiRosters ?? {})) for (const id of ids) taken.add(id);
   for (const t of data.season.teams) {
     if (t.id === state.gm.team) continue;
     for (const id of teamLineup(state, data, t.id, date)) taken.add(id);
@@ -537,13 +616,19 @@ function stageOfNext(state: SeasonState): number {
   return step && "stage" in step ? step.stage : 5;
 }
 
-export function gmSign(state: SeasonState, data: SeasonData, playerId: string): void {
+/** Signs a free agent on a contract of `years` seasons at their asking salary. */
+export function gmSign(state: SeasonState, data: SeasonData, playerId: string, years = 2): void {
   const gm = state.gm;
   if (!gm) throw new Error("not in GM mode");
   if (!gmCanMakeMoves(state)) throw new Error("roster moves are only allowed between stages");
   if (gm.roster.length >= GM_ROSTER_MAX) throw new Error(`roster is full (${GM_ROSTER_MAX} players)`);
   if (!freeAgents(state, data).includes(playerId)) throw new Error(`${playerId} is not a free agent`);
+  const contract = contractFor(state, data, playerId, years);
+  const problem = signingProblem(state, contract.salary);
+  if (problem) throw new Error(problem);
   gm.roster.push(playerId);
+  gm.contracts = { ...(gm.contracts ?? {}), [playerId]: contract };
+  gm.morale = { ...(gm.morale ?? {}), [playerId]: 70 };
   gm.moves.push({ date: nextStepDate(state, data), beforeStage: stageOfNext(state), action: "sign", player: playerId });
 }
 
@@ -554,6 +639,12 @@ export function gmRelease(state: SeasonState, data: SeasonData, playerId: string
   if (!gm.roster.includes(playerId)) throw new Error(`${playerId} is not on the roster`);
   if (gm.roster.length <= GM_ROSTER_MIN) throw new Error(`a roster needs at least ${GM_ROSTER_MIN} players`);
   gm.roster = gm.roster.filter((p) => p !== playerId);
+  // Part of the salary stays on the books for the rest of the season.
+  const contract = gm.contracts?.[playerId];
+  if (contract) {
+    gm.deadCap = (gm.deadCap ?? 0) + Math.round(contract.salary * DEAD_CAP_SHARE);
+    delete gm.contracts![playerId];
+  }
   if (gm.starters.includes(playerId)) {
     gm.starters = gm.starters.filter((p) => p !== playerId);
     gm.starters.push(gm.roster.find((p) => !gm.starters.includes(p))!);
@@ -846,6 +937,7 @@ export function advance(state: SeasonState, data: SeasonData): Step | undefined 
     throw e;
   }
   state.next++;
+  if (state.gm) onStepComplete(state, data, step);
   return step;
 }
 

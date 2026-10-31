@@ -39,8 +39,9 @@ export function createArena(rng: Rng, teams: [SimTeam, SimTeam], mode: Mode, map
     const s = sideOf(i);
     const base = (ws * p.ratings.slaying + wm * modeStat(p, mode)) / 100;
     const form = rng.normal(0, TUNING.formSd * (1 - p.ratings.consistency / 100));
-    const mod = teams[s].mapMods?.[`${mode}:${map}`] ?? 0;
-    return base + form + teamForm[s]! + mod + (teams[s].form ?? 0);
+    const key = `${mode}:${map}`;
+    const mod = (teams[s].mapMods?.[key] ?? 0) + (teams[s].prep?.[key] ?? 0);
+    return base + form + teamForm[s]! + mod + (teams[s].form ?? 0) + (p.form ?? 0);
   });
   return { rng, players, skill, k: TUNING.duelK * TUNING.modeDuelScale[mode], t: 0, events: [] };
 }

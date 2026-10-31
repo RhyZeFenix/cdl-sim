@@ -1,9 +1,9 @@
 import { useMemo, useState } from "react";
-import { addLines, emptyLine, gmMarkWatched, mapLogEntries, replaySeries, type MapResult, type Mode, type PlayerLine } from "../../engine";
+import { addLines, emptyLine, gmMarkWatched, mapLogEntries, playerInfo, replaySeries, type MapResult, type Mode, type PlayerLine } from "../../engine";
 import type { Nav } from "../App";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
-import { Seg, TeamTag } from "./common";
+import { PlayerLink, Seg, TeamTag } from "./common";
 import { Watch } from "./Watch";
 
 type Col = { key: keyof PlayerLine | "kd"; label: string; modes?: Mode[] };
@@ -22,7 +22,7 @@ const COLS: Col[] = [
   { key: "oCaps", label: "Caps", modes: ["overload"] },
 ];
 
-function BoxScore({ lines, handles, teams, modes }: { lines: PlayerLine[]; handles: string[]; teams: [string, string]; modes: Mode[] }) {
+function BoxScore({ lines, handles, ids, teams, modes, nav }: { lines: PlayerLine[]; handles: string[]; ids?: string[]; teams: [string, string]; modes: Mode[]; nav?: Nav }) {
   const cols = COLS.filter((c) => !c.modes || c.modes.some((m) => modes.includes(m)));
   const val = (l: PlayerLine, c: Col) => (c.key === "kd" ? (l.kills / Math.max(1, l.deaths)).toFixed(2) : l[c.key]);
   return (
@@ -43,7 +43,7 @@ function BoxScore({ lines, handles, teams, modes }: { lines: PlayerLine[]; handl
                 <span className="muted" style={{ fontSize: 11, marginRight: 6 }}>
                   {teams[i < 4 ? 0 : 1]}
                 </span>
-                {handles[i]}
+                {ids ? <PlayerLink id={ids[i]!} name={handles[i]!} nav={nav} /> : handles[i]}
               </td>
               {cols.map((c) => (
                 <td key={c.key}>{val(l, c)}</td>
@@ -98,7 +98,7 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
   const t1 = dir.team(rec.teams[1]);
   const abbr: [string, string] = [t0.abbr, t1.abbr];
   const winnerSide = rec.winner === rec.teams[0] ? 0 : 1;
-  const handles = (m: MapResult) => m.lineup.map((id) => dir.player(id));
+  const handles = (m: MapResult) => m.lineup.map((id) => playerInfo(state, data, id)?.handle ?? dir.player(id));
   const ev = state.events.findIndex((e) => e.matches.some((m) => m.seriesId === seriesId));
 
   // How many maps' results may be shown, and the series score they add up to.
@@ -278,7 +278,7 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
                   </button>
                 )}
               </div>
-              <BoxScore lines={map.box} handles={handles(map)} teams={abbr} modes={[map.mode]} />
+              <BoxScore lines={map.box} handles={handles(map)} ids={map.lineup} teams={abbr} modes={[map.mode]} nav={nav} />
             </div>
           )}
         </>
@@ -287,7 +287,7 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
           <div className="card-head">
             <h3>Series box score</h3>
           </div>
-          {maps[0] && <BoxScore lines={seriesLines} handles={handles(maps[0])} teams={abbr} modes={[...new Set(maps.map((m) => m.mode))]} />}
+          {maps[0] && <BoxScore lines={seriesLines} handles={handles(maps[0])} ids={maps[0].lineup} teams={abbr} modes={[...new Set(maps.map((m) => m.mode))]} nav={nav} />}
         </div>
       ) : map ? (
         <>
@@ -322,7 +322,7 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
             <div className="card-head">
               <h3>Box score</h3>
             </div>
-            <BoxScore lines={map.box} handles={handles(map)} teams={abbr} modes={[map.mode]} />
+            <BoxScore lines={map.box} handles={handles(map)} ids={map.lineup} teams={abbr} modes={[map.mode]} nav={nav} />
           </div>
         </>
       ) : null}

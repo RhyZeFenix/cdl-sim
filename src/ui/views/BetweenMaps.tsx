@@ -1,7 +1,7 @@
 // A GM series stopped between maps: review how the maps so far went and choose the
 // lineup for the next one (sub swaps).
 import { useState } from "react";
-import { gmSetPauseBetweenMaps, playerIndex, submitGmMapLineup, type Mode, type Ratings } from "../../engine";
+import { gmSetPauseBetweenMaps, playerInfo, submitGmMapLineup, type Mode, type Ratings } from "../../engine";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
 
@@ -14,7 +14,7 @@ export function BetweenMaps({ store, onPlayed }: { store: SeasonStore; onPlayed:
   const { spec, gmSide, between } = state.pending!;
   const b = between!;
   const dir = directory(data);
-  const idx = playerIndex(data);
+  const idx = { get: (id: string) => playerInfo(state, data, id) };
   const opp = spec.teams[gmSide === 0 ? 1 : 0];
   const [lineup, setLineup] = useState<string[]>(b.lineup);
   const [error, setError] = useState<string | null>(null);

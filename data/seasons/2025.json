@@ -73,6 +73,14 @@
       "note": "HP: Protocol out, Rewind back. Matches maps played at Champs."
     }
   ],
+  "hardpointHills": {
+    "Protocol": {"count": 4, "names": ["Artillery", "Radio Tower", "Armory", "HQ (Underground)"], "source": "https://www.gamesatlas.com/articles/all-hardpoint-rotations-in-black-ops-6-maps"},
+    "Red Card": {"count": 5, "names": ["Lobby", "Fan Festival", "Stairwell", "Fan Festival (Stage)", "Stands"], "source": "https://www.gamesatlas.com/articles/all-hardpoint-rotations-in-black-ops-6-maps"},
+    "Rewind": {"count": 5, "names": ["Video Store", "Deliveries", "Drive-Thru", "Beepers", "Hideout"], "source": "https://www.gamesatlas.com/articles/all-hardpoint-rotations-in-black-ops-6-maps"},
+    "Skyline": {"count": 4, "names": ["Pool", "Office", "Kitchen", "Bathroom"], "source": "https://www.gamesatlas.com/articles/all-hardpoint-rotations-in-black-ops-6-maps"},
+    "Vault": {"count": 4, "names": ["Atrium", "Spa", "Carport", "Hookah House"], "source": "https://www.gamesatlas.com/articles/all-hardpoint-rotations-in-black-ops-6-maps"},
+    "Hacienda": {"count": 4, "names": ["Fountain", "Garage", "Vineyard", "Terrace (Rock)"], "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/hacienda"}
+  },
   "stages": [
     {
       "stage": 1,
@@ -293,6 +301,7 @@
     "champsSeeds": ["la-thieves", "atlanta-faze", "toronto-ultra", "vancouver-surge", "miami-heretics", "carolina-royal-ravens", "optic-texas", "boston-breach"]
   },
   "unverified": [
+    "Hardpoint hill rotations come from public map guides (GamesAtlas), not an official CDL document.",
     "Qualifier week dates for Stages II–IV.",
     "SnD round/bomb timers (90s/45s) are the 2026 values; BO6 values not checked.",
     "Bo7 and Bo9 veto procedures (no official 2025 text found)."

@@ -162,6 +162,17 @@ export const ModeSettings = z.object({
 });
 export type ModeSettings = z.infer<typeof ModeSettings>;
 
+/** A map's Hardpoint rotation: hill count, and hill names in order when published. */
+export const HardpointRotation = z
+  .object({
+    count: z.number().int().min(3).max(6),
+    names: z.array(z.string().min(1)).optional(),
+    source: url,
+    note: z.string().optional(),
+  })
+  .refine((r) => !r.names || r.names.length === r.count, { message: "names must list every hill" });
+export type HardpointRotation = z.infer<typeof HardpointRotation>;
+
 export const Season = z.object({
   id: z.enum(["2024", "2025", "2026"]),
   label: z.string(),
@@ -176,6 +187,8 @@ export const Season = z.object({
   points: z.object({ qualifierWin: z.number().int() }),
   tiebreakers: z.array(Tiebreaker).min(1),
   mapPools: z.array(MapPool).min(1),
+  /** Hill rotation per Hardpoint map (keyed by map name). */
+  hardpointHills: z.record(z.string(), HardpointRotation),
   stages: z.array(Stage).length(4),
   championship: LanEvent,
   historical: z

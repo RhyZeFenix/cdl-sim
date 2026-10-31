@@ -6,7 +6,13 @@ import { allAlive, aliveOn, catchUpBonus, clamp, pickBy, teamFight, type Arena }
 import { TUNING } from "../tuning";
 import type { Pair, Side } from "../types";
 
-export function playHardpoint(a: Arena, s: ModeSettings["hp"], hills: number = TUNING.hp.hills): Pair {
+/** Hill labels in rotation order, e.g. "P2 Construction" (or "P2" when names aren't known). */
+export function hillLabels(rotation?: { count: number; names?: string[] }): string[] {
+  const count = rotation?.count ?? TUNING.hp.hills;
+  return Array.from({ length: count }, (_, i) => (rotation?.names ? `P${i + 1} ${rotation.names[i]}` : `P${i + 1}`));
+}
+
+export function playHardpoint(a: Arena, s: ModeSettings["hp"], hills: string[] = hillLabels()): Pair {
   const T = TUNING.hp;
   const { rng } = a;
   const score: Pair = [0, 0];
@@ -16,7 +22,7 @@ export function playHardpoint(a: Arena, s: ModeSettings["hp"], hills: number = T
 
   while (!done()) {
     n++;
-    const label = `P${((n - 1) % hills) + 1}`;
+    const label = hills[(n - 1) % hills.length]!;
     const pts: Pair = [0, 0];
     const gap = rng.int(T.rotationGap[0], T.rotationGap[1]);
     let ht = gap;

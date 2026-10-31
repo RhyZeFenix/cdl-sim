@@ -64,6 +64,17 @@
       "note": "Listed on the official competitive-settings page (updated 2026-06-04); matches Stage IV play data."
     }
   ],
+  "hardpointHills": {
+    "Blackheart": {"count": 5, "names": ["Drill", "Repair Bay", "Hydro Pump Arm", "Sub Bay", "Grinder Pit"], "source": "https://www.gamesatlas.com/cod-black-ops-7/maps/blackheart"},
+    "Colossus": {"count": 4, "names": ["Overlook", "Bar", "Lifeboat", "Lounge"], "source": "https://www.gamesatlas.com/cod-black-ops-7/maps/colossus"},
+    "Den": {"count": 4, "names": ["Courtyard", "Balcony", "Helipad", "Terrace"], "source": "https://www.gamesatlas.com/cod-black-ops-7/maps/den"},
+    "Exposure": {"count": 5, "names": ["Tower", "Solar Panels", "Control Room", "Salt Storage", "Drone"], "source": "https://www.gamesatlas.com/cod-black-ops-7/maps/exposure"},
+    "Scar": {"count": 5, "names": ["Main Street", "Motel", "Crash Site", "Post Office", "Wood Shop"], "source": "https://www.gamesatlas.com/cod-black-ops-7/maps/scar"},
+    "Hacienda": {"count": 4, "names": ["Fountain", "Garage", "Vineyard", "Terrace (Rock)"], "source": "https://www.gamesatlas.com/cod-black-ops-7/maps/hacienda", "note": "Hill names from the Black Ops 6 version; the BO7 diagram shows the same four hills."},
+    "Cliff Town": {"count": 5, "source": "https://www.gamesatlas.com/cod-black-ops-7/maps/cliff-town", "note": "Hill count from the rotation diagram; names not published in text."},
+    "Gridlock": {"count": 4, "source": "https://www.gamesatlas.com/cod-black-ops-7/maps/gridlock", "note": "Hill count from the rotation diagram; names not published in text."},
+    "Sake": {"count": 5, "source": "https://www.gamesatlas.com/cod-black-ops-7/maps/sake", "note": "Hill count from the rotation diagram; names not published in text."}
+  },
   "stages": [
     {
       "stage": 1,
@@ -314,6 +325,7 @@
     }
   },
   "unverified": [
+    "Hardpoint hill rotations come from public map guides; Cliff Town, Gridlock and Sake have hill counts but no published hill names, and Hacienda uses its Black Ops 6 hill names.",
     "Stage I and II qualifier week dates; Stage II assumed 6 weeks for 11 matches.",
     "Which Stage I week Blackheart HP entered the pool (assumed week 3).",
     "Overload half length (300s placeholder); capture pacing is fitted to real 2026 map scores by the backtest instead.",

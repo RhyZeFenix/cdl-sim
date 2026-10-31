@@ -151,6 +151,18 @@ describe("validation fails loudly", () => {
     expect(() => parseSeason(season2025, parseVetoFile(v), "bad.json")).toThrow(/map 4 \(hp\) is never picked/);
   });
 
+  it("rejects a Hardpoint map with no hill rotation", () => {
+    const bad = clone(season2025);
+    delete (bad.hardpointHills as Record<string, unknown>)["Vault"];
+    expect(() => parseSeason(bad, vetoFile, "bad.json")).toThrow(/no rotation for Hardpoint map "Vault"/);
+  });
+
+  it("rejects a rotation whose names don't match its hill count", () => {
+    const bad = clone(season2025);
+    (bad.hardpointHills as Record<string, { count: number }>)["Vault"]!.count = 5;
+    expect(() => parseSeason(bad, vetoFile, "bad.json")).toThrow(DataError);
+  });
+
   it("rejects a gap in a points table", () => {
     const bad = clone(season2025);
     bad.stages[0]!.major.points = bad.stages[0]!.major.points.filter((r) => r.from !== 4);

@@ -113,6 +113,8 @@ Overload note: the real 2026 map scores have 4–3 and 3–2 as the most common 
 
 ## Data notes
 
+- **Hardpoint hill rotations:** each season file has `hardpointHills` (hill count, names in order, and a source per map). The log and Watch mode show them, e.g. "Hill 3 (P3 Stairwell)". Loading fails if any Hardpoint map in a pool lacks a rotation. The rotations come from public map guides and patch notes, with gaps noted in each season's `unverified` list. Every hill plays the same in the sim; the rotation sets the hill count and names.
+
 - Every JSON file is validated on load. Bad data throws a `DataError` listing every problem.
 - Veto bans are skipped when they would leave a mode with fewer maps than the series needs (`skipBanIfInsufficient`). This handles 2025's two-map Control pool and the Bo9 SnD maps without special cases.
 - Player ratings come from season stats where available (see above). Roles default to `flex`: the stats don't say who plays AR or SMG.

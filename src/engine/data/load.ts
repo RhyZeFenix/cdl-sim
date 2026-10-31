@@ -90,6 +90,9 @@ export function parseSeason(raw: unknown, veto: VetoFile, file: string): Season 
   const teamIds = new Set(s.teams.map((t) => t.id));
 
   if (poolIds.size !== s.mapPools.length) problems.push("duplicate map pool id");
+  for (const m of new Set(s.mapPools.flatMap((p) => p.hp))) {
+    if (!s.hardpointHills[m]) problems.push(`hardpointHills: no rotation for Hardpoint map "${m}"`);
+  }
   if (teamIds.size !== s.teams.length) problems.push("duplicate team id");
 
   const usesThird = s.thirdMode;

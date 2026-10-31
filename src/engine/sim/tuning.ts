@@ -27,6 +27,7 @@ export const TUNING = {
   vetoNoise: 0.03,
 
   hp: {
+    /** Hill count when a map has no rotation in the season data. */
     hills: 5,
     rotationGap: [2, 5],
     killSecs: [0.6, 1.4],

@@ -8,6 +8,7 @@ import {
   mapPoolFor,
   runVeto,
   scoreFromEvents,
+  simulateMap,
   simulateSeries,
   aiChooser,
   type Chooser,
@@ -200,6 +201,19 @@ describe("map simulation", () => {
     expect(JSON.stringify(a)).toBe(JSON.stringify(b));
     const c = series("2026", "optic-texas", "faze-vegas", 9, champs, "different");
     expect(JSON.stringify(c)).not.toBe(JSON.stringify(a));
+  });
+
+  it("Hardpoint plays the map's real hill rotation", () => {
+    const data = loadSeasonData("2026");
+    const date = data.season.championship.start;
+    const teams = [buildSimTeam(data, "optic-texas", date), buildSimTeam(data, "faze-vegas", date)] as [any, any];
+    const m = simulateMap({ teams, season: data.season, vm: { slot: 1, mode: "hp", map: "Den" }, rng: createRng("hills") });
+    const labels = m.events.filter((e) => e.k === "hill").map((e) => (e as { label: string }).label);
+    const den = ["P1 Courtyard", "P2 Balcony", "P3 Helipad", "P4 Terrace"];
+    labels.forEach((l, i) => expect(l).toBe(den[i % 4]));
+    const g = simulateMap({ teams, season: data.season, vm: { slot: 1, mode: "hp", map: "Gridlock" }, rng: createRng("hills") });
+    const gl = g.events.filter((e) => e.k === "hill").map((e) => (e as { label: string }).label);
+    expect(new Set(gl)).toEqual(new Set(["P1", "P2", "P3", "P4"]));
   });
 
   it("renders a play-by-play line per hill / round", () => {

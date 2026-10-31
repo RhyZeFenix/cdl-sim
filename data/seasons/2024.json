@@ -56,6 +56,16 @@
       "note": "Vista and 6 Star replaced Invasion and Skidrow (HP); 6 Star replaced Terminal (SnD). Matches maps played at Major IV and Champs."
     }
   ],
+  "hardpointHills": {
+    "Invasion": {"count": 5, "names": ["Courtyard", "Construction", "Bus Station", "Park", "South Street"], "source": "https://dbltap.com/posts/mw3-season-1-reloaded-patch-notes-new-hardpoint-hills-added-to-cdl-maps-01hmc46zqsmc", "note": "January 2024 CDL hills (Season 1 Reloaded); Stage I qualifiers before that used the launch hills."},
+    "Karachi": {"count": 5, "names": ["Rubble", "Cafe", "Mini Mart", "Main Street", "Shacks"], "source": "https://dbltap.com/posts/mw3-season-1-reloaded-patch-notes-new-hardpoint-hills-added-to-cdl-maps-01hmc46zqsmc", "note": "January 2024 CDL hills (Season 1 Reloaded)."},
+    "Sub Base": {"count": 5, "names": ["Loading Bay", "Garage Bay", "Crane", "North Dock", "Tank"], "source": "https://dbltap.com/posts/mw3-season-1-reloaded-patch-notes-new-hardpoint-hills-added-to-cdl-maps-01hmc46zqsmc", "note": "January 2024 CDL hills (Season 1 Reloaded)."},
+    "Terminal": {"count": 5, "names": ["Bookstore", "Lower Lounge", "Shopping", "Diner", "Apron"], "source": "https://dbltap.com/posts/mw3-season-1-reloaded-patch-notes-new-hardpoint-hills-added-to-cdl-maps-01hmc46zqsmc", "note": "January 2024 CDL hills (Season 1 Reloaded)."},
+    "Skidrow": {"count": 5, "names": ["Destroyed Apartment", "Warehouse", "Mural Alley", "Barbershop", "Containers"], "source": "https://www.gamesatlas.com/articles/all-hardpoint-rotations-in-modern-warfare-3-maps-2023", "note": "Launch rotation."},
+    "Rio": {"count": 5, "names": ["Mall (Center)", "Market", "Mall (Entrance)", "Garage", "Main Street"], "source": "https://www.gamesatlas.com/cod-modern-warfare-3/maps/rio"},
+    "Vista": {"count": 5, "names": ["Restaurant", "Marketplace", "Terrace", "Tower", "Jungle (Bridge)"], "source": "https://www.gamesatlas.com/cod-modern-warfare-3/maps/vista"},
+    "6 Star": {"count": 5, "names": ["Club", "Lounge (Oasis)", "Rooftop Bar", "Skybridge (Waterfall)", "Infinity Pool"], "source": "https://www.gamesatlas.com/cod-modern-warfare-3/maps/6-star"}
+  },
   "stages": [
     {
       "stage": 1,
@@ -245,6 +255,7 @@
     "champsSeeds": ["atlanta-faze", "toronto-ultra", "optic-texas", "ny-subliners", "seattle-surge", "la-guerrillas", "la-thieves", "miami-heretics"]
   },
   "unverified": [
+    "Hardpoint hill rotations come from public map guides and the January 2024 patch notes; Stage I qualifiers before that patch used the launch hills on Invasion, Karachi, Sub Base and Terminal, but the sim uses the patched hills all season.",
     "Qualifier week dates for every stage (only start/end of each stage are known).",
     "Tiebreaker order copied from 2025 Liquipedia tables; 2024 order not checked.",
     "SnD round/bomb timers (90s/45s) are the 2026 values; MWIII values not checked.",

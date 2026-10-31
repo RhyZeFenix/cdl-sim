@@ -5,7 +5,7 @@ import type { Rng } from "../rng";
 import { createArena } from "./arena";
 import { boxScore } from "./boxscore";
 import { playControl } from "./modes/control";
-import { playHardpoint } from "./modes/hardpoint";
+import { hillLabels, playHardpoint } from "./modes/hardpoint";
 import { playOverload } from "./modes/overload";
 import { playSnd } from "./modes/snd";
 import { other, type MapResult, type Pair, type Side, type SimTeam } from "./types";
@@ -39,7 +39,7 @@ export function simulateMap(opts: {
   const mode: Mode = vm.mode;
   switch (mode) {
     case "hp":
-      score = playHardpoint(arena, s.hp);
+      score = playHardpoint(arena, s.hp, hillLabels(season.hardpointHills[vm.map]));
       break;
     case "snd":
       score = playSnd(arena, s.snd, firstAttacker(vm, rng));

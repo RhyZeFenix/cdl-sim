@@ -330,3 +330,53 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .tbl tr.window-row td { background: var(--surface-2); }
 .tbl tr.cal-next td { font-weight: 600; }
 .tbl tr.cal-done td { opacity: 0.6; }
+.notice { display: flex; gap: 8px; align-items: center; justify-content: space-between; background: var(--win-bg); border: 1px solid var(--accent); border-radius: var(--radius); padding: 6px 10px; margin: 4px 0; font-size: 13px; word-break: break-all; }
+.saves { grid-template-columns: 1fr; }
+.achievements { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+.ach { display: grid; gap: 2px; border: 1px dashed var(--border); border-radius: var(--radius); padding: 8px 10px; opacity: 0.6; }
+.ach.on { border-style: solid; border-color: var(--accent); opacity: 1; background: var(--win-bg); }
+
+/* ---------- high contrast */
+:root[data-contrast="high"] { --text-2: var(--text); --text-3: #3b3a37; --border: #8d8c84; --surface-2: #e4e3de; }
+:root[data-contrast="high"][data-theme="dark"] { --text-3: #d6d5cf; --border: #8d8c84; --surface-2: #2c2c29; }
+@media (prefers-color-scheme: dark) {
+  :root[data-contrast="high"]:not([data-theme="light"]) { --text-3: #d6d5cf; --border: #8d8c84; --surface-2: #2c2c29; }
+}
+
+/* ---------- help tooltips */
+.help { display: inline-grid; place-items: center; width: 15px; height: 15px; border-radius: 50%; border: 1px solid var(--text-3); color: var(--text-3); font-size: 10px; font-weight: 700; cursor: help; position: relative; margin-left: 4px; vertical-align: middle; text-transform: none; letter-spacing: 0; }
+.help:hover::after, .help:focus::after { content: attr(data-tip); position: absolute; left: 50%; top: 125%; transform: translateX(-50%); width: max-content; max-width: 260px; background: var(--text); color: var(--bg); font-size: 12px; font-weight: 400; line-height: 1.4; padding: 6px 8px; border-radius: 6px; z-index: 20; white-space: normal; }
+.team-link { text-decoration: none; }
+.guide ol { margin: 6px 0 0 18px; padding: 0; display: grid; gap: 4px; }
+
+/* ---------- odds, lists */
+.oddsbar { position: relative; display: inline-block; width: 120px; height: 18px; background: var(--surface-2); border-radius: 4px; overflow: hidden; vertical-align: middle; }
+.oddsbar > span { position: absolute; inset: 0 auto 0 0; background: var(--accent); opacity: 0.35; }
+.oddsbar > b { position: relative; font-size: 12px; padding: 0 6px; line-height: 18px; }
+.plain-list { margin: 4px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+.linklike.big { font-size: inherit; font-weight: 700; text-align: inherit; }
+
+/* ---------- phones */
+@media (max-width: 640px) {
+  .app { padding: 0 10px 40px; }
+  .topbar .row { gap: 6px; }
+  .brand { font-size: 15px; width: 100%; }
+  .status { font-size: 12px; }
+  .progress { width: 80px; }
+  .topbar .btn { padding: 4px 8px; font-size: 12px; }
+  .tabs { flex-wrap: nowrap; }
+  .tabs button { white-space: nowrap; padding: 8px 10px; }
+  .card { padding: 10px; overflow-x: auto; }
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kpi .v { font-size: 14px; }
+  .grid2 { grid-template-columns: 1fr; }
+  .setup { grid-template-columns: 1fr; }
+  .setup-actions { justify-content: stretch; }
+  .fixtures { grid-template-columns: 1fr; }
+  .match-head .big { font-size: 16px; }
+  .sscore { font-size: 28px; }
+  .tbl th, .tbl td { padding: 5px 6px; }
+  .oddsbar { width: 70px; }
+  .msg-head { flex-wrap: wrap; }
+  .help:hover::after, .help:focus::after { left: auto; right: -8px; transform: none; max-width: 220px; }
+}

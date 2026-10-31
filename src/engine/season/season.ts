@@ -30,6 +30,8 @@ import type {
   Prep,
   TradeRecord,
 } from "../gm/types";
+import type { Difficulty } from "../gm/difficulty";
+import type { UnlockedAchievement } from "../gm/achievements";
 
 export type RatingMode = "historical" | "randomized";
 
@@ -43,6 +45,8 @@ export interface SeasonOptions {
   champsOnly?: boolean;
   /** Chaos: strong per-event team form, so upsets and hot streaks are far more common. */
   chaos?: boolean;
+  /** GM difficulty (default normal). */
+  difficulty?: Difficulty;
 }
 
 export type Step =
@@ -132,6 +136,11 @@ export interface GmState {
   academy?: string[];
   /** The Challengers prospect pool for this season. */
   prospects?: Record<string, Prospect>;
+  /** Maps each pair of players has played together (chemistry). */
+  together?: Record<string, number>;
+  /** The preseason favourite (for the Giant killer achievement). */
+  favorite?: string;
+  achievements?: UnlockedAchievement[];
 }
 
 /** What the user decided for one GM series: Team A/B (if higher seed), each veto answer, and the lineup. */
@@ -419,8 +428,20 @@ export function teamLineup(state: SeasonState, data: SeasonData, teamId: string,
   const starters = startersOn(data.rosters, teamId, date);
   if (!owned.size) return starters;
   const roster = [...data.rosters.teams, ...data.rosters.guests].find((t) => t.team === teamId)!;
-  const bench = roster.players.map((p) => p.id).filter((id) => !starters.includes(id) && !owned.has(id));
+  // The bench can't include anyone starting for another team that day.
+  const elsewhere = startingElsewhere(data, teamId, date);
+  const bench = roster.players.map((p) => p.id).filter((id) => !starters.includes(id) && !owned.has(id) && !elsewhere.has(id));
   return starters.map((id, i) => (owned.has(id) ? (bench.shift() ?? `repl-${teamId}-${i + 1}`) : id));
+}
+
+/** Everyone the season data has starting for another team on a date. */
+export function startingElsewhere(data: SeasonData, teamId: string, date: string): Set<string> {
+  const out = new Set<string>();
+  for (const t of [...data.rosters.teams, ...data.rosters.guests]) {
+    if (t.team === teamId) continue;
+    for (const id of startersOn(data.rosters, t.team, date)) out.add(id);
+  }
+  return out;
 }
 
 /** Which "weekend" a series belongs to: a qualifier week or a LAN/online event. */

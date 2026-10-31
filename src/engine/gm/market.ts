@@ -9,6 +9,7 @@ import { pushInbox } from "./inbox";
 import { addMorale } from "./morale";
 import { answerPress } from "./story";
 import { tradeValue } from "./values";
+import { aiTrade } from "./aimoves";
 
 const teamName = (data: SeasonData, id: string) => data.season.teams.find((t) => t.id === id)?.name ?? id;
 const handle = (state: SeasonState, data: SeasonData, id: string) => playerInfo(state, data, id)?.handle ?? id;
@@ -33,6 +34,9 @@ export function marketWindow(state: SeasonState, data: SeasonData): void {
     state.aiRosters = { ...(state.aiRosters ?? {}), [t.id]: [...roster, ...signed] };
     pushInbox(state, { date, kind: "trade", title: `${teamName(data, t.id)} sign ${signed.map((id) => handle(state, data, id)).join(" and ")}`, body: "They had a hole in the lineup and filled it from free agency." });
   }
+
+  // Now and then two AI teams trade with each other.
+  if (tradesOpen(state) && rng.chance(0.4)) aiTrade(state, data, rng);
 
   // Trade offers: AI teams want one of your players and offer one of theirs in return.
   if (tradesOpen(state)) {

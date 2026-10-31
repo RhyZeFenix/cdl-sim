@@ -15,6 +15,7 @@ import {
 } from "../season/season";
 import { moraleForm } from "./morale";
 import { analystForm, analystLevel, coachFactor } from "./staff";
+import { chemistryForm, chemistryOf, ROLE_PENALTY, roleBalance } from "./chemistry";
 import type { GmBoost, Prep } from "./types";
 import { overall } from "./values";
 
@@ -88,6 +89,9 @@ export function gmBoostFor(state: SeasonState, data: SeasonData, phase: PoolPhas
   }
   let form = prep?.kind === "grind" ? PREP_BONUS.grind * coach : 0;
   form += analystForm(state) + fatiguePenalty(gm.fatigue ?? 0);
+  // Chemistry and role balance of the starting four.
+  form += chemistryForm(chemistryOf(state, gm.starters));
+  if (!roleBalance(state, data, gm.starters).ok) form -= ROLE_PENALTY;
   if (opponent && (gm.familiarity?.[opponent] ?? -1) > state.next) form += SCRIM_EDGE;
   if (Math.abs(form) > 1e-5) boost.form = round4(form);
   const players: Record<string, number> = {};

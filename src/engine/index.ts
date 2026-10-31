@@ -29,3 +29,8 @@ export * from "./gm/market";
 export * from "./gm/academy";
 export * from "./gm/awards";
 export * from "./gm/calendar";
+export * from "./gm/difficulty";
+export * from "./gm/chemistry";
+export * from "./gm/aimoves";
+export * from "./gm/achievements";
+export * from "./gm/review";

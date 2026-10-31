@@ -17,7 +17,9 @@ import { pushInbox } from "./inbox";
 import { addMorale, MORALE_START, seriesMorale, stepMorale } from "./morale";
 import { goalsFor, goalText, ordinal, ownerVerdict, strengthRanking, verdictText } from "./owner";
 import { FATIGUE, PREP_MORALE } from "./weekly";
-import { SALARY_CAP } from "./values";
+import { capLabel, difficultyOf } from "./difficulty";
+import { addTogether, initialTogether } from "./chemistry";
+import { achievementsAfterSeries, achievementsAfterStep } from "./achievements";
 import { initialStaff, coachMoraleShield } from "./staff";
 import { initialRivals, storyAfterSeries } from "./story";
 import { marketWindow } from "./market";
@@ -47,6 +49,9 @@ export function initFranchise(state: SeasonState, data: SeasonData): void {
   const ranking = strengthRanking(state, data, date);
   gm.expectedRank = ranking.findIndex((r) => r.team === gm.team) + 1;
   gm.goals = goalsFor(gm.expectedRank, data);
+  gm.favorite = ranking.find((r) => r.team !== gm.team)?.team;
+  gm.together = gm.together ?? initialTogether(gm.roster);
+  gm.achievements = gm.achievements ?? [];
   gm.inbox = gm.inbox ?? [];
   gm.staff = gm.staff ?? initialStaff(state);
   gm.fatigue = gm.fatigue ?? 0;
@@ -67,7 +72,7 @@ export function initFranchise(state: SeasonState, data: SeasonData): void {
     body:
       `The front office rates this roster ${ordinal(gm.expectedRank)} of ${data.season.teams.length} going into the season. ` +
       `The owner's goals: ${gm.goals.map(goalText).join("; ")}. ` +
-      `Payroll is $${payroll(state)}k against a $${SALARY_CAP}k cap. Set a prep focus each week in the Office.`,
+      `Payroll is $${payroll(state)}k against a ${capLabel(state)} cap (${difficultyOf(state).label} difficulty). Set a prep focus each week in the Office.`,
   });
   marketWindow(state, data);
 }
@@ -82,7 +87,9 @@ export function onGmSeries(state: SeasonState, data: SeasonData, rec: SeriesReco
   const opp = rec.teams[1 - side]!;
   // A better coach takes the sting out of losses.
   const shield = coachMoraleShield(state);
-  const deltas = Object.fromEntries(Object.entries(seriesMorale(state, rec)).map(([id, d]) => [id, d < 0 ? Math.round(d * shield) : d]));
+  const loss = shield * difficultyOf(state).moraleLoss;
+  const deltas = Object.fromEntries(Object.entries(seriesMorale(state, rec)).map(([id, d]) => [id, d < 0 ? Math.round(d * loss) : d]));
+  addTogether(state, rec);
   addMorale(state, { refs: [rec.id], why: `${won ? "Win" : "Loss"} vs ${abbr(data, opp)}`, deltas });
 
   // Top fragger for the recap.
@@ -104,6 +111,7 @@ export function onGmSeries(state: SeasonState, data: SeasonData, rec: SeriesReco
     refs: [rec.id],
   });
   storyAfterSeries(state, data, rec);
+  achievementsAfterSeries(state, data, rec);
 }
 
 /** After a whole step: prep and drift on morale, league news, and the owner's reaction to events. */
@@ -154,6 +162,7 @@ export function onStepComplete(state: SeasonState, data: SeasonData, step: Step)
     }
   }
   if (gmCanMakeMoves(state)) marketWindow(state, data);
+  achievementsAfterStep(state, data);
 }
 
 function inStep(r: SeriesRecord, step: Step): boolean {
@@ -181,7 +190,9 @@ function eventNews(state: SeasonState, data: SeasonData, ev: EventRecord, mine: 
   // The owner judges Majors and Champs against where the roster was expected to finish.
   const place = ev.placements[gm.team]?.[0];
   const expected = gm.expectedRank ?? 6;
-  const delta = place === undefined ? -8 : Math.max(-10, Math.min(10, 2 * (expected - place)));
+  const raw = place === undefined ? -8 : Math.max(-10, Math.min(10, 2 * (expected - place)));
+  const d = difficultyOf(state);
+  const delta = Math.round(raw * (raw < 0 ? d.trustLoss : d.trustGain));
   gm.trust = Math.max(0, Math.min(100, (gm.trust ?? 60) + delta));
   const mood = delta >= 4 ? "thrilled" : delta > 0 ? "pleased" : delta === 0 ? "content" : delta > -6 ? "concerned" : "unhappy";
   pushInbox(state, {

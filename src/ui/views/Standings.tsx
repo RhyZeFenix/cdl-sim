@@ -2,9 +2,10 @@ import { useMemo, useState } from "react";
 import { pointsTable, qualifierStandings } from "../../engine";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
-import { Seg, TeamTag, signed } from "./common";
+import { Seg, TeamLink, signed } from "./common";
+import type { Nav } from "../App";
 
-export function Standings({ store }: { store: SeasonStore }) {
+export function Standings({ store, nav }: { store: SeasonStore; nav?: Nav }) {
   const { state, data, version, spoil } = store;
   const dir = directory(data);
   const playedStages = data.season.stages.filter((st) => state.qualifiers[st.stage - 1]!.length > 0).map((st) => st.stage);
@@ -52,7 +53,7 @@ export function Standings({ store }: { store: SeasonStore }) {
                 <tr key={r.team} className={i === champsCut - 1 ? "cut" : ""}>
                   <td className="rank">{i + 1}</td>
                   <td className="left">
-                    <TeamTag team={dir.team(r.team)} />
+                    <TeamLink team={dir.team(r.team)} nav={nav} />
                   </td>
                   <td>
                     <b>{r.points}</b>
@@ -87,7 +88,7 @@ export function Standings({ store }: { store: SeasonStore }) {
                 <tr key={r.team}>
                   <td className="rank">{i + 1}</td>
                   <td className="left">
-                    <TeamTag team={dir.team(r.team)} />
+                    <TeamLink team={dir.team(r.team)} nav={nav} />
                   </td>
                   <td>
                     <b>

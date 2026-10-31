@@ -118,6 +118,10 @@ export interface SeasonRecap {
   goalsMet: number;
   goalsTotal: number;
   verdict: OwnerVerdict;
+  /** Your best new arrivals that season (signed, traded for or promoted). */
+  signings?: { player: string; handle: string; kd: number; maps: number }[];
+  /** Awards your players won. */
+  awards?: string[];
 }
 
 export type OwnerVerdict = "extended" | "satisfied" | "on notice" | "fired";

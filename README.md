@@ -40,6 +40,14 @@ npm run dev          # UI dev server
 
 ## UI (`npm run dev`, then open http://localhost:5173)
 
+- **Saves:** your season autosaves in the browser (IndexedDB) after every change and comes back when you reopen the site. **Saves** has three named slots, plus Export/Import file for backups or moving between browsers. Saves drop map event logs because matches replay exactly from the seed.
+- **Share:** copies a link with the season, seed and settings (and, in Commissioner mode, how far it's been simmed). Opening it rebuilds the exact same season. GM decisions aren't in the link, so a GM link starts that season fresh.
+- **Theme:** ◐ cycles auto, light and dark; ◑ toggles high contrast. Both are remembered per browser.
+- **Odds:** simulates the rest of the season 50, 100 or 250 times from where it stands (in the background worker) and shows each team's chance to win Champs, make Champs and win a Major, plus average points and rank. Played results stay fixed, and it waits while a result is unwatched.
+- **Records:** head-to-head between any two teams, the biggest upsets (wins over teams four or more places higher on preseason roster strength), the best single maps, the longest win streaks and the most sweeps.
+- **Team pages:** click a team name (standings, the points table, match headers, records, odds) for its record, lineup and former players, map records, roster strength by stage and results.
+- **About:** data sources, how ratings work, what's verified and what's approximate, and a changelog.
+- **Phones:** the layout stacks under 640px wide, with no sideways page scrolling. Wide tables scroll inside their card.
 - **Header:** the season line, then the status line with Sim week, Sim stage and Sim season. **New season** opens the setup panel: game, seed, Commissioner or GM (and team), Historical/Randomized ratings, Full season or Champs only, and Chaos. **Save** and **Load** export and import the whole season as JSON. **Chaos** gives every team a hot-or-cold form swing each weekend (event or qualifier week), so upsets and surprise runs are far more common; it's saved with the season and stays reproducible from the seed. **Champs only** skips the regular season and plays Champs from that year's real seeds (2026 also starts from the real final points).
 - **Watchlist:** every match on the Schedule that hasn't been played has a **Watch** button. Events have **Watch final** and **Watch all**. Simming plays everything else instantly, but a watched match keeps its result hidden everywhere (standings, points, brackets, and bracket matches that depend on it) and the sim stops with a "Ready to watch" banner. Watching plays the series map by map, with future maps shown as "—". You can also skip to the result, or skip them all.
 - **Schedule:** stage by stage, week by week, with the map pool for each week; Minors and Majors appear inline with their real results for comparison.
@@ -67,7 +75,16 @@ Choose **GM** in the header, pick a team, then start a new season.
 
 ### The front office (`src/engine/gm/`, Office tab)
 
-The Office has sub-tabs: **Overview** (inbox and goals, plus the off-season when a season ends), **This week** (scouting, prep and the practice planner), **Calendar**, **Market** (offers, contracts, trades), **Staff**, **Academy** and **Awards**.
+- **Difficulty** (picked at New season): Easy (bigger cap, friendlier trades, patient owner), Normal, Hard (tighter cap, tougher AI, impatient owner, bigger morale drops) and Sandbox (no cap, can't be fired).
+- **Chemistry:** every pair of players builds chemistry with each map they play together; real teammates start partway and new arrivals start at zero. Full chemistry is worth +0.01 skill and none costs −0.01.
+- **Role balance:** a starting four needs an AR and an SMG player (flex covers either), or it takes a −0.012 form penalty. My Team shows both as you pick the lineup.
+- **AI teams that move:** AI teams sometimes trade with each other when a window opens. Past the real seasons, AI players aged 32 and over retire and are replaced from free agency each off-season.
+- **Achievements:** twelve milestones that carry through a dynasty, such as a reverse sweep, a perfect stage, beating the favourite, winning Champs, or an academy graduate winning an award.
+- **Season review:** at season's end the Office shows your finish, record, titles, best win, worst loss, top performer, event finishes and awards, with a downloadable share-card image.
+- **Career** (Office tab): totals across the dynasty, owner verdicts, achievements, season by season, best signings and awards won.
+- A **Getting started** guide on the Office Overview (dismissable), and **?** tooltips on the Office numbers.
+
+The Office has sub-tabs: **Overview** (inbox and goals, plus the off-season when a season ends), **This week** (scouting, prep and the practice planner), **Calendar**, **Market** (offers, contracts, trades), **Staff**, **Academy** and **Awards** and **Career**.
 
 - **Calendar:** every step with its date, your qualifier matches (with results once watched, 🔥 for rivals), and the windows. Signing and trade windows open before the season and after each Major. The window before Champs is signings only, which is the **trade deadline**.
 - **Storylines:** win and loss streaks make the news. Rivalries heat up each time you meet a team (more for close series and losses), and some real ones start warm (OpTic and FaZe, for example). Rivalry results swing morale ±2. After Majors, Champs, rivalry games and streaks you get a **press conference** with three answers: back the players (+3 morale), stay humble (+2 owner trust), or call out the opponent (+5 morale for starters, −2 trust, rivalry heats up).

@@ -14,6 +14,10 @@ import {
   academyPayroll,
   awardLines,
   calendar,
+  capLabel,
+  capOf,
+  chemistryOf,
+  roleBalance,
   gmChoose,
   gmFire,
   gmHire,
@@ -76,7 +80,10 @@ import {
 import { stepLabel, type Nav } from "../App";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
-import { PlayerLink, TeamTag } from "./common";
+import { Help, PlayerLink, TeamTag } from "./common";
+import { hintSeen, markHintSeen } from "../theme";
+import { Career } from "./Career";
+import { SeasonReviewCard } from "./Review";
 
 /** The pool phase of the next step (for prep and scouting). */
 function nextPhase(state: SeasonState): PoolPhase | null {
@@ -96,7 +103,7 @@ const STATUS_COLOR: Record<GoalStatus, string> = {
   failed: "var(--ban)",
 };
 
-type OfficeTab = "overview" | "week" | "calendar" | "market" | "staff" | "academy" | "awards";
+type OfficeTab = "overview" | "week" | "calendar" | "market" | "staff" | "academy" | "awards" | "career";
 const OFFICE_TABS: { id: OfficeTab; label: string }[] = [
   { id: "overview", label: "Overview" },
   { id: "week", label: "This week" },
@@ -105,6 +112,7 @@ const OFFICE_TABS: { id: OfficeTab; label: string }[] = [
   { id: "staff", label: "Staff" },
   { id: "academy", label: "Academy" },
   { id: "awards", label: "Awards" },
+  { id: "career", label: "Career" },
 ];
 
 export function Office({ store, nav }: { store: SeasonStore; nav: Nav }) {
@@ -134,24 +142,47 @@ export function Office({ store, nav }: { store: SeasonStore; nav: Nav }) {
         </div>
         <div className="kpis">
           <div className="kpi">
-            <span className="l">Owner trust</span>
+            <span className="l">
+              Owner trust
+              <Help text="0-100. Moves after every Major and Champs against where your roster was expected to finish. Too low at season's end and you can be fired." />
+            </span>
             <span className="v">{spoil.active ? "—" : `${gm.trust ?? 60}/100`}</span>
             <Meter value={spoil.active ? 0 : (gm.trust ?? 60)} />
           </div>
           <div className="kpi">
-            <span className="l">Payroll</span>
-            <span className="v">
-              ${pay}k <span className="muted">/ ${SALARY_CAP}k</span>
+            <span className="l">
+              Payroll
+              <Help text="Player salaries plus dead money from releases. Stay under the cap to sign anyone asking more than the minimum. The cap depends on difficulty." />
             </span>
-            <Meter value={(100 * pay) / SALARY_CAP} warn={pay > SALARY_CAP} />
+            <span className="v">
+              ${pay}k <span className="muted">/ {capLabel(state)}</span>
+            </span>
+            <Meter value={Number.isFinite(capOf(state)) ? (100 * pay) / capOf(state) : 0} warn={pay > capOf(state)} />
+          </div>
+          <div className="kpi" title="Chemistry grows with every map your starters play together; roles need an AR and an SMG (flex covers either)">
+            <span className="l">
+              Chemistry
+              <Help text="Grows with every map your starting four play together (50 maps per pair for full). Worth up to ±1 skill point. A lineup without an AR and an SMG player costs a little more." />
+            </span>
+            <span className="v">
+              {chemistryOf(state, gm.starters)}/100
+              {!roleBalance(state, data, gm.starters).ok && <span style={{ color: "var(--ban)", fontSize: 12 }}> · {roleBalance(state, data, gm.starters).note}</span>}
+            </span>
+            <Meter value={chemistryOf(state, gm.starters)} />
           </div>
           <div className="kpi">
-            <span className="l">Fatigue</span>
+            <span className="l">
+              Fatigue
+              <Help text="Scrims and grinding add fatigue; rest and lighter weeks clear it. Above 50 it costs form on every map." />
+            </span>
             <span className="v">{fatigue}/100</span>
             <Meter value={fatigue} warn={fatigue > 50} />
           </div>
           <div className="kpi">
-            <span className="l">Streak</span>
+            <span className="l">
+              Streak
+              <Help text="Your current run of series wins (W) or losses (L). Long streaks make the news and trigger press conferences." />
+            </span>
             <span className="v">{spoil.active ? "—" : streak > 0 ? `W${streak}` : streak < 0 ? `L${-streak}` : "—"}</span>
           </div>
           <div className="kpi">
@@ -176,6 +207,8 @@ export function Office({ store, nav }: { store: SeasonStore; nav: Nav }) {
 
       {tab === "overview" && (
         <>
+          <Guide />
+          {done && !spoil.active && <SeasonReviewCard store={store} />}
           {done && !spoil.active && <OffSeason store={store} />}
           <div className="grid2" style={{ marginTop: 12 }}>
             <Inbox store={store} />
@@ -207,6 +240,7 @@ export function Office({ store, nav }: { store: SeasonStore; nav: Nav }) {
       {tab === "staff" && <StaffView store={store} />}
       {tab === "academy" && <AcademyView store={store} nav={nav} />}
       {tab === "awards" && <AwardsView store={store} nav={nav} />}
+      {tab === "career" && <Career store={store} />}
     </div>
   );
 }
@@ -523,7 +557,7 @@ function Finances({ store, nav }: { store: SeasonStore; nav: Nav }) {
       <div className="card-head">
         <h3>Contracts</h3>
         <span className="sub">
-          Payroll ${payroll(state)}k of ${SALARY_CAP}k
+          Payroll ${payroll(state)}k of {capLabel(state)}
           {gm.deadCap ? ` (incl. $${gm.deadCap}k dead money from releases)` : ""}. Players asking ${MIN_EXCEPTION}k or less can always be signed.
         </span>
       </div>
@@ -1295,6 +1329,49 @@ function AwardsView({ store, nav }: { store: SeasonStore; nav: Nav }) {
         )}
       </div>
       {state.dynasty && state.dynasty.history.length > 0 && <History state={state} />}
+    </div>
+  );
+}
+
+/** A first-run guide to GM mode, dismissed per browser. */
+function Guide() {
+  const [open, setOpen] = useState(() => !hintSeen("gm-guide"));
+  if (!open) return null;
+  return (
+    <div className="card guide" style={{ marginTop: 12 }}>
+      <div className="card-head">
+        <h3>Getting started as GM</h3>
+        <div className="spacer" />
+        <button
+          className="btn small"
+          onClick={() => {
+            markHintSeen("gm-guide");
+            setOpen(false);
+          }}
+        >
+          Got it
+        </button>
+      </div>
+      <ol>
+        <li>
+          <b>This week:</b> read the scouting report, pick a prep focus and plan scrims before each sim.
+        </li>
+        <li>
+          <b>My Team:</b> set your four starters. Keep an AR and an SMG player in the lineup, and watch chemistry and morale.
+        </li>
+        <li>
+          <b>Sim week:</b> your matches stop for your veto (or turn on auto-veto), then wait on a Match Day banner until you watch or skip them.
+        </li>
+        <li>
+          <b>Inbox:</b> answer press conferences, trade offers and player demands. Windows open before the season and after each Major.
+        </li>
+        <li>
+          <b>Market, Staff and Academy:</b> sign, trade, hire a coach and an analyst, and develop prospects, all within the cap and the staff budget.
+        </li>
+        <li>
+          <b>Season's end:</b> read the review, re-sign players and carry the franchise into the next season. Your progress autosaves.
+        </li>
+      </ol>
     </div>
   );
 }

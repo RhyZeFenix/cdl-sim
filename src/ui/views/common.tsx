@@ -42,3 +42,22 @@ export function PlayerLink({ id, name, nav }: { id: string; name: string; nav?: 
     </button>
   );
 }
+
+/** A small "?" that explains something on hover or focus. */
+export function Help({ text }: { text: string }) {
+  return (
+    <span className="help" tabIndex={0} role="note" aria-label={text} data-tip={text}>
+      ?
+    </span>
+  );
+}
+
+/** A team name that opens the team's page. */
+export function TeamLink({ team, nav, full = true }: { team: TeamInfo; nav?: { openTeam(id: string): void }; full?: boolean }) {
+  if (!nav) return <TeamTag team={team} full={full} />;
+  return (
+    <button className="linklike team-link" onClick={() => nav.openTeam(team.id)} title={`Open ${team.name}`}>
+      <TeamTag team={team} full={full} />
+    </button>
+  );
+}

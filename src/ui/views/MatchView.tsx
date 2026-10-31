@@ -152,14 +152,18 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
             <span className="abbr" style={{ alignSelf: "flex-start" }}>
               {t0.abbr}
             </span>
-            <span className="big">{t0.name}</span>
+            <button className="linklike big" onClick={() => nav.openTeam(t0.id)}>
+              {t0.name}
+            </button>
           </div>
           <div className="sscore">
             {shownScore[0]}–{shownScore[1]}
           </div>
           <div className={`side right ${!live && winnerSide === 0 ? "lost" : ""}`}>
             <span className="abbr">{t1.abbr}</span>
-            <span className="big">{t1.name}</span>
+            <button className="linklike big" onClick={() => nav.openTeam(t1.id)}>
+              {t1.name}
+            </button>
           </div>
         </div>
       </div>

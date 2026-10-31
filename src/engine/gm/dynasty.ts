@@ -8,6 +8,7 @@ import {
   isDone,
   playerIndex,
   playerInfo,
+  playerLines,
   pointsTable,
   type SeasonState,
 } from "../season/season";
@@ -18,6 +19,9 @@ import { MORALE_START } from "./morale";
 import { ordinal, ownerVerdict } from "./owner";
 import type { Contract, SeasonRecap } from "./types";
 import { askFor, askingSalary, baseAge, progressRatings, progression } from "./values";
+import { createRng } from "../rng";
+import { offseasonAiMoves } from "./aimoves";
+import { achievementsAfterStep } from "./achievements";
 
 /**
  * Which franchise slot became which team the next season (renames, relocations and
@@ -89,7 +93,19 @@ export function seasonRecap(state: SeasonState, data: SeasonData): SeasonRecap {
   const wins = mine.filter((r) => r.winner === gm.team).length;
   const champs = state.events.find((e) => e.kind === "championship");
   const v = ownerVerdict(state, data);
+  const arrived = new Set([...gm.moves.filter((m) => m.action === "sign" || m.action === "trade-in").map((m) => m.player), ...gm.roster.filter((id) => id.startsWith("pro-"))]);
+  const lines = playerLines(state, mine.map((r) => r.id)).filter((l) => arrived.has(l.player) && l.team === gm.team && l.maps >= 3);
+  const a = state.awards;
+  const awards = a
+    ? [
+        ...(a.mvp && gm.roster.includes(a.mvp) ? [`MVP: ${playerInfo(state, data, a.mvp)?.handle}`] : []),
+        ...(a.rookie && gm.roster.includes(a.rookie) ? [`Rookie of the Year: ${playerInfo(state, data, a.rookie)?.handle}`] : []),
+        ...a.allCdl.flat().filter((id) => gm.roster.includes(id)).map((id) => `All-CDL: ${playerInfo(state, data, id)?.handle}`),
+      ]
+    : [];
   return {
+    signings: lines.slice(0, 3).map((l) => ({ player: l.player, handle: playerInfo(state, data, l.player)?.handle ?? l.player, kd: Math.round(l.kd * 100) / 100, maps: l.maps })),
+    awards,
     year: state.dynasty?.year ?? 1,
     label: seasonLabel(state, data),
     team: gm.team,
@@ -198,7 +214,11 @@ export function startNextSeason(prev: SeasonState, prevData: SeasonData, opts: N
     // Rivalries cool off over the summer.
     rivals: Object.fromEntries(Object.entries(gm.rivals ?? {}).map(([t, h]) => [FRANCHISE_LINEAGE[prev.seasonId]?.[t] ?? t, Math.round(h / 2)])),
     academy: gm.academy ?? [],
+    together: gm.together,
+    achievements: gm.achievements,
   };
+  // Past the real data the league reshuffles: retirements, then a couple of AI trades.
+  const aiNotes = repeat ? offseasonAiMoves(state, data, year, createRng(`${seed}/offseason`)) : [];
   state.reputation = prev.reputation;
   initFranchise(state, data);
   // initFranchise drew a fresh prospect pool; academy players join it a year older and better.
@@ -218,7 +238,9 @@ export function startNextSeason(prev: SeasonState, prevData: SeasonData, opts: N
       `Last season: ${recap.label}, ${ordinal(recap.rank)} in points, ` +
       `${recap.goalsMet}/${recap.goalsTotal} goals. ` +
       (left.length ? `Leaving as free agents: ${left.join(", ")}. ` : "Nobody left. ") +
-      (team !== gm.team ? `The franchise now plays as ${data.season.teams.find((t) => t.id === team)!.name}.` : ""),
+      (team !== gm.team ? `The franchise now plays as ${data.season.teams.find((t) => t.id === team)!.name}. ` : "") +
+      (aiNotes.length ? `Around the league: ${aiNotes.join("; ")}.` : ""),
   });
+  achievementsAfterStep(state, data);
   return state;
 }

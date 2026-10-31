@@ -4,7 +4,7 @@ import { stepLabel, type Nav } from "../App";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
 import { PointsRace } from "./PointsRace";
-import { PlayerLink, TeamTag } from "./common";
+import { PlayerLink, TeamLink, TeamTag } from "./common";
 
 export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
   const { state, data, version, done, spoil } = store;
@@ -178,7 +178,7 @@ export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
                 <tr key={r.team}>
                   <td className="rank">{i + 1}</td>
                   <td className="left">
-                    <TeamTag team={dir.team(r.team)} full={false} />
+                    <TeamLink team={dir.team(r.team)} full={false} nav={nav} />
                   </td>
                   {spoil.history
                     .filter((h) => h.label !== "Start" && !/^S\d W\d+$/.test(h.label))

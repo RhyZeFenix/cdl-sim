@@ -17,7 +17,9 @@ import {
   payroll,
   shownMorale,
   moraleWord,
-  SALARY_CAP,
+  capLabel,
+  chemistryOf,
+  roleBalance,
   type Player,
 } from "../../engine";
 import { stepLabel, type Nav } from "../App";
@@ -143,7 +145,7 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
         <h3 style={{ margin: "4px 0 8px" }}>
           Roster ({gm.roster.length}/{GM_ROSTER_MAX}) · pick four starters
           <span className="sub" style={{ marginLeft: 8, fontWeight: 400 }}>
-            Payroll ${payroll(state)}k of ${SALARY_CAP}k
+            Payroll ${payroll(state)}k of {capLabel(state)}
           </span>
         </h3>
         <div className="scroll-x">
@@ -208,6 +210,12 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
           <span className="sub">
             {starters.length !== 4 ? `Select exactly 4 starters (${starters.length} selected).` : draft ? "Unsaved changes." : "Lineup is set; it applies from your next match."}
           </span>
+          {starters.length === 4 && (
+            <span className="sub" title="Chemistry grows with every map these four play together. A lineup needs an AR and an SMG player (flex covers either).">
+              · Chemistry <b>{chemistryOf(state, starters)}</b>/100 · Roles {roleBalance(state, data, starters).ar} AR, {roleBalance(state, data, starters).smg} SMG, {roleBalance(state, data, starters).flex} flex
+              {!roleBalance(state, data, starters).ok && <b style={{ color: "var(--ban)" }}> · {roleBalance(state, data, starters).note} (form penalty)</b>}
+            </span>
+          )}
         </div>
       </div>
 

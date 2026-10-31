@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { SEASON_IDS, loadSeasonData, seasonLabel, visibleInbox, type Season, type SeasonId, type Step } from "../engine";
+import { DIFFICULTY, SEASON_IDS, advance, isDone, loadSeasonData, seasonLabel, visibleInbox, type Difficulty, type Season, type SeasonId, type Step } from "../engine";
 import { randomSeed, useSeason, type SeasonConfig, type SimKind } from "./useSeason";
 import { Standings } from "./views/Standings";
 import { Schedule } from "./views/Schedule";
@@ -12,13 +12,33 @@ import { BetweenMaps } from "./views/BetweenMaps";
 import { MatchDayBanner } from "./views/MatchDay";
 import { Office } from "./views/Office";
 import { PlayerPage } from "./views/PlayerPage";
+import { SavesPanel } from "./views/SavesPanel";
+import { TeamPage } from "./views/TeamPage";
+import { Records } from "./views/Records";
+import { Odds } from "./views/Odds";
+import { About } from "./views/About";
+import { applyTheme, savedContrast, savedTheme, type Theme } from "./theme";
+import { readShare, shareUrl } from "./share";
 
-type Tab = "office" | "myteam" | "schedule" | "standings" | "brackets" | "summary";
+type Tab = "office" | "myteam" | "schedule" | "standings" | "brackets" | "odds" | "records" | "summary" | "about";
+
+const TAB_LABEL: Record<Tab, string> = {
+  office: "Office",
+  myteam: "My Team",
+  schedule: "Schedule",
+  standings: "Standings",
+  brackets: "Brackets",
+  odds: "Odds",
+  records: "Records",
+  summary: "Summary",
+  about: "About",
+};
 
 export interface Nav {
   openMatch(id: string, opts?: { watch?: boolean }): void;
   openBracket(eventIndex: number): void;
   openPlayer(id: string): void;
+  openTeam(id: string): void;
 }
 
 export function stepLabel(season: Season, step: Step | undefined): string {
@@ -43,36 +63,84 @@ export function App() {
   const [tab, setTab] = useState<Tab>("schedule");
   const [match, setMatch] = useState<{ id: string; watch: boolean } | null>(null);
   const [player, setPlayer] = useState<string | null>(null);
+  const [teamPage, setTeamPage] = useState<string | null>(null);
+  const [theme, setTheme] = useState<Theme>(savedTheme);
+  const [contrast, setContrast] = useState(savedContrast);
+  useEffect(() => applyTheme(theme, contrast), [theme, contrast]);
   const [bracketEvent, setBracketEvent] = useState<number | null>(null);
   const [setupOpen, setSetupOpen] = useState(false);
+  const [savesOpen, setSavesOpen] = useState(false);
+  const [notice, setNotice] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
   const lastKind = useRef<SimKind>("step");
   const draftData = loadSeasonData(draft.seasonId);
 
   useEffect(() => setDraft(store.config), [store.config]);
+
+  // On open: a shared link wins; otherwise pick up the autosave.
   useEffect(() => {
-    const warn = (e: BeforeUnloadEvent) => {
-      if (state.next > 0) e.preventDefault();
-    };
-    window.addEventListener("beforeunload", warn);
-    return () => window.removeEventListener("beforeunload", warn);
-  }, [state]);
+    const share = readShare();
+    if (share) {
+      store.start(share.config);
+      if (share.step > 0) {
+        store.mutate((s, d) => {
+          while (s.next < share.step && !isDone(s) && advance(s, d));
+        });
+      }
+      setTab(share.config.gmTeam ? "office" : "schedule");
+      setNotice(`Opened a shared season${share.step ? ` at step ${share.step}` : ""}. It's the same season the link was made from.`);
+      history.replaceState(null, "", location.pathname + location.search);
+      return;
+    }
+    store
+      .load("autosave")
+      .then((ok) => {
+        if (!ok) return;
+        setNotice("Picked up where you left off (autosave). Use New season to start fresh.");
+      })
+      .catch(() => {});
+    // Only on first load.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  useEffect(() => {
+    if (store.state.gm) setTab((t) => (t === "schedule" ? "office" : t));
+    // When a save loads into GM mode, open the Office.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [store.config.gmTeam]);
+
+  const copyShare = async () => {
+    const url = shareUrl(store.config, state.gm ? 0 : state.next);
+    try {
+      await navigator.clipboard.writeText(url);
+      setNotice(state.gm ? "Link copied. It starts this GM season from the beginning (your decisions aren't in the link)." : "Link copied: it opens this season at this point.");
+    } catch {
+      setNotice(url);
+    }
+  };
 
   const nav: Nav = {
     openMatch: (id, opts) => {
       setPlayer(null);
+      setTeamPage(null);
       setMatch({ id, watch: !!opts?.watch });
     },
     openBracket: (i) => {
       setBracketEvent(i);
       setMatch(null);
       setPlayer(null);
+      setTeamPage(null);
       setTab("brackets");
     },
     openPlayer: (id) => {
       setMatch(null);
+      setTeamPage(null);
       setPlayer(id);
+    },
+    openTeam: (id) => {
+      setMatch(null);
+      setPlayer(null);
+      setTeamPage(id);
     },
   };
 
@@ -143,23 +211,66 @@ export function App() {
             {seasonLabel(state, data)} · seed <b>{state.options.seed}</b> · {state.options.ratingMode}
             {state.options.chaos ? <> · <b>Chaos</b></> : null}
             {state.options.champsOnly ? <> · <b>Champs only</b> (real seeds)</> : null}
-            {state.gm ? <> · GM: <b>{data.season.teams.find((t) => t.id === state.gm!.team)?.abbr}</b></> : <> · Commissioner</>}
+            {state.gm ? (
+              <>
+                {" "}
+                · GM: <b>{data.season.teams.find((t) => t.id === state.gm!.team)?.abbr}</b> · {DIFFICULTY[state.options.difficulty ?? "normal"].label}
+              </>
+            ) : (
+              <> · Commissioner</>
+            )}
             {state.gm && state.options.champsOnly && !data.season.historical?.champsSeeds?.includes(state.gm.team) ? (
               <span className="muted"> (didn't make the real Champs)</span>
             ) : null}
           </span>
           <div className="spacer" />
-          <button className={`btn ${setupOpen ? "primary" : ""}`} aria-expanded={setupOpen} onClick={() => setSetupOpen(!setupOpen)}>
+          <button
+            className={`btn ${setupOpen ? "primary" : ""}`}
+            aria-expanded={setupOpen}
+            onClick={() => {
+              setSetupOpen(!setupOpen);
+              setSavesOpen(false);
+            }}
+          >
             New season
           </button>
-          <button className="btn" onClick={store.exportJson} title="Download this season as a JSON file">
-            Save
+          <button
+            className={`btn ${savesOpen ? "primary" : ""}`}
+            aria-expanded={savesOpen}
+            onClick={() => {
+              setSavesOpen(!savesOpen);
+              setSetupOpen(false);
+            }}
+            title="Save slots, autosave and file backups"
+          >
+            Saves
           </button>
-          <button className="btn" onClick={() => fileRef.current?.click()} title="Load a saved season">
-            Load
+          <button className="btn" onClick={copyShare} title="Copy a link that opens this exact season">
+            Share
+          </button>
+          <button
+            className="btn icon"
+            onClick={() => setTheme(theme === "auto" ? "light" : theme === "light" ? "dark" : "auto")}
+            title={`Theme: ${theme} (click to change)`}
+            aria-label={`Theme: ${theme}`}
+          >
+            {theme === "auto" ? "◐" : theme === "light" ? "☀" : "☾"}
+          </button>
+          <button className={`btn icon ${contrast ? "primary" : ""}`} aria-pressed={contrast} onClick={() => setContrast(!contrast)} title="High contrast" aria-label="High contrast">
+            ◑
           </button>
           <input ref={fileRef} type="file" accept="application/json,.json" hidden onChange={(e) => onImport(e.target.files?.[0])} />
         </div>
+
+        {savesOpen && <SavesPanel store={store} onImportFile={() => fileRef.current?.click()} onClose={() => setSavesOpen(false)} />}
+        {notice && (
+          <div className="notice">
+            <span>{notice}</span>
+            <button className="btn small" onClick={() => setNotice(null)} aria-label="Dismiss">
+              ✕
+            </button>
+          </div>
+        )}
 
         {setupOpen && (
           <div className="setup">
@@ -212,6 +323,18 @@ export function App() {
                 )}
               </span>
             </div>
+            {draft.gmTeam && (
+              <div className="field">
+                Difficulty
+                <span className="seg" role="group" aria-label="Difficulty">
+                  {(Object.keys(DIFFICULTY) as Difficulty[]).map((d) => (
+                    <button key={d} aria-pressed={(draft.difficulty ?? "normal") === d} title={DIFFICULTY[d].blurb} onClick={() => setDraft({ ...draft, difficulty: d })}>
+                      {DIFFICULTY[d].label}
+                    </button>
+                  ))}
+                </span>
+              </div>
+            )}
             <div className="field">
               Ratings
               <span className="seg" role="group" aria-label="Ratings">
@@ -299,15 +422,17 @@ export function App() {
           <MatchView store={store} seriesId={match.id} autoWatch={match.watch} onBack={() => setMatch(null)} nav={nav} />
         ) : player ? (
           <PlayerPage store={store} id={player} nav={nav} onBack={() => setPlayer(null)} />
+        ) : teamPage ? (
+          <TeamPage store={store} team={teamPage} nav={nav} onBack={() => setTeamPage(null)} />
         ) : (
           <>
             {spoil.active && <MatchDayBanner store={store} onWatch={(id) => setMatch({ id, watch: true })} />}
             <nav className="tabs" role="tablist">
-              {(["office", "myteam", "schedule", "standings", "brackets", "summary"] as const)
+              {(["office", "myteam", "schedule", "standings", "brackets", "odds", "records", "summary", "about"] as const)
                 .filter((t) => (t !== "myteam" && t !== "office") || state.gm)
                 .map((t) => (
                   <button key={t} role="tab" aria-selected={tab === t} onClick={() => setTab(t)}>
-                    {t === "myteam" ? "My Team" : t[0]!.toUpperCase() + t.slice(1)}
+                    {TAB_LABEL[t]}
                     {t === "office" && unread > 0 ? <span className="next-tag" style={{ marginLeft: 6 }}>{unread}</span> : null}
                   </button>
                 ))}
@@ -315,9 +440,12 @@ export function App() {
             {tab === "office" && state.gm && <Office store={store} nav={nav} />}
             {tab === "myteam" && state.gm && <MyTeam store={store} nav={nav} />}
             {tab === "schedule" && <Schedule store={store} nav={nav} />}
-            {tab === "standings" && <Standings store={store} />}
+            {tab === "standings" && <Standings store={store} nav={nav} />}
             {tab === "brackets" && <Brackets store={store} nav={nav} selected={bracketEvent} onSelect={setBracketEvent} />}
             {tab === "summary" && <Summary store={store} nav={nav} />}
+            {tab === "odds" && <Odds store={store} nav={nav} />}
+            {tab === "records" && <Records store={store} nav={nav} />}
+            {tab === "about" && <About store={store} />}
           </>
         )}
       </main>

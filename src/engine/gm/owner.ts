@@ -4,6 +4,7 @@
 import type { SeasonData } from "../data/registry";
 import { isDone, pointsTable, teamLineup, type SeasonState } from "../season/season";
 import { ovrOf } from "./contracts";
+import { difficultyOf } from "./difficulty";
 import type { OwnerGoal, OwnerVerdict } from "./types";
 
 /** Teams that make Champs. */
@@ -101,7 +102,7 @@ export function ownerVerdict(state: SeasonState, data: SeasonData): { met: numbe
   let verdict: OwnerVerdict;
   if (goals.length && met === goals.length) verdict = "extended";
   else if (met * 2 >= goals.length) verdict = "satisfied";
-  else if (trust < 30) verdict = "fired";
+  else if (trust < difficultyOf(state).fireBelow) verdict = "fired";
   else verdict = "on notice";
   return { met, total: goals.length, verdict };
 }

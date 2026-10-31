@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CDL Season Sim</title>
+    <script>
+      // Apply the saved theme before the first paint (no flash).
+      try {
+        var t = localStorage.getItem("cdl-sim:theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+        if (localStorage.getItem("cdl-sim:contrast") === "high") document.documentElement.setAttribute("data-contrast", "high");
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

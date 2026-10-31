@@ -10,12 +10,14 @@ import {
   gmCanMakeMoves,
   nextStepDate,
   playerInfo,
+  startingElsewhere,
   teamLineup,
   type SeasonState,
 } from "../season/season";
 import { pushInbox } from "./inbox";
 import type { Contract } from "./types";
-import { askFor, askingSalary, MIN_EXCEPTION, overall, SALARY_CAP, tradeValue } from "./values";
+import { askFor, askingSalary, MIN_EXCEPTION, overall, tradeValue } from "./values";
+import { capLabel, capOf, difficultyOf } from "./difficulty";
 
 export const ovrOf = (state: SeasonState, data: SeasonData, id: string): number => {
   const p = playerInfo(state, data, id);
@@ -49,13 +51,13 @@ export function payroll(state: SeasonState): number {
   return c + (gm.deadCap ?? 0);
 }
 
-export const capSpace = (state: SeasonState) => SALARY_CAP - payroll(state);
+export const capSpace = (state: SeasonState) => capOf(state) - payroll(state);
 
 /** Why a signing at this salary isn't allowed (null if it is). */
 export function signingProblem(state: SeasonState, salary: number): string | null {
   if (salary <= MIN_EXCEPTION) return null;
   const space = capSpace(state);
-  if (salary > space) return `Not enough cap space: $${salary}k needed, $${Math.max(0, space)}k left under the $${SALARY_CAP}k cap.`;
+  if (salary > space) return `Not enough cap space: $${salary}k needed, $${Math.max(0, space)}k left under the ${capLabel(state)} cap.`;
   return null;
 }
 
@@ -80,7 +82,8 @@ export function aiRoster(state: SeasonState, data: SeasonData, team: string): st
   if (set) return set.filter((id) => !owned.has(id));
   const starters = teamLineup(state, data, team, nextStepDate(state, data)).filter((id) => !id.startsWith("repl-"));
   const roster = data.rosters.teams.find((t) => t.team === team);
-  const bench = (roster?.players ?? []).map((p) => p.id).filter((id) => !starters.includes(id) && !owned.has(id));
+  const elsewhere = startingElsewhere(data, team, nextStepDate(state, data));
+  const bench = (roster?.players ?? []).map((p) => p.id).filter((id) => !starters.includes(id) && !owned.has(id) && !elsewhere.has(id));
   return [...starters, ...bench];
 }
 
@@ -124,12 +127,13 @@ export function evaluateTrade(state: SeasonState, data: SeasonData, offer: Trade
   const incoming = get.reduce((s, id) => s + askingSalary(ovrOf(state, data, id)), 0);
   const outgoing = give.reduce((s, id) => s + (salaryOf(id) ?? 0), 0);
   const payrollAfter = payroll(state) - outgoing + incoming;
-  if (payrollAfter > SALARY_CAP && incoming > outgoing) {
-    return { accepted: false, reason: `That would put you $${payrollAfter - SALARY_CAP}k over the cap.`, valueIn, valueOut, payrollAfter };
+  if (payrollAfter > capOf(state) && incoming > outgoing) {
+    return { accepted: false, reason: `That would put you $${payrollAfter - capOf(state)}k over the cap.`, valueIn, valueOut, payrollAfter };
   }
   // Teams want to win a trade, and want more for their best player.
   const best = ai.slice().sort((a, b) => ovrOf(state, data, b) - ovrOf(state, data, a))[0];
-  const need = get.includes(best!) ? 1.3 : 1.1;
+  const [needAny, needBest] = difficultyOf(state).tradeNeed;
+  const need = get.includes(best!) ? needBest : needAny;
   if (valueIn < valueOut * need) {
     const short = Math.ceil(valueOut * need - valueIn);
     return {
@@ -190,7 +194,7 @@ export function executeTrade(state: SeasonState, data: SeasonData, offer: TradeO
     date,
     kind: "trade",
     title: `Trade with ${teamName(data, team)} done`,
-    body: `You sent ${give.map(name).join(", ") || "nothing"} and got ${get.map(name).join(", ") || "nothing"}. Payroll is now $${payroll(state)}k of $${SALARY_CAP}k.`,
+    body: `You sent ${give.map(name).join(", ") || "nothing"} and got ${get.map(name).join(", ") || "nothing"}. Payroll is now $${payroll(state)}k (cap ${capLabel(state)}).`,
   });
   gm.tradeBlock = (gm.tradeBlock ?? []).filter((id) => !give.includes(id));
 }

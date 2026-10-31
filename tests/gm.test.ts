@@ -1,9 +1,11 @@
 import { describe, expect, it } from "vitest";
 import {
+  TUNING,
   advance,
   advanceSeason,
   advanceStage,
   createSeason,
+  eventForm,
   freeAgents,
   gmCanMakeMoves,
   gmRelease,
@@ -81,6 +83,26 @@ describe("GM mode", () => {
     const re = replaySeries(s, data, id);
     expect(re.veto).toEqual(rec.veto);
     expect(re.score).toEqual(rec.score);
+  });
+
+  it("with per-event form on, the GM veto and replays still match the played series", () => {
+    const prev = TUNING.eventFormSd;
+    (TUNING as { eventFormSd: number }).eventFormSd = 0.03;
+    try {
+      const s = gmSeason("form");
+      advance(s, data);
+      const id = s.pending!.spec.id;
+      const { result } = resolvePending(s);
+      advanceResolving(s);
+      const rec = s.series[id]!;
+      expect(rec.veto).toEqual(result);
+      expect(replaySeries(s, data, id).score).toEqual(rec.score);
+      const f = eventForm(s, GM, { kind: "qualifiers", stage: 1, week: 1 });
+      expect(f).not.toBe(0);
+      expect(eventForm(s, GM, { kind: "qualifiers", stage: 1, week: 1 })).toBe(f);
+    } finally {
+      (TUNING as { eventFormSd: number }).eventFormSd = prev;
+    }
   });
 
   it("a resumed week counts each qualifier win once", () => {

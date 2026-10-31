@@ -19,6 +19,8 @@ export interface SimTeam {
   players: SimPlayer[];
   /** Map preference modifiers keyed "mode:Map", in skill units (~±0.05). Missing = neutral. */
   mapMods?: Record<string, number>;
+  /** Form for this event or qualifier week, in skill units (hot and cold weekends). */
+  form?: number;
 }
 
 /**

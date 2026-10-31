@@ -11,6 +11,8 @@ export const TUNING = {
   /** Per-map form noise for a player with 0 consistency (scaled down as consistency rises). */
   formSd: 0.1,
   teamFormSd: 0.05,
+  /** Spread of a team's form per event / qualifier week (skill units); set by the backtest. */
+  eventFormSd: 0,
   /** Selection weight for who takes the next gunfight: exp(engageK * skill). */
   engageK: 3,
   /** Stat weights per mode: [slaying, mode stat]. */

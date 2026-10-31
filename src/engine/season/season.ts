@@ -6,6 +6,7 @@ import type { LanEvent, PlacementPoints, Player, Season } from "../data/schema";
 import { mapPoolFor, type PoolPhase } from "../data/pools";
 import { startersOn, type SeasonData, type SeasonId } from "../data/registry";
 import { createRng } from "../rng";
+import { TUNING } from "../sim/tuning";
 import { seriesVetoSetup, simulateSeries, type SeriesResult } from "../sim/series";
 import type { MapEvent, MapResult, Side, SimPlayer, SimTeam } from "../sim/types";
 import { scriptedChooser, VetoSession, type Chooser, type VetoResult } from "../sim/veto";
@@ -286,10 +287,37 @@ export function teamLineup(state: SeasonState, data: SeasonData, teamId: string,
   return starters.map((id, i) => (owned.has(id) ? (bench.shift() ?? `repl-${teamId}-${i + 1}`) : id));
 }
 
-function buildTeam(state: SeasonState, data: SeasonData, teamId: string, lineup: string[]): SimTeam {
+/** Which "weekend" a series belongs to: a qualifier week or a LAN/online event. */
+function formKey(phase: PoolPhase): string {
+  switch (phase.kind) {
+    case "qualifiers":
+      return `s${phase.stage}w${phase.week}`;
+    case "minor":
+    case "major":
+      return `s${phase.stage}-${phase.kind}`;
+    case "championship":
+      return "champs";
+  }
+}
+
+/** A team's form for one weekend: fixed by the season seed, so replays and GM vetoes agree. */
+export function eventForm(state: SeasonState, teamId: string, phase: PoolPhase): number {
+  const sd = TUNING.eventFormSd;
+  if (!sd) return 0;
+  return createRng(state.options.seed).fork(`form/${formKey(phase)}/${teamId}`).normal(0, sd);
+}
+
+function buildTeam(state: SeasonState, data: SeasonData, teamId: string, lineup: string[], phase: PoolPhase): SimTeam {
   const info = teamInfo(data, teamId);
   const mapMods = [...data.rosters.teams, ...data.rosters.guests].find((t) => t.team === teamId)?.mapMods;
-  const team: SimTeam = { id: teamId, name: info.name, abbr: info.abbr, players: lineup.map((id) => simPlayer(data, id)), mapMods };
+  const team: SimTeam = {
+    id: teamId,
+    name: info.name,
+    abbr: info.abbr,
+    players: lineup.map((id) => simPlayer(data, id)),
+    mapMods,
+    form: eventForm(state, teamId, phase),
+  };
   return ratingTransform(team, state.options.ratingMode);
 }
 
@@ -310,7 +338,10 @@ function runSeries(
   const choosers: [Chooser?, Chooser?] = [undefined, undefined];
   if (gmVeto && gmSide !== null) choosers[gmSide] = scriptedChooser(gmVeto.answers);
   const r = simulateSeries({
-    teams: [buildTeam(state, data, spec.teams[0], lineups[0]), buildTeam(state, data, spec.teams[1], lineups[1])],
+    teams: [
+      buildTeam(state, data, spec.teams[0], lineups[0], spec.phase),
+      buildTeam(state, data, spec.teams[1], lineups[1], spec.phase),
+    ],
     bestOf: spec.bestOf,
     season: data.season,
     veto: data.veto,
@@ -477,7 +508,10 @@ export function gmVetoSession(state: SeasonState, data: SeasonData, lineup: stri
     gmSide === 0 ? lineup : teamLineup(state, data, spec.teams[0], spec.date),
     gmSide === 1 ? lineup : teamLineup(state, data, spec.teams[1], spec.date),
   ];
-  const teams: [SimTeam, SimTeam] = [buildTeam(state, data, spec.teams[0], ids[0]), buildTeam(state, data, spec.teams[1], ids[1])];
+  const teams: [SimTeam, SimTeam] = [
+    buildTeam(state, data, spec.teams[0], ids[0], spec.phase),
+    buildTeam(state, data, spec.teams[1], ids[1], spec.phase),
+  ];
   const setup = seriesVetoSetup(teams, createRng(state.options.seed).fork(spec.id));
   const a: Side = gmSide === 0 ? (teamA ?? 0) : setup.aiTeamA;
   const choosers: [Chooser | null, Chooser | null] = [null, null];

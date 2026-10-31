@@ -2,6 +2,8 @@
 
 Call of Duty League season simulator for CDL 2024 (MWIII), 2025 (BO6) and 2026 (BO7).
 
+**Play it:** https://rhyzefenix.github.io/cdl-sim/. Every push to `main` re-runs the tests and redeploys the site (`.github/workflows/pages.yml`).
+
 ## Layout
 
 - `data/seasons/{2024,2025,2026}.json`: teams, map pools, stages (qualifier weeks, Minors, Majors), Champs, points, tiebreakers, real results, sources, and an `unverified` list
@@ -102,6 +104,8 @@ Engine API (`src/engine/season/season.ts`): `advance` returns `undefined` and se
 - **CDL points:** real points rebuilt from the series results (`npx tsx scripts/fetch-results.ts`) and real Major placements.
 
 `--tune key=value,...` overrides any `TUNING` value for a sweep, for example `--tune duelK=2.4,modeDuelScale.snd=2,overload.gapSecs=6:10`. The current `duelK`, `modeDuelScale`, `catchUp` and Overload pacing were chosen this way.
+
+Per-event form (`eventFormSd`, a seeded hot/cold value per team for each qualifier week and event) was tested at 200 seeds and left **off**. At 0.025 it lifts the real 2026 upsets (Paris's Major I win goes from 2.5% to about 10%), but mean event log loss gets worse, from 1.60 to 1.66. That's because the 2025 favorites mostly did win, and form also flattens team spread. Turn it on with `--tune eventFormSd=0.025` if you want chaos.
 
 Overload note: the real 2026 map scores have 4–3 and 3–2 as the most common results, as the original brief said. But nearly half of the winners scored 5 or more, so the sim now produces more captures per map than the brief's "winner on 2–5" target.
 

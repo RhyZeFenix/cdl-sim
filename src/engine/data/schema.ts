@@ -200,6 +200,8 @@ export const Season = z.object({
     .optional(),
   /** Free-text notes on anything still unverified; shown in the UI's data page. */
   unverified: z.array(z.string()),
+  /** Per-map pace and closeness from real results (filled in by the registry, keyed "mode:Map"). */
+  mapFactors: z.record(z.object({ pace: z.number(), close: z.number(), games: z.number() })).optional(),
   sources: z.array(url).min(1),
 });
 export type Season = z.infer<typeof Season>;

@@ -162,12 +162,6 @@ export const MW3: Record<string, Traced> = {
       B(7, 45, 12, 46.5, 1.4),
       B(29, 43, 35, 49.5, 5),
       B(29, 53, 34.5, 59, 5),
-      // The long hangar, with doors on its east side.
-      B(37, 41, 38, 77, 3),
-      B(37, 41, 41, 42, 3),
-      B(45, 41, 48.5, 42, 3),
-      B(47.5, 41, 48.5, 52, 3),
-      B(47.5, 57, 48.5, 77, 3),
       B(20, 56, 25.5, 62, 4),
       B(16, 70, 19, 79, 3),
       B(26, 77.5, 34, 80, 1.4),
@@ -180,6 +174,20 @@ export const MW3: Record<string, Traced> = {
       B(55.5, 35, 58.5, 37, 1.4),
       B(61, 39, 63, 43, 1.4),
       B(50, 58, 52, 60, 1.4),
+    ],
+    buildings: [
+      // The long hangar: doors at the north end, the east side and the south end.
+      {
+        r: [37, 41, 48.5, 77.5],
+        h: 3,
+        doors: [
+          { side: "n", at: 0.6, w: 4 },
+          { side: "e", at: 0.33, w: 5 },
+          { side: "s", at: 0.5, w: 4 },
+          { side: "w", at: 0.5, w: 4 },
+        ],
+        windows: [{ side: "w", at: 0.2, w: 3 }],
+      },
     ],
     spawns: [
       [P(10, 35), P(12, 48), P(17, 25)],

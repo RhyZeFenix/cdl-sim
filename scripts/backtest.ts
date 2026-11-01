@@ -30,7 +30,7 @@ for (const kv of TUNE ? TUNE.split(",") : []) {
   for (const k of keys.slice(0, -1)) obj = obj[k] as Record<string, unknown>;
   const last = keys[keys.length - 1]!;
   if (!(last in obj)) throw new Error(`unknown tuning key ${path}`);
-  obj[last] = value.includes(":") ? value.split(":").map(Number) : Number(value);
+  obj[last] = value === "true" || value === "false" ? value === "true" : value.includes(":") ? value.split(":").map(Number) : Number(value);
 }
 
 const LIQUIPEDIA_SEASON: Record<SeasonId, string> = { "2024": "Season_5", "2025": "Season_6", "2026": "Season_7" };

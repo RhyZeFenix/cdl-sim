@@ -5,6 +5,7 @@
 // Movement is seeded, so the same map always plays back the same way. No three.js here.
 import { createRng, type MapEvent, type MapResult, type Rng, type Side } from "../../engine";
 import type { Layout, Pt } from "./layouts";
+import { allBlocks } from "./shapes";
 
 export const DT = 0.25;
 const SPEED = 5.5; // map units per second, running
@@ -34,12 +35,13 @@ export function insideBlock(b: Layout["blocks"][number], x: number, y: number, p
 
 export function buildGrid(L: Layout): Grid {
   const walk = new Uint8Array(N * N);
+  const blocks = allBlocks(L);
   for (let j = 0; j < N; j++)
     for (let i = 0; i < N; i++) {
       const x = i + 0.5;
       const y = j + 0.5;
       const onFloor = L.floor.some((r) => inRect(x, y, r));
-      walk[j * N + i] = onFloor && !L.blocks.some((b) => insideBlock(b, x, y, 0.5)) ? 1 : 0;
+      walk[j * N + i] = onFloor && !blocks.some((b) => insideBlock(b, x, y, 0.5)) ? 1 : 0;
     }
   return { walk, flows: new Map() };
 }
@@ -143,6 +145,37 @@ function route(g: Grid, from: Pt, goal: Pt): { to: Pt; dist: number; grid?: Pt }
   }
   // `grid` is the next cell along the field: a safe step when the smoothed one clips a corner.
   return { to, dist, grid };
+}
+
+// ---------------------------------------------------------------- hold spots
+
+const holdCache = new WeakMap<Grid, Map<string, Pt[]>>();
+
+/**
+ * Spots worth holding around an objective: open cells next to cover that can see it,
+ * plus any power positions the layout lists. Cached per grid and objective.
+ */
+export function holdSpots(g: Grid, c: Pt, rMin: number, rMax: number, extra: Pt[] = []): Pt[] {
+  let cache = holdCache.get(g);
+  if (!cache) holdCache.set(g, (cache = new Map()));
+  const key = `${c.x.toFixed(1)},${c.y.toFixed(1)},${rMin},${rMax}`;
+  const hit = cache.get(key);
+  if (hit) return hit;
+  const out: Pt[] = [];
+  for (let j = Math.floor(c.y - rMax); j <= c.y + rMax; j++) {
+    for (let i = Math.floor(c.x - rMax); i <= c.x + rMax; i++) {
+      if (i < 1 || j < 1 || i >= N - 1 || j >= N - 1 || !g.walk[j * N + i]) continue;
+      const p = { x: i + 0.5, y: j + 0.5 };
+      const d = Math.hypot(p.x - c.x, p.y - c.y);
+      if (d < rMin || d > rMax) continue;
+      let cover = false;
+      for (let dj = -1; dj <= 1 && !cover; dj++) for (let di = -1; di <= 1; di++) if (!g.walk[(j + dj) * N + (i + di)]) cover = true;
+      if (cover && los(g, p, c)) out.push(p);
+    }
+  }
+  for (const e of extra) if (Math.hypot(e.x - c.x, e.y - c.y) <= rMax + 4 && walkable(g, e)) out.push(e, e, e);
+  cache.set(key, out);
+  return out;
 }
 
 // ---------------------------------------------------------------- timeline
@@ -315,6 +348,18 @@ export function buildTimeline(map: MapResult, layout: Layout, seed: string): Tim
   /** A point near `c`, spread out per player, biased toward `toward`, re-rolled every few seconds. */
   const around = (p: number, c: Pt, rMin: number, rMax: number, t: number, toward?: Pt): Pt => {
     const w = wander[p]!;
+    // Most of the time players hold a spot behind cover that sees the objective.
+    if (t >= w.until && rMax > 6 && rng.next() < 0.6) {
+      const spots = holdSpots(g, c, rMin, rMax, layout.holds);
+      const facing = toward ? spots.filter((q) => (q.x - c.x) * (toward.x - c.x) + (q.y - c.y) * (toward.y - c.y) > 0) : spots;
+      const pool = facing.length ? facing : spots;
+      if (pool.length) {
+        const q = pool[Math.floor(rng.next() * pool.length)]!;
+        w.a = Math.atan2(q.y - c.y, q.x - c.x);
+        w.r = Math.hypot(q.x - c.x, q.y - c.y);
+        w.until = t + 6 + rng.next() * 8;
+      }
+    }
     if (t >= w.until) {
       const bias = toward ? Math.atan2(toward.y - c.y, toward.x - c.x) : rng.next() * Math.PI * 2;
       w.a = bias + (rng.next() - 0.5) * (toward ? 2.4 : Math.PI * 2);

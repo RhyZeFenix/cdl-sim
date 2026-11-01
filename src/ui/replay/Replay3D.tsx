@@ -5,8 +5,16 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import type { MapResult } from "../../engine";
-import { layoutFor, type Layout, type Pt } from "./layouts";
-import { buildTimeline, hillIndex, objAt, positionAt, type Timeline } from "./timeline";
+import type { Layout, Pt } from "./layouts";
+import { objAt, positionAt, type Timeline } from "./timeline";
+import { allBlocks, heightAt } from "./shapes";
+import { DEFAULT_THEME } from "./themes";
+import { hillLabelsOf, timelineFor } from "./build";
+import { Replay2D } from "./Replay2D";
+
+export type CamMode = "broadcast" | "action" | "player" | "overhead" | "free";
+const CAM_LABEL: Record<CamMode, string> = { broadcast: "Broadcast", action: "Auto-cut", player: "Follow player", overhead: "Overhead", free: "Free" };
+const hex = (c: string) => new THREE.Color(c).getHex();
 
 const TEAM = [0x3987e5, 0xeb6834];
 const TEAM_CSS = ["#3987e5", "#eb6834"];
@@ -53,12 +61,13 @@ function box(w: number, h: number, d: number, color: number, opts: { opacity?: n
 }
 
 function buildMap(scene: THREE.Scene, L: Layout) {
-  const ground = new THREE.Mesh(new THREE.PlaneGeometry(220, 220), new THREE.MeshStandardMaterial({ color: 0x121419, roughness: 1 }));
+  const th = L.theme ?? DEFAULT_THEME;
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(220, 220), new THREE.MeshStandardMaterial({ color: hex(th.ground), roughness: 1 }));
   ground.rotation.x = -Math.PI / 2;
   ground.position.y = -0.32;
   scene.add(ground);
   for (const [x0, y0, x1, y1] of L.floor) {
-    const f = box(x1 - x0, 0.3, y1 - y0, 0x2b2f37);
+    const f = box(x1 - x0, 0.3, y1 - y0, hex(th.floor));
     f.position.set((x0 + x1) / 2 - 50, -0.15, (y0 + y1) / 2 - 50);
     scene.add(f);
   }
@@ -67,11 +76,19 @@ function buildMap(scene: THREE.Scene, L: Layout) {
   (grid.material as THREE.Material).transparent = true;
   (grid.material as THREE.Material).opacity = 0.35;
   scene.add(grid);
-  for (const b of L.blocks) {
+  for (const p of L.platforms ?? []) {
+    const [x0, y0, x1, y1] = p.r;
+    const m = box(x1 - x0, p.h, y1 - y0, hex(th.low), { edges: true });
+    m.position.set((x0 + x1) / 2 - 50, p.h / 2, (y0 + y1) / 2 - 50);
+    scene.add(m);
+  }
+  for (const b of allBlocks(L)) {
     const [x0, y0, x1, y1] = b.r;
     const m = b.water
       ? box(x1 - x0, 0.1, y1 - y0, 0x1f4a7a, { opacity: 0.85 })
-      : box(x1 - x0, b.h, y1 - y0, b.h < 2 ? 0x6a7182 : 0x4a505d, { edges: true });
+      : b.window
+        ? box(x1 - x0, b.h, y1 - y0, 0x7fb2d9, { opacity: 0.5 })
+        : box(x1 - x0, b.h, y1 - y0, hex(b.h < 2 ? th.low : th.block), { edges: true });
     m.position.set((x0 + x1) / 2 - 50, b.water ? 0.02 : b.h / 2, (y0 + y1) / 2 - 50);
     if (b.rot) m.rotation.y = (-b.rot * Math.PI) / 180;
     scene.add(m);
@@ -100,7 +117,6 @@ function playerRig(side: number, name: string): PlayerRig {
   return { group, facing: 0 };
 }
 
-const hillCountOf = (m: MapResult) => Math.max(1, ...m.events.map((e) => (e.k === "hill" ? hillIndex(e.label, e.n) + 1 : 0)));
 
 export default function Replay3D({
   map,
@@ -118,13 +134,23 @@ export default function Replay3D({
   const host = useRef<HTMLDivElement>(null);
   const timeRef = useRef(time);
   timeRef.current = time;
-  const [follow, setFollow] = useState(true);
-  const followRef = useRef(follow);
-  followRef.current = follow;
+  const [cam, setCam] = useState<CamMode>("broadcast");
+  const camRef = useRef(cam);
+  camRef.current = cam;
+  const [target, setTarget] = useState(0);
+  const targetRef = useRef(target);
+  targetRef.current = target;
+  const [callouts, setCallouts] = useState(true);
+  const calloutRef = useRef<THREE.Group | null>(null);
+  const [mini, setMini] = useState(true);
   const resetRef = useRef<() => void>(() => {});
   const [error, setError] = useState<string | null>(null);
 
-  const tl: Timeline = useMemo(() => buildTimeline(map, layoutFor(map.map, hillCountOf(map)), seed), [map, seed]);
+  const tl: Timeline = useMemo(() => timelineFor(map, seed), [map, seed]);
+  const hillNames = useMemo(() => hillLabelsOf(map, tl.layout.hills.length), [map, tl]);
+  useEffect(() => {
+    if (calloutRef.current) calloutRef.current.visible = callouts;
+  }, [callouts]);
 
   useEffect(() => {
     const el = host.current;
@@ -159,8 +185,8 @@ export default function Replay3D({
       camera.position.copy(HOME);
       controls.target.set(0, 0, 0);
     };
-    // Picking up the camera turns off follow-the-action.
-    controls.addEventListener("start", () => setFollow(false));
+    // Picking up the camera switches to the free camera.
+    controls.addEventListener("start", () => setCam("free"));
 
     const L = tl.layout;
     buildMap(scene, L);
@@ -169,7 +195,7 @@ export default function Replay3D({
     const mode = map.mode;
     const hills = L.hills.map((h) => {
       const fill = box(h.w, 0.08, h.d, 0xffffff, { opacity: 0.12 });
-      fill.position.set(h.x - 50, 0.05, h.y - 50);
+      fill.position.set(h.x - 50, heightAt(L, h.x, h.y) + 0.05, h.y - 50);
       const column = box(h.w, 7, h.d, 0xffffff, { opacity: 0.07 });
       column.position.y = 3.5;
       fill.add(column);
@@ -177,11 +203,21 @@ export default function Replay3D({
       scene.add(fill);
       return fill;
     });
-    const hillNames = new Map<number, string>();
-    for (const e of map.events) if (e.k === "hill") hillNames.set(hillIndex(e.label, e.n) % L.hills.length, e.label);
+    // Callouts: area names on the ground (hills, sites, and any the layout lists).
+    const calloutGroup = new THREE.Group();
+    const callout = (p: Pt, text: string) => {
+      const s = label(text, "rgba(0,0,0,0.35)", 0.9);
+      s.position.copy(W(p)).setY(1.2 + heightAt(L, p.x, p.y));
+      calloutGroup.add(s);
+    };
+    if (mode === "hp") L.hills.forEach((h, i) => hillNames.get(i) && callout({ x: h.x, y: h.y + h.d / 2 + 2 }, hillNames.get(i)!.replace(/^P\d+\s*/, "")));
+    for (const c of L.callouts ?? []) callout(c, c.text);
+    calloutGroup.visible = callouts;
+    calloutRef.current = calloutGroup;
+    scene.add(calloutGroup);
     const hillTags = L.hills.map((h, i) => {
       const s = label(hillNames.get(i) ?? `P${i + 1}`, "rgba(20,22,28,0.85)", 1.6);
-      s.position.set(h.x - 50, 9.5, h.y - 50);
+      s.position.set(h.x - 50, 9.5 + heightAt(L, h.x, h.y), h.y - 50);
       s.visible = false;
       scene.add(s);
       return s;
@@ -189,7 +225,7 @@ export default function Replay3D({
 
     const pad = (p: Pt, text: string, size = 6) => {
       const m = box(size, 0.08, size, 0xffffff, { opacity: 0.16 });
-      m.position.copy(W(p)).setY(0.05);
+      m.position.copy(W(p)).setY(0.05 + heightAt(L, p.x, p.y));
       const s = label(text, "rgba(201,152,30,0.95)", 2.6);
       s.position.copy(m.position).setY(4.5);
       scene.add(m, s);
@@ -202,7 +238,7 @@ export default function Replay3D({
         ? L.overload.goals.map((p) => {
             const ring = new THREE.Mesh(new THREE.TorusGeometry(3, 0.25, 8, 32), new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0xffffff, emissiveIntensity: 0.3 }));
             ring.rotation.x = Math.PI / 2;
-            ring.position.copy(W(p)).setY(0.3);
+            ring.position.copy(W(p)).setY(0.3 + heightAt(L, p.x, p.y));
             scene.add(ring);
             return ring;
           })
@@ -277,7 +313,7 @@ export default function Replay3D({
         bomb.visible = site > 0 && state !== 3;
         if (site > 0) {
           const p = W(site === 1 ? L.snd.A : L.snd.B);
-          bomb.position.set(p.x, 0.3, p.z);
+          bomb.position.set(p.x, 0.3 + heightAt(L, p.x + 50, p.z + 50), p.z);
           const m = bomb.material as THREE.MeshStandardMaterial;
           m.color.setHex(state === 2 ? 0x4cc38a : 0xff4040);
           m.emissiveIntensity = state === 1 ? 0.4 + 0.6 * Math.abs(Math.sin(t * 6)) : 0.2;
@@ -318,7 +354,7 @@ export default function Replay3D({
         const now = positionAt(tl, p, t);
         r.group.visible = now.alive;
         if (!now.alive) return;
-        r.group.position.set(now.x - 50, 0, now.y - 50);
+        r.group.position.set(now.x - 50, heightAt(L, now.x, now.y), now.y - 50);
         const before = positionAt(tl, p, t - 0.3);
         const dx = now.x - before.x;
         const dy = now.y - before.y;
@@ -361,11 +397,26 @@ export default function Replay3D({
       for (; ti < tracers.length; ti++) tracers[ti]!.visible = false;
       for (; mi < marks.length; mi++) marks[mi]!.visible = false;
 
-      if (followRef.current) {
+      const mode2 = camRef.current;
+      if (mode2 === "action") {
+        // Cut to the latest fight for a couple of seconds, else the objective.
+        const k = [...tl.kills].reverse().find((x) => x.t <= t && x.t > t - 2.5);
+        if (k) focus.copy(W(k.to));
+      }
+      if (mode2 === "player") {
+        const at = positionAt(tl, targetRef.current, t);
+        focus.set(at.x - 50, 0, at.y - 50);
+      }
+      if (mode2 !== "free") {
         // Glide the camera with its target so the view keeps its angle.
         const before = controls.target.clone();
-        controls.target.lerp(focus, 0.05);
+        controls.target.lerp(focus, mode2 === "player" ? 0.12 : 0.05);
         camera.position.add(controls.target.clone().sub(before));
+        if (mode2 === "overhead") camera.position.lerp(controls.target.clone().add(new THREE.Vector3(0, 95, 0.1)), 0.08);
+        if (mode2 === "player") {
+          const want = controls.target.clone().add(new THREE.Vector3(0, 26, 22));
+          camera.position.lerp(want, 0.05);
+        }
       }
       controls.update();
       renderer.render(scene, camera);
@@ -406,21 +457,48 @@ export default function Replay3D({
         </span>
       </div>
       <div className="replay-cam">
-        <button className="btn small" aria-pressed={follow} onClick={() => setFollow(!follow)}>
-          Follow action
+        <select className="plain" value={cam} onChange={(e) => setCam(e.target.value as CamMode)} aria-label="Camera">
+          {(Object.keys(CAM_LABEL) as CamMode[]).map((c) => (
+            <option key={c} value={c}>
+              {CAM_LABEL[c]}
+            </option>
+          ))}
+        </select>
+        {cam === "player" && (
+          <select className="plain" value={target} onChange={(e) => setTarget(Number(e.target.value))} aria-label="Player to follow">
+            {players.map((n, i) => (
+              <option key={i} value={i}>
+                {n}
+              </option>
+            ))}
+          </select>
+        )}
+        <button className="btn small" aria-pressed={callouts} onClick={() => setCallouts(!callouts)} title="Area names on the map">
+          Callouts
+        </button>
+        <button className="btn small" aria-pressed={mini} onClick={() => setMini(!mini)} title="2D minimap in the corner">
+          Minimap
         </button>
         <button
           className="btn small"
           onClick={() => {
             resetRef.current();
-            setFollow(true);
+            setCam("broadcast");
           }}
         >
           Reset view
         </button>
       </div>
+      <KillFeed tl={tl} time={time} players={players} />
+      {mini && (
+        <div className="replay-mini">
+          <Replay2D tl={tl} map={map} time={time} players={players} hillLabels={hillNames} mini highlight={cam === "player" ? target : undefined} />
+        </div>
+      )}
       <div className="replay-credit">
-        {L.kind === "traced" && L.source ? (
+        {L.kind === "edited" ? (
+          "Your edited layout (map editor). Drag to orbit, scroll to zoom."
+        ) : L.kind === "traced" && L.source ? (
           <>
             Layout traced by eye from the{" "}
             <a href={L.source} target="_blank" rel="noreferrer">
@@ -432,6 +510,21 @@ export default function Replay3D({
           "No traced layout for this map yet. Drag to orbit, scroll to zoom."
         )}
       </div>
+    </div>
+  );
+}
+
+/** The last few kills, broadcast style. */
+function KillFeed({ tl, time, players }: { tl: Timeline; time: number; players: string[] }) {
+  const recent = tl.kills.filter((k) => k.t <= time && k.t > time - 8).slice(-5).reverse();
+  if (!recent.length) return null;
+  return (
+    <div className="replay-feed" aria-label="Kill feed">
+      {recent.map((k, i) => (
+        <div key={`${k.t}-${k.by}-${k.on}-${i}`} style={{ opacity: 1 - (time - k.t) / 9 }}>
+          <b style={{ color: TEAM_CSS[k.by < 4 ? 0 : 1] }}>{players[k.by]}</b> <span className="muted">✕</span> <b style={{ color: TEAM_CSS[k.on < 4 ? 0 : 1] }}>{players[k.on]}</b>
+        </div>
+      ))}
     </div>
   );
 }

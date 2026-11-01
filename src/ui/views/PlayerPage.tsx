@@ -62,6 +62,22 @@ export function PlayerPage({ store, id, nav, onBack }: { store: SeasonStore; id:
             <span className="l">Last 5 series</span>
             <span className="v">{last5.length ? last5.map((s) => (s.won ? "W" : "L")).join(" ") : "—"}</span>
           </div>
+          <div className="kpi" title="K/D over the last five series against the season; hot is 12% above, cold 12% below">
+            <span className="l">Form</span>
+            {prof.form ? (
+              <>
+                <span className="v" style={{ color: prof.form.label === "hot" ? "var(--pick)" : prof.form.label === "cold" ? "var(--ban)" : undefined }}>
+                  {prof.form.label === "hot" ? "▲ Hot" : prof.form.label === "cold" ? "▼ Cold" : "● Steady"}
+                </span>
+                <span className="sub">
+                  {prof.form.recentKd.toFixed(2)} lately vs {prof.form.seasonKd.toFixed(2)} season
+                </span>
+                <FormStrip trend={prof.form.trend} season={prof.form.seasonKd} />
+              </>
+            ) : (
+              <span className="v muted">—</span>
+            )}
+          </div>
         </div>
         {p && (
           <table className="tbl" style={{ marginTop: 10 }}>
@@ -165,5 +181,18 @@ export function PlayerPage({ store, id, nav, onBack }: { store: SeasonStore; id:
         )}
       </div>
     </div>
+  );
+}
+
+/** The last ten series' K/D as small bars around the season average. */
+function FormStrip({ trend, season }: { trend: number[]; season: number }) {
+  const max = Math.max(season * 1.6, ...trend);
+  return (
+    <span className="formstrip" aria-label={`Last ${trend.length} series K/D: ${trend.map((x) => x.toFixed(2)).join(", ")}`}>
+      {trend.map((x, i) => (
+        <span key={i} title={x.toFixed(2)} className={x >= season ? "up" : "down"} style={{ height: `${Math.max(8, (100 * x) / max)}%` }} />
+      ))}
+      <i style={{ bottom: `${(100 * season) / max}%` }} />
+    </span>
   );
 }

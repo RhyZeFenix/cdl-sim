@@ -3,7 +3,7 @@
 // the other team. Halves end on time or when a team reaches the half's score target;
 // a tie after two halves goes to sudden death (next capture wins).
 import type { ModeSettings } from "../../data/schema";
-import { aliveOn, allAlive, pickBy, teamFight, type Arena } from "../arena";
+import { aliveOn, allAlive, paceKills, pickBy, teamFight, type Arena } from "../arena";
 import { TUNING } from "../tuning";
 import type { Pair, Side } from "../types";
 
@@ -19,7 +19,7 @@ export function playOverload(a: Arena, s: NonNullable<ModeSettings["overload"]>)
 
   /** One possession step. Returns true if a capture happened. */
   const step = (): boolean => {
-    const f = teamFight(a, { bonus: [0, 0], kills: T.fightKills, killSecs: T.killSecs });
+    const f = teamFight(a, { bonus: [0, 0], kills: paceKills(a, T.fightKills), killSecs: T.killSecs });
     a.t += rng.int(T.gapSecs[0], T.gapSecs[1]);
     const w = f.winner;
     if (holder === null) {

@@ -380,3 +380,55 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
   .msg-head { flex-wrap: wrap; }
   .help:hover::after, .help:focus::after { left: auto; right: -8px; transform: none; max-width: 220px; }
 }
+
+/* ---------- 2D replay, minimap, kill feed */
+.replay2d { display: block; width: 100%; height: auto; max-height: 560px; aspect-ratio: 1; margin: 0 auto; }
+.replay-2d { padding: 8px; }
+.replay2d .callouts text { font-size: 2.2px; fill: #f0efecaa; font-weight: 600; paint-order: stroke; stroke: #000000aa; stroke-width: 0.4px; }
+.replay2d .callouts text.site { font-size: 3.4px; fill: #f5c542; }
+.replay2d .pname { font-size: 1.9px; fill: #f0efec; paint-order: stroke; stroke: #000; stroke-width: 0.35px; }
+.replay-mini { position: absolute; left: 8px; bottom: 26px; width: 150px; border: 1px solid #ffffff33; border-radius: 6px; overflow: hidden; background: #000; }
+.replay-mini .replay2d { max-height: none; }
+.replay-feed { position: absolute; right: 8px; top: 44px; display: grid; gap: 2px; font-size: 12px; text-align: right; background: rgba(20, 22, 28, 0.7); padding: 4px 8px; border-radius: 6px; color: #f0efec; pointer-events: none; }
+.replay-cam select.plain { background: rgba(20, 22, 28, 0.85); color: #f0efec; border-color: #3d3d39; }
+@media (max-width: 640px) { .replay-mini { width: 96px; } .replay-feed { font-size: 10px; top: 36px; } }
+
+/* ---------- map editor */
+.editor { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 12px; align-items: start; }
+.editor-canvas { width: 100%; aspect-ratio: 1; display: block; border-radius: 6px; touch-action: none; user-select: none; }
+.editor-canvas.tool-select .ed { cursor: move; }
+.editor-canvas:not(.tool-select) { cursor: crosshair; }
+.editor-canvas .grid line { stroke: #ffffff22; stroke-width: 0.15; }
+.editor-canvas .grid text { font-size: 1.8px; fill: #ffffff66; }
+.editor-canvas .ed.floor { fill: #3a404c; fill-opacity: 0.55; stroke: #8892a6; stroke-width: 0.15; }
+.editor-canvas .ed.block { fill: #6b7385; fill-opacity: 0.85; stroke: #b5bccb; stroke-width: 0.15; }
+.editor-canvas .ed.block.low { fill: #8f97a8; }
+.editor-canvas .ed.block.water { fill: #2a5d93; }
+.editor-canvas .ed.building { fill: #c9a227; fill-opacity: 0.12; stroke: #c9a227; stroke-width: 0.3; stroke-dasharray: 1 0.6; }
+.editor-canvas .wall { fill: #d8dde8; }
+.editor-canvas .wall.window { fill: #7fb2d9; }
+.editor-canvas .ed.platform { fill: #9b7bd1; fill-opacity: 0.35; stroke: #9b7bd1; stroke-width: 0.3; }
+.editor-canvas .ed.hill rect { fill: #ffffff; fill-opacity: 0.15; stroke: #ffffff; stroke-width: 0.3; stroke-dasharray: 0.8 0.5; }
+.editor-canvas .ed.hill text, .editor-canvas .ed.point text { font-size: 2px; fill: #fff; text-anchor: middle; font-weight: 700; pointer-events: none; }
+.editor-canvas .ed.spawn.s0 { fill: #3987e5; stroke: #fff; stroke-width: 0.25; }
+.editor-canvas .ed.spawn.s1 { fill: #eb6834; stroke: #fff; stroke-width: 0.25; }
+.editor-canvas .ed.point circle { stroke: #000; stroke-width: 0.2; }
+.editor-canvas .ed.point.p-snd circle { fill: #c9981e; }
+.editor-canvas .ed.point.p-control circle { fill: #2e9e6a; }
+.editor-canvas .ed.point.p-overload circle { fill: #d9b400; }
+.editor-canvas .ed.hold { fill: #f5f5f5; stroke: #000; stroke-width: 0.15; }
+.editor-canvas .ed.callout { font-size: 2.2px; fill: #fff; font-weight: 600; paint-order: stroke; stroke: #000; stroke-width: 0.35px; }
+.editor-canvas .sel, .editor-canvas .sel rect, .editor-canvas .sel circle { stroke: #ff3b30 !important; stroke-width: 0.5 !important; }
+.editor-canvas .handle { fill: #ff3b30; cursor: nwse-resize; }
+.editor-canvas .draft { fill: #ff3b30; fill-opacity: 0.2; stroke: #ff3b30; stroke-width: 0.3; }
+.editor-side .ed-fields { display: grid; gap: 4px; margin-bottom: 6px; }
+.editor-side .ed-fields label { display: flex; gap: 6px; align-items: center; justify-content: space-between; font-size: 13px; }
+.editor-side .ed-fields input { width: 90px; }
+.editor-side .json { width: 100%; margin-top: 6px; font-family: var(--mono); font-size: 11px; background: var(--surface-2); color: var(--text); border: 1px solid var(--border); border-radius: 6px; }
+.replay2d.heat { max-height: 620px; }
+@media (max-width: 900px) { .editor { grid-template-columns: 1fr; } }
+.formstrip { position: relative; display: flex; align-items: flex-end; gap: 2px; height: 26px; margin-top: 4px; }
+.formstrip > span { width: 7px; border-radius: 2px 2px 0 0; background: var(--text-3); }
+.formstrip > span.up { background: var(--pick); }
+.formstrip > span.down { background: var(--ban); opacity: 0.75; }
+.formstrip > i { position: absolute; left: 0; right: 0; border-top: 1px dashed var(--text-2); }

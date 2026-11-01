@@ -2,7 +2,7 @@
 // and scores 1/s until the next fight or the rotation. The team that won the previous
 // hill sets up first on the next one (momentum).
 import type { ModeSettings } from "../../data/schema";
-import { allAlive, aliveOn, catchUpBonus, clamp, pickBy, teamFight, type Arena } from "../arena";
+import { allAlive, aliveOn, catchUpBonus, clamp, closeScale, paceKills, pickBy, teamFight, type Arena } from "../arena";
 import { TUNING } from "../tuning";
 import type { Pair, Side } from "../types";
 
@@ -30,10 +30,10 @@ export function playHardpoint(a: Arena, s: ModeSettings["hp"], hills: string[] =
     let first = true;
 
     while (ht < s.hillSeconds && !done()) {
-      const bonus: Pair = catchUpBonus(score, TUNING.catchUp.hp, 50);
+      const bonus: Pair = catchUpBonus(score, TUNING.catchUp.hp * closeScale(a), 50);
       if (first && momentum !== null) bonus[momentum] += T.setupBonus;
       first = false;
-      const f = teamFight(a, { bonus, kills: T.fightKills, killSecs: T.killSecs });
+      const f = teamFight(a, { bonus, kills: paceKills(a, T.fightKills), killSecs: T.killSecs });
       ht += f.secs;
       if (ht >= s.hillSeconds) break;
       const w = f.winner;

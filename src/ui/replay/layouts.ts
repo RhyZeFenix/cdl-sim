@@ -8,10 +8,21 @@ import { BO6 } from "./maps-bo6";
 import { MW3 } from "./maps-mw3";
 import { BO7 } from "./maps-bo7";
 import { B, H, P, type Block, type Layout, type Pt, type Traced } from "./shapes";
+import { themeFor } from "./themes";
 
-export type { Block, Hill, Layout, Pt } from "./shapes";
+export type { Block, Building, Callout, Hill, Layout, MapTheme, Platform, Pt } from "./shapes";
 
 const TRACED: Record<string, Traced> = { ...MW3, ...BO6, ...BO7 };
+
+/** Layouts edited in the map editor (this browser only); they replace the traced ones. */
+const OVERRIDES: Record<string, Traced> = {};
+export function setLayoutOverride(map: string, t: Traced | null): void {
+  if (t) OVERRIDES[map] = t;
+  else delete OVERRIDES[map];
+}
+export const hasOverride = (map: string) => !!OVERRIDES[map];
+/** The built-in traced layout, ignoring any edits. */
+export const tracedLayout = (map: string): Traced | undefined => TRACED[map];
 
 
 /** Map names with an approximate real layout. */
@@ -52,12 +63,13 @@ function generic(map: string): Omit<Layout, "map"> {
 
 /** The layout for a map, with enough hills for its rotation (extra ones come from the stand-in). */
 export function layoutFor(map: string, hillCount = 4): Layout {
-  const t = TRACED[map];
+  const edited = OVERRIDES[map];
+  const t = edited ?? TRACED[map];
   const g = generic(map);
-  if (!t) return { map, ...g, hills: g.hills.slice(0, Math.max(hillCount, 1)) };
+  if (!t) return { map, ...g, hills: g.hills.slice(0, Math.max(hillCount, 1)), theme: themeFor(map) };
   const hills = [...t.hills];
   for (let i = hills.length; i < hillCount; i++) hills.push(g.hills[i % g.hills.length]!);
   // Control isn't played on the traced BO7 maps; borrow two hills as zones if asked.
   const control = t.control ?? { atk: t.snd.atk, def: t.snd.def, A: hills[2] ?? hills[0]!, B: hills[1] ?? hills[0]! };
-  return { map, kind: "traced", ...t, hills, control };
+  return { map, kind: edited ? "edited" : "traced", theme: themeFor(map), ...t, hills, control };
 }

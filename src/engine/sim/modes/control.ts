@@ -2,7 +2,7 @@
 // Attackers build capture progress by winning fights; a round ends on a full capture
 // (both zones), on time (defense wins), or when a side's lives run out.
 import type { ModeSettings } from "../../data/schema";
-import { aliveOn, allAlive, catchUpBonus, pickBy, teamFight, type Arena } from "../arena";
+import { aliveOn, allAlive, catchUpBonus, closeScale, paceKills, pickBy, teamFight, type Arena } from "../arena";
 import { TUNING } from "../tuning";
 import { other, type MapEvent, type Pair, type Side } from "../types";
 
@@ -29,9 +29,9 @@ export function playControl(a: Arena, s: NonNullable<ModeSettings["control"]>, f
         how = "time";
         break;
       }
-      const bonus: Pair = catchUpBonus(score, TUNING.catchUp.control);
+      const bonus: Pair = catchUpBonus(score, TUNING.catchUp.control * closeScale(a));
       bonus[def] += T.defenseBonus;
-      const f = teamFight(a, { bonus, kills: T.fightKills, killSecs: T.killSecs });
+      const f = teamFight(a, { bonus, kills: paceKills(a, T.fightKills), killSecs: T.killSecs });
       lives[0] -= f.kills[1];
       lives[1] -= f.kills[0];
       const gap = rng.int(T.gapSecs[0], T.gapSecs[1]);

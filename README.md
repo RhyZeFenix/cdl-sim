@@ -29,6 +29,11 @@ npm run dev          # UI dev server
 
 `--phase` is `champs`, `major:<stage>`, `minor:<stage>` or `quals:<stage>:<week>` and selects the map pool.
 
+Browser tests: `npm run e2e` builds the site and runs Playwright (Chromium) against it (`e2e/`). The first time, run `npx playwright install chromium`. CI (`.github/workflows/ci.yml`) runs the type check, the unit tests and the browser tests on every push and pull request; the Pages deploy still runs the unit tests before publishing.
+
+The site installs as an app and works offline after the first visit (`public/manifest.webmanifest`, `public/sw.js`; icons from `scripts/make-icons.ts`).
+
+
 ## Simulation
 
 - `src/engine/rng.ts`: seeded RNG. `fork(label)` gives independent streams, so the same seed always replays the same season.
@@ -56,7 +61,11 @@ npm run dev          # UI dev server
 - **Match page:** veto board, map cards, per-map and series box scores, play-by-play, and Watch (play/pause on the game clock at 1×/4×/16×/64×, next beat, scrubber, live kill feed). Online matches have no stored log; opening one replays it exactly from the seed.
 - **3D replay** (Watch → 3D; "Feed only" turns it off, remembered per browser): the map as a blockout with all eight players, driven by the same event log as the feed. Hills light up in the holding team's colour, the bomb appears on the planted site, Control zones fill as they're taken, and the Overload device rides with its carrier; kills draw a tracer and leave a marker. Players are steered so they're in the right place when each event happens (the planter on the site, hill holders on the hill, the scorer at the goal, killer and victim near each other), with seeded movement so a map always plays back the same way. It only ever draws up to the playback clock, so it's safe on spoiler-free match day. Drag to orbit, scroll to zoom; "Follow action" tracks the objective. three.js is loaded only when the 3D view opens.
   - **Layouts** (`src/ui/replay/maps-bo7.ts`, `maps-bo6.ts`, `maps-mw3.ts`): every map in all three seasons' pools is traced by eye from the GamesAtlas minimaps and rotation diagrams, with hills in the published rotation order (MWIII diagrams mark hills with pins, so those use the pin tips; 6 Star has no published diagram, so its hills are guesses from their names). Bomb sites, Control zones and Overload goals aren't published there, so they're placed by eye and approximate; Control maps without their own zones reuse two hill spots. A map outside the pools gets a generated stand-in arena, labelled as such. Tests check that every spawn and objective sits on open ground and can be reached, and that every pool map has a spot for each hill. Movement comes from `src/ui/replay/timeline.ts` (pure, tested in `tests/replay.test.ts`).
-  - Known quirk: the SnD engine can log a plant at 0:00 of a round, before anyone could reach a site; the bomb still appears on time, with the planter running in late.
+  - **Views:** Watch switches between **3D**, **2D** (a top-down minimap view, light on phones) and **Feed only**. In 3D, the camera can be Broadcast (follows the objective), Auto-cut (cuts to each fight), Follow player, Overhead or Free. There's also a 2D **minimap** inset, a broadcast-style **kill feed**, and **callouts** (area names from the hill names and any the layout adds).
+  - **Geometry:** layouts can have **buildings** (walls with doorways and see-over windows; Rewind's store, Vault's bank and Sub Base's hangar), **upper floors** players stand on (Den's balcony, Colossus's overlook), and a **colour theme** per map. Players **hold spots behind cover** that can see the objective: these are found automatically for every map, plus any power positions the layout marks.
+- **Maps tab:**
+  - **Heatmaps:** where players die, or where kills come from, on any map this season, for all teams or one. Built from the replays in the background worker.
+  - **Map editor:** pick a map, lay your own reference image under it (it stays on your computer), and move, add or resize walls, buildings (with doors and windows), upper floors, floor areas, hills, bomb sites, Control zones, Overload goals, spawns, hold spots and callouts. **Check** runs the same open-ground and reachability test the code uses. **Save to this browser** makes every replay use your version straight away; **Export JSON** gives the file to send in so it can be built into the site for everyone.
 - **Summary:** champion and Champs MVP vs the real result, points race chart (up to 3 highlighted teams), event winners, K/D leaders, and a cumulative points table.
 
 ## GM mode
@@ -142,6 +151,12 @@ The pages are in `data/sources/liquipedia/` (CC BY-SA).
 - **Map modifiers:** each team's win rate on a map relative to its average in that mode, shrunk for small samples and capped at ±0.03 skill. The AI veto uses them, and so does the sim.
 - **Lineup timelines:** a team gets a snapshot from each stage's qualifiers (its four most-played players there, from `data/stats/{year}.lineups.json`) and from each Major/Champs participant list (dated from the event). This catches changes at events a team missed; for example, 2026 Cloud9 switched lineups for Stage 2, but missed the 10-team Major II.
 - **Rebuilding rosters:** `npx tsx scripts/build-rosters.ts` reads the committed event pages in `data/sources/fandom/` plus the stats. Players who only appear in qualifier stats join their team's bench. Each player records `ratingSource` (`stats` or `placeholder`) and a stat line, which My Team shows as K/D with "est." for placeholders.
+
+## Map-specific numbers
+
+`data/stats/{year}.maps.json` (from `scripts/fetch-mapstats.ts`, CoD Esports Wiki `PlayerStats`, split by winners and losers) gives each map's **pace** (kills per player per map) and **closeness** (the losing team's share of the winner's Hardpoint time, Control captures or SnD kills), relative to the mode average. Both are shrunk toward average for maps with few games. Pace scales how many kills each fight produces, so fast maps like Scar and Vault Hardpoint have busier box scores than Skidrow. Closeness can scale catch-up per map, but it's off by default: in the 200-run backtest it didn't improve event or scoreline accuracy. Both settings live in `TUNING.mapEffects`.
+
+SnD plants can't happen before 15 seconds into a round (`TUNING.snd.minPlantSecs`). The engine used to log some at 0:00. An early plant now lands at 15 seconds instead, and because the bomb timer runs from the plant, results are the same as before.
 
 ## Backtest
 

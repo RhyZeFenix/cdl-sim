@@ -17,10 +17,11 @@ import { TeamPage } from "./views/TeamPage";
 import { Records } from "./views/Records";
 import { Odds } from "./views/Odds";
 import { About } from "./views/About";
+import { MapsTab } from "./views/MapsTab";
 import { applyTheme, savedContrast, savedTheme, type Theme } from "./theme";
 import { readShare, shareUrl } from "./share";
 
-type Tab = "office" | "myteam" | "schedule" | "standings" | "brackets" | "odds" | "records" | "summary" | "about";
+type Tab = "office" | "myteam" | "schedule" | "standings" | "brackets" | "odds" | "records" | "maps" | "summary" | "about";
 
 const TAB_LABEL: Record<Tab, string> = {
   office: "Office",
@@ -30,6 +31,7 @@ const TAB_LABEL: Record<Tab, string> = {
   brackets: "Brackets",
   odds: "Odds",
   records: "Records",
+  maps: "Maps",
   summary: "Summary",
   about: "About",
 };
@@ -428,7 +430,7 @@ export function App() {
           <>
             {spoil.active && <MatchDayBanner store={store} onWatch={(id) => setMatch({ id, watch: true })} />}
             <nav className="tabs" role="tablist">
-              {(["office", "myteam", "schedule", "standings", "brackets", "odds", "records", "summary", "about"] as const)
+              {(["office", "myteam", "schedule", "standings", "brackets", "odds", "records", "maps", "summary", "about"] as const)
                 .filter((t) => (t !== "myteam" && t !== "office") || state.gm)
                 .map((t) => (
                   <button key={t} role="tab" aria-selected={tab === t} onClick={() => setTab(t)}>
@@ -446,6 +448,7 @@ export function App() {
             {tab === "odds" && <Odds store={store} nav={nav} />}
             {tab === "records" && <Records store={store} nav={nav} />}
             {tab === "about" && <About store={store} />}
+            {tab === "maps" && <MapsTab store={store} />}
           </>
         )}
       </main>

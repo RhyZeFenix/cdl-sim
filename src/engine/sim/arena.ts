@@ -15,7 +15,20 @@ export interface Arena {
   k: number;
   t: number;
   events: MapEvent[];
+  /** Map pace (kills per fight) and closeness (catch-up), relative to the mode average. */
+  pace: number;
+  close: number;
 }
+
+/** A fight-size range scaled by the map's pace. */
+export const paceKills = (a: Arena, r: readonly [number, number]): [number, number] => {
+  if (!TUNING.mapEffects.pace || a.pace === 1) return [r[0], r[1]];
+  const lo = Math.max(1, Math.round(r[0] * a.pace));
+  return [lo, Math.max(lo, Math.round(r[1] * a.pace))];
+};
+
+/** Catch-up scaled by how close the map's real results run. */
+export const closeScale = (a: Arena) => (TUNING.mapEffects.close ? a.close ** TUNING.mapEffects.closeExp : 1);
 
 export const sideOf = (i: number): Side => (i < 4 ? 0 : 1);
 export const sideIdx = (s: Side) => (s === 0 ? [0, 1, 2, 3] : [4, 5, 6, 7]);
@@ -43,7 +56,7 @@ export function createArena(rng: Rng, teams: [SimTeam, SimTeam], mode: Mode, map
     const mod = (teams[s].mapMods?.[key] ?? 0) + (teams[s].prep?.[key] ?? 0);
     return base + form + teamForm[s]! + mod + (teams[s].form ?? 0) + (p.form ?? 0);
   });
-  return { rng, players, skill, k: TUNING.duelK * TUNING.modeDuelScale[mode], t: 0, events: [] };
+  return { rng, players, skill, k: TUNING.duelK * TUNING.modeDuelScale[mode], t: 0, events: [], pace: 1, close: 1 };
 }
 
 export const allAlive = () => [true, true, true, true, true, true, true, true];

@@ -7,16 +7,20 @@ import season2026 from "../../../data/seasons/2026.json";
 import rosters2024 from "../../../data/rosters/2024.json";
 import rosters2025 from "../../../data/rosters/2025.json";
 import rosters2026 from "../../../data/rosters/2026.json";
+import maps2024 from "../../../data/stats/2024.maps.json";
+import maps2025 from "../../../data/stats/2025.maps.json";
+import maps2026 from "../../../data/stats/2026.maps.json";
+import { mapFactors } from "./mapstats";
 import { DataError, parseRosterFile, parseSeason, parseVetoFile, rosterProblems } from "./load";
 import type { RosterFile, Season, VetoProcedure } from "./schema";
 
 export type SeasonId = "2024" | "2025" | "2026";
 export const SEASON_IDS: readonly SeasonId[] = ["2024", "2025", "2026"];
 
-const RAW: Record<SeasonId, { season: unknown; rosters: unknown }> = {
-  "2024": { season: season2024, rosters: rosters2024 },
-  "2025": { season: season2025, rosters: rosters2025 },
-  "2026": { season: season2026, rosters: rosters2026 },
+const RAW: Record<SeasonId, { season: unknown; rosters: unknown; maps: { rows: unknown[] } }> = {
+  "2024": { season: season2024, rosters: rosters2024, maps: maps2024 },
+  "2025": { season: season2025, rosters: rosters2025, maps: maps2025 },
+  "2026": { season: season2026, rosters: rosters2026, maps: maps2026 },
 };
 
 export interface SeasonData {
@@ -32,6 +36,7 @@ export function loadSeasonData(id: SeasonId): SeasonData {
   if (hit) return hit;
   const vetoFile = parseVetoFile(vetoRaw);
   const season = parseSeason(RAW[id].season, vetoFile, `data/seasons/${id}.json`);
+  season.mapFactors = mapFactors(RAW[id].maps.rows as Parameters<typeof mapFactors>[0]);
   const rosters = parseRosterFile(RAW[id].rosters, `data/rosters/${id}.json`);
   const problems = rosterProblems(season, rosters);
   if (problems.length) throw new DataError(`data/rosters/${id}.json`, problems);

@@ -3,8 +3,12 @@
 // view of the same moment. Nothing after the clock is ever shown.
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { mapLogEntries, scoreFromEvents, type MapResult } from "../../engine";
+import { hillLabelsOf, timelineFor } from "../replay/build";
+import { Replay2D } from "../replay/Replay2D";
 
 const Replay3D = lazy(() => import("../replay/Replay3D"));
+
+type View = "3d" | "2d" | "feed";
 
 /** Game seconds per real second. */
 const SPEEDS = [
@@ -20,9 +24,10 @@ const clock = (t: number) => {
 };
 
 const VIEW_KEY = "cdl-sim:watch-view";
-const savedView = (): "3d" | "feed" => {
+const savedView = (): View => {
   try {
-    return localStorage.getItem(VIEW_KEY) === "feed" ? "feed" : "3d";
+    const v = localStorage.getItem(VIEW_KEY);
+    return v === "feed" || v === "2d" ? v : "3d";
   } catch {
     return "3d";
   }
@@ -60,8 +65,8 @@ export function Watch({
   /** Seeds the 3D movement so a map always plays back the same way. */
   seed?: string;
 }) {
-  const [view, setViewState] = useState<"3d" | "feed">(savedView);
-  const setView = (v: "3d" | "feed") => {
+  const [view, setViewState] = useState<View>(savedView);
+  const setView = (v: View) => {
     setViewState(v);
     try {
       localStorage.setItem(VIEW_KEY, v);
@@ -71,7 +76,7 @@ export function Watch({
   };
   const [now, setNow] = useState(0);
   const [playing, setPlaying] = useState(autoPlay);
-  const [speed, setSpeed] = useState(view === "3d" ? 1 : 2);
+  const [speed, setSpeed] = useState(view === "feed" ? 2 : 1);
   const n = map.events.length;
   const end = n ? map.events[n - 1]!.t : 0;
   const log = useMemo(() => mapLogEntries(map, { team: teams, player: players }), [map, teams, players]);
@@ -199,12 +204,16 @@ export function Watch({
           <button aria-pressed={view === "3d"} onClick={() => setView("3d")}>
             3D
           </button>
+          <button aria-pressed={view === "2d"} onClick={() => setView("2d")} title="Top-down minimap view">
+            2D
+          </button>
           <button aria-pressed={view === "feed"} onClick={() => setView("feed")}>
             Feed only
           </button>
         </div>
       </div>
       <input type="range" min={0} max={end} step={0.5} value={now} onChange={(e) => (setNow(Number(e.target.value)), setPlaying(false))} aria-label="Scrub" />
+      {view === "2d" && <TopDown map={map} time={now} players={players} seed={seed ?? `${map.map}:${map.slot}`} />}
       {view === "3d" && (
         <Suspense fallback={<div className="replay-msg">Loading 3D…</div>}>
           <Replay3D map={map} time={now} teams={teams} players={players} seed={seed ?? `${map.map}:${map.slot}`} />
@@ -228,6 +237,17 @@ export function Watch({
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+/** The 2D top-down replay with its own timeline. */
+function TopDown({ map, time, players, seed }: { map: MapResult; time: number; players: string[]; seed: string }) {
+  const tl = useMemo(() => timelineFor(map, seed), [map, seed]);
+  const labels = useMemo(() => hillLabelsOf(map, tl.layout.hills.length), [map, tl]);
+  return (
+    <div className="replay replay-2d">
+      <Replay2D tl={tl} map={map} time={time} players={players} hillLabels={labels} />
     </div>
   );
 }

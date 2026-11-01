@@ -25,6 +25,17 @@ export const TUNING = {
    * over a season, as real CDL results do.
    */
   catchUp: { hp: 0.06, snd: 0.04, control: 0.06, cap: 0.5 },
+  /**
+   * Per-map effects from real results (data/stats/{year}.maps.json): fights on fast maps
+   * produce more kills, and catch-up scales with how close a map's results run
+   * (closeness ^ closeExp). Each can be switched off for the backtest.
+   */
+  mapEffects: {
+    pace: true,
+    // Off: in the 200-run backtest it didn't improve event or scoreline accuracy.
+    close: false,
+    closeExp: 3,
+  },
   /** AI veto noise (skill units). */
   vetoNoise: 0.03,
 
@@ -48,6 +59,8 @@ export const TUNING = {
     plantPerAdv: 0.12,
     latePlantBoost: 0.35,
     latePlantAfter: 55,
+    /** No plant before this many seconds into a round (nobody gets to a site faster). */
+    minPlantSecs: 15,
     stepSecs: [4, 11],
     defuseSecs: 7.5,
     /** Logit bonus per clutch point above 75, for a player alone vs 1+. */

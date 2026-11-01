@@ -14,7 +14,9 @@ import {
   type SeasonState,
   type Step,
 } from "../engine";
-import { runOdds, runSim, type SimKind, type SimRequest, type SimResponse, type TeamOdds } from "./simWorker";
+import { mergeOdds, runOdds, runSim, type SimKind, type SimRequest, type SimResponse, type TeamOdds } from "./simWorker";
+import { runHeatmap, type HeatRequest, type Heatmap } from "./heatmap";
+import { savedOverrides } from "./layoutStore";
 import { spoilers } from "./spoilers";
 import { getSave, putSave, type SlotId } from "./saves";
 
@@ -202,16 +204,61 @@ export function useSeason(initial: SeasonConfig) {
     return () => clearTimeout(t);
   }, [version, busy]);
 
-  /** Title odds from `runs` simulations of the rest of the season (in the worker when possible). */
-  const odds = useCallback(
-    (runs: number, onProgress?: (done: number) => void): Promise<TeamOdds[]> =>
+  /**
+   * Title odds from `runs` simulations of the rest of the season, split across several
+   * workers at once (falls back to running inline).
+   */
+  const odds = useCallback(async (runs: number, onProgress?: (done: number) => void): Promise<TeamOdds[]> => {
+    const state = stateRef.current!;
+    const cores = typeof navigator !== "undefined" && navigator.hardwareConcurrency ? navigator.hardwareConcurrency : 4;
+    const n = Math.max(1, Math.min(6, cores - 1, runs));
+    let workers: Worker[] = [];
+    try {
+      workers = Array.from({ length: n }, () => new Worker(new URL("./simWorker.ts", import.meta.url), { type: "module" }));
+    } catch {
+      workers = [];
+    }
+    if (!workers.length) {
+      await new Promise((r) => setTimeout(r, 0));
+      return runOdds(state, runs, onProgress);
+    }
+    const done = new Array<number>(n).fill(0);
+    const sizes = Array.from({ length: n }, (_, i) => Math.floor(runs / n) + (i < runs % n ? 1 : 0));
+    try {
+      const parts = await Promise.all(
+        workers.map(
+          (w, i) =>
+            new Promise<{ odds: TeamOdds[]; runs: number }>((resolve, reject) => {
+              w.onmessage = (e: MessageEvent<SimResponse>) => {
+                const msg = e.data;
+                if (msg.type === "progress") {
+                  done[i] = msg.next;
+                  onProgress?.(done.reduce((s, x) => s + x, 0));
+                } else if (msg.type === "odds") resolve({ odds: msg.odds, runs: msg.runs });
+                else if (msg.type === "error") reject(new Error(msg.message));
+              };
+              w.onerror = (e) => reject(e.error ?? new Error(e.message));
+              const offset = sizes.slice(0, i).reduce((s, x) => s + x, 0);
+              w.postMessage({ id: i + 1, kind: "odds", runs: sizes[i]!, offset, state } satisfies SimRequest);
+            }),
+        ),
+      );
+      return mergeOdds(parts);
+    } finally {
+      workers.forEach((w) => w.terminate());
+    }
+  }, []);
+
+  /** A kills/deaths heatmap for a map (in the worker when possible). */
+  const heatmap = useCallback(
+    (req: HeatRequest, onProgress?: (done: number, total: number) => void): Promise<Heatmap> =>
       new Promise((resolve, reject) => {
         const worker = getWorker();
         const state = stateRef.current!;
         if (!worker) {
           setTimeout(() => {
             try {
-              resolve(runOdds(state, runs, onProgress));
+              resolve(runHeatmap(state, req, onProgress));
             } catch (e) {
               reject(e);
             }
@@ -222,13 +269,13 @@ export function useSeason(initial: SeasonConfig) {
         const onMessage = (e: MessageEvent<SimResponse>) => {
           const msg = e.data;
           if (msg.id !== id) return;
-          if (msg.type === "progress") return onProgress?.(msg.next);
+          if (msg.type === "progress") return onProgress?.(msg.next, msg.total);
           worker.removeEventListener("message", onMessage);
-          if (msg.type === "odds") resolve(msg.odds);
+          if (msg.type === "heatmap") resolve(msg.heat);
           else if (msg.type === "error") reject(new Error(msg.message));
         };
         worker.addEventListener("message", onMessage);
-        worker.postMessage({ id, kind: "odds", runs, state } satisfies SimRequest);
+        worker.postMessage({ id, kind: "heatmap", req, state, overrides: savedOverrides() } satisfies SimRequest);
       }),
     [],
   );
@@ -285,6 +332,7 @@ export function useSeason(initial: SeasonConfig) {
     start,
     replace,
     odds,
+    heatmap,
     load,
     saveTo,
     autosaved,

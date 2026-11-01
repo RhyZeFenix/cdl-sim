@@ -1,7 +1,7 @@
 // Search & Destroy: round by round, one life each, sides swap every round.
 // A round is a sequence of 1v1 gunfights with plant / retake / defuse logic.
 import type { ModeSettings } from "../../data/schema";
-import { aliveOn, allAlive, catchUpBonus, clamp, countAlive, duelStep, pickBy, type Arena } from "../arena";
+import { aliveOn, allAlive, catchUpBonus, clamp, closeScale, countAlive, duelStep, pickBy, type Arena } from "../arena";
 import { TUNING } from "../tuning";
 import { other, type MapEvent, type Pair, type Side } from "../types";
 
@@ -37,6 +37,10 @@ export function playSnd(a: Arena, s: ModeSettings["snd"], firstAtk: Side): Pair 
         const p = clamp(T.plantBase + T.plantPerAdv * adv + (t > T.latePlantAfter ? T.latePlantBoost : 0), 0.02, 0.95);
         if (rng.chance(p)) {
           planted = true;
+          // Nobody reaches a site in the first seconds: an early plant lands at the
+          // earliest realistic time. The bomb timer runs from the plant, so results are
+          // unchanged; only the clock is.
+          if (t < T.minPlantSecs) t = T.minPlantSecs;
           plantT = t;
           const by = pickBy(a, aliveOn(alive, atk), (pl) => pl.ratings.snd_iq);
           a.events.push({ k: "plant", t: Math.round(roundStart + t), by, site: rng.chance(0.5) ? "A" : "B" });
@@ -49,7 +53,7 @@ export function playSnd(a: Arena, s: ModeSettings["snd"], firstAtk: Side): Pair 
         break;
       }
 
-      const bonus: Pair = catchUpBonus(score, TUNING.catchUp.snd);
+      const bonus: Pair = catchUpBonus(score, TUNING.catchUp.snd * closeScale(a));
       if (planted) bonus[atk] += T.postPlantBonus;
       else bonus[def] += T.defenseBonus;
       a.t = roundStart + t;

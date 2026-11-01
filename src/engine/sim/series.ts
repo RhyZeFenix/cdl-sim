@@ -34,6 +34,11 @@ export function simulateMap(opts: {
 }): MapResult {
   const { teams, season, vm, rng } = opts;
   const arena = createArena(rng, teams, vm.mode, vm.map);
+  const factor = season.mapFactors?.[`${vm.mode}:${vm.map}`];
+  if (factor) {
+    arena.pace = factor.pace;
+    arena.close = factor.close;
+  }
   const s = season.modeSettings;
   let score: Pair;
   const mode: Mode = vm.mode;

@@ -1,0 +1,15 @@
+{
+  "name": "CDL Season Sim",
+  "short_name": "CDL Sim",
+  "description": "Call of Duty League season simulator: 2024-2026 seasons, GM mode, live and 3D replays.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#121211",
+  "theme_color": "#121211",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

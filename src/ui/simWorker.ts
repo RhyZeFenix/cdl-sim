@@ -4,12 +4,20 @@
 // new state back. The engine is the same code the page would run inline.
 import { advance, advanceSeason, isDone, isMatchDay, loadSeasonData, pointsTable, type SeasonState, type Step } from "../engine";
 
+import { runHeatmap, type HeatRequest, type Heatmap } from "./heatmap";
+import { setLayoutOverride } from "./replay/layouts";
+import type { Traced } from "./replay/shapes";
+
 export type SimKind = "step" | "stage" | "season";
 
-export type SimRequest = { id: number; kind: SimKind; state: SeasonState } | { id: number; kind: "odds"; runs: number; state: SeasonState };
+export type SimRequest =
+  | { id: number; kind: SimKind; state: SeasonState }
+  | { id: number; kind: "odds"; runs: number; offset: number; state: SeasonState }
+  | { id: number; kind: "heatmap"; req: HeatRequest; state: SeasonState; overrides: Record<string, Traced> };
 export type SimResponse =
   | { id: number; type: "progress"; next: number; total: number }
   | { id: number; type: "odds"; odds: TeamOdds[]; runs: number }
+  | { id: number; type: "heatmap"; heat: Heatmap }
   | { id: number; type: "done"; state: SeasonState; steps: Step[]; newSeries: string[] }
   | { id: number; type: "error"; message: string };
 
@@ -48,18 +56,23 @@ export interface TeamOdds {
  * Plays the rest of the season `runs` times with different luck for the unplayed series
  * (played results stay as they are) and counts how often each team finishes where.
  */
-export function runOdds(state: SeasonState, runs: number, onRun?: (done: number) => void): TeamOdds[] {
+export function runOdds(state: SeasonState, runs: number, onRun?: (done: number) => void, offset = 0): TeamOdds[] {
   const data = loadSeasonData(state.seasonId);
   const acc = new Map<string, TeamOdds>(data.season.teams.map((t) => [t.id, { team: t.id, makeChamps: 0, winChamps: 0, winMajor: 0, avgPoints: 0, avgRank: 0 }]));
   const base = JSON.stringify(state);
   for (let i = 0; i < runs; i++) {
     const s = JSON.parse(base) as SeasonState;
     // New luck for everything still to play; GM decisions go to the AI.
-    s.options = { ...s.options, seed: `${state.options.seed}~odds${i}` };
+    s.options = { ...s.options, seed: `${state.options.seed}~odds${offset + i}` };
     s.pending = undefined;
     s.watchlist = [];
     s.unwatched = [];
-    if (s.gm) s.gm = { ...s.gm, autoVeto: true, spoilerFree: false, pauseBetweenMaps: false, unwatched: [] };
+    // Lighter: the GM team just plays its lineup (no morale, inbox or market work).
+    if (s.gm) {
+      const gm = s.gm;
+      s.aiRosters = { ...(s.aiRosters ?? {}), [gm.team]: [...gm.starters, ...gm.roster.filter((id) => !gm.starters.includes(id))] };
+      s.gm = undefined;
+    }
     advanceSeason(s, data);
     const table = pointsTable(s, data);
     const champs = s.events.find((e) => e.kind === "championship");
@@ -84,9 +97,19 @@ if (typeof self !== "undefined" && typeof (self as unknown as { importScripts?: 
   const ctx = self as unknown as DedicatedWorkerGlobalScope;
   ctx.onmessage = (e: MessageEvent<SimRequest>) => {
     const req = e.data;
+    if (req.kind === "heatmap") {
+      try {
+        for (const [m, t] of Object.entries(req.overrides)) setLayoutOverride(m, t);
+        const heat = runHeatmap(req.state, req.req, (done, total) => ctx.postMessage({ id: req.id, type: "progress", next: done, total } satisfies SimResponse));
+        ctx.postMessage({ id: req.id, type: "heatmap", heat } satisfies SimResponse);
+      } catch (err) {
+        ctx.postMessage({ id: req.id, type: "error", message: err instanceof Error ? err.message : String(err) } satisfies SimResponse);
+      }
+      return;
+    }
     if (req.kind === "odds") {
       try {
-        const odds = runOdds(req.state, req.runs, (done) => ctx.postMessage({ id: req.id, type: "progress", next: done, total: req.runs } satisfies SimResponse));
+        const odds = runOdds(req.state, req.runs, (done) => ctx.postMessage({ id: req.id, type: "progress", next: done, total: req.runs } satisfies SimResponse), req.offset);
         ctx.postMessage({ id: req.id, type: "odds", odds, runs: req.runs } satisfies SimResponse);
       } catch (err) {
         ctx.postMessage({ id: req.id, type: "error", message: err instanceof Error ? err.message : String(err) } satisfies SimResponse);
@@ -101,4 +124,23 @@ if (typeof self !== "undefined" && typeof (self as unknown as { importScripts?: 
       ctx.postMessage({ id, type: "error", message: err instanceof Error ? err.message : String(err) } satisfies SimResponse);
     }
   };
+}
+
+/** Merges odds from several batches, weighting by how many runs each did. */
+export function mergeOdds(parts: { odds: TeamOdds[]; runs: number }[]): TeamOdds[] {
+  const total = parts.reduce((s, p) => s + p.runs, 0);
+  const acc = new Map<string, TeamOdds>();
+  for (const { odds, runs } of parts) {
+    for (const o of odds) {
+      const a = acc.get(o.team) ?? { team: o.team, makeChamps: 0, winChamps: 0, winMajor: 0, avgPoints: 0, avgRank: 0 };
+      const w = runs / total;
+      a.makeChamps += o.makeChamps * w;
+      a.winChamps += o.winChamps * w;
+      a.winMajor += o.winMajor * w;
+      a.avgPoints += o.avgPoints * w;
+      a.avgRank += o.avgRank * w;
+      acc.set(o.team, a);
+    }
+  }
+  return [...acc.values()].sort((a, b) => b.winChamps - a.winChamps || b.makeChamps - a.makeChamps || a.avgRank - b.avgRank);
 }

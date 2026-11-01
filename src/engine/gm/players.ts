@@ -27,12 +27,44 @@ export interface SeriesLine {
   deaths: number;
 }
 
+export interface PlayerForm {
+  /** K/D over the last five series and over the season. */
+  recentKd: number;
+  seasonKd: number;
+  /** recentKd / seasonKd. */
+  ratio: number;
+  label: "hot" | "cold" | "steady";
+  /** K/D per series for the last ten, oldest first. */
+  trend: number[];
+}
+
 export interface PlayerProfile {
   info?: Player;
   age: number;
   modes: ModeLine[];
   series: SeriesLine[];
   total: { maps: number; kills: number; deaths: number };
+  /** Hot or cold lately, once they've played six series. */
+  form?: PlayerForm;
+}
+
+/** Recent form from a player's series (newest first). */
+export function playerForm(series: SeriesLine[]): PlayerForm | undefined {
+  if (series.length < 6) return undefined;
+  const kd = (xs: SeriesLine[]) => xs.reduce((s, x) => s + x.kills, 0) / Math.max(1, xs.reduce((s, x) => s + x.deaths, 0));
+  const recentKd = kd(series.slice(0, 5));
+  const seasonKd = kd(series);
+  const ratio = recentKd / Math.max(0.01, seasonKd);
+  return {
+    recentKd,
+    seasonKd,
+    ratio,
+    label: ratio >= 1.12 ? "hot" : ratio <= 0.88 ? "cold" : "steady",
+    trend: series
+      .slice(0, 10)
+      .reverse()
+      .map((x) => x.kills / Math.max(1, x.deaths)),
+  };
 }
 
 /** Everything a player did this season, leaving out `hidden` (unwatched) series. */
@@ -83,5 +115,6 @@ export function playerProfile(state: SeasonState, data: SeasonData, id: string, 
     modes: list,
     series,
     total: list.reduce((t, m) => ({ maps: t.maps + m.maps, kills: t.kills + m.kills, deaths: t.deaths + m.deaths }), { maps: 0, kills: 0, deaths: 0 }),
+    form: playerForm(series),
   };
 }

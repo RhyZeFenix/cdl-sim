@@ -4,6 +4,16 @@ import type { SeasonStore } from "../useSeason";
 
 const CHANGELOG: { title: string; items: string[] }[] = [
   {
+    title: "Maps",
+    items: [
+      "Map editor: trace over your own reference image, check it, save it to this browser or export it",
+      "Buildings with doors and windows, upper floors, map colour themes, callouts, hold spots behind cover",
+      "2D top-down replay, camera modes (auto-cut, follow player, overhead), minimap inset and kill feed",
+      "Kill and death heatmaps per map; map pace from real results in the sim",
+      "Faster title odds across several workers; installable offline app; player form on player pages",
+    ],
+  },
+  {
     title: "Front office, part 3",
     items: [
       "Save slots and autosave in the browser; share links that open the exact same season",

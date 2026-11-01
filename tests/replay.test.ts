@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { advance, createSeason, loadSeasonData, replaySeries, type MapResult } from "../src/engine";
+import { TUNING, advance, createSeason, loadSeasonData, replaySeries, type MapResult } from "../src/engine";
 import { layoutFor, TRACED_MAPS } from "../src/ui/replay/layouts";
 import { buildGrid, buildTimeline, DT, hillIndex, positionAt, snap, walkable, type Timeline } from "../src/ui/replay/timeline";
 
@@ -70,8 +70,9 @@ describe("3D replay timeline", () => {
       let roundStart = 0;
       for (const e of m.events) {
         if (e.k === "round") roundStart = e.t;
-        // The engine can log a plant at 0:00 of a round, before anyone could reach a site.
-        if (e.k === "plant" && e.t - roundStart >= 8) {
+        if (e.k === "plant") {
+          // Nobody plants before they could have reached a site.
+          expect(e.t - roundStart).toBeGreaterThanOrEqual(TUNING.snd.minPlantSecs);
           plants++;
           if (dist(tl, e.by, e.t, tl.layout.snd[e.site]) < 4) near++;
         }

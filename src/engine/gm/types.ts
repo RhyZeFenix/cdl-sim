@@ -96,6 +96,8 @@ export interface Contract {
   salary: number;
   /** Seasons left, counting this one. */
   years: number;
+  /** The team may add one more season at the same salary when it ends. */
+  option?: boolean;
 }
 
 export interface TradeRecord {

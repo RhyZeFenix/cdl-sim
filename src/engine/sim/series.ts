@@ -38,6 +38,8 @@ export function simulateMap(opts: {
   if (factor) {
     arena.pace = factor.pace;
     arena.close = factor.close;
+    arena.plant = factor.plant ?? 1;
+    arena.retake = factor.retake ?? 1;
   }
   const s = season.modeSettings;
   let score: Pair;

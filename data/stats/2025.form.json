@@ -1,0 +1,3648 @@
+{
+ "season": "2025",
+ "fetched": "2026-11-01",
+ "source": "https://cod-esports.fandom.com/api.php (Cargo table PlayerStats)",
+ "license": "CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors",
+ "rows": [
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "28",
+   "Kills": "543",
+   "Deaths": "563"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "7",
+   "Kills": "147",
+   "Deaths": "166"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "Kills": "48",
+   "Deaths": "63"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "Kills": "659",
+   "Deaths": "643"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "20",
+   "Kills": "424",
+   "Deaths": "420"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "19",
+   "Kills": "324",
+   "Deaths": "361"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "Kills": "519",
+   "Deaths": "547"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "21",
+   "Kills": "366",
+   "Deaths": "412"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "367",
+   "Deaths": "325"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "8",
+   "Kills": "103",
+   "Deaths": "144"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "Kills": "384",
+   "Deaths": "377"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "9",
+   "Kills": "162",
+   "Deaths": "157"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "18",
+   "Kills": "326",
+   "Deaths": "329"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "17",
+   "Kills": "371",
+   "Deaths": "346"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "531",
+   "Deaths": "526"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "16",
+   "Kills": "289",
+   "Deaths": "307"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "Kills": "83",
+   "Deaths": "94"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "Kills": "546",
+   "Deaths": "507"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "Kills": "258",
+   "Deaths": "256"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "413",
+   "Deaths": "448"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "18",
+   "Kills": "349",
+   "Deaths": "350"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "333",
+   "Deaths": "323"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "28",
+   "Kills": "517",
+   "Deaths": "527"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "7",
+   "Kills": "145",
+   "Deaths": "160"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "Kills": "55",
+   "Deaths": "61"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "Kills": "607",
+   "Deaths": "639"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "20",
+   "Kills": "390",
+   "Deaths": "409"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "19",
+   "Kills": "359",
+   "Deaths": "346"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "Kills": "554",
+   "Deaths": "544"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "21",
+   "Kills": "381",
+   "Deaths": "370"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "334",
+   "Deaths": "305"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "8",
+   "Kills": "115",
+   "Deaths": "135"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "Kills": "384",
+   "Deaths": "364"
+  },
+  {
+   "PlayerLink": "Arcitys",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "Kills": "49",
+   "Deaths": "57"
+  },
+  {
+   "PlayerLink": "Arcitys",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "348",
+   "Deaths": "394"
+  },
+  {
+   "PlayerLink": "Arcitys",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "10",
+   "Kills": "163",
+   "Deaths": "167"
+  },
+  {
+   "PlayerLink": "Arcitys",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "279",
+   "Deaths": "356"
+  },
+  {
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "9",
+   "Kills": "162",
+   "Deaths": "168"
+  },
+  {
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "8",
+   "Kills": "153",
+   "Deaths": "131"
+  },
+  {
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "Kills": "467",
+   "Deaths": "546"
+  },
+  {
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "10",
+   "Kills": "161",
+   "Deaths": "188"
+  },
+  {
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "9",
+   "Kills": "154",
+   "Deaths": "161"
+  },
+  {
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "Kills": "392",
+   "Deaths": "388"
+  },
+  {
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "Kills": "30",
+   "Deaths": "42"
+  },
+  {
+   "PlayerLink": "Attach",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "299",
+   "Deaths": "344"
+  },
+  {
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "10",
+   "Kills": "184",
+   "Deaths": "190"
+  },
+  {
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "11",
+   "Kills": "210",
+   "Deaths": "191"
+  },
+  {
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "Kills": "95",
+   "Deaths": "84"
+  },
+  {
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "572",
+   "Deaths": "557"
+  },
+  {
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "19",
+   "Kills": "355",
+   "Deaths": "325"
+  },
+  {
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "Kills": "120",
+   "Deaths": "123"
+  },
+  {
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "Kills": "467",
+   "Deaths": "494"
+  },
+  {
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "340",
+   "Deaths": "383"
+  },
+  {
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "Kills": "325",
+   "Deaths": "338"
+  },
+  {
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "342",
+   "Deaths": "365"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "18",
+   "Kills": "299",
+   "Deaths": "338"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "8",
+   "Kills": "113",
+   "Deaths": "152"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "Kills": "82",
+   "Deaths": "95"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "537",
+   "Deaths": "560"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "11",
+   "Kills": "240",
+   "Deaths": "249"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "Kills": "66",
+   "Deaths": "90"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "Kills": "530",
+   "Deaths": "557"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "11",
+   "Kills": "181",
+   "Deaths": "221"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "347",
+   "Deaths": "333"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "Kills": "97",
+   "Deaths": "104"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "258",
+   "Deaths": "312"
+  },
+  {
+   "PlayerLink": "Capsidal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "Kills": "126",
+   "Deaths": "159"
+  },
+  {
+   "PlayerLink": "Capsidal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "351",
+   "Deaths": "379"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "9",
+   "Kills": "151",
+   "Deaths": "132"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "18",
+   "Kills": "320",
+   "Deaths": "289"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "17",
+   "Kills": "345",
+   "Deaths": "295"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "532",
+   "Deaths": "463"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "16",
+   "Kills": "324",
+   "Deaths": "250"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "Kills": "85",
+   "Deaths": "83"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "Kills": "540",
+   "Deaths": "451"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "Kills": "256",
+   "Deaths": "228"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "399",
+   "Deaths": "357"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "18",
+   "Kills": "345",
+   "Deaths": "310"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "356",
+   "Deaths": "270"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "10",
+   "Kills": "195",
+   "Deaths": "209"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "11",
+   "Kills": "231",
+   "Deaths": "221"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "Kills": "99",
+   "Deaths": "102"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "638",
+   "Deaths": "576"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "19",
+   "Kills": "381",
+   "Deaths": "368"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "Kills": "116",
+   "Deaths": "126"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "Kills": "525",
+   "Deaths": "508"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "24",
+   "Kills": "483",
+   "Deaths": "490"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "435",
+   "Deaths": "429"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "Kills": "363",
+   "Deaths": "367"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "420",
+   "Deaths": "399"
+  },
+  {
+   "PlayerLink": "d7oom",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "3",
+   "Kills": "46",
+   "Deaths": "67"
+  },
+  {
+   "PlayerLink": "d7oom",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "Kills": "46",
+   "Deaths": "67"
+  },
+  {
+   "PlayerLink": "d7oom",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "11",
+   "Kills": "210",
+   "Deaths": "243"
+  },
+  {
+   "PlayerLink": "d7oom",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "Kills": "37",
+   "Deaths": "49"
+  },
+  {
+   "PlayerLink": "d7oom",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "Kills": "64",
+   "Deaths": "71"
+  },
+  {
+   "PlayerLink": "d7oom",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "Kills": "417",
+   "Deaths": "429"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "Kills": "306",
+   "Deaths": "248"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "14",
+   "Kills": "240",
+   "Deaths": "258"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "13",
+   "Kills": "274",
+   "Deaths": "225"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "621",
+   "Deaths": "557"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "Kills": "108",
+   "Deaths": "96"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "7",
+   "Kills": "146",
+   "Deaths": "136"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "22",
+   "Kills": "378",
+   "Deaths": "416"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "9",
+   "Kills": "190",
+   "Deaths": "177"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "410",
+   "Deaths": "386"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "16",
+   "Kills": "288",
+   "Deaths": "304"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "Kills": "340",
+   "Deaths": "319"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "9",
+   "Kills": "141",
+   "Deaths": "170"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "18",
+   "Kills": "331",
+   "Deaths": "318"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "17",
+   "Kills": "320",
+   "Deaths": "317"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "520",
+   "Deaths": "525"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "16",
+   "Kills": "310",
+   "Deaths": "280"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "Kills": "87",
+   "Deaths": "92"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "Kills": "547",
+   "Deaths": "510"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "Kills": "242",
+   "Deaths": "258"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "433",
+   "Deaths": "410"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "18",
+   "Kills": "343",
+   "Deaths": "347"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "339",
+   "Deaths": "314"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "8",
+   "Kills": "169",
+   "Deaths": "169"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "22",
+   "Kills": "420",
+   "Deaths": "369"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "Kills": "68",
+   "Deaths": "93"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "589",
+   "Deaths": "590"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "17",
+   "Kills": "323",
+   "Deaths": "352"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "14",
+   "Kills": "264",
+   "Deaths": "239"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "23",
+   "Kills": "417",
+   "Deaths": "417"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "Kills": "272",
+   "Deaths": "261"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "17",
+   "Kills": "309",
+   "Deaths": "292"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "25",
+   "Kills": "472",
+   "Deaths": "471"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "277",
+   "Deaths": "283"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "13",
+   "Kills": "261",
+   "Deaths": "259"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "15",
+   "Kills": "287",
+   "Deaths": "259"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "632",
+   "Deaths": "623"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "Kills": "106",
+   "Deaths": "116"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "Kills": "101",
+   "Deaths": "84"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "Kills": "483",
+   "Deaths": "415"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "8",
+   "Kills": "156",
+   "Deaths": "159"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "Kills": "411",
+   "Deaths": "428"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "Kills": "283",
+   "Deaths": "303"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "376",
+   "Deaths": "404"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "3",
+   "Kills": "63",
+   "Deaths": "62"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "Kills": "74",
+   "Deaths": "64"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "25",
+   "Kills": "478",
+   "Deaths": "521"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "Kills": "44",
+   "Deaths": "53"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "Kills": "72",
+   "Deaths": "76"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "Kills": "455",
+   "Deaths": "485"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "Kills": "62",
+   "Deaths": "61"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "377",
+   "Deaths": "409"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "10",
+   "Kills": "186",
+   "Deaths": "176"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "340",
+   "Deaths": "367"
+  },
+  {
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "Kills": "42",
+   "Deaths": "50"
+  },
+  {
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "18",
+   "Kills": "313",
+   "Deaths": "344"
+  },
+  {
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "Kills": "137",
+   "Deaths": "138"
+  },
+  {
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "283",
+   "Deaths": "357"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "8",
+   "Kills": "143",
+   "Deaths": "158"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "22",
+   "Kills": "386",
+   "Deaths": "368"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "Kills": "88",
+   "Deaths": "85"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "578",
+   "Deaths": "562"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "17",
+   "Kills": "294",
+   "Deaths": "303"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "14",
+   "Kills": "215",
+   "Deaths": "224"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "23",
+   "Kills": "432",
+   "Deaths": "358"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "Kills": "239",
+   "Deaths": "244"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "17",
+   "Kills": "292",
+   "Deaths": "273"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "25",
+   "Kills": "434",
+   "Deaths": "435"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "288",
+   "Deaths": "274"
+  },
+  {
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "13",
+   "Kills": "305",
+   "Deaths": "247"
+  },
+  {
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "15",
+   "Kills": "271",
+   "Deaths": "248"
+  },
+  {
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "606",
+   "Deaths": "614"
+  },
+  {
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "Kills": "120",
+   "Deaths": "98"
+  },
+  {
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "Kills": "98",
+   "Deaths": "77"
+  },
+  {
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "Kills": "403",
+   "Deaths": "420"
+  },
+  {
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "8",
+   "Kills": "163",
+   "Deaths": "155"
+  },
+  {
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "Kills": "429",
+   "Deaths": "404"
+  },
+  {
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "Kills": "296",
+   "Deaths": "288"
+  },
+  {
+   "PlayerLink": "Gio",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "404",
+   "Deaths": "387"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "7",
+   "Kills": "166",
+   "Deaths": "142"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "Kills": "383",
+   "Deaths": "372"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "14",
+   "Kills": "269",
+   "Deaths": "282"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "645",
+   "Deaths": "533"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "9",
+   "Kills": "154",
+   "Deaths": "156"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "Kills": "107",
+   "Deaths": "116"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "Kills": "544",
+   "Deaths": "462"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "7",
+   "Kills": "136",
+   "Deaths": "136"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "376",
+   "Deaths": "380"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "Kills": "89",
+   "Deaths": "87"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "323",
+   "Deaths": "353"
+  },
+  {
+   "PlayerLink": "Hicksy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "7",
+   "Kills": "114",
+   "Deaths": "142"
+  },
+  {
+   "PlayerLink": "Hicksy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "Kills": "51",
+   "Deaths": "54"
+  },
+  {
+   "PlayerLink": "Hicksy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "Kills": "573",
+   "Deaths": "670"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "Kills": "313",
+   "Deaths": "290"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "14",
+   "Kills": "253",
+   "Deaths": "235"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "13",
+   "Kills": "248",
+   "Deaths": "215"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "22",
+   "Kills": "463",
+   "Deaths": "386"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "9",
+   "Kills": "182",
+   "Deaths": "177"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "401",
+   "Deaths": "381"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "16",
+   "Kills": "311",
+   "Deaths": "308"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "Kills": "386",
+   "Deaths": "318"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "8",
+   "Kills": "183",
+   "Deaths": "159"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "22",
+   "Kills": "401",
+   "Deaths": "378"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "Kills": "82",
+   "Deaths": "91"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "649",
+   "Deaths": "607"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "17",
+   "Kills": "355",
+   "Deaths": "336"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "14",
+   "Kills": "276",
+   "Deaths": "225"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "23",
+   "Kills": "503",
+   "Deaths": "398"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "Kills": "311",
+   "Deaths": "245"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "17",
+   "Kills": "349",
+   "Deaths": "286"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "25",
+   "Kills": "506",
+   "Deaths": "457"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "319",
+   "Deaths": "289"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "10",
+   "Kills": "151",
+   "Deaths": "190"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "11",
+   "Kills": "203",
+   "Deaths": "196"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "Kills": "79",
+   "Deaths": "86"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "486",
+   "Deaths": "532"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "19",
+   "Kills": "315",
+   "Deaths": "315"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "Kills": "121",
+   "Deaths": "111"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "Kills": "449",
+   "Deaths": "475"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "24",
+   "Kills": "426",
+   "Deaths": "418"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "337",
+   "Deaths": "376"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "Kills": "292",
+   "Deaths": "331"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "304",
+   "Deaths": "323"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "10",
+   "Kills": "196",
+   "Deaths": "190"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "11",
+   "Kills": "225",
+   "Deaths": "221"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "Kills": "86",
+   "Deaths": "93"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "572",
+   "Deaths": "569"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "19",
+   "Kills": "399",
+   "Deaths": "346"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "Kills": "126",
+   "Deaths": "126"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "Kills": "588",
+   "Deaths": "497"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "24",
+   "Kills": "507",
+   "Deaths": "454"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "426",
+   "Deaths": "402"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "Kills": "371",
+   "Deaths": "325"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "368",
+   "Deaths": "373"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "14",
+   "Kills": "242",
+   "Deaths": "274"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "13",
+   "Kills": "231",
+   "Deaths": "249"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "546",
+   "Deaths": "602"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "7",
+   "Kills": "123",
+   "Deaths": "141"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "22",
+   "Kills": "306",
+   "Deaths": "454"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "8",
+   "Kills": "158",
+   "Deaths": "165"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "Kills": "406",
+   "Deaths": "410"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "Kills": "315",
+   "Deaths": "309"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "406",
+   "Deaths": "411"
+  },
+  {
+   "PlayerLink": "Khhx",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "14",
+   "Kills": "284",
+   "Deaths": "238"
+  },
+  {
+   "PlayerLink": "KiinG",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "3",
+   "Kills": "72",
+   "Deaths": "70"
+  },
+  {
+   "PlayerLink": "KiinG",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "3",
+   "Kills": "58",
+   "Deaths": "64"
+  },
+  {
+   "PlayerLink": "KiinG",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "Kills": "43",
+   "Deaths": "49"
+  },
+  {
+   "PlayerLink": "KiinG",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "Kills": "90",
+   "Deaths": "75"
+  },
+  {
+   "PlayerLink": "KiinG",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "Kills": "429",
+   "Deaths": "479"
+  },
+  {
+   "PlayerLink": "KingAbody",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "14",
+   "Kills": "212",
+   "Deaths": "293"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "5",
+   "Kills": "94",
+   "Deaths": "85"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "Kills": "79",
+   "Deaths": "91"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "619",
+   "Deaths": "576"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "Kills": "47",
+   "Deaths": "56"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "8",
+   "Kills": "154",
+   "Deaths": "155"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "26",
+   "Kills": "516",
+   "Deaths": "517"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "Kills": "40",
+   "Deaths": "63"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "18",
+   "Kills": "362",
+   "Deaths": "367"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "Kills": "147",
+   "Deaths": "158"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "383",
+   "Deaths": "369"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "9",
+   "Kills": "188",
+   "Deaths": "182"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "8",
+   "Kills": "155",
+   "Deaths": "142"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "Kills": "535",
+   "Deaths": "552"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "10",
+   "Kills": "215",
+   "Deaths": "197"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "9",
+   "Kills": "157",
+   "Deaths": "167"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "Kills": "472",
+   "Deaths": "439"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "Kills": "33",
+   "Deaths": "45"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "356",
+   "Deaths": "362"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "Kills": "132",
+   "Deaths": "149"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "396",
+   "Deaths": "390"
+  },
+  {
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "Kills": "353",
+   "Deaths": "368"
+  },
+  {
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "Kills": "62",
+   "Deaths": "78"
+  },
+  {
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "Kills": "521",
+   "Deaths": "561"
+  },
+  {
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "4",
+   "Kills": "68",
+   "Deaths": "92"
+  },
+  {
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "Kills": "70",
+   "Deaths": "87"
+  },
+  {
+   "PlayerLink": "Lucky (Alejandro López)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "Kills": "420",
+   "Deaths": "521"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "Kills": "47",
+   "Deaths": "57"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "8",
+   "Kills": "125",
+   "Deaths": "138"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "21",
+   "Kills": "359",
+   "Deaths": "386"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "Kills": "45",
+   "Deaths": "50"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "18",
+   "Kills": "324",
+   "Deaths": "337"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "Kills": "140",
+   "Deaths": "129"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "322",
+   "Deaths": "362"
+  },
+  {
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "5",
+   "Kills": "89",
+   "Deaths": "79"
+  },
+  {
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "Kills": "86",
+   "Deaths": "79"
+  },
+  {
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "605",
+   "Deaths": "577"
+  },
+  {
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "Kills": "39",
+   "Deaths": "51"
+  },
+  {
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "8",
+   "Kills": "149",
+   "Deaths": "143"
+  },
+  {
+   "PlayerLink": "Lynz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "26",
+   "Kills": "485",
+   "Deaths": "493"
+  },
+  {
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "9",
+   "Kills": "183",
+   "Deaths": "197"
+  },
+  {
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "8",
+   "Kills": "159",
+   "Deaths": "153"
+  },
+  {
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "Kills": "554",
+   "Deaths": "560"
+  },
+  {
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "10",
+   "Kills": "199",
+   "Deaths": "211"
+  },
+  {
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "9",
+   "Kills": "129",
+   "Deaths": "174"
+  },
+  {
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "Kills": "424",
+   "Deaths": "451"
+  },
+  {
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "Kills": "42",
+   "Deaths": "46"
+  },
+  {
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "315",
+   "Deaths": "397"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "Kills": "316",
+   "Deaths": "270"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "24",
+   "Kills": "474",
+   "Deaths": "440"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "16",
+   "Kills": "322",
+   "Deaths": "317"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "16",
+   "Kills": "310",
+   "Deaths": "259"
+  },
+  {
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "Kills": "291",
+   "Deaths": "329"
+  },
+  {
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "Kills": "354",
+   "Deaths": "418"
+  },
+  {
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "Kills": "64",
+   "Deaths": "81"
+  },
+  {
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "Kills": "557",
+   "Deaths": "594"
+  },
+  {
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "4",
+   "Kills": "97",
+   "Deaths": "94"
+  },
+  {
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "Kills": "80",
+   "Deaths": "86"
+  },
+  {
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "21",
+   "Kills": "385",
+   "Deaths": "446"
+  },
+  {
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "17",
+   "Kills": "318",
+   "Deaths": "321"
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "393",
+   "Deaths": "416"
+  },
+  {
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "15",
+   "Kills": "257",
+   "Deaths": "295"
+  },
+  {
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "393",
+   "Deaths": "417"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "28",
+   "Kills": "494",
+   "Deaths": "493"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "7",
+   "Kills": "129",
+   "Deaths": "146"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "Kills": "44",
+   "Deaths": "61"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "Kills": "600",
+   "Deaths": "610"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "20",
+   "Kills": "389",
+   "Deaths": "357"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "19",
+   "Kills": "371",
+   "Deaths": "316"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "Kills": "531",
+   "Deaths": "526"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "21",
+   "Kills": "382",
+   "Deaths": "353"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "319",
+   "Deaths": "307"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "8",
+   "Kills": "112",
+   "Deaths": "130"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "Kills": "340",
+   "Deaths": "358"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "28",
+   "Kills": "569",
+   "Deaths": "551"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "20",
+   "Kills": "459",
+   "Deaths": "418"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "19",
+   "Kills": "374",
+   "Deaths": "372"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "Kills": "645",
+   "Deaths": "595"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "21",
+   "Kills": "411",
+   "Deaths": "408"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "371",
+   "Deaths": "342"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "8",
+   "Kills": "117",
+   "Deaths": "139"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "Kills": "412",
+   "Deaths": "380"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "13",
+   "Kills": "294",
+   "Deaths": "270"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "15",
+   "Kills": "282",
+   "Deaths": "275"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "663",
+   "Deaths": "693"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "Kills": "80",
+   "Deaths": "114"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "Kills": "96",
+   "Deaths": "95"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "Kills": "460",
+   "Deaths": "489"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "8",
+   "Kills": "166",
+   "Deaths": "155"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "24",
+   "Kills": "454",
+   "Deaths": "468"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "17",
+   "Kills": "370",
+   "Deaths": "326"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "458",
+   "Deaths": "449"
+  },
+  {
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "Kills": "42",
+   "Deaths": "60"
+  },
+  {
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "18",
+   "Kills": "371",
+   "Deaths": "360"
+  },
+  {
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "Kills": "164",
+   "Deaths": "145"
+  },
+  {
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "340",
+   "Deaths": "369"
+  },
+  {
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "18",
+   "Kills": "285",
+   "Deaths": "338"
+  },
+  {
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "8",
+   "Kills": "132",
+   "Deaths": "137"
+  },
+  {
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "Kills": "67",
+   "Deaths": "88"
+  },
+  {
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "537",
+   "Deaths": "553"
+  },
+  {
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "11",
+   "Kills": "228",
+   "Deaths": "241"
+  },
+  {
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "Kills": "82",
+   "Deaths": "88"
+  },
+  {
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "Kills": "492",
+   "Deaths": "540"
+  },
+  {
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "11",
+   "Kills": "197",
+   "Deaths": "212"
+  },
+  {
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "335",
+   "Deaths": "321"
+  },
+  {
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "Kills": "92",
+   "Deaths": "100"
+  },
+  {
+   "PlayerLink": "Owakening",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "269",
+   "Deaths": "317"
+  },
+  {
+   "PlayerLink": "PaulEhx",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "13",
+   "Kills": "255",
+   "Deaths": "271"
+  },
+  {
+   "PlayerLink": "PaulEhx",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "15",
+   "Kills": "245",
+   "Deaths": "281"
+  },
+  {
+   "PlayerLink": "PaulEhx",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "534",
+   "Deaths": "645"
+  },
+  {
+   "PlayerLink": "PaulEhx",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "Kills": "66",
+   "Deaths": "114"
+  },
+  {
+   "PlayerLink": "PaulEhx",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "Kills": "70",
+   "Deaths": "87"
+  },
+  {
+   "PlayerLink": "PaulEhx",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "Kills": "430",
+   "Deaths": "460"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "8",
+   "Kills": "164",
+   "Deaths": "141"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "Kills": "116",
+   "Deaths": "107"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "7",
+   "Kills": "138",
+   "Deaths": "134"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "22",
+   "Kills": "402",
+   "Deaths": "416"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "Kills": "48",
+   "Deaths": "59"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "426",
+   "Deaths": "400"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "10",
+   "Kills": "193",
+   "Deaths": "157"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "375",
+   "Deaths": "364"
+  },
+  {
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "5",
+   "Kills": "84",
+   "Deaths": "83"
+  },
+  {
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "Kills": "58",
+   "Deaths": "80"
+  },
+  {
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "522",
+   "Deaths": "540"
+  },
+  {
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "Kills": "35",
+   "Deaths": "56"
+  },
+  {
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "8",
+   "Kills": "112",
+   "Deaths": "146"
+  },
+  {
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "19",
+   "Kills": "307",
+   "Deaths": "345"
+  },
+  {
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "Kills": "38",
+   "Deaths": "60"
+  },
+  {
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "364",
+   "Deaths": "395"
+  },
+  {
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "10",
+   "Kills": "135",
+   "Deaths": "175"
+  },
+  {
+   "PlayerLink": "Priestahh",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "314",
+   "Deaths": "377"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "18",
+   "Kills": "315",
+   "Deaths": "339"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "8",
+   "Kills": "124",
+   "Deaths": "165"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "Kills": "94",
+   "Deaths": "91"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "597",
+   "Deaths": "613"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "11",
+   "Kills": "218",
+   "Deaths": "258"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "Kills": "91",
+   "Deaths": "94"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "Kills": "500",
+   "Deaths": "571"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "11",
+   "Kills": "218",
+   "Deaths": "220"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "356",
+   "Deaths": "350"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "Kills": "95",
+   "Deaths": "109"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "300",
+   "Deaths": "323"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "Kills": "326",
+   "Deaths": "295"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "Kills": "396",
+   "Deaths": "394"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "Kills": "71",
+   "Deaths": "72"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "Kills": "591",
+   "Deaths": "564"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "4",
+   "Kills": "117",
+   "Deaths": "89"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "Kills": "92",
+   "Deaths": "75"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "Kills": "510",
+   "Deaths": "527"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "17",
+   "Kills": "292",
+   "Deaths": "299"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "401",
+   "Deaths": "384"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "15",
+   "Kills": "296",
+   "Deaths": "279"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "436",
+   "Deaths": "387"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "Kills": "355",
+   "Deaths": "288"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "Kills": "362",
+   "Deaths": "387"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "Kills": "73",
+   "Deaths": "71"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "33",
+   "Kills": "587",
+   "Deaths": "584"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "4",
+   "Kills": "96",
+   "Deaths": "84"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "Kills": "96",
+   "Deaths": "80"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "Kills": "537",
+   "Deaths": "490"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "17",
+   "Kills": "296",
+   "Deaths": "293"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "412",
+   "Deaths": "367"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "15",
+   "Kills": "310",
+   "Deaths": "279"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "424",
+   "Deaths": "392"
+  },
+  {
+   "PlayerLink": "Roxas",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "3",
+   "Kills": "51",
+   "Deaths": "64"
+  },
+  {
+   "PlayerLink": "Roxas",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "Kills": "50",
+   "Deaths": "60"
+  },
+  {
+   "PlayerLink": "Roxas",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "25",
+   "Kills": "410",
+   "Deaths": "507"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "8",
+   "Kills": "158",
+   "Deaths": "165"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "22",
+   "Kills": "438",
+   "Deaths": "370"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "4",
+   "Kills": "91",
+   "Deaths": "91"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "640",
+   "Deaths": "565"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "17",
+   "Kills": "356",
+   "Deaths": "326"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "14",
+   "Kills": "260",
+   "Deaths": "241"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "23",
+   "Kills": "470",
+   "Deaths": "404"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "Kills": "299",
+   "Deaths": "245"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "17",
+   "Kills": "350",
+   "Deaths": "300"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "25",
+   "Kills": "486",
+   "Deaths": "445"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "313",
+   "Deaths": "270"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "Kills": "338",
+   "Deaths": "273"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "14",
+   "Kills": "250",
+   "Deaths": "260"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "13",
+   "Kills": "257",
+   "Deaths": "241"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "674",
+   "Deaths": "534"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "Kills": "107",
+   "Deaths": "100"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "7",
+   "Kills": "116",
+   "Deaths": "145"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "22",
+   "Kills": "408",
+   "Deaths": "428"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "9",
+   "Kills": "201",
+   "Deaths": "183"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "416",
+   "Deaths": "420"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "16",
+   "Kills": "320",
+   "Deaths": "325"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "Kills": "379",
+   "Deaths": "333"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "9",
+   "Kills": "193",
+   "Deaths": "172"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "8",
+   "Kills": "139",
+   "Deaths": "146"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "Kills": "467",
+   "Deaths": "564"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "10",
+   "Kills": "202",
+   "Deaths": "204"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "9",
+   "Kills": "168",
+   "Deaths": "172"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "Kills": "476",
+   "Deaths": "383"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "3",
+   "Kills": "46",
+   "Deaths": "47"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "380",
+   "Deaths": "364"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "Kills": "124",
+   "Deaths": "158"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "371",
+   "Deaths": "407"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "9",
+   "Kills": "131",
+   "Deaths": "161"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "18",
+   "Kills": "336",
+   "Deaths": "314"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "17",
+   "Kills": "359",
+   "Deaths": "326"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "536",
+   "Deaths": "496"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "16",
+   "Kills": "319",
+   "Deaths": "300"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "5",
+   "Kills": "103",
+   "Deaths": "86"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "Kills": "564",
+   "Deaths": "504"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "15",
+   "Kills": "276",
+   "Deaths": "255"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "392",
+   "Deaths": "426"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "18",
+   "Kills": "389",
+   "Deaths": "322"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "332",
+   "Deaths": "324"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "5",
+   "Kills": "74",
+   "Deaths": "78"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "Kills": "76",
+   "Deaths": "78"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "514",
+   "Deaths": "518"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "6",
+   "Kills": "86",
+   "Deaths": "113"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "12",
+   "Kills": "198",
+   "Deaths": "229"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "9",
+   "Kills": "146",
+   "Deaths": "177"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "344",
+   "Deaths": "388"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "3",
+   "Kills": "61",
+   "Deaths": "49"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "7",
+   "Kills": "113",
+   "Deaths": "135"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "Kills": "340",
+   "Deaths": "346"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "14",
+   "Kills": "251",
+   "Deaths": "249"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "552",
+   "Deaths": "531"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "9",
+   "Kills": "145",
+   "Deaths": "148"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "Kills": "118",
+   "Deaths": "104"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "Kills": "454",
+   "Deaths": "412"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "7",
+   "Kills": "111",
+   "Deaths": "121"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "335",
+   "Deaths": "365"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "Kills": "94",
+   "Deaths": "82"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "293",
+   "Deaths": "333"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "18",
+   "Kills": "325",
+   "Deaths": "336"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "8",
+   "Kills": "142",
+   "Deaths": "138"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "5",
+   "Kills": "96",
+   "Deaths": "78"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "628",
+   "Deaths": "595"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "11",
+   "Kills": "244",
+   "Deaths": "244"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "Kills": "98",
+   "Deaths": "91"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "29",
+   "Kills": "540",
+   "Deaths": "530"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "11",
+   "Kills": "195",
+   "Deaths": "218"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "360",
+   "Deaths": "329"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "Kills": "96",
+   "Deaths": "94"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "307",
+   "Deaths": "304"
+  },
+  {
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "7",
+   "Kills": "128",
+   "Deaths": "141"
+  },
+  {
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "361",
+   "Deaths": "380"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "17",
+   "Kills": "315",
+   "Deaths": "271"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "4",
+   "Kills": "70",
+   "Deaths": "88"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "17",
+   "Kills": "280",
+   "Deaths": "272"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "417",
+   "Deaths": "351"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "15",
+   "Kills": "243",
+   "Deaths": "254"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "420",
+   "Deaths": "352"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "7",
+   "Kills": "127",
+   "Deaths": "156"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "Kills": "398",
+   "Deaths": "394"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "14",
+   "Kills": "271",
+   "Deaths": "290"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "599",
+   "Deaths": "562"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "9",
+   "Kills": "172",
+   "Deaths": "183"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "Kills": "110",
+   "Deaths": "111"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "Kills": "492",
+   "Deaths": "464"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "7",
+   "Kills": "121",
+   "Deaths": "146"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "363",
+   "Deaths": "395"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "Kills": "90",
+   "Deaths": "103"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "354",
+   "Deaths": "365"
+  },
+  {
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1",
+   "Maps": "20",
+   "Kills": "381",
+   "Deaths": "418"
+  },
+  {
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "14",
+   "Kills": "249",
+   "Deaths": "293"
+  },
+  {
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "530",
+   "Deaths": "557"
+  },
+  {
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "9",
+   "Kills": "146",
+   "Deaths": "170"
+  },
+  {
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "6",
+   "Kills": "100",
+   "Deaths": "100"
+  },
+  {
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "24",
+   "Kills": "416",
+   "Deaths": "453"
+  },
+  {
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "18",
+   "Kills": "262",
+   "Deaths": "311"
+  },
+  {
+   "PlayerLink": "Wrecks",
+   "TournamentPage": "Call of Duty League Championship 2025",
+   "Maps": "7",
+   "Kills": "107",
+   "Deaths": "145"
+  },
+  {
+   "PlayerLink": "Wrecks",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3",
+   "Maps": "7",
+   "Kills": "110",
+   "Deaths": "143"
+  },
+  {
+   "PlayerLink": "Wrecks",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 3/Qualifiers",
+   "Maps": "3",
+   "Kills": "30",
+   "Deaths": "49"
+  },
+  {
+   "PlayerLink": "Wrecks",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4",
+   "Maps": "5",
+   "Kills": "75",
+   "Deaths": "83"
+  },
+  {
+   "PlayerLink": "Wrecks",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "346",
+   "Deaths": "340"
+  },
+  {
+   "PlayerLink": "WXSL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Minor",
+   "Maps": "3",
+   "Kills": "46",
+   "Deaths": "56"
+  },
+  {
+   "PlayerLink": "WXSL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 1/Qualifiers",
+   "Maps": "8",
+   "Kills": "149",
+   "Deaths": "143"
+  },
+  {
+   "PlayerLink": "WXSL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2",
+   "Maps": "3",
+   "Kills": "33",
+   "Deaths": "52"
+  },
+  {
+   "PlayerLink": "WXSL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Minor",
+   "Maps": "4",
+   "Kills": "60",
+   "Deaths": "75"
+  },
+  {
+   "PlayerLink": "WXSL",
+   "TournamentPage": "Call of Duty League/2025 Season/Major 2/Qualifiers",
+   "Maps": "25",
+   "Kills": "378",
+   "Deaths": "465"
+  }
+ ]
+}

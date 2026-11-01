@@ -1,0 +1,30 @@
+# Regenerates the Linux visual-regression baselines (the ones CI compares against) and
+# commits them to the branch it's run on. Run it by hand after an intended look change:
+# Actions → Visual baselines → Run workflow.
+name: Visual baselines
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  baselines:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test e2e/visual.spec.ts --update-snapshots
+      - name: Commit the new baselines
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add e2e/visual.spec.ts-snapshots
+          git diff --cached --quiet || git commit -m "Update Linux visual baselines"
+          git push

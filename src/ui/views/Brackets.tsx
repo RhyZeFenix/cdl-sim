@@ -113,6 +113,14 @@ export function Brackets({
         <span className="sub">
           {ev.seeds.length} teams · seeds: {ev.seeds.map((t) => dir.team(t).abbr).join(", ")}
         </span>
+        <div className="spacer" />
+        <button
+          className="btn small"
+          onClick={() => nav.watchParty(ev.matches.map((m) => m.seriesId))}
+          title="Watch every match of this event in order, each revealed map by map, rolling on to the next"
+        >
+          Watch party
+        </button>
       </div>
 
       {sections.map((s) => {

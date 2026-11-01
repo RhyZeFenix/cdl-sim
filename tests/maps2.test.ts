@@ -84,12 +84,13 @@ describe("player form and odds", () => {
   });
 
   it("odds from several workers merge by weight", () => {
-    const o = (team: string, win: number) => ({ team, makeChamps: 1, winChamps: win, winMajor: win, avgPoints: 100, avgRank: 1 });
+    const o = (team: string, win: number) => ({ team, makeChamps: 1, winChamps: win, winMajor: win, avgPoints: 100, avgRank: 1, winEvent: { championship: win } });
     const m = mergeOdds([
       { odds: [o("a", 1), o("b", 0)], runs: 30 },
       { odds: [o("a", 0), o("b", 1)], runs: 10 },
     ]);
     expect(m.find((x) => x.team === "a")!.winChamps).toBeCloseTo(0.75, 5);
     expect(m.find((x) => x.team === "b")!.winChamps).toBeCloseTo(0.25, 5);
+    expect(m.find((x) => x.team === "a")!.winEvent.championship).toBeCloseTo(0.75, 5);
   });
 });

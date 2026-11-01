@@ -2,7 +2,7 @@
 // play-by-play lines revealed as their closing event is reached, with an optional 3D
 // view of the same moment. Nothing after the clock is ever shown.
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
-import { mapLogEntries, scoreFromEvents, type MapResult } from "../../engine";
+import { commentary, highlights, mapLogEntries, scoreFromEvents, type MapResult } from "../../engine";
 import { hillLabelsOf, timelineFor } from "../replay/build";
 import { Replay2D } from "../replay/Replay2D";
 
@@ -80,11 +80,40 @@ export function Watch({
   const n = map.events.length;
   const end = n ? map.events[n - 1]!.t : 0;
   const log = useMemo(() => mapLogEntries(map, { team: teams, player: players }), [map, teams, players]);
+  const hl = useMemo(() => highlights(map, players, teams), [map, players, teams]);
+  const captions = useMemo(() => commentary(map, players, teams), [map, players, teams]);
+  const [showCaptions, setShowCaptions] = useState(true);
+  // Highlight reel: which highlight is playing, and who the camera follows.
+  const [reel, setReel] = useState<number | null>(null);
+  const [follow, setFollow] = useState<number | undefined>(undefined);
+  const playHighlight = (i: number, auto: boolean) => {
+    const h = hl[i]!;
+    setReel(auto ? i : null);
+    setNow(h.from);
+    setSpeed(0);
+    setFollow(h.by);
+    setPlaying(true);
+  };
 
   useEffect(() => {
     setNow(0);
     setPlaying(autoPlay);
+    setReel(null);
+    setFollow(undefined);
   }, [map, autoPlay]);
+
+  // The reel moves on two seconds after each moment.
+  useEffect(() => {
+    if (reel === null) return;
+    const h = hl[reel];
+    if (!h || now < h.t + 2) return;
+    if (reel + 1 < hl.length) playHighlight(reel + 1, true);
+    else {
+      setReel(null);
+      setPlaying(false);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [now, reel]);
 
   // The clock runs on animation frames so the 3D view moves smoothly.
   const speedRef = useRef(SPEEDS[speed]!.x);
@@ -119,6 +148,10 @@ export function Watch({
   const feed = seen.slice(-8).reverse();
   const lines = log.filter((l) => l.i <= idx).reverse();
   const finished = now >= end;
+  // The latest caster line, for a few game seconds.
+  const caption = showCaptions ? [...captions].reverse().find((c) => c.t <= now && now - c.t < 6) : undefined;
+  // Only moments already reached are listed (no spoilers), unless the map is over.
+  const shownHl = hl.map((h, i) => ({ h, i })).filter(({ h }) => finished || h.t <= now);
   useEffect(() => {
     if (finished) onFinished?.();
     // Only when playback first reaches the end.
@@ -189,9 +222,22 @@ export function Watch({
         >
           Next beat ›
         </button>
-        <button className="btn" onClick={() => (setNow(end), setPlaying(false))}>
+        <button className="btn" onClick={() => (setNow(end), setPlaying(false), setReel(null))}>
           End
         </button>
+        <button
+          className="btn"
+          disabled={!hl.length}
+          aria-pressed={reel !== null}
+          onClick={() => (reel !== null ? (setReel(null), setPlaying(false)) : playHighlight(0, true))}
+          title="Play the best moments back to back, following the player"
+        >
+          {reel !== null ? `Reel ${reel + 1}/${hl.length} ■` : "Highlight reel"}
+        </button>
+        <label className="row sub" style={{ gap: 4 }}>
+          <input type="checkbox" checked={showCaptions} onChange={(e) => setShowCaptions(e.target.checked)} style={{ width: "auto" }} />
+          Commentary
+        </label>
         <div className="seg" role="group" aria-label="Playback speed">
           {SPEEDS.map((s, i) => (
             <button key={s.label} aria-pressed={speed === i} onClick={() => setSpeed(i)}>
@@ -213,12 +259,28 @@ export function Watch({
         </div>
       </div>
       <input type="range" min={0} max={end} step={0.5} value={now} onChange={(e) => (setNow(Number(e.target.value)), setPlaying(false))} aria-label="Scrub" />
-      {view === "2d" && <TopDown map={map} time={now} players={players} seed={seed ?? `${map.map}:${map.slot}`} />}
-      {view === "3d" && (
-        <Suspense fallback={<div className="replay-msg">Loading 3D…</div>}>
-          <Replay3D map={map} time={now} teams={teams} players={players} seed={seed ?? `${map.map}:${map.slot}`} />
-        </Suspense>
+      {shownHl.length > 0 && (
+        <div className="hl-strip" role="list" aria-label="Highlights">
+          {shownHl.map(({ h, i }) => (
+            <button key={i} role="listitem" className={`hl-chip ${h.kind}${reel === i ? " on" : ""}`} onClick={() => playHighlight(i, false)} title={`Jump to ${clock(h.from)}`}>
+              <span className="muted">{clock(h.t)}</span> {h.title}
+            </button>
+          ))}
+        </div>
       )}
+      <div className="watch-stage">
+        {view === "2d" && <TopDown map={map} time={now} players={players} seed={seed ?? `${map.map}:${map.slot}`} />}
+        {view === "3d" && (
+          <Suspense fallback={<div className="replay-msg">Loading 3D…</div>}>
+            <Replay3D map={map} time={now} teams={teams} players={players} seed={seed ?? `${map.map}:${map.slot}`} follow={follow} />
+          </Suspense>
+        )}
+        {caption && (
+          <div className={`caption${view === "feed" ? " inline" : ""}`} aria-live="polite">
+            {caption.text}
+          </div>
+        )}
+      </div>
       <div className="grid2">
         <div className="card">
           <h3 style={{ marginBottom: 6 }}>Live feed</h3>

@@ -7,6 +7,10 @@ import { other, type MapEvent, type Pair, type Side } from "../types";
 
 export function playSnd(a: Arena, s: ModeSettings["snd"], firstAtk: Side): Pair {
   const T = TUNING.snd;
+  // Per-map plant and retake rates from real results (when switched on).
+  const on = TUNING.mapEffects.snd;
+  const plantF = on ? a.plant : 1;
+  const postPlant = T.postPlantBonus * (on ? clamp(2 - a.retake, 0.4, 1.6) : 1);
   const { rng } = a;
   const score: Pair = [0, 0];
   let n = 0;
@@ -34,7 +38,7 @@ export function playSnd(a: Arena, s: ModeSettings["snd"], firstAtk: Side): Pair 
           break;
         }
         const adv = countAlive(alive, atk) - countAlive(alive, def);
-        const p = clamp(T.plantBase + T.plantPerAdv * adv + (t > T.latePlantAfter ? T.latePlantBoost : 0), 0.02, 0.95);
+        const p = clamp((T.plantBase + T.plantPerAdv * adv + (t > T.latePlantAfter ? T.latePlantBoost : 0)) * plantF, 0.02, 0.95);
         if (rng.chance(p)) {
           planted = true;
           // Nobody reaches a site in the first seconds: an early plant lands at the
@@ -54,7 +58,7 @@ export function playSnd(a: Arena, s: ModeSettings["snd"], firstAtk: Side): Pair 
       }
 
       const bonus: Pair = catchUpBonus(score, TUNING.catchUp.snd * closeScale(a));
-      if (planted) bonus[atk] += T.postPlantBonus;
+      if (planted) bonus[atk] += postPlant;
       else bonus[def] += T.defenseBonus;
       a.t = roundStart + t;
       duelStep(a, alive, bonus, { fb, clutch: true });

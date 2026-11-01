@@ -23,6 +23,8 @@ const OUT = arg("out", "docs/backtest.md");
 
 // --tune duelK=1.5,modeDuelScale.snd=1.6,overload.gapSecs=7:12 overrides TUNING for a sweep.
 const TUNE = arg("tune", "");
+// --real-form plays each event with the players' real K/D form there (uses real results, so it isn't a forecast).
+const REAL_FORM = process.argv.includes("--real-form");
 for (const kv of TUNE ? TUNE.split(",") : []) {
   const [path, value] = kv.split("=") as [string, string];
   const keys = path.split(".");
@@ -207,7 +209,7 @@ function simulate(y: SeasonId, data: SeasonData): SimAgg {
   };
   const add = (m: Map<string, number>, k: string, v: number) => m.set(k, (m.get(k) ?? 0) + v);
   for (let i = 0; i < N; i++) {
-    const s = createSeason(data, { seed: `backtest-${y}-${i}`, ratingMode: "historical" });
+    const s = createSeason(data, { seed: `backtest-${y}-${i}`, ratingMode: "historical", realForm: REAL_FORM });
     advanceSeason(s, data);
     for (const e of s.events) {
       if (e.kind === "minor") continue;

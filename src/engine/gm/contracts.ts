@@ -9,6 +9,8 @@ import {
   GM_ROSTER_MIN,
   gmCanMakeMoves,
   nextStepDate,
+  aiPatchIn,
+  aiPatchOut,
   playerInfo,
   startingElsewhere,
   teamLineup,
@@ -79,12 +81,17 @@ export function aiRoster(state: SeasonState, data: SeasonData, team: string): st
   const set = state.aiRosters?.[team];
   const owned = new Set(state.gm?.roster ?? []);
   for (const [t, ids] of Object.entries(state.aiRosters ?? {})) if (t !== team) for (const id of ids) owned.add(id);
+  for (const [t, p] of Object.entries(state.aiPatches ?? {})) {
+    if (t !== team) for (const id of p.in) owned.add(id);
+    else for (const id of p.out) owned.add(id);
+  }
   if (set) return set.filter((id) => !owned.has(id));
   const starters = teamLineup(state, data, team, nextStepDate(state, data)).filter((id) => !id.startsWith("repl-"));
   const roster = data.rosters.teams.find((t) => t.team === team);
   const elsewhere = startingElsewhere(data, team, nextStepDate(state, data));
   const bench = (roster?.players ?? []).map((p) => p.id).filter((id) => !starters.includes(id) && !owned.has(id) && !elsewhere.has(id));
-  return [...starters, ...bench];
+  const arrived = (state.aiPatches?.[team]?.in ?? []).filter((id) => !starters.includes(id) && !owned.has(id));
+  return [...starters, ...arrived, ...bench];
 }
 
 export interface TradeOffer {
@@ -162,10 +169,16 @@ export function executeTrade(state: SeasonState, data: SeasonData, offer: TradeO
   const { team, give, get } = offer;
   const date = nextStepDate(state, data);
 
-  // The AI team: incoming players take the departing players' places in the lineup.
-  const queue = [...give];
-  const ai = aiRoster(state, data, team).flatMap((id) => (get.includes(id) ? (queue.length ? [queue.shift()!] : []) : [id]));
-  state.aiRosters = { ...(state.aiRosters ?? {}), [team]: [...ai, ...queue] };
+  // The AI team: the players it sent are gone, the ones it got fill in.
+  if (state.aiRosters?.[team]) {
+    // Older saves with a frozen roster keep using it.
+    const queue = [...give];
+    const ai = aiRoster(state, data, team).flatMap((id) => (get.includes(id) ? (queue.length ? [queue.shift()!] : []) : [id]));
+    state.aiRosters = { ...state.aiRosters, [team]: [...ai, ...queue] };
+  } else {
+    aiPatchOut(state, team, get);
+    aiPatchIn(state, team, give);
+  }
 
   // The GM team.
   gm.roster = [...gm.roster.filter((id) => !give.includes(id)), ...get];

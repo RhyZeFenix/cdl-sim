@@ -5,6 +5,8 @@ import { Standings } from "./views/Standings";
 import { Schedule } from "./views/Schedule";
 import { Brackets } from "./views/Brackets";
 import { MatchView } from "./views/MatchView";
+import { Compare } from "./views/Compare";
+import { arrowKeys } from "./views/common";
 import { Summary } from "./views/Summary";
 import { MyTeam } from "./views/MyTeam";
 import { VetoScreen } from "./views/VetoScreen";
@@ -21,7 +23,7 @@ import { MapsTab } from "./views/MapsTab";
 import { applyTheme, savedContrast, savedTheme, type Theme } from "./theme";
 import { readShare, shareUrl } from "./share";
 
-type Tab = "office" | "myteam" | "schedule" | "standings" | "brackets" | "odds" | "records" | "maps" | "summary" | "about";
+type Tab = "office" | "myteam" | "schedule" | "standings" | "brackets" | "odds" | "records" | "compare" | "maps" | "summary" | "about";
 
 const TAB_LABEL: Record<Tab, string> = {
   office: "Office",
@@ -31,13 +33,16 @@ const TAB_LABEL: Record<Tab, string> = {
   brackets: "Brackets",
   odds: "Odds",
   records: "Records",
+  compare: "Compare",
   maps: "Maps",
   summary: "Summary",
   about: "About",
 };
 
 export interface Nav {
-  openMatch(id: string, opts?: { watch?: boolean }): void;
+  openMatch(id: string, opts?: { watch?: boolean; party?: string[] }): void;
+  /** Watch a run of matches in order (an event's bracket), each revealed map by map. */
+  watchParty(ids: string[]): void;
   openBracket(eventIndex: number): void;
   openPlayer(id: string): void;
   openTeam(id: string): void;
@@ -63,7 +68,7 @@ export function App() {
   const { state, data, busy, done } = store;
   const [draft, setDraft] = useState<SeasonConfig>(store.config);
   const [tab, setTab] = useState<Tab>("schedule");
-  const [match, setMatch] = useState<{ id: string; watch: boolean } | null>(null);
+  const [match, setMatch] = useState<{ id: string; watch: boolean; party?: string[] } | null>(null);
   const [player, setPlayer] = useState<string | null>(null);
   const [teamPage, setTeamPage] = useState<string | null>(null);
   const [theme, setTheme] = useState<Theme>(savedTheme);
@@ -125,7 +130,13 @@ export function App() {
     openMatch: (id, opts) => {
       setPlayer(null);
       setTeamPage(null);
-      setMatch({ id, watch: !!opts?.watch });
+      setMatch({ id, watch: !!opts?.watch, party: opts?.party });
+    },
+    watchParty: (ids) => {
+      if (!ids.length) return;
+      setPlayer(null);
+      setTeamPage(null);
+      setMatch({ id: ids[0]!, watch: true, party: ids });
     },
     openBracket: (i) => {
       setBracketEvent(i);
@@ -362,6 +373,10 @@ export function App() {
                   <input type="checkbox" checked={!!draft.chaos} onChange={(e) => setDraft({ ...draft, chaos: e.target.checked })} style={{ width: "auto" }} />
                   Chaos
                 </label>
+                <label className="row" style={{ gap: 4 }} title="Players run as hot or cold at each event as they really did (K/D per event from the CoD Esports Wiki). Historical ratings only.">
+                  <input type="checkbox" disabled={draft.ratingMode !== "historical"} checked={!!draft.realForm && draft.ratingMode === "historical"} onChange={(e) => setDraft({ ...draft, realForm: e.target.checked })} style={{ width: "auto" }} />
+                  Real form
+                </label>
               </span>
             </div>
             <div className="setup-actions">
@@ -421,7 +436,7 @@ export function App() {
         ) : paused ? (
           <VetoScreen key={state.pending!.spec.id} store={store} onPlayed={resume} />
         ) : match ? (
-          <MatchView store={store} seriesId={match.id} autoWatch={match.watch} onBack={() => setMatch(null)} nav={nav} />
+          <MatchView key={match.id} store={store} seriesId={match.id} autoWatch={match.watch} party={match.party} onBack={() => setMatch(null)} nav={nav} />
         ) : player ? (
           <PlayerPage store={store} id={player} nav={nav} onBack={() => setPlayer(null)} />
         ) : teamPage ? (
@@ -429,11 +444,11 @@ export function App() {
         ) : (
           <>
             {spoil.active && <MatchDayBanner store={store} onWatch={(id) => setMatch({ id, watch: true })} />}
-            <nav className="tabs" role="tablist">
-              {(["office", "myteam", "schedule", "standings", "brackets", "odds", "records", "maps", "summary", "about"] as const)
+            <nav className="tabs" role="tablist" aria-label="Sections" onKeyDown={arrowKeys}>
+              {(["office", "myteam", "schedule", "standings", "brackets", "odds", "records", "compare", "maps", "summary", "about"] as const)
                 .filter((t) => (t !== "myteam" && t !== "office") || state.gm)
                 .map((t) => (
-                  <button key={t} role="tab" aria-selected={tab === t} onClick={() => setTab(t)}>
+                  <button key={t} role="tab" aria-selected={tab === t} tabIndex={tab === t ? 0 : -1} onClick={() => setTab(t)}>
                     {TAB_LABEL[t]}
                     {t === "office" && unread > 0 ? <span className="next-tag" style={{ marginLeft: 6 }}>{unread}</span> : null}
                   </button>
@@ -447,6 +462,7 @@ export function App() {
             {tab === "summary" && <Summary store={store} nav={nav} />}
             {tab === "odds" && <Odds store={store} nav={nav} />}
             {tab === "records" && <Records store={store} nav={nav} />}
+            {tab === "compare" && <Compare store={store} nav={nav} />}
             {tab === "about" && <About store={store} />}
             {tab === "maps" && <MapsTab store={store} />}
           </>

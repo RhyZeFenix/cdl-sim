@@ -4,6 +4,21 @@ import type { SeasonStore } from "../useSeason";
 
 const CHANGELOG: { title: string; items: string[] }[] = [
   {
+    title: "Front office, replays and more",
+    items: [
+      "Contract negotiation: salary, length, signing bonus and team option, with counter-offers",
+      "Off-season free agency: make offers, AI teams bid, players pick by money and contender status; use or decline team options",
+      "Scouting fog: other teams' ratings show as ranges until your analyst, scrims and matches narrow them",
+      "AI teams keep following their real roster changes after trading or signing with you",
+      "Highlight reel (clutches, multi-kills, defuses, scores, broken hills) with a follow camera, and caster commentary over the replay",
+      "Watch party: watch a whole bracket in order, map by map, rolling on to the next match",
+      "Compare tab for two players or two teams; Real vs sim table in Odds",
+      "Six save slots, an archive of every finished season, and a Hall of Fame across saves",
+      "Real form option (players as hot or cold at each event as they really were) and a Real map data view",
+      "Keyboard navigation for tabs, toggles and the map editor; reduced-motion support; about twice as fast a sim",
+    ],
+  },
+  {
     title: "Maps",
     items: [
       "Map editor: trace over your own reference image, check it, save it to this browser or export it",

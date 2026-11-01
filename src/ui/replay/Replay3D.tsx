@@ -124,17 +124,21 @@ export default function Replay3D({
   teams,
   players,
   seed,
+  follow,
 }: {
   map: MapResult;
   time: number;
   teams: [string, string];
   players: string[];
   seed: string;
+  /** Switch to the player camera on this player (highlights); undefined leaves the camera alone. */
+  follow?: number;
 }) {
   const host = useRef<HTMLDivElement>(null);
   const timeRef = useRef(time);
   timeRef.current = time;
-  const [cam, setCam] = useState<CamMode>("broadcast");
+  // With reduced motion asked for, start on the still overhead camera instead of the moving broadcast one.
+  const [cam, setCam] = useState<CamMode>(() => (typeof matchMedia !== "undefined" && matchMedia("(prefers-reduced-motion: reduce)").matches ? "overhead" : "broadcast"));
   const camRef = useRef(cam);
   camRef.current = cam;
   const [target, setTarget] = useState(0);
@@ -145,6 +149,11 @@ export default function Replay3D({
   const [mini, setMini] = useState(true);
   const resetRef = useRef<() => void>(() => {});
   const [error, setError] = useState<string | null>(null);
+  useEffect(() => {
+    if (follow === undefined) return;
+    setTarget(follow);
+    setCam("player");
+  }, [follow]);
 
   const tl: Timeline = useMemo(() => timelineFor(map, seed), [map, seed]);
   const hillNames = useMemo(() => hillLabelsOf(map, tl.layout.hills.length), [map, tl]);

@@ -15,7 +15,9 @@ import { buildQualifierSchedule, type Fixture } from "./schedule";
 import { rankByPoints, rankStandings, tally, type SeriesOutcome, type StandingRow } from "./standings";
 import { gmBoostFor, initFranchise, onGmSeries, onStepComplete } from "../gm/franchise";
 import { contractFor, signingProblem } from "../gm/contracts";
+import { contractOf, negotiate, offerProblem, type Offer } from "../gm/negotiation";
 import { DEAD_CAP_SHARE } from "../gm/values";
+import { realForm } from "../data/form";
 import type {
   CarriedPlayers,
   Contract,
@@ -45,6 +47,8 @@ export interface SeasonOptions {
   champsOnly?: boolean;
   /** Chaos: strong per-event team form, so upsets and hot streaks are far more common. */
   chaos?: boolean;
+  /** Real form: players run as hot or cold at each event as they really did (historical seasons). */
+  realForm?: boolean;
   /** GM difficulty (default normal). */
   difficulty?: Difficulty;
 }
@@ -122,6 +126,8 @@ export interface GmState {
   staff?: { coach?: StaffMember; analyst?: StaffMember };
   /** Practice: scrim partners for the next step. */
   scrims?: string[];
+  /** Scouting fog: other teams' ratings show as ranges (on unless switched off). */
+  fog?: boolean;
   /** Teams you've scrimmed recently: an edge against them until this step index. */
   familiarity?: Record<string, number>;
   /** Fatigue from practice, 0-100. */
@@ -248,8 +254,14 @@ export interface SeasonState {
   watchlist?: string[];
   /** Watchlisted series that have been played but not watched or skipped yet (GM series use gm.unwatched). */
   unwatched?: string[];
-  /** AI rosters changed by trades: the team's players in lineup order (starters first). */
+  /** Older saves: AI rosters frozen by trades (starters first). New moves use aiPatches. */
   aiRosters?: Record<string, string[]>;
+  /**
+   * Changes to AI teams from trades, signings and retirements: who arrived and who left.
+   * Each team's real lineup for the date is patched, so real roster changes on real
+   * dates still happen around these.
+   */
+  aiPatches?: Record<string, { in: string[]; out: string[] }>;
   /** Dynasty: players kept from earlier seasons, with their progressed ratings. */
   carried?: CarriedPlayers;
   /** Dynasty seasons past the real data: rating change per player since the data season. */
@@ -416,9 +428,26 @@ function teamInfo(data: SeasonData, teamId: string) {
 export function teamLineup(state: SeasonState, data: SeasonData, teamId: string, date: string): string[] {
   const gm = state.gm;
   if (gm && teamId === gm.team) return [...gm.starters];
-  // Players this team can't field: the GM's, and anyone a trade sent to another AI team.
+  // Players this team can't field: the GM's, anyone moved to another AI team, and anyone it let go.
   const owned = new Set(gm?.roster ?? []);
   for (const [t, ids] of Object.entries(state.aiRosters ?? {})) if (t !== teamId) for (const id of ids) owned.add(id);
+  for (const [t, p] of Object.entries(state.aiPatches ?? {})) {
+    if (t !== teamId) for (const id of p.in) owned.add(id);
+    else for (const id of p.out) owned.add(id);
+  }
+  const patch = state.aiPatches?.[teamId];
+  if (patch && !state.aiRosters?.[teamId]) {
+    const lineup = startersOn(data.rosters, teamId, date).filter((id) => !owned.has(id));
+    const roster = [...data.rosters.teams, ...data.rosters.guests].find((t) => t.team === teamId)!;
+    const elsewhere = startingElsewhere(data, teamId, date);
+    const fill = [
+      ...patch.in.filter((id) => !gm?.roster.includes(id)),
+      ...roster.players.map((p) => p.id).filter((id) => !owned.has(id) && !elsewhere.has(id)),
+    ];
+    for (const id of fill) if (lineup.length < 4 && !lineup.includes(id)) lineup.push(id);
+    while (lineup.length < 4) lineup.push(`repl-${teamId}-${lineup.length + 1}`);
+    return lineup;
+  }
   const traded = state.aiRosters?.[teamId];
   if (traded) {
     const ids = traded.filter((id) => !owned.has(id)).slice(0, 4);
@@ -432,6 +461,21 @@ export function teamLineup(state: SeasonState, data: SeasonData, teamId: string,
   const elsewhere = startingElsewhere(data, teamId, date);
   const bench = roster.players.map((p) => p.id).filter((id) => !starters.includes(id) && !owned.has(id) && !elsewhere.has(id));
   return starters.map((id, i) => (owned.has(id) ? (bench.shift() ?? `repl-${teamId}-${i + 1}`) : id));
+}
+
+/** Moves a player onto an AI team (from wherever they were). */
+export function aiPatchIn(state: SeasonState, team: string, ids: string[]): void {
+  const patches = { ...(state.aiPatches ?? {}) };
+  for (const [t, p] of Object.entries(patches)) if (t !== team) patches[t] = { ...p, in: p.in.filter((id) => !ids.includes(id)) };
+  const cur = patches[team] ?? { in: [], out: [] };
+  patches[team] = { in: [...new Set([...cur.in, ...ids])], out: cur.out.filter((id) => !ids.includes(id)) };
+  state.aiPatches = patches;
+}
+
+/** Takes players off an AI team. */
+export function aiPatchOut(state: SeasonState, team: string, ids: string[]): void {
+  const cur = state.aiPatches?.[team] ?? { in: [], out: [] };
+  state.aiPatches = { ...(state.aiPatches ?? {}), [team]: { in: cur.in.filter((id) => !ids.includes(id)), out: [...new Set([...cur.out, ...ids])] } };
 }
 
 /** Everyone the season data has starting for another team on a date. */
@@ -467,13 +511,15 @@ export function eventForm(state: SeasonState, teamId: string, phase: PoolPhase):
 function buildTeam(state: SeasonState, data: SeasonData, teamId: string, lineup: string[], phase: PoolPhase, boost?: GmBoost): SimTeam {
   const info = teamInfo(data, teamId);
   const mapMods = [...data.rosters.teams, ...data.rosters.guests].find((t) => t.team === teamId)?.mapMods;
+  // Real form only for the real seasons (not the repeated years of a dynasty).
+  const real = !!state.options.realForm && (!state.dynasty || state.dynasty.label === data.season.label);
   const team: SimTeam = {
     id: teamId,
     name: info.name,
     abbr: info.abbr,
     players: lineup.map((id) => {
       const p = simPlayer(state, data, id);
-      const f = boost?.players?.[id];
+      const f = (boost?.players?.[id] ?? 0) + (real ? realForm(state.seasonId, id, phase) : 0);
       return f ? { ...p, form: f } : p;
     }),
     mapMods,
@@ -655,6 +701,7 @@ export function freeAgents(state: SeasonState, data: SeasonData): string[] {
   const date = nextStepDate(state, data);
   const taken = new Set(state.gm.roster);
   for (const ids of Object.values(state.aiRosters ?? {})) for (const id of ids) taken.add(id);
+  for (const p of Object.values(state.aiPatches ?? {})) for (const id of p.in) taken.add(id);
   for (const t of data.season.teams) {
     if (t.id === state.gm.team) continue;
     for (const id of teamLineup(state, data, t.id, date)) taken.add(id);
@@ -665,6 +712,28 @@ export function freeAgents(state: SeasonState, data: SeasonData): string[] {
 function stageOfNext(state: SeasonState): number {
   const step = nextStep(state);
   return step && "stage" in step ? step.stage : 5;
+}
+
+/**
+ * Signs a free agent on negotiated terms (see gm/negotiation). Throws with the player's
+ * answer, including the counter-offer, if they say no.
+ */
+export function gmSignOffer(state: SeasonState, data: SeasonData, playerId: string, offer: Offer): void {
+  const gm = state.gm;
+  if (!gm) throw new Error("not in GM mode");
+  if (!gmCanMakeMoves(state)) throw new Error("roster moves are only allowed between stages");
+  if (gm.roster.length >= GM_ROSTER_MAX) throw new Error(`roster is full (${GM_ROSTER_MAX} players)`);
+  if (!freeAgents(state, data).includes(playerId)) throw new Error(`${playerId} is not a free agent`);
+  const problem = offerProblem(state, offer);
+  if (problem) throw new Error(problem);
+  const r = negotiate(state, data, playerId, offer);
+  if (!r.accepted) throw new Error(`${r.reason}${r.counter ? ` Counter: $${r.counter.salary}k a season.` : ""}`);
+  gm.roster.push(playerId);
+  gm.contracts = { ...(gm.contracts ?? {}), [playerId]: contractOf(offer) };
+  // The bonus is paid now and sits on this season's books.
+  if (offer.bonus) gm.deadCap = (gm.deadCap ?? 0) + offer.bonus;
+  gm.morale = { ...(gm.morale ?? {}), [playerId]: 72 };
+  gm.moves.push({ date: nextStepDate(state, data), beforeStage: stageOfNext(state), action: "sign", player: playerId });
 }
 
 /** Signs a free agent on a contract of `years` seasons at their asking salary. */

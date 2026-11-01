@@ -18,7 +18,7 @@ import { mergeOdds, runOdds, runSim, type SimKind, type SimRequest, type SimResp
 import { runHeatmap, type HeatRequest, type Heatmap } from "./heatmap";
 import { savedOverrides } from "./layoutStore";
 import { spoilers } from "./spoilers";
-import { getSave, putSave, type SlotId } from "./saves";
+import { archiveId, archiveSeason, getSave, putSave, type SlotId } from "./saves";
 
 export type { SimKind };
 
@@ -32,6 +32,7 @@ export interface SeasonConfig {
   champsOnly?: boolean;
   /** Hot and cold weekends: more upsets. */
   chaos?: boolean;
+  realForm?: boolean;
   /** GM difficulty. */
   difficulty?: Difficulty;
 }
@@ -56,6 +57,7 @@ const optionsOf = (cfg: SeasonConfig) => ({
   gmTeam: cfg.gmTeam,
   champsOnly: cfg.champsOnly,
   chaos: cfg.chaos,
+  realForm: cfg.realForm && cfg.ratingMode === "historical",
   difficulty: cfg.gmTeam ? cfg.difficulty : undefined,
 });
 
@@ -66,6 +68,7 @@ const configOf = (s: SeasonState): SeasonConfig => ({
   gmTeam: s.gm?.team,
   champsOnly: s.options.champsOnly,
   chaos: s.options.chaos,
+  realForm: s.options.realForm,
   difficulty: s.options.difficulty,
 });
 
@@ -192,6 +195,7 @@ export function useSeason(initial: SeasonConfig) {
 
   // Autosave a moment after every change (not while a sim is running).
   const [autosaved, setAutosaved] = useState<string | null>(null);
+  const archivedRef = useRef<string | null>(null);
   useEffect(() => {
     if (busy) return;
     const s = stateRef.current!;
@@ -200,6 +204,11 @@ export function useSeason(initial: SeasonConfig) {
       putSave("autosave", s, saveLabel(s))
         .then(() => setAutosaved(new Date().toLocaleTimeString()))
         .catch(() => setAutosaved(null));
+      // Finished seasons go to the archive (and the Hall of Fame) once.
+      if (isDone(s) && archivedRef.current !== archiveId(s)) {
+        archivedRef.current = archiveId(s);
+        archiveSeason(s).catch(() => (archivedRef.current = null));
+      }
     }, 800);
     return () => clearTimeout(t);
   }, [version, busy]);

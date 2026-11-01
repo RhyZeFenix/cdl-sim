@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { addLines, emptyLine, markWatched, mapLogEntries, playerInfo, replaySeries, type MapResult, type Mode, type PlayerLine } from "../../engine";
 import type { Nav } from "../App";
 import { directory } from "../names";
@@ -56,7 +56,22 @@ function BoxScore({ lines, handles, ids, teams, modes, nav }: { lines: PlayerLin
   );
 }
 
-export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: SeasonStore; seriesId: string; autoWatch: boolean; onBack: () => void; nav: Nav }) {
+export function MatchView({
+  store,
+  seriesId,
+  autoWatch,
+  party,
+  onBack,
+  nav,
+}: {
+  store: SeasonStore;
+  seriesId: string;
+  autoWatch: boolean;
+  /** Watch party: the queue of matches being watched in order. */
+  party?: string[];
+  onBack: () => void;
+  nav: Nav;
+}) {
   const { state, data, spoil, mutate } = store;
   const dir = directory(data);
   const rec = state.series[seriesId];
@@ -68,10 +83,30 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
   const [sel, setSel] = useState<number | "series">(0);
   const [panel, setPanel] = useState<"log" | "watch">(autoWatch ? "watch" : "log");
 
-  // Spoiler-free match day: an unwatched GM series plays map by map.
-  const live = spoil.unwatched.includes(seriesId);
+  // Spoiler-free match day: an unwatched GM series plays map by map. So does every match of a watch party.
+  const [partyDone, setPartyDone] = useState(false);
+  const live = spoil.unwatched.includes(seriesId) || (!!party && !partyDone);
   const [current, setCurrent] = useState(0);
   const [mapDone, setMapDone] = useState(false);
+  const partyAt = party ? party.indexOf(seriesId) : -1;
+  const nextInParty = party?.slice(partyAt + 1).find((id) => state.series[id] && (!spoil.isHidden(id) || spoil.unwatched.includes(id)));
+  const [autoNext, setAutoNext] = useState(true);
+  const [countdown, setCountdown] = useState<number | null>(null);
+  useEffect(() => {
+    if (countdown === null) return;
+    if (countdown <= 0) {
+      if (nextInParty) nav.openMatch(nextInParty, { watch: true, party });
+      return;
+    }
+    const t = setTimeout(() => setCountdown(countdown - 1), 1000);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [countdown]);
+  const seriesOver = live && mapDone && current + 1 >= maps.length;
+  useEffect(() => {
+    if (seriesOver && party && nextInParty && autoNext) setCountdown(5);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [seriesOver]);
 
   if (!rec) {
     return (
@@ -110,7 +145,11 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
     },
     [0, 0],
   );
-  const finishWatching = () => mutate((s) => markWatched(s, seriesId));
+  const finishWatching = () => {
+    if (spoil.unwatched.includes(seriesId)) mutate((s) => markWatched(s, seriesId));
+    setPartyDone(true);
+  };
+
 
   const map = live ? maps[current] : sel === "series" ? null : maps[sel];
   const seriesLines = maps.length
@@ -167,6 +206,8 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
           </div>
         </div>
       </div>
+
+      {party && <PartyStrip store={store} party={party} at={partyAt} revealedNow={!live} nav={nav} />}
 
       <div className="card">
         <div className="card-head">
@@ -277,9 +318,27 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
                     Watch Map {current + 2}
                   </button>
                 ) : (
-                  <button className="btn primary" onClick={finishWatching}>
-                    Series over — see the full result
-                  </button>
+                  <>
+                    <button className={`btn${nextInParty ? "" : " primary"}`} onClick={finishWatching}>
+                      Series over — see the full result
+                    </button>
+                    {nextInParty && (
+                      <button className="btn primary" onClick={() => nav.openMatch(nextInParty, { watch: true, party })}>
+                        Next match{countdown !== null ? ` in ${countdown}s` : ""} ›
+                      </button>
+                    )}
+                    {nextInParty && countdown !== null && (
+                      <button className="btn small" onClick={() => setCountdown(null)}>
+                        Stay here
+                      </button>
+                    )}
+                    {nextInParty && (
+                      <label className="row sub" style={{ gap: 4 }}>
+                        <input type="checkbox" checked={autoNext} onChange={(e) => (setAutoNext(e.target.checked), !e.target.checked && setCountdown(null))} style={{ width: "auto" }} />
+                        Auto-continue
+                      </label>
+                    )}
+                  </>
                 )}
               </div>
               <BoxScore lines={map.box} handles={handles(map)} ids={map.lineup} teams={abbr} modes={[map.mode]} nav={nav} />
@@ -336,6 +395,39 @@ export function MatchView({ store, seriesId, autoWatch, onBack, nav }: { store: 
           <TeamTag team={dir.team(rec.winner)} full={false} /> win {Math.max(...rec.score)}–{Math.min(...rec.score)}
         </div>
       )}
+    </div>
+  );
+}
+
+/** Watch party progress: matches watched so far with their results, the rest still hidden. */
+function PartyStrip({ store, party, at, revealedNow, nav }: { store: SeasonStore; party: string[]; at: number; revealedNow: boolean; nav: Nav }) {
+  const { state, data } = store;
+  const dir = directory(data);
+  return (
+    <div className="card">
+      <div className="card-head">
+        <h3>Watch party</h3>
+        <span className="sub">
+          Match {at + 1} of {party.length}
+        </span>
+      </div>
+      <div className="party-strip">
+        {party.map((id, i) => {
+          const r = state.series[id];
+          const shown = r && (i < at || (i === at && revealedNow));
+          return (
+            <button
+              key={id}
+              className={`party-chip${i === at ? " on" : ""}`}
+              disabled={!r || i > at}
+              onClick={() => nav.openMatch(id, { watch: false })}
+              title={r ? r.label : "Not played yet"}
+            >
+              {r ? `${dir.team(r.teams[0]).abbr} ${shown ? `${r.score[0]}–${r.score[1]}` : "vs"} ${dir.team(r.teams[1]).abbr}` : "TBD"}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }

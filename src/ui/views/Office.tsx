@@ -7,7 +7,7 @@ import { capLabel, capOf, chemistryOf, roleBalance, isDone, nextStep, payroll, p
 import { stepLabel, type Nav } from "../App";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
-import { Help, TeamTag } from "./common";
+import { Help, TeamTag, arrowKeys } from "./common";
 import { Career } from "./Career";
 import { SeasonReviewCard } from "./Review";
 import { Meter } from "./office/shared";
@@ -113,9 +113,9 @@ export function Office({ store, nav }: { store: SeasonStore; nav: Nav }) {
         </div>
       </div>
 
-      <nav className="tabs subtabs" role="tablist" aria-label="Office">
+      <nav className="tabs subtabs" role="tablist" aria-label="Office" onKeyDown={arrowKeys}>
         {OFFICE_TABS.map((t) => (
-          <button key={t.id} role="tab" aria-selected={tab === t.id} onClick={() => setTab(t.id)}>
+          <button key={t.id} role="tab" aria-selected={tab === t.id} tabIndex={tab === t.id ? 0 : -1} onClick={() => setTab(t.id)}>
             {t.label}
             {t.id === "overview" && pendingChoices > 0 ? <span className="next-tag" style={{ marginLeft: 6 }}>{pendingChoices}</span> : null}
           </button>

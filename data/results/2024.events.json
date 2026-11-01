@@ -1,0 +1,269 @@
+{
+ "season": "2024",
+ "source": "Call of Duty Esports Wiki (CC BY-SA 3.0), data/sources/fandom",
+ "events": [
+  {
+   "kind": "major",
+   "stage": 1,
+   "name": "Major I",
+   "winner": "toronto-ultra",
+   "placements": {
+    "toronto-ultra": [
+     1,
+     1
+    ],
+    "atlanta-faze": [
+     2,
+     2
+    ],
+    "optic-texas": [
+     3,
+     3
+    ],
+    "minnesota-rokkr": [
+     4,
+     4
+    ],
+    "la-guerrillas": [
+     5,
+     6
+    ],
+    "seattle-surge": [
+     5,
+     6
+    ],
+    "las-vegas-legion": [
+     7,
+     8
+    ],
+    "carolina-royal-ravens": [
+     7,
+     8
+    ],
+    "la-thieves": [
+     9,
+     12
+    ],
+    "miami-heretics": [
+     9,
+     12
+    ],
+    "boston-breach": [
+     9,
+     12
+    ],
+    "ny-subliners": [
+     9,
+     12
+    ]
+   }
+  },
+  {
+   "kind": "major",
+   "stage": 2,
+   "name": "Major II",
+   "winner": "atlanta-faze",
+   "placements": {
+    "atlanta-faze": [
+     1,
+     1
+    ],
+    "optic-texas": [
+     2,
+     2
+    ],
+    "ny-subliners": [
+     3,
+     3
+    ],
+    "toronto-ultra": [
+     4,
+     4
+    ],
+    "carolina-royal-ravens": [
+     5,
+     6
+    ],
+    "la-guerrillas": [
+     5,
+     6
+    ],
+    "las-vegas-legion": [
+     7,
+     8
+    ],
+    "minnesota-rokkr": [
+     7,
+     8
+    ],
+    "miami-heretics": [
+     9,
+     12
+    ],
+    "seattle-surge": [
+     9,
+     12
+    ],
+    "boston-breach": [
+     9,
+     12
+    ],
+    "la-thieves": [
+     9,
+     12
+    ]
+   }
+  },
+  {
+   "kind": "major",
+   "stage": 3,
+   "name": "Major III",
+   "winner": "optic-texas",
+   "placements": {
+    "optic-texas": [
+     1,
+     1
+    ],
+    "toronto-ultra": [
+     2,
+     2
+    ],
+    "atlanta-faze": [
+     3,
+     3
+    ],
+    "ny-subliners": [
+     4,
+     4
+    ],
+    "miami-heretics": [
+     5,
+     6
+    ],
+    "seattle-surge": [
+     5,
+     6
+    ],
+    "la-thieves": [
+     7,
+     8
+    ],
+    "carolina-royal-ravens": [
+     7,
+     8
+    ],
+    "las-vegas-legion": [
+     9,
+     12
+    ],
+    "boston-breach": [
+     9,
+     12
+    ],
+    "minnesota-rokkr": [
+     9,
+     12
+    ],
+    "la-guerrillas": [
+     9,
+     12
+    ]
+   }
+  },
+  {
+   "kind": "major",
+   "stage": 4,
+   "name": "Major IV",
+   "winner": "ny-subliners",
+   "placements": {
+    "ny-subliners": [
+     1,
+     1
+    ],
+    "atlanta-faze": [
+     2,
+     2
+    ],
+    "la-guerrillas": [
+     3,
+     3
+    ],
+    "toronto-ultra": [
+     4,
+     4
+    ],
+    "seattle-surge": [
+     5,
+     6
+    ],
+    "la-thieves": [
+     5,
+     6
+    ],
+    "miami-heretics": [
+     7,
+     8
+    ],
+    "las-vegas-legion": [
+     7,
+     8
+    ],
+    "carolina-royal-ravens": [
+     9,
+     12
+    ],
+    "optic-texas": [
+     9,
+     12
+    ],
+    "minnesota-rokkr": [
+     9,
+     12
+    ],
+    "boston-breach": [
+     9,
+     12
+    ]
+   }
+  },
+  {
+   "kind": "championship",
+   "name": "Championship",
+   "winner": "optic-texas",
+   "placements": {
+    "optic-texas": [
+     1,
+     1
+    ],
+    "ny-subliners": [
+     2,
+     2
+    ],
+    "toronto-ultra": [
+     3,
+     3
+    ],
+    "la-thieves": [
+     4,
+     4
+    ],
+    "miami-heretics": [
+     5,
+     6
+    ],
+    "atlanta-faze": [
+     5,
+     6
+    ],
+    "seattle-surge": [
+     7,
+     8
+    ],
+    "la-guerrillas": [
+     7,
+     8
+    ]
+   }
+  }
+ ]
+}

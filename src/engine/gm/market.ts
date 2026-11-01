@@ -3,7 +3,7 @@
 // underpaid players come to the GM with demands. The GM answers from the inbox.
 import type { SeasonData } from "../data/registry";
 import { createRng } from "../rng";
-import { freeAgents, nextStepDate, playerInfo, teamLineup, type SeasonState } from "../season/season";
+import { aiPatchIn, freeAgents, nextStepDate, playerInfo, teamLineup, type SeasonState } from "../season/season";
 import { aiRoster, capSpace, evaluateTrade, executeTrade, marketAsk, ovrOf, tradesOpen } from "./contracts";
 import { pushInbox } from "./inbox";
 import { addMorale } from "./morale";
@@ -31,7 +31,8 @@ export function marketWindow(state: SeasonState, data: SeasonData): void {
     const signed: string[] = [];
     while (roster.length + signed.length < 4 && fas.length) signed.push(fas.shift()!);
     if (!signed.length) continue;
-    state.aiRosters = { ...(state.aiRosters ?? {}), [t.id]: [...roster, ...signed] };
+    if (state.aiRosters?.[t.id]) state.aiRosters = { ...state.aiRosters, [t.id]: [...roster, ...signed] };
+    else aiPatchIn(state, t.id, signed);
     pushInbox(state, { date, kind: "trade", title: `${teamName(data, t.id)} sign ${signed.map((id) => handle(state, data, id)).join(" and ")}`, body: "They had a hole in the lineup and filled it from free agency." });
   }
 

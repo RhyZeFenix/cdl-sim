@@ -1,6 +1,6 @@
 // Office › Market: AI offers and player demands, contracts, and trades.
 import { useMemo, useState } from "react";
-import { MIN_EXCEPTION, capLabel, gmChoose, gmSetTradeBlock, marketAsk, tradesOpen, aiRoster, askingSalary, evaluateTrade, gmCanMakeMoves, payroll, playerInfo, proposeTrade, tradeValue, visibleInbox, ovrOf } from "../../../engine";
+import { MIN_EXCEPTION, capLabel, gmChoose, gmSetTradeBlock, marketAsk, tradesOpen, aiRoster, askingSalary, evaluateTrade, gmCanMakeMoves, payroll, playerInfo, proposeTrade, tradeValue, visibleInbox, ovrOf, fogText, fogWidth } from "../../../engine";
 import { type Nav } from "../../App";
 import { directory } from "../../names";
 import type { SeasonStore } from "../../useSeason";
@@ -232,9 +232,9 @@ function TradeSide({
                 <td className="left">
                   <PlayerLink id={id} name={playerInfo(state, data, id)?.handle ?? id} nav={nav} />
                 </td>
-                <td>{Math.round(ovr)}</td>
+                <td>{fogText(ovr, fogWidth(state, data, id), `${id}/ovr`)}</td>
                 <td>{salary(id) !== undefined ? `$${salary(id)}k` : "—"}</td>
-                <td>{Math.round(tradeValue(ovr, salary(id)))}</td>
+                <td>{fogWidth(state, data, id) ? "?" : Math.round(tradeValue(ovr, salary(id)))}</td>
               </tr>
             );
           })}

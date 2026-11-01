@@ -50,7 +50,11 @@ export interface TeamOdds {
   winMajor: number;
   avgPoints: number;
   avgRank: number;
+  /** Share of runs winning each Major and Champs, by event key ("major:2", "championship"). */
+  winEvent: Record<string, number>;
 }
+
+export const eventKey = (e: { kind: string; stage?: number }) => (e.kind === "championship" ? "championship" : `${e.kind}:${e.stage}`);
 
 /**
  * Plays the rest of the season `runs` times with different luck for the unplayed series
@@ -58,7 +62,7 @@ export interface TeamOdds {
  */
 export function runOdds(state: SeasonState, runs: number, onRun?: (done: number) => void, offset = 0): TeamOdds[] {
   const data = loadSeasonData(state.seasonId);
-  const acc = new Map<string, TeamOdds>(data.season.teams.map((t) => [t.id, { team: t.id, makeChamps: 0, winChamps: 0, winMajor: 0, avgPoints: 0, avgRank: 0 }]));
+  const acc = new Map<string, TeamOdds>(data.season.teams.map((t) => [t.id, { team: t.id, makeChamps: 0, winChamps: 0, winMajor: 0, avgPoints: 0, avgRank: 0, winEvent: {} }]));
   const base = JSON.stringify(state);
   for (let i = 0; i < runs; i++) {
     const s = JSON.parse(base) as SeasonState;
@@ -70,7 +74,9 @@ export function runOdds(state: SeasonState, runs: number, onRun?: (done: number)
     // Lighter: the GM team just plays its lineup (no morale, inbox or market work).
     if (s.gm) {
       const gm = s.gm;
+      // Freeze the GM team as it stands; everyone else keeps following their real rosters.
       s.aiRosters = { ...(s.aiRosters ?? {}), [gm.team]: [...gm.starters, ...gm.roster.filter((id) => !gm.starters.includes(id))] };
+      for (const id of gm.roster) for (const p of Object.values(s.aiPatches ?? {})) p.out = [...new Set([...p.out, id])];
       s.gm = undefined;
     }
     advanceSeason(s, data);
@@ -85,10 +91,24 @@ export function runOdds(state: SeasonState, runs: number, onRun?: (done: number)
       if (champs?.placements[r.team]?.[0] === 1) o.winChamps++;
       if (s.events.some((e) => e.kind === "major" && e.placements[r.team]?.[0] === 1)) o.winMajor++;
     });
+    for (const e of s.events) {
+      if (e.kind === "minor") continue;
+      const winner = Object.entries(e.placements).find(([, p]) => p[0] === 1)?.[0];
+      const o = winner ? acc.get(winner) : undefined;
+      if (o) o.winEvent[eventKey(e)] = (o.winEvent[eventKey(e)] ?? 0) + 1;
+    }
     onRun?.(i + 1);
   }
   return [...acc.values()]
-    .map((o) => ({ ...o, makeChamps: o.makeChamps / runs, winChamps: o.winChamps / runs, winMajor: o.winMajor / runs, avgPoints: o.avgPoints / runs, avgRank: o.avgRank / runs }))
+    .map((o) => ({
+      ...o,
+      makeChamps: o.makeChamps / runs,
+      winChamps: o.winChamps / runs,
+      winMajor: o.winMajor / runs,
+      avgPoints: o.avgPoints / runs,
+      avgRank: o.avgRank / runs,
+      winEvent: Object.fromEntries(Object.entries(o.winEvent).map(([k, n]) => [k, n / runs])),
+    }))
     .sort((a, b) => b.winChamps - a.winChamps || b.makeChamps - a.makeChamps || a.avgRank - b.avgRank);
 }
 
@@ -132,8 +152,9 @@ export function mergeOdds(parts: { odds: TeamOdds[]; runs: number }[]): TeamOdds
   const acc = new Map<string, TeamOdds>();
   for (const { odds, runs } of parts) {
     for (const o of odds) {
-      const a = acc.get(o.team) ?? { team: o.team, makeChamps: 0, winChamps: 0, winMajor: 0, avgPoints: 0, avgRank: 0 };
+      const a = acc.get(o.team) ?? { team: o.team, makeChamps: 0, winChamps: 0, winMajor: 0, avgPoints: 0, avgRank: 0, winEvent: {} };
       const w = runs / total;
+      for (const [k, x] of Object.entries(o.winEvent ?? {})) a.winEvent[k] = (a.winEvent[k] ?? 0) + x * w;
       a.makeChamps += o.makeChamps * w;
       a.winChamps += o.winChamps * w;
       a.winMajor += o.winMajor * w;

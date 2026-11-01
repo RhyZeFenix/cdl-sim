@@ -1,0 +1,269 @@
+{
+ "season": "2026",
+ "source": "Call of Duty Esports Wiki (CC BY-SA 3.0), data/sources/fandom",
+ "events": [
+  {
+   "kind": "major",
+   "stage": 1,
+   "name": "Major I",
+   "winner": "paris-gentle-mates",
+   "placements": {
+    "paris-gentle-mates": [
+     1,
+     1
+    ],
+    "optic-texas": [
+     2,
+     2
+    ],
+    "faze-vegas": [
+     3,
+     3
+    ],
+    "g2-minnesota": [
+     4,
+     4
+    ],
+    "miami-heretics": [
+     5,
+     6
+    ],
+    "la-thieves": [
+     5,
+     6
+    ],
+    "vancouver-surge": [
+     7,
+     8
+    ],
+    "riyadh-falcons": [
+     7,
+     8
+    ],
+    "toronto-koi": [
+     9,
+     12
+    ],
+    "carolina-royal-ravens": [
+     9,
+     12
+    ],
+    "boston-breach": [
+     9,
+     12
+    ],
+    "cloud9-new-york": [
+     9,
+     12
+    ]
+   }
+  },
+  {
+   "kind": "major",
+   "stage": 2,
+   "name": "Major II",
+   "winner": "faze-vegas",
+   "placements": {
+    "faze-vegas": [
+     1,
+     1
+    ],
+    "toronto-koi": [
+     3,
+     3
+    ],
+    "la-thieves": [
+     4,
+     4
+    ],
+    "paris-gentle-mates": [
+     5,
+     6
+    ],
+    "g2-minnesota": [
+     5,
+     6
+    ],
+    "riyadh-falcons": [
+     7,
+     8
+    ],
+    "miami-heretics": [
+     7,
+     8
+    ],
+    "vancouver-surge": [
+     9,
+     10
+    ],
+    "carolina-royal-ravens": [
+     9,
+     10
+    ]
+   }
+  },
+  {
+   "kind": "major",
+   "stage": 3,
+   "name": "Major III (Pro-Am)",
+   "winner": "la-thieves",
+   "placements": {
+    "la-thieves": [
+     1,
+     1
+    ],
+    "optic-texas": [
+     2,
+     2
+    ],
+    "toronto-koi": [
+     3,
+     3
+    ],
+    "faze-vegas": [
+     4,
+     4
+    ],
+    "paris-gentle-mates": [
+     5,
+     6
+    ],
+    "riyadh-falcons": [
+     5,
+     6
+    ],
+    "miami-heretics": [
+     7,
+     8
+    ],
+    "g2-minnesota": [
+     7,
+     8
+    ],
+    "omit": [
+     9,
+     12
+    ],
+    "carolina-royal-ravens": [
+     9,
+     12
+    ],
+    "boston-breach": [
+     9,
+     12
+    ],
+    "cloud9-new-york": [
+     9,
+     12
+    ],
+    "vancouver-surge": [
+     13,
+     16
+    ],
+    "huntsmen": [
+     13,
+     16
+    ],
+    "project-notorious": [
+     13,
+     16
+    ],
+    "roc-esports": [
+     13,
+     16
+    ]
+   }
+  },
+  {
+   "kind": "major",
+   "stage": 4,
+   "name": "Major IV",
+   "winner": "optic-texas",
+   "placements": {
+    "optic-texas": [
+     1,
+     1
+    ],
+    "la-thieves": [
+     2,
+     2
+    ],
+    "paris-gentle-mates": [
+     3,
+     3
+    ],
+    "faze-vegas": [
+     4,
+     4
+    ],
+    "g2-minnesota": [
+     5,
+     6
+    ],
+    "toronto-koi": [
+     5,
+     6
+    ],
+    "miami-heretics": [
+     7,
+     8
+    ],
+    "boston-breach": [
+     7,
+     8
+    ],
+    "carolina-royal-ravens": [
+     9,
+     12
+    ],
+    "cloud9-new-york": [
+     9,
+     12
+    ],
+    "riyadh-falcons": [
+     9,
+     12
+    ],
+    "vancouver-surge": [
+     9,
+     12
+    ]
+   }
+  },
+  {
+   "kind": "championship",
+   "name": "Championship",
+   "winner": "faze-vegas",
+   "placements": {
+    "faze-vegas": [
+     1,
+     1
+    ],
+    "riyadh-falcons": [
+     3,
+     3
+    ],
+    "paris-gentle-mates": [
+     4,
+     4
+    ],
+    "miami-heretics": [
+     5,
+     6
+    ],
+    "g2-minnesota": [
+     5,
+     6
+    ],
+    "toronto-koi": [
+     7,
+     8
+    ],
+    "la-thieves": [
+     7,
+     8
+    ]
+   }
+  }
+ ]
+}

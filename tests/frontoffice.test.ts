@@ -21,6 +21,8 @@ import {
   gmSignProspect,
   loadSeasonData,
   marketWindow,
+  proposeTrade,
+  ovrOf,
   mapPoolFor,
   nextGmFixtures,
   nextStepDate,
@@ -167,5 +169,28 @@ describe("storylines, academy, awards, calendar", () => {
     expect(next.gm!.academy).toContain(pro);
     expect(next.gm!.prospects![pro]).toBeDefined();
     expect(Object.keys(next.gm!.prospects!).length).toBe(13);
+  });
+});
+
+describe("AI rosters follow real moves after a trade", () => {
+  it("a team you traded with still makes its real mid-season change", () => {
+    const s = season("rr-1");
+    // A team whose real roster adds someone later in the season.
+    const pick = data.rosters.teams.find((t) => {
+      if (t.team === GM || t.snapshots.length < 2) return false;
+      const first = new Set(t.snapshots[0]!.starters);
+      return t.snapshots.slice(1).some((sn) => sn.starters.some((id) => !first.has(id)));
+    })!;
+    const later = pick.snapshots.slice(1).find((sn) => sn.starters.some((id) => !pick.snapshots[0]!.starters.includes(id)))!;
+    const newcomer = later.starters.find((id) => !pick.snapshots[0]!.starters.includes(id))!;
+    // Trade one of their players who stays through that change for one of ours.
+    const theirs = pick.snapshots[0]!.starters.find((id) => later.starters.includes(id))!;
+    const mine = s.gm!.roster.slice().sort((a, b) => ovrOf(s, data, b) - ovrOf(s, data, a))[0]!;
+    proposeTrade(s, data, { team: pick.team, give: [mine], get: [theirs] });
+    expect(s.gm!.roster).toContain(theirs);
+    const lineup = teamLineup(s, data, pick.team, later.effective);
+    expect(lineup).toContain(newcomer);
+    expect(lineup).toContain(mine);
+    expect(lineup).not.toContain(theirs);
   });
 });

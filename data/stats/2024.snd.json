@@ -1,0 +1,152 @@
+{
+ "season": "2024",
+ "fetched": "2026-11-01",
+ "source": "https://cod-esports.fandom.com/api.php (Cargo table PlayerStats)",
+ "license": "CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors",
+ "rows": [
+  {
+   "Map": "6 Star",
+   "Win": "0",
+   "Rows": "176",
+   "Plants": "",
+   "Defuses": "",
+   "FirstKills": "184",
+   "Kills": "1090"
+  },
+  {
+   "Map": "6 Star",
+   "Win": "1",
+   "Rows": "176",
+   "Plants": "",
+   "Defuses": "",
+   "FirstKills": "232",
+   "Kills": "1300"
+  },
+  {
+   "Map": "Highrise",
+   "Win": "0",
+   "Rows": "208",
+   "Plants": "18",
+   "Defuses": "3",
+   "FirstKills": "204",
+   "Kills": "1146"
+  },
+  {
+   "Map": "Highrise",
+   "Win": "1",
+   "Rows": "208",
+   "Plants": "15",
+   "Defuses": "8",
+   "FirstKills": "270",
+   "Kills": "1489"
+  },
+  {
+   "Map": "Invasion",
+   "Win": "0",
+   "Rows": "352",
+   "Plants": "37",
+   "Defuses": "7",
+   "FirstKills": "364",
+   "Kills": "1974"
+  },
+  {
+   "Map": "Invasion",
+   "Win": "1",
+   "Rows": "352",
+   "Plants": "46",
+   "Defuses": "18",
+   "FirstKills": "445",
+   "Kills": "2500"
+  },
+  {
+   "Map": "Karachi",
+   "Win": "0",
+   "Rows": "276",
+   "Plants": "37",
+   "Defuses": "9",
+   "FirstKills": "262",
+   "Kills": "1459"
+  },
+  {
+   "Map": "Karachi",
+   "Win": "1",
+   "Rows": "276",
+   "Plants": "51",
+   "Defuses": "14",
+   "FirstKills": "359",
+   "Kills": "1968"
+  },
+  {
+   "Map": "Rio",
+   "Win": "0",
+   "Rows": "164",
+   "Plants": "",
+   "Defuses": "",
+   "FirstKills": "145",
+   "Kills": "905"
+  },
+  {
+   "Map": "Rio",
+   "Win": "1",
+   "Rows": "164",
+   "Plants": "",
+   "Defuses": "",
+   "FirstKills": "224",
+   "Kills": "1184"
+  },
+  {
+   "Map": "Skidrow",
+   "Win": "0",
+   "Rows": "44",
+   "Plants": "11",
+   "Defuses": "3",
+   "FirstKills": "45",
+   "Kills": "206"
+  },
+  {
+   "Map": "Skidrow",
+   "Win": "1",
+   "Rows": "44",
+   "Plants": "16",
+   "Defuses": "3",
+   "FirstKills": "47",
+   "Kills": "311"
+  },
+  {
+   "Map": "Terminal",
+   "Win": "0",
+   "Rows": "116",
+   "Plants": "20",
+   "Defuses": "4",
+   "FirstKills": "109",
+   "Kills": "651"
+  },
+  {
+   "Map": "Terminal",
+   "Win": "1",
+   "Rows": "116",
+   "Plants": "29",
+   "Defuses": "11",
+   "FirstKills": "151",
+   "Kills": "833"
+  },
+  {
+   "Map": "Unrecognized Map",
+   "Win": "0",
+   "Rows": "4",
+   "Plants": "",
+   "Defuses": "",
+   "FirstKills": "4",
+   "Kills": "35"
+  },
+  {
+   "Map": "Unrecognized Map",
+   "Win": "1",
+   "Rows": "4",
+   "Plants": "",
+   "Defuses": "",
+   "FirstKills": "7",
+   "Kills": "34"
+  }
+ ]
+}

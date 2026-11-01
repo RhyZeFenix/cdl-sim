@@ -1,0 +1,188 @@
+{
+ "season": "2026",
+ "fetched": "2026-11-01",
+ "source": "https://cod-esports.fandom.com/api.php (Cargo table PlayerStats)",
+ "license": "CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors",
+ "rows": [
+  {
+   "Map": "Colossus",
+   "Win": "0",
+   "Rows": "192",
+   "Plants": "60",
+   "Defuses": "14",
+   "FirstKills": "199",
+   "Kills": "1111"
+  },
+  {
+   "Map": "Colossus",
+   "Win": "1",
+   "Rows": "192",
+   "Plants": "74",
+   "Defuses": "30",
+   "FirstKills": "252",
+   "Kills": "1387"
+  },
+  {
+   "Map": "Den",
+   "Win": "0",
+   "Rows": "300",
+   "Plants": "137",
+   "Defuses": "42",
+   "FirstKills": "284",
+   "Kills": "1651"
+  },
+  {
+   "Map": "Den",
+   "Win": "1",
+   "Rows": "300",
+   "Plants": "196",
+   "Defuses": "71",
+   "FirstKills": "378",
+   "Kills": "2141"
+  },
+  {
+   "Map": "Exposure",
+   "Win": "0",
+   "Rows": "148",
+   "Plants": "78",
+   "Defuses": "22",
+   "FirstKills": "141",
+   "Kills": "756"
+  },
+  {
+   "Map": "Exposure",
+   "Win": "1",
+   "Rows": "148",
+   "Plants": "94",
+   "Defuses": "39",
+   "FirstKills": "188",
+   "Kills": "1047"
+  },
+  {
+   "Map": "Fringe",
+   "Win": "0",
+   "Rows": "168",
+   "Plants": "70",
+   "Defuses": "19",
+   "FirstKills": "177",
+   "Kills": "916"
+  },
+  {
+   "Map": "Fringe",
+   "Win": "1",
+   "Rows": "168",
+   "Plants": "78",
+   "Defuses": "30",
+   "FirstKills": "210",
+   "Kills": "1235"
+  },
+  {
+   "Map": "Gridlock",
+   "Win": "0",
+   "Rows": "104",
+   "Plants": "57",
+   "Defuses": "17",
+   "FirstKills": "88",
+   "Kills": "530"
+  },
+  {
+   "Map": "Gridlock",
+   "Win": "1",
+   "Rows": "104",
+   "Plants": "73",
+   "Defuses": "28",
+   "FirstKills": "138",
+   "Kills": "731"
+  },
+  {
+   "Map": "Hacienda",
+   "Win": "0",
+   "Rows": "72",
+   "Plants": "48",
+   "Defuses": "9",
+   "FirstKills": "76",
+   "Kills": "392"
+  },
+  {
+   "Map": "Hacienda",
+   "Win": "1",
+   "Rows": "72",
+   "Plants": "55",
+   "Defuses": "25",
+   "FirstKills": "80",
+   "Kills": "513"
+  },
+  {
+   "Map": "Plaza",
+   "Win": "0",
+   "Rows": "60",
+   "Plants": "30",
+   "Defuses": "4",
+   "FirstKills": "58",
+   "Kills": "332"
+  },
+  {
+   "Map": "Plaza",
+   "Win": "1",
+   "Rows": "60",
+   "Plants": "33",
+   "Defuses": "10",
+   "FirstKills": "76",
+   "Kills": "427"
+  },
+  {
+   "Map": "Raid",
+   "Win": "0",
+   "Rows": "328",
+   "Plants": "197",
+   "Defuses": "49",
+   "FirstKills": "324",
+   "Kills": "1793"
+  },
+  {
+   "Map": "Raid",
+   "Win": "1",
+   "Rows": "328",
+   "Plants": "224",
+   "Defuses": "93",
+   "FirstKills": "428",
+   "Kills": "2360"
+  },
+  {
+   "Map": "Sake",
+   "Win": "0",
+   "Rows": "40",
+   "Plants": "19",
+   "Defuses": "8",
+   "FirstKills": "33",
+   "Kills": "220"
+  },
+  {
+   "Map": "Sake",
+   "Win": "1",
+   "Rows": "40",
+   "Plants": "20",
+   "Defuses": "11",
+   "FirstKills": "60",
+   "Kills": "295"
+  },
+  {
+   "Map": "Scar",
+   "Win": "0",
+   "Rows": "252",
+   "Plants": "100",
+   "Defuses": "19",
+   "FirstKills": "238",
+   "Kills": "1365"
+  },
+  {
+   "Map": "Scar",
+   "Win": "1",
+   "Rows": "252",
+   "Plants": "121",
+   "Defuses": "50",
+   "FirstKills": "316",
+   "Kills": "1776"
+  }
+ ]
+}

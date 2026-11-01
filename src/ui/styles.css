@@ -432,3 +432,120 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .formstrip > span.up { background: var(--pick); }
 .formstrip > span.down { background: var(--ban); opacity: 0.75; }
 .formstrip > i { position: absolute; left: 0; right: 0; border-top: 1px dashed var(--text-2); }
+
+/* Accessibility: hidden-but-read labels, visible keyboard focus, and less motion when asked. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+:focus-visible {
+  outline: 2px solid var(--accent, #3b82f6);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.save-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px;
+}
+.save-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 104px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface, transparent);
+}
+.save-card.empty {
+  border-style: dashed;
+}
+.save-label {
+  font-size: 13px;
+}
+
+/* Replay: highlight chips and the commentary caption over the view. */
+.hl-strip {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 2px 0 6px;
+}
+.hl-chip {
+  flex: none;
+  font: inherit;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: inherit;
+  cursor: pointer;
+}
+.hl-chip.on {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.watch-stage {
+  position: relative;
+}
+.caption {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  max-width: min(90%, 560px);
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: rgba(10, 12, 16, 0.78);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  pointer-events: none;
+}
+.caption.inline {
+  position: static;
+  transform: none;
+  margin: 6px auto;
+  width: fit-content;
+}
+.party-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.party-chip {
+  font: inherit;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: inherit;
+}
+.party-chip.on {
+  border-color: var(--accent);
+  font-weight: 600;
+}
+.tbl.compare td.better {
+  font-weight: 700;
+  color: var(--pick);
+}

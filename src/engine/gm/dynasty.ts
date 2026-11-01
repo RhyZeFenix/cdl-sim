@@ -4,7 +4,9 @@
 // leave unless re-signed, and the owner's trust carries over.
 import { loadSeasonData, startersOn, type SeasonData, type SeasonId } from "../data/registry";
 import {
+  aiPatchIn,
   createSeason,
+  freeAgents,
   isDone,
   playerIndex,
   playerInfo,
@@ -12,7 +14,8 @@ import {
   pointsTable,
   type SeasonState,
 } from "../season/season";
-import { ovrOf } from "./contracts";
+import { marketAsk, ovrOf } from "./contracts";
+import { contenderScore, contractOf, needFor, offerProblem, offerValue, type Offer } from "./negotiation";
 import { initFranchise } from "./franchise";
 import { pushInbox } from "./inbox";
 import { MORALE_START } from "./morale";
@@ -126,7 +129,95 @@ export interface NextSeasonOptions {
   team?: string;
   /** Expiring players to re-sign, with the contract length. */
   resign?: Record<string, number>;
+  /** Expiring players on a team option to keep for one more season at the same salary. */
+  exercise?: string[];
+  /** Offers to free agents for the off-season bidding (see previewFreeAgents). */
+  offers?: Record<string, Offer>;
   seed?: string;
+}
+
+/** Expiring players whose contract has a team option. */
+export const optionPlayers = (state: SeasonState) => expiringContracts(state).filter((id) => state.gm?.contracts?.[id]?.option);
+
+export interface FreeAgentPreview {
+  id: string;
+  handle: string;
+  ovr: number;
+  /** Asking salary for two seasons. */
+  ask: number;
+  /** How many AI teams are expected to bid. */
+  interest: number;
+}
+
+const FA_POOL = 24;
+
+/** The best free agents of the coming off-season, for the GM to make offers to. */
+export function previewFreeAgents(prev: SeasonState, prevData: SeasonData, opts: NextSeasonOptions = {}): FreeAgentPreview[] {
+  const state = startNextSeason(prev, prevData, { ...opts, offers: undefined });
+  const data = loadSeasonData(state.seasonId);
+  return faPool(state, data).map((id, i) => ({
+    id,
+    handle: playerInfo(state, data, id)?.handle ?? id,
+    ovr: Math.round(ovrOf(state, data, id) * 10) / 10,
+    ask: needFor(state, data, id, 2, state.gm!.team),
+    interest: bidders(i),
+  }));
+}
+
+function faPool(state: SeasonState, data: SeasonData): string[] {
+  return freeAgents(state, data)
+    .filter((id) => !id.startsWith("repl-"))
+    .sort((a, b) => ovrOf(state, data, b) - ovrOf(state, data, a))
+    .slice(0, FA_POOL);
+}
+
+/** The best free agents draw the most bids. */
+const bidders = (rank: number) => (rank < 4 ? 3 : rank < 10 ? 2 : rank < 16 ? 1 : 0);
+
+/**
+ * The off-season bidding. AI teams bid on the best free agents; each player signs where
+ * the money looks best, with a bump for stronger rosters, and only if the offer meets
+ * what they need. Returns lines for the inbox.
+ */
+export function resolveFreeAgency(state: SeasonState, data: SeasonData, offers: Record<string, Offer>, seed: string): string[] {
+  const gm = state.gm!;
+  const rng = createRng(`${seed}/free-agency`);
+  const pool = faPool(state, data);
+  const others = data.season.teams.map((t) => t.id).filter((t) => t !== gm.team);
+  const contender = new Map(data.season.teams.map((t) => [t.id, contenderScore(state, data, t.id)]));
+  const handle = (id: string) => playerInfo(state, data, id)?.handle ?? id;
+  const abbr = (t: string) => data.season.teams.find((x) => x.id === t)?.abbr ?? t;
+  const notes: string[] = [];
+  pool.forEach((id, rank) => {
+    const ask = marketAsk(state, data, id);
+    const bids = Array.from({ length: bidders(rank) }, () => ({ team: rng.pick(others), value: Math.round(ask * (0.85 + 0.3 * rng.next())) }));
+    const pull = (team: string, value: number) => value * (1 + 0.15 * contender.get(team)!);
+    const best = bids.sort((a, b) => pull(b.team, b.value) - pull(a.team, a.value))[0];
+    const offer = offers[id];
+    let ours = false;
+    if (offer) {
+      const value = offerValue(offer);
+      const enough = value >= needFor(state, data, id, offer.years, gm.team, !!offer.option);
+      const beats = !best || pull(gm.team, value) >= pull(best.team, best.value);
+      const problem = gm.roster.length >= 6 ? "your roster was full" : offerProblem(state, offer);
+      if (enough && beats && !problem) {
+        gm.roster.push(id);
+        gm.contracts = { ...(gm.contracts ?? {}), [id]: contractOf(offer) };
+        if (offer.bonus) gm.deadCap = (gm.deadCap ?? 0) + offer.bonus;
+        gm.morale = { ...(gm.morale ?? {}), [id]: 74 };
+        notes.push(`${handle(id)} signed with you`);
+        ours = true;
+      } else {
+        const why = problem ?? (!enough ? "your offer was too low" : `${abbr(best!.team)} offered more`);
+        notes.push(`${handle(id)} turned you down (${why})`);
+      }
+    }
+    if (!ours && best) {
+      aiPatchIn(state, best.team, [id]);
+      if (offer || rank < 6) notes.push(`${handle(id)} signed with ${abbr(best.team)}`);
+    }
+  });
+  return notes;
 }
 
 /** Builds next season's state for a finished GM season. */
@@ -149,7 +240,8 @@ export function startNextSeason(prev: SeasonState, prevData: SeasonData, opts: N
   if (!team || !data.season.teams.some((t) => t.id === team)) throw new Error("Pick the team your franchise becomes next season.");
 
   const resign = opts.resign ?? {};
-  const kept = gm.roster.filter((id) => (gm.contracts?.[id]?.years ?? 1) > 1 || resign[id]);
+  const exercise = new Set((opts.exercise ?? []).filter((id) => gm.contracts?.[id]?.option));
+  const kept = gm.roster.filter((id) => (gm.contracts?.[id]?.years ?? 1) > 1 || resign[id] || exercise.has(id));
 
   const seed = opts.seed ?? `${prev.options.seed.replace(/-y\d+$/, "")}-y${year}`;
   const state = createSeason(data, { ...prev.options, seed, gmTeam: undefined, champsOnly: false });
@@ -186,6 +278,7 @@ export function startNextSeason(prev: SeasonState, prevData: SeasonData, opts: N
   const contracts: Record<string, Contract> = {};
   for (const id of roster) {
     if (resign[id]) contracts[id] = { salary: askFor(ovrOf(state, data, id), resign[id]!), years: Math.max(1, Math.min(3, resign[id]!)) };
+    else if (exercise.has(id)) contracts[id] = { salary: gm.contracts![id]!.salary, years: 1 };
     else if (gm.contracts?.[id]) contracts[id] = { ...gm.contracts[id]!, years: gm.contracts[id]!.years - 1 };
     else contracts[id] = { salary: askingSalary(ovrOf(state, data, id)), years: 2 };
   }
@@ -229,6 +322,7 @@ export function startNextSeason(prev: SeasonState, prevData: SeasonData, opts: N
     }),
   );
   state.gm!.prospects = { ...(state.gm!.prospects ?? {}), ...academy };
+  const faNotes = opts.offers && Object.keys(opts.offers).length ? resolveFreeAgency(state, data, opts.offers, seed) : [];
   const left = gm.roster.filter((id) => !kept.includes(id)).map((id) => playerInfo(prev, prevData, id)?.handle ?? id);
   pushInbox(state, {
     date: data.season.stages[0]!.qualifiers.start,
@@ -239,6 +333,7 @@ export function startNextSeason(prev: SeasonState, prevData: SeasonData, opts: N
       `${recap.goalsMet}/${recap.goalsTotal} goals. ` +
       (left.length ? `Leaving as free agents: ${left.join(", ")}. ` : "Nobody left. ") +
       (team !== gm.team ? `The franchise now plays as ${data.season.teams.find((t) => t.id === team)!.name}. ` : "") +
+      (faNotes.length ? `Free agency: ${faNotes.join("; ")}. ` : "") +
       (aiNotes.length ? `Around the league: ${aiNotes.join("; ")}.` : ""),
   });
   achievementsAfterStep(state, data);

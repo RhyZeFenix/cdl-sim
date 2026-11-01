@@ -169,3 +169,23 @@ describe("validation fails loudly", () => {
     expect(() => parseSeason(bad, vetoFile, "bad.json")).toThrow(/gap\/overlap at place 5/);
   });
 });
+
+describe("real stats per event and per map", () => {
+  it("real form is small, signed, and known for the season's players", async () => {
+    const { realForm, REAL_FORM_CAP, loadSeasonData: load } = await import("../src/engine");
+    const d = load("2026");
+    const ids = d.rosters.teams.flatMap((t) => t.players.map((p) => p.id));
+    const forms = ids.map((id) => realForm("2026", id, { kind: "major", stage: 1 }));
+    expect(forms.filter((f) => f !== 0).length).toBeGreaterThan(ids.length / 2);
+    expect(forms.some((f) => f > 0) && forms.some((f) => f < 0)).toBe(true);
+    expect(Math.max(...forms.map(Math.abs))).toBeLessThanOrEqual(REAL_FORM_CAP);
+  });
+
+  it("SnD plant and retake factors exist where the wiki has full plant records", async () => {
+    const { loadSeasonData: load } = await import("../src/engine");
+    const f = load("2026").season.mapFactors!;
+    const snd = Object.entries(f).filter(([k]) => k.startsWith("snd:"));
+    expect(snd.length).toBeGreaterThan(4);
+    for (const [, v] of snd) expect(v.plant).toBeGreaterThan(0.5);
+  });
+});

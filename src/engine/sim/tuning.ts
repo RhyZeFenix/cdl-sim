@@ -35,6 +35,8 @@ export const TUNING = {
     // Off: in the 200-run backtest it didn't improve event or scoreline accuracy.
     close: false,
     closeExp: 3,
+    /** SnD: scale plant chances by the map's real plant rate and the post-plant edge by its retake rate. */
+    snd: false,
   },
   /** AI veto noise (skill units). */
   vetoNoise: 0.03,

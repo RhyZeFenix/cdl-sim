@@ -1,6 +1,6 @@
 // The Maps tab: kill and death heatmaps for any map this season, and the map editor.
 import { useMemo, useState } from "react";
-import type { Mode } from "../../engine";
+import { TUNING, modeName, type Mode } from "../../engine";
 import { HEAT_N, type Heatmap } from "../heatmap";
 import { directory } from "../names";
 import { layoutFor } from "../replay/layouts";
@@ -11,7 +11,7 @@ import { Seg } from "./common";
 import { MapEditor } from "./MapEditor";
 
 export function MapsTab({ store }: { store: SeasonStore }) {
-  const [view, setView] = useState<"heat" | "edit">("heat");
+  const [view, setView] = useState<"heat" | "data" | "edit">("heat");
   return (
     <div>
       <div className="row" style={{ marginBottom: 12 }}>
@@ -21,11 +21,12 @@ export function MapsTab({ store }: { store: SeasonStore }) {
           onChange={setView}
           options={[
             { value: "heat", label: "Heatmaps" },
+            { value: "data", label: "Real map data" },
             { value: "edit", label: "Map editor" },
           ]}
         />
       </div>
-      {view === "heat" ? <Heatmaps store={store} /> : <MapEditor />}
+      {view === "heat" ? <Heatmaps store={store} /> : view === "data" ? <MapData store={store} /> : <MapEditor />}
     </div>
   );
 }
@@ -166,6 +167,60 @@ function Heatmaps({ store }: { store: SeasonStore }) {
           {heat.events} {kind === "deaths" ? "deaths" : "kills"} over {heat.maps} maps. Brighter = more.
         </div>
       )}
+    </div>
+  );
+}
+
+const pct = (x?: number) => (x === undefined ? "—" : `${x >= 1 ? "+" : ""}${Math.round((x - 1) * 100)}%`);
+
+/** Per-map factors from real results, as the sim uses them. */
+function MapData({ store }: { store: SeasonStore }) {
+  const f = store.data.season.mapFactors ?? {};
+  const rows = Object.entries(f)
+    .map(([k, v]) => ({ mode: k.split(":")[0] as Mode, map: k.slice(k.indexOf(":") + 1), ...v }))
+    .sort((a, b) => a.mode.localeCompare(b.mode) || a.map.localeCompare(b.map));
+  const snd = rows.some((r) => r.plant !== undefined);
+  return (
+    <div className="card">
+      <div className="card-head">
+        <h3>Real map data</h3>
+        <span className="sub">{store.data.season.label} · CoD Esports Wiki player stats, relative to the mode average</span>
+      </div>
+      <div className="scroll-x">
+        <table className="tbl">
+          <caption className="sr-only">Per-map pace, closeness and SnD plant and retake rates</caption>
+          <thead>
+            <tr>
+              <th className="left">Map</th>
+              <th className="left">Mode</th>
+              <th>Games</th>
+              <th title="Kills per player per map against the mode average. The sim uses it for fight sizes.">Pace</th>
+              <th title="The loser's share of the winner's score against the mode average (not used by default)">Closeness</th>
+              {snd && <th title="SnD plants per game against the average map">Plants</th>}
+              {snd && <th title="SnD defuses per plant against the average map">Retakes</th>}
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((r) => (
+              <tr key={`${r.mode}:${r.map}`}>
+                <td className="left">{r.map}</td>
+                <td className="left">{modeName(r.mode)}</td>
+                <td>{Math.round(r.games)}</td>
+                <td>{pct(r.pace)}</td>
+                <td>{pct(r.close)}</td>
+                {snd && <td>{r.mode === "snd" ? pct(r.plant) : ""}</td>}
+                {snd && <td>{r.mode === "snd" ? pct(r.retake) : ""}</td>}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="sub" style={{ marginTop: 6 }}>
+        {snd
+          ? `Plants and retakes need full plant records, which the wiki has for 2026. The sim ${TUNING.mapEffects.snd ? "uses them" : "doesn't use them yet: in the backtest they helped points accuracy a little and hurt event-winner accuracy a little"}.`
+          : "The wiki's plant and defuse records for this season are too incomplete to use."}{" "}
+        Small samples are pulled toward the average.
+      </div>
     </div>
   );
 }

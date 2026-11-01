@@ -1,0 +1,152 @@
+{
+ "season": "2025",
+ "fetched": "2026-11-01",
+ "source": "https://cod-esports.fandom.com/api.php (Cargo table PlayerStats)",
+ "license": "CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors",
+ "rows": [
+  {
+   "Map": "Dealership",
+   "Win": "0",
+   "Rows": "168",
+   "Plants": "9",
+   "Defuses": "4",
+   "FirstKills": "146",
+   "Kills": "897"
+  },
+  {
+   "Map": "Dealership",
+   "Win": "1",
+   "Rows": "168",
+   "Plants": "11",
+   "Defuses": "7",
+   "FirstKills": "223",
+   "Kills": "1190"
+  },
+  {
+   "Map": "Hacienda",
+   "Win": "0",
+   "Rows": "228",
+   "Plants": "3",
+   "Defuses": "1",
+   "FirstKills": "222",
+   "Kills": "1291"
+  },
+  {
+   "Map": "Hacienda",
+   "Win": "1",
+   "Rows": "228",
+   "Plants": "8",
+   "Defuses": "2",
+   "FirstKills": "297",
+   "Kills": "1646"
+  },
+  {
+   "Map": "Protocol",
+   "Win": "0",
+   "Rows": "220",
+   "Plants": "18",
+   "Defuses": "4",
+   "FirstKills": "201",
+   "Kills": "1230"
+  },
+  {
+   "Map": "Protocol",
+   "Win": "1",
+   "Rows": "220",
+   "Plants": "21",
+   "Defuses": "13",
+   "FirstKills": "309",
+   "Kills": "1571"
+  },
+  {
+   "Map": "Red Card",
+   "Win": "0",
+   "Rows": "304",
+   "Plants": "12",
+   "Defuses": "1",
+   "FirstKills": "295",
+   "Kills": "1805"
+  },
+  {
+   "Map": "Red Card",
+   "Win": "1",
+   "Rows": "304",
+   "Plants": "14",
+   "Defuses": "4",
+   "FirstKills": "421",
+   "Kills": "2239"
+  },
+  {
+   "Map": "Rewind",
+   "Win": "0",
+   "Rows": "136",
+   "Plants": "2",
+   "Defuses": "0",
+   "FirstKills": "137",
+   "Kills": "779"
+  },
+  {
+   "Map": "Rewind",
+   "Win": "1",
+   "Rows": "136",
+   "Plants": "4",
+   "Defuses": "2",
+   "FirstKills": "172",
+   "Kills": "980"
+  },
+  {
+   "Map": "Skyline",
+   "Win": "0",
+   "Rows": "116",
+   "Plants": "",
+   "Defuses": "",
+   "FirstKills": "121",
+   "Kills": "701"
+  },
+  {
+   "Map": "Skyline",
+   "Win": "1",
+   "Rows": "116",
+   "Plants": "",
+   "Defuses": "",
+   "FirstKills": "153",
+   "Kills": "842"
+  },
+  {
+   "Map": "Unrecognized Map",
+   "Win": "0",
+   "Rows": "4",
+   "Plants": "",
+   "Defuses": "",
+   "FirstKills": "6",
+   "Kills": "28"
+  },
+  {
+   "Map": "Unrecognized Map",
+   "Win": "1",
+   "Rows": "4",
+   "Plants": "",
+   "Defuses": "",
+   "FirstKills": "4",
+   "Kills": "26"
+  },
+  {
+   "Map": "Vault",
+   "Win": "0",
+   "Rows": "140",
+   "Plants": "",
+   "Defuses": "",
+   "FirstKills": "139",
+   "Kills": "792"
+  },
+  {
+   "Map": "Vault",
+   "Win": "1",
+   "Rows": "140",
+   "Plants": "",
+   "Defuses": "",
+   "FirstKills": "185",
+   "Kills": "994"
+  }
+ ]
+}

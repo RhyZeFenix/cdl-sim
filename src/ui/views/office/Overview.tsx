@@ -1,6 +1,6 @@
 // Office › Overview: the inbox, the owner's goals, the off-season, dynasty history and the first-run guide.
-import { useState } from "react";
-import { gmChoose, type InboxItem, contractFor, expiringContracts, gmMarkRead, goalStatus, goalText, isDone, loadSeasonData, ordinal, nextSeasonId, ownerVerdict, playerInfo, seasonLabel, seasonRecap, startNextSeason, successorTeam, verdictText, visibleInbox, ovrOf, type SeasonData, type SeasonState } from "../../../engine";
+import { useMemo, useState } from "react";
+import { gmChoose, type InboxItem, contractFor, expiringContracts, gmMarkRead, goalStatus, goalText, isDone, loadSeasonData, ordinal, nextSeasonId, ownerVerdict, playerInfo, seasonLabel, seasonRecap, startNextSeason, successorTeam, optionPlayers, previewFreeAgents, type Offer, verdictText, visibleInbox, ovrOf, type SeasonData, type SeasonState } from "../../../engine";
 import type { SeasonStore } from "../../useSeason";
 import { hintSeen, markHintSeen } from "../../theme";
 import { STATUS_COLOR } from "./shared";
@@ -115,7 +115,22 @@ export function OffSeason({ store }: { store: SeasonStore }) {
   const successor = successorTeam(state);
   const [team, setTeam] = useState(successor ?? nextData.season.teams[0]!.id);
   const [msg, setMsg] = useState<string | null>(null);
+  const [exercise, setExercise] = useState<string[]>([]);
+  const [offers, setOffers] = useState<Record<string, Offer>>({});
+  const [showFa, setShowFa] = useState(false);
+  const options = optionPlayers(state);
   const fired = recap.verdict === "fired";
+  const picks = Object.fromEntries(Object.entries(resign).filter(([, y]) => y > 0));
+  const pickKey = JSON.stringify([team, picks, exercise]);
+  const pool = useMemo(() => {
+    if (!showFa || fired) return [];
+    try {
+      return previewFreeAgents(state, data, { team, resign: picks, exercise });
+    } catch {
+      return [];
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showFa, pickKey, state]);
   const repeat = nextId === state.seasonId;
   const nextLabel = repeat ? `CDL ${Number(/\d{4}/.exec(seasonLabel(state, data))?.[0] ?? 2026) + 1}` : nextData.season.label;
 
@@ -155,7 +170,18 @@ export function OffSeason({ store }: { store: SeasonStore }) {
                     <td>{Math.round(ovrOf(state, data, id))}</td>
                     <td>${gm.contracts?.[id]?.salary ?? "—"}k</td>
                     <td className="left">
+                      {options.includes(id) && (
+                        <label className="sub" style={{ marginRight: 8 }} title="Keep them one more season at the same salary">
+                          <input
+                            type="checkbox"
+                            checked={exercise.includes(id)}
+                            onChange={(e) => setExercise(e.target.checked ? [...exercise, id] : exercise.filter((x) => x !== id))}
+                          />{" "}
+                          Use option
+                        </label>
+                      )}
                       <select
+                        disabled={exercise.includes(id)}
                         className="plain"
                         value={resign[id] ?? 0}
                         onChange={(e) => setResign({ ...resign, [id]: Number(e.target.value) })}
@@ -174,6 +200,66 @@ export function OffSeason({ store }: { store: SeasonStore }) {
               </tbody>
             </table>
           )}
+          <h4 style={{ margin: "12px 0 4px" }}>Free agency</h4>
+          {!showFa ? (
+            <button className="btn small" onClick={() => setShowFa(true)}>
+              See the free-agent class
+            </button>
+          ) : (
+            <>
+              <div className="sub" style={{ marginBottom: 6 }}>
+                Make offers; AI teams bid too. Each player signs where the money looks best, and a stronger roster counts for up to 15% more. Results land in your inbox.
+              </div>
+              <div className="scroll-x">
+                <table className="tbl">
+                  <thead>
+                    <tr>
+                      <th className="left">Player</th>
+                      <th>OVR</th>
+                      <th>Wants</th>
+                      <th>Bidders</th>
+                      <th className="left">Your offer ($k a season, seasons, bonus)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {pool.map((p) => {
+                      const o = offers[p.id];
+                      const set = (next: Offer | null) => {
+                        const copy = { ...offers };
+                        if (next) copy[p.id] = next;
+                        else delete copy[p.id];
+                        setOffers(copy);
+                      };
+                      return (
+                        <tr key={p.id}>
+                          <td className="left">{p.handle}</td>
+                          <td>{Math.round(p.ovr)}</td>
+                          <td>${p.ask}k</td>
+                          <td>{p.interest || "—"}</td>
+                          <td className="left">
+                            {o ? (
+                              <span className="row" style={{ gap: 6 }}>
+                                <input aria-label={`Salary for ${p.handle}`} type="number" step={5} value={o.salary} style={{ width: 70 }} onChange={(e) => set({ ...o, salary: Number(e.target.value) || 0 })} />
+                                <select aria-label={`Seasons for ${p.handle}`} className="plain" value={o.years} onChange={(e) => set({ ...o, years: Number(e.target.value) })}>
+                                  {[1, 2, 3].map((y) => <option key={y} value={y}>{y}</option>)}
+                                </select>
+                                <input aria-label={`Bonus for ${p.handle}`} type="number" step={5} value={o.bonus ?? 0} style={{ width: 60 }} onChange={(e) => set({ ...o, bonus: Number(e.target.value) || 0 })} />
+                                <button className="btn small" onClick={() => set(null)}>Withdraw</button>
+                              </span>
+                            ) : (
+                              <button className="btn small" onClick={() => set({ salary: p.ask, years: 2, bonus: 0 })}>
+                                Make an offer
+                              </button>
+                            )}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </>
+          )}
           <div className="row" style={{ marginTop: 10 }}>
             <label className="field">
               Franchise next season
@@ -191,8 +277,7 @@ export function OffSeason({ store }: { store: SeasonStore }) {
               onClick={() => {
                 if (!confirm(`Start ${nextLabel}? Export this season first if you want to keep it.`)) return;
                 try {
-                  const picks = Object.fromEntries(Object.entries(resign).filter(([, y]) => y > 0));
-                  store.replace(startNextSeason(state, data, { team, resign: picks }));
+                  store.replace(startNextSeason(state, data, { team, resign: picks, exercise, offers }));
                 } catch (e) {
                   setMsg(e instanceof Error ? e.message : String(e));
                 }

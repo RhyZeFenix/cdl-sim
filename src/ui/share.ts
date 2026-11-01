@@ -18,6 +18,7 @@ export function shareUrl(cfg: SeasonConfig, step: number): string {
   if (cfg.gmTeam) p.set("gm", cfg.gmTeam);
   if (cfg.gmTeam && cfg.difficulty && cfg.difficulty !== "normal") p.set("d", cfg.difficulty);
   if (cfg.chaos) p.set("chaos", "1");
+  if (cfg.realForm) p.set("form", "real");
   if (cfg.champsOnly) p.set("champs", "1");
   if (!cfg.gmTeam && step > 0) p.set("step", String(step));
   return `${location.origin}${location.pathname}#${p.toString()}`;
@@ -36,6 +37,7 @@ export function readShare(hash = location.hash): ShareSpec | null {
       gmTeam: p.get("gm") ?? undefined,
       difficulty: (p.get("d") as Difficulty | null) ?? undefined,
       chaos: p.get("chaos") === "1",
+      realForm: p.get("form") === "real",
       champsOnly: p.get("champs") === "1",
     },
     step: Math.max(0, Number(p.get("step") ?? 0) || 0),

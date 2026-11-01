@@ -1,0 +1,4159 @@
+{
+ "season": "2026",
+ "fetched": "2026-11-01",
+ "source": "https://cod-esports.fandom.com/api.php (Cargo table PlayerStats)",
+ "license": "CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors",
+ "rows": [
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "Kills": "412",
+   "Deaths": "359"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "16",
+   "Kills": "268",
+   "Deaths": "283"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "25",
+   "Kills": "437",
+   "Deaths": "488"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "Kills": "489",
+   "Deaths": "477"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "Kills": "450",
+   "Deaths": "417"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "Kills": "729",
+   "Deaths": "802"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "Kills": "547",
+   "Deaths": "535"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "Kills": "168",
+   "Deaths": "154"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "421",
+   "Deaths": "422"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "17",
+   "Kills": "351",
+   "Deaths": "342"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "Kills": "166",
+   "Deaths": "165"
+  },
+  {
+   "PlayerLink": "04",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "20",
+   "Kills": "354",
+   "Deaths": "361"
+  },
+  {
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "8",
+   "Kills": "140",
+   "Deaths": "167"
+  },
+  {
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "Kills": "275",
+   "Deaths": "239"
+  },
+  {
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "Kills": "118",
+   "Deaths": "161"
+  },
+  {
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "24",
+   "Kills": "424",
+   "Deaths": "467"
+  },
+  {
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "17",
+   "Kills": "273",
+   "Deaths": "339"
+  },
+  {
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "9",
+   "Kills": "153",
+   "Deaths": "165"
+  },
+  {
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "Kills": "125",
+   "Deaths": "134"
+  },
+  {
+   "PlayerLink": "Abe",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "Kills": "353",
+   "Deaths": "367"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "9",
+   "Kills": "167",
+   "Deaths": "176"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "Kills": "247",
+   "Deaths": "250"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "Kills": "179",
+   "Deaths": "177"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "Kills": "506",
+   "Deaths": "488"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "Kills": "264",
+   "Deaths": "265"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "43",
+   "Kills": "792",
+   "Deaths": "788"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "33",
+   "Kills": "630",
+   "Deaths": "582"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "14",
+   "Kills": "268",
+   "Deaths": "256"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "399",
+   "Deaths": "374"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "18",
+   "Kills": "345",
+   "Deaths": "332"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "Kills": "247",
+   "Deaths": "218"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "Kills": "405",
+   "Deaths": "385"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "Kills": "398",
+   "Deaths": "329"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "16",
+   "Kills": "295",
+   "Deaths": "255"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "25",
+   "Kills": "473",
+   "Deaths": "435"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "Kills": "502",
+   "Deaths": "425"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "Kills": "397",
+   "Deaths": "382"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "Kills": "758",
+   "Deaths": "721"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "Kills": "484",
+   "Deaths": "483"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "Kills": "147",
+   "Deaths": "142"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "392",
+   "Deaths": "403"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "17",
+   "Kills": "340",
+   "Deaths": "311"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "Kills": "173",
+   "Deaths": "154"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "20",
+   "Kills": "357",
+   "Deaths": "335"
+  },
+  {
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "20",
+   "Kills": "431",
+   "Deaths": "394"
+  },
+  {
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "Kills": "88",
+   "Deaths": "86"
+  },
+  {
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "Kills": "526",
+   "Deaths": "568"
+  },
+  {
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "11",
+   "Kills": "249",
+   "Deaths": "225"
+  },
+  {
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "Kills": "66",
+   "Deaths": "62"
+  },
+  {
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "366",
+   "Deaths": "417"
+  },
+  {
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "Kills": "218",
+   "Deaths": "225"
+  },
+  {
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "4",
+   "Kills": "84",
+   "Deaths": "79"
+  },
+  {
+   "PlayerLink": "Afro",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "Kills": "481",
+   "Deaths": "440"
+  },
+  {
+   "PlayerLink": "Alluka",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "Kills": "383",
+   "Deaths": "341"
+  },
+  {
+   "PlayerLink": "Aspekt",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "Kills": "133",
+   "Deaths": "188"
+  },
+  {
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "20",
+   "Kills": "398",
+   "Deaths": "393"
+  },
+  {
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "Kills": "74",
+   "Deaths": "95"
+  },
+  {
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "Kills": "525",
+   "Deaths": "578"
+  },
+  {
+   "PlayerLink": "Beans",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "Kills": "193",
+   "Deaths": "181"
+  },
+  {
+   "PlayerLink": "Brack",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "11",
+   "Kills": "176",
+   "Deaths": "210"
+  },
+  {
+   "PlayerLink": "Brack",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "8",
+   "Kills": "140",
+   "Deaths": "147"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "Kills": "173",
+   "Deaths": "168"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "Kills": "85",
+   "Deaths": "89"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "583",
+   "Deaths": "617"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "14",
+   "Kills": "225",
+   "Deaths": "294"
+  },
+  {
+   "PlayerLink": "Capsidal",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "Kills": "110",
+   "Deaths": "135"
+  },
+  {
+   "PlayerLink": "Capsidal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "Kills": "71",
+   "Deaths": "91"
+  },
+  {
+   "PlayerLink": "Capsidal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "23",
+   "Kills": "443",
+   "Deaths": "503"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "Kills": "367",
+   "Deaths": "303"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "Kills": "141",
+   "Deaths": "140"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "12",
+   "Kills": "213",
+   "Deaths": "205"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "536",
+   "Deaths": "473"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "6",
+   "Kills": "102",
+   "Deaths": "101"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "Kills": "807",
+   "Deaths": "693"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "17",
+   "Kills": "293",
+   "Deaths": "254"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "8",
+   "Kills": "147",
+   "Deaths": "145"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "396",
+   "Deaths": "341"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "Kills": "160",
+   "Deaths": "141"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "Kills": "122",
+   "Deaths": "120"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "364",
+   "Deaths": "334"
+  },
+  {
+   "PlayerLink": "Censor",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "12",
+   "Kills": "138",
+   "Deaths": "221"
+  },
+  {
+   "PlayerLink": "Cimbels",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "6",
+   "Kills": "75",
+   "Deaths": "109"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "8",
+   "Kills": "164",
+   "Deaths": "176"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "21",
+   "Kills": "419",
+   "Deaths": "378"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "Kills": "172",
+   "Deaths": "188"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "509",
+   "Deaths": "532"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "Kills": "416",
+   "Deaths": "401"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "37",
+   "Kills": "707",
+   "Deaths": "751"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "24",
+   "Kills": "488",
+   "Deaths": "474"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "Kills": "133",
+   "Deaths": "147"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "439",
+   "Deaths": "403"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "9",
+   "Kills": "182",
+   "Deaths": "175"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "Kills": "130",
+   "Deaths": "148"
+  },
+  {
+   "PlayerLink": "CleanX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "Kills": "429",
+   "Deaths": "439"
+  },
+  {
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "15",
+   "Kills": "248",
+   "Deaths": "272"
+  },
+  {
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "Kills": "138",
+   "Deaths": "161"
+  },
+  {
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "Kills": "545",
+   "Deaths": "599"
+  },
+  {
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "Kills": "69",
+   "Deaths": "82"
+  },
+  {
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "Kills": "785",
+   "Deaths": "784"
+  },
+  {
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "12",
+   "Kills": "225",
+   "Deaths": "273"
+  },
+  {
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "Kills": "68",
+   "Deaths": "66"
+  },
+  {
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "23",
+   "Kills": "444",
+   "Deaths": "462"
+  },
+  {
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "5",
+   "Kills": "87",
+   "Deaths": "95"
+  },
+  {
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "Kills": "164",
+   "Deaths": "170"
+  },
+  {
+   "PlayerLink": "Craze",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "303",
+   "Deaths": "353"
+  },
+  {
+   "PlayerLink": "d7om",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "Kills": "98",
+   "Deaths": "143"
+  },
+  {
+   "PlayerLink": "d7oom",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "Kills": "92",
+   "Deaths": "126"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "23",
+   "Kills": "407",
+   "Deaths": "429"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "19",
+   "Kills": "313",
+   "Deaths": "301"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "16",
+   "Kills": "279",
+   "Deaths": "282"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "Kills": "510",
+   "Deaths": "504"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "Kills": "271",
+   "Deaths": "242"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "Kills": "751",
+   "Deaths": "730"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "Kills": "484",
+   "Deaths": "434"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "9",
+   "Kills": "182",
+   "Deaths": "161"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "393",
+   "Deaths": "374"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "20",
+   "Kills": "389",
+   "Deaths": "342"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "Kills": "212",
+   "Deaths": "190"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "362",
+   "Deaths": "363"
+  },
+  {
+   "PlayerLink": "Denza",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "Kills": "144",
+   "Deaths": "192"
+  },
+  {
+   "PlayerLink": "Derek",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "6",
+   "Kills": "85",
+   "Deaths": "106"
+  },
+  {
+   "PlayerLink": "Diamondcon",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "12",
+   "Kills": "225",
+   "Deaths": "238"
+  },
+  {
+   "PlayerLink": "Diamondcon",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "Kills": "151",
+   "Deaths": "183"
+  },
+  {
+   "PlayerLink": "DK",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "Kills": "170",
+   "Deaths": "177"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "Kills": "412",
+   "Deaths": "391"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "16",
+   "Kills": "241",
+   "Deaths": "278"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "25",
+   "Kills": "487",
+   "Deaths": "427"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "Kills": "439",
+   "Deaths": "466"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "Kills": "424",
+   "Deaths": "412"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "Kills": "751",
+   "Deaths": "758"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "Kills": "508",
+   "Deaths": "504"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "Kills": "150",
+   "Deaths": "158"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "388",
+   "Deaths": "423"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "17",
+   "Kills": "359",
+   "Deaths": "320"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "Kills": "157",
+   "Deaths": "167"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "20",
+   "Kills": "362",
+   "Deaths": "373"
+  },
+  {
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "6",
+   "Kills": "83",
+   "Deaths": "104"
+  },
+  {
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "Kills": "759",
+   "Deaths": "794"
+  },
+  {
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "Kills": "155",
+   "Deaths": "177"
+  },
+  {
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "Kills": "35",
+   "Deaths": "54"
+  },
+  {
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "391",
+   "Deaths": "428"
+  },
+  {
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "3",
+   "Kills": "36",
+   "Deaths": "53"
+  },
+  {
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "Kills": "50",
+   "Deaths": "65"
+  },
+  {
+   "PlayerLink": "Encourage",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "411",
+   "Deaths": "442"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "12",
+   "Kills": "230",
+   "Deaths": "249"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "25",
+   "Kills": "444",
+   "Deaths": "510"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "22",
+   "Kills": "393",
+   "Deaths": "417"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "Kills": "547",
+   "Deaths": "567"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "Kills": "292",
+   "Deaths": "338"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "46",
+   "Kills": "860",
+   "Deaths": "1014"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "25",
+   "Kills": "461",
+   "Deaths": "533"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "Kills": "83",
+   "Deaths": "94"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "400",
+   "Deaths": "413"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "Kills": "258",
+   "Deaths": "297"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "7",
+   "Kills": "141",
+   "Deaths": "147"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "24",
+   "Kills": "480",
+   "Deaths": "501"
+  },
+  {
+   "PlayerLink": "EriKBooM",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "9",
+   "Kills": "138",
+   "Deaths": "162"
+  },
+  {
+   "PlayerLink": "EriKBooM",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "Kills": "160",
+   "Deaths": "191"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "15",
+   "Kills": "299",
+   "Deaths": "292"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "26",
+   "Kills": "488",
+   "Deaths": "427"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "14",
+   "Kills": "266",
+   "Deaths": "260"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "Kills": "589",
+   "Deaths": "589"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "10",
+   "Kills": "163",
+   "Deaths": "195"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "Kills": "767",
+   "Deaths": "739"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "20",
+   "Kills": "449",
+   "Deaths": "379"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "6",
+   "Kills": "95",
+   "Deaths": "97"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "377",
+   "Deaths": "337"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "24",
+   "Kills": "457",
+   "Deaths": "465"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "Kills": "113",
+   "Deaths": "118"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "379",
+   "Deaths": "354"
+  },
+  {
+   "PlayerLink": "Ethan",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "Kills": "192",
+   "Deaths": "186"
+  },
+  {
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "Kills": "121",
+   "Deaths": "140"
+  },
+  {
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "22",
+   "Kills": "418",
+   "Deaths": "396"
+  },
+  {
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "Kills": "79",
+   "Deaths": "75"
+  },
+  {
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "Kills": "704",
+   "Deaths": "723"
+  },
+  {
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "12",
+   "Kills": "234",
+   "Deaths": "235"
+  },
+  {
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "Kills": "58",
+   "Deaths": "54"
+  },
+  {
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "23",
+   "Kills": "398",
+   "Deaths": "422"
+  },
+  {
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "Kills": "137",
+   "Deaths": "160"
+  },
+  {
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "5",
+   "Kills": "79",
+   "Deaths": "89"
+  },
+  {
+   "PlayerLink": "Exceed",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "Kills": "296",
+   "Deaths": "340"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "Kills": "344",
+   "Deaths": "370"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "Kills": "139",
+   "Deaths": "150"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "12",
+   "Kills": "231",
+   "Deaths": "249"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "541",
+   "Deaths": "546"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "6",
+   "Kills": "87",
+   "Deaths": "116"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "Kills": "884",
+   "Deaths": "809"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "17",
+   "Kills": "360",
+   "Deaths": "331"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "8",
+   "Kills": "151",
+   "Deaths": "161"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "413",
+   "Deaths": "412"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "Kills": "155",
+   "Deaths": "175"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "Kills": "119",
+   "Deaths": "130"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "395",
+   "Deaths": "397"
+  },
+  {
+   "PlayerLink": "FeLo",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "11",
+   "Kills": "199",
+   "Deaths": "196"
+  },
+  {
+   "PlayerLink": "Fire",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "12",
+   "Kills": "188",
+   "Deaths": "216"
+  },
+  {
+   "PlayerLink": "Fire",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "Kills": "57",
+   "Deaths": "58"
+  },
+  {
+   "PlayerLink": "Fire",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "23",
+   "Kills": "415",
+   "Deaths": "383"
+  },
+  {
+   "PlayerLink": "Fire",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "Kills": "103",
+   "Deaths": "152"
+  },
+  {
+   "PlayerLink": "Fire",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "5",
+   "Kills": "80",
+   "Deaths": "79"
+  },
+  {
+   "PlayerLink": "Fire",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "Kills": "296",
+   "Deaths": "325"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "15",
+   "Kills": "270",
+   "Deaths": "281"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "25",
+   "Kills": "464",
+   "Deaths": "420"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "22",
+   "Kills": "375",
+   "Deaths": "377"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "Kills": "546",
+   "Deaths": "466"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "Kills": "298",
+   "Deaths": "282"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "46",
+   "Kills": "894",
+   "Deaths": "870"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "25",
+   "Kills": "450",
+   "Deaths": "427"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "Kills": "69",
+   "Deaths": "88"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "400",
+   "Deaths": "334"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "24",
+   "Kills": "434",
+   "Deaths": "443"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "Kills": "115",
+   "Deaths": "123"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "343",
+   "Deaths": "335"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "Kills": "266",
+   "Deaths": "268"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "Kills": "141",
+   "Deaths": "158"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "24",
+   "Kills": "432",
+   "Deaths": "480"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "Kills": "78",
+   "Deaths": "78"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "Kills": "780",
+   "Deaths": "806"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "Kills": "110",
+   "Deaths": "136"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "Kills": "74",
+   "Deaths": "85"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "330",
+   "Deaths": "376"
+  },
+  {
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "11",
+   "Kills": "155",
+   "Deaths": "209"
+  },
+  {
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "Kills": "747",
+   "Deaths": "884"
+  },
+  {
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "Kills": "172",
+   "Deaths": "183"
+  },
+  {
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "Kills": "40",
+   "Deaths": "54"
+  },
+  {
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "386",
+   "Deaths": "455"
+  },
+  {
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "3",
+   "Kills": "47",
+   "Deaths": "57"
+  },
+  {
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "Kills": "55",
+   "Deaths": "66"
+  },
+  {
+   "PlayerLink": "Hide",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "382",
+   "Deaths": "452"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "23",
+   "Kills": "448",
+   "Deaths": "426"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "19",
+   "Kills": "368",
+   "Deaths": "281"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "16",
+   "Kills": "275",
+   "Deaths": "284"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "Kills": "483",
+   "Deaths": "513"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "Kills": "291",
+   "Deaths": "282"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "Kills": "885",
+   "Deaths": "806"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "Kills": "529",
+   "Deaths": "482"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "9",
+   "Kills": "157",
+   "Deaths": "167"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "447",
+   "Deaths": "408"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "20",
+   "Kills": "373",
+   "Deaths": "364"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "Kills": "216",
+   "Deaths": "204"
+  },
+  {
+   "PlayerLink": "Huke",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "401",
+   "Deaths": "366"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "9",
+   "Kills": "167",
+   "Deaths": "176"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "Kills": "259",
+   "Deaths": "239"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "Kills": "195",
+   "Deaths": "182"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "Kills": "529",
+   "Deaths": "525"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "Kills": "294",
+   "Deaths": "286"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "43",
+   "Kills": "869",
+   "Deaths": "800"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "33",
+   "Kills": "637",
+   "Deaths": "610"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "14",
+   "Kills": "250",
+   "Deaths": "261"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "391",
+   "Deaths": "374"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "18",
+   "Kills": "347",
+   "Deaths": "325"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "Kills": "253",
+   "Deaths": "228"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "Kills": "449",
+   "Deaths": "407"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "8",
+   "Kills": "137",
+   "Deaths": "157"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "21",
+   "Kills": "332",
+   "Deaths": "326"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "Kills": "141",
+   "Deaths": "165"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "459",
+   "Deaths": "450"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "Kills": "367",
+   "Deaths": "344"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "37",
+   "Kills": "622",
+   "Deaths": "640"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "24",
+   "Kills": "359",
+   "Deaths": "406"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "Kills": "109",
+   "Deaths": "137"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "323",
+   "Deaths": "362"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "9",
+   "Kills": "139",
+   "Deaths": "151"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "Kills": "116",
+   "Deaths": "130"
+  },
+  {
+   "PlayerLink": "Insight",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "Kills": "387",
+   "Deaths": "386"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "15",
+   "Kills": "334",
+   "Deaths": "296"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "21",
+   "Kills": "403",
+   "Deaths": "342"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "Kills": "200",
+   "Deaths": "168"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "568",
+   "Deaths": "495"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "Kills": "420",
+   "Deaths": "380"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "37",
+   "Kills": "766",
+   "Deaths": "701"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "24",
+   "Kills": "476",
+   "Deaths": "432"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "Kills": "156",
+   "Deaths": "143"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "494",
+   "Deaths": "365"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "24",
+   "Kills": "529",
+   "Deaths": "456"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "Kills": "122",
+   "Deaths": "129"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "15",
+   "Kills": "340",
+   "Deaths": "279"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "Kills": "223",
+   "Deaths": "269"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "Kills": "142",
+   "Deaths": "181"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "Kills": "503",
+   "Deaths": "523"
+  },
+  {
+   "PlayerLink": "Khhx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "Kills": "111",
+   "Deaths": "125"
+  },
+  {
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "8",
+   "Kills": "187",
+   "Deaths": "174"
+  },
+  {
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "Kills": "408",
+   "Deaths": "417"
+  },
+  {
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "31",
+   "Kills": "631",
+   "Deaths": "602"
+  },
+  {
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "24",
+   "Kills": "456",
+   "Deaths": "428"
+  },
+  {
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "Kills": "134",
+   "Deaths": "141"
+  },
+  {
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "416",
+   "Deaths": "411"
+  },
+  {
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "9",
+   "Kills": "187",
+   "Deaths": "171"
+  },
+  {
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "Kills": "150",
+   "Deaths": "129"
+  },
+  {
+   "PlayerLink": "Kips",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "Kills": "422",
+   "Deaths": "419"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "Kills": "343",
+   "Deaths": "381"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "Kills": "155",
+   "Deaths": "151"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "12",
+   "Kills": "226",
+   "Deaths": "244"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "505",
+   "Deaths": "532"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "6",
+   "Kills": "95",
+   "Deaths": "107"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "Kills": "824",
+   "Deaths": "813"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "17",
+   "Kills": "337",
+   "Deaths": "329"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "8",
+   "Kills": "157",
+   "Deaths": "161"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "397",
+   "Deaths": "401"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "Kills": "141",
+   "Deaths": "172"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "Kills": "132",
+   "Deaths": "142"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "360",
+   "Deaths": "379"
+  },
+  {
+   "PlayerLink": "KnoX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "Kills": "150",
+   "Deaths": "146"
+  },
+  {
+   "PlayerLink": "KnoX",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "3",
+   "Kills": "40",
+   "Deaths": "53"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "12",
+   "Kills": "259",
+   "Deaths": "245"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "26",
+   "Kills": "575",
+   "Deaths": "486"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "14",
+   "Kills": "286",
+   "Deaths": "269"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "Kills": "650",
+   "Deaths": "631"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "10",
+   "Kills": "190",
+   "Deaths": "197"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "Kills": "811",
+   "Deaths": "820"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "20",
+   "Kills": "462",
+   "Deaths": "404"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "6",
+   "Kills": "108",
+   "Deaths": "113"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "400",
+   "Deaths": "381"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "Kills": "242",
+   "Deaths": "271"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "7",
+   "Kills": "159",
+   "Deaths": "143"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "24",
+   "Kills": "506",
+   "Deaths": "472"
+  },
+  {
+   "PlayerLink": "Lqgend",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "Kills": "185",
+   "Deaths": "236"
+  },
+  {
+   "PlayerLink": "Lqgend",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "9",
+   "Kills": "131",
+   "Deaths": "183"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "Kills": "249",
+   "Deaths": "210"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "Kills": "167",
+   "Deaths": "128"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "24",
+   "Kills": "391",
+   "Deaths": "425"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "Kills": "65",
+   "Deaths": "66"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "Kills": "715",
+   "Deaths": "715"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "Kills": "127",
+   "Deaths": "122"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "Kills": "71",
+   "Deaths": "65"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "312",
+   "Deaths": "316"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "5",
+   "Kills": "77",
+   "Deaths": "86"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "Kills": "143",
+   "Deaths": "159"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "286",
+   "Deaths": "323"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "15",
+   "Kills": "274",
+   "Deaths": "257"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "Kills": "157",
+   "Deaths": "145"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "Kills": "587",
+   "Deaths": "579"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "Kills": "85",
+   "Deaths": "79"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "Kills": "828",
+   "Deaths": "755"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "12",
+   "Kills": "244",
+   "Deaths": "247"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "Kills": "60",
+   "Deaths": "67"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "23",
+   "Kills": "489",
+   "Deaths": "440"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "Kills": "149",
+   "Deaths": "146"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "5",
+   "Kills": "80",
+   "Deaths": "86"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "Kills": "384",
+   "Deaths": "350"
+  },
+  {
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "20",
+   "Kills": "385",
+   "Deaths": "418"
+  },
+  {
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "Kills": "91",
+   "Deaths": "100"
+  },
+  {
+   "PlayerLink": "Mack",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "Kills": "565",
+   "Deaths": "617"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "26",
+   "Kills": "436",
+   "Deaths": "457"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "14",
+   "Kills": "260",
+   "Deaths": "265"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "Kills": "596",
+   "Deaths": "601"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "10",
+   "Kills": "154",
+   "Deaths": "185"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "Kills": "722",
+   "Deaths": "785"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "20",
+   "Kills": "350",
+   "Deaths": "392"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "6",
+   "Kills": "114",
+   "Deaths": "97"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "352",
+   "Deaths": "371"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "5",
+   "Kills": "94",
+   "Deaths": "92"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "Kills": "175",
+   "Deaths": "146"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "308",
+   "Deaths": "326"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "23",
+   "Kills": "471",
+   "Deaths": "470"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "19",
+   "Kills": "351",
+   "Deaths": "280"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "16",
+   "Kills": "306",
+   "Deaths": "269"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "Kills": "556",
+   "Deaths": "501"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "Kills": "293",
+   "Deaths": "273"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "Kills": "852",
+   "Deaths": "756"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "Kills": "491",
+   "Deaths": "520"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "9",
+   "Kills": "184",
+   "Deaths": "157"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "414",
+   "Deaths": "410"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "20",
+   "Kills": "397",
+   "Deaths": "374"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "Kills": "208",
+   "Deaths": "216"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "390",
+   "Deaths": "399"
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "11",
+   "Kills": "195",
+   "Deaths": "226"
+  },
+  {
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "9",
+   "Kills": "152",
+   "Deaths": "162"
+  },
+  {
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "11",
+   "Kills": "198",
+   "Deaths": "225"
+  },
+  {
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "559",
+   "Deaths": "571"
+  },
+  {
+   "PlayerLink": "MettalZ",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "7",
+   "Kills": "123",
+   "Deaths": "160"
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "39",
+   "Kills": "721",
+   "Deaths": "788"
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "19",
+   "Kills": "366",
+   "Deaths": "388"
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "16",
+   "Kills": "314",
+   "Deaths": "340"
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "378",
+   "Deaths": "395"
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "10",
+   "Kills": "183",
+   "Deaths": "188"
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "Kills": "48",
+   "Deaths": "65"
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "Kills": "327",
+   "Deaths": "421"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "12",
+   "Kills": "203",
+   "Deaths": "222"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "Kills": "156",
+   "Deaths": "166"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "Kills": "64",
+   "Deaths": "74"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "615",
+   "Deaths": "552"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "Kills": "764",
+   "Deaths": "743"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "11",
+   "Kills": "207",
+   "Deaths": "196"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "Kills": "46",
+   "Deaths": "62"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "401",
+   "Deaths": "391"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "Kills": "235",
+   "Deaths": "238"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "7",
+   "Kills": "120",
+   "Deaths": "129"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "24",
+   "Kills": "437",
+   "Deaths": "419"
+  },
+  {
+   "PlayerLink": "Nate",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "11",
+   "Kills": "172",
+   "Deaths": "204"
+  },
+  {
+   "PlayerLink": "Nejra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "Kills": "798",
+   "Deaths": "868"
+  },
+  {
+   "PlayerLink": "Nejra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "Kills": "180",
+   "Deaths": "159"
+  },
+  {
+   "PlayerLink": "Nejra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "Kills": "57",
+   "Deaths": "47"
+  },
+  {
+   "PlayerLink": "Nejra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "385",
+   "Deaths": "435"
+  },
+  {
+   "PlayerLink": "Nejra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "3",
+   "Kills": "49",
+   "Deaths": "54"
+  },
+  {
+   "PlayerLink": "Nejra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "Kills": "57",
+   "Deaths": "62"
+  },
+  {
+   "PlayerLink": "Nejra",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "413",
+   "Deaths": "436"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "25",
+   "Kills": "514",
+   "Deaths": "476"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "22",
+   "Kills": "409",
+   "Deaths": "384"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "Kills": "568",
+   "Deaths": "529"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "Kills": "285",
+   "Deaths": "312"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "46",
+   "Kills": "985",
+   "Deaths": "940"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "25",
+   "Kills": "473",
+   "Deaths": "474"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "Kills": "91",
+   "Deaths": "86"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "428",
+   "Deaths": "389"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "6",
+   "Kills": "126",
+   "Deaths": "129"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "15",
+   "Kills": "291",
+   "Deaths": "265"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "Kills": "132",
+   "Deaths": "163"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "Kills": "607",
+   "Deaths": "557"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "Kills": "77",
+   "Deaths": "83"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "Kills": "763",
+   "Deaths": "760"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "Kills": "112",
+   "Deaths": "136"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "Kills": "74",
+   "Deaths": "89"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "343",
+   "Deaths": "379"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "5",
+   "Kills": "106",
+   "Deaths": "91"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "Kills": "170",
+   "Deaths": "171"
+  },
+  {
+   "PlayerLink": "Nero",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "17",
+   "Kills": "345",
+   "Deaths": "333"
+  },
+  {
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "9",
+   "Kills": "149",
+   "Deaths": "172"
+  },
+  {
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "Kills": "271",
+   "Deaths": "266"
+  },
+  {
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "43",
+   "Kills": "797",
+   "Deaths": "794"
+  },
+  {
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "33",
+   "Kills": "609",
+   "Deaths": "592"
+  },
+  {
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "14",
+   "Kills": "239",
+   "Deaths": "237"
+  },
+  {
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "337",
+   "Deaths": "372"
+  },
+  {
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "18",
+   "Kills": "277",
+   "Deaths": "317"
+  },
+  {
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "Kills": "222",
+   "Deaths": "217"
+  },
+  {
+   "PlayerLink": "Nium",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "Kills": "336",
+   "Deaths": "400"
+  },
+  {
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "12",
+   "Kills": "233",
+   "Deaths": "240"
+  },
+  {
+   "PlayerLink": "oJohnny",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "8",
+   "Kills": "129",
+   "Deaths": "155"
+  },
+  {
+   "PlayerLink": "Okis",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "Kills": "684",
+   "Deaths": "892"
+  },
+  {
+   "PlayerLink": "Okis",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "Kills": "150",
+   "Deaths": "189"
+  },
+  {
+   "PlayerLink": "Okis",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "Kills": "47",
+   "Deaths": "53"
+  },
+  {
+   "PlayerLink": "Okis",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "345",
+   "Deaths": "453"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "Kills": "129",
+   "Deaths": "141"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "12",
+   "Kills": "244",
+   "Deaths": "228"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "559",
+   "Deaths": "503"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "6",
+   "Kills": "103",
+   "Deaths": "112"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "42",
+   "Kills": "853",
+   "Deaths": "786"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "17",
+   "Kills": "323",
+   "Deaths": "303"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "8",
+   "Kills": "160",
+   "Deaths": "156"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "423",
+   "Deaths": "395"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "8",
+   "Kills": "153",
+   "Deaths": "171"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "Kills": "147",
+   "Deaths": "132"
+  },
+  {
+   "PlayerLink": "Pred",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "407",
+   "Deaths": "363"
+  },
+  {
+   "PlayerLink": "Prolute",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "Kills": "109",
+   "Deaths": "129"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "Kills": "151",
+   "Deaths": "171"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "Kills": "72",
+   "Deaths": "83"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "544",
+   "Deaths": "657"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "Kills": "761",
+   "Deaths": "843"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "11",
+   "Kills": "186",
+   "Deaths": "229"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "Kills": "46",
+   "Deaths": "60"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "378",
+   "Deaths": "425"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "Kills": "206",
+   "Deaths": "227"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "4",
+   "Kills": "76",
+   "Deaths": "73"
+  },
+  {
+   "PlayerLink": "Purj",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "Kills": "413",
+   "Deaths": "425"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "11",
+   "Kills": "209",
+   "Deaths": "219"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "21",
+   "Kills": "376",
+   "Deaths": "374"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "Kills": "136",
+   "Deaths": "190"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "28",
+   "Kills": "504",
+   "Deaths": "494"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "6",
+   "Kills": "97",
+   "Deaths": "118"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "10",
+   "Kills": "183",
+   "Deaths": "184"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "Kills": "50",
+   "Deaths": "71"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "11",
+   "Kills": "233",
+   "Deaths": "219"
+  },
+  {
+   "PlayerLink": "Renegade",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "8",
+   "Kills": "159",
+   "Deaths": "150"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "11",
+   "Kills": "170",
+   "Deaths": "207"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "9",
+   "Kills": "158",
+   "Deaths": "145"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "11",
+   "Kills": "240",
+   "Deaths": "186"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "579",
+   "Deaths": "519"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "7",
+   "Kills": "148",
+   "Deaths": "125"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "39",
+   "Kills": "759",
+   "Deaths": "649"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "19",
+   "Kills": "366",
+   "Deaths": "326"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "16",
+   "Kills": "336",
+   "Deaths": "302"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "379",
+   "Deaths": "365"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "10",
+   "Kills": "196",
+   "Deaths": "165"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "Kills": "66",
+   "Deaths": "65"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "Kills": "362",
+   "Deaths": "350"
+  },
+  {
+   "PlayerLink": "Rxld",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "Kills": "83",
+   "Deaths": "143"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "9",
+   "Kills": "137",
+   "Deaths": "196"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "14",
+   "Kills": "260",
+   "Deaths": "246"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "9",
+   "Kills": "177",
+   "Deaths": "174"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "Kills": "539",
+   "Deaths": "530"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "Kills": "299",
+   "Deaths": "279"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "43",
+   "Kills": "880",
+   "Deaths": "793"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "33",
+   "Kills": "680",
+   "Deaths": "629"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "14",
+   "Kills": "289",
+   "Deaths": "254"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "387",
+   "Deaths": "389"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "18",
+   "Kills": "338",
+   "Deaths": "344"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "Kills": "248",
+   "Deaths": "219"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "Kills": "409",
+   "Deaths": "401"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "23",
+   "Kills": "444",
+   "Deaths": "488"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "19",
+   "Kills": "332",
+   "Deaths": "288"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "16",
+   "Kills": "310",
+   "Deaths": "272"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "27",
+   "Kills": "515",
+   "Deaths": "554"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "Kills": "282",
+   "Deaths": "293"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "Kills": "859",
+   "Deaths": "804"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "Kills": "500",
+   "Deaths": "481"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "9",
+   "Kills": "180",
+   "Deaths": "170"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "442",
+   "Deaths": "405"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "20",
+   "Kills": "396",
+   "Deaths": "398"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "12",
+   "Kills": "227",
+   "Deaths": "208"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "429",
+   "Deaths": "406"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "15",
+   "Kills": "289",
+   "Deaths": "276"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "25",
+   "Kills": "449",
+   "Deaths": "481"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "22",
+   "Kills": "446",
+   "Deaths": "392"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "29",
+   "Kills": "535",
+   "Deaths": "555"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "15",
+   "Kills": "319",
+   "Deaths": "330"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "46",
+   "Kills": "936",
+   "Deaths": "956"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "25",
+   "Kills": "469",
+   "Deaths": "491"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "Kills": "76",
+   "Deaths": "95"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "352",
+   "Deaths": "401"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "24",
+   "Kills": "475",
+   "Deaths": "459"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "6",
+   "Kills": "118",
+   "Deaths": "132"
+  },
+  {
+   "PlayerLink": "Sib",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "18",
+   "Kills": "363",
+   "Deaths": "342"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "19",
+   "Kills": "399",
+   "Deaths": "359"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "16",
+   "Kills": "266",
+   "Deaths": "279"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "25",
+   "Kills": "502",
+   "Deaths": "449"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "26",
+   "Kills": "530",
+   "Deaths": "444"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "21",
+   "Kills": "451",
+   "Deaths": "404"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "Kills": "809",
+   "Deaths": "758"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "27",
+   "Kills": "566",
+   "Deaths": "493"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "7",
+   "Kills": "162",
+   "Deaths": "150"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "439",
+   "Deaths": "419"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "17",
+   "Kills": "342",
+   "Deaths": "318"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "8",
+   "Kills": "140",
+   "Deaths": "164"
+  },
+  {
+   "PlayerLink": "Simp",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "20",
+   "Kills": "376",
+   "Deaths": "356"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "12",
+   "Kills": "183",
+   "Deaths": "227"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "26",
+   "Kills": "465",
+   "Deaths": "407"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "14",
+   "Kills": "236",
+   "Deaths": "245"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "Kills": "501",
+   "Deaths": "574"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "10",
+   "Kills": "171",
+   "Deaths": "193"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "Kills": "731",
+   "Deaths": "713"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "20",
+   "Kills": "338",
+   "Deaths": "366"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "6",
+   "Kills": "85",
+   "Deaths": "101"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "309",
+   "Deaths": "353"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "Kills": "244",
+   "Deaths": "245"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "7",
+   "Kills": "112",
+   "Deaths": "136"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "24",
+   "Kills": "394",
+   "Deaths": "418"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "15",
+   "Kills": "222",
+   "Deaths": "231"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "7",
+   "Kills": "98",
+   "Deaths": "125"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "Kills": "158",
+   "Deaths": "177"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "Kills": "68",
+   "Deaths": "85"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "32",
+   "Kills": "642",
+   "Deaths": "606"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "41",
+   "Kills": "744",
+   "Deaths": "820"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "9",
+   "Kills": "166",
+   "Deaths": "190"
+  },
+  {
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "Kills": "127",
+   "Deaths": "128"
+  },
+  {
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "27",
+   "Kills": "532",
+   "Deaths": "494"
+  },
+  {
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "11",
+   "Kills": "192",
+   "Deaths": "200"
+  },
+  {
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "3",
+   "Kills": "45",
+   "Deaths": "58"
+  },
+  {
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "21",
+   "Kills": "346",
+   "Deaths": "390"
+  },
+  {
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "Kills": "203",
+   "Deaths": "230"
+  },
+  {
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "4",
+   "Kills": "75",
+   "Deaths": "75"
+  },
+  {
+   "PlayerLink": "Spart",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "Kills": "428",
+   "Deaths": "422"
+  },
+  {
+   "PlayerLink": "Standy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "12",
+   "Kills": "202",
+   "Deaths": "219"
+  },
+  {
+   "PlayerLink": "Standy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "5",
+   "Kills": "66",
+   "Deaths": "88"
+  },
+  {
+   "PlayerLink": "Standy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "16",
+   "Kills": "250",
+   "Deaths": "310"
+  },
+  {
+   "PlayerLink": "SupeR",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "3",
+   "Kills": "47",
+   "Deaths": "56"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League Championship 2026",
+   "Maps": "11",
+   "Kills": "170",
+   "Deaths": "193"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "6",
+   "Kills": "106",
+   "Deaths": "87"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "11",
+   "Kills": "206",
+   "Deaths": "183"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "531",
+   "Deaths": "481"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "7",
+   "Kills": "134",
+   "Deaths": "132"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "39",
+   "Kills": "784",
+   "Deaths": "654"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "19",
+   "Kills": "345",
+   "Deaths": "334"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "16",
+   "Kills": "337",
+   "Deaths": "319"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "364",
+   "Deaths": "368"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "10",
+   "Kills": "153",
+   "Deaths": "177"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "Kills": "59",
+   "Deaths": "62"
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "19",
+   "Kills": "382",
+   "Deaths": "368"
+  },
+  {
+   "PlayerLink": "Swooty",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "6",
+   "Kills": "77",
+   "Deaths": "109"
+  },
+  {
+   "PlayerLink": "Swooty",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "8",
+   "Kills": "121",
+   "Deaths": "157"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "8",
+   "Kills": "118",
+   "Deaths": "129"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "7",
+   "Kills": "156",
+   "Deaths": "158"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "15",
+   "Kills": "273",
+   "Deaths": "297"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "4",
+   "Kills": "79",
+   "Deaths": "80"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "40",
+   "Kills": "731",
+   "Deaths": "842"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "7",
+   "Kills": "128",
+   "Deaths": "154"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "4",
+   "Kills": "73",
+   "Deaths": "92"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "19",
+   "Kills": "355",
+   "Deaths": "376"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "12",
+   "Kills": "215",
+   "Deaths": "243"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "4",
+   "Kills": "72",
+   "Deaths": "87"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "22",
+   "Kills": "432",
+   "Deaths": "481"
+  },
+  {
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "11",
+   "Kills": "199",
+   "Deaths": "219"
+  },
+  {
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "30",
+   "Kills": "556",
+   "Deaths": "563"
+  },
+  {
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2",
+   "Maps": "7",
+   "Kills": "138",
+   "Deaths": "152"
+  },
+  {
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 2/Qualifiers",
+   "Maps": "39",
+   "Kills": "794",
+   "Deaths": "757"
+  },
+  {
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3",
+   "Maps": "19",
+   "Kills": "360",
+   "Deaths": "387"
+  },
+  {
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Minor",
+   "Maps": "16",
+   "Kills": "357",
+   "Deaths": "328"
+  },
+  {
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 3/Qualifiers",
+   "Maps": "20",
+   "Kills": "390",
+   "Deaths": "413"
+  },
+  {
+   "PlayerLink": "Traixx",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "8",
+   "Kills": "167",
+   "Deaths": "191"
+  },
+  {
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2026 Season/Launch Invitational",
+   "Maps": "20",
+   "Kills": "362",
+   "Deaths": "402"
+  },
+  {
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1",
+   "Maps": "4",
+   "Kills": "72",
+   "Deaths": "93"
+  },
+  {
+   "PlayerLink": "Vivid",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 1/Qualifiers",
+   "Maps": "31",
+   "Kills": "508",
+   "Deaths": "563"
+  },
+  {
+   "PlayerLink": "Wevy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4",
+   "Maps": "3",
+   "Kills": "36",
+   "Deaths": "60"
+  },
+  {
+   "PlayerLink": "Wevy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Minor",
+   "Maps": "3",
+   "Kills": "63",
+   "Deaths": "57"
+  },
+  {
+   "PlayerLink": "Wevy",
+   "TournamentPage": "Call of Duty League/2026 Season/Major 4/Qualifiers",
+   "Maps": "21",
+   "Kills": "435",
+   "Deaths": "412"
+  }
+ ]
+}

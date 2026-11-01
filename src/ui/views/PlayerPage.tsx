@@ -1,7 +1,7 @@
 // A player's page: ratings, contract and morale (your players), and their season by
 // mode and series by series. Unwatched results are left out.
 import { useMemo } from "react";
-import { askingSalary, modeName, moraleWord, overall, playerProfile, shownMorale } from "../../engine";
+import { askingSalary, fogText, fogWidth, modeName, moraleWord, overall, playerProfile, shownMorale } from "../../engine";
 import type { Nav } from "../App";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
@@ -19,6 +19,8 @@ export function PlayerPage({ store, id, nav, onBack }: { store: SeasonStore; id:
   const team = prof.series[0]?.team;
   const kd = (k: number, d: number) => (k / Math.max(1, d)).toFixed(2);
   const last5 = prof.series.slice(0, 5);
+  const fog = fogWidth(state, data, id);
+  const f = (v: number, k: string) => fogText(v, fog, `${id}/${k}`);
 
   return (
     <div>
@@ -39,7 +41,8 @@ export function PlayerPage({ store, id, nav, onBack }: { store: SeasonStore; id:
         <div className="kpis">
           <div className="kpi">
             <span className="l">Overall</span>
-            <span className="v">{p ? Math.round(overall(p.ratings)) : "—"}</span>
+            <span className="v">{p ? f(overall(p.ratings), "ovr") : "—"}</span>
+            {fog > 0 && <span className="sub">scouting range</span>}
           </div>
           <div className="kpi">
             <span className="l">Season K/D</span>
@@ -91,7 +94,7 @@ export function PlayerPage({ store, id, nav, onBack }: { store: SeasonStore; id:
             <tbody>
               <tr>
                 {[p.ratings.slaying, p.ratings.hp_obj, p.ratings.snd_iq, p.ratings.third_mode, p.ratings.clutch, p.ratings.consistency].map((v, i) => (
-                  <td key={i}>{Math.round(v)}</td>
+                  <td key={i}>{f(v, ["slay", "hp", "snd", "third", "clutch", "cons"][i]!)}</td>
                 ))}
               </tr>
             </tbody>
@@ -188,7 +191,7 @@ export function PlayerPage({ store, id, nav, onBack }: { store: SeasonStore; id:
 function FormStrip({ trend, season }: { trend: number[]; season: number }) {
   const max = Math.max(season * 1.6, ...trend);
   return (
-    <span className="formstrip" aria-label={`Last ${trend.length} series K/D: ${trend.map((x) => x.toFixed(2)).join(", ")}`}>
+    <span className="formstrip" role="img" aria-label={`Last ${trend.length} series K/D: ${trend.map((x) => x.toFixed(2)).join(", ")}`}>
       {trend.map((x, i) => (
         <span key={i} title={x.toFixed(2)} className={x >= season ? "up" : "down"} style={{ height: `${Math.max(8, (100 * x) / max)}%` }} />
       ))}

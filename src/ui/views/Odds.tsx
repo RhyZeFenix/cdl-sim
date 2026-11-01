@@ -1,9 +1,13 @@
 // Title odds: simulate the rest of the season many times from where it stands and
 // count how often each team makes Champs, wins a Major or wins it all.
 import { useState } from "react";
+import real2024 from "../../../data/results/2024.events.json";
+import real2025 from "../../../data/results/2025.events.json";
+import real2026 from "../../../data/results/2026.events.json";
+import type { SeasonId } from "../../engine";
 import type { Nav } from "../App";
 import { directory } from "../names";
-import type { TeamOdds } from "../simWorker";
+import { eventKey, type TeamOdds } from "../simWorker";
 import type { SeasonStore } from "../useSeason";
 import { TeamLink } from "./common";
 
@@ -17,6 +21,8 @@ export function Odds({ store, nav }: { store: SeasonStore; nav: Nav }) {
   const [progress, setProgress] = useState<number | null>(null);
   const [err, setErr] = useState<string | null>(null);
   const stale = result && result.at !== state.next;
+  // Only for the real seasons (not the repeated years of a dynasty).
+  const real = !state.dynasty || state.dynasty.label === data.season.label ? REAL[state.seasonId].events : null;
   const pct = (x: number) => (x >= 0.995 ? "100%" : x < 0.005 ? (x > 0 ? "<1%" : "—") : `${Math.round(x * 100)}%`);
 
   const run = async () => {
@@ -91,8 +97,63 @@ export function Odds({ store, nav }: { store: SeasonStore; nav: Nav }) {
           <div className="sub" style={{ marginTop: 6 }}>
             From {result.runs} simulations. With fewer runs, small odds are rough: 1 run in {result.runs} is {Math.round(1000 / result.runs) / 10}%.
           </div>
+          {real && <RealVsSim odds={result.odds} events={real} dir={dir} pct={pct} played={(k) => state.events.some((e) => eventKey(e) === k)} />}
         </>
       )}
+    </div>
+  );
+}
+
+const REAL: Record<SeasonId, { events: { kind: string; stage?: number; name: string; winner: string }[] }> = { "2024": real2024, "2025": real2025, "2026": real2026 };
+
+/** Each real event's winner next to how often the sim had them winning it. */
+function RealVsSim({
+  odds,
+  events,
+  dir,
+  pct,
+  played,
+}: {
+  odds: TeamOdds[];
+  events: (typeof REAL)[SeasonId]["events"];
+  dir: ReturnType<typeof directory>;
+  pct: (x: number) => string;
+  played: (key: string) => boolean;
+}) {
+  return (
+    <div style={{ marginTop: 14 }}>
+      <h4 style={{ margin: "0 0 4px" }}>Real vs sim</h4>
+      <table className="tbl">
+        <thead>
+          <tr>
+            <th className="left">Event</th>
+            <th className="left">Real winner</th>
+            <th>Sim chance for them</th>
+            <th className="left">Sim favourite</th>
+          </tr>
+        </thead>
+        <tbody>
+          {events.map((e) => {
+            const k = eventKey(e);
+            const fav = [...odds].sort((a, b) => (b.winEvent[k] ?? 0) - (a.winEvent[k] ?? 0))[0];
+            const mine = odds.find((o) => o.team === e.winner)?.winEvent[k] ?? 0;
+            return (
+              <tr key={k}>
+                <td className="left">
+                  {e.name}
+                  {played(k) && <span className="muted"> · played</span>}
+                </td>
+                <td className="left">{dir.team(e.winner).abbr}</td>
+                <td>{pct(mine)}</td>
+                <td className="left">{fav && fav.winEvent[k] ? `${dir.team(fav.team).abbr} (${pct(fav.winEvent[k]!)})` : "—"}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      <div className="sub" style={{ marginTop: 6 }}>
+        Real results from the CoD Esports Wiki. Events already played in this season count as 100% for whoever won them here; run the odds before the season starts for the cleanest comparison.
+      </div>
     </div>
   );
 }

@@ -11,6 +11,8 @@ export interface Arena {
   players: SimPlayer[];
   /** Mode-specific skill per player for this map, including form. */
   skill: number[];
+  /** exp(engageK * skill): who tends to take the next gunfight (fixed for the map). */
+  engage: number[];
   /** Duel logit slope for this map (overall slope times the mode multiplier). */
   k: number;
   t: number;
@@ -18,6 +20,9 @@ export interface Arena {
   /** Map pace (kills per fight) and closeness (catch-up), relative to the mode average. */
   pace: number;
   close: number;
+  /** SnD: plant rate and retake (defuse) rate, relative to the average map. */
+  plant: number;
+  retake: number;
 }
 
 /** A fight-size range scaled by the map's pace. */
@@ -56,7 +61,8 @@ export function createArena(rng: Rng, teams: [SimTeam, SimTeam], mode: Mode, map
     const mod = (teams[s].mapMods?.[key] ?? 0) + (teams[s].prep?.[key] ?? 0);
     return base + form + teamForm[s]! + mod + (teams[s].form ?? 0) + (p.form ?? 0);
   });
-  return { rng, players, skill, k: TUNING.duelK * TUNING.modeDuelScale[mode], t: 0, events: [], pace: 1, close: 1 };
+  const engage = skill.map((x) => Math.exp(TUNING.engageK * x));
+  return { rng, players, skill, engage, k: TUNING.duelK * TUNING.modeDuelScale[mode], t: 0, events: [], pace: 1, close: 1, plant: 1, retake: 1 };
 }
 
 export const allAlive = () => [true, true, true, true, true, true, true, true];
@@ -86,16 +92,18 @@ export function duelStep(
   extra: { fb?: boolean; clutch?: boolean } = {},
 ): { killer: number; victim: number } {
   const { rng } = arena;
-  const a0 = aliveOn(alive, 0);
-  const a1 = aliveOn(alive, 1);
-  const engage = (i: number) => Math.exp(TUNING.engageK * arena.skill[i]!);
-  const p0 = rng.weighted(a0, engage);
-  const p1 = rng.weighted(a1, engage);
-  let logit = bonus[0] - bonus[1] + TUNING.manAdvantage * (a0.length - a1.length);
+  // Hot path: no per-duel arrays or closures. Picks match rng.weighted exactly (same
+  // weights, same summation order, one draw each), so results are unchanged.
+  const n0 = (alive[0] ? 1 : 0) + (alive[1] ? 1 : 0) + (alive[2] ? 1 : 0) + (alive[3] ? 1 : 0);
+  const n1 = (alive[4] ? 1 : 0) + (alive[5] ? 1 : 0) + (alive[6] ? 1 : 0) + (alive[7] ? 1 : 0);
+  if (!n0 || !n1) throw new Error("weighted pick from empty list");
+  const p0 = pickEngaged(arena, alive, 0, n0);
+  const p1 = pickEngaged(arena, alive, 4, n1);
+  let logit = bonus[0] - bonus[1] + TUNING.manAdvantage * (n0 - n1);
   if (extra.clutch) {
     const clutch = (i: number) => ((arena.players[i]!.ratings.clutch - 75) / 100) * TUNING.snd.clutchScale;
-    if (a0.length === 1) logit += clutch(p0);
-    if (a1.length === 1) logit -= clutch(p1);
+    if (n0 === 1) logit += clutch(p0);
+    if (n1 === 1) logit -= clutch(p1);
   }
   const win0 = rng.chance(duelProb(arena, p0, p1, logit));
   const killer = win0 ? p0 : p1;
@@ -123,6 +131,27 @@ export interface FightResult {
   secs: number;
 }
 
+/** A weighted pick among one side's alive players (from index `from`), like rng.weighted. */
+function pickEngaged(arena: Arena, alive: boolean[], from: number, n: number): number {
+  const w = arena.engage;
+  let total = 0;
+  for (let i = from; i < from + 4; i++) if (alive[i]) total += Math.max(0, w[i]!);
+  const next = arena.rng.next;
+  if (total <= 0) {
+    let k = Math.floor(next() * n);
+    for (let i = from; i < from + 4; i++) if (alive[i] && k-- === 0) return i;
+  }
+  let r = next() * total;
+  let last = from;
+  for (let i = from; i < from + 4; i++) {
+    if (!alive[i]) continue;
+    last = i;
+    r -= Math.max(0, w[i]!);
+    if (r < 0) return i;
+  }
+  return last;
+}
+
 /** A respawn-mode team fight: everyone alive, trade until a wipe or the fight fizzles. */
 export function teamFight(
   arena: Arena,
@@ -132,15 +161,19 @@ export function teamFight(
   const alive = allAlive();
   const maxKills = rng.int(opts.kills[0], opts.kills[1]);
   const kills: Pair = [0, 0];
+  const left: Pair = [4, 4];
+  const lo = Math.round(opts.killSecs[0] * 10);
+  const hi = Math.round(opts.killSecs[1] * 10);
   let secs = 0;
-  while (kills[0] + kills[1] < maxKills && countAlive(alive, 0) > 0 && countAlive(alive, 1) > 0) {
-    const step = rng.int(Math.round(opts.killSecs[0] * 10), Math.round(opts.killSecs[1] * 10)) / 10;
+  while (kills[0] + kills[1] < maxKills && left[0] > 0 && left[1] > 0) {
+    const step = rng.int(lo, hi) / 10;
     secs += step;
     arena.t += step;
     const { killer } = duelStep(arena, alive, opts.bonus);
-    kills[sideOf(killer)]++;
+    const side = sideOf(killer);
+    kills[side]++;
+    left[side === 0 ? 1 : 0]--;
   }
-  const left: Pair = [countAlive(alive, 0), countAlive(alive, 1)];
   let winner: Side;
   if (left[0] !== left[1]) winner = left[0] > left[1] ? 0 : 1;
   else if (kills[0] !== kills[1]) winner = kills[0] > kills[1] ? 0 : 1;

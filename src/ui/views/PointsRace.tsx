@@ -90,7 +90,7 @@ export function PointsRace({ history, teams }: { history: PointsSnapshot[]; team
         ))}
       </div>
       <div className="chart" ref={wrap}>
-        <svg viewBox={`0 0 ${width} ${H}`} role="img" aria-label="CDL points over the season">
+        <svg viewBox={`0 0 ${width} ${H}`} role="img" aria-label={`CDL points over the season. Now: ${ranked.slice(0, 5).map((t) => `${t.abbr} ${last[t.id] ?? 0}`).join(", ")}${ranked.length > 5 ? ", …" : ""}. The Standings tab has the full table.`}>
           <g className="grid">
             {yTicks.map((v) => (
               <line key={v} x1={M.left} x2={width - M.right} y1={y(v)} y2={y(v)} />

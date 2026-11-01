@@ -292,6 +292,52 @@ export function MapEditor() {
   };
 
   const isSel = (s: Sel) => !!sel && JSON.stringify(sel) === JSON.stringify(s);
+
+  // Keyboard: [ and ] pick the previous/next item, arrows move it (Shift: 5 units,
+  // Alt: resize), Delete removes it, Escape lets go.
+  const allSels = (): Sel[] => [
+    ...t.floor.map((_, i) => ({ kind: "floor" as const, i })),
+    ...t.blocks.map((_, i) => ({ kind: "block" as const, i })),
+    ...(t.buildings ?? []).map((_, i) => ({ kind: "building" as const, i })),
+    ...(t.platforms ?? []).map((_, i) => ({ kind: "platform" as const, i })),
+    ...t.hills.map((_, i) => ({ kind: "hill" as const, i })),
+    ...([0, 1] as const).flatMap((side) => t.spawns[side].map((_, i) => ({ kind: "spawn" as const, side, i }))),
+    ...(t.holds ?? []).map((_, i) => ({ kind: "hold" as const, i })),
+    ...(t.callouts ?? []).map((_, i) => ({ kind: "callout" as const, i })),
+    ...(Object.keys(POINT_LABEL) as PointKey[]).filter((key) => getPoint(t, key)).map((key) => ({ kind: "point" as const, key })),
+  ];
+  const onKey = (e: React.KeyboardEvent) => {
+    if (e.key === "[" || e.key === "]") {
+      const list = allSels();
+      if (!list.length) return;
+      const at = sel ? list.findIndex((s) => JSON.stringify(s) === JSON.stringify(sel)) : -1;
+      setSel(list[(at + (e.key === "]" ? 1 : -1) + list.length) % list.length]!);
+      e.preventDefault();
+      return;
+    }
+    if (!sel) return;
+    if (e.key === "Escape") return setSel(null);
+    if (e.key === "Delete" || e.key === "Backspace") {
+      e.preventDefault();
+      return del();
+    }
+    const step = e.shiftKey ? 5 : 1;
+    const d = { ArrowLeft: [-step, 0], ArrowRight: [step, 0], ArrowUp: [0, -step], ArrowDown: [0, step] }[e.key];
+    if (!d) return;
+    e.preventDefault();
+    const [dx, dy] = d as [number, number];
+    update((x) => {
+      const r = rectOf(x, sel);
+      if (r) {
+        if (e.altKey) setRect(x, sel, [r[0], r[1], Math.max(r[0] + 0.5, r[2] + dx), Math.max(r[1] + 0.5, r[3] + dy)]);
+        else setRect(x, sel, [r[0] + dx, r[1] + dy, r[2] + dx, r[3] + dy]);
+      } else {
+        const p = pointOf(x, sel);
+        if (p) movePoint(x, sel, { x: Math.max(0, Math.min(100, p.x + dx)), y: Math.max(0, Math.min(100, p.y + dy)) });
+      }
+    });
+  };
+  const selName = sel ? (sel.kind === "point" ? POINT_LABEL[sel.key] : `${sel.kind} ${"i" in sel ? sel.i + 1 : ""}`) : "nothing";
   const blocks = t.blocks;
   const walls = allBlocks({ ...(layoutFor(map, 1) as object), ...t, blocks: [] } as never);
 
@@ -357,7 +403,9 @@ export function MapEditor() {
             onPointerMove={onMove}
             onPointerUp={onUp}
             role="application"
-            aria-label={`${map} layout editor`}
+            aria-label={`${map} layout editor. Selected: ${selName}. Press ] or [ to pick items, arrows to move (Shift for 5, Alt to resize), Delete to remove.`}
+            tabIndex={0}
+            onKeyDown={onKey}
           >
             <rect x={0} y={0} width={100} height={100} fill="#101216" />
             {img && <image href={img} x={imgFit.x} y={imgFit.y} width={imgFit.s} height={imgFit.s} opacity={imgOpacity} preserveAspectRatio="none" />}

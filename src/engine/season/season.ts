@@ -8,7 +8,7 @@ import { startersOn, type SeasonData, type SeasonId } from "../data/registry";
 import { createRng } from "../rng";
 import { TUNING } from "../sim/tuning";
 import { seriesVetoSetup, simulateSeries, type SeriesResult } from "../sim/series";
-import type { MapEvent, MapResult, Side, SimPlayer, SimTeam } from "../sim/types";
+import type { MapEvent, MapResult, Pair, Side, SimPlayer, SimTeam } from "../sim/types";
 import { scriptedChooser, VetoSession, type Chooser, type VetoResult } from "../sim/veto";
 import { bracketPlan, runBracket, type MatchDef } from "./bracket";
 import { buildQualifierSchedule, type Fixture } from "./schedule";
@@ -18,6 +18,7 @@ import { contractFor, signingProblem } from "../gm/contracts";
 import { contractOf, negotiate, offerProblem, type Offer } from "../gm/negotiation";
 import { DEAD_CAP_SHARE } from "../gm/values";
 import { realForm } from "../data/form";
+import { fightShare } from "../data/fights";
 import type {
   CarriedPlayers,
   Contract,
@@ -49,6 +50,8 @@ export interface SeasonOptions {
   chaos?: boolean;
   /** Real form: players run as hot or cold at each event as they really did (historical seasons). */
   realForm?: boolean;
+  /** Optional rules that aren't in the real CDL (GM mode). */
+  rules?: ExtraRules;
   /** GM difficulty (default normal). */
   difficulty?: Difficulty;
 }
@@ -80,6 +83,8 @@ export interface SeriesRecord {
   gmVeto?: GmVeto;
   /** What the GM's prep and morale added (replays use it to rebuild the same teams). */
   gmBoost?: GmBoost;
+  /** LAN fatigue each side played with (replays use it too). */
+  fatigue?: Pair;
 }
 
 export interface GmMove {
@@ -126,6 +131,8 @@ export interface GmState {
   staff?: { coach?: StaffMember; analyst?: StaffMember };
   /** Practice: scrim partners for the next step. */
   scrims?: string[];
+  /** This season's sponsor deal (see gm/sponsors). */
+  sponsor?: import("../gm/sponsors").SponsorDeal;
   /** Scouting fog: other teams' ratings show as ranges (on unless switched off). */
   fog?: boolean;
   /** Teams you've scrimmed recently: an edge against them until this step index. */
@@ -157,7 +164,20 @@ export interface GmVeto {
   lineup: string[];
   /** Sub swaps: the GM lineup per map slot. A slot without an entry keeps the previous map's lineup. */
   mapLineups?: Record<number, string[]>;
+  /** Optional rule: the map slot the GM called their one timeout before. */
+  timeout?: number;
 }
+
+/** Optional rules that aren't in the real CDL. */
+export interface ExtraRules {
+  /** A one-round rookie draft each off-season, worst team picks first. */
+  draft?: boolean;
+  /** One coach timeout per series, between maps: a small lift for the next map. */
+  timeouts?: boolean;
+}
+
+/** What a timeout adds to your team for the next map (skill units). */
+export const TIMEOUT_BOOST = 0.015;
 
 /** How a finished map went for the GM team, shown when deciding the next map's lineup. */
 export interface PlayedMapSummary {
@@ -193,6 +213,8 @@ export interface SeriesSpec {
   lineups?: [string[], string[]];
   /** The GM side's prep and morale boost (replays pass the stored one). */
   boost?: GmBoost;
+  /** LAN fatigue per side, in skill units (a long bracket run wears a team down). */
+  fatigue?: Pair;
 }
 
 export interface PendingSeries {
@@ -400,7 +422,7 @@ export function playerInfo(state: SeasonState, data: SeasonData, id: string): Pl
 
 function simPlayer(state: SeasonState, data: SeasonData, id: string): SimPlayer {
   const p = playerInfo(state, data, id);
-  if (p) return { id: p.id, handle: p.handle, ratings: p.ratings };
+  if (p) return { id: p.id, handle: p.handle, ratings: p.ratings, fights: fightShare(state.seasonId, p.id) };
   if (!isReplacement(id)) throw new Error(`unknown player ${id}`);
   const r = 72;
   return {
@@ -508,7 +530,7 @@ export function eventForm(state: SeasonState, teamId: string, phase: PoolPhase):
   return createRng(state.options.seed).fork(`form/${formKey(phase)}/${teamId}`).normal(0, sd);
 }
 
-function buildTeam(state: SeasonState, data: SeasonData, teamId: string, lineup: string[], phase: PoolPhase, boost?: GmBoost): SimTeam {
+function buildTeam(state: SeasonState, data: SeasonData, teamId: string, lineup: string[], phase: PoolPhase, boost?: GmBoost, fatigue = 0): SimTeam {
   const info = teamInfo(data, teamId);
   const mapMods = [...data.rosters.teams, ...data.rosters.guests].find((t) => t.team === teamId)?.mapMods;
   // Real form only for the real seasons (not the repeated years of a dynasty).
@@ -523,7 +545,7 @@ function buildTeam(state: SeasonState, data: SeasonData, teamId: string, lineup:
       return f ? { ...p, form: f } : p;
     }),
     mapMods,
-    form: eventForm(state, teamId, phase) + (boost?.form ?? 0),
+    form: eventForm(state, teamId, phase) + (boost?.form ?? 0) - fatigue,
     prep: boost?.prep,
   };
   return ratingTransform(team, state.options.ratingMode);
@@ -548,8 +570,8 @@ function runSeries(
   if (gmVeto && gmSide !== null) choosers[gmSide] = scriptedChooser(gmVeto.answers);
 
   // The GM side plays with its prep and morale boost.
-  const build = (side: Side, ids: string[]) =>
-    buildTeam(state, data, spec.teams[side], ids, spec.phase, side === gmSide ? spec.boost : undefined);
+  const build = (side: Side, ids: string[], extra = 0) =>
+    buildTeam(state, data, spec.teams[side], ids, spec.phase, side === gmSide ? spec.boost : undefined, (spec.fatigue?.[side] ?? 0) - extra);
 
   // Sub swaps: the GM side's lineup can change between maps.
   const mapLineups: Record<number, string[]> = {};
@@ -590,7 +612,8 @@ function runSeries(
       }
       mapLineups[vm.slot] = [...current];
       const ids: [string[], string[]] = gmSide === 0 ? [current, lineups[1]] : [lineups[0], current];
-      return [build(0, ids[0]), build(1, ids[1])];
+      const lift = gmVeto.timeout === vm.slot ? TIMEOUT_BOOST : 0;
+      return [build(0, ids[0], gmSide === 0 ? lift : 0), build(1, ids[1], gmSide === 1 ? lift : 0)];
     };
   }
 
@@ -645,6 +668,7 @@ function playSeries(state: SeasonState, data: SeasonData, spec: SeriesSpec): Ser
     // Keep every map's lineup so replays never need to ask again.
     gmVeto: gmVeto ? { ...gmVeto, mapLineups: r.mapLineups } : undefined,
     gmBoost: spec.boost,
+    ...(spec.fatigue ? { fatigue: spec.fatigue } : {}),
   };
   if (gmVeto) delete state.gmVetoes![spec.id];
   state.series[spec.id] = rec;
@@ -669,6 +693,7 @@ export function replaySeries(state: SeasonState, data: SeasonData, id: string): 
     lan: false,
     lineups: rec.lineups,
     boost: rec.gmBoost,
+    fatigue: rec.fatigue,
   };
   return runSeries(state, data, spec, rec.gmVeto, true);
 }
@@ -873,7 +898,7 @@ export function gmSetPauseBetweenMaps(state: SeasonState, on: boolean): void {
  * Sets the GM lineup for the next map of a series stopped between maps (or, with
  * `restOfSeries`, for every remaining map). The next advance resumes the series.
  */
-export function submitGmMapLineup(state: SeasonState, lineup: string[], restOfSeries = false): void {
+export function submitGmMapLineup(state: SeasonState, lineup: string[], restOfSeries = false, timeout = false): void {
   const p = state.pending;
   const gm = state.gm;
   if (!p?.between) throw new Error("no GM series is waiting between maps");
@@ -887,6 +912,11 @@ export function submitGmMapLineup(state: SeasonState, lineup: string[], restOfSe
   const planned = { ...(veto.mapLineups ?? {}) };
   for (let slot = p.between.nextSlot; slot <= last; slot++) planned[slot] = [...lineup];
   veto.mapLineups = planned;
+  if (timeout) {
+    if (!state.options.rules?.timeouts) throw new Error("timeouts are an optional rule that's off for this season");
+    if (veto.timeout !== undefined) throw new Error("you've already used your timeout this series");
+    veto.timeout = p.between.nextSlot;
+  }
   state.pending = undefined;
 }
 
@@ -1003,8 +1033,14 @@ function runEvent(state: SeasonState, data: SeasonData, kind: EventRecord["kind"
   const plan = bracketPlan(ev.format, ev.bestOf, ev.finalBestOf);
   const phase: PoolPhase = kind === "championship" ? { kind: "championship" } : { kind, stage: stage! };
   const prefix = kind === "championship" ? "champs" : `s${stage}-${kind}`;
+  // LAN fatigue: each series past the first few at an event costs a little form.
+  const played = new Map<string, number>();
+  const tired = (team: string) => (kind === "minor" ? 0 : TUNING.lanFatigue * Math.max(0, (played.get(team) ?? 0) - TUNING.lanFatigueFree));
   const run = runBracket(plan, seeds, (def, teams) => {
+    const fatigue: Pair = [tired(teams[0]), tired(teams[1])];
+    for (const t of teams) played.set(t, (played.get(t) ?? 0) + 1);
     const rec = playSeries(state, data, {
+      ...(fatigue[0] || fatigue[1] ? { fatigue } : {}),
       id: `${prefix}-${def.id}`,
       label: `${ev.name} · ${def.label}`,
       date: ev.start,

@@ -1,7 +1,7 @@
 // A player's page: ratings, contract and morale (your players), and their season by
 // mode and series by series. Unwatched results are left out.
-import { useMemo } from "react";
-import { askingSalary, fogText, fogWidth, modeName, moraleWord, overall, playerProfile, shownMorale } from "../../engine";
+import { Fragment, useMemo, useState } from "react";
+import { playerCareer, loadSeasonData, TRAIT_LABEL, TRAIT_TEXT, traitOf, askingSalary, fogText, fogWidth, modeName, moraleWord, overall, playerProfile, shownMorale } from "../../engine";
 import type { Nav } from "../App";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
@@ -20,6 +20,7 @@ export function PlayerPage({ store, id, nav, onBack }: { store: SeasonStore; id:
   const kd = (k: number, d: number) => (k / Math.max(1, d)).toFixed(2);
   const last5 = prof.series.slice(0, 5);
   const fog = fogWidth(state, data, id);
+  const trait = state.gm ? traitOf(id) : undefined;
   const f = (v: number, k: string) => fogText(v, fog, `${id}/${k}`);
 
   return (
@@ -34,7 +35,15 @@ export function PlayerPage({ store, id, nav, onBack }: { store: SeasonStore; id:
           <h2>{p?.handle ?? id}</h2>
           {team && <TeamTag team={dir.team(yours ? gm!.team : team)} />}
           <span className="sub">
-            {p?.role ?? ""} · age {prof.age}
+            age {prof.age}
+            {trait && (
+              <>
+                {" · "}
+                <span className="pill" title={TRAIT_TEXT[trait]}>
+                  {TRAIT_LABEL[trait]}
+                </span>
+              </>
+            )}
             {p?.ratingSource !== "stats" ? " · ratings estimated (no season stats)" : ""}
           </span>
         </div>
@@ -101,6 +110,8 @@ export function PlayerPage({ store, id, nav, onBack }: { store: SeasonStore; id:
           </table>
         )}
       </div>
+
+      <Career id={id} nav={nav} />
 
       <div className="card">
         <h3 style={{ marginBottom: 8 }}>Season by mode</h3>
@@ -197,5 +208,80 @@ function FormStrip({ trend, season }: { trend: number[]; season: number }) {
       ))}
       <i style={{ bottom: `${(100 * season) / max}%` }} />
     </span>
+  );
+}
+
+const EVENT_NAME = (e: string) =>
+  e === "championship" ? "Champs" : e.replace(/^major (\d+)\/qualifiers$/, "Stage $1 qualifiers").replace(/^major (\d+)\/minor$/, "Minor $1").replace(/^major (\d+)$/, "Major $1").replace(/^launch invitational$/, "Launch Invitational");
+
+/** The player's real career across the seasons in the data. */
+function Career({ id, nav }: { id: string; nav: Nav }) {
+  const career = useMemo(() => playerCareer(id), [id]);
+  const [open, setOpen] = useState<string | null>(null);
+  if (!career.length) return null;
+  const teamName = (season: string, t: string) => loadSeasonData(season as never).season.teams.find((x) => x.id === t)?.abbr ?? t;
+  return (
+    <div className="card">
+      <div className="card-head">
+        <h3>Real career</h3>
+        <span className="sub">Every CDL season in the data, from the CoD Esports Wiki. Click a season for event-by-event K/D.</span>
+      </div>
+      <table className="tbl">
+        <thead>
+          <tr>
+            <th className="left">Season</th>
+            <th className="left">Team</th>
+            <th>Age</th>
+            <th>OVR</th>
+            <th>Maps</th>
+            <th>K/D</th>
+          </tr>
+        </thead>
+        <tbody>
+          {career.map((c) => (
+            <Fragment key={c.season}>
+              <tr>
+                <td className="left">
+                  <button className="linklike" aria-expanded={open === c.season} onClick={() => setOpen(open === c.season ? null : c.season)}>
+                    {c.label}
+                  </button>
+                </td>
+                <td className="left">
+                  {c.teams.map((t, i) => (
+                    <span key={t}>
+                      {i > 0 && ", "}
+                      {c.season === career[career.length - 1]!.season ? (
+                        <button className="linklike" onClick={() => nav.openTeam(t)}>
+                          {teamName(c.season, t)}
+                        </button>
+                      ) : (
+                        teamName(c.season, t)
+                      )}
+                    </span>
+                  ))}
+                </td>
+                <td>{c.age}</td>
+                <td>{c.ovr ?? "—"}</td>
+                <td>{c.maps || "—"}</td>
+                <td>{c.kd?.toFixed(2) ?? "—"}</td>
+              </tr>
+              {open === c.season &&
+                c.events.map((e) => (
+                  <tr key={`${c.season}/${e.event}`} className="sub">
+                    <td className="left" style={{ paddingLeft: 20 }}>
+                      {EVENT_NAME(e.event)}
+                    </td>
+                    <td />
+                    <td />
+                    <td />
+                    <td>{e.maps}</td>
+                    <td>{(e.kills / Math.max(1, e.deaths)).toFixed(2)}</td>
+                  </tr>
+                ))}
+            </Fragment>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }

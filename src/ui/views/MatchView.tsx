@@ -1,10 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
-import { addLines, emptyLine, markWatched, mapLogEntries, playerInfo, replaySeries, type MapResult, type Mode, type PlayerLine } from "../../engine";
+import { addLines, emptyLine, seriesRecap, markWatched, mapLogEntries, playerInfo, replaySeries, type MapResult, type Mode, type PlayerLine } from "../../engine";
 import type { Nav } from "../App";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
 import { PlayerLink, Seg, TeamTag } from "./common";
 import { Watch } from "./Watch";
+import { shareUrl } from "../share";
 
 type Col = { key: keyof PlayerLine | "kd"; label: string; modes?: Mode[] };
 const COLS: Col[] = [
@@ -61,6 +62,7 @@ export function MatchView({
   seriesId,
   autoWatch,
   party,
+  clip,
   onBack,
   nav,
 }: {
@@ -69,6 +71,8 @@ export function MatchView({
   autoWatch: boolean;
   /** Watch party: the queue of matches being watched in order. */
   party?: string[];
+  /** Opened from a clip link: the map slot and game second to start at. */
+  clip?: { slot: number; t: number };
   onBack: () => void;
   nav: Nav;
 }) {
@@ -80,7 +84,7 @@ export function MatchView({
     if (!rec) return [];
     return rec.hasEvents ? (rec.maps as MapResult[]) : replaySeries(state, data, seriesId).maps;
   }, [rec, state, data, seriesId]);
-  const [sel, setSel] = useState<number | "series">(0);
+  const [sel, setSel] = useState<number | "series">(clip ? Math.max(0, clip.slot - 1) : 0);
   const [panel, setPanel] = useState<"log" | "watch">(autoWatch ? "watch" : "log");
 
   // Spoiler-free match day: an unwatched GM series plays map by map. So does every match of a watch party.
@@ -208,6 +212,12 @@ export function MatchView({
       </div>
 
       {party && <PartyStrip store={store} party={party} at={partyAt} revealedNow={!live} nav={nav} />}
+
+      {!live && maps.length > 0 && (
+        <div className="card recap">
+          <p style={{ margin: 0 }}>{seriesRecap(maps, abbr, (i, m) => handles(m)[i]!)}</p>
+        </div>
+      )}
 
       <div className="card">
         <div className="card-head">
@@ -372,7 +382,15 @@ export function MatchView({
               />
             </div>
             {panel === "watch" ? (
-              <Watch map={map} teams={abbr} players={handles(map)} autoPlay={autoWatch} seed={`${seriesId}:${map.slot}`} />
+              <Watch
+                map={map}
+                teams={abbr}
+                players={handles(map)}
+                autoPlay={autoWatch}
+                seed={`${seriesId}:${map.slot}`}
+                startAt={clip && clip.slot === map.slot ? clip.t : undefined}
+                clipLink={state.gm ? undefined : (t) => shareUrl(store.config, state.next, { series: seriesId, slot: map.slot, t })}
+              />
             ) : (
               <div className="log">
                 {mapLogEntries(map, { team: abbr, player: handles(map) }).map((l) => (

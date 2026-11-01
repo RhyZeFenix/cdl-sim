@@ -3,7 +3,9 @@
 // drops; the analyst sharpens scouting and adds a little game-plan edge.
 import { createRng } from "../rng";
 import { gmCanMakeMoves, type SeasonState } from "../season/season";
+import { academyPayroll } from "./academy";
 import { pushInbox } from "./inbox";
+import { staffBudget } from "./sponsors";
 import { personName } from "./names";
 import type { StaffMember } from "./types";
 
@@ -50,7 +52,7 @@ export function gmHire(state: SeasonState, id: string): void {
   if (!m) throw new Error("That person isn't available.");
   const current = gm.staff?.[m.role];
   const after = staffPayroll(state) - (current?.salary ?? 0) + m.salary;
-  if (after > STAFF_BUDGET) throw new Error(`Over the $${STAFF_BUDGET}k staff budget ($${after}k).`);
+  if (after + academyPayroll(state) > staffBudget(state)) throw new Error(`Over the $${staffBudget(state)}k staff budget ($${after + academyPayroll(state)}k with the academy).`);
   gm.staff = { ...(gm.staff ?? {}), [m.role]: m };
   pushInbox(state, {
     date: "",

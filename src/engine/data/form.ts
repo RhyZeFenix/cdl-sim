@@ -81,3 +81,27 @@ function table(id: SeasonId): Table {
 export function realForm(id: SeasonId, playerId: string, phase: PoolPhase): number {
   return table(id).get(playerKey(playerId))?.get(pageKey(phase)) ?? 0;
 }
+
+export interface RealEventLine {
+  /** "major 1", "major 1/qualifiers", "championship"… */
+  event: string;
+  maps: number;
+  kills: number;
+  deaths: number;
+}
+
+/** A player's real kills and deaths at every event of a season (empty when unknown). */
+export function realEventLines(id: SeasonId, playerId: string): RealEventLine[] {
+  const key = playerKey(playerId);
+  const acc = new Map<string, RealEventLine>();
+  for (const r of RAW[id].rows) {
+    if (playerKey(r.PlayerLink) !== key) continue;
+    const event = pageOf(r.TournamentPage);
+    const e = acc.get(event) ?? { event, maps: 0, kills: 0, deaths: 0 };
+    e.maps += Number(r.Maps);
+    e.kills += Number(r.Kills);
+    e.deaths += Number(r.Deaths);
+    acc.set(event, e);
+  }
+  return [...acc.values()];
+}

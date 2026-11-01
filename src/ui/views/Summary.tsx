@@ -1,5 +1,5 @@
-import { useMemo } from "react";
-import { playerLines, pointsTable, seasonLabel, summarize } from "../../engine";
+import { useMemo, useState } from "react";
+import { isDone, playerLines, pointsTable, seasonLabel, summarize, whatIf, whatIfSteps, type SeasonState } from "../../engine";
 import { stepLabel, type Nav } from "../App";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
@@ -195,6 +195,116 @@ export function Summary({ store, nav }: { store: SeasonStore; nav: Nav }) {
         </div>
         <div className="sub" style={{ marginTop: 6 }}>Cumulative points after each event (the table view of the chart above).</div>
       </div>
+      {!state.gm && <WhatIf store={store} />}
+    </div>
+  );
+}
+
+/** Change one Major or Champs result and see how the rest of the season plays out. */
+function WhatIf({ store }: { store: SeasonStore }) {
+  const { state, data } = store;
+  const dir = directory(data);
+  const steps = whatIfSteps(state);
+  const [step, setStep] = useState(steps[0]?.index ?? 0);
+  const [winner, setWinner] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [result, setResult] = useState<{ alt: SeasonState; tries: number; label: string } | null>(null);
+  const [msg, setMsg] = useState<string | null>(null);
+  if (!steps.length) return null;
+  const run = () => {
+    setBusy(true);
+    setMsg(null);
+    // Let the button show "Running…" before the work starts.
+    window.setTimeout(() => {
+      try {
+        const r = whatIf(state, data, { step, winner: winner || undefined });
+        if (r.failed || !r.state) setMsg(`${dir.team(winner).abbr} didn't win it in ${r.tries} tries, so that one's too unlikely to play out.`);
+        else setResult({ alt: r.state, tries: r.tries, label: stepLabel(data.season, state.steps[step]) });
+      } catch (e) {
+        setMsg(e instanceof Error ? e.message : String(e));
+      } finally {
+        setBusy(false);
+      }
+    }, 30);
+  };
+  const altSum = result ? summarize(result.alt, data) : null;
+  const altTable = result ? pointsTable(result.alt, data) : [];
+  const nowTable = pointsTable(state, data);
+  const done = isDone(state);
+  return (
+    <div className="card">
+      <div className="card-head">
+        <h3>What if…</h3>
+        <span className="sub">Change one event's winner and play the rest of the season from there. Everything before it stays the same.</span>
+      </div>
+      <div className="row" style={{ gap: 8, flexWrap: "wrap" }}>
+        <select className="plain" value={step} onChange={(e) => setStep(Number(e.target.value))} aria-label="Event">
+          {steps.map(({ index, step: s }) => (
+            <option key={index} value={index}>
+              {stepLabel(data.season, s)}
+            </option>
+          ))}
+        </select>
+        <span className="muted">won by</span>
+        <select className="plain" value={winner} onChange={(e) => setWinner(e.target.value)} aria-label="Winner">
+          <option value="">anyone (new luck)</option>
+          {data.season.teams.map((t) => (
+            <option key={t.id} value={t.id}>
+              {t.name}
+            </option>
+          ))}
+        </select>
+        <button className="btn primary" disabled={busy} onClick={run}>
+          {busy ? "Running…" : "Play it out"}
+        </button>
+      </div>
+      {msg && <div className="sub" style={{ marginTop: 6 }}>{msg}</div>}
+      {result && altSum && (
+        <div style={{ marginTop: 10 }}>
+          <div className="sub" style={{ marginBottom: 6 }}>
+            {result.label}
+            {winner ? ` won by ${dir.team(winner).abbr} (took ${result.tries} re-roll${result.tries > 1 ? "s" : ""})` : " re-rolled"}. {done ? "" : "This season isn't finished yet, so the comparison is against where it stands now."}
+          </div>
+          <table className="tbl">
+            <thead>
+              <tr>
+                <th className="left">Team</th>
+                <th>This season</th>
+                <th>What if</th>
+                <th>Change</th>
+              </tr>
+            </thead>
+            <tbody>
+              {altTable.slice(0, 12).map((r, i) => {
+                const before = nowTable.find((x) => x.team === r.team)?.points ?? 0;
+                const d = r.points - before;
+                return (
+                  <tr key={r.team}>
+                    <td className="left">
+                      {i + 1}. {dir.team(r.team).abbr}
+                    </td>
+                    <td>{before}</td>
+                    <td>{r.points}</td>
+                    <td style={{ color: d > 0 ? "var(--pick)" : d < 0 ? "var(--ban)" : undefined }}>{d > 0 ? `+${d}` : d || "—"}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+          <div className="row" style={{ marginTop: 6, gap: 8 }}>
+            <span className="sub">
+              Champion: {altSum.champion ? dir.team(altSum.champion).name : "—"}
+              {summarize(state, data).champion ? ` (this season: ${dir.team(summarize(state, data).champion!).name})` : ""}.
+            </span>
+            <button
+              className="btn small"
+              onClick={() => confirm("Switch to this timeline? Your current season is autosaved, but not in a slot.") && store.replace(result.alt)}
+            >
+              Play this timeline
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

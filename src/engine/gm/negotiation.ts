@@ -6,6 +6,7 @@ import type { SeasonData } from "../data/registry";
 import { nextStepDate, type SeasonState } from "../season/season";
 import { capSpace, contractFor } from "./contracts";
 import { MORALE_START } from "./morale";
+import { traitOf } from "./personality";
 import { strengthRanking } from "./owner";
 import type { Contract } from "./types";
 import { MIN_EXCEPTION } from "./values";
@@ -40,8 +41,8 @@ export function contenderScore(state: SeasonState, data: SeasonData, team: strin
 export function needFor(state: SeasonState, data: SeasonData, id: string, years: number, team: string, option = false): number {
   const ask = contractFor(state, data, id, years).salary;
   const contender = contenderScore(state, data, team);
-  // Up to 12% off for the best teams; your own players' mood matters too.
-  let need = ask * (1 - 0.12 * contender);
+  // Up to 12% off for the best teams (6% for a mercenary); your own players' mood matters too.
+  let need = ask * (1 - (traitOf(id) === "mercenary" ? 0.06 : 0.12) * contender);
   const morale = state.gm?.roster.includes(id) ? (state.gm.morale?.[id] ?? MORALE_START) : MORALE_START;
   need *= 1 + (MORALE_START - morale) / 400;
   if (option) need *= 1.05;

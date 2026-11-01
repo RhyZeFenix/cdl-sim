@@ -1,0 +1,679 @@
+{
+ "fetched": "2026-11-01",
+ "source": "https://cod-esports.fandom.com/api.php (Cargo table Players)",
+ "license": "CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors",
+ "rows": [
+  {
+   "ID": "04",
+   "Birthdate": "2004-08-02",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Abe",
+   "Birthdate": "2005-06-22",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Abuzah",
+   "Birthdate": "2000-07-13",
+   "Country": "Belgium",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Accuracy",
+   "Birthdate": "1996-08-02",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Afro",
+   "Birthdate": "",
+   "Country": "Mexico",
+   "Birthdate__precision": ""
+  },
+  {
+   "ID": "Afro",
+   "Birthdate": "2001-07-19",
+   "Country": "England",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Alluka",
+   "Birthdate": "2007-06-27",
+   "Country": "Germany",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Arcitys",
+   "Birthdate": "1998-07-09",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Asim",
+   "Birthdate": "2000-02-10",
+   "Country": "Canada",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Aspekt",
+   "Birthdate": "2005-03-29",
+   "Country": "England",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Assault",
+   "Birthdate": "1996-07-10",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Attach",
+   "Birthdate": "1997-01-04",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Beans",
+   "Birthdate": "2000-05-16",
+   "Country": "England",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Brack",
+   "Birthdate": "1999-05-26",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Breszy",
+   "Birthdate": "2000-01-19",
+   "Country": "France",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Cammy",
+   "Birthdate": "1999-10-10",
+   "Country": "Scotland",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Capsidal",
+   "Birthdate": "2002-08-19",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Cellium",
+   "Birthdate": "2000-12-24",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Censor",
+   "Birthdate": "1994-08-21",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Cimbels",
+   "Birthdate": "2002-06-02",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Clayster",
+   "Birthdate": "1992-05-07",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "CleanX",
+   "Birthdate": "2000-08-11",
+   "Country": "Denmark",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Craze",
+   "Birthdate": "2004-03-16",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Dashy",
+   "Birthdate": "1999-04-19",
+   "Country": "Canada",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Denza",
+   "Birthdate": "1998-07-02",
+   "Country": "Belgium",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Derek",
+   "Birthdate": "2006-07-09",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Diamondcon",
+   "Birthdate": "2000-04-16",
+   "Country": "Canada",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "DK",
+   "Birthdate": "2007-07-25",
+   "Country": "Wales",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Drazah",
+   "Birthdate": "2001-05-09",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Encourage",
+   "Birthdate": "",
+   "Country": "United States",
+   "Birthdate__precision": ""
+  },
+  {
+   "ID": "Envoy",
+   "Birthdate": "2000-01-19",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "EriKBooM",
+   "Birthdate": "2002-10-29",
+   "Country": "Spain",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Estreal",
+   "Birthdate": "2002-12-17",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Ethan",
+   "Birthdate": "",
+   "Country": "England",
+   "Birthdate__precision": ""
+  },
+  {
+   "ID": "Exceed",
+   "Birthdate": "2001-06-11",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Exnid",
+   "Birthdate": "2002-10-28",
+   "Country": "Saudi Arabia",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Fame",
+   "Birthdate": "2000-05-30",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "FeLo",
+   "Birthdate": "1997-05-15",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Flames",
+   "Birthdate": "2003-04-15",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Ghosty",
+   "Birthdate": "2002-04-24",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Gio",
+   "Birthdate": "2003-09-02",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "GodRx",
+   "Birthdate": "1998-06-17",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Gunless",
+   "Birthdate": "1997-11-24",
+   "Country": "Canada",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Gwinn",
+   "Birthdate": "2002-05-02",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Hicksy",
+   "Birthdate": "1999-10-25",
+   "Country": "England",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Hide",
+   "Birthdate": "2007-06-05",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Huke",
+   "Birthdate": "1999-10-21",
+   "Country": "Saudi Arabia",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "HyDra",
+   "Birthdate": "2002-02-11",
+   "Country": "France",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Insight",
+   "Birthdate": "1999-10-31",
+   "Country": "England",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "JoeDeceives",
+   "Birthdate": "2004-09-23",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "JurNii",
+   "Birthdate": "2000-02-07",
+   "Country": "Spain",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Kenny",
+   "Birthdate": "1999-09-02",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Khhx",
+   "Birthdate": "2001-04-20",
+   "Country": "Saudi Arabia",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "KiinG",
+   "Birthdate": "2004-07-22",
+   "Country": "Saudi Arabia",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "KingAbody",
+   "Birthdate": "2000-02-06",
+   "Country": "Saudi Arabia",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Kips",
+   "Birthdate": "2006-02-17",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "KiSMET",
+   "Birthdate": "1999-11-11",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "KnoX",
+   "Birthdate": "",
+   "Country": "Saudi Arabia",
+   "Birthdate__precision": ""
+  },
+  {
+   "ID": "Kremp",
+   "Birthdate": "2002-11-19",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Lqgend",
+   "Birthdate": "2003-10-11",
+   "Country": "France",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "aBeZy",
+   "Birthdate": "1999-11-03",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "d7om",
+   "Birthdate": "",
+   "Country": "Saudi Arabia",
+   "Birthdate__precision": ""
+  },
+  {
+   "ID": "iLLeY",
+   "Birthdate": "2001-10-20",
+   "Country": "Canada",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Lunarz",
+   "Birthdate": "2003-08-22",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Lurqxx",
+   "Birthdate": "2006-02-05",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Lynz",
+   "Birthdate": "2004-08-06",
+   "Country": "France",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Mack",
+   "Birthdate": "2001-11-21",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "MajorManiak",
+   "Birthdate": "1998-03-31",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Mamba",
+   "Birthdate": "2002-03-13",
+   "Country": "Mexico",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Mercules",
+   "Birthdate": "2003-07-14",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "MettalZ",
+   "Birthdate": "2000-09-19",
+   "Country": "Spain",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Nastie",
+   "Birthdate": "1999-07-03",
+   "Country": "England",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Nate",
+   "Birthdate": "2007-05-30",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Nejra",
+   "Birthdate": "2002-08-05",
+   "Country": "Puerto Rico",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Neptune",
+   "Birthdate": "2002-04-09",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Nero",
+   "Birthdate": "",
+   "Country": "Mexico",
+   "Birthdate__precision": ""
+  },
+  {
+   "ID": "Nero",
+   "Birthdate": "2002-05-30",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Nium",
+   "Birthdate": "2002-07-23",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "oJohnny",
+   "Birthdate": "2003-09-24",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Okis",
+   "Birthdate": "2003-08-04",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Owakening",
+   "Birthdate": "2000-12-18",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "PaulEhx",
+   "Birthdate": "2002-01-21",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Pentagrxm",
+   "Birthdate": "2000-03-08",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Pred",
+   "Birthdate": "2001-08-19",
+   "Country": "Australia",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Priestahh",
+   "Birthdate": "1998-06-27",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Prolute",
+   "Birthdate": "2001-06-29",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Purj",
+   "Birthdate": "2003-03-03",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "ReeaL",
+   "Birthdate": "2003-12-11",
+   "Country": "Spain",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Renegade",
+   "Birthdate": "2000-10-22",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "RenKoR",
+   "Birthdate": "2002-07-29",
+   "Country": "Spain",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Roxas",
+   "Birthdate": "1999-03-28",
+   "Country": "Saudi Arabia",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Rxld",
+   "Birthdate": "",
+   "Country": "Saudi Arabia",
+   "Birthdate__precision": ""
+  },
+  {
+   "ID": "Scrap",
+   "Birthdate": "2002-07-01",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Seany",
+   "Birthdate": "1998-11-04",
+   "Country": "Scotland",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Shotzzy",
+   "Birthdate": "2001-07-04",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Sib",
+   "Birthdate": "2002-02-03",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Simp",
+   "Birthdate": "2001-02-06",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Skyz",
+   "Birthdate": "1999-07-08",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "SlasheR",
+   "Birthdate": "1994-09-02",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Snoopy",
+   "Birthdate": "2004-09-25",
+   "Country": "Mexico",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Spart",
+   "Birthdate": "2001-05-24",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Standy",
+   "Birthdate": "2001-06-12",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Super",
+   "Birthdate": "",
+   "Country": "United States",
+   "Birthdate__precision": ""
+  },
+  {
+   "ID": "SupeR",
+   "Birthdate": "2001-01-30",
+   "Country": "Spain",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Swooty",
+   "Birthdate": "2003-09-04",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "TJHaLy",
+   "Birthdate": "1999-07-19",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Traixx",
+   "Birthdate": "2003-12-11",
+   "Country": "Argentina",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Vikul",
+   "Birthdate": "2003-04-04",
+   "Country": "Spain",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Vivid",
+   "Birthdate": "1999-12-24",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Wevy",
+   "Birthdate": "2008-05-12",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "Wrecks",
+   "Birthdate": "2000-03-12",
+   "Country": "United States",
+   "Birthdate__precision": "1"
+  },
+  {
+   "ID": "WXSL",
+   "Birthdate": "2002-12-09",
+   "Country": "Saudi Arabia",
+   "Birthdate__precision": "1"
+  }
+ ]
+}

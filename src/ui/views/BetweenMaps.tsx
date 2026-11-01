@@ -1,7 +1,7 @@
 // A GM series stopped between maps: review how the maps so far went and choose the
 // lineup for the next one (sub swaps).
 import { useState } from "react";
-import { gmSetPauseBetweenMaps, playerInfo, submitGmMapLineup, type Mode, type Ratings } from "../../engine";
+import { TIMEOUT_BOOST, gmSetPauseBetweenMaps, playerInfo, submitGmMapLineup, type Mode, type Ratings } from "../../engine";
 import { directory } from "../names";
 import type { SeasonStore } from "../useSeason";
 
@@ -22,10 +22,13 @@ export function BetweenMaps({ store, onPlayed }: { store: SeasonStore; onPlayed:
   const theirs = b.score[gmSide === 0 ? 1 : 0];
   const stat = MODE_STAT[b.nextMode];
 
+  const timeoutsOn = !!state.options.rules?.timeouts;
+  const timeoutUsed = state.gmVetoes?.[spec.id]?.timeout !== undefined;
+  const [timeout, setTimeout_] = useState(false);
   const play = (rest: boolean, stopPausing = false) => {
     const err = mutate((s) => {
       if (stopPausing) gmSetPauseBetweenMaps(s, false);
-      submitGmMapLineup(s, lineup, rest);
+      submitGmMapLineup(s, lineup, rest, timeout);
     });
     if (err) setError(err);
     else onPlayed(spec.id);
@@ -131,6 +134,12 @@ export function BetweenMaps({ store, onPlayed }: { store: SeasonStore; onPlayed:
           <button className="btn" disabled={!ready} onClick={() => play(true, true)} title="Turn off pausing between maps for future series too">
             Play on, stop pausing
           </button>
+          {timeoutsOn && (
+            <label className="row sub" style={{ gap: 4 }} title={`Optional rule: one per series. Your team plays the next map with +${TIMEOUT_BOOST} skill (about a third of a map preference).`}>
+              <input type="checkbox" disabled={timeoutUsed} checked={timeout} onChange={(e) => setTimeout_(e.target.checked)} style={{ width: "auto" }} />
+              {timeoutUsed ? "Timeout used" : "Call a timeout"}
+            </label>
+          )}
           {gm.roster.length <= 4 && <span className="sub">Sign a 5th player between stages to have someone to sub in.</span>}
         </div>
       </div>

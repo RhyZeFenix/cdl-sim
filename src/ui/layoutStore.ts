@@ -1,26 +1,10 @@
-// Layouts edited in the map editor, kept in this browser (localStorage) and applied
-// on load so replays use them.
+// Saving layouts edited in the map editor. The layout module picks up saved ones when it
+// first loads (see savedLayouts.ts), so replays use them.
 import { setLayoutOverride } from "./replay/layouts";
 import type { Traced } from "./replay/shapes";
+import { LAYOUTS_KEY as KEY, savedOverrides as readAll } from "./savedLayouts";
 
-const KEY = "cdl-sim:layouts";
-
-function readAll(): Record<string, Traced> {
-  try {
-    return JSON.parse(localStorage.getItem(KEY) ?? "{}") as Record<string, Traced>;
-  } catch {
-    return {};
-  }
-}
-
-/** Applies every saved edit (call once at startup). */
-export function loadLayoutOverrides(): void {
-  for (const [map, t] of Object.entries(readAll())) setLayoutOverride(map, t);
-}
-
-export function savedOverrides(): Record<string, Traced> {
-  return readAll();
-}
+export { savedOverrides } from "./savedLayouts";
 
 /** Saves (or clears, with null) the edited layout for a map, and applies it now. */
 export function saveLayoutOverride(map: string, t: Traced | null): void {

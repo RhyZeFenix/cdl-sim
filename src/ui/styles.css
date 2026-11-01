@@ -359,6 +359,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 /* ---------- phones */
 @media (max-width: 640px) {
   .app { padding: 0 10px 40px; }
+  .topbar { margin: 0 -10px 12px; padding: 8px 10px; }
   .topbar .row { gap: 6px; }
   .brand { font-size: 15px; width: 100%; }
   .status { font-size: 12px; }
@@ -548,4 +549,46 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .tbl.compare td.better {
   font-weight: 700;
   color: var(--pick);
+}
+
+/* SnD / Control round strip under the replay. */
+.round-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 2px 0 6px;
+}
+.round-chip {
+  display: inline-flex;
+  gap: 3px;
+  align-items: center;
+  font: inherit;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  border-bottom-width: 3px;
+  background: var(--surface);
+  color: inherit;
+  cursor: pointer;
+}
+.round-chip.s0 {
+  border-bottom-color: #3b82f6;
+}
+.round-chip.s1 {
+  border-bottom-color: #f97316;
+}
+.round-chip.on {
+  outline: 2px solid var(--accent);
+}
+
+/* Phones: tighter replay controls and captions. */
+@media (max-width: 640px) {
+  .watch .row { gap: 4px; }
+  .watch .btn,
+  .watch .seg button { padding: 4px 8px; font-size: 12px; }
+  .caption { font-size: 12px; bottom: 8px; padding: 4px 8px; }
+  .round-chip { padding: 2px 4px; font-size: 11px; }
+  .hl-chip { font-size: 11px; }
+  .subtabs button { padding: 6px 8px; font-size: 13px; }
 }

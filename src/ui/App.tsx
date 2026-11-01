@@ -1,25 +1,25 @@
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { DIFFICULTY, SEASON_IDS, advance, isDone, loadSeasonData, seasonLabel, visibleInbox, type Difficulty, type Season, type SeasonId, type Step } from "../engine";
 import { randomSeed, useSeason, type SeasonConfig, type SimKind } from "./useSeason";
 import { Standings } from "./views/Standings";
 import { Schedule } from "./views/Schedule";
 import { Brackets } from "./views/Brackets";
-import { MatchView } from "./views/MatchView";
-import { Compare } from "./views/Compare";
+const MatchView = lazy(() => import("./views/MatchView").then((m) => ({ default: m.MatchView })));
+const Compare = lazy(() => import("./views/Compare").then((m) => ({ default: m.Compare })));
 import { arrowKeys } from "./views/common";
-import { Summary } from "./views/Summary";
-import { MyTeam } from "./views/MyTeam";
+const Summary = lazy(() => import("./views/Summary").then((m) => ({ default: m.Summary })));
+const MyTeam = lazy(() => import("./views/MyTeam").then((m) => ({ default: m.MyTeam })));
 import { VetoScreen } from "./views/VetoScreen";
 import { BetweenMaps } from "./views/BetweenMaps";
 import { MatchDayBanner } from "./views/MatchDay";
-import { Office } from "./views/Office";
-import { PlayerPage } from "./views/PlayerPage";
+const Office = lazy(() => import("./views/Office").then((m) => ({ default: m.Office })));
+const PlayerPage = lazy(() => import("./views/PlayerPage").then((m) => ({ default: m.PlayerPage })));
 import { SavesPanel } from "./views/SavesPanel";
-import { TeamPage } from "./views/TeamPage";
-import { Records } from "./views/Records";
-import { Odds } from "./views/Odds";
-import { About } from "./views/About";
-import { MapsTab } from "./views/MapsTab";
+const TeamPage = lazy(() => import("./views/TeamPage").then((m) => ({ default: m.TeamPage })));
+const Records = lazy(() => import("./views/Records").then((m) => ({ default: m.Records })));
+const Odds = lazy(() => import("./views/Odds").then((m) => ({ default: m.Odds })));
+const About = lazy(() => import("./views/About").then((m) => ({ default: m.About })));
+const MapsTab = lazy(() => import("./views/MapsTab").then((m) => ({ default: m.MapsTab })));
 import { applyTheme, savedContrast, savedTheme, type Theme } from "./theme";
 import { readShare, shareUrl } from "./share";
 
@@ -68,7 +68,7 @@ export function App() {
   const { state, data, busy, done } = store;
   const [draft, setDraft] = useState<SeasonConfig>(store.config);
   const [tab, setTab] = useState<Tab>("schedule");
-  const [match, setMatch] = useState<{ id: string; watch: boolean; party?: string[] } | null>(null);
+  const [match, setMatch] = useState<{ id: string; watch: boolean; party?: string[]; clip?: { slot: number; t: number } } | null>(null);
   const [player, setPlayer] = useState<string | null>(null);
   const [teamPage, setTeamPage] = useState<string | null>(null);
   const [theme, setTheme] = useState<Theme>(savedTheme);
@@ -97,6 +97,7 @@ export function App() {
       }
       setTab(share.config.gmTeam ? "office" : "schedule");
       setNotice(`Opened a shared season${share.step ? ` at step ${share.step}` : ""}. It's the same season the link was made from.`);
+      if (share.clip) setMatch({ id: share.clip.series, watch: true, clip: { slot: share.clip.slot, t: share.clip.t } });
       history.replaceState(null, "", location.pathname + location.search);
       return;
     }
@@ -348,6 +349,21 @@ export function App() {
                 </span>
               </div>
             )}
+            {draft.gmTeam && (
+              <div className="field">
+                Extra rules (not in the real CDL)
+                <span className="row" style={{ gap: 8 }}>
+                  <label className="row" style={{ gap: 4 }} title="A one-round rookie draft each off-season: the worst team picks first from the new Challengers class">
+                    <input type="checkbox" checked={!!draft.rules?.draft} onChange={(e) => setDraft({ ...draft, rules: { ...draft.rules, draft: e.target.checked } })} style={{ width: "auto" }} />
+                    Rookie draft
+                  </label>
+                  <label className="row" style={{ gap: 4 }} title="One coach timeout per series between maps (needs Pause between maps): a small lift for the next map">
+                    <input type="checkbox" checked={!!draft.rules?.timeouts} onChange={(e) => setDraft({ ...draft, rules: { ...draft.rules, timeouts: e.target.checked } })} style={{ width: "auto" }} />
+                    Coach timeouts
+                  </label>
+                </span>
+              </div>
+            )}
             <div className="field">
               Ratings
               <span className="seg" role="group" aria-label="Ratings">
@@ -431,12 +447,13 @@ export function App() {
       </header>
 
       <main className={busy ? "busy" : ""} key={`${state.seasonId}-${state.options.seed}-${store.config.ratingMode}-${state.gm?.team ?? ""}`}>
+        <Suspense fallback={<div className="card empty">Loading…</div>}>
         {paused && state.pending!.between ? (
           <BetweenMaps key={`${state.pending!.spec.id}-${state.pending!.between.nextSlot}`} store={store} onPlayed={resume} />
         ) : paused ? (
           <VetoScreen key={state.pending!.spec.id} store={store} onPlayed={resume} />
         ) : match ? (
-          <MatchView key={match.id} store={store} seriesId={match.id} autoWatch={match.watch} party={match.party} onBack={() => setMatch(null)} nav={nav} />
+          <MatchView key={match.id} store={store} seriesId={match.id} autoWatch={match.watch} party={match.party} clip={match.clip} onBack={() => setMatch(null)} nav={nav} />
         ) : player ? (
           <PlayerPage store={store} id={player} nav={nav} onBack={() => setPlayer(null)} />
         ) : teamPage ? (
@@ -454,6 +471,7 @@ export function App() {
                   </button>
                 ))}
             </nav>
+            <Suspense fallback={<div className="card empty">Loading…</div>}>
             {tab === "office" && state.gm && <Office store={store} nav={nav} />}
             {tab === "myteam" && state.gm && <MyTeam store={store} nav={nav} />}
             {tab === "schedule" && <Schedule store={store} nav={nav} />}
@@ -465,8 +483,10 @@ export function App() {
             {tab === "compare" && <Compare store={store} nav={nav} />}
             {tab === "about" && <About store={store} />}
             {tab === "maps" && <MapsTab store={store} />}
+            </Suspense>
           </>
         )}
+        </Suspense>
       </main>
     </div>
   );

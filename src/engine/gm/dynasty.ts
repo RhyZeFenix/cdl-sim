@@ -21,10 +21,12 @@ import { pushInbox } from "./inbox";
 import { MORALE_START } from "./morale";
 import { ordinal, ownerVerdict } from "./owner";
 import type { Contract, SeasonRecap } from "./types";
-import { askFor, askingSalary, baseAge, progressRatings, progression } from "./values";
+import { ageIn, askFor, askingSalary, overall, progressRatings, progression } from "./values";
+import { ACADEMY_MAX, potentialRange } from "./academy";
 import { createRng } from "../rng";
 import { offseasonAiMoves } from "./aimoves";
 import { achievementsAfterStep } from "./achievements";
+import { traitOf } from "./personality";
 
 /**
  * Which franchise slot became which team the next season (renames, relocations and
@@ -69,8 +71,11 @@ export function seasonLabel(state: SeasonState, data: SeasonData): string {
 }
 
 /** A player's age this season (seeded at 19-28 in a save's first season). */
+/** The calendar year a season is named for ("CDL 2027" in a dynasty, else the data season). */
+export const seasonYearOf = (state: SeasonState) => Number(/\d{4}/.exec(state.dynasty?.label ?? "")?.[0] ?? state.seasonId);
+
 export function playerAge(state: SeasonState, id: string): number {
-  return baseAge(id) + (state.dynasty?.year ?? 1) - 1;
+  return ageIn(id, seasonYearOf(state));
 }
 
 /** Roster players whose contracts end with this season. */
@@ -133,6 +138,10 @@ export interface NextSeasonOptions {
   exercise?: string[];
   /** Offers to free agents for the off-season bidding (see previewFreeAgents). */
   offers?: Record<string, Offer>;
+  /** Optional draft rule: the prospect to take with your pick (otherwise the best left). */
+  draftPick?: string;
+  /** Skip the draft (previews use this to see the class before it's picked over). */
+  noDraft?: boolean;
   seed?: string;
 }
 
@@ -150,6 +159,60 @@ export interface FreeAgentPreview {
 }
 
 const FA_POOL = 24;
+
+export interface DraftPreview {
+  /** Your pick number (1 = first) and how many teams pick. */
+  pick: number;
+  teams: number;
+  /** The class, best visible potential first. */
+  prospects: { id: string; handle: string; age: number; ovr: number; potential: [number, number] }[];
+}
+
+/** Draft order: last season's CDL points, worst first. */
+function draftOrder(prev: SeasonState, prevData: SeasonData, team: string): string[] {
+  const rank = pointsTable(prev, prevData).map((r) => (r.team === prev.gm!.team ? team : (FRANCHISE_LINEAGE[prev.seasonId]?.[r.team] ?? r.team)));
+  return [...rank].reverse();
+}
+
+/** Optional draft rule: the coming class and where you pick. */
+export function previewDraft(prev: SeasonState, prevData: SeasonData, opts: NextSeasonOptions = {}): DraftPreview {
+  const state = startNextSeason(prev, prevData, { ...opts, offers: undefined, draftPick: undefined, noDraft: true });
+  const data = loadSeasonData(state.seasonId);
+  const order = draftOrder(prev, prevData, state.gm!.team).filter((t) => data.season.teams.some((x) => x.id === t));
+  const academy = new Set(state.gm!.academy ?? []);
+  return {
+    pick: order.indexOf(state.gm!.team) + 1,
+    teams: order.length,
+    prospects: Object.entries(state.gm!.prospects ?? {})
+      .filter(([id]) => !academy.has(id))
+      .map(([id, p]) => ({ id, handle: p.player.handle, age: p.age, ovr: Math.round(overall(p.player.ratings)), potential: potentialRange(state, p) }))
+      .sort((a, b) => b.potential[0] + b.potential[1] - (a.potential[0] + a.potential[1])),
+  };
+}
+
+/** Runs the draft on the new season's prospect class: one round, worst team first. */
+function runDraft(prev: SeasonState, prevData: SeasonData, state: SeasonState, data: SeasonData, choice?: string): string[] {
+  const gm = state.gm!;
+  const order = draftOrder(prev, prevData, gm.team).filter((t) => data.season.teams.some((x) => x.id === t));
+  const academy = new Set(gm.academy ?? []);
+  const left = new Set(Object.keys(gm.prospects ?? {}).filter((id) => !academy.has(id)));
+  const best = () => [...left].sort((a, b) => gm.prospects![b]!.potential - gm.prospects![a]!.potential)[0];
+  const notes: string[] = [];
+  for (const team of order) {
+    const id = team === gm.team && choice && left.has(choice) ? choice : best();
+    if (!id) break;
+    left.delete(id);
+    const abbr = data.season.teams.find((t) => t.id === team)?.abbr ?? team;
+    if (team === gm.team) {
+      if ((gm.academy?.length ?? 0) < ACADEMY_MAX) gm.academy = [...(gm.academy ?? []), id];
+      notes.push(`you took ${gm.prospects![id]!.player.handle} with pick ${order.indexOf(team) + 1}${(gm.academy ?? []).includes(id) ? "" : " (academy full, so they went unsigned)"}`);
+    } else {
+      delete gm.prospects![id];
+      if (notes.length < 3) notes.push(`${abbr} took ${id.startsWith("pro-") ? "a prospect" : id} at ${order.indexOf(team) + 1}`);
+    }
+  }
+  return notes;
+}
 
 /** The best free agents of the coming off-season, for the GM to make offers to. */
 export function previewFreeAgents(prev: SeasonState, prevData: SeasonData, opts: NextSeasonOptions = {}): FreeAgentPreview[] {
@@ -251,7 +314,7 @@ export function startNextSeason(prev: SeasonState, prevData: SeasonData, opts: N
   if (repeat) {
     const adj: Record<string, number> = {};
     for (const id of index.keys()) {
-      const age = baseAge(id) + year - 2;
+      const age = ageIn(id, seasonYearOf(prev));
       adj[id] = Math.round(((prev.ratingAdj?.[id] ?? 0) + progression(id, age, year)) * 10) / 10;
     }
     state.ratingAdj = adj;
@@ -262,7 +325,7 @@ export function startNextSeason(prev: SeasonState, prevData: SeasonData, opts: N
     if (!repeat && index.has(id)) continue;
     const p = playerInfo(prev, prevData, id);
     if (!p) continue;
-    carried[id] = { ...p, ratings: progressRatings(p.ratings, progression(id, baseAge(id) + year - 2, year)) };
+    carried[id] = { ...p, ratings: progressRatings(p.ratings, progression(id, ageIn(id, seasonYearOf(prev)), year)) };
   }
   state.carried = carried;
   state.dynasty = { year, label, history: [...(prev.dynasty?.history ?? []), recap] };
@@ -277,7 +340,7 @@ export function startNextSeason(prev: SeasonState, prevData: SeasonData, opts: N
 
   const contracts: Record<string, Contract> = {};
   for (const id of roster) {
-    if (resign[id]) contracts[id] = { salary: askFor(ovrOf(state, data, id), resign[id]!), years: Math.max(1, Math.min(3, resign[id]!)) };
+    if (resign[id]) contracts[id] = { salary: Math.round((askFor(ovrOf(state, data, id), resign[id]!) * (traitOf(id) === "loyal" ? 0.9 : traitOf(id) === "mercenary" ? 1.1 : 1)) / 5) * 5, years: Math.max(1, Math.min(3, resign[id]!)) };
     else if (exercise.has(id)) contracts[id] = { salary: gm.contracts![id]!.salary, years: 1 };
     else if (gm.contracts?.[id]) contracts[id] = { ...gm.contracts[id]!, years: gm.contracts[id]!.years - 1 };
     else contracts[id] = { salary: askingSalary(ovrOf(state, data, id)), years: 2 };
@@ -323,6 +386,7 @@ export function startNextSeason(prev: SeasonState, prevData: SeasonData, opts: N
   );
   state.gm!.prospects = { ...(state.gm!.prospects ?? {}), ...academy };
   const faNotes = opts.offers && Object.keys(opts.offers).length ? resolveFreeAgency(state, data, opts.offers, seed) : [];
+  const draftNotes = prev.options.rules?.draft && !opts.noDraft ? runDraft(prev, prevData, state, data, opts.draftPick) : [];
   const left = gm.roster.filter((id) => !kept.includes(id)).map((id) => playerInfo(prev, prevData, id)?.handle ?? id);
   pushInbox(state, {
     date: data.season.stages[0]!.qualifiers.start,
@@ -334,6 +398,7 @@ export function startNextSeason(prev: SeasonState, prevData: SeasonData, opts: N
       (left.length ? `Leaving as free agents: ${left.join(", ")}. ` : "Nobody left. ") +
       (team !== gm.team ? `The franchise now plays as ${data.season.teams.find((t) => t.id === team)!.name}. ` : "") +
       (faNotes.length ? `Free agency: ${faNotes.join("; ")}. ` : "") +
+      (draftNotes.length ? `Draft: ${draftNotes.join("; ")}. ` : "") +
       (aiNotes.length ? `Around the league: ${aiNotes.join("; ")}.` : ""),
   });
   achievementsAfterStep(state, data);

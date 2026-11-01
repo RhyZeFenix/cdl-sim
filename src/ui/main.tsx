@@ -1,10 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { App } from "./App";
-import { loadLayoutOverrides } from "./layoutStore";
 import "./styles.css";
-
-// Map editor changes saved in this browser apply to every replay.
-loadLayoutOverrides();
 
 createRoot(document.getElementById("root")!).render(<App />);
 

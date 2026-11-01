@@ -38,3 +38,8 @@ export * from "./gm/negotiation";
 export * from "./gm/fog";
 export * from "./data/form";
 export * from "./sim/highlights";
+export * from "./gm/personality";
+export * from "./gm/sponsors";
+export * from "./data/fights";
+export * from "./season/whatif";
+export * from "./data/career";

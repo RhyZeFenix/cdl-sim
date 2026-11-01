@@ -1,0 +1,2276 @@
+{
+ "season": "2026",
+ "fetched": "2026-11-01",
+ "source": "https://cod-esports.fandom.com/api.php (Cargo table PlayerStats)",
+ "license": "CC BY-SA 3.0 — Call of Duty Esports Wiki (cod-esports.fandom.com) contributors",
+ "rows": [
+  {
+   "PlayerLink": "04",
+   "Gamemode": "Hardpoint",
+   "Maps": "100",
+   "Kills": "2766",
+   "Deaths": "2709",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "04",
+   "Gamemode": "Overload",
+   "Maps": "63",
+   "Kills": "1481",
+   "Deaths": "1547",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "04",
+   "Gamemode": "Search and Destroy",
+   "Maps": "85",
+   "Kills": "545",
+   "Deaths": "549",
+   "FirstKills": "131",
+   "FirstDeaths": "146"
+  },
+  {
+   "PlayerLink": "Abe",
+   "Gamemode": "Hardpoint",
+   "Maps": "41",
+   "Kills": "1037",
+   "Deaths": "1101",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Abe",
+   "Gamemode": "Overload",
+   "Maps": "28",
+   "Kills": "621",
+   "Deaths": "704",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Abe",
+   "Gamemode": "Search and Destroy",
+   "Maps": "35",
+   "Kills": "203",
+   "Deaths": "234",
+   "FirstKills": "30",
+   "FirstDeaths": "44"
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "Gamemode": "Hardpoint",
+   "Maps": "93",
+   "Kills": "2451",
+   "Deaths": "2348",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "Gamemode": "Overload",
+   "Maps": "63",
+   "Kills": "1477",
+   "Deaths": "1466",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "aBeZy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "80",
+   "Kills": "521",
+   "Deaths": "477",
+   "FirstKills": "84",
+   "FirstDeaths": "96"
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "Gamemode": "Hardpoint",
+   "Maps": "100",
+   "Kills": "2682",
+   "Deaths": "2532",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "Gamemode": "Overload",
+   "Maps": "63",
+   "Kills": "1497",
+   "Deaths": "1358",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Abuzah",
+   "Gamemode": "Search and Destroy",
+   "Maps": "85",
+   "Kills": "537",
+   "Deaths": "485",
+   "FirstKills": "86",
+   "FirstDeaths": "62"
+  },
+  {
+   "PlayerLink": "Afro",
+   "Gamemode": "Hardpoint",
+   "Maps": "55",
+   "Kills": "1489",
+   "Deaths": "1480",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Afro",
+   "Gamemode": "Overload",
+   "Maps": "31",
+   "Kills": "767",
+   "Deaths": "745",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Afro",
+   "Gamemode": "Search and Destroy",
+   "Maps": "42",
+   "Kills": "253",
+   "Deaths": "271",
+   "FirstKills": "36",
+   "FirstDeaths": "48"
+  },
+  {
+   "PlayerLink": "Alluka",
+   "Gamemode": "Hardpoint",
+   "Maps": "8",
+   "Kills": "205",
+   "Deaths": "185",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Alluka",
+   "Gamemode": "Overload",
+   "Maps": "5",
+   "Kills": "133",
+   "Deaths": "122",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Alluka",
+   "Gamemode": "Search and Destroy",
+   "Maps": "6",
+   "Kills": "45",
+   "Deaths": "34",
+   "FirstKills": "8",
+   "FirstDeaths": "4"
+  },
+  {
+   "PlayerLink": "Aspekt",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "Kills": "71",
+   "Deaths": "95",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Aspekt",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "Kills": "47",
+   "Deaths": "74",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Aspekt",
+   "Gamemode": "Search and Destroy",
+   "Maps": "3",
+   "Kills": "15",
+   "Deaths": "19",
+   "FirstKills": "1",
+   "FirstDeaths": "3"
+  },
+  {
+   "PlayerLink": "Beans",
+   "Gamemode": "Hardpoint",
+   "Maps": "27",
+   "Kills": "673",
+   "Deaths": "764",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Beans",
+   "Gamemode": "Overload",
+   "Maps": "15",
+   "Kills": "347",
+   "Deaths": "359",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Beans",
+   "Gamemode": "Search and Destroy",
+   "Maps": "22",
+   "Kills": "170",
+   "Deaths": "124",
+   "FirstKills": "32",
+   "FirstDeaths": "11"
+  },
+  {
+   "PlayerLink": "Brack",
+   "Gamemode": "Hardpoint",
+   "Maps": "7",
+   "Kills": "158",
+   "Deaths": "184",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Brack",
+   "Gamemode": "Overload",
+   "Maps": "5",
+   "Kills": "110",
+   "Deaths": "136",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Brack",
+   "Gamemode": "Search and Destroy",
+   "Maps": "7",
+   "Kills": "48",
+   "Deaths": "37",
+   "FirstKills": "3",
+   "FirstDeaths": "4"
+  },
+  {
+   "PlayerLink": "Cammy",
+   "Gamemode": "Hardpoint",
+   "Maps": "26",
+   "Kills": "680",
+   "Deaths": "710",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Cammy",
+   "Gamemode": "Overload",
+   "Maps": "14",
+   "Kills": "299",
+   "Deaths": "345",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Cammy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "18",
+   "Kills": "87",
+   "Deaths": "113",
+   "FirstKills": "13",
+   "FirstDeaths": "9"
+  },
+  {
+   "PlayerLink": "Capsidal",
+   "Gamemode": "Hardpoint",
+   "Maps": "15",
+   "Kills": "360",
+   "Deaths": "424",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Capsidal",
+   "Gamemode": "Overload",
+   "Maps": "9",
+   "Kills": "192",
+   "Deaths": "233",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Capsidal",
+   "Gamemode": "Search and Destroy",
+   "Maps": "11",
+   "Kills": "72",
+   "Deaths": "72",
+   "FirstKills": "17",
+   "FirstDeaths": "15"
+  },
+  {
+   "PlayerLink": "Cellium",
+   "Gamemode": "Hardpoint",
+   "Maps": "82",
+   "Kills": "2103",
+   "Deaths": "1862",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Cellium",
+   "Gamemode": "Overload",
+   "Maps": "51",
+   "Kills": "1164",
+   "Deaths": "1000",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Cellium",
+   "Gamemode": "Search and Destroy",
+   "Maps": "64",
+   "Kills": "381",
+   "Deaths": "388",
+   "FirstKills": "54",
+   "FirstDeaths": "49"
+  },
+  {
+   "PlayerLink": "Censor",
+   "Gamemode": "Hardpoint",
+   "Maps": "5",
+   "Kills": "75",
+   "Deaths": "119",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Censor",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "Kills": "43",
+   "Deaths": "74",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Censor",
+   "Gamemode": "Search and Destroy",
+   "Maps": "4",
+   "Kills": "20",
+   "Deaths": "28",
+   "FirstKills": "1",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Cimbels",
+   "Gamemode": "Hardpoint",
+   "Maps": "2",
+   "Kills": "40",
+   "Deaths": "53",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Cimbels",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "Kills": "29",
+   "Deaths": "42",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Cimbels",
+   "Gamemode": "Search and Destroy",
+   "Maps": "2",
+   "Kills": "6",
+   "Deaths": "14",
+   "FirstKills": "0",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "CleanX",
+   "Gamemode": "Hardpoint",
+   "Maps": "86",
+   "Kills": "2321",
+   "Deaths": "2338",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "CleanX",
+   "Gamemode": "Overload",
+   "Maps": "56",
+   "Kills": "1420",
+   "Deaths": "1379",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "CleanX",
+   "Gamemode": "Search and Destroy",
+   "Maps": "70",
+   "Kills": "447",
+   "Deaths": "495",
+   "FirstKills": "98",
+   "FirstDeaths": "84"
+  },
+  {
+   "PlayerLink": "Craze",
+   "Gamemode": "Hardpoint",
+   "Maps": "67",
+   "Kills": "1735",
+   "Deaths": "1874",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Craze",
+   "Gamemode": "Overload",
+   "Maps": "42",
+   "Kills": "983",
+   "Deaths": "1055",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Craze",
+   "Gamemode": "Search and Destroy",
+   "Maps": "54",
+   "Kills": "358",
+   "Deaths": "388",
+   "FirstKills": "78",
+   "FirstDeaths": "92"
+  },
+  {
+   "PlayerLink": "d7om",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "Kills": "48",
+   "Deaths": "81",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "d7om",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "Kills": "40",
+   "Deaths": "47",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "d7om",
+   "Gamemode": "Search and Destroy",
+   "Maps": "2",
+   "Kills": "10",
+   "Deaths": "15",
+   "FirstKills": "1",
+   "FirstDeaths": "3"
+  },
+  {
+   "PlayerLink": "d7oom",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "Kills": "52",
+   "Deaths": "74",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "d7oom",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "Kills": "28",
+   "Deaths": "42",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "d7oom",
+   "Gamemode": "Search and Destroy",
+   "Maps": "2",
+   "Kills": "12",
+   "Deaths": "10",
+   "FirstKills": "2",
+   "FirstDeaths": "1"
+  },
+  {
+   "PlayerLink": "Dashy",
+   "Gamemode": "Hardpoint",
+   "Maps": "97",
+   "Kills": "2390",
+   "Deaths": "2369",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Dashy",
+   "Gamemode": "Overload",
+   "Maps": "68",
+   "Kills": "1645",
+   "Deaths": "1481",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Dashy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "86",
+   "Kills": "518",
+   "Deaths": "502",
+   "FirstKills": "87",
+   "FirstDeaths": "70"
+  },
+  {
+   "PlayerLink": "Denza",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "Kills": "73",
+   "Deaths": "97",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Denza",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "Kills": "59",
+   "Deaths": "74",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Denza",
+   "Gamemode": "Search and Destroy",
+   "Maps": "3",
+   "Kills": "12",
+   "Deaths": "21",
+   "FirstKills": "4",
+   "FirstDeaths": "3"
+  },
+  {
+   "PlayerLink": "Derek",
+   "Gamemode": "Hardpoint",
+   "Maps": "2",
+   "Kills": "41",
+   "Deaths": "53",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Derek",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "Kills": "35",
+   "Deaths": "42",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Derek",
+   "Gamemode": "Search and Destroy",
+   "Maps": "2",
+   "Kills": "9",
+   "Deaths": "11",
+   "FirstKills": "2",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Diamondcon",
+   "Gamemode": "Hardpoint",
+   "Maps": "9",
+   "Kills": "218",
+   "Deaths": "247",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Diamondcon",
+   "Gamemode": "Overload",
+   "Maps": "5",
+   "Kills": "110",
+   "Deaths": "126",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Diamondcon",
+   "Gamemode": "Search and Destroy",
+   "Maps": "7",
+   "Kills": "48",
+   "Deaths": "48",
+   "FirstKills": "7",
+   "FirstDeaths": "3"
+  },
+  {
+   "PlayerLink": "DK",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "Kills": "83",
+   "Deaths": "91",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "DK",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "Kills": "69",
+   "Deaths": "70",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "DK",
+   "Gamemode": "Search and Destroy",
+   "Maps": "3",
+   "Kills": "18",
+   "Deaths": "16",
+   "FirstKills": "3",
+   "FirstDeaths": "2"
+  },
+  {
+   "PlayerLink": "Drazah",
+   "Gamemode": "Hardpoint",
+   "Maps": "100",
+   "Kills": "2615",
+   "Deaths": "2613",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Drazah",
+   "Gamemode": "Overload",
+   "Maps": "63",
+   "Kills": "1543",
+   "Deaths": "1522",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Drazah",
+   "Gamemode": "Search and Destroy",
+   "Maps": "85",
+   "Kills": "520",
+   "Deaths": "542",
+   "FirstKills": "76",
+   "FirstDeaths": "73"
+  },
+  {
+   "PlayerLink": "Encourage",
+   "Gamemode": "Hardpoint",
+   "Maps": "45",
+   "Kills": "1115",
+   "Deaths": "1223",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Encourage",
+   "Gamemode": "Overload",
+   "Maps": "29",
+   "Kills": "629",
+   "Deaths": "689",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Encourage",
+   "Gamemode": "Search and Destroy",
+   "Maps": "32",
+   "Kills": "176",
+   "Deaths": "205",
+   "FirstKills": "28",
+   "FirstDeaths": "34"
+  },
+  {
+   "PlayerLink": "Envoy",
+   "Gamemode": "Hardpoint",
+   "Maps": "101",
+   "Kills": "2693",
+   "Deaths": "2964",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Envoy",
+   "Gamemode": "Overload",
+   "Maps": "60",
+   "Kills": "1388",
+   "Deaths": "1579",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Envoy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "81",
+   "Kills": "508",
+   "Deaths": "537",
+   "FirstKills": "100",
+   "FirstDeaths": "116"
+  },
+  {
+   "PlayerLink": "EriKBooM",
+   "Gamemode": "Hardpoint",
+   "Maps": "7",
+   "Kills": "161",
+   "Deaths": "187",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "EriKBooM",
+   "Gamemode": "Overload",
+   "Maps": "5",
+   "Kills": "101",
+   "Deaths": "125",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "EriKBooM",
+   "Gamemode": "Search and Destroy",
+   "Maps": "6",
+   "Kills": "36",
+   "Deaths": "41",
+   "FirstKills": "12",
+   "FirstDeaths": "4"
+  },
+  {
+   "PlayerLink": "Estreal",
+   "Gamemode": "Hardpoint",
+   "Maps": "91",
+   "Kills": "2380",
+   "Deaths": "2286",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Estreal",
+   "Gamemode": "Overload",
+   "Maps": "61",
+   "Kills": "1568",
+   "Deaths": "1466",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Estreal",
+   "Gamemode": "Search and Destroy",
+   "Maps": "77",
+   "Kills": "494",
+   "Deaths": "500",
+   "FirstKills": "85",
+   "FirstDeaths": "75"
+  },
+  {
+   "PlayerLink": "Ethan",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "Kills": "90",
+   "Deaths": "94",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Ethan",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "Kills": "83",
+   "Deaths": "73",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Ethan",
+   "Gamemode": "Search and Destroy",
+   "Maps": "3",
+   "Kills": "19",
+   "Deaths": "19",
+   "FirstKills": "3",
+   "FirstDeaths": "5"
+  },
+  {
+   "PlayerLink": "Exceed",
+   "Gamemode": "Hardpoint",
+   "Maps": "59",
+   "Kills": "1447",
+   "Deaths": "1511",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Exceed",
+   "Gamemode": "Overload",
+   "Maps": "36",
+   "Kills": "776",
+   "Deaths": "819",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Exceed",
+   "Gamemode": "Search and Destroy",
+   "Maps": "48",
+   "Kills": "301",
+   "Deaths": "304",
+   "FirstKills": "55",
+   "FirstDeaths": "52"
+  },
+  {
+   "PlayerLink": "Exnid",
+   "Gamemode": "Hardpoint",
+   "Maps": "82",
+   "Kills": "2193",
+   "Deaths": "2189",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Exnid",
+   "Gamemode": "Overload",
+   "Maps": "51",
+   "Kills": "1257",
+   "Deaths": "1249",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Exnid",
+   "Gamemode": "Search and Destroy",
+   "Maps": "64",
+   "Kills": "369",
+   "Deaths": "408",
+   "FirstKills": "66",
+   "FirstDeaths": "72"
+  },
+  {
+   "PlayerLink": "FeLo",
+   "Gamemode": "Hardpoint",
+   "Maps": "4",
+   "Kills": "106",
+   "Deaths": "104",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "FeLo",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "Kills": "76",
+   "Deaths": "72",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "FeLo",
+   "Gamemode": "Search and Destroy",
+   "Maps": "4",
+   "Kills": "17",
+   "Deaths": "20",
+   "FirstKills": "4",
+   "FirstDeaths": "1"
+  },
+  {
+   "PlayerLink": "Fire",
+   "Gamemode": "Hardpoint",
+   "Maps": "28",
+   "Kills": "630",
+   "Deaths": "653",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Fire",
+   "Gamemode": "Overload",
+   "Maps": "17",
+   "Kills": "381",
+   "Deaths": "386",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Fire",
+   "Gamemode": "Search and Destroy",
+   "Maps": "25",
+   "Kills": "128",
+   "Deaths": "174",
+   "FirstKills": "17",
+   "FirstDeaths": "25"
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "Gamemode": "Hardpoint",
+   "Maps": "103",
+   "Kills": "2692",
+   "Deaths": "2499",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "Gamemode": "Overload",
+   "Maps": "64",
+   "Kills": "1501",
+   "Deaths": "1459",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Ghosty",
+   "Gamemode": "Search and Destroy",
+   "Maps": "83",
+   "Kills": "465",
+   "Deaths": "488",
+   "FirstKills": "42",
+   "FirstDeaths": "43"
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "Gamemode": "Hardpoint",
+   "Maps": "50",
+   "Kills": "1256",
+   "Deaths": "1328",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "Gamemode": "Overload",
+   "Maps": "32",
+   "Kills": "734",
+   "Deaths": "833",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Gwinn",
+   "Gamemode": "Search and Destroy",
+   "Maps": "37",
+   "Kills": "221",
+   "Deaths": "226",
+   "FirstKills": "45",
+   "FirstDeaths": "40"
+  },
+  {
+   "PlayerLink": "Hide",
+   "Gamemode": "Hardpoint",
+   "Maps": "47",
+   "Kills": "1102",
+   "Deaths": "1337",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Hide",
+   "Gamemode": "Overload",
+   "Maps": "30",
+   "Kills": "659",
+   "Deaths": "793",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Hide",
+   "Gamemode": "Search and Destroy",
+   "Maps": "34",
+   "Kills": "223",
+   "Deaths": "230",
+   "FirstKills": "53",
+   "FirstDeaths": "42"
+  },
+  {
+   "PlayerLink": "Huke",
+   "Gamemode": "Hardpoint",
+   "Maps": "97",
+   "Kills": "2612",
+   "Deaths": "2471",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Huke",
+   "Gamemode": "Overload",
+   "Maps": "68",
+   "Kills": "1752",
+   "Deaths": "1575",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Huke",
+   "Gamemode": "Search and Destroy",
+   "Maps": "86",
+   "Kills": "509",
+   "Deaths": "537",
+   "FirstKills": "72",
+   "FirstDeaths": "75"
+  },
+  {
+   "PlayerLink": "HyDra",
+   "Gamemode": "Hardpoint",
+   "Maps": "93",
+   "Kills": "2473",
+   "Deaths": "2425",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "HyDra",
+   "Gamemode": "Overload",
+   "Maps": "63",
+   "Kills": "1595",
+   "Deaths": "1518",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "HyDra",
+   "Gamemode": "Search and Destroy",
+   "Maps": "80",
+   "Kills": "572",
+   "Deaths": "470",
+   "FirstKills": "99",
+   "FirstDeaths": "75"
+  },
+  {
+   "PlayerLink": "Insight",
+   "Gamemode": "Hardpoint",
+   "Maps": "86",
+   "Kills": "1902",
+   "Deaths": "2042",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Insight",
+   "Gamemode": "Overload",
+   "Maps": "56",
+   "Kills": "1214",
+   "Deaths": "1176",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Insight",
+   "Gamemode": "Search and Destroy",
+   "Maps": "70",
+   "Kills": "375",
+   "Deaths": "436",
+   "FirstKills": "60",
+   "FirstDeaths": "52"
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "Gamemode": "Hardpoint",
+   "Maps": "93",
+   "Kills": "2681",
+   "Deaths": "2346",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "Gamemode": "Overload",
+   "Maps": "60",
+   "Kills": "1591",
+   "Deaths": "1373",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "JoeDeceives",
+   "Gamemode": "Search and Destroy",
+   "Maps": "74",
+   "Kills": "536",
+   "Deaths": "467",
+   "FirstKills": "98",
+   "FirstDeaths": "76"
+  },
+  {
+   "PlayerLink": "Kenny",
+   "Gamemode": "Hardpoint",
+   "Maps": "19",
+   "Kills": "467",
+   "Deaths": "529",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Kenny",
+   "Gamemode": "Overload",
+   "Maps": "14",
+   "Kills": "313",
+   "Deaths": "344",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Kenny",
+   "Gamemode": "Search and Destroy",
+   "Maps": "17",
+   "Kills": "88",
+   "Deaths": "100",
+   "FirstKills": "13",
+   "FirstDeaths": "24"
+  },
+  {
+   "PlayerLink": "Khhx",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "Kills": "60",
+   "Deaths": "74",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Khhx",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "Kills": "38",
+   "Deaths": "39",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Khhx",
+   "Gamemode": "Search and Destroy",
+   "Maps": "2",
+   "Kills": "13",
+   "Deaths": "12",
+   "FirstKills": "3",
+   "FirstDeaths": "3"
+  },
+  {
+   "PlayerLink": "Kips",
+   "Gamemode": "Hardpoint",
+   "Maps": "60",
+   "Kills": "1632",
+   "Deaths": "1614",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Kips",
+   "Gamemode": "Overload",
+   "Maps": "40",
+   "Kills": "985",
+   "Deaths": "959",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Kips",
+   "Gamemode": "Search and Destroy",
+   "Maps": "48",
+   "Kills": "374",
+   "Deaths": "319",
+   "FirstKills": "77",
+   "FirstDeaths": "54"
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "Gamemode": "Hardpoint",
+   "Maps": "82",
+   "Kills": "2094",
+   "Deaths": "2138",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "Gamemode": "Overload",
+   "Maps": "51",
+   "Kills": "1158",
+   "Deaths": "1268",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "KiSMET",
+   "Gamemode": "Search and Destroy",
+   "Maps": "64",
+   "Kills": "420",
+   "Deaths": "406",
+   "FirstKills": "79",
+   "FirstDeaths": "84"
+  },
+  {
+   "PlayerLink": "KnoX",
+   "Gamemode": "Hardpoint",
+   "Maps": "4",
+   "Kills": "96",
+   "Deaths": "102",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "KnoX",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "Kills": "62",
+   "Deaths": "72",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "KnoX",
+   "Gamemode": "Search and Destroy",
+   "Maps": "4",
+   "Kills": "32",
+   "Deaths": "25",
+   "FirstKills": "7",
+   "FirstDeaths": "3"
+  },
+  {
+   "PlayerLink": "Kremp",
+   "Gamemode": "Hardpoint",
+   "Maps": "89",
+   "Kills": "2584",
+   "Deaths": "2508",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Kremp",
+   "Gamemode": "Overload",
+   "Maps": "57",
+   "Kills": "1485",
+   "Deaths": "1433",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Kremp",
+   "Gamemode": "Search and Destroy",
+   "Maps": "75",
+   "Kills": "579",
+   "Deaths": "491",
+   "FirstKills": "140",
+   "FirstDeaths": "117"
+  },
+  {
+   "PlayerLink": "Lqgend",
+   "Gamemode": "Hardpoint",
+   "Maps": "9",
+   "Kills": "179",
+   "Deaths": "238",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Lqgend",
+   "Gamemode": "Overload",
+   "Maps": "6",
+   "Kills": "102",
+   "Deaths": "130",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Lqgend",
+   "Gamemode": "Search and Destroy",
+   "Maps": "8",
+   "Kills": "35",
+   "Deaths": "51",
+   "FirstKills": "3",
+   "FirstDeaths": "1"
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "Gamemode": "Hardpoint",
+   "Maps": "61",
+   "Kills": "1477",
+   "Deaths": "1444",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "Gamemode": "Overload",
+   "Maps": "40",
+   "Kills": "843",
+   "Deaths": "870",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Lunarz",
+   "Gamemode": "Search and Destroy",
+   "Maps": "48",
+   "Kills": "283",
+   "Deaths": "301",
+   "FirstKills": "33",
+   "FirstDeaths": "30"
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "Gamemode": "Hardpoint",
+   "Maps": "68",
+   "Kills": "1952",
+   "Deaths": "1777",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "Gamemode": "Overload",
+   "Maps": "42",
+   "Kills": "1028",
+   "Deaths": "1006",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Lurqxx",
+   "Gamemode": "Search and Destroy",
+   "Maps": "55",
+   "Kills": "357",
+   "Deaths": "368",
+   "FirstKills": "51",
+   "FirstDeaths": "73"
+  },
+  {
+   "PlayerLink": "Mack",
+   "Gamemode": "Hardpoint",
+   "Maps": "23",
+   "Kills": "636",
+   "Deaths": "659",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Mack",
+   "Gamemode": "Overload",
+   "Maps": "13",
+   "Kills": "307",
+   "Deaths": "331",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Mack",
+   "Gamemode": "Search and Destroy",
+   "Maps": "19",
+   "Kills": "98",
+   "Deaths": "145",
+   "FirstKills": "25",
+   "FirstDeaths": "25"
+  },
+  {
+   "PlayerLink": "Mamba",
+   "Gamemode": "Hardpoint",
+   "Maps": "77",
+   "Kills": "2005",
+   "Deaths": "2066",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Mamba",
+   "Gamemode": "Overload",
+   "Maps": "52",
+   "Kills": "1168",
+   "Deaths": "1229",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Mamba",
+   "Gamemode": "Search and Destroy",
+   "Maps": "67",
+   "Kills": "388",
+   "Deaths": "422",
+   "FirstKills": "59",
+   "FirstDeaths": "56"
+  },
+  {
+   "PlayerLink": "Mercules",
+   "Gamemode": "Hardpoint",
+   "Maps": "97",
+   "Kills": "2618",
+   "Deaths": "2526",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Mercules",
+   "Gamemode": "Overload",
+   "Maps": "68",
+   "Kills": "1661",
+   "Deaths": "1609",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Mercules",
+   "Gamemode": "Search and Destroy",
+   "Maps": "86",
+   "Kills": "634",
+   "Deaths": "490",
+   "FirstKills": "94",
+   "FirstDeaths": "83"
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "Gamemode": "Hardpoint",
+   "Maps": "78",
+   "Kills": "1979",
+   "Deaths": "2109",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "Gamemode": "Overload",
+   "Maps": "52",
+   "Kills": "1202",
+   "Deaths": "1380",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Mettalz",
+   "Gamemode": "Search and Destroy",
+   "Maps": "64",
+   "Kills": "383",
+   "Deaths": "440",
+   "FirstKills": "90",
+   "FirstDeaths": "118"
+  },
+  {
+   "PlayerLink": "Nastie",
+   "Gamemode": "Hardpoint",
+   "Maps": "76",
+   "Kills": "1897",
+   "Deaths": "1880",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Nastie",
+   "Gamemode": "Overload",
+   "Maps": "43",
+   "Kills": "1020",
+   "Deaths": "966",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Nastie",
+   "Gamemode": "Search and Destroy",
+   "Maps": "56",
+   "Kills": "331",
+   "Deaths": "346",
+   "FirstKills": "48",
+   "FirstDeaths": "45"
+  },
+  {
+   "PlayerLink": "Nate",
+   "Gamemode": "Hardpoint",
+   "Maps": "4",
+   "Kills": "100",
+   "Deaths": "101",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Nate",
+   "Gamemode": "Overload",
+   "Maps": "3",
+   "Kills": "53",
+   "Deaths": "79",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Nate",
+   "Gamemode": "Search and Destroy",
+   "Maps": "4",
+   "Kills": "19",
+   "Deaths": "24",
+   "FirstKills": "10",
+   "FirstDeaths": "3"
+  },
+  {
+   "PlayerLink": "Nejra",
+   "Gamemode": "Hardpoint",
+   "Maps": "43",
+   "Kills": "1091",
+   "Deaths": "1200",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Nejra",
+   "Gamemode": "Overload",
+   "Maps": "27",
+   "Kills": "661",
+   "Deaths": "656",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Nejra",
+   "Gamemode": "Search and Destroy",
+   "Maps": "30",
+   "Kills": "187",
+   "Deaths": "205",
+   "FirstKills": "27",
+   "FirstDeaths": "35"
+  },
+  {
+   "PlayerLink": "Neptune",
+   "Gamemode": "Hardpoint",
+   "Maps": "80",
+   "Kills": "2248",
+   "Deaths": "2104",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Neptune",
+   "Gamemode": "Overload",
+   "Maps": "49",
+   "Kills": "1234",
+   "Deaths": "1184",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Neptune",
+   "Gamemode": "Search and Destroy",
+   "Maps": "64",
+   "Kills": "397",
+   "Deaths": "431",
+   "FirstKills": "73",
+   "FirstDeaths": "72"
+  },
+  {
+   "PlayerLink": "Nero",
+   "Gamemode": "Hardpoint",
+   "Maps": "64",
+   "Kills": "1687",
+   "Deaths": "1667",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Nero",
+   "Gamemode": "Overload",
+   "Maps": "41",
+   "Kills": "1028",
+   "Deaths": "1031",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Nero",
+   "Gamemode": "Search and Destroy",
+   "Maps": "50",
+   "Kills": "305",
+   "Deaths": "329",
+   "FirstKills": "55",
+   "FirstDeaths": "45"
+  },
+  {
+   "PlayerLink": "Nium",
+   "Gamemode": "Hardpoint",
+   "Maps": "74",
+   "Kills": "1737",
+   "Deaths": "1841",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Nium",
+   "Gamemode": "Overload",
+   "Maps": "49",
+   "Kills": "1141",
+   "Deaths": "1164",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Nium",
+   "Gamemode": "Search and Destroy",
+   "Maps": "63",
+   "Kills": "359",
+   "Deaths": "362",
+   "FirstKills": "38",
+   "FirstDeaths": "36"
+  },
+  {
+   "PlayerLink": "oJohnny",
+   "Gamemode": "Hardpoint",
+   "Maps": "8",
+   "Kills": "209",
+   "Deaths": "220",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "oJohnny",
+   "Gamemode": "Overload",
+   "Maps": "5",
+   "Kills": "115",
+   "Deaths": "123",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "oJohnny",
+   "Gamemode": "Search and Destroy",
+   "Maps": "7",
+   "Kills": "38",
+   "Deaths": "52",
+   "FirstKills": "11",
+   "FirstDeaths": "2"
+  },
+  {
+   "PlayerLink": "Okis",
+   "Gamemode": "Hardpoint",
+   "Maps": "31",
+   "Kills": "680",
+   "Deaths": "897",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Okis",
+   "Gamemode": "Overload",
+   "Maps": "20",
+   "Kills": "424",
+   "Deaths": "559",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Okis",
+   "Gamemode": "Search and Destroy",
+   "Maps": "22",
+   "Kills": "122",
+   "Deaths": "131",
+   "FirstKills": "19",
+   "FirstDeaths": "20"
+  },
+  {
+   "PlayerLink": "Pred",
+   "Gamemode": "Hardpoint",
+   "Maps": "74",
+   "Kills": "2005",
+   "Deaths": "1884",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Pred",
+   "Gamemode": "Overload",
+   "Maps": "46",
+   "Kills": "1130",
+   "Deaths": "1038",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Pred",
+   "Gamemode": "Search and Destroy",
+   "Maps": "58",
+   "Kills": "366",
+   "Deaths": "368",
+   "FirstKills": "62",
+   "FirstDeaths": "65"
+  },
+  {
+   "PlayerLink": "Prolute",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "Kills": "56",
+   "Deaths": "64",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Prolute",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "Kills": "37",
+   "Deaths": "48",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Prolute",
+   "Gamemode": "Search and Destroy",
+   "Maps": "3",
+   "Kills": "16",
+   "Deaths": "17",
+   "FirstKills": "5",
+   "FirstDeaths": "1"
+  },
+  {
+   "PlayerLink": "Purj",
+   "Gamemode": "Hardpoint",
+   "Maps": "70",
+   "Kills": "1698",
+   "Deaths": "1931",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Purj",
+   "Gamemode": "Overload",
+   "Maps": "39",
+   "Kills": "839",
+   "Deaths": "934",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Purj",
+   "Gamemode": "Search and Destroy",
+   "Maps": "49",
+   "Kills": "296",
+   "Deaths": "328",
+   "FirstKills": "60",
+   "FirstDeaths": "74"
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "Gamemode": "Hardpoint",
+   "Maps": "40",
+   "Kills": "1001",
+   "Deaths": "1040",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "Gamemode": "Overload",
+   "Maps": "25",
+   "Kills": "592",
+   "Deaths": "604",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "ReeaL",
+   "Gamemode": "Search and Destroy",
+   "Maps": "34",
+   "Kills": "195",
+   "Deaths": "225",
+   "FirstKills": "40",
+   "FirstDeaths": "48"
+  },
+  {
+   "PlayerLink": "Renegade",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "Kills": "91",
+   "Deaths": "75",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Renegade",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "Kills": "45",
+   "Deaths": "53",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Renegade",
+   "Gamemode": "Search and Destroy",
+   "Maps": "3",
+   "Kills": "23",
+   "Deaths": "22",
+   "FirstKills": "5",
+   "FirstDeaths": "4"
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "Gamemode": "Hardpoint",
+   "Maps": "78",
+   "Kills": "2128",
+   "Deaths": "1845",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "Gamemode": "Overload",
+   "Maps": "52",
+   "Kills": "1249",
+   "Deaths": "1189",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "RenKoR",
+   "Gamemode": "Search and Destroy",
+   "Maps": "64",
+   "Kills": "382",
+   "Deaths": "370",
+   "FirstKills": "38",
+   "FirstDeaths": "41"
+  },
+  {
+   "PlayerLink": "Rxld",
+   "Gamemode": "Hardpoint",
+   "Maps": "3",
+   "Kills": "59",
+   "Deaths": "78",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Rxld",
+   "Gamemode": "Overload",
+   "Maps": "2",
+   "Kills": "20",
+   "Deaths": "51",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Rxld",
+   "Gamemode": "Search and Destroy",
+   "Maps": "2",
+   "Kills": "4",
+   "Deaths": "14",
+   "FirstKills": "0",
+   "FirstDeaths": "3"
+  },
+  {
+   "PlayerLink": "Scrap",
+   "Gamemode": "Hardpoint",
+   "Maps": "93",
+   "Kills": "2590",
+   "Deaths": "2459",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Scrap",
+   "Gamemode": "Overload",
+   "Maps": "63",
+   "Kills": "1530",
+   "Deaths": "1506",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Scrap",
+   "Gamemode": "Search and Destroy",
+   "Maps": "80",
+   "Kills": "523",
+   "Deaths": "489",
+   "FirstKills": "137",
+   "FirstDeaths": "80"
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "Gamemode": "Hardpoint",
+   "Maps": "97",
+   "Kills": "2569",
+   "Deaths": "2568",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "Gamemode": "Overload",
+   "Maps": "68",
+   "Kills": "1742",
+   "Deaths": "1651",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Shotzzy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "86",
+   "Kills": "605",
+   "Deaths": "548",
+   "FirstKills": "149",
+   "FirstDeaths": "139"
+  },
+  {
+   "PlayerLink": "Sib",
+   "Gamemode": "Hardpoint",
+   "Maps": "103",
+   "Kills": "2696",
+   "Deaths": "2761",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Sib",
+   "Gamemode": "Overload",
+   "Maps": "64",
+   "Kills": "1594",
+   "Deaths": "1592",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Sib",
+   "Gamemode": "Search and Destroy",
+   "Maps": "83",
+   "Kills": "537",
+   "Deaths": "557",
+   "FirstKills": "124",
+   "FirstDeaths": "108"
+  },
+  {
+   "PlayerLink": "Simp",
+   "Gamemode": "Hardpoint",
+   "Maps": "100",
+   "Kills": "2766",
+   "Deaths": "2555",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Simp",
+   "Gamemode": "Overload",
+   "Maps": "63",
+   "Kills": "1595",
+   "Deaths": "1493",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Simp",
+   "Gamemode": "Search and Destroy",
+   "Maps": "85",
+   "Kills": "621",
+   "Deaths": "545",
+   "FirstKills": "83",
+   "FirstDeaths": "70"
+  },
+  {
+   "PlayerLink": "Skyz",
+   "Gamemode": "Hardpoint",
+   "Maps": "89",
+   "Kills": "2171",
+   "Deaths": "2220",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Skyz",
+   "Gamemode": "Overload",
+   "Maps": "57",
+   "Kills": "1179",
+   "Deaths": "1322",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Skyz",
+   "Gamemode": "Search and Destroy",
+   "Maps": "75",
+   "Kills": "419",
+   "Deaths": "436",
+   "FirstKills": "78",
+   "FirstDeaths": "56"
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "Gamemode": "Hardpoint",
+   "Maps": "9",
+   "Kills": "183",
+   "Deaths": "191",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "Gamemode": "Overload",
+   "Maps": "6",
+   "Kills": "112",
+   "Deaths": "123",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "SlasheR",
+   "Gamemode": "Search and Destroy",
+   "Maps": "7",
+   "Kills": "25",
+   "Deaths": "42",
+   "FirstKills": "3",
+   "FirstDeaths": "1"
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "Gamemode": "Hardpoint",
+   "Maps": "42",
+   "Kills": "1027",
+   "Deaths": "1147",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "Gamemode": "Overload",
+   "Maps": "23",
+   "Kills": "560",
+   "Deaths": "529",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Snoopy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "29",
+   "Kills": "191",
+   "Deaths": "202",
+   "FirstKills": "41",
+   "FirstDeaths": "37"
+  },
+  {
+   "PlayerLink": "Spart",
+   "Gamemode": "Hardpoint",
+   "Maps": "47",
+   "Kills": "1114",
+   "Deaths": "1146",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Spart",
+   "Gamemode": "Overload",
+   "Maps": "27",
+   "Kills": "626",
+   "Deaths": "636",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Spart",
+   "Gamemode": "Search and Destroy",
+   "Maps": "34",
+   "Kills": "208",
+   "Deaths": "215",
+   "FirstKills": "27",
+   "FirstDeaths": "26"
+  },
+  {
+   "PlayerLink": "Standy",
+   "Gamemode": "Hardpoint",
+   "Maps": "13",
+   "Kills": "268",
+   "Deaths": "341",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Standy",
+   "Gamemode": "Overload",
+   "Maps": "8",
+   "Kills": "182",
+   "Deaths": "197",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Standy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "12",
+   "Kills": "68",
+   "Deaths": "79",
+   "FirstKills": "13",
+   "FirstDeaths": "12"
+  },
+  {
+   "PlayerLink": "SupeR",
+   "Gamemode": "Hardpoint",
+   "Maps": "1",
+   "Kills": "25",
+   "Deaths": "23",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "SupeR",
+   "Gamemode": "Overload",
+   "Maps": "1",
+   "Kills": "17",
+   "Deaths": "27",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "SupeR",
+   "Gamemode": "Search and Destroy",
+   "Maps": "1",
+   "Kills": "5",
+   "Deaths": "6",
+   "FirstKills": "1",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "Gamemode": "Hardpoint",
+   "Maps": "77",
+   "Kills": "1953",
+   "Deaths": "1864",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "Gamemode": "Overload",
+   "Maps": "51",
+   "Kills": "1177",
+   "Deaths": "1112",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "SupeR (Diego Escudero)",
+   "Gamemode": "Search and Destroy",
+   "Maps": "63",
+   "Kills": "441",
+   "Deaths": "382",
+   "FirstKills": "88",
+   "FirstDeaths": "51"
+  },
+  {
+   "PlayerLink": "Swooty",
+   "Gamemode": "Hardpoint",
+   "Maps": "5",
+   "Kills": "111",
+   "Deaths": "136",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Swooty",
+   "Gamemode": "Overload",
+   "Maps": "4",
+   "Kills": "64",
+   "Deaths": "92",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Swooty",
+   "Gamemode": "Search and Destroy",
+   "Maps": "5",
+   "Kills": "23",
+   "Deaths": "38",
+   "FirstKills": "9",
+   "FirstDeaths": "3"
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "Gamemode": "Hardpoint",
+   "Maps": "61",
+   "Kills": "1491",
+   "Deaths": "1669",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "Gamemode": "Overload",
+   "Maps": "37",
+   "Kills": "872",
+   "Deaths": "983",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "TJHaLy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "44",
+   "Kills": "269",
+   "Deaths": "287",
+   "FirstKills": "51",
+   "FirstDeaths": "71"
+  },
+  {
+   "PlayerLink": "Traixx",
+   "Gamemode": "Hardpoint",
+   "Maps": "61",
+   "Kills": "1592",
+   "Deaths": "1619",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Traixx",
+   "Gamemode": "Overload",
+   "Maps": "40",
+   "Kills": "1023",
+   "Deaths": "1061",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Traixx",
+   "Gamemode": "Search and Destroy",
+   "Maps": "49",
+   "Kills": "346",
+   "Deaths": "330",
+   "FirstKills": "57",
+   "FirstDeaths": "61"
+  },
+  {
+   "PlayerLink": "Vivid",
+   "Gamemode": "Hardpoint",
+   "Maps": "23",
+   "Kills": "564",
+   "Deaths": "621",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Vivid",
+   "Gamemode": "Overload",
+   "Maps": "13",
+   "Kills": "267",
+   "Deaths": "312",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Vivid",
+   "Gamemode": "Search and Destroy",
+   "Maps": "19",
+   "Kills": "111",
+   "Deaths": "125",
+   "FirstKills": "14",
+   "FirstDeaths": "14"
+  },
+  {
+   "PlayerLink": "Wevy",
+   "Gamemode": "Hardpoint",
+   "Maps": "12",
+   "Kills": "306",
+   "Deaths": "309",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Wevy",
+   "Gamemode": "Overload",
+   "Maps": "7",
+   "Kills": "170",
+   "Deaths": "172",
+   "FirstKills": "",
+   "FirstDeaths": ""
+  },
+  {
+   "PlayerLink": "Wevy",
+   "Gamemode": "Search and Destroy",
+   "Maps": "8",
+   "Kills": "58",
+   "Deaths": "48",
+   "FirstKills": "11",
+   "FirstDeaths": "7"
+  }
+ ]
+}

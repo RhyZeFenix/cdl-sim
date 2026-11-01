@@ -7,7 +7,8 @@ import { createRng } from "../rng";
 import { GM_ROSTER_MAX, gmCanMakeMoves, type SeasonState } from "../season/season";
 import { pushInbox } from "./inbox";
 import { handle } from "./names";
-import { analystLevel, coachFactor, STAFF_BUDGET, staffPayroll } from "./staff";
+import { analystLevel, coachFactor, staffPayroll } from "./staff";
+import { staffBudget } from "./sponsors";
 import type { Prospect } from "./types";
 import { askingSalary, overall } from "./values";
 
@@ -51,7 +52,7 @@ export function gmSignProspect(state: SeasonState, id: string): void {
   if (!gm.prospects?.[id]) throw new Error("No such prospect.");
   if ((gm.academy ?? []).includes(id)) throw new Error("Already in your academy.");
   if ((gm.academy?.length ?? 0) >= ACADEMY_MAX) throw new Error(`The academy holds ${ACADEMY_MAX} players.`);
-  if (staffPayroll(state) + academyPayroll(state) + ACADEMY_SALARY > STAFF_BUDGET) throw new Error("No room in the staff budget.");
+  if (staffPayroll(state) + academyPayroll(state) + ACADEMY_SALARY > staffBudget(state)) throw new Error("No room in the staff budget.");
   gm.academy = [...(gm.academy ?? []), id];
 }
 

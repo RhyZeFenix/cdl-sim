@@ -3,6 +3,7 @@
 // skill: ±0.025 at the extremes, about half a map preference modifier.
 import type { SeasonState, SeriesRecord } from "../season/season";
 import type { MoraleChange } from "./types";
+import { LEADER_LIFT, moraleScale, traitOf } from "./personality";
 
 export const MORALE_START = 70;
 export const moraleForm = (m: number) => ((m - MORALE_START) / 30) * 0.025;
@@ -46,7 +47,7 @@ export function seriesMorale(state: SeasonState, rec: SeriesRecord): Record<stri
       continue;
     }
     const kd = kills.get(id)! / Math.max(1, deaths.get(id)!);
-    deltas[id] = Math.round(result + (kd > 1.15 ? 2 : kd < 0.85 ? -2 : 0));
+    deltas[id] = Math.round((result + (kd > 1.15 ? 2 : kd < 0.85 ? -2 : 0)) * moraleScale(id));
   }
   return deltas;
 }
@@ -55,9 +56,12 @@ export function seriesMorale(state: SeasonState, rec: SeriesRecord): Record<stri
 export function stepMorale(state: SeasonState, prepDelta: number): Record<string, number> {
   const gm = state.gm!;
   const deltas: Record<string, number> = {};
+  // A starting leader lifts the other starters.
+  const leaders = gm.starters.filter((id) => traitOf(id) === "leader");
   for (const id of gm.roster) {
     const m = (gm.morale?.[id] ?? MORALE_START) + prepDelta;
-    deltas[id] = prepDelta + Math.round((MORALE_START - m) * 0.1);
+    const lift = gm.starters.includes(id) ? leaders.filter((l) => l !== id).length * LEADER_LIFT : 0;
+    deltas[id] = prepDelta + lift + Math.round((MORALE_START - m) * 0.1);
   }
   return deltas;
 }

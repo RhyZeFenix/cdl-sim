@@ -2,7 +2,7 @@
 // play-by-play lines revealed as their closing event is reached, with an optional 3D
 // view of the same moment. Nothing after the clock is ever shown.
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
-import { commentary, highlights, mapLogEntries, scoreFromEvents, type MapResult } from "../../engine";
+import { commentary, highlights, mapLogEntries, roundStrip, scoreFromEvents, type MapResult } from "../../engine";
 import { hillLabelsOf, timelineFor } from "../replay/build";
 import { Replay2D } from "../replay/Replay2D";
 
@@ -22,6 +22,9 @@ const clock = (t: number) => {
   const s = Math.floor(t);
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 };
+
+const HOW: Record<string, string> = { elim: "by elimination", detonate: "on the detonation", defuse: "on the defuse", time: "on time", capture: "on the capture", lives: "on lives" };
+const HOW_ICON: Record<string, string> = { elim: "☠", detonate: "💥", defuse: "✂", time: "⏱", capture: "⚑", lives: "♥" };
 
 const VIEW_KEY = "cdl-sim:watch-view";
 const savedView = (): View => {
@@ -55,6 +58,8 @@ export function Watch({
   autoPlay,
   onFinished,
   seed,
+  startAt,
+  clipLink,
 }: {
   map: MapResult;
   teams: [string, string];
@@ -64,6 +69,10 @@ export function Watch({
   onFinished?: () => void;
   /** Seeds the 3D movement so a map always plays back the same way. */
   seed?: string;
+  /** Open at this game time (a clip link), paused. */
+  startAt?: number;
+  /** Builds a shareable link to a moment of this map, when the season can be shared. */
+  clipLink?: (t: number) => string;
 }) {
   const [view, setViewState] = useState<View>(savedView);
   const setView = (v: View) => {
@@ -96,11 +105,23 @@ export function Watch({
   };
 
   useEffect(() => {
-    setNow(0);
-    setPlaying(autoPlay);
+    setNow(startAt ?? 0);
+    setPlaying(startAt === undefined ? autoPlay : false);
     setReel(null);
     setFollow(undefined);
-  }, [map, autoPlay]);
+  }, [map, autoPlay, startAt]);
+  const rounds = useMemo(() => (map.mode === "snd" || map.mode === "control" ? roundStrip(map) : []), [map]);
+  const [copied, setCopied] = useState(false);
+  const copyClip = async () => {
+    if (!clipLink) return;
+    try {
+      await navigator.clipboard.writeText(clipLink(Math.floor(now)));
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    } catch {
+      prompt("Copy this link:", clipLink(Math.floor(now)));
+    }
+  };
 
   // The reel moves on two seconds after each moment.
   useEffect(() => {
@@ -238,6 +259,11 @@ export function Watch({
           <input type="checkbox" checked={showCaptions} onChange={(e) => setShowCaptions(e.target.checked)} style={{ width: "auto" }} />
           Commentary
         </label>
+        {clipLink && (
+          <button className="btn small" onClick={copyClip} title="Copy a link that opens this map at this moment">
+            {copied ? "Link copied" : "Share this moment"}
+          </button>
+        )}
         <div className="seg" role="group" aria-label="Playback speed">
           {SPEEDS.map((s, i) => (
             <button key={s.label} aria-pressed={speed === i} onClick={() => setSpeed(i)}>
@@ -259,6 +285,25 @@ export function Watch({
         </div>
       </div>
       <input type="range" min={0} max={end} step={0.5} value={now} onChange={(e) => (setNow(Number(e.target.value)), setPlaying(false))} aria-label="Scrub" />
+      {rounds.length > 0 && (
+        <div className="round-strip" role="list" aria-label="Rounds">
+          {rounds
+            .filter((r) => finished || r.t <= now)
+            .map((r) => (
+              <button
+                key={r.n}
+                role="listitem"
+                className={`round-chip s${r.winner}${now >= r.from && now < r.t ? " on" : ""}`}
+                onClick={() => (setNow(r.from), setPlaying(true), setReel(null))}
+                title={`Round ${r.n}: ${teams[r.winner]} ${HOW[r.how]}${r.site ? ` · planted ${r.site}` : ""}${r.clutch ? ` · ${players[r.clutch.by] ?? ""} clutch 1v${r.clutch.vs}` : ""} · ${r.score[0]}–${r.score[1]}`}
+              >
+                <b>{r.n}</b>
+                <span>{HOW_ICON[r.how]}</span>
+                {r.clutch && <span title="Clutch">★</span>}
+              </button>
+            ))}
+        </div>
+      )}
       {shownHl.length > 0 && (
         <div className="hl-strip" role="list" aria-label="Highlights">
           {shownHl.map(({ h, i }) => (

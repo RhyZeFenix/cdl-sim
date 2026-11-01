@@ -9,6 +9,8 @@ export interface SimPlayer {
   id: string;
   handle: string;
   ratings: Ratings;
+  /** Share of fights this player really takes, relative to the average player (1 = average). */
+  fights?: number;
   /** Extra skill for this map (GM morale), in skill units. */
   form?: number;
 }

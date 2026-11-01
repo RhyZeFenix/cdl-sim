@@ -17,6 +17,9 @@ import {
   fogText,
   fogWidth,
   gmSetFog,
+  TRAIT_LABEL,
+  TRAIT_TEXT,
+  traitOf,
   nextStepDate,
   playerInfo,
   contractFor,
@@ -190,7 +193,11 @@ export function MyTeam({ store, nav }: { store: SeasonStore; nav: Nav }) {
                       <b>
                         <PlayerLink id={id} name={p.handle} nav={nav} />
                       </b>{" "}
-                      <span className="muted">{p.role}</span>
+                      {traitOf(id) && (
+                        <span className="muted" title={TRAIT_TEXT[traitOf(id)!]}>
+                          {TRAIT_LABEL[traitOf(id)!]}
+                        </span>
+                      )}
                     </td>
                     <RatingCells p={p} />
                     <td>{gm.contracts?.[id] ? `$${gm.contracts[id]!.salary}k` : "—"}</td>

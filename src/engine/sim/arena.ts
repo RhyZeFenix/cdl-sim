@@ -61,7 +61,9 @@ export function createArena(rng: Rng, teams: [SimTeam, SimTeam], mode: Mode, map
     const mod = (teams[s].mapMods?.[key] ?? 0) + (teams[s].prep?.[key] ?? 0);
     return base + form + teamForm[s]! + mod + (teams[s].form ?? 0) + (p.form ?? 0);
   });
-  const engage = skill.map((x) => Math.exp(TUNING.engageK * x));
+  // Entry players take more of the fights and anchors fewer, by their real fight share.
+  const fx = TUNING.fightShareExp;
+  const engage = skill.map((x, i) => Math.exp(TUNING.engageK * x) * (fx ? (players[i]!.fights ?? 1) ** fx : 1));
   return { rng, players, skill, engage, k: TUNING.duelK * TUNING.modeDuelScale[mode], t: 0, events: [], pace: 1, close: 1, plant: 1, retake: 1 };
 }
 

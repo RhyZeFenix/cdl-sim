@@ -1,6 +1,6 @@
 // Office › Market: AI offers and player demands, contracts, and trades.
 import { useMemo, useState } from "react";
-import { MIN_EXCEPTION, capLabel, gmChoose, gmSetTradeBlock, marketAsk, tradesOpen, aiRoster, askingSalary, evaluateTrade, gmCanMakeMoves, payroll, playerInfo, proposeTrade, tradeValue, visibleInbox, ovrOf, fogText, fogWidth } from "../../../engine";
+import { MIN_EXCEPTION, capLabel, gmChoose, gmSetTradeBlock, marketAsk, tradesOpen, aiRoster, askingSalary, evaluateTrade, gmCanMakeMoves, payroll, playerInfo, proposeTrade, tradeValue, visibleInbox, ovrOf, fogText, fogWidth, capOf, seasonYearOf } from "../../../engine";
 import { type Nav } from "../../App";
 import { directory } from "../../names";
 import type { SeasonStore } from "../../useSeason";
@@ -90,6 +90,88 @@ export function Finances({ store, nav }: { store: SeasonStore; nav: Nav }) {
           ))}
         </tbody>
       </table>
+      <CapTable store={store} />
+    </div>
+  );
+}
+
+/** The next three seasons of commitments: who's under contract, options, and room under the cap. */
+function CapTable({ store }: { store: SeasonStore }) {
+  const { state, data } = store;
+  const gm = state.gm!;
+  const now = seasonYearOf(state);
+  const cap = capOf(state);
+  const years = [0, 1, 2];
+  const cell = (id: string, k: number): { salary: number; option?: boolean } | null => {
+    const c = gm.contracts?.[id];
+    if (!c) return null;
+    if (k < c.years) return { salary: c.salary };
+    if (k === c.years && c.option) return { salary: c.salary, option: true };
+    return null;
+  };
+  const total = (k: number, withOptions: boolean) =>
+    gm.roster.reduce((s, id) => {
+      const x = cell(id, k);
+      return s + (x && (withOptions || !x.option) ? x.salary : 0);
+    }, k === 0 ? (gm.deadCap ?? 0) : 0);
+  return (
+    <div style={{ marginTop: 14 }}>
+      <h4 style={{ margin: "0 0 4px" }}>Cap table</h4>
+      <div className="scroll-x">
+        <table className="tbl">
+          <thead>
+            <tr>
+              <th className="left">Player</th>
+              {years.map((k) => (
+                <th key={k}>{now + k}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {gm.roster.map((id) => (
+              <tr key={id}>
+                <td className="left">{playerInfo(state, data, id)?.handle ?? id}</td>
+                {years.map((k) => {
+                  const x = cell(id, k);
+                  return (
+                    <td key={k} className={x?.option ? "muted" : undefined} title={x?.option ? "Team option: yours to use or decline" : undefined}>
+                      {x ? `$${x.salary}k${x.option ? " opt" : ""}` : k === 0 ? "—" : <span className="muted">FA</span>}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+            {(gm.deadCap ?? 0) > 0 && (
+              <tr>
+                <td className="left muted">Dead money and bonuses</td>
+                <td>${gm.deadCap}k</td>
+                <td />
+                <td />
+              </tr>
+            )}
+            <tr>
+              <td className="left">
+                <b>Committed</b>
+              </td>
+              {years.map((k) => (
+                <td key={k}>
+                  <b>${total(k, false)}k</b>
+                  {total(k, true) !== total(k, false) && <div className="sub">${total(k, true)}k with options</div>}
+                </td>
+              ))}
+            </tr>
+            {Number.isFinite(cap) && (
+              <tr>
+                <td className="left">Room under the cap</td>
+                {years.map((k) => (
+                  <td key={k}>${Math.round(cap - total(k, false))}k</td>
+                ))}
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+      <div className="sub" style={{ marginTop: 4 }}>Later seasons assume the same cap; signing bonuses only count in the season they're paid.</div>
     </div>
   );
 }

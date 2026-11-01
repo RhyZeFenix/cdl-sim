@@ -1,6 +1,6 @@
 // Office › Overview: the inbox, the owner's goals, the off-season, dynasty history and the first-run guide.
 import { useMemo, useState } from "react";
-import { gmChoose, type InboxItem, contractFor, expiringContracts, gmMarkRead, goalStatus, goalText, isDone, loadSeasonData, ordinal, nextSeasonId, ownerVerdict, playerInfo, seasonLabel, seasonRecap, startNextSeason, successorTeam, optionPlayers, previewFreeAgents, type Offer, verdictText, visibleInbox, ovrOf, type SeasonData, type SeasonState } from "../../../engine";
+import { gmChoose, type InboxItem, contractFor, expiringContracts, gmMarkRead, goalStatus, goalText, isDone, loadSeasonData, ordinal, nextSeasonId, ownerVerdict, playerInfo, seasonLabel, seasonRecap, startNextSeason, successorTeam, optionPlayers, previewFreeAgents, previewDraft, type Offer, verdictText, visibleInbox, ovrOf, type SeasonData, type SeasonState } from "../../../engine";
 import type { SeasonStore } from "../../useSeason";
 import { hintSeen, markHintSeen } from "../../theme";
 import { STATUS_COLOR } from "./shared";
@@ -122,6 +122,17 @@ export function OffSeason({ store }: { store: SeasonStore }) {
   const fired = recap.verdict === "fired";
   const picks = Object.fromEntries(Object.entries(resign).filter(([, y]) => y > 0));
   const pickKey = JSON.stringify([team, picks, exercise]);
+  const draftOn = !!state.options.rules?.draft;
+  const [draftPick, setDraftPick] = useState<string | undefined>(undefined);
+  const draftClass = useMemo(() => {
+    if (!draftOn || fired) return null;
+    try {
+      return previewDraft(state, data, { team, resign: picks, exercise });
+    } catch {
+      return null;
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [draftOn, pickKey, state]);
   const pool = useMemo(() => {
     if (!showFa || fired) return [];
     try {
@@ -200,6 +211,22 @@ export function OffSeason({ store }: { store: SeasonStore }) {
               </tbody>
             </table>
           )}
+          {draftClass && (
+            <>
+              <h4 style={{ margin: "12px 0 4px" }}>Rookie draft (extra rule)</h4>
+              <div className="sub" style={{ marginBottom: 6 }}>
+                You pick {ordinal(draftClass.pick)} of {draftClass.teams} (worst team first). Choose who you want; if they're gone by your pick, you get the best left. Your pick joins the academy.
+              </div>
+              <select className="plain" value={draftPick ?? ""} onChange={(e) => setDraftPick(e.target.value || undefined)} aria-label="Draft pick">
+                <option value="">Best available</option>
+                {draftClass.prospects.map((p) => (
+                  <option key={p.id} value={p.id}>
+                    {p.handle} · age {p.age} · {p.ovr} now · potential {p.potential[0] === p.potential[1] ? p.potential[0] : `${p.potential[0]}–${p.potential[1]}`}
+                  </option>
+                ))}
+              </select>
+            </>
+          )}
           <h4 style={{ margin: "12px 0 4px" }}>Free agency</h4>
           {!showFa ? (
             <button className="btn small" onClick={() => setShowFa(true)}>
@@ -277,7 +304,7 @@ export function OffSeason({ store }: { store: SeasonStore }) {
               onClick={() => {
                 if (!confirm(`Start ${nextLabel}? Export this season first if you want to keep it.`)) return;
                 try {
-                  store.replace(startNextSeason(state, data, { team, resign: picks, exercise, offers }));
+                  store.replace(startNextSeason(state, data, { team, resign: picks, exercise, offers, draftPick }));
                 } catch (e) {
                   setMsg(e instanceof Error ? e.message : String(e));
                 }

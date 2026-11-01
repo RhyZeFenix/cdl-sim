@@ -17,6 +17,12 @@ export const TUNING = {
   chaosFormSd: 0.04,
   /** Selection weight for who takes the next gunfight: exp(engageK * skill). */
   engageK: 3,
+  /** Who takes the next fight also scales with each player's real fight share to this power (0 = off). */
+  // 2: the sim's spread of fights per player matches the real one, and event log loss improved in all three seasons.
+  fightShareExp: 2,
+  /** LAN fatigue: skill lost per series a team has already played at a Major or Champs, past the first few. */
+  lanFatigue: 0,
+  lanFatigueFree: 3,
   /** Stat weights per mode: [slaying, mode stat]. */
   weights: { hp: [0.65, 0.35], snd: [0.55, 0.45], control: [0.6, 0.4], overload: [0.6, 0.4] },
   /**

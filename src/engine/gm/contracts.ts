@@ -20,6 +20,7 @@ import { pushInbox } from "./inbox";
 import type { Contract } from "./types";
 import { askFor, askingSalary, MIN_EXCEPTION, overall, tradeValue } from "./values";
 import { capLabel, capOf, difficultyOf } from "./difficulty";
+import { traitOf } from "./personality";
 
 export const ovrOf = (state: SeasonState, data: SeasonData, id: string): number => {
   const p = playerInfo(state, data, id);
@@ -29,7 +30,13 @@ export const ovrOf = (state: SeasonState, data: SeasonData, id: string): number 
 /** What a player would sign for, for `years` seasons. */
 export function contractFor(state: SeasonState, data: SeasonData, id: string, years: number): Contract {
   const y = Math.max(1, Math.min(3, Math.round(years)));
-  return { salary: Math.round((askFor(ovrOf(state, data, id), y) * reputationOf(state, id)) / 5) * 5, years: y };
+  return { salary: Math.round((askFor(ovrOf(state, data, id), y) * reputationOf(state, id) * traitPay(state, id)) / 5) * 5, years: y };
+}
+
+/** Mercenaries ask 10% more; loyal players take 10% less to stay with your team. */
+function traitPay(state: SeasonState, id: string): number {
+  const t = traitOf(id);
+  return t === "mercenary" ? 1.1 : t === "loyal" && state.gm?.roster.includes(id) ? 0.9 : 1;
 }
 
 /** Award winners ask for more (1 = no awards). */

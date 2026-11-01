@@ -4,6 +4,19 @@ import type { SeasonStore } from "../useSeason";
 
 const CHANGELOG: { title: string; items: string[] }[] = [
   {
+    title: "Real fights, real ages, what if",
+    items: [
+      "Who takes each gunfight now follows each player's real share of fights (entry players fight more, anchors less); event predictions improved in all three seasons",
+      "Real ages from wiki birthdates, in player pages and dynasty aging",
+      "Player pages show a real career across 2024–2026, with event-by-event K/D",
+      "What if: change any Major or Champs winner and play the rest of the season out (Summary tab)",
+      "SnD and Control round strip in replays, a written recap on every match, and links to a moment in a replay",
+      "GM: player personalities, sponsor deals that fund your staff budget, and a three-season cap table",
+      "Optional extra rules for GM saves: a rookie draft and coach timeouts (not in the real CDL; off by default)",
+      "Phone fixes (no sideways scroll, tighter replay controls) and a smaller first download",
+    ],
+  },
+  {
     title: "Front office, replays and more",
     items: [
       "Contract negotiation: salary, length, signing bonus and team option, with counter-offers",

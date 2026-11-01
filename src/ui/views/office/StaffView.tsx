@@ -1,6 +1,6 @@
 // Office › Staff: your coach and analyst, and who's available to hire.
 import { useState } from "react";
-import { STAFF_BUDGET, academyPayroll, gmFire, gmHire, staffPayroll, staffPool, stars, gmCanMakeMoves } from "../../../engine";
+import { SPONSORS, STAFF_BUDGET, academyPayroll, gmFire, gmHire, gmSetSponsor, sponsorEarned, sponsorOpen, staffPayroll, staffPool, stars, gmCanMakeMoves, type SponsorDeal } from "../../../engine";
 import type { SeasonStore } from "../../useSeason";
 
 export function StaffView({ store }: { store: SeasonStore }) {
@@ -10,6 +10,8 @@ export function StaffView({ store }: { store: SeasonStore }) {
   const open = gmCanMakeMoves(state);
   const pool = staffPool(state);
   const used = staffPayroll(state) + academyPayroll(state);
+  const earned = sponsorEarned(state, store.spoil.hidden);
+  const canSponsor = sponsorOpen(state);
   const effect = (role: "coach" | "analyst", r: number) =>
     role === "coach"
       ? `Prep bonuses ×${(1 + 0.15 * (r - 3)).toFixed(2)}, losses hurt morale ${Math.round(10 * (r - 1))}% less, academy grows faster`
@@ -22,7 +24,7 @@ export function StaffView({ store }: { store: SeasonStore }) {
         <div className="card-head">
           <h3>Your staff</h3>
           <span className="sub">
-            Staff budget ${used}k of ${STAFF_BUDGET}k (includes ${academyPayroll(state)}k for the academy). {open ? "Hiring is open." : "Hiring opens between stages."}
+            Staff budget ${used}k of ${STAFF_BUDGET + earned}k (includes ${academyPayroll(state)}k for the academy{earned ? `, and $${earned}k from your sponsor` : ""}). {open ? "Hiring is open." : "Hiring opens between stages."}
           </span>
         </div>
         {err && <div className="sub" style={{ color: "var(--ban)" }}>{err}</div>}
@@ -53,6 +55,20 @@ export function StaffView({ store }: { store: SeasonStore }) {
             );
           })}
         </div>
+      </div>
+      <div className="card">
+        <div className="card-head">
+          <h3>Sponsor</h3>
+          <span className="sub">{canSponsor ? "Pick one deal before your first match. The money goes into the staff budget." : gm.sponsor ? `${SPONSORS[gm.sponsor].name}: $${earned}k so far this season.` : "No sponsor this season."}</span>
+        </div>
+        <div className="seg" role="group" aria-label="Sponsor deal">
+          {(Object.keys(SPONSORS) as SponsorDeal[]).map((d) => (
+            <button key={d} aria-pressed={gm.sponsor === d} disabled={!canSponsor} title={SPONSORS[d].blurb} onClick={() => setErr(mutate((s) => gmSetSponsor(s, d)))}>
+              {SPONSORS[d].name}
+            </button>
+          ))}
+        </div>
+        <div className="sub" style={{ marginTop: 6 }}>{gm.sponsor ? SPONSORS[gm.sponsor].blurb : (Object.keys(SPONSORS) as SponsorDeal[]).map((d) => `${SPONSORS[d].name}: ${SPONSORS[d].blurb}`).join(" · ")}</div>
       </div>
       <div className="card">
         <h3 style={{ marginBottom: 8 }}>Available</h3>

@@ -157,3 +157,83 @@ export function commentary(map: MapResult, players: string[], teams: [string, st
   }
   return out.sort((a, b) => a.t - b.t);
 }
+
+export interface RoundChip {
+  n: number;
+  /** When the round started and ended (game seconds). */
+  from: number;
+  t: number;
+  winner: Side;
+  how: Extract<MapEvent, { k: "round" }>["how"];
+  score: [number, number];
+  site?: "A" | "B";
+  /** A clutch won this round: who and against how many. */
+  clutch?: { by: number; vs: number };
+}
+
+/** Round-by-round summary for SnD and Control maps. */
+export function roundStrip(map: MapResult): RoundChip[] {
+  const out: RoundChip[] = [];
+  let from = 0;
+  let site: "A" | "B" | undefined;
+  let clutch: RoundChip["clutch"];
+  for (const e of map.events) {
+    if (e.k === "plant") site = e.site;
+    else if (e.k === "clutch") clutch = { by: e.by, vs: e.vs };
+    else if (e.k === "round") {
+      out.push({ n: e.n, from, t: e.t, winner: e.winner, how: e.how, score: [e.score[0], e.score[1]], site, clutch });
+      from = e.t;
+      site = undefined;
+      clutch = undefined;
+    }
+  }
+  return out;
+}
+
+/**
+ * A few sentences on how a series went: the result, any comeback, the deciding map,
+ * the series' best player and its best moment.
+ */
+export function seriesRecap(maps: MapResult[], teams: [string, string], handle: (lineupIndex: number, map: MapResult) => string): string {
+  if (!maps.length) return "";
+  const wins: [number, number] = [0, 0];
+  let worst: [number, number] = [0, 0];
+  for (const m of maps) {
+    wins[m.winner]++;
+    if (wins[0] - wins[1] < worst[0]) worst = [wins[0] - wins[1], worst[1]];
+    if (wins[1] - wins[0] < worst[1]) worst = [worst[0], wins[1] - wins[0]];
+  }
+  const w: Side = wins[0] > wins[1] ? 0 : 1;
+  const l = other(w);
+  const score = `${Math.max(...wins)}–${Math.min(...wins)}`;
+  const mapName = (m: MapResult) => `${m.map} ${m.mode === "hp" ? "Hardpoint" : m.mode === "snd" ? "SnD" : m.mode === "control" ? "Control" : "Overload"}`;
+  const mapScore = (m: MapResult) => `${Math.max(...m.score)}–${Math.min(...m.score)}`;
+  const parts: string[] = [];
+  const down = -worst[w];
+  if (down >= 2) parts.push(`${teams[w]} came back from ${down} maps down to beat ${teams[l]} ${score}.`);
+  else if (wins[l] === 0) parts.push(`${teams[w]} swept ${teams[l]} ${score}.`);
+  else parts.push(`${teams[w]} beat ${teams[l]} ${score}.`);
+  const last = maps[maps.length - 1]!;
+  if (wins[l] === Math.max(...wins) - 1 && maps.length > 1) parts.push(`It went the distance: ${teams[w]} took ${mapName(last)} ${mapScore(last)} to close it.`);
+  // Best K/D over the series among players with every map, by name.
+  const acc = new Map<string, { k: number; d: number; n: number }>();
+  for (const m of maps)
+    m.lineup.forEach((_, i) => {
+      const name = handle(i, m);
+      const e = acc.get(name) ?? { k: 0, d: 0, n: 0 };
+      e.k += m.box[i]!.kills;
+      e.d += m.box[i]!.deaths;
+      e.n++;
+      acc.set(name, e);
+    });
+  const best = [...acc.entries()].filter(([, e]) => e.n === maps.length).sort((a, b) => b[1].k / Math.max(1, b[1].d) - a[1].k / Math.max(1, a[1].d))[0];
+  if (best) parts.push(`${best[0]} led the series at ${(best[1].k / Math.max(1, best[1].d)).toFixed(2)} K/D (${best[1].k}–${best[1].d}).`);
+  // The single best moment across the maps.
+  let top: { h: Highlight; m: MapResult } | null = null;
+  for (const m of maps) {
+    const names = m.lineup.map((_, i) => handle(i, m));
+    for (const h of highlights(m, names, teams)) if (!top || h.weight > top.h.weight) top = { h, m };
+  }
+  if (top) parts.push(`Moment of the series: ${top.h.title} on ${mapName(top.m)}.`);
+  return parts.join(" ");
+}

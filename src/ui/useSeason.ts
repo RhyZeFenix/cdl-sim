@@ -1,7 +1,7 @@
 // Holds the season state. The engine mutates SeasonState in place, so the state
 // lives in a ref and a version counter drives re-renders.
 import { useCallback, useEffect, useRef, useState } from "react";
-import {
+import { type ExtraRules,
   allUnwatched,
   createSeason,
   isDone,
@@ -15,8 +15,8 @@ import {
   type Step,
 } from "../engine";
 import { mergeOdds, runOdds, runSim, type SimKind, type SimRequest, type SimResponse, type TeamOdds } from "./simWorker";
-import { runHeatmap, type HeatRequest, type Heatmap } from "./heatmap";
-import { savedOverrides } from "./layoutStore";
+import type { HeatRequest, Heatmap } from "./heatmap";
+import { savedOverrides } from "./savedLayouts";
 import { spoilers } from "./spoilers";
 import { archiveId, archiveSeason, getSave, putSave, type SlotId } from "./saves";
 
@@ -35,6 +35,8 @@ export interface SeasonConfig {
   realForm?: boolean;
   /** GM difficulty. */
   difficulty?: Difficulty;
+  /** Optional rules that aren't in the real CDL (GM mode). */
+  rules?: ExtraRules;
 }
 
 export interface SimOutcome {
@@ -59,6 +61,7 @@ const optionsOf = (cfg: SeasonConfig) => ({
   chaos: cfg.chaos,
   realForm: cfg.realForm && cfg.ratingMode === "historical",
   difficulty: cfg.gmTeam ? cfg.difficulty : undefined,
+  rules: cfg.gmTeam && (cfg.rules?.draft || cfg.rules?.timeouts) ? cfg.rules : undefined,
 });
 
 const configOf = (s: SeasonState): SeasonConfig => ({
@@ -70,6 +73,7 @@ const configOf = (s: SeasonState): SeasonConfig => ({
   chaos: s.options.chaos,
   realForm: s.options.realForm,
   difficulty: s.options.difficulty,
+  rules: s.options.rules,
 });
 
 /** A one-line description of a save. */
@@ -265,13 +269,10 @@ export function useSeason(initial: SeasonConfig) {
         const worker = getWorker();
         const state = stateRef.current!;
         if (!worker) {
-          setTimeout(() => {
-            try {
-              resolve(runHeatmap(state, req, onProgress));
-            } catch (e) {
-              reject(e);
-            }
-          }, 0);
+          // No worker: build it here (the heatmap code loads only when it's needed).
+          import("./heatmap")
+            .then((m) => resolve(m.runHeatmap(state, req, onProgress)))
+            .catch(reject);
           return;
         }
         const id = ++reqId.current;

@@ -2,6 +2,8 @@
 // age. Salaries are in $k a season.
 import type { Ratings } from "../data/schema";
 import { createRng } from "../rng";
+import players from "../../../data/stats/players.json";
+import { playerKey } from "../data/form";
 
 export const SALARY_CAP = 1100;
 /** A player asking this much or less can always be signed, even over the cap. */
@@ -34,10 +36,29 @@ export function tradeValue(ovr: number, salary?: number): number {
   return Math.max(0, v - Math.max(0, salary - fair) / 8);
 }
 
-/** A player's age in the first season of a save (seeded from the id, 19-28). */
-export function baseAge(id: string): number {
-  return createRng(`age:${id}`).int(19, 28);
+const BIRTH = new Map(
+  (players.rows as { ID: string; Birthdate?: string }[])
+    .filter((r) => r.Birthdate)
+    .map((r) => [playerKey(r.ID), r.Birthdate!] as const),
+);
+
+/**
+ * A player's age during the CDL season named for `seasonYear` (CDL 2026 runs from
+ * December 2025 to June 2026, so it's their age on 1 March of that year). Real
+ * birthdates come from the CoD Esports Wiki; anyone without one gets a seeded 19-28 in
+ * 2024, a year older each season after.
+ */
+export function ageIn(id: string, seasonYear: number): number {
+  const b = BIRTH.get(playerKey(id));
+  if (b) {
+    const [y, m, d] = b.split("-").map(Number) as [number, number, number];
+    return seasonYear - y - (m > 3 || (m === 3 && d > 1) ? 1 : 0);
+  }
+  return createRng(`age:${id}`).int(19, 28) + (seasonYear - 2024);
 }
+
+/** True when the age is from a real birthdate. */
+export const realAge = (id: string) => BIRTH.has(playerKey(id));
 
 /** Rating change over an off-season: young players improve, veterans decline. */
 export function progression(id: string, age: number, year: number): number {

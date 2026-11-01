@@ -6,7 +6,8 @@ import type { Rng } from "../rng";
 import { aiPatchIn, aiPatchOut, freeAgents, nextStepDate, playerInfo, type SeasonState } from "../season/season";
 import { aiRoster, ovrOf } from "./contracts";
 import { pushInbox } from "./inbox";
-import { baseAge, tradeValue } from "./values";
+import { ageIn, tradeValue } from "./values";
+import { seasonYearOf } from "./dynasty";
 
 const name = (data: SeasonData, id: string) => data.season.teams.find((t) => t.id === id)?.abbr ?? id;
 const handle = (state: SeasonState, data: SeasonData, id: string) => playerInfo(state, data, id)?.handle ?? id;
@@ -48,12 +49,12 @@ export function offseasonAiMoves(state: SeasonState, data: SeasonData, year: num
   const gm = state.gm?.team;
   const notes: string[] = [];
   const fas = freeAgents(state, data)
-    .filter((id) => baseAge(id) + year - 1 < 30)
+    .filter((id) => ageIn(id, seasonYearOf(state)) < 30)
     .sort((a, b) => ovrOf(state, data, b) - ovrOf(state, data, a));
   for (const t of data.season.teams) {
     if (t.id === gm) continue;
     const roster = aiRoster(state, data, t.id).filter((id) => !id.startsWith("repl-"));
-    const retiring = roster.slice(0, 4).filter((id) => baseAge(id) + year - 1 >= 32);
+    const retiring = roster.slice(0, 4).filter((id) => ageIn(id, seasonYearOf(state)) >= 32);
     if (!retiring.length) continue;
     const replacements = retiring.map(() => fas.shift()).filter((id): id is string => !!id);
     aiPatchOut(state, t.id, retiring);

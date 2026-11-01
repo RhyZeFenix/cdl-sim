@@ -9,13 +9,14 @@ import { MW3 } from "./maps-mw3";
 import { BO7 } from "./maps-bo7";
 import { B, H, P, type Block, type Layout, type Pt, type Traced } from "./shapes";
 import { themeFor } from "./themes";
+import { savedOverrides } from "../savedLayouts";
 
 export type { Block, Building, Callout, Hill, Layout, MapTheme, Platform, Pt } from "./shapes";
 
 const TRACED: Record<string, Traced> = { ...MW3, ...BO6, ...BO7 };
 
 /** Layouts edited in the map editor (this browser only); they replace the traced ones. */
-const OVERRIDES: Record<string, Traced> = {};
+const OVERRIDES: Record<string, Traced> = { ...savedOverrides() };
 export function setLayoutOverride(map: string, t: Traced | null): void {
   if (t) OVERRIDES[map] = t;
   else delete OVERRIDES[map];

@@ -10,6 +10,7 @@ import { traitOf } from "./personality";
 import { strengthRanking } from "./owner";
 import type { Contract } from "./types";
 import { MIN_EXCEPTION } from "./values";
+import { playerProfile } from "./players";
 
 export interface Offer {
   /** $k a season. */
@@ -77,3 +78,35 @@ export function offerProblem(state: SeasonState, offer: Offer): string | null {
 
 /** The contract an accepted offer turns into. */
 export const contractOf = (o: Offer): Contract => ({ salary: o.salary, years: Math.max(1, Math.min(3, Math.round(o.years))), ...(o.option ? { option: true } : {}) });
+
+/** Below this morale a player won't talk about an extension. */
+export const EXTEND_MIN_MORALE = 45;
+
+/** What extending a player costs: a new deal of `years` seasons from now, priced like a re-signing. */
+export function extensionTerms(state: SeasonState, data: SeasonData, id: string, years: number): { salary: number; problem?: string } {
+  const gm = state.gm;
+  if (!gm?.roster.includes(id)) return { salary: 0, problem: "Not on your roster." };
+  const c = gm.contracts?.[id];
+  const y = Math.max(1, Math.min(3, Math.round(years)));
+  // A player in form knows it: hot asks 8% more, cold takes 8% less.
+  const form = playerProfile(state, data, id, new Set()).form?.label;
+  const formPay = form === "hot" ? 1.08 : form === "cold" ? 0.92 : 1;
+  const salary = Math.ceil((needFor(state, data, id, y, gm.team) * formPay) / 5) * 5;
+  if (!c) return { salary, problem: "No contract to extend." };
+  if (y <= c.years) return { salary, problem: `They already have ${c.years} season${c.years > 1 ? "s" : ""} left; extend for longer.` };
+  if ((gm.morale?.[id] ?? MORALE_START) < EXTEND_MIN_MORALE) return { salary, problem: "Too unhappy to talk about an extension right now." };
+  const space = capSpace(state) + c.salary;
+  if (salary > c.salary && salary > space && salary > MIN_EXCEPTION) return { salary, problem: `Not enough cap space for $${salary}k.` };
+  return { salary };
+}
+
+/** Extends a player's contract: `years` seasons from now at the extension price. */
+export function gmExtend(state: SeasonState, data: SeasonData, id: string, years: number): void {
+  const gm = state.gm;
+  if (!gm) throw new Error("not in GM mode");
+  const t = extensionTerms(state, data, id, years);
+  if (t.problem) throw new Error(t.problem);
+  const old = gm.contracts![id]!;
+  gm.contracts = { ...gm.contracts, [id]: { salary: t.salary, years: Math.round(years), ...(old.option ? { option: true } : {}) } };
+  gm.morale = { ...(gm.morale ?? {}), [id]: Math.min(100, (gm.morale?.[id] ?? MORALE_START) + 4) };
+}

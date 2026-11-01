@@ -1,6 +1,6 @@
 // Office › Market: AI offers and player demands, contracts, and trades.
 import { useMemo, useState } from "react";
-import { MIN_EXCEPTION, capLabel, gmChoose, gmSetTradeBlock, marketAsk, tradesOpen, aiRoster, askingSalary, evaluateTrade, gmCanMakeMoves, payroll, playerInfo, proposeTrade, tradeValue, visibleInbox, ovrOf, fogText, fogWidth, capOf, seasonYearOf } from "../../../engine";
+import { MIN_EXCEPTION, capLabel, gmChoose, gmSetTradeBlock, marketAsk, tradesOpen, aiRoster, askingSalary, evaluateTrade, gmCanMakeMoves, payroll, playerInfo, proposeTrade, tradeValue, visibleInbox, ovrOf, fogText, fogWidth, capOf, seasonYearOf, extensionTerms, gmExtend } from "../../../engine";
 import { type Nav } from "../../App";
 import { directory } from "../../names";
 import type { SeasonStore } from "../../useSeason";
@@ -64,6 +64,7 @@ export function Finances({ store, nav }: { store: SeasonStore; nav: Nav }) {
             <th>Years left</th>
             <th title="What they'd ask on the open market today">Market ask</th>
             <th title="AI offers target players on the block">On the block</th>
+            <th className="left" title="Lock a player up before the deal runs out: priced on their rating, mood and current form">Extend</th>
           </tr>
         </thead>
         <tbody>
@@ -86,12 +87,37 @@ export function Finances({ store, nav }: { store: SeasonStore; nav: Nav }) {
                   }
                 />
               </td>
+              <td className="left">{c && c.years < 3 && <ExtendCell store={store} id={id} years={c.years} />}</td>
             </tr>
           ))}
         </tbody>
       </table>
       <CapTable store={store} />
     </div>
+  );
+}
+
+/** Extend a contract: pick a length, see the price, sign it (between stages only). */
+function ExtendCell({ store, id, years }: { store: SeasonStore; id: string; years: number }) {
+  const { state, data } = store;
+  const [y, setY] = useState(Math.min(3, years + 1));
+  const [err, setErr] = useState<string | null>(null);
+  const t = extensionTerms(state, data, id, y);
+  const open = gmCanMakeMoves(state);
+  return (
+    <span className="row" style={{ gap: 4 }}>
+      <select className="plain" value={y} onChange={(e) => setY(Number(e.target.value))} aria-label="Extension length">
+        {[2, 3].filter((n) => n > years).map((n) => (
+          <option key={n} value={n}>
+            {n} yr · ${extensionTerms(state, data, id, n).salary}k
+          </option>
+        ))}
+      </select>
+      <button className="btn small" disabled={!open || !!t.problem} title={!open ? "Between stages only" : (t.problem ?? `Extend: ${y} seasons at $${t.salary}k`)} onClick={() => setErr(store.mutate((s, d) => gmExtend(s, d, id, y)))}>
+        Extend
+      </button>
+      {err && <span className="sub" style={{ color: "var(--ban)" }}>{err}</span>}
+    </span>
   );
 }
 
@@ -263,6 +289,20 @@ export function Trades({ store, nav }: { store: SeasonStore; nav: Nav }) {
             {verdict && (
               <span className="sub" style={{ color: verdict.accepted ? "var(--pick)" : "var(--ban)" }}>
                 {verdict.reason} Value to them {Math.round(verdict.valueIn)} in, {Math.round(verdict.valueOut)} out · payroll after ${verdict.payrollAfter}k.
+              </span>
+            )}
+            {verdict?.counter && (
+              <span className="row" style={{ gap: 6 }}>
+                <span className="sub">{verdict.counterText}</span>
+                <button
+                  className="btn small"
+                  onClick={() => {
+                    setGive(verdict.counter!.give);
+                    setGet(verdict.counter!.get);
+                  }}
+                >
+                  Use their counter
+                </button>
               </span>
             )}
           </div>

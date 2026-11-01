@@ -1,5 +1,6 @@
 // Ties the GM sim-game layer into the season: set up a new GM season, and turn each
 // GM series and each finished step into morale changes, owner trust and news.
+import { developDuringSeason } from "./development";
 import type { SeasonData } from "../data/registry";
 import {
   gmCanMakeMoves,
@@ -129,6 +130,7 @@ export function onStepComplete(state: SeasonState, data: SeasonData, step: Step)
   developProspects(state);
 
   const date = state.pointsHistory[state.pointsHistory.length - 1]?.date ?? "";
+  developDuringSeason(state, data, step, date);
   // Anyone unhappy says so.
   for (const id of gm.roster) {
     const m = gm.morale?.[id] ?? MORALE_START;

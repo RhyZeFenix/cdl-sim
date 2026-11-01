@@ -19,6 +19,7 @@ import { contractOf, negotiate, offerProblem, type Offer } from "../gm/negotiati
 import { DEAD_CAP_SHARE } from "../gm/values";
 import { realForm } from "../data/form";
 import { fightShare } from "../data/fights";
+import { labelledRole } from "../data/roles";
 import type {
   CarriedPlayers,
   Contract,
@@ -131,6 +132,10 @@ export interface GmState {
   staff?: { coach?: StaffMember; analyst?: StaffMember };
   /** Practice: scrim partners for the next step. */
   scrims?: string[];
+  /** In-season rating growth for your young players (see gm/development). */
+  devAdj?: Record<string, number>;
+  /** Your academy's Challengers results this season. */
+  challengers?: import("../gm/development").ChallengersResult[];
   /** This season's sponsor deal (see gm/sponsors). */
   sponsor?: import("../gm/sponsors").SponsorDeal;
   /** Scouting fog: other teams' ratings show as ranges (on unless switched off). */
@@ -411,13 +416,24 @@ export const isReplacement = (id: string) => id.startsWith("repl-");
  */
 export function playerInfo(state: SeasonState, data: SeasonData, id: string): Player | undefined {
   const carried = state.carried?.[id];
-  if (carried) return carried;
-  const p = playerIndex(data).get(id);
+  const role = labelledRole(id);
+  const dev = state.gm?.devAdj?.[id];
+  if (carried) return grow(role ? { ...carried, role } : carried, dev);
+  const base = playerIndex(data).get(id);
+  const p = grow(base && role ? { ...base, role } : base, dev);
   const adj = state.ratingAdj?.[id];
   if (!p || !adj) return p;
   const f = (v: number) => Math.max(50, Math.min(99, Math.round(v + adj)));
   const r = p.ratings;
   return { ...p, ratings: { ...r, slaying: f(r.slaying), hp_obj: f(r.hp_obj), snd_iq: f(r.snd_iq), third_mode: f(r.third_mode), clutch: f(r.clutch) } };
+}
+
+/** In-season growth on top of a player's ratings. */
+function grow(p: Player | undefined, dev: number | undefined): Player | undefined {
+  if (!p || !dev) return p;
+  const f = (v: number) => Math.max(50, Math.min(99, Math.round((v + dev) * 10) / 10));
+  const r = p.ratings;
+  return { ...p, ratings: { ...r, slaying: f(r.slaying), hp_obj: f(r.hp_obj), snd_iq: f(r.snd_iq), third_mode: f(r.third_mode) } };
 }
 
 function simPlayer(state: SeasonState, data: SeasonData, id: string): SimPlayer {
@@ -570,8 +586,11 @@ function runSeries(
   if (gmVeto && gmSide !== null) choosers[gmSide] = scriptedChooser(gmVeto.answers);
 
   // The GM side plays with its prep and morale boost.
+  // Series form: a team that's on (or off) tends to stay that way for the whole series.
+  const sfSd = TUNING.seriesFormSd;
+  const seriesForm = [0, 1].map((side) => (sfSd ? createRng(state.options.seed).fork(`sform/${spec.id}/${side}`).normal(0, sfSd) : 0));
   const build = (side: Side, ids: string[], extra = 0) =>
-    buildTeam(state, data, spec.teams[side], ids, spec.phase, side === gmSide ? spec.boost : undefined, (spec.fatigue?.[side] ?? 0) - extra);
+    buildTeam(state, data, spec.teams[side], ids, spec.phase, side === gmSide ? spec.boost : undefined, (spec.fatigue?.[side] ?? 0) - extra - seriesForm[side]!);
 
   // Sub swaps: the GM side's lineup can change between maps.
   const mapLineups: Record<number, string[]> = {};

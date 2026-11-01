@@ -43,3 +43,5 @@ export * from "./gm/sponsors";
 export * from "./data/fights";
 export * from "./season/whatif";
 export * from "./data/career";
+export * from "./data/roles";
+export * from "./gm/development";

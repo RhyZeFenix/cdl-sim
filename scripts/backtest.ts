@@ -195,6 +195,44 @@ interface SimAgg {
   modeRec: Map<string, Map<Mode, WinRec>>;
   scores: Record<Mode, Map<string, number>>;
   scoreTotal: Record<Mode, number>;
+  /** Series scorelines ("3-0", "3-1"…) per best-of. */
+  series: Map<number, Map<string, number>>;
+  /** Maps played, by "mode:map". */
+  mapPlays: Map<string, number>;
+}
+
+/** Real maps played per "mode:map" (CoD Esports Wiki, winners' rows / 4). */
+function realMapPlays(y: SeasonId): Map<string, number> {
+  const raw = JSON.parse(readFileSync(`data/stats/${y}.maps.json`, "utf8")) as { rows: Record<string, string>[] };
+  const modes: Record<string, Mode> = { Hardpoint: "hp", "Search and Destroy": "snd", Control: "control", Overload: "overload" };
+  const out = new Map<string, number>();
+  for (const r of raw.rows) {
+    const m = modes[r.Gamemode ?? ""];
+    if (!m || r.Win !== "1" || /unrecognized/i.test(r.Map ?? "")) continue;
+    out.set(`${m}:${r.Map}`, (out.get(`${m}:${r.Map}`) ?? 0) + Number(r.Rows) / 4);
+  }
+  return out;
+}
+
+/** Real series scorelines per best-of (CDL teams only), from the committed series results. */
+function realSeriesScores(y: SeasonId, data: SeasonData): Map<number, Map<string, number>> | null {
+  const file = `data/results/${y}.raw.json`;
+  if (!existsSync(file)) return null;
+  const raw = JSON.parse(readFileSync(file, "utf8")) as { series: Record<string, string>[] };
+  const out = new Map<number, Map<string, number>>();
+  const idOf = teamIdFor(data);
+  for (const s of raw.series) {
+    if (!idOf(s.Team1 ?? "") || !idOf(s.Team2 ?? "")) continue;
+    const bo = Number(s.BestOf);
+    const a = Number(s.Team1Score);
+    const b = Number(s.Team2Score);
+    if (!bo || Number.isNaN(a) || Number.isNaN(b) || Math.max(a, b) !== Math.ceil(bo / 2)) continue;
+    const m = out.get(bo) ?? new Map<string, number>();
+    const k = `${Math.max(a, b)}-${Math.min(a, b)}`;
+    m.set(k, (m.get(k) ?? 0) + 1);
+    out.set(bo, m);
+  }
+  return out;
 }
 
 function simulate(y: SeasonId, data: SeasonData): SimAgg {
@@ -206,6 +244,8 @@ function simulate(y: SeasonId, data: SeasonData): SimAgg {
     modeRec: new Map(),
     scores: Object.fromEntries(MODES.map((m) => [m, new Map<string, number>()])) as Record<Mode, Map<string, number>>,
     scoreTotal: Object.fromEntries(MODES.map((m) => [m, 0])) as Record<Mode, number>,
+    series: new Map(),
+    mapPlays: new Map(),
   };
   const add = (m: Map<string, number>, k: string, v: number) => m.set(k, (m.get(k) ?? 0) + v);
   for (let i = 0; i < N; i++) {
@@ -225,7 +265,11 @@ function simulate(y: SeasonId, data: SeasonData): SimAgg {
     }
     for (const [t, p] of Object.entries(s.points)) add(agg.points, t, p);
     for (const rec of Object.values(s.series)) {
+      const bm = agg.series.get(rec.bestOf) ?? new Map<string, number>();
+      add(bm, `${Math.max(...rec.score)}-${Math.min(...rec.score)}`, 1);
+      agg.series.set(rec.bestOf, bm);
       for (const m of rec.maps) {
+        add(agg.mapPlays, `${m.mode}:${m.map}`, 1);
         rec.teams.forEach((team, side) => {
           if (!cdl.has(team)) return;
           const tm = agg.modeRec.get(team) ?? new Map<Mode, WinRec>();
@@ -340,6 +384,50 @@ function seasonReport(y: SeasonId): { md: string; summary: Record<string, number
   }
   summary.scorelineTVD = mean(tvds);
 
+  // Map play share: how often each map comes up in its mode (the vetoes' end result)
+  {
+    const real = realMapPlays(y);
+    lines.push("### Map play share", "", "How often each map was played within its mode. The sim's share comes from its vetoes.", "", "| Mode | Map | Real | Sim |", "|---|---|---|---|");
+    const dists: number[] = [];
+    for (const mode of modes) {
+      const keys = [...new Set([...real.keys(), ...sim.mapPlays.keys()])].filter((k) => k.startsWith(`${mode}:`)).sort();
+      const rt = keys.reduce((a, k) => a + (real.get(k) ?? 0), 0);
+      const st = keys.reduce((a, k) => a + (sim.mapPlays.get(k) ?? 0), 0);
+      if (!rt || !st) continue;
+      let d = 0;
+      for (const k of keys) {
+        const rp = (real.get(k) ?? 0) / rt;
+        const sp = (sim.mapPlays.get(k) ?? 0) / st;
+        d += Math.abs(rp - sp) / 2;
+        lines.push(`| ${mode} | ${k.slice(mode.length + 1)} | ${pct(rp)} | ${pct(sp)} |`);
+      }
+      dists.push(d);
+    }
+    lines.push("");
+    summary.mapShareTVD = mean(dists);
+  }
+
+  // Series scorelines
+  const rss = realSeriesScores(y, data);
+  if (rss) {
+    lines.push("### Series scorelines", "");
+    const stv: number[] = [];
+    for (const [bo, real] of [...rss.entries()].sort((a, b) => a[0] - b[0])) {
+      const simm = sim.series.get(bo);
+      const rt = [...real.values()].reduce((a, b) => a + b, 0);
+      if (!simm || rt < 15) continue;
+      const st = [...simm.values()].reduce((a, b) => a + b, 0);
+      const w = Math.ceil(bo / 2);
+      const keys = Array.from({ length: w }, (_, l) => `${w}-${l}`);
+      const rp = keys.map((k) => (real.get(k) ?? 0) / rt);
+      const sp = keys.map((k) => (simm.get(k) ?? 0) / st);
+      const tvd = 0.5 * rp.reduce((a, p, i) => a + Math.abs(p - sp[i]!), 0);
+      stv.push(tvd);
+      lines.push(`**Bo${bo}** (${rt} real series) — distance ${f2(tvd)}`, "", `| Score | ${keys.join(" | ")} |`, `|---|${keys.map(() => "---").join("|")}|`, `| Real | ${rp.map(pct).join(" | ")} |`, `| Sim | ${sp.map(pct).join(" | ")} |`, "");
+    }
+    summary.seriesTVD = mean(stv);
+  }
+
   // Points
   const rpts = realPoints(y, data, events);
   if (rpts) {
@@ -387,11 +475,11 @@ const head = [
   "",
   `Generated by \`npm run backtest -- --n ${N}\`. Each season is simulated ${N} times with Historical ratings and compared with what really happened.`,
   "",
-  "| Season | Real winner's sim win % | Placement Spearman | Mode win % correlation | Sim/real spread | Scoreline distance | Points Spearman |",
-  "|---|---|---|---|---|---|---|",
+  "| Season | Real winner's sim win % | Placement Spearman | Mode win % correlation | Sim/real spread | Scoreline distance | Series scoreline distance | Points Spearman |",
+  "|---|---|---|---|---|---|---|---|",
   ...summaries.map(
     ({ y, s }) =>
-      `| ${y} | ${pct(s.eventRealWinnerP!)} | ${f2(s.eventPlacementRho!)} | ${f2(s.modeCorr!)} | ${f2(s.spreadRatio!)} | ${f2(s.scorelineTVD!)} | ${s.pointsRho !== undefined ? f2(s.pointsRho) : "—"} |`,
+      `| ${y} | ${pct(s.eventRealWinnerP!)} | ${f2(s.eventPlacementRho!)} | ${f2(s.modeCorr!)} | ${f2(s.spreadRatio!)} | ${f2(s.scorelineTVD!)} | ${s.seriesTVD !== undefined ? f2(s.seriesTVD) : "—"} | ${s.pointsRho !== undefined ? f2(s.pointsRho) : "—"} |`,
   ),
   "",
 ];

@@ -116,10 +116,13 @@ export interface TradeVerdict {
   valueIn: number;
   valueOut: number;
   payrollAfter: number;
+  /** When they say no on value: a deal they would take instead (add one of yours, or ask for less). */
+  counter?: TradeOffer;
+  counterText?: string;
 }
 
 /** How the AI team sees an offer. Doesn't change anything. */
-export function evaluateTrade(state: SeasonState, data: SeasonData, offer: TradeOffer): TradeVerdict {
+export function evaluateTrade(state: SeasonState, data: SeasonData, offer: TradeOffer, counter = true): TradeVerdict {
   const gm = state.gm;
   if (!gm) throw new Error("not in GM mode");
   const { team, give, get } = offer;
@@ -150,18 +153,44 @@ export function evaluateTrade(state: SeasonState, data: SeasonData, offer: Trade
   const need = get.includes(best!) ? needBest : needAny;
   if (valueIn < valueOut * need) {
     const short = Math.ceil(valueOut * need - valueIn);
+    const c = counter ? counterOffer(state, data, offer) : undefined;
     return {
       accepted: false,
       reason: `${teamName(data, team)} want more: about ${short} value short${get.includes(best!) ? " (they'd need a lot to give up their best player)" : ""}.`,
       valueIn,
       valueOut,
       payrollAfter,
+      ...(c ? { counter: c.offer, counterText: c.text } : {}),
     };
   }
   return { accepted: true, reason: `${teamName(data, team)} accept.`, valueIn, valueOut, payrollAfter };
 }
 
 const teamName = (data: SeasonData, id: string) => data.season.teams.find((t) => t.id === id)?.name ?? id;
+
+/**
+ * What an AI team would take instead of an offer that's short on value: the same deal
+ * plus your least valuable player that makes it work, or else the same deal minus the
+ * player of theirs that tips it over. Only counters they'd actually accept.
+ */
+function counterOffer(state: SeasonState, data: SeasonData, offer: TradeOffer): { offer: TradeOffer; text: string } | undefined {
+  const gm = state.gm!;
+  const handle = (id: string) => playerInfo(state, data, id)?.handle ?? id;
+  const value = (id: string) => tradeValue(ovrOf(state, data, id), gm.contracts?.[id]?.salary);
+  const adds = gm.roster.filter((id) => !offer.give.includes(id)).sort((a, b) => value(a) - value(b));
+  for (const id of adds) {
+    const o = { ...offer, give: [...offer.give, id] };
+    if (evaluateTrade(state, data, o, false).accepted) return { offer: o, text: `They'd do it if you add ${handle(id)}.` };
+  }
+  if (offer.get.length > 1) {
+    const drops = offer.get.slice().sort((a, b) => ovrOf(state, data, b) - ovrOf(state, data, a));
+    for (const id of drops) {
+      const o = { ...offer, get: offer.get.filter((x) => x !== id) };
+      if (evaluateTrade(state, data, o, false).accepted) return { offer: o, text: `They'd do it without ${handle(id)}.` };
+    }
+  }
+  return undefined;
+}
 
 /** Makes the trade if the AI team accepts it. Returns the verdict either way. */
 export function proposeTrade(state: SeasonState, data: SeasonData, offer: TradeOffer): TradeVerdict {

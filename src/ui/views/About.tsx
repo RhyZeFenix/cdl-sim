@@ -1,8 +1,19 @@
 // About: where the data comes from, how the sim works, what's verified and what's
 // approximate, and what changed.
+import { RolesEditor } from "./RolesEditor";
 import type { SeasonStore } from "../useSeason";
 
 const CHANGELOG: { title: string; items: string[] }[] = [
+  {
+    title: "GM depth and accuracy checks",
+    items: [
+      "AI teams answer short trade offers with a counter you can accept",
+      "Extend contracts mid-season, priced on rating, mood and current form",
+      "Your young players grow a little after every Major; academy prospects play Challengers events",
+      "Label players AR, SMG or flex (About → Player roles) and export the labels to send in",
+      "Backtest now checks series scorelines (3–0 / 3–1 / 3–2) and how often each map is played",
+    ],
+  },
   {
     title: "Real fights, real ages, what if",
     items: [
@@ -135,6 +146,7 @@ export function About({ store }: { store: SeasonStore }) {
           ))}
         </div>
       </div>
+      <RolesEditor store={store} />
     </div>
   );
 }

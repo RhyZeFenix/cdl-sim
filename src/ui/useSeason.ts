@@ -341,6 +341,8 @@ export function useSeason(initial: SeasonConfig) {
     done: isDone(state),
     start,
     replace,
+    /** Re-render after something outside the season state changed (role labels). */
+    bump,
     odds,
     heatmap,
     load,

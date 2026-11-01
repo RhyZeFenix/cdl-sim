@@ -1,6 +1,11 @@
 import { createRoot } from "react-dom/client";
 import { App } from "./App";
 import "./styles.css";
+import { setLocalRoles } from "../engine";
+import { localRoles } from "./savedRoles";
+
+// Role labels set in this browser apply everywhere.
+setLocalRoles(localRoles());
 
 createRoot(document.getElementById("root")!).render(<App />);
 

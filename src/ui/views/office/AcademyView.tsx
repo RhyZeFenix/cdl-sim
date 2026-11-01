@@ -80,6 +80,32 @@ export function AcademyView({ store, nav }: { store: SeasonStore; nav: Nav }) {
             </tbody>
           </table>
         )}
+        {(gm.challengers ?? []).length > 0 && (
+          <div style={{ marginTop: 10 }}>
+            <h4 style={{ margin: "0 0 4px" }}>Challengers results</h4>
+            <div className="sub" style={{ marginBottom: 4 }}>After each Major your prospects play a Challengers event; a top-two finish adds +1.2 growth, top four +0.6.</div>
+            <table className="tbl">
+              <thead>
+                <tr>
+                  <th className="left">Event</th>
+                  {[...academy].map((id) => (
+                    <th key={id}>{gm.prospects?.[id]?.player.handle ?? id}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {gm.challengers!.map((c) => (
+                  <tr key={c.stage}>
+                    <td className="left">Stage {c.stage}</td>
+                    {[...academy].map((id) => (
+                      <td key={id}>{c.places[id] ? (c.places[id] === 1 ? "🏆 1st" : `${c.places[id]} / ${c.field}`) : "—"}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
       <div className="card">
         <div className="card-head">

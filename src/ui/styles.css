@@ -592,3 +592,11 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
   .hl-chip { font-size: 11px; }
   .subtabs button { padding: 6px 8px; font-size: 13px; }
 }
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+.roles-grid > div { display: grid; gap: 4px; align-content: start; }
+.seg.small button { padding: 2px 6px; font-size: 11px; }

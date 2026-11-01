@@ -11,6 +11,8 @@ export const TUNING = {
   /** Per-map form noise for a player with 0 consistency (scaled down as consistency rises). */
   formSd: 0.1,
   teamFormSd: 0.05,
+  /** Spread of a team's form for one whole series (skill units), so maps in a series hang together. */
+  seriesFormSd: 0,
   /** Spread of a team's form per event / qualifier week (skill units); set by the backtest. */
   eventFormSd: 0,
   /** Per-event form used when a season is started with Chaos on (hot and cold weekends, more upsets). */
